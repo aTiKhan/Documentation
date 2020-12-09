@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  commentId: T:Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  id: IPartitionSelectorStrategy
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition(System.Object,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IPartitionSelectorStrategy
+  nameWithType: IPartitionSelectorStrategy
+  fullName: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  type: Interface
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IPartitionSelectorStrategy.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IPartitionSelectorStrategy
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IPartitionSelectorStrategy.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nStrategy for determining the partition to which a message should be sent.\n"
+  example: []
+  syntax:
+    content: 'public interface IPartitionSelectorStrategy : IServiceNameAware'
+    content.vb: >-
+      Public Interface IPartitionSelectorStrategy
+
+          Inherits IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition(System.Object,System.Int32)
+  commentId: M:Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition(System.Object,System.Int32)
+  id: SelectPartition(System.Object,System.Int32)
+  parent: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  langs:
+  - csharp
+  - vb
+  name: SelectPartition(Object, Int32)
+  nameWithType: IPartitionSelectorStrategy.SelectPartition(Object, Int32)
+  fullName: Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition(System.Object, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IPartitionSelectorStrategy.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SelectPartition
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IPartitionSelectorStrategy.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nDetermine the partition based on a key. The partitionCount is 1 greater than the maximum value of a valid partition.\n"
+  example: []
+  syntax:
+    content: int SelectPartition(object key, int partitionCount)
+    parameters:
+    - id: key
+      type: System.Object
+      description: the key
+    - id: partitionCount
+      type: System.Int32
+      description: the number of partitions
+    return:
+      type: System.Int32
+      description: the selected partition
+    content.vb: Function SelectPartition(key As Object, partitionCount As Integer) As Integer
+  overload: Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition*
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition*
+  commentId: Overload:Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition
+  name: SelectPartition
+  nameWithType: IPartitionSelectorStrategy.SelectPartition
+  fullName: Steeltoe.Stream.Binder.IPartitionSelectorStrategy.SelectPartition
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

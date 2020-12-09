@@ -1,0 +1,1784 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  id: MetricsEndpoint
+  parent: Steeltoe.Management.Endpoint.Metrics
+  children:
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.#ctor(Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions,Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter,ILogger{Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint})
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric(Steeltoe.Management.Endpoint.Metrics.MetricsRequest,System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample},System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag})
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}},System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}@,Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}}@)
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options
+  langs:
+  - csharp
+  - vb
+  name: MetricsEndpoint
+  nameWithType: MetricsEndpoint
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MetricsEndpoint
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: 'public class MetricsEndpoint : AbstractEndpoint<IMetricsResponse, MetricsRequest>, IEndpoint<IMetricsResponse, MetricsRequest>, IEndpoint'
+    content.vb: >-
+      Public Class MetricsEndpoint
+
+          Inherits AbstractEndpoint(Of IMetricsResponse, MetricsRequest)
+
+          Implements IEndpoint(Of IMetricsResponse, MetricsRequest), IEndpoint
+  inheritance:
+  - System.Object
+  - Steeltoe.Management.AbstractEndpoint
+  - Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}
+  implements:
+  - Steeltoe.Management.IEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}
+  - Steeltoe.Management.IEndpoint
+  inheritedMembers:
+  - Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  - Steeltoe.Management.AbstractEndpoint.options
+  - Steeltoe.Management.AbstractEndpoint.Id
+  - Steeltoe.Management.AbstractEndpoint.Enabled
+  - Steeltoe.Management.AbstractEndpoint.Path
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  - Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  - Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.#ctor(Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions,Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter,ILogger{Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint})
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.#ctor(Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions,Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter,ILogger{Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint})
+  id: '#ctor(Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions,Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter,ILogger{Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint})'
+  parent: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  langs:
+  - csharp
+  - vb
+  name: MetricsEndpoint(IMetricsEndpointOptions, SteeltoeExporter, ILogger<MetricsEndpoint>)
+  nameWithType: MetricsEndpoint.MetricsEndpoint(IMetricsEndpointOptions, SteeltoeExporter, ILogger<MetricsEndpoint>)
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricsEndpoint(Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions, Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter, ILogger<Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: public MetricsEndpoint(IMetricsEndpointOptions options, SteeltoeExporter exporter, ILogger<MetricsEndpoint> logger = null)
+    parameters:
+    - id: options
+      type: Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions
+    - id: exporter
+      type: Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter
+    - id: logger
+      type: ILogger{Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint}
+    content.vb: Public Sub New(options As IMetricsEndpointOptions, exporter As SteeltoeExporter, logger As ILogger(Of MetricsEndpoint) = Nothing)
+  overload: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.#ctor*
+  nameWithType.vb: MetricsEndpoint.MetricsEndpoint(IMetricsEndpointOptions, SteeltoeExporter, ILogger(Of MetricsEndpoint))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricsEndpoint(Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions, Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter, ILogger(Of Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint))
+  name.vb: MetricsEndpoint(IMetricsEndpointOptions, SteeltoeExporter, ILogger(Of MetricsEndpoint))
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options
+  commentId: P:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options
+  id: Options
+  parent: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: MetricsEndpoint.Options
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Options
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: public IMetricsEndpointOptions Options { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions
+    content.vb: Public ReadOnly Property Options As IMetricsEndpointOptions
+  overload: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  id: Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  parent: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Invoke(MetricsRequest)
+  nameWithType: MetricsEndpoint.Invoke(MetricsRequest)
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Invoke
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: public override IMetricsResponse Invoke(MetricsRequest request)
+    parameters:
+    - id: request
+      type: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    return:
+      type: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+    content.vb: Public Overrides Function Invoke(request As MetricsRequest) As IMetricsResponse
+  overridden: Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  overload: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}},System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}},System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  id: GetMetricSamplesByTags(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}},System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  parent: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  langs:
+  - csharp
+  - vb
+  name: GetMetricSamplesByTags(MetricsEndpoint.MetricDictionary<List<MetricSample>>, String, IEnumerable<KeyValuePair<String, String>>)
+  nameWithType: MetricsEndpoint.GetMetricSamplesByTags(MetricsEndpoint.MetricDictionary<List<MetricSample>>, String, IEnumerable<KeyValuePair<String, String>>)
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary<System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricSample>>, System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetMetricSamplesByTags
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: protected List<MetricSample> GetMetricSamplesByTags(MetricsEndpoint.MetricDictionary<List<MetricSample>> measurements, string metricName, IEnumerable<KeyValuePair<string, string>> tags)
+    parameters:
+    - id: measurements
+      type: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}
+    - id: metricName
+      type: System.String
+    - id: tags
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+    return:
+      type: System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}
+    content.vb: Protected Function GetMetricSamplesByTags(measurements As MetricsEndpoint.MetricDictionary(Of List(Of MetricSample)), metricName As String, tags As IEnumerable(Of KeyValuePair(Of String, String))) As List(Of MetricSample)
+  overload: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags*
+  nameWithType.vb: MetricsEndpoint.GetMetricSamplesByTags(MetricsEndpoint.MetricDictionary(Of List(Of MetricSample)), String, IEnumerable(Of KeyValuePair(Of String, String)))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricSample)), System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String)))
+  name.vb: GetMetricSamplesByTags(MetricsEndpoint.MetricDictionary(Of List(Of MetricSample)), String, IEnumerable(Of KeyValuePair(Of String, String)))
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric(Steeltoe.Management.Endpoint.Metrics.MetricsRequest,System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample},System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag})
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric(Steeltoe.Management.Endpoint.Metrics.MetricsRequest,System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample},System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag})
+  id: GetMetric(Steeltoe.Management.Endpoint.Metrics.MetricsRequest,System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample},System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag})
+  parent: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  langs:
+  - csharp
+  - vb
+  name: GetMetric(MetricsRequest, List<MetricSample>, List<MetricTag>)
+  nameWithType: MetricsEndpoint.GetMetric(MetricsRequest, List<MetricSample>, List<MetricTag>)
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric(Steeltoe.Management.Endpoint.Metrics.MetricsRequest, System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricSample>, System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricTag>)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetMetric
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+    startLine: 99
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: protected MetricsResponse GetMetric(MetricsRequest request, List<MetricSample> measurements, List<MetricTag> availTags)
+    parameters:
+    - id: request
+      type: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    - id: measurements
+      type: System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}
+    - id: availTags
+      type: System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}
+    return:
+      type: Steeltoe.Management.Endpoint.Metrics.MetricsResponse
+    content.vb: Protected Function GetMetric(request As MetricsRequest, measurements As List(Of MetricSample), availTags As List(Of MetricTag)) As MetricsResponse
+  overload: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric*
+  nameWithType.vb: MetricsEndpoint.GetMetric(MetricsRequest, List(Of MetricSample), List(Of MetricTag))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric(Steeltoe.Management.Endpoint.Metrics.MetricsRequest, System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricSample), System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricTag))
+  name.vb: GetMetric(MetricsRequest, List(Of MetricSample), List(Of MetricTag))
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}@,Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}}@)
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}@,Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}}@)
+  id: GetMetricsCollection(Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}@,Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}}@)
+  parent: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  langs:
+  - csharp
+  - vb
+  name: GetMetricsCollection(out MetricsEndpoint.MetricDictionary<List<MetricSample>>, out MetricsEndpoint.MetricDictionary<List<MetricTag>>)
+  nameWithType: MetricsEndpoint.GetMetricsCollection(out MetricsEndpoint.MetricDictionary<List<MetricSample>>, out MetricsEndpoint.MetricDictionary<List<MetricTag>>)
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection(out Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary<System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricSample>>, out Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary<System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricTag>>)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetMetricsCollection
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/MetricsEndpoint.cs
+    startLine: 104
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: protected void GetMetricsCollection(out MetricsEndpoint.MetricDictionary<List<MetricSample>> measurements, out MetricsEndpoint.MetricDictionary<List<MetricTag>> availTags)
+    parameters:
+    - id: measurements
+      type: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}
+    - id: availTags
+      type: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}}
+    content.vb: Protected Sub GetMetricsCollection(ByRef measurements As MetricsEndpoint.MetricDictionary(Of List(Of MetricSample)), ByRef availTags As MetricsEndpoint.MetricDictionary(Of List(Of MetricTag)))
+  overload: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection*
+  nameWithType.vb: MetricsEndpoint.GetMetricsCollection(ByRef MetricsEndpoint.MetricDictionary(Of List(Of MetricSample)), ByRef MetricsEndpoint.MetricDictionary(Of List(Of MetricTag)))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection(ByRef Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricSample)), ByRef Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricTag)))
+  name.vb: GetMetricsCollection(ByRef MetricsEndpoint.MetricDictionary(Of List(Of MetricSample)), ByRef MetricsEndpoint.MetricDictionary(Of List(Of MetricTag)))
+references:
+- uid: Steeltoe.Management.Endpoint.Metrics
+  commentId: N:Steeltoe.Management.Endpoint.Metrics
+  name: Steeltoe.Management.Endpoint.Metrics
+  nameWithType: Steeltoe.Management.Endpoint.Metrics
+  fullName: Steeltoe.Management.Endpoint.Metrics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Management.AbstractEndpoint
+  commentId: T:Steeltoe.Management.AbstractEndpoint
+  parent: Steeltoe.Management
+  name: AbstractEndpoint
+  nameWithType: AbstractEndpoint
+  fullName: Steeltoe.Management.AbstractEndpoint
+- uid: Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}
+  commentId: T:Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}
+  parent: Steeltoe.Management
+  definition: Steeltoe.Management.AbstractEndpoint`2
+  name: AbstractEndpoint<IMetricsResponse, MetricsRequest>
+  nameWithType: AbstractEndpoint<IMetricsResponse, MetricsRequest>
+  fullName: Steeltoe.Management.AbstractEndpoint<Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest>
+  nameWithType.vb: AbstractEndpoint(Of IMetricsResponse, MetricsRequest)
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  name.vb: AbstractEndpoint(Of IMetricsResponse, MetricsRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.AbstractEndpoint`2
+    name: AbstractEndpoint
+    nameWithType: AbstractEndpoint
+    fullName: Steeltoe.Management.AbstractEndpoint
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+    name: IMetricsResponse
+    nameWithType: IMetricsResponse
+    fullName: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    name: MetricsRequest
+    nameWithType: MetricsRequest
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.AbstractEndpoint`2
+    name: AbstractEndpoint
+    nameWithType: AbstractEndpoint
+    fullName: Steeltoe.Management.AbstractEndpoint
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+    name: IMetricsResponse
+    nameWithType: IMetricsResponse
+    fullName: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    name: MetricsRequest
+    nameWithType: MetricsRequest
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}
+  commentId: T:Steeltoe.Management.IEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}
+  parent: Steeltoe.Management
+  definition: Steeltoe.Management.IEndpoint`2
+  name: IEndpoint<IMetricsResponse, MetricsRequest>
+  nameWithType: IEndpoint<IMetricsResponse, MetricsRequest>
+  fullName: Steeltoe.Management.IEndpoint<Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest>
+  nameWithType.vb: IEndpoint(Of IMetricsResponse, MetricsRequest)
+  fullName.vb: Steeltoe.Management.IEndpoint(Of Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  name.vb: IEndpoint(Of IMetricsResponse, MetricsRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+    name: IMetricsResponse
+    nameWithType: IMetricsResponse
+    fullName: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    name: MetricsRequest
+    nameWithType: MetricsRequest
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+    name: IMetricsResponse
+    nameWithType: IMetricsResponse
+    fullName: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    name: MetricsRequest
+    nameWithType: MetricsRequest
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint
+  commentId: T:Steeltoe.Management.IEndpoint
+  parent: Steeltoe.Management
+  name: IEndpoint
+  nameWithType: IEndpoint
+  fullName: Steeltoe.Management.IEndpoint
+- uid: Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  commentId: M:Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  parent: Steeltoe.Management.AbstractEndpoint{Steeltoe.Management.Endpoint.Metrics.IMetricsResponse,Steeltoe.Management.Endpoint.Metrics.MetricsRequest}
+  definition: Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+  name: Invoke(MetricsRequest)
+  nameWithType: AbstractEndpoint<IMetricsResponse, MetricsRequest>.Invoke(MetricsRequest)
+  fullName: Steeltoe.Management.AbstractEndpoint<Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest>.Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  nameWithType.vb: AbstractEndpoint(Of IMetricsResponse, MetricsRequest).Invoke(MetricsRequest)
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest).Invoke(Steeltoe.Management.Endpoint.Metrics.MetricsRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: AbstractEndpoint<IMetricsResponse, MetricsRequest>.Invoke
+    fullName: Steeltoe.Management.AbstractEndpoint<Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest>.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    name: MetricsRequest
+    nameWithType: MetricsRequest
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: AbstractEndpoint(Of IMetricsResponse, MetricsRequest).Invoke
+    fullName: Steeltoe.Management.AbstractEndpoint(Of Steeltoe.Management.Endpoint.Metrics.IMetricsResponse, Steeltoe.Management.Endpoint.Metrics.MetricsRequest).Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+    name: MetricsRequest
+    nameWithType: MetricsRequest
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.AbstractEndpoint.options
+  commentId: F:Steeltoe.Management.AbstractEndpoint.options
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: options
+  nameWithType: AbstractEndpoint.options
+  fullName: Steeltoe.Management.AbstractEndpoint.options
+- uid: Steeltoe.Management.AbstractEndpoint.Id
+  commentId: P:Steeltoe.Management.AbstractEndpoint.Id
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: Id
+  nameWithType: AbstractEndpoint.Id
+  fullName: Steeltoe.Management.AbstractEndpoint.Id
+- uid: Steeltoe.Management.AbstractEndpoint.Enabled
+  commentId: P:Steeltoe.Management.AbstractEndpoint.Enabled
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: Enabled
+  nameWithType: AbstractEndpoint.Enabled
+  fullName: Steeltoe.Management.AbstractEndpoint.Enabled
+- uid: Steeltoe.Management.AbstractEndpoint.Path
+  commentId: P:Steeltoe.Management.AbstractEndpoint.Path
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: Path
+  nameWithType: AbstractEndpoint.Path
+  fullName: Steeltoe.Management.AbstractEndpoint.Path
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsEnabled(IManagementOptions)
+  nameWithType: EndPointExtensions.IsEnabled(IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsExposed(IManagementOptions)
+  nameWithType: EndPointExtensions.IsExposed(IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  name: ShouldInvoke(IManagementOptions, ILogger)
+  nameWithType: EndPointExtensions.ShouldInvoke(IManagementOptions, ILogger)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions, ILogger)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Management
+  commentId: N:Steeltoe.Management
+  name: Steeltoe.Management
+  nameWithType: Steeltoe.Management
+  fullName: Steeltoe.Management
+- uid: Steeltoe.Management.AbstractEndpoint`2
+  commentId: T:Steeltoe.Management.AbstractEndpoint`2
+  name: AbstractEndpoint<TResult, TRequest>
+  nameWithType: AbstractEndpoint<TResult, TRequest>
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest)
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest)
+  name.vb: AbstractEndpoint(Of TResult, TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.AbstractEndpoint`2
+    name: AbstractEndpoint
+    nameWithType: AbstractEndpoint
+    fullName: Steeltoe.Management.AbstractEndpoint
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.AbstractEndpoint`2
+    name: AbstractEndpoint
+    nameWithType: AbstractEndpoint
+    fullName: Steeltoe.Management.AbstractEndpoint
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint`2
+  commentId: T:Steeltoe.Management.IEndpoint`2
+  name: IEndpoint<TResult, TRequest>
+  nameWithType: IEndpoint<TResult, TRequest>
+  fullName: Steeltoe.Management.IEndpoint<TResult, TRequest>
+  nameWithType.vb: IEndpoint(Of TResult, TRequest)
+  fullName.vb: Steeltoe.Management.IEndpoint(Of TResult, TRequest)
+  name.vb: IEndpoint(Of TResult, TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+  commentId: M:Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+  name: Invoke(TRequest)
+  nameWithType: AbstractEndpoint<TResult, TRequest>.Invoke(TRequest)
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.Invoke(TRequest)
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest).Invoke(TRequest)
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest).Invoke(TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: AbstractEndpoint<TResult, TRequest>.Invoke
+    fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: AbstractEndpoint(Of TResult, TRequest).Invoke
+    fullName: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest).Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsEnabled(IEndpoint, IManagementOptions)
+  nameWithType: EndPointExtensions.IsEnabled(IEndpoint, IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint, Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions
+  commentId: T:Steeltoe.Management.Endpoint.EndPointExtensions
+  parent: Steeltoe.Management.Endpoint
+  name: EndPointExtensions
+  nameWithType: EndPointExtensions
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsExposed(IEndpoint, IManagementOptions)
+  nameWithType: EndPointExtensions.IsExposed(IEndpoint, IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint, Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  isExternal: true
+  name: ShouldInvoke(IEndpoint, IManagementOptions, ILogger)
+  nameWithType: EndPointExtensions.ShouldInvoke(IEndpoint, IManagementOptions, ILogger)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint, Steeltoe.Management.IManagementOptions, ILogger)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint
+  commentId: N:Steeltoe.Management.Endpoint
+  name: Steeltoe.Management.Endpoint
+  nameWithType: Steeltoe.Management.Endpoint
+  fullName: Steeltoe.Management.Endpoint
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.#ctor*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.#ctor
+  name: MetricsEndpoint
+  nameWithType: MetricsEndpoint.MetricsEndpoint
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricsEndpoint
+- uid: Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions
+  parent: Steeltoe.Management.Endpoint.Metrics
+  name: IMetricsEndpointOptions
+  nameWithType: IMetricsEndpointOptions
+  fullName: Steeltoe.Management.Endpoint.Metrics.IMetricsEndpointOptions
+- uid: Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter
+  commentId: T:Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter
+  parent: Steeltoe.Management.OpenTelemetry.Metrics.Exporter
+  name: SteeltoeExporter
+  nameWithType: SteeltoeExporter
+  fullName: Steeltoe.Management.OpenTelemetry.Metrics.Exporter.SteeltoeExporter
+- uid: ILogger{Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint}
+  commentId: '!:ILogger{Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint}'
+  definition: ILogger`1
+  name: ILogger<MetricsEndpoint>
+  nameWithType: ILogger<MetricsEndpoint>
+  fullName: ILogger<Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint>
+  nameWithType.vb: ILogger(Of MetricsEndpoint)
+  fullName.vb: ILogger(Of Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint)
+  name.vb: ILogger(Of MetricsEndpoint)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+    name: MetricsEndpoint
+    nameWithType: MetricsEndpoint
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+    name: MetricsEndpoint
+    nameWithType: MetricsEndpoint
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.OpenTelemetry.Metrics.Exporter
+  commentId: N:Steeltoe.Management.OpenTelemetry.Metrics.Exporter
+  name: Steeltoe.Management.OpenTelemetry.Metrics.Exporter
+  nameWithType: Steeltoe.Management.OpenTelemetry.Metrics.Exporter
+  fullName: Steeltoe.Management.OpenTelemetry.Metrics.Exporter
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options
+  name: Options
+  nameWithType: MetricsEndpoint.Options
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Options
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke
+  name: Invoke
+  nameWithType: MetricsEndpoint.Invoke
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.Invoke
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+  parent: Steeltoe.Management.Endpoint.Metrics
+  name: MetricsRequest
+  nameWithType: MetricsRequest
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsRequest
+- uid: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+  parent: Steeltoe.Management.Endpoint.Metrics
+  name: IMetricsResponse
+  nameWithType: IMetricsResponse
+  fullName: Steeltoe.Management.Endpoint.Metrics.IMetricsResponse
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags
+  name: GetMetricSamplesByTags
+  nameWithType: MetricsEndpoint.GetMetricSamplesByTags
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricSamplesByTags
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}}
+  parent: Steeltoe.Management.Endpoint.Metrics
+  definition: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+  name: MetricsEndpoint.MetricDictionary<List<MetricSample>>
+  nameWithType: MetricsEndpoint.MetricDictionary<List<MetricSample>>
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary<System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricSample>>
+  nameWithType.vb: MetricsEndpoint.MetricDictionary(Of List(Of MetricSample))
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricSample))
+  name.vb: MetricsEndpoint.MetricDictionary(Of List(Of MetricSample))
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+    name: MetricsEndpoint.MetricDictionary
+    nameWithType: MetricsEndpoint.MetricDictionary
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricSample
+    name: MetricSample
+    nameWithType: MetricSample
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricSample
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+    name: MetricsEndpoint.MetricDictionary
+    nameWithType: MetricsEndpoint.MetricDictionary
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricSample
+    name: MetricSample
+    nameWithType: MetricSample
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricSample
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<KeyValuePair<String, String>>
+  nameWithType: IEnumerable<KeyValuePair<String, String>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricSample}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MetricSample>
+  nameWithType: List<MetricSample>
+  fullName: System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricSample>
+  nameWithType.vb: List(Of MetricSample)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricSample)
+  name.vb: List(Of MetricSample)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricSample
+    name: MetricSample
+    nameWithType: MetricSample
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricSample
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricSample
+    name: MetricSample
+    nameWithType: MetricSample
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricSample
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+  name: MetricsEndpoint.MetricDictionary<T>
+  nameWithType: MetricsEndpoint.MetricDictionary<T>
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary<T>
+  nameWithType.vb: MetricsEndpoint.MetricDictionary(Of T)
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary(Of T)
+  name.vb: MetricsEndpoint.MetricDictionary(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+    name: MetricsEndpoint.MetricDictionary
+    nameWithType: MetricsEndpoint.MetricDictionary
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+    name: MetricsEndpoint.MetricDictionary
+    nameWithType: MetricsEndpoint.MetricDictionary
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric
+  name: GetMetric
+  nameWithType: MetricsEndpoint.GetMetric
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetric
+- uid: System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MetricTag>
+  nameWithType: List<MetricTag>
+  fullName: System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricTag>
+  nameWithType.vb: List(Of MetricTag)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricTag)
+  name.vb: List(Of MetricTag)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricTag
+    name: MetricTag
+    nameWithType: MetricTag
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricTag
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricTag
+    name: MetricTag
+    nameWithType: MetricTag
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricTag
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsResponse
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.MetricsResponse
+  parent: Steeltoe.Management.Endpoint.Metrics
+  name: MetricsResponse
+  nameWithType: MetricsResponse
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsResponse
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection
+  name: GetMetricsCollection
+  nameWithType: MetricsEndpoint.GetMetricsCollection
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.GetMetricsCollection
+- uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}}
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary{System.Collections.Generic.List{Steeltoe.Management.Endpoint.Metrics.MetricTag}}
+  parent: Steeltoe.Management.Endpoint.Metrics
+  definition: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+  name: MetricsEndpoint.MetricDictionary<List<MetricTag>>
+  nameWithType: MetricsEndpoint.MetricDictionary<List<MetricTag>>
+  fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary<System.Collections.Generic.List<Steeltoe.Management.Endpoint.Metrics.MetricTag>>
+  nameWithType.vb: MetricsEndpoint.MetricDictionary(Of List(Of MetricTag))
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.Metrics.MetricTag))
+  name.vb: MetricsEndpoint.MetricDictionary(Of List(Of MetricTag))
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+    name: MetricsEndpoint.MetricDictionary
+    nameWithType: MetricsEndpoint.MetricDictionary
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricTag
+    name: MetricTag
+    nameWithType: MetricTag
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricTag
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary`1
+    name: MetricsEndpoint.MetricDictionary
+    nameWithType: MetricsEndpoint.MetricDictionary
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint.MetricDictionary
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.MetricTag
+    name: MetricTag
+    nameWithType: MetricTag
+    fullName: Steeltoe.Management.Endpoint.Metrics.MetricTag
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

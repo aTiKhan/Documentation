@@ -1,0 +1,466 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions
+  commentId: T:Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions
+  id: PlaceholderResolverConfigurationExtensions
+  parent: Steeltoe.Extensions.Configuration.Placeholder
+  children:
+  - Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfiguration,ILoggerFactory)
+  - Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfigurationBuilder,ILoggerFactory)
+  langs:
+  - csharp
+  - vb
+  name: PlaceholderResolverConfigurationExtensions
+  nameWithType: PlaceholderResolverConfigurationExtensions
+  fullName: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Configuration/src/PlaceholderBase/PlaceholderResolverConfigurationExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PlaceholderResolverConfigurationExtensions
+    path: ../Steeltoe/src/Configuration/src/PlaceholderBase/PlaceholderResolverConfigurationExtensions.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Extensions.Configuration.PlaceholderBase
+  namespace: Steeltoe.Extensions.Configuration.Placeholder
+  syntax:
+    content: public static class PlaceholderResolverConfigurationExtensions
+    content.vb: Public Module PlaceholderResolverConfigurationExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfigurationBuilder,ILoggerFactory)
+  commentId: M:Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfigurationBuilder,ILoggerFactory)
+  id: AddPlaceholderResolver(IConfigurationBuilder,ILoggerFactory)
+  isExtensionMethod: true
+  parent: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPlaceholderResolver(IConfigurationBuilder, ILoggerFactory)
+  nameWithType: PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfigurationBuilder, ILoggerFactory)
+  fullName: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfigurationBuilder, ILoggerFactory)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/PlaceholderBase/PlaceholderResolverConfigurationExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddPlaceholderResolver
+    path: ../Steeltoe/src/Configuration/src/PlaceholderBase/PlaceholderResolverConfigurationExtensions.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Extensions.Configuration.PlaceholderBase
+  namespace: Steeltoe.Extensions.Configuration.Placeholder
+  summary: "\nAdd a placeholder resolver configuration source to the <see cref=\"!:ConfigurationBuilder\"></see>. The placeholder resolver source will capture and wrap all\nthe existing sources <see cref=\"!:IConfigurationSource\"></see> contained in the builder.  The newly created source will then replace the existing sources\nand provide placeholder resolution for the configuration. Typically you will want to add this configuration source as the last one so that you wrap all\nof the applications configuration sources with place holder resolution.\n"
+  example: []
+  syntax:
+    content: public static IConfigurationBuilder AddPlaceholderResolver(this IConfigurationBuilder builder, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: builder
+      type: IConfigurationBuilder
+      description: the configuration builder
+    - id: loggerFactory
+      type: ILoggerFactory
+      description: the logger factory to use
+    return:
+      type: IConfigurationBuilder
+      description: builder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPlaceholderResolver(builder As IConfigurationBuilder, loggerFactory As ILoggerFactory = Nothing) As IConfigurationBuilder
+  overload: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfiguration,ILoggerFactory)
+  commentId: M:Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfiguration,ILoggerFactory)
+  id: AddPlaceholderResolver(IConfiguration,ILoggerFactory)
+  isExtensionMethod: true
+  parent: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPlaceholderResolver(IConfiguration, ILoggerFactory)
+  nameWithType: PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfiguration, ILoggerFactory)
+  fullName: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver(IConfiguration, ILoggerFactory)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/PlaceholderBase/PlaceholderResolverConfigurationExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddPlaceholderResolver
+    path: ../Steeltoe/src/Configuration/src/PlaceholderBase/PlaceholderResolverConfigurationExtensions.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Extensions.Configuration.PlaceholderBase
+  namespace: Steeltoe.Extensions.Configuration.Placeholder
+  summary: "\nCreates a new <see cref=\"!:ConfigurationRoot\"></see> from a <xref href=\"Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverProvider\" data-throw-if-not-resolved=\"false\"></xref>.  The place holder resolver will be created using the existing\nconfiguration providers contained in the incoming configuration.  This results in providing placeholder resolution for those configuration sources.\n"
+  example: []
+  syntax:
+    content: public static IConfiguration AddPlaceholderResolver(this IConfiguration configuration, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: configuration
+      type: IConfiguration
+      description: incoming configuration to wrap
+    - id: loggerFactory
+      type: ILoggerFactory
+      description: the logger factory to use
+    return:
+      type: IConfiguration
+      description: a new configuration
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPlaceholderResolver(configuration As IConfiguration, loggerFactory As ILoggerFactory = Nothing) As IConfiguration
+  overload: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Steeltoe.Extensions.Configuration.Placeholder
+  commentId: N:Steeltoe.Extensions.Configuration.Placeholder
+  name: Steeltoe.Extensions.Configuration.Placeholder
+  nameWithType: Steeltoe.Extensions.Configuration.Placeholder
+  fullName: Steeltoe.Extensions.Configuration.Placeholder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver*
+  commentId: Overload:Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver
+  name: AddPlaceholderResolver
+  nameWithType: PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver
+  fullName: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverConfigurationExtensions.AddPlaceholderResolver
+- uid: IConfigurationBuilder
+  isExternal: true
+  name: IConfigurationBuilder
+  nameWithType: IConfigurationBuilder
+  fullName: IConfigurationBuilder
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverProvider
+  commentId: T:Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverProvider
+  name: PlaceholderResolverProvider
+  nameWithType: PlaceholderResolverProvider
+  fullName: Steeltoe.Extensions.Configuration.Placeholder.PlaceholderResolverProvider
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration

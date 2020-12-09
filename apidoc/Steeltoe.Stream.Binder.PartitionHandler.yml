@@ -1,0 +1,620 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.PartitionHandler
+  commentId: T:Steeltoe.Stream.Binder.PartitionHandler
+  id: PartitionHandler
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.PartitionHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy,Steeltoe.Stream.Binder.IPartitionSelectorStrategy)
+  - Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext
+  - Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser
+  - Steeltoe.Stream.Binder.PartitionHandler.PartitionCount
+  langs:
+  - csharp
+  - vb
+  name: PartitionHandler
+  nameWithType: PartitionHandler
+  fullName: Steeltoe.Stream.Binder.PartitionHandler
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PartitionHandler
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public class PartitionHandler
+    content.vb: Public Class PartitionHandler
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Stream.Binder.PartitionHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy,Steeltoe.Stream.Binder.IPartitionSelectorStrategy)
+  commentId: M:Steeltoe.Stream.Binder.PartitionHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy,Steeltoe.Stream.Binder.IPartitionSelectorStrategy)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy,Steeltoe.Stream.Binder.IPartitionSelectorStrategy)'
+  parent: Steeltoe.Stream.Binder.PartitionHandler
+  langs:
+  - csharp
+  - vb
+  name: PartitionHandler(IApplicationContext, IProducerOptions, IPartitionKeyExtractorStrategy, IPartitionSelectorStrategy)
+  nameWithType: PartitionHandler.PartitionHandler(IApplicationContext, IProducerOptions, IPartitionKeyExtractorStrategy, IPartitionSelectorStrategy)
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.PartitionHandler(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Stream.Config.IProducerOptions, Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy, Steeltoe.Stream.Binder.IPartitionSelectorStrategy)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public PartitionHandler(IApplicationContext applicationContext, IProducerOptions options, IPartitionKeyExtractorStrategy partitionKeyExtractorStrategy, IPartitionSelectorStrategy partitionSelectorStrategy)
+    parameters:
+    - id: applicationContext
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: options
+      type: Steeltoe.Stream.Config.IProducerOptions
+    - id: partitionKeyExtractorStrategy
+      type: Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+    - id: partitionSelectorStrategy
+      type: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+    content.vb: Public Sub New(applicationContext As IApplicationContext, options As IProducerOptions, partitionKeyExtractorStrategy As IPartitionKeyExtractorStrategy, partitionSelectorStrategy As IPartitionSelectorStrategy)
+  overload: Steeltoe.Stream.Binder.PartitionHandler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.PartitionHandler.PartitionCount
+  commentId: P:Steeltoe.Stream.Binder.PartitionHandler.PartitionCount
+  id: PartitionCount
+  parent: Steeltoe.Stream.Binder.PartitionHandler
+  langs:
+  - csharp
+  - vb
+  name: PartitionCount
+  nameWithType: PartitionHandler.PartitionCount
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.PartitionCount
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PartitionCount
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public int PartitionCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PartitionCount As Integer
+  overload: Steeltoe.Stream.Binder.PartitionHandler.PartitionCount*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser
+  commentId: P:Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser
+  id: ExpressionParser
+  parent: Steeltoe.Stream.Binder.PartitionHandler
+  langs:
+  - csharp
+  - vb
+  name: ExpressionParser
+  nameWithType: PartitionHandler.ExpressionParser
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExpressionParser
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IExpressionParser ExpressionParser { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Expression.IExpressionParser
+    content.vb: Public Property ExpressionParser As IExpressionParser
+  overload: Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext
+  commentId: P:Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext
+  id: EvaluationContext
+  parent: Steeltoe.Stream.Binder.PartitionHandler
+  langs:
+  - csharp
+  - vb
+  name: EvaluationContext
+  nameWithType: PartitionHandler.EvaluationContext
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: EvaluationContext
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+    startLine: 57
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IEvaluationContext EvaluationContext { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Expression.IEvaluationContext
+    content.vb: Public Property EvaluationContext As IEvaluationContext
+  overload: Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition(Steeltoe.Messaging.IMessage)
+  id: DeterminePartition(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Stream.Binder.PartitionHandler
+  langs:
+  - csharp
+  - vb
+  name: DeterminePartition(IMessage)
+  nameWithType: PartitionHandler.DeterminePartition(IMessage)
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeterminePartition
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/PartitionHandler.cs
+    startLine: 75
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public int DeterminePartition(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: System.Int32
+    content.vb: Public Function DeterminePartition(message As IMessage) As Integer
+  overload: Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Binder.PartitionHandler.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binder.PartitionHandler.#ctor
+  name: PartitionHandler
+  nameWithType: PartitionHandler.PartitionHandler
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.PartitionHandler
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Stream.Config.IProducerOptions
+  commentId: T:Steeltoe.Stream.Config.IProducerOptions
+  parent: Steeltoe.Stream.Config
+  name: IProducerOptions
+  nameWithType: IProducerOptions
+  fullName: Steeltoe.Stream.Config.IProducerOptions
+- uid: Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+  commentId: T:Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+  parent: Steeltoe.Stream.Binder
+  name: IPartitionKeyExtractorStrategy
+  nameWithType: IPartitionKeyExtractorStrategy
+  fullName: Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+- uid: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  commentId: T:Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  parent: Steeltoe.Stream.Binder
+  name: IPartitionSelectorStrategy
+  nameWithType: IPartitionSelectorStrategy
+  fullName: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Stream.Config
+  commentId: N:Steeltoe.Stream.Config
+  name: Steeltoe.Stream.Config
+  nameWithType: Steeltoe.Stream.Config
+  fullName: Steeltoe.Stream.Config
+- uid: Steeltoe.Stream.Binder.PartitionHandler.PartitionCount*
+  commentId: Overload:Steeltoe.Stream.Binder.PartitionHandler.PartitionCount
+  name: PartitionCount
+  nameWithType: PartitionHandler.PartitionCount
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.PartitionCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser*
+  commentId: Overload:Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser
+  name: ExpressionParser
+  nameWithType: PartitionHandler.ExpressionParser
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.ExpressionParser
+- uid: Steeltoe.Common.Expression.IExpressionParser
+  commentId: T:Steeltoe.Common.Expression.IExpressionParser
+  parent: Steeltoe.Common.Expression
+  name: IExpressionParser
+  nameWithType: IExpressionParser
+  fullName: Steeltoe.Common.Expression.IExpressionParser
+- uid: Steeltoe.Common.Expression
+  commentId: N:Steeltoe.Common.Expression
+  name: Steeltoe.Common.Expression
+  nameWithType: Steeltoe.Common.Expression
+  fullName: Steeltoe.Common.Expression
+- uid: Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext*
+  commentId: Overload:Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext
+  name: EvaluationContext
+  nameWithType: PartitionHandler.EvaluationContext
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.EvaluationContext
+- uid: Steeltoe.Common.Expression.IEvaluationContext
+  commentId: T:Steeltoe.Common.Expression.IEvaluationContext
+  parent: Steeltoe.Common.Expression
+  name: IEvaluationContext
+  nameWithType: IEvaluationContext
+  fullName: Steeltoe.Common.Expression.IEvaluationContext
+- uid: Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition*
+  commentId: Overload:Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition
+  name: DeterminePartition
+  nameWithType: PartitionHandler.DeterminePartition
+  fullName: Steeltoe.Stream.Binder.PartitionHandler.DeterminePartition
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging

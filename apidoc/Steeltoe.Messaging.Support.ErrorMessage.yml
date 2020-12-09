@@ -1,0 +1,1157 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Support.ErrorMessage
+  commentId: T:Steeltoe.Messaging.Support.ErrorMessage
+  id: ErrorMessage
+  parent: Steeltoe.Messaging.Support
+  children:
+  - Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception)
+  - Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage
+  - Steeltoe.Messaging.Support.ErrorMessage.ToString
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: ErrorMessage
+  fullName: Steeltoe.Messaging.Support.ErrorMessage
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ErrorMessage
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 9
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: 'public class ErrorMessage : Message<Exception>, IMessage<Exception>, IMessage'
+    content.vb: >-
+      Public Class ErrorMessage
+
+          Inherits Message(Of Exception)
+
+          Implements IMessage(Of Exception), IMessage
+  inheritance:
+  - System.Object
+  - Steeltoe.Messaging.AbstractMessage
+  - Steeltoe.Messaging.Message{System.Exception}
+  implements:
+  - Steeltoe.Messaging.IMessage{System.Exception}
+  - Steeltoe.Messaging.IMessage
+  inheritedMembers:
+  - Steeltoe.Messaging.Message{System.Exception}.payload
+  - Steeltoe.Messaging.Message{System.Exception}.headers
+  - Steeltoe.Messaging.Message{System.Exception}.Payload
+  - Steeltoe.Messaging.Message{System.Exception}.Headers
+  - Steeltoe.Messaging.Message{System.Exception}.Steeltoe#Messaging#IMessage#Payload
+  - Steeltoe.Messaging.Message{System.Exception}.Equals(System.Object)
+  - Steeltoe.Messaging.Message{System.Exception}.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception)
+  commentId: M:Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception)
+  id: '#ctor(System.Exception)'
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage(Exception)
+  nameWithType: ErrorMessage.ErrorMessage(Exception)
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public ErrorMessage(Exception payload)
+    parameters:
+    - id: payload
+      type: System.Exception
+    content.vb: Public Sub New(payload As Exception)
+  overload: Steeltoe.Messaging.Support.ErrorMessage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: '#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object})'
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage(Exception, IDictionary<String, Object>)
+  nameWithType: ErrorMessage.ErrorMessage(Exception, IDictionary<String, Object>)
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception, System.Collections.Generic.IDictionary<System.String, System.Object>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public ErrorMessage(Exception payload, IDictionary<string, object> headers)
+    parameters:
+    - id: payload
+      type: System.Exception
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Public Sub New(payload As Exception, headers As IDictionary(Of String, Object))
+  overload: Steeltoe.Messaging.Support.ErrorMessage.#ctor*
+  nameWithType.vb: ErrorMessage.ErrorMessage(Exception, IDictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception, System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  name.vb: ErrorMessage(Exception, IDictionary(Of String, Object))
+- uid: Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders)
+  id: '#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders)'
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage(Exception, IMessageHeaders)
+  nameWithType: ErrorMessage.ErrorMessage(Exception, IMessageHeaders)
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception, Steeltoe.Messaging.IMessageHeaders)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public ErrorMessage(Exception payload, IMessageHeaders headers)
+    parameters:
+    - id: payload
+      type: System.Exception
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    content.vb: Public Sub New(payload As Exception, headers As IMessageHeaders)
+  overload: Steeltoe.Messaging.Support.ErrorMessage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessage)
+  id: '#ctor(System.Exception,Steeltoe.Messaging.IMessage)'
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage(Exception, IMessage)
+  nameWithType: ErrorMessage.ErrorMessage(Exception, IMessage)
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception, Steeltoe.Messaging.IMessage)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public ErrorMessage(Exception payload, IMessage originalMessage)
+    parameters:
+    - id: payload
+      type: System.Exception
+    - id: originalMessage
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Public Sub New(payload As Exception, originalMessage As IMessage)
+  overload: Steeltoe.Messaging.Support.ErrorMessage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.IMessage)
+  id: '#ctor(System.Exception,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.IMessage)'
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage(Exception, IDictionary<String, Object>, IMessage)
+  nameWithType: ErrorMessage.ErrorMessage(Exception, IDictionary<String, Object>, IMessage)
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception, System.Collections.Generic.IDictionary<System.String, System.Object>, Steeltoe.Messaging.IMessage)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 35
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public ErrorMessage(Exception payload, IDictionary<string, object> headers, IMessage originalMessage)
+    parameters:
+    - id: payload
+      type: System.Exception
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    - id: originalMessage
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Public Sub New(payload As Exception, headers As IDictionary(Of String, Object), originalMessage As IMessage)
+  overload: Steeltoe.Messaging.Support.ErrorMessage.#ctor*
+  nameWithType.vb: ErrorMessage.ErrorMessage(Exception, IDictionary(Of String, Object), IMessage)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception, System.Collections.Generic.IDictionary(Of System.String, System.Object), Steeltoe.Messaging.IMessage)
+  name.vb: ErrorMessage(Exception, IDictionary(Of String, Object), IMessage)
+- uid: Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Support.ErrorMessage.#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders,Steeltoe.Messaging.IMessage)
+  id: '#ctor(System.Exception,Steeltoe.Messaging.IMessageHeaders,Steeltoe.Messaging.IMessage)'
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage(Exception, IMessageHeaders, IMessage)
+  nameWithType: ErrorMessage.ErrorMessage(Exception, IMessageHeaders, IMessage)
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage(System.Exception, Steeltoe.Messaging.IMessageHeaders, Steeltoe.Messaging.IMessage)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public ErrorMessage(Exception payload, IMessageHeaders headers, IMessage originalMessage)
+    parameters:
+    - id: payload
+      type: System.Exception
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    - id: originalMessage
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Public Sub New(payload As Exception, headers As IMessageHeaders, originalMessage As IMessage)
+  overload: Steeltoe.Messaging.Support.ErrorMessage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage
+  commentId: P:Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage
+  id: OriginalMessage
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: OriginalMessage
+  nameWithType: ErrorMessage.OriginalMessage
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OriginalMessage
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 47
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public IMessage OriginalMessage { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Public ReadOnly Property OriginalMessage As IMessage
+  overload: Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.Support.ErrorMessage.ToString
+  commentId: M:Steeltoe.Messaging.Support.ErrorMessage.ToString
+  id: ToString
+  parent: Steeltoe.Messaging.Support.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ErrorMessage.ToString()
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToString
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/ErrorMessage.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: Steeltoe.Messaging.Message{System.Exception}.ToString
+  overload: Steeltoe.Messaging.Support.ErrorMessage.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Steeltoe.Messaging.Support
+  commentId: N:Steeltoe.Messaging.Support
+  name: Steeltoe.Messaging.Support
+  nameWithType: Steeltoe.Messaging.Support
+  fullName: Steeltoe.Messaging.Support
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.AbstractMessage
+  commentId: T:Steeltoe.Messaging.AbstractMessage
+  parent: Steeltoe.Messaging
+  name: AbstractMessage
+  nameWithType: AbstractMessage
+  fullName: Steeltoe.Messaging.AbstractMessage
+- uid: Steeltoe.Messaging.Message{System.Exception}
+  commentId: T:Steeltoe.Messaging.Message{System.Exception}
+  parent: Steeltoe.Messaging
+  definition: Steeltoe.Messaging.Message`1
+  name: Message<Exception>
+  nameWithType: Message<Exception>
+  fullName: Steeltoe.Messaging.Message<System.Exception>
+  nameWithType.vb: Message(Of Exception)
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception)
+  name.vb: Message(Of Exception)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1
+    name: Message
+    nameWithType: Message
+    fullName: Steeltoe.Messaging.Message
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1
+    name: Message
+    nameWithType: Message
+    fullName: Steeltoe.Messaging.Message
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage{System.Exception}
+  commentId: T:Steeltoe.Messaging.IMessage{System.Exception}
+  parent: Steeltoe.Messaging
+  definition: Steeltoe.Messaging.IMessage`1
+  name: IMessage<Exception>
+  nameWithType: IMessage<Exception>
+  fullName: Steeltoe.Messaging.IMessage<System.Exception>
+  nameWithType.vb: IMessage(Of Exception)
+  fullName.vb: Steeltoe.Messaging.IMessage(Of System.Exception)
+  name.vb: IMessage(Of Exception)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging.Message{System.Exception}.payload
+  commentId: F:Steeltoe.Messaging.Message{System.Exception}.payload
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.payload
+  name: payload
+  nameWithType: Message<Exception>.payload
+  fullName: Steeltoe.Messaging.Message<System.Exception>.payload
+  nameWithType.vb: Message(Of Exception).payload
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).payload
+- uid: Steeltoe.Messaging.Message{System.Exception}.headers
+  commentId: F:Steeltoe.Messaging.Message{System.Exception}.headers
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.headers
+  name: headers
+  nameWithType: Message<Exception>.headers
+  fullName: Steeltoe.Messaging.Message<System.Exception>.headers
+  nameWithType.vb: Message(Of Exception).headers
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).headers
+- uid: Steeltoe.Messaging.Message{System.Exception}.Payload
+  commentId: P:Steeltoe.Messaging.Message{System.Exception}.Payload
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.Payload
+  name: Payload
+  nameWithType: Message<Exception>.Payload
+  fullName: Steeltoe.Messaging.Message<System.Exception>.Payload
+  nameWithType.vb: Message(Of Exception).Payload
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).Payload
+- uid: Steeltoe.Messaging.Message{System.Exception}.Headers
+  commentId: P:Steeltoe.Messaging.Message{System.Exception}.Headers
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.Headers
+  name: Headers
+  nameWithType: Message<Exception>.Headers
+  fullName: Steeltoe.Messaging.Message<System.Exception>.Headers
+  nameWithType.vb: Message(Of Exception).Headers
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).Headers
+- uid: Steeltoe.Messaging.Message{System.Exception}.Steeltoe#Messaging#IMessage#Payload
+  commentId: P:Steeltoe.Messaging.Message{System.Exception}.Steeltoe#Messaging#IMessage#Payload
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.Steeltoe#Messaging#IMessage#Payload
+  name: IMessage.Payload
+  nameWithType: Message<Exception>.IMessage.Payload
+  fullName: Steeltoe.Messaging.Message<System.Exception>.Steeltoe.Messaging.IMessage.Payload
+  nameWithType.vb: Message(Of Exception).Steeltoe.Messaging.IMessage.Payload
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).Steeltoe.Messaging.IMessage.Payload
+  name.vb: Steeltoe.Messaging.IMessage.Payload
+- uid: Steeltoe.Messaging.Message{System.Exception}.Equals(System.Object)
+  commentId: M:Steeltoe.Messaging.Message{System.Exception}.Equals(System.Object)
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.Equals(System.Object)
+  name: Equals(Object)
+  nameWithType: Message<Exception>.Equals(Object)
+  fullName: Steeltoe.Messaging.Message<System.Exception>.Equals(System.Object)
+  nameWithType.vb: Message(Of Exception).Equals(Object)
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).Equals(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1.Equals(System.Object)
+    name: Equals
+    nameWithType: Message<Exception>.Equals
+    fullName: Steeltoe.Messaging.Message<System.Exception>.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1.Equals(System.Object)
+    name: Equals
+    nameWithType: Message(Of Exception).Equals
+    fullName: Steeltoe.Messaging.Message(Of System.Exception).Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Message{System.Exception}.GetHashCode
+  commentId: M:Steeltoe.Messaging.Message{System.Exception}.GetHashCode
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.GetHashCode
+  name: GetHashCode()
+  nameWithType: Message<Exception>.GetHashCode()
+  fullName: Steeltoe.Messaging.Message<System.Exception>.GetHashCode()
+  nameWithType.vb: Message(Of Exception).GetHashCode()
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).GetHashCode()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1.GetHashCode
+    name: GetHashCode
+    nameWithType: Message<Exception>.GetHashCode
+    fullName: Steeltoe.Messaging.Message<System.Exception>.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1.GetHashCode
+    name: GetHashCode
+    nameWithType: Message(Of Exception).GetHashCode
+    fullName: Steeltoe.Messaging.Message(Of System.Exception).GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Message`1
+  commentId: T:Steeltoe.Messaging.Message`1
+  name: Message<P>
+  nameWithType: Message<P>
+  fullName: Steeltoe.Messaging.Message<P>
+  nameWithType.vb: Message(Of P)
+  fullName.vb: Steeltoe.Messaging.Message(Of P)
+  name.vb: Message(Of P)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1
+    name: Message
+    nameWithType: Message
+    fullName: Steeltoe.Messaging.Message
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: P
+    nameWithType: P
+    fullName: P
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1
+    name: Message
+    nameWithType: Message
+    fullName: Steeltoe.Messaging.Message
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: P
+    nameWithType: P
+    fullName: P
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage`1
+  commentId: T:Steeltoe.Messaging.IMessage`1
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Steeltoe.Messaging.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Steeltoe.Messaging.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Message`1.payload
+  commentId: F:Steeltoe.Messaging.Message`1.payload
+  name: payload
+  nameWithType: Message<P>.payload
+  fullName: Steeltoe.Messaging.Message<P>.payload
+  nameWithType.vb: Message(Of P).payload
+  fullName.vb: Steeltoe.Messaging.Message(Of P).payload
+- uid: Steeltoe.Messaging.Message`1.headers
+  commentId: F:Steeltoe.Messaging.Message`1.headers
+  name: headers
+  nameWithType: Message<P>.headers
+  fullName: Steeltoe.Messaging.Message<P>.headers
+  nameWithType.vb: Message(Of P).headers
+  fullName.vb: Steeltoe.Messaging.Message(Of P).headers
+- uid: Steeltoe.Messaging.Message`1.Payload
+  commentId: P:Steeltoe.Messaging.Message`1.Payload
+  name: Payload
+  nameWithType: Message<P>.Payload
+  fullName: Steeltoe.Messaging.Message<P>.Payload
+  nameWithType.vb: Message(Of P).Payload
+  fullName.vb: Steeltoe.Messaging.Message(Of P).Payload
+- uid: Steeltoe.Messaging.Message`1.Headers
+  commentId: P:Steeltoe.Messaging.Message`1.Headers
+  name: Headers
+  nameWithType: Message<P>.Headers
+  fullName: Steeltoe.Messaging.Message<P>.Headers
+  nameWithType.vb: Message(Of P).Headers
+  fullName.vb: Steeltoe.Messaging.Message(Of P).Headers
+- uid: Steeltoe.Messaging.Message`1.Steeltoe#Messaging#IMessage#Payload
+  commentId: P:Steeltoe.Messaging.Message`1.Steeltoe#Messaging#IMessage#Payload
+  name: IMessage.Payload
+  nameWithType: Message<P>.IMessage.Payload
+  fullName: Steeltoe.Messaging.Message<P>.Steeltoe.Messaging.IMessage.Payload
+  nameWithType.vb: Message(Of P).Steeltoe.Messaging.IMessage.Payload
+  fullName.vb: Steeltoe.Messaging.Message(Of P).Steeltoe.Messaging.IMessage.Payload
+  name.vb: Steeltoe.Messaging.IMessage.Payload
+- uid: Steeltoe.Messaging.Message`1.Equals(System.Object)
+  commentId: M:Steeltoe.Messaging.Message`1.Equals(System.Object)
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Message<P>.Equals(Object)
+  fullName: Steeltoe.Messaging.Message<P>.Equals(System.Object)
+  nameWithType.vb: Message(Of P).Equals(Object)
+  fullName.vb: Steeltoe.Messaging.Message(Of P).Equals(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1.Equals(System.Object)
+    name: Equals
+    nameWithType: Message<P>.Equals
+    fullName: Steeltoe.Messaging.Message<P>.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1.Equals(System.Object)
+    name: Equals
+    nameWithType: Message(Of P).Equals
+    fullName: Steeltoe.Messaging.Message(Of P).Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Message`1.GetHashCode
+  commentId: M:Steeltoe.Messaging.Message`1.GetHashCode
+  name: GetHashCode()
+  nameWithType: Message<P>.GetHashCode()
+  fullName: Steeltoe.Messaging.Message<P>.GetHashCode()
+  nameWithType.vb: Message(Of P).GetHashCode()
+  fullName.vb: Steeltoe.Messaging.Message(Of P).GetHashCode()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1.GetHashCode
+    name: GetHashCode
+    nameWithType: Message<P>.GetHashCode
+    fullName: Steeltoe.Messaging.Message<P>.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1.GetHashCode
+    name: GetHashCode
+    nameWithType: Message(Of P).GetHashCode
+    fullName: Steeltoe.Messaging.Message(Of P).GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.ErrorMessage.#ctor*
+  commentId: Overload:Steeltoe.Messaging.Support.ErrorMessage.#ctor
+  name: ErrorMessage
+  nameWithType: ErrorMessage.ErrorMessage
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ErrorMessage
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Messaging.IMessageHeaders
+  commentId: T:Steeltoe.Messaging.IMessageHeaders
+  parent: Steeltoe.Messaging
+  name: IMessageHeaders
+  nameWithType: IMessageHeaders
+  fullName: Steeltoe.Messaging.IMessageHeaders
+- uid: Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage*
+  commentId: Overload:Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage
+  name: OriginalMessage
+  nameWithType: ErrorMessage.OriginalMessage
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.OriginalMessage
+- uid: Steeltoe.Messaging.Message{System.Exception}.ToString
+  commentId: M:Steeltoe.Messaging.Message{System.Exception}.ToString
+  parent: Steeltoe.Messaging.Message{System.Exception}
+  definition: Steeltoe.Messaging.Message`1.ToString
+  name: ToString()
+  nameWithType: Message<Exception>.ToString()
+  fullName: Steeltoe.Messaging.Message<System.Exception>.ToString()
+  nameWithType.vb: Message(Of Exception).ToString()
+  fullName.vb: Steeltoe.Messaging.Message(Of System.Exception).ToString()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1.ToString
+    name: ToString
+    nameWithType: Message<Exception>.ToString
+    fullName: Steeltoe.Messaging.Message<System.Exception>.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1.ToString
+    name: ToString
+    nameWithType: Message(Of Exception).ToString
+    fullName: Steeltoe.Messaging.Message(Of System.Exception).ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.ErrorMessage.ToString*
+  commentId: Overload:Steeltoe.Messaging.Support.ErrorMessage.ToString
+  name: ToString
+  nameWithType: ErrorMessage.ToString
+  fullName: Steeltoe.Messaging.Support.ErrorMessage.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.Message`1.ToString
+  commentId: M:Steeltoe.Messaging.Message`1.ToString
+  name: ToString()
+  nameWithType: Message<P>.ToString()
+  fullName: Steeltoe.Messaging.Message<P>.ToString()
+  nameWithType.vb: Message(Of P).ToString()
+  fullName.vb: Steeltoe.Messaging.Message(Of P).ToString()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Message`1.ToString
+    name: ToString
+    nameWithType: Message<P>.ToString
+    fullName: Steeltoe.Messaging.Message<P>.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Message`1.ToString
+    name: ToString
+    nameWithType: Message(Of P).ToString
+    fullName: Steeltoe.Messaging.Message(Of P).ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

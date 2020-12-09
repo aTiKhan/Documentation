@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Retry.IRetryListener
+  commentId: T:Steeltoe.Common.Retry.IRetryListener
+  id: IRetryListener
+  parent: Steeltoe.Common.Retry
+  children:
+  - Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  - Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  - Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  langs:
+  - csharp
+  - vb
+  name: IRetryListener
+  nameWithType: IRetryListener
+  fullName: Steeltoe.Common.Retry.IRetryListener
+  type: Interface
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IRetryListener
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryListener.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nInterface for listener that can be used to add behaviour to a retry.\nImplementations of RetryOperations can chose to issue callbacks to an\ninterceptor during the retry lifecycle.\n"
+  example: []
+  syntax:
+    content: public interface IRetryListener
+    content.vb: Public Interface IRetryListener
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  commentId: M:Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  id: Open(Steeltoe.Common.Retry.IRetryContext)
+  parent: Steeltoe.Common.Retry.IRetryListener
+  langs:
+  - csharp
+  - vb
+  name: Open(IRetryContext)
+  nameWithType: IRetryListener.Open(IRetryContext)
+  fullName: Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Open
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryListener.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nCalled before the first attempt in a retry.\n"
+  example: []
+  syntax:
+    content: bool Open(IRetryContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Retry.IRetryContext
+      description: the current retry context
+    return:
+      type: System.Boolean
+      description: true if the retry should proceed
+    content.vb: Function Open(context As IRetryContext) As Boolean
+  overload: Steeltoe.Common.Retry.IRetryListener.Open*
+- uid: Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  commentId: M:Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  id: Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  parent: Steeltoe.Common.Retry.IRetryListener
+  langs:
+  - csharp
+  - vb
+  name: Close(IRetryContext, Exception)
+  nameWithType: IRetryListener.Close(IRetryContext, Exception)
+  fullName: Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Close
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryListener.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nCalled after the final attempt (successful or not).\n"
+  example: []
+  syntax:
+    content: void Close(IRetryContext context, Exception exception)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Retry.IRetryContext
+      description: the current retry context
+    - id: exception
+      type: System.Exception
+      description: the last exception that was thrown during retry
+    content.vb: Sub Close(context As IRetryContext, exception As Exception)
+  overload: Steeltoe.Common.Retry.IRetryListener.Close*
+- uid: Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  commentId: M:Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  id: OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  parent: Steeltoe.Common.Retry.IRetryListener
+  langs:
+  - csharp
+  - vb
+  name: OnError(IRetryContext, Exception)
+  nameWithType: IRetryListener.OnError(IRetryContext, Exception)
+  fullName: Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnError
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryListener.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nCalled after every unsuccessful attempt at a retry.\n"
+  example: []
+  syntax:
+    content: void OnError(IRetryContext context, Exception exception)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Retry.IRetryContext
+      description: the current retry context
+    - id: exception
+      type: System.Exception
+      description: the last exception that was thrown during retry
+    content.vb: Sub OnError(context As IRetryContext, exception As Exception)
+  overload: Steeltoe.Common.Retry.IRetryListener.OnError*
+references:
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Common.Retry.IRetryListener.Open*
+  commentId: Overload:Steeltoe.Common.Retry.IRetryListener.Open
+  name: Open
+  nameWithType: IRetryListener.Open
+  fullName: Steeltoe.Common.Retry.IRetryListener.Open
+- uid: Steeltoe.Common.Retry.IRetryContext
+  commentId: T:Steeltoe.Common.Retry.IRetryContext
+  parent: Steeltoe.Common.Retry
+  name: IRetryContext
+  nameWithType: IRetryContext
+  fullName: Steeltoe.Common.Retry.IRetryContext
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Retry.IRetryListener.Close*
+  commentId: Overload:Steeltoe.Common.Retry.IRetryListener.Close
+  name: Close
+  nameWithType: IRetryListener.Close
+  fullName: Steeltoe.Common.Retry.IRetryListener.Close
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Steeltoe.Common.Retry.IRetryListener.OnError*
+  commentId: Overload:Steeltoe.Common.Retry.IRetryListener.OnError
+  name: OnError
+  nameWithType: IRetryListener.OnError
+  fullName: Steeltoe.Common.Retry.IRetryListener.OnError

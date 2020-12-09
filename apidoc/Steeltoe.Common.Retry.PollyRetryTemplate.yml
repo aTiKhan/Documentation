@@ -1,0 +1,2055 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate
+  commentId: T:Steeltoe.Common.Retry.PollyRetryTemplate
+  id: PollyRetryTemplate
+  parent: Steeltoe.Common.Retry
+  children:
+  - Steeltoe.Common.Retry.PollyRetryTemplate.#ctor(System.Collections.Generic.Dictionary{System.Type,System.Boolean},System.Int32,System.Boolean,System.Int32,System.Int32,System.Double)
+  - Steeltoe.Common.Retry.PollyRetryTemplate.#ctor(System.Int32,System.Int32,System.Int32,System.Double)
+  - Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext})
+  - Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext},IRecoveryCallback)
+  - Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext},System.Action{IRetryContext})
+  - Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0})
+  - Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0},IRecoveryCallback{``0})
+  - Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0},System.Func{IRetryContext,``0})
+  langs:
+  - csharp
+  - vb
+  name: PollyRetryTemplate
+  nameWithType: PollyRetryTemplate
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PollyRetryTemplate
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: 'public class PollyRetryTemplate : RetryTemplate, IRetryOperation'
+    content.vb: >-
+      Public Class PollyRetryTemplate
+
+          Inherits RetryTemplate
+
+          Implements IRetryOperation
+  inheritance:
+  - System.Object
+  - Steeltoe.Common.Retry.RetryTemplate
+  implements:
+  - Steeltoe.Common.Retry.IRetryOperation
+  inheritedMembers:
+  - Steeltoe.Common.Retry.RetryTemplate.listeners
+  - Steeltoe.Common.Retry.RetryTemplate.RegisterListener(Steeltoe.Common.Retry.IRetryListener)
+  - Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,{T}})
+  - Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,{T}},Steeltoe.Common.Retry.IRecoveryCallback{{T}})
+  - Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+  - Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+  - Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,{T}},System.Func{Steeltoe.Common.Retry.IRetryContext,{T}})
+  - Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.#ctor(System.Int32,System.Int32,System.Int32,System.Double)
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.#ctor(System.Int32,System.Int32,System.Int32,System.Double)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Double)'
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: PollyRetryTemplate(Int32, Int32, Int32, Double)
+  nameWithType: PollyRetryTemplate.PollyRetryTemplate(Int32, Int32, Int32, Double)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.PollyRetryTemplate(System.Int32, System.Int32, System.Int32, System.Double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public PollyRetryTemplate(int maxAttempts, int backOffInitialInterval, int backOffMaxInterval, double backOffMultiplier)
+    parameters:
+    - id: maxAttempts
+      type: System.Int32
+    - id: backOffInitialInterval
+      type: System.Int32
+    - id: backOffMaxInterval
+      type: System.Int32
+    - id: backOffMultiplier
+      type: System.Double
+    content.vb: Public Sub New(maxAttempts As Integer, backOffInitialInterval As Integer, backOffMaxInterval As Integer, backOffMultiplier As Double)
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.#ctor(System.Collections.Generic.Dictionary{System.Type,System.Boolean},System.Int32,System.Boolean,System.Int32,System.Int32,System.Double)
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.#ctor(System.Collections.Generic.Dictionary{System.Type,System.Boolean},System.Int32,System.Boolean,System.Int32,System.Int32,System.Double)
+  id: '#ctor(System.Collections.Generic.Dictionary{System.Type,System.Boolean},System.Int32,System.Boolean,System.Int32,System.Int32,System.Double)'
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: PollyRetryTemplate(Dictionary<Type, Boolean>, Int32, Boolean, Int32, Int32, Double)
+  nameWithType: PollyRetryTemplate.PollyRetryTemplate(Dictionary<Type, Boolean>, Int32, Boolean, Int32, Int32, Double)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.PollyRetryTemplate(System.Collections.Generic.Dictionary<System.Type, System.Boolean>, System.Int32, System.Boolean, System.Int32, System.Int32, System.Double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public PollyRetryTemplate(Dictionary<Type, bool> retryableExceptions, int maxAttempts, bool defaultRetryable, int backOffInitialInterval, int backOffMaxInterval, double backOffMultiplier)
+    parameters:
+    - id: retryableExceptions
+      type: System.Collections.Generic.Dictionary{System.Type,System.Boolean}
+    - id: maxAttempts
+      type: System.Int32
+    - id: defaultRetryable
+      type: System.Boolean
+    - id: backOffInitialInterval
+      type: System.Int32
+    - id: backOffMaxInterval
+      type: System.Int32
+    - id: backOffMultiplier
+      type: System.Double
+    content.vb: Public Sub New(retryableExceptions As Dictionary(Of Type, Boolean), maxAttempts As Integer, defaultRetryable As Boolean, backOffInitialInterval As Integer, backOffMaxInterval As Integer, backOffMultiplier As Double)
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.#ctor*
+  nameWithType.vb: PollyRetryTemplate.PollyRetryTemplate(Dictionary(Of Type, Boolean), Int32, Boolean, Int32, Int32, Double)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Common.Retry.PollyRetryTemplate.PollyRetryTemplate(System.Collections.Generic.Dictionary(Of System.Type, System.Boolean), System.Int32, System.Boolean, System.Int32, System.Int32, System.Double)
+  name.vb: PollyRetryTemplate(Dictionary(Of Type, Boolean), Int32, Boolean, Int32, Int32, Double)
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0})
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0})
+  id: Execute``1(System.Func{IRetryContext,``0})
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(Func<IRetryContext, T>)
+  nameWithType: PollyRetryTemplate.Execute<T>(Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.Execute<T>(System.Func<IRetryContext, T>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public override T Execute<T>(Func<IRetryContext, T> retryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Func{IRetryContext,{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Overrides Function Execute(Of T)(retryCallback As Func(Of IRetryContext, T)) As T
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.Execute*
+  nameWithType.vb: PollyRetryTemplate.Execute(Of T)(Func(Of IRetryContext, T))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(Of T)(System.Func(Of IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T))
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0},System.Func{IRetryContext,``0})
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0},System.Func{IRetryContext,``0})
+  id: Execute``1(System.Func{IRetryContext,``0},System.Func{IRetryContext,``0})
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  nameWithType: PollyRetryTemplate.Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.Execute<T>(System.Func<IRetryContext, T>, System.Func<IRetryContext, T>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 46
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public override T Execute<T>(Func<IRetryContext, T> retryCallback, Func<IRetryContext, T> recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Func{IRetryContext,{T}}
+    - id: recoveryCallback
+      type: System.Func{IRetryContext,{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Overrides Function Execute(Of T)(retryCallback As Func(Of IRetryContext, T), recoveryCallback As Func(Of IRetryContext, T)) As T
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.Execute*
+  nameWithType.vb: PollyRetryTemplate.Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(Of T)(System.Func(Of IRetryContext, T), System.Func(Of IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext},System.Action{IRetryContext})
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext},System.Action{IRetryContext})
+  id: Execute(System.Action{IRetryContext},System.Action{IRetryContext})
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: Execute(Action<IRetryContext>, Action<IRetryContext>)
+  nameWithType: PollyRetryTemplate.Execute(Action<IRetryContext>, Action<IRetryContext>)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action<IRetryContext>, System.Action<IRetryContext>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 52
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public override void Execute(Action<IRetryContext> retryCallback, Action<IRetryContext> recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Action{IRetryContext}
+    - id: recoveryCallback
+      type: System.Action{IRetryContext}
+    content.vb: Public Overrides Sub Execute(retryCallback As Action(Of IRetryContext), recoveryCallback As Action(Of IRetryContext))
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.Execute*
+  nameWithType.vb: PollyRetryTemplate.Execute(Action(Of IRetryContext), Action(Of IRetryContext))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action(Of IRetryContext), System.Action(Of IRetryContext))
+  name.vb: Execute(Action(Of IRetryContext), Action(Of IRetryContext))
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0},IRecoveryCallback{``0})
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.Execute``1(System.Func{IRetryContext,``0},IRecoveryCallback{``0})
+  id: Execute``1(System.Func{IRetryContext,``0},IRecoveryCallback{``0})
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  nameWithType: PollyRetryTemplate.Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.Execute<T>(System.Func<IRetryContext, T>, IRecoveryCallback<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 58
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public override T Execute<T>(Func<IRetryContext, T> retryCallback, IRecoveryCallback<T> recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Func{IRetryContext,{T}}
+    - id: recoveryCallback
+      type: IRecoveryCallback{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Overrides Function Execute(Of T)(retryCallback As Func(Of IRetryContext, T), recoveryCallback As IRecoveryCallback(Of T)) As T
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.Execute*
+  nameWithType.vb: PollyRetryTemplate.Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(Of T)(System.Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext})
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext})
+  id: Execute(System.Action{IRetryContext})
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: Execute(Action<IRetryContext>)
+  nameWithType: PollyRetryTemplate.Execute(Action<IRetryContext>)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action<IRetryContext>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 93
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public override void Execute(Action<IRetryContext> retryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Action{IRetryContext}
+    content.vb: Public Overrides Sub Execute(retryCallback As Action(Of IRetryContext))
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.Execute*
+  nameWithType.vb: PollyRetryTemplate.Execute(Action(Of IRetryContext))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action(Of IRetryContext))
+  name.vb: Execute(Action(Of IRetryContext))
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext},IRecoveryCallback)
+  commentId: M:Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action{IRetryContext},IRecoveryCallback)
+  id: Execute(System.Action{IRetryContext},IRecoveryCallback)
+  parent: Steeltoe.Common.Retry.PollyRetryTemplate
+  langs:
+  - csharp
+  - vb
+  name: Execute(Action<IRetryContext>, IRecoveryCallback)
+  nameWithType: PollyRetryTemplate.Execute(Action<IRetryContext>, IRecoveryCallback)
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action<IRetryContext>, IRecoveryCallback)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Common.RetryPolly/PollyRetryTemplate.cs
+    startLine: 98
+  assemblies:
+  - Steeltoe.Common.RetryPolly
+  namespace: Steeltoe.Common.Retry
+  syntax:
+    content: public override void Execute(Action<IRetryContext> retryCallback, IRecoveryCallback recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Action{IRetryContext}
+    - id: recoveryCallback
+      type: IRecoveryCallback
+    content.vb: Public Overrides Sub Execute(retryCallback As Action(Of IRetryContext), recoveryCallback As IRecoveryCallback)
+  overload: Steeltoe.Common.Retry.PollyRetryTemplate.Execute*
+  nameWithType.vb: PollyRetryTemplate.Execute(Action(Of IRetryContext), IRecoveryCallback)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Common.Retry.PollyRetryTemplate.Execute(System.Action(Of IRetryContext), IRecoveryCallback)
+  name.vb: Execute(Action(Of IRetryContext), IRecoveryCallback)
+references:
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Retry.RetryTemplate
+  commentId: T:Steeltoe.Common.Retry.RetryTemplate
+  parent: Steeltoe.Common.Retry
+  name: RetryTemplate
+  nameWithType: RetryTemplate
+  fullName: Steeltoe.Common.Retry.RetryTemplate
+- uid: Steeltoe.Common.Retry.IRetryOperation
+  commentId: T:Steeltoe.Common.Retry.IRetryOperation
+  parent: Steeltoe.Common.Retry
+  name: IRetryOperation
+  nameWithType: IRetryOperation
+  fullName: Steeltoe.Common.Retry.IRetryOperation
+- uid: Steeltoe.Common.Retry.RetryTemplate.listeners
+  commentId: F:Steeltoe.Common.Retry.RetryTemplate.listeners
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  name: listeners
+  nameWithType: RetryTemplate.listeners
+  fullName: Steeltoe.Common.Retry.RetryTemplate.listeners
+- uid: Steeltoe.Common.Retry.RetryTemplate.RegisterListener(Steeltoe.Common.Retry.IRetryListener)
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.RegisterListener(Steeltoe.Common.Retry.IRetryListener)
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  isExternal: true
+  name: RegisterListener(IRetryListener)
+  nameWithType: RetryTemplate.RegisterListener(IRetryListener)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.RegisterListener(Steeltoe.Common.Retry.IRetryListener)
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.RegisterListener(Steeltoe.Common.Retry.IRetryListener)
+    name: RegisterListener
+    nameWithType: RetryTemplate.RegisterListener
+    fullName: Steeltoe.Common.Retry.RetryTemplate.RegisterListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryListener
+    name: IRetryListener
+    nameWithType: IRetryListener
+    fullName: Steeltoe.Common.Retry.IRetryListener
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.RegisterListener(Steeltoe.Common.Retry.IRetryListener)
+    name: RegisterListener
+    nameWithType: RetryTemplate.RegisterListener
+    fullName: Steeltoe.Common.Retry.RetryTemplate.RegisterListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryListener
+    name: IRetryListener
+    nameWithType: IRetryListener
+    fullName: Steeltoe.Common.Retry.IRetryListener
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,{T}})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  definition: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  name: Execute<T>(Func<IRetryContext, T>)
+  nameWithType: RetryTemplate.Execute<T>(Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>)
+  nameWithType.vb: RetryTemplate.Execute(Of T)(Func(Of IRetryContext, T))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute<T>
+    nameWithType: RetryTemplate.Execute<T>
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute(Of T)
+    nameWithType: RetryTemplate.Execute(Of T)
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,{T}},Steeltoe.Common.Retry.IRecoveryCallback{{T}})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  definition: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  name: Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  nameWithType: RetryTemplate.Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>, Steeltoe.Common.Retry.IRecoveryCallback<T>)
+  nameWithType.vb: RetryTemplate.Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T), Steeltoe.Common.Retry.IRecoveryCallback(Of T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+    name: Execute<T>
+    nameWithType: RetryTemplate.Execute<T>
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+    name: Execute(Of T)
+    nameWithType: RetryTemplate.Execute(Of T)
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  isExternal: true
+  name: Execute(Action<IRetryContext>)
+  nameWithType: RetryTemplate.Execute(Action<IRetryContext>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext>)
+  nameWithType.vb: RetryTemplate.Execute(Action(Of IRetryContext))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action(Of Steeltoe.Common.Retry.IRetryContext))
+  name.vb: Execute(Action(Of IRetryContext))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+    name: Execute
+    nameWithType: RetryTemplate.Execute
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+    name: Execute
+    nameWithType: RetryTemplate.Execute
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  isExternal: true
+  name: Execute(Action<IRetryContext>, IRecoveryCallback)
+  nameWithType: RetryTemplate.Execute(Action<IRetryContext>, IRecoveryCallback)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext>, Steeltoe.Common.Retry.IRecoveryCallback)
+  nameWithType.vb: RetryTemplate.Execute(Action(Of IRetryContext), IRecoveryCallback)
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action(Of Steeltoe.Common.Retry.IRetryContext), Steeltoe.Common.Retry.IRecoveryCallback)
+  name.vb: Execute(Action(Of IRetryContext), IRecoveryCallback)
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+    name: Execute
+    nameWithType: RetryTemplate.Execute
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+    name: Execute
+    nameWithType: RetryTemplate.Execute
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,{T}},System.Func{Steeltoe.Common.Retry.IRetryContext,{T}})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  definition: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  name: Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  nameWithType: RetryTemplate.Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>, System.Func<Steeltoe.Common.Retry.IRetryContext, T>)
+  nameWithType.vb: RetryTemplate.Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T), System.Func(Of Steeltoe.Common.Retry.IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute<T>
+    nameWithType: RetryTemplate.Execute<T>
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute(Of T)
+    nameWithType: RetryTemplate.Execute(Of T)
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+  parent: Steeltoe.Common.Retry.RetryTemplate
+  isExternal: true
+  name: Execute(Action<IRetryContext>, Action<IRetryContext>)
+  nameWithType: RetryTemplate.Execute(Action<IRetryContext>, Action<IRetryContext>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext>, System.Action<Steeltoe.Common.Retry.IRetryContext>)
+  nameWithType.vb: RetryTemplate.Execute(Action(Of IRetryContext), Action(Of IRetryContext))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action(Of Steeltoe.Common.Retry.IRetryContext), System.Action(Of Steeltoe.Common.Retry.IRetryContext))
+  name.vb: Execute(Action(Of IRetryContext), Action(Of IRetryContext))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+    name: Execute
+    nameWithType: RetryTemplate.Execute
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+    name: Execute
+    nameWithType: RetryTemplate.Execute
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  isExternal: true
+  name: Execute<T>(Func<IRetryContext, T>)
+  nameWithType: RetryTemplate.Execute<T>(Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>)
+  nameWithType.vb: RetryTemplate.Execute(Of T)(Func(Of IRetryContext, T))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute<T>
+    nameWithType: RetryTemplate.Execute<T>
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute(Of T)
+    nameWithType: RetryTemplate.Execute(Of T)
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  isExternal: true
+  name: Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  nameWithType: RetryTemplate.Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>, Steeltoe.Common.Retry.IRecoveryCallback<T>)
+  nameWithType.vb: RetryTemplate.Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T), Steeltoe.Common.Retry.IRecoveryCallback(Of T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+    name: Execute<T>
+    nameWithType: RetryTemplate.Execute<T>
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+    name: Execute(Of T)
+    nameWithType: RetryTemplate.Execute(Of T)
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  commentId: M:Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  isExternal: true
+  name: Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  nameWithType: RetryTemplate.Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>, System.Func<Steeltoe.Common.Retry.IRetryContext, T>)
+  nameWithType.vb: RetryTemplate.Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+  fullName.vb: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T), System.Func(Of Steeltoe.Common.Retry.IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute<T>
+    nameWithType: RetryTemplate.Execute<T>
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.RetryTemplate.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+    name: Execute(Of T)
+    nameWithType: RetryTemplate.Execute(Of T)
+    fullName: Steeltoe.Common.Retry.RetryTemplate.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.#ctor*
+  commentId: Overload:Steeltoe.Common.Retry.PollyRetryTemplate.#ctor
+  name: PollyRetryTemplate
+  nameWithType: PollyRetryTemplate.PollyRetryTemplate
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.PollyRetryTemplate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Collections.Generic.Dictionary{System.Type,System.Boolean}
+  commentId: T:System.Collections.Generic.Dictionary{System.Type,System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Type, Boolean>
+  nameWithType: Dictionary<Type, Boolean>
+  fullName: System.Collections.Generic.Dictionary<System.Type, System.Boolean>
+  nameWithType.vb: Dictionary(Of Type, Boolean)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Type, System.Boolean)
+  name.vb: Dictionary(Of Type, Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Common.Retry.PollyRetryTemplate.Execute*
+  commentId: Overload:Steeltoe.Common.Retry.PollyRetryTemplate.Execute
+  name: Execute
+  nameWithType: PollyRetryTemplate.Execute
+  fullName: Steeltoe.Common.Retry.PollyRetryTemplate.Execute
+- uid: System.Func{IRetryContext,{T}}
+  commentId: T:System.Func{IRetryContext,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<IRetryContext, T>
+  nameWithType: Func<IRetryContext, T>
+  fullName: System.Func<IRetryContext, T>
+  nameWithType.vb: Func(Of IRetryContext, T)
+  fullName.vb: System.Func(Of IRetryContext, T)
+  name.vb: Func(Of IRetryContext, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: IRetryContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Action{IRetryContext}
+  commentId: T:System.Action{IRetryContext}
+  parent: System
+  definition: System.Action`1
+  name: Action<IRetryContext>
+  nameWithType: Action<IRetryContext>
+  fullName: System.Action<IRetryContext>
+  nameWithType.vb: Action(Of IRetryContext)
+  fullName.vb: System.Action(Of IRetryContext)
+  name.vb: Action(Of IRetryContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: IRetryContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: IRetryContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IRecoveryCallback{{T}}
+  commentId: '!:IRecoveryCallback{``0}'
+  definition: IRecoveryCallback`1
+  name: IRecoveryCallback<T>
+  nameWithType: IRecoveryCallback<T>
+  fullName: IRecoveryCallback<T>
+  nameWithType.vb: IRecoveryCallback(Of T)
+  fullName.vb: IRecoveryCallback(Of T)
+  name.vb: IRecoveryCallback(Of T)
+  spec.csharp:
+  - uid: IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: IRecoveryCallback
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: IRecoveryCallback
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IRecoveryCallback`1
+  commentId: '!:IRecoveryCallback`1'
+  isExternal: true
+  name: IRecoveryCallback<>
+  nameWithType: IRecoveryCallback<>
+  fullName: IRecoveryCallback<>
+  nameWithType.vb: IRecoveryCallback(Of )
+  fullName.vb: IRecoveryCallback(Of )
+  name.vb: IRecoveryCallback(Of )
+  spec.csharp:
+  - uid: IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: IRecoveryCallback
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: IRecoveryCallback
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IRecoveryCallback
+  commentId: '!:IRecoveryCallback'
+  isExternal: true
+  name: IRecoveryCallback
+  nameWithType: IRecoveryCallback
+  fullName: IRecoveryCallback

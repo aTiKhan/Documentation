@@ -1,0 +1,2664 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  id: RabbitAdmin
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DEFAULT_SERVICE_NAME
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String,System.Boolean)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_CONSUMER_COUNT
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_MESSAGE_COUNT
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_NAME
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName
+  langs:
+  - csharp
+  - vb
+  name: RabbitAdmin
+  nameWithType: RabbitAdmin
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RabbitAdmin
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: 'public class RabbitAdmin : IRabbitAdmin, IConnectionListener, IServiceNameAware'
+    content.vb: >-
+      Public Class RabbitAdmin
+
+          Implements IRabbitAdmin, IConnectionListener, IServiceNameAware
+  inheritance:
+  - System.Object
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  - Steeltoe.Common.Services.IServiceNameAware
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DEFAULT_SERVICE_NAME
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DEFAULT_SERVICE_NAME
+  id: DEFAULT_SERVICE_NAME
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_SERVICE_NAME
+  nameWithType: RabbitAdmin.DEFAULT_SERVICE_NAME
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DEFAULT_SERVICE_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DEFAULT_SERVICE_NAME
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public const string DEFAULT_SERVICE_NAME = "rabbitAdmin"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_SERVICE_NAME As String = "rabbitAdmin"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_NAME
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_NAME
+  id: QUEUE_NAME
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: QUEUE_NAME
+  nameWithType: RabbitAdmin.QUEUE_NAME
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: QUEUE_NAME
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public const string QUEUE_NAME = "QUEUE_NAME"
+    return:
+      type: System.String
+    content.vb: Public Const QUEUE_NAME As String = "QUEUE_NAME"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_MESSAGE_COUNT
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_MESSAGE_COUNT
+  id: QUEUE_MESSAGE_COUNT
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: QUEUE_MESSAGE_COUNT
+  nameWithType: RabbitAdmin.QUEUE_MESSAGE_COUNT
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_MESSAGE_COUNT
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: QUEUE_MESSAGE_COUNT
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public const string QUEUE_MESSAGE_COUNT = "QUEUE_MESSAGE_COUNT"
+    return:
+      type: System.String
+    content.vb: Public Const QUEUE_MESSAGE_COUNT As String = "QUEUE_MESSAGE_COUNT"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_CONSUMER_COUNT
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_CONSUMER_COUNT
+  id: QUEUE_CONSUMER_COUNT
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: QUEUE_CONSUMER_COUNT
+  nameWithType: RabbitAdmin.QUEUE_CONSUMER_COUNT
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.QUEUE_CONSUMER_COUNT
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: QUEUE_CONSUMER_COUNT
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public const string QUEUE_CONSUMER_COUNT = "QUEUE_CONSUMER_COUNT"
+    return:
+      type: System.String
+    content.vb: Public Const QUEUE_CONSUMER_COUNT As String = "QUEUE_CONSUMER_COUNT"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: RabbitAdmin(IApplicationContext, IConnectionFactory, ILogger)
+  nameWithType: RabbitAdmin.RabbitAdmin(IApplicationContext, IConnectionFactory, ILogger)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitAdmin(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: >-
+      [ActivatorUtilitiesConstructor]
+
+      public RabbitAdmin(IApplicationContext applicationContext, IConnectionFactory connectionFactory, ILogger logger = null)
+    parameters:
+    - id: applicationContext
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: connectionFactory
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: >-
+      <ActivatorUtilitiesConstructor>
+
+      Public Sub New(applicationContext As IApplicationContext, connectionFactory As IConnectionFactory, logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor*
+  attributes:
+  - type: Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute
+    ctor: Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: RabbitAdmin(IConnectionFactory, ILogger)
+  nameWithType: RabbitAdmin.RabbitAdmin(IConnectionFactory, ILogger)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitAdmin(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public RabbitAdmin(IConnectionFactory connectionFactory, ILogger logger = null)
+    parameters:
+    - id: connectionFactory
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(connectionFactory As IConnectionFactory, logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: RabbitAdmin(RabbitTemplate, ILogger)
+  nameWithType: RabbitAdmin.RabbitAdmin(RabbitTemplate, ILogger)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitAdmin(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public RabbitAdmin(RabbitTemplate template, ILogger logger = null)
+    parameters:
+    - id: template
+      type: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(template As RabbitTemplate, logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext
+  id: ApplicationContext
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: ApplicationContext
+  nameWithType: RabbitAdmin.ApplicationContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ApplicationContext
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 79
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public IApplicationContext ApplicationContext { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Public Property ApplicationContext As IApplicationContext
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName
+  id: ServiceName
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: ServiceName
+  nameWithType: RabbitAdmin.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceName
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 81
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public string ServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServiceName As String
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName*
+  implements:
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory
+  id: ConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: ConnectionFactory
+  nameWithType: RabbitAdmin.ConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 83
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public IConnectionFactory ConnectionFactory { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    content.vb: Public Property ConnectionFactory As IConnectionFactory
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate
+  id: RabbitTemplate
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: RabbitTemplate
+  nameWithType: RabbitAdmin.RabbitTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RabbitTemplate
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 85
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public RabbitTemplate RabbitTemplate { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+    content.vb: Public ReadOnly Property RabbitTemplate As RabbitTemplate
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup
+  id: AutoStartup
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: AutoStartup
+  nameWithType: RabbitAdmin.AutoStartup
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AutoStartup
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 87
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool AutoStartup { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoStartup As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions
+  id: IgnoreDeclarationExceptions
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: IgnoreDeclarationExceptions
+  nameWithType: RabbitAdmin.IgnoreDeclarationExceptions
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IgnoreDeclarationExceptions
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 89
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool IgnoreDeclarationExceptions { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IgnoreDeclarationExceptions As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent
+  id: LastDeclarationExceptionEvent
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: LastDeclarationExceptionEvent
+  nameWithType: RabbitAdmin.LastDeclarationExceptionEvent
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastDeclarationExceptionEvent
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 91
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public DeclarationExceptionEvent LastDeclarationExceptionEvent { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Core.DeclarationExceptionEvent
+    content.vb: Public ReadOnly Property LastDeclarationExceptionEvent As DeclarationExceptionEvent
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly
+  id: ExplicitDeclarationsOnly
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: ExplicitDeclarationsOnly
+  nameWithType: RabbitAdmin.ExplicitDeclarationsOnly
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExplicitDeclarationsOnly
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 93
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool ExplicitDeclarationsOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ExplicitDeclarationsOnly As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup
+  id: IsAutoStartup
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: IsAutoStartup
+  nameWithType: RabbitAdmin.IsAutoStartup
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsAutoStartup
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 95
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool IsAutoStartup { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsAutoStartup As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning
+  id: IsRunning
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: RabbitAdmin.IsRunning
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsRunning
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 97
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRunning As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate
+  id: RetryTemplate
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: RetryTemplate
+  nameWithType: RabbitAdmin.RetryTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RetryTemplate
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 99
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public RetryTemplate RetryTemplate { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Retry.RetryTemplate
+    content.vb: Public Property RetryTemplate As RetryTemplate
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled
+  id: RetryDisabled
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: RetryDisabled
+  nameWithType: RabbitAdmin.RetryDisabled
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RetryDisabled
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 101
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool RetryDisabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RetryDisabled As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  id: DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DeclareBinding(IBinding)
+  nameWithType: RabbitAdmin.DeclareBinding(IBinding)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeclareBinding
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 103
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void DeclareBinding(IBinding binding)
+    parameters:
+    - id: binding
+      type: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+    content.vb: Public Sub DeclareBinding(binding As IBinding)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  id: DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DeclareExchange(IExchange)
+  nameWithType: RabbitAdmin.DeclareExchange(IExchange)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeclareExchange
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 120
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void DeclareExchange(IExchange exchange)
+    parameters:
+    - id: exchange
+      type: Steeltoe.Messaging.RabbitMQ.Config.IExchange
+    content.vb: Public Sub DeclareExchange(exchange As IExchange)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue
+  id: DeclareQueue
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DeclareQueue()
+  nameWithType: RabbitAdmin.DeclareQueue()
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeclareQueue
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 136
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public IQueue DeclareQueue()
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+    content.vb: Public Function DeclareQueue As IQueue
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  id: DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DeclareQueue(IQueue)
+  nameWithType: RabbitAdmin.DeclareQueue(IQueue)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeclareQueue
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 154
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public string DeclareQueue(IQueue queue)
+    parameters:
+    - id: queue
+      type: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+    return:
+      type: System.String
+    content.vb: Public Function DeclareQueue(queue As IQueue) As String
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange(System.String)
+  id: DeleteExchange(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DeleteExchange(String)
+  nameWithType: RabbitAdmin.DeleteExchange(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeleteExchange
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 172
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool DeleteExchange(string exchangeName)
+    parameters:
+    - id: exchangeName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function DeleteExchange(exchangeName As String) As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String)
+  id: DeleteQueue(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DeleteQueue(String)
+  nameWithType: RabbitAdmin.DeleteQueue(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeleteQueue
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 196
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public bool DeleteQueue(string queueName)
+    parameters:
+    - id: queueName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function DeleteQueue(queueName As String) As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+  id: DeleteQueue(System.String,System.Boolean,System.Boolean)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: DeleteQueue(String, Boolean, Boolean)
+  nameWithType: RabbitAdmin.DeleteQueue(String, Boolean, Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue(System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeleteQueue
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 214
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void DeleteQueue(string queueName, bool unused, bool empty)
+    parameters:
+    - id: queueName
+      type: System.String
+    - id: unused
+      type: System.Boolean
+    - id: empty
+      type: System.Boolean
+    content.vb: Public Sub DeleteQueue(queueName As String, unused As Boolean, empty As Boolean)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo(System.String)
+  id: GetQueueInfo(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: GetQueueInfo(String)
+  nameWithType: RabbitAdmin.GetQueueInfo(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetQueueInfo
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 224
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public QueueInformation GetQueueInfo(string queueName)
+    parameters:
+    - id: queueName
+      type: System.String
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Config.QueueInformation
+    content.vb: Public Function GetQueueInfo(queueName As String) As QueueInformation
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties(System.String)
+  id: GetQueueProperties(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: GetQueueProperties(String)
+  nameWithType: RabbitAdmin.GetQueueProperties(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetQueueProperties
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 269
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public Dictionary<string, object> GetQueueProperties(string queueName)
+    parameters:
+    - id: queueName
+      type: System.String
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Function GetQueueProperties(queueName As String) As Dictionary(Of String, Object)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String,System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String,System.Boolean)
+  id: PurgeQueue(System.String,System.Boolean)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: PurgeQueue(String, Boolean)
+  nameWithType: RabbitAdmin.PurgeQueue(String, Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PurgeQueue
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 286
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void PurgeQueue(string queueName, bool noWait)
+    parameters:
+    - id: queueName
+      type: System.String
+    - id: noWait
+      type: System.Boolean
+    content.vb: Public Sub PurgeQueue(queueName As String, noWait As Boolean)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String)
+  id: PurgeQueue(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: PurgeQueue(String)
+  nameWithType: RabbitAdmin.PurgeQueue(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PurgeQueue
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 298
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public uint PurgeQueue(string queueName)
+    parameters:
+    - id: queueName
+      type: System.String
+    return:
+      type: System.UInt32
+    content.vb: Public Function PurgeQueue(queueName As String) As UInteger
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  id: RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: RemoveBinding(IBinding)
+  nameWithType: RabbitAdmin.RemoveBinding(IBinding)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveBinding
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 309
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void RemoveBinding(IBinding binding)
+    parameters:
+    - id: binding
+      type: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+    content.vb: Public Sub RemoveBinding(binding As IBinding)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  id: OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: OnCreate(IConnection)
+  nameWithType: RabbitAdmin.OnCreate(IConnection)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnCreate
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 333
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void OnCreate(IConnection connection)
+    parameters:
+    - id: connection
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    content.vb: Public Sub OnCreate(connection As IConnection)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  id: OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: OnClose(IConnection)
+  nameWithType: RabbitAdmin.OnClose(IConnection)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnClose
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 369
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void OnClose(IConnection connection)
+    parameters:
+    - id: connection
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    content.vb: Public Sub OnClose(connection As IConnection)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  id: OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: OnShutDown(ShutdownEventArgs)
+  nameWithType: RabbitAdmin.OnShutDown(ShutdownEventArgs)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnShutDown
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 374
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void OnShutDown(ShutdownEventArgs args)
+    parameters:
+    - id: args
+      type: RabbitMQ.Client.ShutdownEventArgs
+    content.vb: Public Sub OnShutDown(args As ShutdownEventArgs)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize
+  id: Initialize
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: RabbitAdmin.Initialize()
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitAdmin.cs
+    startLine: 380
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Core
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Core
+  name: Steeltoe.Messaging.RabbitMQ.Core
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Core
+  fullName: Steeltoe.Messaging.RabbitMQ.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  name: IRabbitAdmin
+  nameWithType: IRabbitAdmin
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnectionListener
+  nameWithType: IConnectionListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.RabbitMQ.Connection
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Connection
+  name: Steeltoe.Messaging.RabbitMQ.Connection
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.#ctor
+  name: RabbitAdmin
+  nameWithType: RabbitAdmin.RabbitAdmin
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitAdmin
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnectionFactory
+  nameWithType: IConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  name: RabbitTemplate
+  nameWithType: RabbitTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext
+  name: ApplicationContext
+  nameWithType: RabbitAdmin.ApplicationContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ApplicationContext
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName
+  name: ServiceName
+  nameWithType: RabbitAdmin.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ServiceName
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory
+  name: ConnectionFactory
+  nameWithType: RabbitAdmin.ConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate
+  name: RabbitTemplate
+  nameWithType: RabbitAdmin.RabbitTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RabbitTemplate
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup
+  name: AutoStartup
+  nameWithType: RabbitAdmin.AutoStartup
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.AutoStartup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions
+  name: IgnoreDeclarationExceptions
+  nameWithType: RabbitAdmin.IgnoreDeclarationExceptions
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IgnoreDeclarationExceptions
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent
+  name: LastDeclarationExceptionEvent
+  nameWithType: RabbitAdmin.LastDeclarationExceptionEvent
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.LastDeclarationExceptionEvent
+- uid: Steeltoe.Messaging.RabbitMQ.Core.DeclarationExceptionEvent
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.DeclarationExceptionEvent
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  name: DeclarationExceptionEvent
+  nameWithType: DeclarationExceptionEvent
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.DeclarationExceptionEvent
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly
+  name: ExplicitDeclarationsOnly
+  nameWithType: RabbitAdmin.ExplicitDeclarationsOnly
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.ExplicitDeclarationsOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup
+  name: IsAutoStartup
+  nameWithType: RabbitAdmin.IsAutoStartup
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsAutoStartup
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning
+  name: IsRunning
+  nameWithType: RabbitAdmin.IsRunning
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.IsRunning
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate
+  name: RetryTemplate
+  nameWithType: RabbitAdmin.RetryTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryTemplate
+- uid: Steeltoe.Common.Retry.RetryTemplate
+  commentId: T:Steeltoe.Common.Retry.RetryTemplate
+  parent: Steeltoe.Common.Retry
+  name: RetryTemplate
+  nameWithType: RetryTemplate
+  fullName: Steeltoe.Common.Retry.RetryTemplate
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled
+  name: RetryDisabled
+  nameWithType: RabbitAdmin.RetryDisabled
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RetryDisabled
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding
+  name: DeclareBinding
+  nameWithType: RabbitAdmin.DeclareBinding
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareBinding
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  name: DeclareBinding(IBinding)
+  nameWithType: IRabbitAdmin.DeclareBinding(IBinding)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+    name: DeclareBinding
+    nameWithType: IRabbitAdmin.DeclareBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+    name: DeclareBinding
+    nameWithType: IRabbitAdmin.DeclareBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareBinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.IBinding
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+- uid: Steeltoe.Messaging.RabbitMQ.Config
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Config
+  name: Steeltoe.Messaging.RabbitMQ.Config
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Config
+  fullName: Steeltoe.Messaging.RabbitMQ.Config
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange
+  name: DeclareExchange
+  nameWithType: RabbitAdmin.DeclareExchange
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareExchange
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  name: DeclareExchange(IExchange)
+  nameWithType: IRabbitAdmin.DeclareExchange(IExchange)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+    name: DeclareExchange
+    nameWithType: IRabbitAdmin.DeclareExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IExchange
+    name: IExchange
+    nameWithType: IExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IExchange
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange(Steeltoe.Messaging.RabbitMQ.Config.IExchange)
+    name: DeclareExchange
+    nameWithType: IRabbitAdmin.DeclareExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IExchange
+    name: IExchange
+    nameWithType: IExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IExchange
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.IExchange
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.IExchange
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  name: IExchange
+  nameWithType: IExchange
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.IExchange
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue
+  name: DeclareQueue
+  nameWithType: RabbitAdmin.DeclareQueue
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeclareQueue
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  name: DeclareQueue()
+  nameWithType: IRabbitAdmin.DeclareQueue()
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+    name: DeclareQueue
+    nameWithType: IRabbitAdmin.DeclareQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+    name: DeclareQueue
+    nameWithType: IRabbitAdmin.DeclareQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.IQueue
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  name: IQueue
+  nameWithType: IQueue
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  name: DeclareQueue(IQueue)
+  nameWithType: IRabbitAdmin.DeclareQueue(IQueue)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+    name: DeclareQueue
+    nameWithType: IRabbitAdmin.DeclareQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+    name: IQueue
+    nameWithType: IQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue(Steeltoe.Messaging.RabbitMQ.Config.IQueue)
+    name: DeclareQueue
+    nameWithType: IRabbitAdmin.DeclareQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeclareQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+    name: IQueue
+    nameWithType: IQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IQueue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange
+  name: DeleteExchange
+  nameWithType: RabbitAdmin.DeleteExchange
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteExchange
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  isExternal: true
+  name: DeleteExchange(String)
+  nameWithType: IRabbitAdmin.DeleteExchange(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange(System.String)
+    name: DeleteExchange
+    nameWithType: IRabbitAdmin.DeleteExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange(System.String)
+    name: DeleteExchange
+    nameWithType: IRabbitAdmin.DeleteExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue
+  name: DeleteQueue
+  nameWithType: RabbitAdmin.DeleteQueue
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.DeleteQueue
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  isExternal: true
+  name: DeleteQueue(String)
+  nameWithType: IRabbitAdmin.DeleteQueue(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String)
+    name: DeleteQueue
+    nameWithType: IRabbitAdmin.DeleteQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String)
+    name: DeleteQueue
+    nameWithType: IRabbitAdmin.DeleteQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  isExternal: true
+  name: DeleteQueue(String, Boolean, Boolean)
+  nameWithType: IRabbitAdmin.DeleteQueue(String, Boolean, Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+    name: DeleteQueue
+    nameWithType: IRabbitAdmin.DeleteQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue(System.String,System.Boolean,System.Boolean)
+    name: DeleteQueue
+    nameWithType: IRabbitAdmin.DeleteQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.DeleteQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo
+  name: GetQueueInfo
+  nameWithType: RabbitAdmin.GetQueueInfo
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueInfo
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  isExternal: true
+  name: GetQueueInfo(String)
+  nameWithType: IRabbitAdmin.GetQueueInfo(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo(System.String)
+    name: GetQueueInfo
+    nameWithType: IRabbitAdmin.GetQueueInfo
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo(System.String)
+    name: GetQueueInfo
+    nameWithType: IRabbitAdmin.GetQueueInfo
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.QueueInformation
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.QueueInformation
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  name: QueueInformation
+  nameWithType: QueueInformation
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.QueueInformation
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties
+  name: GetQueueProperties
+  nameWithType: RabbitAdmin.GetQueueProperties
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.GetQueueProperties
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  isExternal: true
+  name: GetQueueProperties(String)
+  nameWithType: IRabbitAdmin.GetQueueProperties(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties(System.String)
+    name: GetQueueProperties
+    nameWithType: IRabbitAdmin.GetQueueProperties
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties(System.String)
+    name: GetQueueProperties
+    nameWithType: IRabbitAdmin.GetQueueProperties
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.GetQueueProperties
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue
+  name: PurgeQueue
+  nameWithType: RabbitAdmin.PurgeQueue
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.PurgeQueue
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String,System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String,System.Boolean)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  isExternal: true
+  name: PurgeQueue(String, Boolean)
+  nameWithType: IRabbitAdmin.PurgeQueue(String, Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String,System.Boolean)
+    name: PurgeQueue
+    nameWithType: IRabbitAdmin.PurgeQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String,System.Boolean)
+    name: PurgeQueue
+    nameWithType: IRabbitAdmin.PurgeQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  isExternal: true
+  name: PurgeQueue(String)
+  nameWithType: IRabbitAdmin.PurgeQueue(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String)
+    name: PurgeQueue
+    nameWithType: IRabbitAdmin.PurgeQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue(System.String)
+    name: PurgeQueue
+    nameWithType: IRabbitAdmin.PurgeQueue
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.PurgeQueue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding
+  name: RemoveBinding
+  nameWithType: RabbitAdmin.RemoveBinding
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.RemoveBinding
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  name: RemoveBinding(IBinding)
+  nameWithType: IRabbitAdmin.RemoveBinding(IBinding)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+    name: RemoveBinding
+    nameWithType: IRabbitAdmin.RemoveBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding(Steeltoe.Messaging.RabbitMQ.Config.IBinding)
+    name: RemoveBinding
+    nameWithType: IRabbitAdmin.RemoveBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.RemoveBinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate
+  name: OnCreate
+  nameWithType: RabbitAdmin.OnCreate
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnCreate
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  name: OnCreate(IConnection)
+  nameWithType: IConnectionListener.OnCreate(IConnection)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+    name: OnCreate
+    nameWithType: IConnectionListener.OnCreate
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    name: IConnection
+    nameWithType: IConnection
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+    name: OnCreate
+    nameWithType: IConnectionListener.OnCreate
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnCreate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    name: IConnection
+    nameWithType: IConnection
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnection
+  nameWithType: IConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose
+  name: OnClose
+  nameWithType: RabbitAdmin.OnClose
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnClose
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  name: OnClose(IConnection)
+  nameWithType: IConnectionListener.OnClose(IConnection)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+    name: OnClose
+    nameWithType: IConnectionListener.OnClose
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    name: IConnection
+    nameWithType: IConnection
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+    name: OnClose
+    nameWithType: IConnectionListener.OnClose
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    name: IConnection
+    nameWithType: IConnection
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown
+  name: OnShutDown
+  nameWithType: RabbitAdmin.OnShutDown
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.OnShutDown
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  isExternal: true
+  name: OnShutDown(ShutdownEventArgs)
+  nameWithType: IConnectionListener.OnShutDown(ShutdownEventArgs)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+    name: OnShutDown
+    nameWithType: IConnectionListener.OnShutDown
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.ShutdownEventArgs
+    name: ShutdownEventArgs
+    nameWithType: ShutdownEventArgs
+    fullName: RabbitMQ.Client.ShutdownEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown(RabbitMQ.Client.ShutdownEventArgs)
+    name: OnShutDown
+    nameWithType: IConnectionListener.OnShutDown
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener.OnShutDown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.ShutdownEventArgs
+    name: ShutdownEventArgs
+    nameWithType: ShutdownEventArgs
+    fullName: RabbitMQ.Client.ShutdownEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RabbitMQ.Client.ShutdownEventArgs
+  commentId: T:RabbitMQ.Client.ShutdownEventArgs
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: ShutdownEventArgs
+  nameWithType: ShutdownEventArgs
+  fullName: RabbitMQ.Client.ShutdownEventArgs
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize
+  name: Initialize
+  nameWithType: RabbitAdmin.Initialize
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitAdmin.Initialize
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize
+  parent: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin
+  name: Initialize()
+  nameWithType: IRabbitAdmin.Initialize()
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize
+    name: Initialize
+    nameWithType: IRabbitAdmin.Initialize
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize
+    name: Initialize
+    nameWithType: IRabbitAdmin.Initialize
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IRabbitAdmin.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

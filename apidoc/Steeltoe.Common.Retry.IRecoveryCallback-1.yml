@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+  commentId: T:Steeltoe.Common.Retry.IRecoveryCallback`1
+  id: IRecoveryCallback`1
+  parent: Steeltoe.Common.Retry
+  children:
+  - Steeltoe.Common.Retry.IRecoveryCallback`1.Recover(Steeltoe.Common.Retry.IRetryContext)
+  langs:
+  - csharp
+  - vb
+  name: IRecoveryCallback<T>
+  nameWithType: IRecoveryCallback<T>
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRecoveryCallback.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IRecoveryCallback
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRecoveryCallback.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nTyped callback for stateful retry after all tries are exhausted\n"
+  example: []
+  syntax:
+    content: 'public interface IRecoveryCallback<out T> : IRecoveryCallback'
+    typeParameters:
+    - id: T
+      description: the type returned from callback
+    content.vb: >-
+      Public Interface IRecoveryCallback(Of Out T)
+
+          Inherits IRecoveryCallback
+  nameWithType.vb: IRecoveryCallback(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Steeltoe.Common.Retry.IRecoveryCallback(Of T)
+  name.vb: IRecoveryCallback(Of T)
+- uid: Steeltoe.Common.Retry.IRecoveryCallback`1.Recover(Steeltoe.Common.Retry.IRetryContext)
+  commentId: M:Steeltoe.Common.Retry.IRecoveryCallback`1.Recover(Steeltoe.Common.Retry.IRetryContext)
+  id: Recover(Steeltoe.Common.Retry.IRetryContext)
+  parent: Steeltoe.Common.Retry.IRecoveryCallback`1
+  langs:
+  - csharp
+  - vb
+  name: Recover(IRetryContext)
+  nameWithType: IRecoveryCallback<T>.Recover(IRetryContext)
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback<T>.Recover(Steeltoe.Common.Retry.IRetryContext)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRecoveryCallback.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Recover
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRecoveryCallback.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nThe callback that is issued\n"
+  example: []
+  syntax:
+    content: T Recover(IRetryContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Retry.IRetryContext
+      description: the current retry context
+    return:
+      type: '{T}'
+      description: an object that can be used to replace the callback result that failed
+    content.vb: Function Recover(context As IRetryContext) As T
+  overload: Steeltoe.Common.Retry.IRecoveryCallback`1.Recover*
+  nameWithType.vb: IRecoveryCallback(Of T).Recover(IRetryContext)
+  fullName.vb: Steeltoe.Common.Retry.IRecoveryCallback(Of T).Recover(Steeltoe.Common.Retry.IRetryContext)
+references:
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Common.Retry.IRecoveryCallback`1.Recover*
+  commentId: Overload:Steeltoe.Common.Retry.IRecoveryCallback`1.Recover
+  name: Recover
+  nameWithType: IRecoveryCallback<T>.Recover
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback<T>.Recover
+  nameWithType.vb: IRecoveryCallback(Of T).Recover
+  fullName.vb: Steeltoe.Common.Retry.IRecoveryCallback(Of T).Recover
+- uid: Steeltoe.Common.Retry.IRetryContext
+  commentId: T:Steeltoe.Common.Retry.IRetryContext
+  parent: Steeltoe.Common.Retry
+  name: IRetryContext
+  nameWithType: IRetryContext
+  fullName: Steeltoe.Common.Retry.IRetryContext
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

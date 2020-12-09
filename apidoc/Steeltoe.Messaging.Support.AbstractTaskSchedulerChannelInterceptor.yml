@@ -1,0 +1,1049 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor
+  commentId: T:Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor
+  id: AbstractTaskSchedulerChannelInterceptor
+  parent: Steeltoe.Messaging.Support
+  children:
+  - Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+  - Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+  langs:
+  - csharp
+  - vb
+  name: AbstractTaskSchedulerChannelInterceptor
+  nameWithType: AbstractTaskSchedulerChannelInterceptor
+  fullName: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractTaskSchedulerChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractTaskSchedulerChannelInterceptor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractTaskSchedulerChannelInterceptor.cs
+    startLine: 8
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: 'public abstract class AbstractTaskSchedulerChannelInterceptor : AbstractChannelInterceptor, IOrdered, ITaskSchedulerChannelInterceptor, IChannelInterceptor, IOrdered'
+    content.vb: >-
+      Public MustInherit Class AbstractTaskSchedulerChannelInterceptor
+
+          Inherits AbstractChannelInterceptor
+
+          Implements IOrdered, ITaskSchedulerChannelInterceptor, IChannelInterceptor, IOrdered
+  inheritance:
+  - System.Object
+  - Steeltoe.Common.Order.AbstractOrdered
+  - Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  implements:
+  - Steeltoe.Common.Order.IOrdered
+  - Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor
+  - Steeltoe.Messaging.Support.IChannelInterceptor
+  - IOrdered
+  inheritedMembers:
+  - Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+  - Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+  - Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+  - Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Common.Order.AbstractOrdered.HIGHEST_PRECEDENCE
+  - Steeltoe.Common.Order.AbstractOrdered.LOWEST_PRECEDENCE
+  - Steeltoe.Common.Order.AbstractOrdered.Order
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+  commentId: M:Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+  id: AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+  parent: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: AfterMessageHandled(IMessage, IMessageChannel, IMessageHandler, Exception)
+  nameWithType: AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled(IMessage, IMessageChannel, IMessageHandler, Exception)
+  fullName: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, Steeltoe.Messaging.IMessageHandler, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractTaskSchedulerChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AfterMessageHandled
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractTaskSchedulerChannelInterceptor.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual void AfterMessageHandled(IMessage message, IMessageChannel channel, IMessageHandler handler, Exception exception)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+    - id: exception
+      type: System.Exception
+    content.vb: Public Overridable Sub AfterMessageHandled(message As IMessage, channel As IMessageChannel, handler As IMessageHandler, exception As Exception)
+  overload: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled*
+  implements:
+  - Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+  id: BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+  parent: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: BeforeHandled(IMessage, IMessageChannel, IMessageHandler)
+  nameWithType: AbstractTaskSchedulerChannelInterceptor.BeforeHandled(IMessage, IMessageChannel, IMessageHandler)
+  fullName: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, Steeltoe.Messaging.IMessageHandler)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractTaskSchedulerChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BeforeHandled
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractTaskSchedulerChannelInterceptor.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual IMessage BeforeHandled(IMessage message, IMessageChannel channel, IMessageHandler handler)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+    return:
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Public Overridable Function BeforeHandled(message As IMessage, channel As IMessageChannel, handler As IMessageHandler) As IMessage
+  overload: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled*
+  implements:
+  - Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Steeltoe.Messaging.Support
+  commentId: N:Steeltoe.Messaging.Support
+  name: Steeltoe.Messaging.Support
+  nameWithType: Steeltoe.Messaging.Support
+  fullName: Steeltoe.Messaging.Support
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Order.AbstractOrdered
+  commentId: T:Steeltoe.Common.Order.AbstractOrdered
+  parent: Steeltoe.Common.Order
+  name: AbstractOrdered
+  nameWithType: AbstractOrdered
+  fullName: Steeltoe.Common.Order.AbstractOrdered
+- uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  commentId: T:Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  parent: Steeltoe.Messaging.Support
+  name: AbstractChannelInterceptor
+  nameWithType: AbstractChannelInterceptor
+  fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+- uid: Steeltoe.Common.Order.IOrdered
+  commentId: T:Steeltoe.Common.Order.IOrdered
+  parent: Steeltoe.Common.Order
+  name: IOrdered
+  nameWithType: IOrdered
+  fullName: Steeltoe.Common.Order.IOrdered
+- uid: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor
+  commentId: T:Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor
+  parent: Steeltoe.Messaging.Support
+  name: ITaskSchedulerChannelInterceptor
+  nameWithType: ITaskSchedulerChannelInterceptor
+  fullName: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor
+  commentId: T:Steeltoe.Messaging.Support.IChannelInterceptor
+  parent: Steeltoe.Messaging.Support
+  name: IChannelInterceptor
+  nameWithType: IChannelInterceptor
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+- uid: IOrdered
+  isExternal: true
+  name: IOrdered
+  nameWithType: IOrdered
+  fullName: IOrdered
+- uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+  commentId: M:Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+  parent: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  isExternal: true
+  name: AfterReceiveCompletion(IMessage, IMessageChannel, Exception)
+  nameWithType: AbstractChannelInterceptor.AfterReceiveCompletion(IMessage, IMessageChannel, Exception)
+  fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+    name: AfterReceiveCompletion
+    nameWithType: AbstractChannelInterceptor.AfterReceiveCompletion
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+    name: AfterReceiveCompletion
+    nameWithType: AbstractChannelInterceptor.AfterReceiveCompletion
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterReceiveCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+  commentId: M:Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+  parent: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  isExternal: true
+  name: AfterSendCompletion(IMessage, IMessageChannel, Boolean, Exception)
+  nameWithType: AbstractChannelInterceptor.AfterSendCompletion(IMessage, IMessageChannel, Boolean, Exception)
+  fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, System.Boolean, System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+    name: AfterSendCompletion
+    nameWithType: AbstractChannelInterceptor.AfterSendCompletion
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+    name: AfterSendCompletion
+    nameWithType: AbstractChannelInterceptor.AfterSendCompletion
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.AfterSendCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  name: PostReceive(IMessage, IMessageChannel)
+  nameWithType: AbstractChannelInterceptor.PostReceive(IMessage, IMessageChannel)
+  fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+    name: PostReceive
+    nameWithType: AbstractChannelInterceptor.PostReceive
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+    name: PostReceive
+    nameWithType: AbstractChannelInterceptor.PostReceive
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostReceive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+  commentId: M:Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+  parent: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  isExternal: true
+  name: PostSend(IMessage, IMessageChannel, Boolean)
+  nameWithType: AbstractChannelInterceptor.PostSend(IMessage, IMessageChannel, Boolean)
+  fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+    name: PostSend
+    nameWithType: AbstractChannelInterceptor.PostSend
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+    name: PostSend
+    nameWithType: AbstractChannelInterceptor.PostSend
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PostSend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  name: PreReceive(IMessageChannel)
+  nameWithType: AbstractChannelInterceptor.PreReceive(IMessageChannel)
+  fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+    name: PreReceive
+    nameWithType: AbstractChannelInterceptor.PreReceive
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+    name: PreReceive
+    nameWithType: AbstractChannelInterceptor.PreReceive
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreReceive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Messaging.Support.AbstractChannelInterceptor
+  name: PreSend(IMessage, IMessageChannel)
+  nameWithType: AbstractChannelInterceptor.PreSend(IMessage, IMessageChannel)
+  fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+    name: PreSend
+    nameWithType: AbstractChannelInterceptor.PreSend
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+    name: PreSend
+    nameWithType: AbstractChannelInterceptor.PreSend
+    fullName: Steeltoe.Messaging.Support.AbstractChannelInterceptor.PreSend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Order.AbstractOrdered.HIGHEST_PRECEDENCE
+  commentId: F:Steeltoe.Common.Order.AbstractOrdered.HIGHEST_PRECEDENCE
+  parent: Steeltoe.Common.Order.AbstractOrdered
+  name: HIGHEST_PRECEDENCE
+  nameWithType: AbstractOrdered.HIGHEST_PRECEDENCE
+  fullName: Steeltoe.Common.Order.AbstractOrdered.HIGHEST_PRECEDENCE
+- uid: Steeltoe.Common.Order.AbstractOrdered.LOWEST_PRECEDENCE
+  commentId: F:Steeltoe.Common.Order.AbstractOrdered.LOWEST_PRECEDENCE
+  parent: Steeltoe.Common.Order.AbstractOrdered
+  name: LOWEST_PRECEDENCE
+  nameWithType: AbstractOrdered.LOWEST_PRECEDENCE
+  fullName: Steeltoe.Common.Order.AbstractOrdered.LOWEST_PRECEDENCE
+- uid: Steeltoe.Common.Order.AbstractOrdered.Order
+  commentId: P:Steeltoe.Common.Order.AbstractOrdered.Order
+  parent: Steeltoe.Common.Order.AbstractOrdered
+  name: Order
+  nameWithType: AbstractOrdered.Order
+  fullName: Steeltoe.Common.Order.AbstractOrdered.Order
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Order
+  commentId: N:Steeltoe.Common.Order
+  name: Steeltoe.Common.Order
+  nameWithType: Steeltoe.Common.Order
+  fullName: Steeltoe.Common.Order
+- uid: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled
+  name: AfterMessageHandled
+  nameWithType: AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled
+  fullName: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.AfterMessageHandled
+- uid: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+  commentId: M:Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+  parent: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor
+  isExternal: true
+  name: AfterMessageHandled(IMessage, IMessageChannel, IMessageHandler, Exception)
+  nameWithType: ITaskSchedulerChannelInterceptor.AfterMessageHandled(IMessage, IMessageChannel, IMessageHandler, Exception)
+  fullName: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, Steeltoe.Messaging.IMessageHandler, System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+    name: AfterMessageHandled
+    nameWithType: ITaskSchedulerChannelInterceptor.AfterMessageHandled
+    fullName: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler,System.Exception)
+    name: AfterMessageHandled
+    nameWithType: ITaskSchedulerChannelInterceptor.AfterMessageHandled
+    fullName: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.AfterMessageHandled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: Steeltoe.Messaging.IMessageHandler
+  commentId: T:Steeltoe.Messaging.IMessageHandler
+  parent: Steeltoe.Messaging
+  name: IMessageHandler
+  nameWithType: IMessageHandler
+  fullName: Steeltoe.Messaging.IMessageHandler
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled
+  name: BeforeHandled
+  nameWithType: AbstractTaskSchedulerChannelInterceptor.BeforeHandled
+  fullName: Steeltoe.Messaging.Support.AbstractTaskSchedulerChannelInterceptor.BeforeHandled
+- uid: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+  parent: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor
+  name: BeforeHandled(IMessage, IMessageChannel, IMessageHandler)
+  nameWithType: ITaskSchedulerChannelInterceptor.BeforeHandled(IMessage, IMessageChannel, IMessageHandler)
+  fullName: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, Steeltoe.Messaging.IMessageHandler)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+    name: BeforeHandled
+    nameWithType: ITaskSchedulerChannelInterceptor.BeforeHandled
+    fullName: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageHandler)
+    name: BeforeHandled
+    nameWithType: ITaskSchedulerChannelInterceptor.BeforeHandled
+    fullName: Steeltoe.Messaging.Support.ITaskSchedulerChannelInterceptor.BeforeHandled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )

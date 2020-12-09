@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Connector.IConnectionInfo
+  commentId: T:Steeltoe.Connector.IConnectionInfo
+  id: IConnectionInfo
+  parent: Steeltoe.Connector
+  children:
+  - Steeltoe.Connector.IConnectionInfo.Get(IConfiguration,Steeltoe.Connector.Services.IServiceInfo)
+  - Steeltoe.Connector.IConnectionInfo.Get(IConfiguration,System.String)
+  - Steeltoe.Connector.IConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo)
+  - Steeltoe.Connector.IConnectionInfo.IsSameType(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IConnectionInfo
+  nameWithType: IConnectionInfo
+  fullName: Steeltoe.Connector.IConnectionInfo
+  type: Interface
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/IConnectionInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IConnectionInfo
+    path: ../Steeltoe/src/Connectors/src/Abstractions/IConnectionInfo.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector
+  syntax:
+    content: public interface IConnectionInfo
+    content.vb: Public Interface IConnectionInfo
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Connector.IConnectionInfo.IsSameType(System.String)
+  commentId: M:Steeltoe.Connector.IConnectionInfo.IsSameType(System.String)
+  id: IsSameType(System.String)
+  parent: Steeltoe.Connector.IConnectionInfo
+  langs:
+  - csharp
+  - vb
+  name: IsSameType(String)
+  nameWithType: IConnectionInfo.IsSameType(String)
+  fullName: Steeltoe.Connector.IConnectionInfo.IsSameType(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/IConnectionInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsSameType
+    path: ../Steeltoe/src/Connectors/src/Abstractions/IConnectionInfo.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector
+  summary: "\nDetermines if this <xref href=\"Steeltoe.Connector.IConnectionInfo\" data-throw-if-not-resolved=\"false\"></xref> is compatible with a service type name\n"
+  example: []
+  syntax:
+    content: bool IsSameType(string serviceType)
+    parameters:
+    - id: serviceType
+      type: System.String
+      description: The name of a service type to match
+    return:
+      type: System.Boolean
+      description: True when this type is compatible
+    content.vb: Function IsSameType(serviceType As String) As Boolean
+  overload: Steeltoe.Connector.IConnectionInfo.IsSameType*
+- uid: Steeltoe.Connector.IConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo)
+  commentId: M:Steeltoe.Connector.IConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo)
+  id: IsSameType(Steeltoe.Connector.Services.IServiceInfo)
+  parent: Steeltoe.Connector.IConnectionInfo
+  langs:
+  - csharp
+  - vb
+  name: IsSameType(IServiceInfo)
+  nameWithType: IConnectionInfo.IsSameType(IServiceInfo)
+  fullName: Steeltoe.Connector.IConnectionInfo.IsSameType(Steeltoe.Connector.Services.IServiceInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/IConnectionInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsSameType
+    path: ../Steeltoe/src/Connectors/src/Abstractions/IConnectionInfo.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector
+  summary: "\nDetermines if this <xref href=\"Steeltoe.Connector.IConnectionInfo\" data-throw-if-not-resolved=\"false\"></xref> is compatible with a service info\n"
+  example: []
+  syntax:
+    content: bool IsSameType(IServiceInfo serviceInfo)
+    parameters:
+    - id: serviceInfo
+      type: Steeltoe.Connector.Services.IServiceInfo
+      description: The service info to match
+    return:
+      type: System.Boolean
+      description: True when this type is compatible
+    content.vb: Function IsSameType(serviceInfo As IServiceInfo) As Boolean
+  overload: Steeltoe.Connector.IConnectionInfo.IsSameType*
+- uid: Steeltoe.Connector.IConnectionInfo.Get(IConfiguration,System.String)
+  commentId: M:Steeltoe.Connector.IConnectionInfo.Get(IConfiguration,System.String)
+  id: Get(IConfiguration,System.String)
+  parent: Steeltoe.Connector.IConnectionInfo
+  langs:
+  - csharp
+  - vb
+  name: Get(IConfiguration, String)
+  nameWithType: IConnectionInfo.Get(IConfiguration, String)
+  fullName: Steeltoe.Connector.IConnectionInfo.Get(IConfiguration, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/IConnectionInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Get
+    path: ../Steeltoe/src/Connectors/src/Abstractions/IConnectionInfo.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector
+  summary: "\nGet connection information from configuration for a named service\n"
+  example: []
+  syntax:
+    content: Connection Get(IConfiguration configuration, string serviceName)
+    parameters:
+    - id: configuration
+      type: IConfiguration
+      description: <see cref="!:IConfiguration"></see>
+    - id: serviceName
+      type: System.String
+      description: The name of the service to retrieve
+    return:
+      type: Steeltoe.Connector.Connection
+      description: Connection information
+    content.vb: Function Get(configuration As IConfiguration, serviceName As String) As Connection
+  overload: Steeltoe.Connector.IConnectionInfo.Get*
+- uid: Steeltoe.Connector.IConnectionInfo.Get(IConfiguration,Steeltoe.Connector.Services.IServiceInfo)
+  commentId: M:Steeltoe.Connector.IConnectionInfo.Get(IConfiguration,Steeltoe.Connector.Services.IServiceInfo)
+  id: Get(IConfiguration,Steeltoe.Connector.Services.IServiceInfo)
+  parent: Steeltoe.Connector.IConnectionInfo
+  langs:
+  - csharp
+  - vb
+  name: Get(IConfiguration, IServiceInfo)
+  nameWithType: IConnectionInfo.Get(IConfiguration, IServiceInfo)
+  fullName: Steeltoe.Connector.IConnectionInfo.Get(IConfiguration, Steeltoe.Connector.Services.IServiceInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/IConnectionInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Get
+    path: ../Steeltoe/src/Connectors/src/Abstractions/IConnectionInfo.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector
+  summary: "\nGet connection information from configuration after a service info has been discovered\n"
+  example: []
+  syntax:
+    content: Connection Get(IConfiguration configuration, IServiceInfo serviceInfo)
+    parameters:
+    - id: configuration
+      type: IConfiguration
+      description: <see cref="!:IConfiguration"></see>
+    - id: serviceInfo
+      type: Steeltoe.Connector.Services.IServiceInfo
+      description: <xref href="Steeltoe.Connector.Services.IServiceInfo" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: Steeltoe.Connector.Connection
+      description: Connection information
+    content.vb: Function Get(configuration As IConfiguration, serviceInfo As IServiceInfo) As Connection
+  overload: Steeltoe.Connector.IConnectionInfo.Get*
+references:
+- uid: Steeltoe.Connector
+  commentId: N:Steeltoe.Connector
+  name: Steeltoe.Connector
+  nameWithType: Steeltoe.Connector
+  fullName: Steeltoe.Connector
+- uid: Steeltoe.Connector.IConnectionInfo
+  commentId: T:Steeltoe.Connector.IConnectionInfo
+  parent: Steeltoe.Connector
+  name: IConnectionInfo
+  nameWithType: IConnectionInfo
+  fullName: Steeltoe.Connector.IConnectionInfo
+- uid: Steeltoe.Connector.IConnectionInfo.IsSameType*
+  commentId: Overload:Steeltoe.Connector.IConnectionInfo.IsSameType
+  name: IsSameType
+  nameWithType: IConnectionInfo.IsSameType
+  fullName: Steeltoe.Connector.IConnectionInfo.IsSameType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Connector.Services.IServiceInfo
+  commentId: T:Steeltoe.Connector.Services.IServiceInfo
+  parent: Steeltoe.Connector.Services
+  name: IServiceInfo
+  nameWithType: IServiceInfo
+  fullName: Steeltoe.Connector.Services.IServiceInfo
+- uid: Steeltoe.Connector.Services
+  commentId: N:Steeltoe.Connector.Services
+  name: Steeltoe.Connector.Services
+  nameWithType: Steeltoe.Connector.Services
+  fullName: Steeltoe.Connector.Services
+- uid: Steeltoe.Connector.IConnectionInfo.Get*
+  commentId: Overload:Steeltoe.Connector.IConnectionInfo.Get
+  name: Get
+  nameWithType: IConnectionInfo.Get
+  fullName: Steeltoe.Connector.IConnectionInfo.Get
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Steeltoe.Connector.Connection
+  commentId: T:Steeltoe.Connector.Connection
+  parent: Steeltoe.Connector
+  name: Connection
+  nameWithType: Connection
+  fullName: Steeltoe.Connector.Connection

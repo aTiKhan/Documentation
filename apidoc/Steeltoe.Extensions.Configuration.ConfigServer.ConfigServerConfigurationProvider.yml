@@ -1,0 +1,2004 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  commentId: T:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  id: ConfigServerConfigurationProvider
+  parent: Steeltoe.Extensions.Configuration.ConfigServer
+  children:
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(ILoggerFactory)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,ILoggerFactory)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,System.Net.Http.HttpClient,ILoggerFactory)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource,System.Net.Http.HttpClient)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._configuration
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._httpClient
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._logger
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._loggerFactory
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._settings
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build(IConfigurationBuilder)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue(System.Object)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String,System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded(System.String,System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String,System.String,System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.PREFIX
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync(System.Object)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String[],System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split(System.String)
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.STATE_HEADER
+  - Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.TOKEN_HEADER
+  langs:
+  - csharp
+  - vb
+  name: ConfigServerConfigurationProvider
+  nameWithType: ConfigServerConfigurationProvider
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  type: Class
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConfigServerConfigurationProvider
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nA Spring Cloud Config Server based <see cref=\"!:ConfigurationProvider\"></see>.\n"
+  example: []
+  syntax:
+    content: 'public class ConfigServerConfigurationProvider : ConfigurationProvider, IConfigurationSource'
+    content.vb: >-
+      Public Class ConfigServerConfigurationProvider
+
+          Inherits ConfigurationProvider
+
+          Implements IConfigurationSource
+  inheritance:
+  - System.Object
+  implements:
+  - IConfigurationSource
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.PREFIX
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.PREFIX
+  id: PREFIX
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: PREFIX
+  nameWithType: ConfigServerConfigurationProvider.PREFIX
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.PREFIX
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PREFIX
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nThe prefix (<see cref=\"!:IConfigurationSection\"></see> under which all Spring Cloud Config Server\nconfiguration settings (<xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings\" data-throw-if-not-resolved=\"false\"></xref> are found.\n(e.g. spring:cloud:config:env, spring:cloud:config:uri, spring:cloud:config:enabled, etc.)\n"
+  example: []
+  syntax:
+    content: public const string PREFIX = "spring:cloud:config"
+    return:
+      type: System.String
+    content.vb: Public Const PREFIX As String = "spring:cloud:config"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.TOKEN_HEADER
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.TOKEN_HEADER
+  id: TOKEN_HEADER
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: TOKEN_HEADER
+  nameWithType: ConfigServerConfigurationProvider.TOKEN_HEADER
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.TOKEN_HEADER
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TOKEN_HEADER
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: public const string TOKEN_HEADER = "X-Config-Token"
+    return:
+      type: System.String
+    content.vb: Public Const TOKEN_HEADER As String = "X-Config-Token"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.STATE_HEADER
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.STATE_HEADER
+  id: STATE_HEADER
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: STATE_HEADER
+  nameWithType: ConfigServerConfigurationProvider.STATE_HEADER
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.STATE_HEADER
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: STATE_HEADER
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: public const string STATE_HEADER = "X-Config-State"
+    return:
+      type: System.String
+    content.vb: Public Const STATE_HEADER As String = "X-Config-State"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._settings
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._settings
+  id: _settings
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: _settings
+  nameWithType: ConfigServerConfigurationProvider._settings
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._settings
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _settings
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected ConfigServerClientSettings _settings
+    return:
+      type: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+    content.vb: Protected _settings As ConfigServerClientSettings
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._httpClient
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._httpClient
+  id: _httpClient
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: _httpClient
+  nameWithType: ConfigServerConfigurationProvider._httpClient
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._httpClient
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _httpClient
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected HttpClient _httpClient
+    return:
+      type: System.Net.Http.HttpClient
+    content.vb: Protected _httpClient As HttpClient
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._logger
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._logger
+  id: _logger
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: _logger
+  nameWithType: ConfigServerConfigurationProvider._logger
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._logger
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _logger
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected ILogger _logger
+    return:
+      type: ILogger
+    content.vb: Protected _logger As ILogger
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._loggerFactory
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._loggerFactory
+  id: _loggerFactory
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: _loggerFactory
+  nameWithType: ConfigServerConfigurationProvider._loggerFactory
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._loggerFactory
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _loggerFactory
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected ILoggerFactory _loggerFactory
+    return:
+      type: ILoggerFactory
+    content.vb: Protected _loggerFactory As ILoggerFactory
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._configuration
+  commentId: F:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._configuration
+  id: _configuration
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: _configuration
+  nameWithType: ConfigServerConfigurationProvider._configuration
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider._configuration
+  type: Field
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _configuration
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected IConfiguration _configuration
+    return:
+      type: IConfiguration
+    content.vb: Protected _configuration As IConfiguration
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(ILoggerFactory)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(ILoggerFactory)
+  id: '#ctor(ILoggerFactory)'
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConfigServerConfigurationProvider(ILoggerFactory)
+  nameWithType: ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(ILoggerFactory)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 63
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider\" data-throw-if-not-resolved=\"false\"></xref> class with default\nconfiguration settings. <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public ConfigServerConfigurationProvider(ILoggerFactory logFactory = null)
+    parameters:
+    - id: logFactory
+      type: ILoggerFactory
+      description: optional logging factory
+    content.vb: Public Sub New(logFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,ILoggerFactory)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,ILoggerFactory)
+  id: '#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,ILoggerFactory)'
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConfigServerConfigurationProvider(ConfigServerClientSettings, ILoggerFactory)
+  nameWithType: ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(ConfigServerClientSettings, ILoggerFactory)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 73
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ConfigServerConfigurationProvider(ConfigServerClientSettings settings, ILoggerFactory logFactory = null)
+    parameters:
+    - id: settings
+      type: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+      description: the configuration settings the provider uses when accessing the server.
+    - id: logFactory
+      type: ILoggerFactory
+      description: optional logging factory
+    content.vb: Public Sub New(settings As ConfigServerClientSettings, logFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,System.Net.Http.HttpClient,ILoggerFactory)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,System.Net.Http.HttpClient,ILoggerFactory)
+  id: '#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings,System.Net.Http.HttpClient,ILoggerFactory)'
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConfigServerConfigurationProvider(ConfigServerClientSettings, HttpClient, ILoggerFactory)
+  nameWithType: ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(ConfigServerClientSettings, HttpClient, ILoggerFactory)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings, System.Net.Http.HttpClient, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 87
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ConfigServerConfigurationProvider(ConfigServerClientSettings settings, HttpClient httpClient, ILoggerFactory logFactory = null)
+    parameters:
+    - id: settings
+      type: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+      description: the configuration settings the provider uses when accessing the server.
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: a HttpClient the provider uses to make requests of the server.
+    - id: logFactory
+      type: ILoggerFactory
+      description: optional logging factory
+    content.vb: Public Sub New(settings As ConfigServerClientSettings, httpClient As HttpClient, logFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource)
+  id: '#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource)'
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConfigServerConfigurationProvider(ConfigServerConfigurationSource)
+  nameWithType: ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(ConfigServerConfigurationSource)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource)
+  type: Constructor
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 100
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider\" data-throw-if-not-resolved=\"false\"></xref> class from a <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public ConfigServerConfigurationProvider(ConfigServerConfigurationSource source)
+    parameters:
+    - id: source
+      type: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource
+      description: the <xref href="Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource" data-throw-if-not-resolved="false"></xref> the provider uses when accessing the server.
+    content.vb: Public Sub New(source As ConfigServerConfigurationSource)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource,System.Net.Http.HttpClient)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource,System.Net.Http.HttpClient)
+  id: '#ctor(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource,System.Net.Http.HttpClient)'
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConfigServerConfigurationProvider(ConfigServerConfigurationSource, HttpClient)
+  nameWithType: ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(ConfigServerConfigurationSource, HttpClient)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConfigServerConfigurationProvider(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 113
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider\" data-throw-if-not-resolved=\"false\"></xref> class from a <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public ConfigServerConfigurationProvider(ConfigServerConfigurationSource source, HttpClient httpClient)
+    parameters:
+    - id: source
+      type: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource
+      description: the <xref href="Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource" data-throw-if-not-resolved="false"></xref> the provider uses when accessing the server.
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: the httpClient to use
+    content.vb: Public Sub New(source As ConfigServerConfigurationSource, httpClient As HttpClient)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+  commentId: P:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+  id: Settings
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: ConfigServerConfigurationProvider.Settings
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+  type: Property
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Settings
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 125
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nGets the configuration settings the provider uses when accessing the server.\n"
+  example: []
+  syntax:
+    content: public virtual ConfigServerClientSettings Settings { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+    content.vb: Public Overridable ReadOnly Property Settings As ConfigServerClientSettings
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load
+  id: Load
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: ConfigServerConfigurationProvider.Load()
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load()
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Load
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 142
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nLoads configuration data from the Spring Cloud Configuration Server as specified by\nthe <xref href=\"Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public override void Load()
+    content.vb: Public Overrides Sub Load
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build(IConfigurationBuilder)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build(IConfigurationBuilder)
+  id: Build(IConfigurationBuilder)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: Build(IConfigurationBuilder)
+  nameWithType: ConfigServerConfigurationProvider.Build(IConfigurationBuilder)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build(IConfigurationBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Build
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 147
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: >-
+      [Obsolete("Will be removed in next release, use the ConfigServerConfigurationSource")]
+
+      public virtual IConfigurationProvider Build(IConfigurationBuilder builder)
+    parameters:
+    - id: builder
+      type: IConfigurationBuilder
+    return:
+      type: IConfigurationProvider
+    content.vb: >-
+      <Obsolete("Will be removed in next release, use the ConfigServerConfigurationSource")>
+
+      Public Overridable Function Build(builder As IConfigurationBuilder) As IConfigurationProvider
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Will be removed in next release, use the ConfigServerConfigurationSource
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String,System.String,System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String,System.String,System.String)
+  id: GetRequestMessage(System.String,System.String,System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetRequestMessage(String, String, String)
+  nameWithType: ConfigServerConfigurationProvider.GetRequestMessage(String, String, String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetRequestMessage
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 382
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nCreate the HttpRequestMessage that will be used in accessing the Spring Cloud Configuration server\n"
+  example: []
+  syntax:
+    content: protected virtual HttpRequestMessage GetRequestMessage(string requestUri, string username, string password)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: the Uri used when accessing the server
+    - id: username
+      type: System.String
+      description: username to use if required
+    - id: password
+      type: System.String
+      description: password to use if required
+    return:
+      type: System.Net.Http.HttpRequestMessage
+      description: The HttpRequestMessage built from the path
+    content.vb: Protected Overridable Function GetRequestMessage(requestUri As String, username As String, password As String) As HttpRequestMessage
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String)
+  id: GetRequestMessage(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetRequestMessage(String)
+  nameWithType: ConfigServerConfigurationProvider.GetRequestMessage(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetRequestMessage
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 412
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nCreate the HttpRequestMessage that will be used in accessing the Spring Cloud Configuration server\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Will be removed in next release. See GetRequestMessage(string, string, string)")]
+
+      protected virtual HttpRequestMessage GetRequestMessage(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: the Uri used when accessing the server
+    return:
+      type: System.Net.Http.HttpRequestMessage
+      description: The HttpRequestMessage built from the path
+    content.vb: >-
+      <Obsolete("Will be removed in next release. See GetRequestMessage(string, string, string)")>
+
+      Protected Overridable Function GetRequestMessage(requestUri As String) As HttpRequestMessage
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Will be removed in next release. See GetRequestMessage(string, string, string)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings
+  id: AddConfigServerClientSettings
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: AddConfigServerClientSettings()
+  nameWithType: ConfigServerConfigurationProvider.AddConfigServerClientSettings()
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings()
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddConfigServerClientSettings
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 421
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nAdds the client settings for the Configuration Server to the data dictionary\n"
+  example: []
+  syntax:
+    content: protected virtual void AddConfigServerClientSettings()
+    content.vb: Protected Overridable Sub AddConfigServerClientSettings
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String[],System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String[],System.String)
+  id: RemoteLoadAsync(System.String[],System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: RemoteLoadAsync(String[], String)
+  nameWithType: ConfigServerConfigurationProvider.RemoteLoadAsync(String[], String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String[], System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoteLoadAsync
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 455
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected Task<ConfigEnvironment> RemoteLoadAsync(string[] requestUris, string label)
+    parameters:
+    - id: requestUris
+      type: System.String[]
+    - id: label
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment}
+    content.vb: Protected Function RemoteLoadAsync(requestUris As String(), label As String) As Task(Of ConfigEnvironment)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync*
+  nameWithType.vb: ConfigServerConfigurationProvider.RemoteLoadAsync(String(), String)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String(), System.String)
+  name.vb: RemoteLoadAsync(String(), String)
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String)
+  id: RemoteLoadAsync(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: RemoteLoadAsync(String)
+  nameWithType: ConfigServerConfigurationProvider.RemoteLoadAsync(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoteLoadAsync
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 542
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nAsynchronously calls the Spring Cloud Configuration Server using the provided Uri and returning a\na task that can be used to obtain the results\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Will be removed in next release. See RemoteLoadAsync(string[], string)")]
+
+      protected virtual Task<ConfigEnvironment> RemoteLoadAsync(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: the Uri used in accessing the Spring Cloud Configuration Server
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment}
+      description: The task object representing the asynchronous operation
+    content.vb: >-
+      <Obsolete("Will be removed in next release. See RemoteLoadAsync(string[], string)")>
+
+      Protected Overridable Function RemoteLoadAsync(requestUri As String) As Task(Of ConfigEnvironment)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Will be removed in next release. See RemoteLoadAsync(string[], string)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String,System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String,System.String)
+  id: GetConfigServerUri(System.String,System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetConfigServerUri(String, String)
+  nameWithType: ConfigServerConfigurationProvider.GetConfigServerUri(String, String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetConfigServerUri
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 601
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nCreate the Uri that will be used in accessing the Configuration Server\n"
+  example: []
+  syntax:
+    content: protected virtual string GetConfigServerUri(string baseRawUri, string label)
+    parameters:
+    - id: baseRawUri
+      type: System.String
+      description: base server uri to use
+    - id: label
+      type: System.String
+      description: a label to add
+    return:
+      type: System.String
+      description: The request URI for the Configuration Server
+    content.vb: Protected Overridable Function GetConfigServerUri(baseRawUri As String, label As String) As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String)
+  id: GetConfigServerUri(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetConfigServerUri(String)
+  nameWithType: ConfigServerConfigurationProvider.GetConfigServerUri(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetConfigServerUri
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 633
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nCreate the Uri that will be used in accessing the Configuration Server\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Will be removed in next release. See GetConfigServerUri(string, string)")]
+
+      protected virtual string GetConfigServerUri(string label)
+    parameters:
+    - id: label
+      type: System.String
+      description: a label to add
+    return:
+      type: System.String
+      description: The request URI for the Configuration Server
+    content.vb: >-
+      <Obsolete("Will be removed in next release. See GetConfigServerUri(string, string)")>
+
+      Protected Overridable Function GetConfigServerUri(label As String) As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Will be removed in next release. See GetConfigServerUri(string, string)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource)
+  id: AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: AddPropertySource(PropertySource)
+  nameWithType: ConfigServerConfigurationProvider.AddPropertySource(PropertySource)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddPropertySource
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 644
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nAdds values from a PropertySource to the Configurtation Data dictionary managed\nby this provider\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Will be removed in next release.")]
+
+      protected virtual void AddPropertySource(PropertySource source)
+    parameters:
+    - id: source
+      type: Steeltoe.Extensions.Configuration.ConfigServer.PropertySource
+      description: a property source to add
+    content.vb: >-
+      <Obsolete("Will be removed in next release.")>
+
+      Protected Overridable Sub AddPropertySource(source As PropertySource)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Will be removed in next release.
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: AddPropertySource(PropertySource, IDictionary<String, String>)
+  nameWithType: ConfigServerConfigurationProvider.AddPropertySource(PropertySource, IDictionary<String, String>)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddPropertySource
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 655
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nAdds values from a PropertySource to the provided dictionary.\n"
+  example: []
+  syntax:
+    content: protected void AddPropertySource(PropertySource source, IDictionary<string, string> data)
+    parameters:
+    - id: source
+      type: Steeltoe.Extensions.Configuration.ConfigServer.PropertySource
+      description: a property source to add
+    - id: data
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: the dictionary to add the property source to
+    content.vb: Protected Sub AddPropertySource(source As PropertySource, data As IDictionary(Of String, String))
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource*
+  nameWithType.vb: ConfigServerConfigurationProvider.AddPropertySource(PropertySource, IDictionary(Of String, String))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource(Steeltoe.Extensions.Configuration.ConfigServer.PropertySource, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddPropertySource(PropertySource, IDictionary(Of String, String))
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey(System.String)
+  id: ConvertKey(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConvertKey(String)
+  nameWithType: ConfigServerConfigurationProvider.ConvertKey(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertKey
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 677
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected virtual string ConvertKey(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function ConvertKey(key As String) As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split(System.String)
+  id: Split(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: Split(String)
+  nameWithType: ConfigServerConfigurationProvider.Split(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Split
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 696
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected virtual string[] Split(string source)
+    parameters:
+    - id: source
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Protected Overridable Function Split(source As String) As String()
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey(System.String)
+  id: ConvertArrayKey(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConvertArrayKey(String)
+  nameWithType: ConfigServerConfigurationProvider.ConvertArrayKey(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertArrayKey
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 732
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected virtual string ConvertArrayKey(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function ConvertArrayKey(key As String) As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue(System.Object)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue(System.Object)
+  id: ConvertValue(System.Object)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: ConvertValue(Object)
+  nameWithType: ConfigServerConfigurationProvider.ConvertValue(Object)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertValue
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 741
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected virtual string ConvertValue(object value)
+    parameters:
+    - id: value
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function ConvertValue(value As Object) As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded(System.String,System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded(System.String,System.String)
+  id: GetEncoded(System.String,System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetEncoded(String, String)
+  nameWithType: ConfigServerConfigurationProvider.GetEncoded(String, String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetEncoded
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 752
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nEncode the username password for a http request\n"
+  example: []
+  syntax:
+    content: protected string GetEncoded(string user, string password)
+    parameters:
+    - id: user
+      type: System.String
+      description: the username
+    - id: password
+      type: System.String
+      description: the password
+    return:
+      type: System.String
+      description: Encoded user + password
+    content.vb: Protected Function GetEncoded(user As String, password As String) As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken(System.String)
+  id: RenewToken(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: RenewToken(String)
+  nameWithType: ConfigServerConfigurationProvider.RenewToken(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RenewToken
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 757
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected virtual void RenewToken(string token)
+    parameters:
+    - id: token
+      type: System.String
+    content.vb: Protected Overridable Sub RenewToken(token As String)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken
+  id: FetchAccessToken
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: FetchAccessToken()
+  nameWithType: ConfigServerConfigurationProvider.FetchAccessToken()
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken()
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FetchAccessToken
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 774
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nConduct the OAuth2 client_credentials grant flow returning a task that can be used to obtain the\nresults\n"
+  example: []
+  syntax:
+    content: protected string FetchAccessToken()
+    return:
+      type: System.String
+      description: The task object representing asynchronous operation
+    content.vb: Protected Function FetchAccessToken As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync(System.Object)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync(System.Object)
+  id: RefreshVaultTokenAsync(System.Object)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: RefreshVaultTokenAsync(Object)
+  nameWithType: ConfigServerConfigurationProvider.RefreshVaultTokenAsync(Object)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RefreshVaultTokenAsync
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 793
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected void RefreshVaultTokenAsync(object state)
+    parameters:
+    - id: state
+      type: System.Object
+    content.vb: Protected Sub RefreshVaultTokenAsync(state As Object)
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri
+  id: GetVaultRenewUri
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetVaultRenewUri()
+  nameWithType: ConfigServerConfigurationProvider.GetVaultRenewUri()
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri()
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetVaultRenewUri
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 834
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected virtual string GetVaultRenewUri()
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function GetVaultRenewUri As String
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage(System.String)
+  id: GetVaultRenewMessage(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetVaultRenewMessage(String)
+  nameWithType: ConfigServerConfigurationProvider.GetVaultRenewMessage(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetVaultRenewMessage
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 845
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected virtual HttpRequestMessage GetVaultRenewMessage(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Net.Http.HttpRequestMessage
+    content.vb: Protected Overridable Function GetVaultRenewMessage(requestUri As String) As HttpRequestMessage
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage(System.String)
+  id: GetValutRenewMessage(System.String)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetValutRenewMessage(String)
+  nameWithType: ConfigServerConfigurationProvider.GetValutRenewMessage(String)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetValutRenewMessage
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 862
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: >-
+      [Obsolete("Will be removed in next release. See GetVaultRenewMessage(string)")]
+
+      protected virtual HttpRequestMessage GetValutRenewMessage(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Net.Http.HttpRequestMessage
+    content.vb: >-
+      <Obsolete("Will be removed in next release. See GetVaultRenewMessage(string)")>
+
+      Protected Overridable Function GetValutRenewMessage(requestUri As String) As HttpRequestMessage
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Will be removed in next release. See GetVaultRenewMessage(string)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled
+  id: IsDiscoveryFirstEnabled
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: IsDiscoveryFirstEnabled()
+  nameWithType: ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled()
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled()
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsDiscoveryFirstEnabled
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 868
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  syntax:
+    content: protected bool IsDiscoveryFirstEnabled()
+    return:
+      type: System.Boolean
+    content.vb: Protected Function IsDiscoveryFirstEnabled As Boolean
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings)
+  commentId: M:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings)
+  id: GetHttpClient(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings)
+  parent: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetHttpClient(ConfigServerClientSettings)
+  nameWithType: ConfigServerConfigurationProvider.GetHttpClient(ConfigServerClientSettings)
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient(Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetHttpClient
+    path: ../Steeltoe/src/Configuration/src/ConfigServerBase/ConfigServerConfigurationProvider.cs
+    startLine: 880
+  assemblies:
+  - Steeltoe.Extensions.Configuration.ConfigServerBase
+  namespace: Steeltoe.Extensions.Configuration.ConfigServer
+  summary: "\nCreates an appropriatly configured HttpClient that will be used in communicating with the\nSpring Cloud Configuration Server\n"
+  example: []
+  syntax:
+    content: protected static HttpClient GetHttpClient(ConfigServerClientSettings settings)
+    parameters:
+    - id: settings
+      type: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+      description: the settings used in configuring the HttpClient
+    return:
+      type: System.Net.Http.HttpClient
+      description: The HttpClient used by the provider
+    content.vb: Protected Shared Function GetHttpClient(settings As ConfigServerClientSettings) As HttpClient
+  overload: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+references:
+- uid: Steeltoe.Extensions.Configuration.ConfigServer
+  commentId: N:Steeltoe.Extensions.Configuration.ConfigServer
+  name: Steeltoe.Extensions.Configuration.ConfigServer
+  nameWithType: Steeltoe.Extensions.Configuration.ConfigServer
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IConfigurationSource
+  isExternal: true
+  name: IConfigurationSource
+  nameWithType: IConfigurationSource
+  fullName: IConfigurationSource
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+  commentId: T:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+  parent: Steeltoe.Extensions.Configuration.ConfigServer
+  name: ConfigServerClientSettings
+  nameWithType: ConfigServerClientSettings
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerClientSettings
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  commentId: T:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+  name: ConfigServerConfigurationProvider
+  nameWithType: ConfigServerConfigurationProvider
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.#ctor
+  name: ConfigServerConfigurationProvider
+  nameWithType: ConfigServerConfigurationProvider.ConfigServerConfigurationProvider
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConfigServerConfigurationProvider
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource
+  commentId: T:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource
+  parent: Steeltoe.Extensions.Configuration.ConfigServer
+  name: ConfigServerConfigurationSource
+  nameWithType: ConfigServerConfigurationSource
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationSource
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+  name: Settings
+  nameWithType: ConfigServerConfigurationProvider.Settings
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+  commentId: P:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Settings
+  isExternal: true
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load
+  name: Load
+  nameWithType: ConfigServerConfigurationProvider.Load
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Load
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build
+  name: Build
+  nameWithType: ConfigServerConfigurationProvider.Build
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Build
+- uid: IConfigurationBuilder
+  isExternal: true
+  name: IConfigurationBuilder
+  nameWithType: IConfigurationBuilder
+  fullName: IConfigurationBuilder
+- uid: IConfigurationProvider
+  isExternal: true
+  name: IConfigurationProvider
+  nameWithType: IConfigurationProvider
+  fullName: IConfigurationProvider
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage
+  name: GetRequestMessage
+  nameWithType: ConfigServerConfigurationProvider.GetRequestMessage
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetRequestMessage
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings
+  name: AddConfigServerClientSettings
+  nameWithType: ConfigServerConfigurationProvider.AddConfigServerClientSettings
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddConfigServerClientSettings
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync
+  name: RemoteLoadAsync
+  nameWithType: ConfigServerConfigurationProvider.RemoteLoadAsync
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RemoteLoadAsync
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Threading.Tasks.Task{Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConfigEnvironment>
+  nameWithType: Task<ConfigEnvironment>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment>
+  nameWithType.vb: Task(Of ConfigEnvironment)
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment)
+  name.vb: Task(Of ConfigEnvironment)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment
+    name: ConfigEnvironment
+    nameWithType: ConfigEnvironment
+    fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment
+    name: ConfigEnvironment
+    nameWithType: ConfigEnvironment
+    fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigEnvironment
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri
+  name: GetConfigServerUri
+  nameWithType: ConfigServerConfigurationProvider.GetConfigServerUri
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetConfigServerUri
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource
+  name: AddPropertySource
+  nameWithType: ConfigServerConfigurationProvider.AddPropertySource
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.AddPropertySource
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.PropertySource
+  commentId: T:Steeltoe.Extensions.Configuration.ConfigServer.PropertySource
+  parent: Steeltoe.Extensions.Configuration.ConfigServer
+  name: PropertySource
+  nameWithType: PropertySource
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.PropertySource
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey
+  name: ConvertKey
+  nameWithType: ConfigServerConfigurationProvider.ConvertKey
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertKey
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split
+  name: Split
+  nameWithType: ConfigServerConfigurationProvider.Split
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.Split
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey
+  name: ConvertArrayKey
+  nameWithType: ConfigServerConfigurationProvider.ConvertArrayKey
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertArrayKey
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue
+  name: ConvertValue
+  nameWithType: ConfigServerConfigurationProvider.ConvertValue
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.ConvertValue
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded
+  name: GetEncoded
+  nameWithType: ConfigServerConfigurationProvider.GetEncoded
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetEncoded
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken
+  name: RenewToken
+  nameWithType: ConfigServerConfigurationProvider.RenewToken
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RenewToken
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken
+  name: FetchAccessToken
+  nameWithType: ConfigServerConfigurationProvider.FetchAccessToken
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.FetchAccessToken
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync
+  name: RefreshVaultTokenAsync
+  nameWithType: ConfigServerConfigurationProvider.RefreshVaultTokenAsync
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.RefreshVaultTokenAsync
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri
+  name: GetVaultRenewUri
+  nameWithType: ConfigServerConfigurationProvider.GetVaultRenewUri
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewUri
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage
+  name: GetVaultRenewMessage
+  nameWithType: ConfigServerConfigurationProvider.GetVaultRenewMessage
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetVaultRenewMessage
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage
+  name: GetValutRenewMessage
+  nameWithType: ConfigServerConfigurationProvider.GetValutRenewMessage
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetValutRenewMessage
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled
+  name: IsDiscoveryFirstEnabled
+  nameWithType: ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.IsDiscoveryFirstEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient*
+  commentId: Overload:Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient
+  name: GetHttpClient
+  nameWithType: ConfigServerConfigurationProvider.GetHttpClient
+  fullName: Steeltoe.Extensions.Configuration.ConfigServer.ConfigServerConfigurationProvider.GetHttpClient

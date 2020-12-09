@@ -1,0 +1,1191 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+  commentId: T:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+  id: AbstractReplyProducingMessageHandler
+  parent: Steeltoe.Integration.Handler
+  children:
+  - Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  - Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply
+  langs:
+  - csharp
+  - vb
+  name: AbstractReplyProducingMessageHandler
+  nameWithType: AbstractReplyProducingMessageHandler
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+  type: Class
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractReplyProducingMessageHandler
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: 'public abstract class AbstractReplyProducingMessageHandler : AbstractMessageProducingHandler, IMessageHandler, IServiceNameAware, IOrdered, IMessageProducer, IHeaderPropagation'
+    content.vb: >-
+      Public MustInherit Class AbstractReplyProducingMessageHandler
+
+          Inherits AbstractMessageProducingHandler
+
+          Implements IMessageHandler, IServiceNameAware, IOrdered, IMessageProducer, IHeaderPropagation
+  inheritance:
+  - System.Object
+  - Steeltoe.Integration.Handler.AbstractMessageHandler
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  derivedClasses:
+  - Steeltoe.Integration.Handler.BridgeHandler
+  - Steeltoe.Integration.Handler.ServiceActivatingHandler
+  - Steeltoe.Integration.Transformer.MessageTransformingHandler
+  - Steeltoe.Stream.Binding.DispatchingStreamListenerMessageHandler
+  - Steeltoe.Stream.Binding.StreamListenerMessageHandler
+  implements:
+  - Steeltoe.Messaging.IMessageHandler
+  - IServiceNameAware
+  - Steeltoe.Common.Order.IOrdered
+  - Steeltoe.Integration.IMessageProducer
+  - Steeltoe.Integration.Handler.IHeaderPropagation
+  inheritedMembers:
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannel
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannelName
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.NotPropagatedHeaders
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(System.String[])
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldCopyRequestHeaders
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendTimeout
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList{System.String},System.Boolean)
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs(System.Object,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput(System.Object,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput(System.Object,System.Object,System.Boolean)
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput(System.Collections.IEnumerable)
+  - Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  commentId: M:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext)'
+  parent: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: AbstractReplyProducingMessageHandler(IApplicationContext)
+  nameWithType: AbstractReplyProducingMessageHandler.AbstractReplyProducingMessageHandler(IApplicationContext)
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.AbstractReplyProducingMessageHandler(Steeltoe.Common.Contexts.IApplicationContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: protected AbstractReplyProducingMessageHandler(IApplicationContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Protected Sub New(context As IApplicationContext)
+  overload: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply
+  commentId: P:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply
+  id: RequiresReply
+  parent: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: RequiresReply
+  nameWithType: AbstractReplyProducingMessageHandler.RequiresReply
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RequiresReply
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: public bool RequiresReply { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RequiresReply As Boolean
+  overload: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  id: HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleMessageInternal(IMessage)
+  nameWithType: AbstractReplyProducingMessageHandler.HandleMessageInternal(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleMessageInternal
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: protected override void HandleMessageInternal(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Protected Overrides Sub HandleMessageInternal(message As IMessage)
+  overridden: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  overload: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage)
+  id: HandleRequestMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleRequestMessage(IMessage)
+  nameWithType: AbstractReplyProducingMessageHandler.HandleRequestMessage(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleRequestMessage
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/AbstractReplyProducingMessageHandler.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: protected abstract object HandleRequestMessage(IMessage requestMessage)
+    parameters:
+    - id: requestMessage
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: System.Object
+    content.vb: Protected MustOverride Function HandleRequestMessage(requestMessage As IMessage) As Object
+  overload: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+references:
+- uid: Steeltoe.Integration.Handler
+  commentId: N:Steeltoe.Integration.Handler
+  name: Steeltoe.Integration.Handler
+  nameWithType: Steeltoe.Integration.Handler
+  fullName: Steeltoe.Integration.Handler
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler
+  commentId: T:Steeltoe.Integration.Handler.AbstractMessageHandler
+  parent: Steeltoe.Integration.Handler
+  name: AbstractMessageHandler
+  nameWithType: AbstractMessageHandler
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  commentId: T:Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  parent: Steeltoe.Integration.Handler
+  name: AbstractMessageProducingHandler
+  nameWithType: AbstractMessageProducingHandler
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+- uid: Steeltoe.Messaging.IMessageHandler
+  commentId: T:Steeltoe.Messaging.IMessageHandler
+  parent: Steeltoe.Messaging
+  name: IMessageHandler
+  nameWithType: IMessageHandler
+  fullName: Steeltoe.Messaging.IMessageHandler
+- uid: IServiceNameAware
+  isExternal: true
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: IServiceNameAware
+- uid: Steeltoe.Common.Order.IOrdered
+  commentId: T:Steeltoe.Common.Order.IOrdered
+  parent: Steeltoe.Common.Order
+  name: IOrdered
+  nameWithType: IOrdered
+  fullName: Steeltoe.Common.Order.IOrdered
+- uid: Steeltoe.Integration.IMessageProducer
+  commentId: T:Steeltoe.Integration.IMessageProducer
+  parent: Steeltoe.Integration
+  name: IMessageProducer
+  nameWithType: IMessageProducer
+  fullName: Steeltoe.Integration.IMessageProducer
+- uid: Steeltoe.Integration.Handler.IHeaderPropagation
+  commentId: T:Steeltoe.Integration.Handler.IHeaderPropagation
+  parent: Steeltoe.Integration.Handler
+  name: IHeaderPropagation
+  nameWithType: IHeaderPropagation
+  fullName: Steeltoe.Integration.Handler.IHeaderPropagation
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannel
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannel
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  name: OutputChannel
+  nameWithType: AbstractMessageProducingHandler.OutputChannel
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannel
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannelName
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannelName
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  name: OutputChannelName
+  nameWithType: AbstractMessageProducingHandler.OutputChannelName
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.OutputChannelName
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.NotPropagatedHeaders
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.NotPropagatedHeaders
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  name: NotPropagatedHeaders
+  nameWithType: AbstractMessageProducingHandler.NotPropagatedHeaders
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.NotPropagatedHeaders
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(System.String[])
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(System.String[])
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  isExternal: true
+  name: AddNotPropagatedHeaders(String[])
+  nameWithType: AbstractMessageProducingHandler.AddNotPropagatedHeaders(String[])
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(System.String[])
+  nameWithType.vb: AbstractMessageProducingHandler.AddNotPropagatedHeaders(String())
+  fullName.vb: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(System.String())
+  name.vb: AddNotPropagatedHeaders(String())
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(System.String[])
+    name: AddNotPropagatedHeaders
+    nameWithType: AbstractMessageProducingHandler.AddNotPropagatedHeaders
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders(System.String[])
+    name: AddNotPropagatedHeaders
+    nameWithType: AbstractMessageProducingHandler.AddNotPropagatedHeaders
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.AddNotPropagatedHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldCopyRequestHeaders
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldCopyRequestHeaders
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  name: ShouldCopyRequestHeaders
+  nameWithType: AbstractMessageProducingHandler.ShouldCopyRequestHeaders
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldCopyRequestHeaders
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendTimeout
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendTimeout
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  name: SendTimeout
+  nameWithType: AbstractMessageProducingHandler.SendTimeout
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendTimeout
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList{System.String},System.Boolean)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList{System.String},System.Boolean)
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  isExternal: true
+  name: UpdateNotPropagatedHeaders(IList<String>, Boolean)
+  nameWithType: AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(IList<String>, Boolean)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList<System.String>, System.Boolean)
+  nameWithType.vb: AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(IList(Of String), Boolean)
+  fullName.vb: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList(Of System.String), System.Boolean)
+  name.vb: UpdateNotPropagatedHeaders(IList(Of String), Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList{System.String},System.Boolean)
+    name: UpdateNotPropagatedHeaders
+    nameWithType: AbstractMessageProducingHandler.UpdateNotPropagatedHeaders
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders(System.Collections.Generic.IList{System.String},System.Boolean)
+    name: UpdateNotPropagatedHeaders
+    nameWithType: AbstractMessageProducingHandler.UpdateNotPropagatedHeaders
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.UpdateNotPropagatedHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs(System.Object,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs(System.Object,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  isExternal: true
+  name: SendOutputs(Object, IMessage)
+  nameWithType: AbstractMessageProducingHandler.SendOutputs(Object, IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs(System.Object, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs(System.Object,Steeltoe.Messaging.IMessage)
+    name: SendOutputs
+    nameWithType: AbstractMessageProducingHandler.SendOutputs
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs(System.Object,Steeltoe.Messaging.IMessage)
+    name: SendOutputs
+    nameWithType: AbstractMessageProducingHandler.SendOutputs
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput(System.Object,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput(System.Object,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  isExternal: true
+  name: ProduceOutput(Object, IMessage)
+  nameWithType: AbstractMessageProducingHandler.ProduceOutput(Object, IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput(System.Object, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput(System.Object,Steeltoe.Messaging.IMessage)
+    name: ProduceOutput
+    nameWithType: AbstractMessageProducingHandler.ProduceOutput
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput(System.Object,Steeltoe.Messaging.IMessage)
+    name: ProduceOutput
+    nameWithType: AbstractMessageProducingHandler.ProduceOutput
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ProduceOutput
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput(System.Object,System.Object,System.Boolean)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput(System.Object,System.Object,System.Boolean)
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  isExternal: true
+  name: SendOutput(Object, Object, Boolean)
+  nameWithType: AbstractMessageProducingHandler.SendOutput(Object, Object, Boolean)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput(System.Object, System.Object, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput(System.Object,System.Object,System.Boolean)
+    name: SendOutput
+    nameWithType: AbstractMessageProducingHandler.SendOutput
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput(System.Object,System.Object,System.Boolean)
+    name: SendOutput
+    nameWithType: AbstractMessageProducingHandler.SendOutput
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.SendOutput
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput(System.Collections.IEnumerable)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput(System.Collections.IEnumerable)
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  isExternal: true
+  name: ShouldSplitOutput(IEnumerable)
+  nameWithType: AbstractMessageProducingHandler.ShouldSplitOutput(IEnumerable)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput(System.Collections.IEnumerable)
+    name: ShouldSplitOutput
+    nameWithType: AbstractMessageProducingHandler.ShouldSplitOutput
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput(System.Collections.IEnumerable)
+    name: ShouldSplitOutput
+    nameWithType: AbstractMessageProducingHandler.ShouldSplitOutput
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.ShouldSplitOutput
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Integration.Handler.AbstractMessageProducingHandler
+  isExternal: true
+  name: CreateOutputMessage(Object, IMessageHeaders)
+  nameWithType: AbstractMessageProducingHandler.CreateOutputMessage(Object, IMessageHeaders)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage(System.Object, Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: CreateOutputMessage
+    nameWithType: AbstractMessageProducingHandler.CreateOutputMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: CreateOutputMessage
+    nameWithType: AbstractMessageProducingHandler.CreateOutputMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageProducingHandler.CreateOutputMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: IntegrationServices
+  nameWithType: AbstractMessageHandler.IntegrationServices
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ApplicationContext
+  nameWithType: AbstractMessageHandler.ApplicationContext
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ComponentType
+  nameWithType: AbstractMessageHandler.ComponentType
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ServiceName
+  nameWithType: AbstractMessageHandler.ServiceName
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ComponentName
+  nameWithType: AbstractMessageHandler.ComponentName
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: Order
+  nameWithType: AbstractMessageHandler.Order
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: HandleMessage(IMessage)
+  nameWithType: AbstractMessageHandler.HandleMessage(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+    name: HandleMessage
+    nameWithType: AbstractMessageHandler.HandleMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+    name: HandleMessage
+    nameWithType: AbstractMessageHandler.HandleMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: Initialize()
+  nameWithType: AbstractMessageHandler.Initialize()
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+    name: Initialize
+    nameWithType: AbstractMessageHandler.Initialize
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+    name: Initialize
+    nameWithType: AbstractMessageHandler.Initialize
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Common.Order
+  commentId: N:Steeltoe.Common.Order
+  name: Steeltoe.Common.Order
+  nameWithType: Steeltoe.Common.Order
+  fullName: Steeltoe.Common.Order
+- uid: Steeltoe.Integration
+  commentId: N:Steeltoe.Integration
+  name: Steeltoe.Integration
+  nameWithType: Steeltoe.Integration
+  fullName: Steeltoe.Integration
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.#ctor*
+  commentId: Overload:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.#ctor
+  name: AbstractReplyProducingMessageHandler
+  nameWithType: AbstractReplyProducingMessageHandler.AbstractReplyProducingMessageHandler
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.AbstractReplyProducingMessageHandler
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply*
+  commentId: Overload:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply
+  name: RequiresReply
+  nameWithType: AbstractReplyProducingMessageHandler.RequiresReply
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.RequiresReply
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: HandleMessageInternal(IMessage)
+  nameWithType: AbstractMessageHandler.HandleMessageInternal(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+    name: HandleMessageInternal
+    nameWithType: AbstractMessageHandler.HandleMessageInternal
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+    name: HandleMessageInternal
+    nameWithType: AbstractMessageHandler.HandleMessageInternal
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal*
+  commentId: Overload:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal
+  name: HandleMessageInternal
+  nameWithType: AbstractReplyProducingMessageHandler.HandleMessageInternal
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleMessageInternal
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage*
+  commentId: Overload:Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage
+  name: HandleRequestMessage
+  nameWithType: AbstractReplyProducingMessageHandler.HandleRequestMessage
+  fullName: Steeltoe.Integration.Handler.AbstractReplyProducingMessageHandler.HandleRequestMessage

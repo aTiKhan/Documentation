@@ -1,0 +1,313 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations
+  commentId: T:Steeltoe.Integration.Channel.IQueueChannelOperations
+  id: IQueueChannelOperations
+  parent: Steeltoe.Integration.Channel
+  children:
+  - Steeltoe.Integration.Channel.IQueueChannelOperations.Clear
+  - Steeltoe.Integration.Channel.IQueueChannelOperations.Purge(Steeltoe.Integration.IMessageSelector)
+  - Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize
+  - Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity
+  langs:
+  - csharp
+  - vb
+  name: IQueueChannelOperations
+  nameWithType: IQueueChannelOperations
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations
+  type: Interface
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IQueueChannelOperations
+    path: ../Steeltoe/src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Channel
+  summary: "\nOperations available on a channel that has queuing semantics\n"
+  example: []
+  syntax:
+    content: public interface IQueueChannelOperations
+    content.vb: Public Interface IQueueChannelOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize
+  commentId: P:Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize
+  id: QueueSize
+  parent: Steeltoe.Integration.Channel.IQueueChannelOperations
+  langs:
+  - csharp
+  - vb
+  name: QueueSize
+  nameWithType: IQueueChannelOperations.QueueSize
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: QueueSize
+    path: ../Steeltoe/src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Channel
+  summary: "\nGets the size of the queue\n"
+  example: []
+  syntax:
+    content: int QueueSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property QueueSize As Integer
+  overload: Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity
+  commentId: P:Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity
+  id: RemainingCapacity
+  parent: Steeltoe.Integration.Channel.IQueueChannelOperations
+  langs:
+  - csharp
+  - vb
+  name: RemainingCapacity
+  nameWithType: IQueueChannelOperations.RemainingCapacity
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemainingCapacity
+    path: ../Steeltoe/src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Channel
+  summary: "\nGets the remaining capacity of the queue\n"
+  example: []
+  syntax:
+    content: int RemainingCapacity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property RemainingCapacity As Integer
+  overload: Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.Clear
+  commentId: M:Steeltoe.Integration.Channel.IQueueChannelOperations.Clear
+  id: Clear
+  parent: Steeltoe.Integration.Channel.IQueueChannelOperations
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IQueueChannelOperations.Clear()
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Clear
+    path: ../Steeltoe/src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Channel
+  summary: "\nClear all items off the quewue\n"
+  example: []
+  syntax:
+    content: IList<IMessage> Clear()
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Messaging.IMessage}
+      description: list of removed messages
+    content.vb: Function Clear As IList(Of IMessage)
+  overload: Steeltoe.Integration.Channel.IQueueChannelOperations.Clear*
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.Purge(Steeltoe.Integration.IMessageSelector)
+  commentId: M:Steeltoe.Integration.Channel.IQueueChannelOperations.Purge(Steeltoe.Integration.IMessageSelector)
+  id: Purge(Steeltoe.Integration.IMessageSelector)
+  parent: Steeltoe.Integration.Channel.IQueueChannelOperations
+  langs:
+  - csharp
+  - vb
+  name: Purge(IMessageSelector)
+  nameWithType: IQueueChannelOperations.Purge(IMessageSelector)
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.Purge(Steeltoe.Integration.IMessageSelector)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Purge
+    path: ../Steeltoe/src/Integration/src/Abstractions/Channel/IQueueChannelOperations.cs
+    startLine: 35
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Channel
+  summary: "\nRemove any Messages that are not accepted by the provided selector.\n"
+  example: []
+  syntax:
+    content: IList<IMessage> Purge(IMessageSelector messageSelector)
+    parameters:
+    - id: messageSelector
+      type: Steeltoe.Integration.IMessageSelector
+      description: the selector to apply
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Messaging.IMessage}
+      description: list of purged messages
+    content.vb: Function Purge(messageSelector As IMessageSelector) As IList(Of IMessage)
+  overload: Steeltoe.Integration.Channel.IQueueChannelOperations.Purge*
+references:
+- uid: Steeltoe.Integration.Channel
+  commentId: N:Steeltoe.Integration.Channel
+  name: Steeltoe.Integration.Channel
+  nameWithType: Steeltoe.Integration.Channel
+  fullName: Steeltoe.Integration.Channel
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize*
+  commentId: Overload:Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize
+  name: QueueSize
+  nameWithType: IQueueChannelOperations.QueueSize
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.QueueSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity*
+  commentId: Overload:Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity
+  name: RemainingCapacity
+  nameWithType: IQueueChannelOperations.RemainingCapacity
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.RemainingCapacity
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.Clear*
+  commentId: Overload:Steeltoe.Integration.Channel.IQueueChannelOperations.Clear
+  name: Clear
+  nameWithType: IQueueChannelOperations.Clear
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.Clear
+- uid: System.Collections.Generic.IList{Steeltoe.Messaging.IMessage}
+  commentId: T:System.Collections.Generic.IList{Steeltoe.Messaging.IMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<IMessage>
+  nameWithType: IList<IMessage>
+  fullName: System.Collections.Generic.IList<Steeltoe.Messaging.IMessage>
+  nameWithType.vb: IList(Of IMessage)
+  fullName.vb: System.Collections.Generic.IList(Of Steeltoe.Messaging.IMessage)
+  name.vb: IList(Of IMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Integration.Channel.IQueueChannelOperations.Purge*
+  commentId: Overload:Steeltoe.Integration.Channel.IQueueChannelOperations.Purge
+  name: Purge
+  nameWithType: IQueueChannelOperations.Purge
+  fullName: Steeltoe.Integration.Channel.IQueueChannelOperations.Purge
+- uid: Steeltoe.Integration.IMessageSelector
+  commentId: T:Steeltoe.Integration.IMessageSelector
+  parent: Steeltoe.Integration
+  name: IMessageSelector
+  nameWithType: IMessageSelector
+  fullName: Steeltoe.Integration.IMessageSelector
+- uid: Steeltoe.Integration
+  commentId: N:Steeltoe.Integration
+  name: Steeltoe.Integration
+  nameWithType: Steeltoe.Integration
+  fullName: Steeltoe.Integration

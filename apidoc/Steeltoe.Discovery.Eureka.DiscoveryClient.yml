@@ -1,0 +1,2442 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient
+  commentId: T:Steeltoe.Discovery.Eureka.DiscoveryClient
+  id: DiscoveryClient
+  parent: Steeltoe.Discovery.Eureka
+  children:
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor(Steeltoe.Discovery.Eureka.ApplicationInfoManager,ILoggerFactory)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor(Steeltoe.Discovery.Eureka.IEurekaClientConfig,Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient,ILoggerFactory)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._appInfoManager
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._cacheRefreshTimer
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._heartBeatTimer
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._httpClient
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._localRegionApps
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._logger
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._random
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._registryFetchCounter
+  - Steeltoe.Discovery.Eureka.DiscoveryClient._shutdown
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.Applications
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync(System.Boolean)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication(System.String)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById(System.String)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress(System.String,System.Boolean)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName(System.String,System.String,System.Boolean)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka(System.String,System.Boolean)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer(System.String,System.Int32,System.Action)
+  - Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryClient
+  nameWithType: DiscoveryClient
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient
+  type: Class
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DiscoveryClient
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: 'public class DiscoveryClient : IEurekaClient, ILookupService'
+    content.vb: >-
+      Public Class DiscoveryClient
+
+          Implements IEurekaClient, ILookupService
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Discovery.Eureka.EurekaDiscoveryClient
+  implements:
+  - Steeltoe.Discovery.Eureka.IEurekaClient
+  - Steeltoe.Discovery.Eureka.ILookupService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._heartBeatTimer
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._heartBeatTimer
+  id: _heartBeatTimer
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _heartBeatTimer
+  nameWithType: DiscoveryClient._heartBeatTimer
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._heartBeatTimer
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _heartBeatTimer
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Timer _heartBeatTimer
+    return:
+      type: System.Threading.Timer
+    content.vb: Protected _heartBeatTimer As Timer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._cacheRefreshTimer
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._cacheRefreshTimer
+  id: _cacheRefreshTimer
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _cacheRefreshTimer
+  nameWithType: DiscoveryClient._cacheRefreshTimer
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._cacheRefreshTimer
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _cacheRefreshTimer
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Timer _cacheRefreshTimer
+    return:
+      type: System.Threading.Timer
+    content.vb: Protected _cacheRefreshTimer As Timer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._localRegionApps
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._localRegionApps
+  id: _localRegionApps
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _localRegionApps
+  nameWithType: DiscoveryClient._localRegionApps
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._localRegionApps
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _localRegionApps
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected volatile Applications _localRegionApps
+    return:
+      type: Steeltoe.Discovery.Eureka.AppInfo.Applications
+    content.vb: Protected _localRegionApps As Applications
+  modifiers.csharp:
+  - protected
+  - volatile
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._registryFetchCounter
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._registryFetchCounter
+  id: _registryFetchCounter
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _registryFetchCounter
+  nameWithType: DiscoveryClient._registryFetchCounter
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._registryFetchCounter
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _registryFetchCounter
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected long _registryFetchCounter
+    return:
+      type: System.Int64
+    content.vb: Protected _registryFetchCounter As Long
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._httpClient
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._httpClient
+  id: _httpClient
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _httpClient
+  nameWithType: DiscoveryClient._httpClient
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._httpClient
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _httpClient
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected IEurekaHttpClient _httpClient
+    return:
+      type: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+    content.vb: Protected _httpClient As IEurekaHttpClient
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._random
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._random
+  id: _random
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _random
+  nameWithType: DiscoveryClient._random
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._random
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _random
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Random _random
+    return:
+      type: System.Random
+    content.vb: Protected _random As Random
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._logger
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._logger
+  id: _logger
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _logger
+  nameWithType: DiscoveryClient._logger
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._logger
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _logger
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected ILogger _logger
+    return:
+      type: ILogger
+    content.vb: Protected _logger As ILogger
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._shutdown
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._shutdown
+  id: _shutdown
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _shutdown
+  nameWithType: DiscoveryClient._shutdown
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._shutdown
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _shutdown
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected int _shutdown
+    return:
+      type: System.Int32
+    content.vb: Protected _shutdown As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient._appInfoManager
+  commentId: F:Steeltoe.Discovery.Eureka.DiscoveryClient._appInfoManager
+  id: _appInfoManager
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: _appInfoManager
+  nameWithType: DiscoveryClient._appInfoManager
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient._appInfoManager
+  type: Field
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _appInfoManager
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected ApplicationInfoManager _appInfoManager
+    return:
+      type: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+    content.vb: Protected _appInfoManager As ApplicationInfoManager
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp
+  id: LastGoodHeartbeatTimestamp
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: LastGoodHeartbeatTimestamp
+  nameWithType: DiscoveryClient.LastGoodHeartbeatTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastGoodHeartbeatTimestamp
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public long LastGoodHeartbeatTimestamp { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property LastGoodHeartbeatTimestamp As Long
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+  id: LastGoodFullRegistryFetchTimestamp
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: LastGoodFullRegistryFetchTimestamp
+  nameWithType: DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastGoodFullRegistryFetchTimestamp
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public long LastGoodFullRegistryFetchTimestamp { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property LastGoodFullRegistryFetchTimestamp As Long
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+  id: LastGoodDeltaRegistryFetchTimestamp
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: LastGoodDeltaRegistryFetchTimestamp
+  nameWithType: DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastGoodDeltaRegistryFetchTimestamp
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 33
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public long LastGoodDeltaRegistryFetchTimestamp { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property LastGoodDeltaRegistryFetchTimestamp As Long
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp
+  id: LastGoodRegistryFetchTimestamp
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: LastGoodRegistryFetchTimestamp
+  nameWithType: DiscoveryClient.LastGoodRegistryFetchTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastGoodRegistryFetchTimestamp
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 35
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public long LastGoodRegistryFetchTimestamp { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property LastGoodRegistryFetchTimestamp As Long
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp
+  id: LastGoodRegisterTimestamp
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: LastGoodRegisterTimestamp
+  nameWithType: DiscoveryClient.LastGoodRegisterTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastGoodRegisterTimestamp
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public long LastGoodRegisterTimestamp { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property LastGoodRegisterTimestamp As Long
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus
+  id: LastRemoteInstanceStatus
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: LastRemoteInstanceStatus
+  nameWithType: DiscoveryClient.LastRemoteInstanceStatus
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastRemoteInstanceStatus
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public InstanceStatus LastRemoteInstanceStatus { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+    content.vb: Public ReadOnly Property LastRemoteInstanceStatus As InstanceStatus
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient
+  id: HttpClient
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: HttpClient
+  nameWithType: DiscoveryClient.HttpClient
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HttpClient
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public IEurekaHttpClient HttpClient { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+    content.vb: Public ReadOnly Property HttpClient As IEurekaHttpClient
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.Applications
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.Applications
+  id: Applications
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: Applications
+  nameWithType: DiscoveryClient.Applications
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.Applications
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Applications
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public Applications Applications { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Discovery.Eureka.AppInfo.Applications
+    content.vb: Public ReadOnly Property Applications As Applications
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.Applications*
+  implements:
+  - Steeltoe.Discovery.Eureka.ILookupService.Applications
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig
+  id: ClientConfig
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: ClientConfig
+  nameWithType: DiscoveryClient.ClientConfig
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ClientConfig
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 64
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public virtual IEurekaClientConfig ClientConfig { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Discovery.Eureka.IEurekaClientConfig
+    content.vb: Public Overridable ReadOnly Property ClientConfig As IEurekaClientConfig
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler
+  commentId: P:Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler
+  id: HealthCheckHandler
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: HealthCheckHandler
+  nameWithType: DiscoveryClient.HealthCheckHandler
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HealthCheckHandler
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 66
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public IHealthCheckHandler HealthCheckHandler { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Discovery.Eureka.IHealthCheckHandler
+    content.vb: Public Property HealthCheckHandler As IHealthCheckHandler
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor(Steeltoe.Discovery.Eureka.IEurekaClientConfig,Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient,ILoggerFactory)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor(Steeltoe.Discovery.Eureka.IEurekaClientConfig,Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient,ILoggerFactory)
+  id: '#ctor(Steeltoe.Discovery.Eureka.IEurekaClientConfig,Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient,ILoggerFactory)'
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryClient(IEurekaClientConfig, IEurekaHttpClient, ILoggerFactory)
+  nameWithType: DiscoveryClient.DiscoveryClient(IEurekaClientConfig, IEurekaHttpClient, ILoggerFactory)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.DiscoveryClient(Steeltoe.Discovery.Eureka.IEurekaClientConfig, Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public DiscoveryClient(IEurekaClientConfig clientConfig, IEurekaHttpClient httpClient = null, ILoggerFactory logFactory = null)
+    parameters:
+    - id: clientConfig
+      type: Steeltoe.Discovery.Eureka.IEurekaClientConfig
+    - id: httpClient
+      type: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+    - id: logFactory
+      type: ILoggerFactory
+    content.vb: Public Sub New(clientConfig As IEurekaClientConfig, httpClient As IEurekaHttpClient = Nothing, logFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor(Steeltoe.Discovery.Eureka.ApplicationInfoManager,ILoggerFactory)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor(Steeltoe.Discovery.Eureka.ApplicationInfoManager,ILoggerFactory)
+  id: '#ctor(Steeltoe.Discovery.Eureka.ApplicationInfoManager,ILoggerFactory)'
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryClient(ApplicationInfoManager, ILoggerFactory)
+  nameWithType: DiscoveryClient.DiscoveryClient(ApplicationInfoManager, ILoggerFactory)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.DiscoveryClient(Steeltoe.Discovery.Eureka.ApplicationInfoManager, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 85
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected DiscoveryClient(ApplicationInfoManager appInfoManager, ILoggerFactory logFactory = null)
+    parameters:
+    - id: appInfoManager
+      type: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+    - id: logFactory
+      type: ILoggerFactory
+    content.vb: Protected Sub New(appInfoManager As ApplicationInfoManager, logFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication(System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication(System.String)
+  id: GetApplication(System.String)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetApplication(String)
+  nameWithType: DiscoveryClient.GetApplication(String)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetApplication
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 91
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public Application GetApplication(string appName)
+    parameters:
+    - id: appName
+      type: System.String
+    return:
+      type: Steeltoe.Discovery.Eureka.AppInfo.Application
+    content.vb: Public Function GetApplication(appName As String) As Application
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication*
+  implements:
+  - Steeltoe.Discovery.Eureka.ILookupService.GetApplication(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById(System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById(System.String)
+  id: GetInstanceById(System.String)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetInstanceById(String)
+  nameWithType: DiscoveryClient.GetInstanceById(String)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstanceById
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 107
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public IList<InstanceInfo> GetInstanceById(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}
+    content.vb: Public Function GetInstanceById(id As String) As IList(Of InstanceInfo)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById*
+  implements:
+  - Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress(System.String,System.Boolean)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress(System.String,System.Boolean)
+  id: GetInstancesByVipAddress(System.String,System.Boolean)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesByVipAddress(String, Boolean)
+  nameWithType: DiscoveryClient.GetInstancesByVipAddress(String, Boolean)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstancesByVipAddress
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 135
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public IList<InstanceInfo> GetInstancesByVipAddress(string vipAddress, bool secure)
+    parameters:
+    - id: vipAddress
+      type: System.String
+    - id: secure
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}
+    content.vb: Public Function GetInstancesByVipAddress(vipAddress As String, secure As Boolean) As IList(Of InstanceInfo)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress*
+  implements:
+  - Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress(System.String,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName(System.String,System.String,System.Boolean)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName(System.String,System.String,System.Boolean)
+  id: GetInstancesByVipAddressAndAppName(System.String,System.String,System.Boolean)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesByVipAddressAndAppName(String, String, Boolean)
+  nameWithType: DiscoveryClient.GetInstancesByVipAddressAndAppName(String, String, Boolean)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstancesByVipAddressAndAppName
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 160
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public IList<InstanceInfo> GetInstancesByVipAddressAndAppName(string vipAddress, string appName, bool secure)
+    parameters:
+    - id: vipAddress
+      type: System.String
+    - id: appName
+      type: System.String
+    - id: secure
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}
+    content.vb: Public Function GetInstancesByVipAddressAndAppName(vipAddress As String, appName As String, secure As Boolean) As IList(Of InstanceInfo)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka(System.String,System.Boolean)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka(System.String,System.Boolean)
+  id: GetNextServerFromEureka(System.String,System.Boolean)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetNextServerFromEureka(String, Boolean)
+  nameWithType: DiscoveryClient.GetNextServerFromEureka(String, Boolean)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetNextServerFromEureka
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 208
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public InstanceInfo GetNextServerFromEureka(string vipAddress, bool secure)
+    parameters:
+    - id: vipAddress
+      type: System.String
+    - id: secure
+      type: System.Boolean
+    return:
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    content.vb: Public Function GetNextServerFromEureka(vipAddress As String, secure As Boolean) As InstanceInfo
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka*
+  implements:
+  - Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka(System.String,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync
+  id: ShutdownAsync
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: ShutdownAsync()
+  nameWithType: DiscoveryClient.ShutdownAsync()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ShutdownAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 225
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public virtual Task ShutdownAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function ShutdownAsync As Task
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync*
+  implements:
+  - Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus
+  id: GetInstanceRemoteStatus
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetInstanceRemoteStatus()
+  nameWithType: DiscoveryClient.GetInstanceRemoteStatus()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstanceRemoteStatus
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 265
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public InstanceStatus GetInstanceRemoteStatus()
+    return:
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+    content.vb: Public Function GetInstanceRemoteStatus As InstanceStatus
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer(System.String,System.Int32,System.Action)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer(System.String,System.Int32,System.Action)
+  id: StartTimer(System.String,System.Int32,System.Action)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: StartTimer(String, Int32, Action)
+  nameWithType: DiscoveryClient.StartTimer(String, Int32, Action)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer(System.String, System.Int32, System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: StartTimer
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 319
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Timer StartTimer(string name, int interval, Action task)
+    parameters:
+    - id: name
+      type: System.String
+    - id: interval
+      type: System.Int32
+    - id: task
+      type: System.Action
+    return:
+      type: System.Threading.Timer
+    content.vb: Protected Function StartTimer(name As String, interval As Integer, task As Action) As Timer
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync(System.Boolean)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync(System.Boolean)
+  id: FetchRegistryAsync(System.Boolean)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: FetchRegistryAsync(Boolean)
+  nameWithType: DiscoveryClient.FetchRegistryAsync(Boolean)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FetchRegistryAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 326
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task<bool> FetchRegistryAsync(bool fullUpdate)
+    parameters:
+    - id: fullUpdate
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Protected Function FetchRegistryAsync(fullUpdate As Boolean) As Task(Of Boolean)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync
+  id: UnregisterAsync
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: UnregisterAsync()
+  nameWithType: DiscoveryClient.UnregisterAsync()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UnregisterAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 370
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task<bool> UnregisterAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Protected Function UnregisterAsync As Task(Of Boolean)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync
+  id: RegisterAsync
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsync()
+  nameWithType: DiscoveryClient.RegisterAsync()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 393
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task<bool> RegisterAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Protected Function RegisterAsync As Task(Of Boolean)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync
+  id: RenewAsync
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: RenewAsync()
+  nameWithType: DiscoveryClient.RenewAsync()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RenewAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 422
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task<bool> RenewAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Protected Function RenewAsync As Task(Of Boolean)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync
+  id: FetchFullRegistryAsync
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: FetchFullRegistryAsync()
+  nameWithType: DiscoveryClient.FetchFullRegistryAsync()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FetchFullRegistryAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 463
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task<Applications> FetchFullRegistryAsync()
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.AppInfo.Applications}
+    content.vb: Protected Function FetchFullRegistryAsync As Task(Of Applications)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync
+  id: FetchRegistryDeltaAsync
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: FetchRegistryDeltaAsync()
+  nameWithType: DiscoveryClient.FetchRegistryDeltaAsync()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FetchRegistryDeltaAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 502
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task<Applications> FetchRegistryDeltaAsync()
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.AppInfo.Applications}
+    content.vb: Protected Function FetchRegistryDeltaAsync As Task(Of Applications)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo
+  id: RefreshInstanceInfo
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: RefreshInstanceInfo()
+  nameWithType: DiscoveryClient.RefreshInstanceInfo()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RefreshInstanceInfo
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 541
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected void RefreshInstanceInfo()
+    content.vb: Protected Sub RefreshInstanceInfo
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  id: RegisterDirtyInstanceInfo(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterDirtyInstanceInfo(InstanceInfo)
+  nameWithType: DiscoveryClient.RegisterDirtyInstanceInfo(InstanceInfo)
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterDirtyInstanceInfo
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 576
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task<bool> RegisterDirtyInstanceInfo(InstanceInfo inst)
+    parameters:
+    - id: inst
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Protected Function RegisterDirtyInstanceInfo(inst As InstanceInfo) As Task(Of Boolean)
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize
+  id: Initialize
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: DiscoveryClient.Initialize()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 588
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected void Initialize()
+    content.vb: Protected Sub Initialize
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync
+  commentId: M:Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync
+  id: InitializeAsync
+  parent: Steeltoe.Discovery.Eureka.DiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: DiscoveryClient.InitializeAsync()
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/DiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: InitializeAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/DiscoveryClient.cs
+    startLine: 590
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: protected Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Function InitializeAsync As Task
+  overload: Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Discovery.Eureka
+  commentId: N:Steeltoe.Discovery.Eureka
+  name: Steeltoe.Discovery.Eureka
+  nameWithType: Steeltoe.Discovery.Eureka
+  fullName: Steeltoe.Discovery.Eureka
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Discovery.Eureka.IEurekaClient
+  commentId: T:Steeltoe.Discovery.Eureka.IEurekaClient
+  parent: Steeltoe.Discovery.Eureka
+  name: IEurekaClient
+  nameWithType: IEurekaClient
+  fullName: Steeltoe.Discovery.Eureka.IEurekaClient
+- uid: Steeltoe.Discovery.Eureka.ILookupService
+  commentId: T:Steeltoe.Discovery.Eureka.ILookupService
+  parent: Steeltoe.Discovery.Eureka
+  name: ILookupService
+  nameWithType: ILookupService
+  fullName: Steeltoe.Discovery.Eureka.ILookupService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Timer
+  commentId: T:System.Threading.Timer
+  parent: System.Threading
+  isExternal: true
+  name: Timer
+  nameWithType: Timer
+  fullName: System.Threading.Timer
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Steeltoe.Discovery.Eureka.AppInfo.Applications
+  commentId: T:Steeltoe.Discovery.Eureka.AppInfo.Applications
+  parent: Steeltoe.Discovery.Eureka.AppInfo
+  name: Applications
+  nameWithType: Applications
+  fullName: Steeltoe.Discovery.Eureka.AppInfo.Applications
+- uid: Steeltoe.Discovery.Eureka.AppInfo
+  commentId: N:Steeltoe.Discovery.Eureka.AppInfo
+  name: Steeltoe.Discovery.Eureka.AppInfo
+  nameWithType: Steeltoe.Discovery.Eureka.AppInfo
+  fullName: Steeltoe.Discovery.Eureka.AppInfo
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  commentId: T:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  parent: Steeltoe.Discovery.Eureka.Transport
+  name: IEurekaHttpClient
+  nameWithType: IEurekaHttpClient
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+- uid: Steeltoe.Discovery.Eureka.Transport
+  commentId: N:Steeltoe.Discovery.Eureka.Transport
+  name: Steeltoe.Discovery.Eureka.Transport
+  nameWithType: Steeltoe.Discovery.Eureka.Transport
+  fullName: Steeltoe.Discovery.Eureka.Transport
+- uid: System.Random
+  commentId: T:System.Random
+  parent: System
+  isExternal: true
+  name: Random
+  nameWithType: Random
+  fullName: System.Random
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  commentId: T:Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  parent: Steeltoe.Discovery.Eureka
+  name: ApplicationInfoManager
+  nameWithType: ApplicationInfoManager
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp
+  name: LastGoodHeartbeatTimestamp
+  nameWithType: DiscoveryClient.LastGoodHeartbeatTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodHeartbeatTimestamp
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+  name: LastGoodFullRegistryFetchTimestamp
+  nameWithType: DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodFullRegistryFetchTimestamp
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+  name: LastGoodDeltaRegistryFetchTimestamp
+  nameWithType: DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodDeltaRegistryFetchTimestamp
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp
+  name: LastGoodRegistryFetchTimestamp
+  nameWithType: DiscoveryClient.LastGoodRegistryFetchTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegistryFetchTimestamp
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp
+  name: LastGoodRegisterTimestamp
+  nameWithType: DiscoveryClient.LastGoodRegisterTimestamp
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastGoodRegisterTimestamp
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus
+  name: LastRemoteInstanceStatus
+  nameWithType: DiscoveryClient.LastRemoteInstanceStatus
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.LastRemoteInstanceStatus
+- uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+  commentId: T:Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+  parent: Steeltoe.Discovery.Eureka.AppInfo
+  name: InstanceStatus
+  nameWithType: InstanceStatus
+  fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient
+  name: HttpClient
+  nameWithType: DiscoveryClient.HttpClient
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.HttpClient
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.Applications*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.Applications
+  name: Applications
+  nameWithType: DiscoveryClient.Applications
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.Applications
+- uid: Steeltoe.Discovery.Eureka.ILookupService.Applications
+  commentId: P:Steeltoe.Discovery.Eureka.ILookupService.Applications
+  parent: Steeltoe.Discovery.Eureka.ILookupService
+  name: Applications
+  nameWithType: ILookupService.Applications
+  fullName: Steeltoe.Discovery.Eureka.ILookupService.Applications
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig
+  name: ClientConfig
+  nameWithType: DiscoveryClient.ClientConfig
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.ClientConfig
+- uid: Steeltoe.Discovery.Eureka.IEurekaClientConfig
+  commentId: T:Steeltoe.Discovery.Eureka.IEurekaClientConfig
+  parent: Steeltoe.Discovery.Eureka
+  name: IEurekaClientConfig
+  nameWithType: IEurekaClientConfig
+  fullName: Steeltoe.Discovery.Eureka.IEurekaClientConfig
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler
+  name: HealthCheckHandler
+  nameWithType: DiscoveryClient.HealthCheckHandler
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.HealthCheckHandler
+- uid: Steeltoe.Discovery.Eureka.IHealthCheckHandler
+  commentId: T:Steeltoe.Discovery.Eureka.IHealthCheckHandler
+  parent: Steeltoe.Discovery.Eureka
+  name: IHealthCheckHandler
+  nameWithType: IHealthCheckHandler
+  fullName: Steeltoe.Discovery.Eureka.IHealthCheckHandler
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.#ctor
+  name: DiscoveryClient
+  nameWithType: DiscoveryClient.DiscoveryClient
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.DiscoveryClient
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication
+  name: GetApplication
+  nameWithType: DiscoveryClient.GetApplication
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetApplication
+- uid: Steeltoe.Discovery.Eureka.ILookupService.GetApplication(System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.ILookupService.GetApplication(System.String)
+  parent: Steeltoe.Discovery.Eureka.ILookupService
+  isExternal: true
+  name: GetApplication(String)
+  nameWithType: ILookupService.GetApplication(String)
+  fullName: Steeltoe.Discovery.Eureka.ILookupService.GetApplication(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Discovery.Eureka.ILookupService.GetApplication(System.String)
+    name: GetApplication
+    nameWithType: ILookupService.GetApplication
+    fullName: Steeltoe.Discovery.Eureka.ILookupService.GetApplication
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.Eureka.ILookupService.GetApplication(System.String)
+    name: GetApplication
+    nameWithType: ILookupService.GetApplication
+    fullName: Steeltoe.Discovery.Eureka.ILookupService.GetApplication
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Discovery.Eureka.AppInfo.Application
+  commentId: T:Steeltoe.Discovery.Eureka.AppInfo.Application
+  parent: Steeltoe.Discovery.Eureka.AppInfo
+  name: Application
+  nameWithType: Application
+  fullName: Steeltoe.Discovery.Eureka.AppInfo.Application
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById
+  name: GetInstanceById
+  nameWithType: DiscoveryClient.GetInstanceById
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceById
+- uid: Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById(System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById(System.String)
+  parent: Steeltoe.Discovery.Eureka.ILookupService
+  isExternal: true
+  name: GetInstanceById(String)
+  nameWithType: ILookupService.GetInstanceById(String)
+  fullName: Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById(System.String)
+    name: GetInstanceById
+    nameWithType: ILookupService.GetInstanceById
+    fullName: Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById(System.String)
+    name: GetInstanceById
+    nameWithType: ILookupService.GetInstanceById
+    fullName: Steeltoe.Discovery.Eureka.ILookupService.GetInstanceById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}
+  commentId: T:System.Collections.Generic.IList{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<InstanceInfo>
+  nameWithType: IList<InstanceInfo>
+  fullName: System.Collections.Generic.IList<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>
+  nameWithType.vb: IList(Of InstanceInfo)
+  fullName.vb: System.Collections.Generic.IList(Of Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  name.vb: IList(Of InstanceInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    name: InstanceInfo
+    nameWithType: InstanceInfo
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    name: InstanceInfo
+    nameWithType: InstanceInfo
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress
+  name: GetInstancesByVipAddress
+  nameWithType: DiscoveryClient.GetInstancesByVipAddress
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddress
+- uid: Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress(System.String,System.Boolean)
+  commentId: M:Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress(System.String,System.Boolean)
+  parent: Steeltoe.Discovery.Eureka.IEurekaClient
+  isExternal: true
+  name: GetInstancesByVipAddress(String, Boolean)
+  nameWithType: IEurekaClient.GetInstancesByVipAddress(String, Boolean)
+  fullName: Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress(System.String, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress(System.String,System.Boolean)
+    name: GetInstancesByVipAddress
+    nameWithType: IEurekaClient.GetInstancesByVipAddress
+    fullName: Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress(System.String,System.Boolean)
+    name: GetInstancesByVipAddress
+    nameWithType: IEurekaClient.GetInstancesByVipAddress
+    fullName: Steeltoe.Discovery.Eureka.IEurekaClient.GetInstancesByVipAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName
+  name: GetInstancesByVipAddressAndAppName
+  nameWithType: DiscoveryClient.GetInstancesByVipAddressAndAppName
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstancesByVipAddressAndAppName
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka
+  name: GetNextServerFromEureka
+  nameWithType: DiscoveryClient.GetNextServerFromEureka
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetNextServerFromEureka
+- uid: Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka(System.String,System.Boolean)
+  commentId: M:Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka(System.String,System.Boolean)
+  parent: Steeltoe.Discovery.Eureka.ILookupService
+  isExternal: true
+  name: GetNextServerFromEureka(String, Boolean)
+  nameWithType: ILookupService.GetNextServerFromEureka(String, Boolean)
+  fullName: Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka(System.String, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka(System.String,System.Boolean)
+    name: GetNextServerFromEureka
+    nameWithType: ILookupService.GetNextServerFromEureka
+    fullName: Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka(System.String,System.Boolean)
+    name: GetNextServerFromEureka
+    nameWithType: ILookupService.GetNextServerFromEureka
+    fullName: Steeltoe.Discovery.Eureka.ILookupService.GetNextServerFromEureka
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  commentId: T:Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  parent: Steeltoe.Discovery.Eureka.AppInfo
+  name: InstanceInfo
+  nameWithType: InstanceInfo
+  fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync
+  name: ShutdownAsync
+  nameWithType: DiscoveryClient.ShutdownAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.ShutdownAsync
+- uid: Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync
+  commentId: M:Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync
+  parent: Steeltoe.Discovery.Eureka.IEurekaClient
+  name: ShutdownAsync()
+  nameWithType: IEurekaClient.ShutdownAsync()
+  fullName: Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync()
+  spec.csharp:
+  - uid: Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync
+    name: ShutdownAsync
+    nameWithType: IEurekaClient.ShutdownAsync
+    fullName: Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync
+    name: ShutdownAsync
+    nameWithType: IEurekaClient.ShutdownAsync
+    fullName: Steeltoe.Discovery.Eureka.IEurekaClient.ShutdownAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus
+  name: GetInstanceRemoteStatus
+  nameWithType: DiscoveryClient.GetInstanceRemoteStatus
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.GetInstanceRemoteStatus
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer
+  name: StartTimer
+  nameWithType: DiscoveryClient.StartTimer
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.StartTimer
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync
+  name: FetchRegistryAsync
+  nameWithType: DiscoveryClient.FetchRegistryAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync
+  name: UnregisterAsync
+  nameWithType: DiscoveryClient.UnregisterAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.UnregisterAsync
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync
+  name: RegisterAsync
+  nameWithType: DiscoveryClient.RegisterAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync
+  name: RenewAsync
+  nameWithType: DiscoveryClient.RenewAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync
+  name: FetchFullRegistryAsync
+  nameWithType: DiscoveryClient.FetchFullRegistryAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchFullRegistryAsync
+- uid: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.AppInfo.Applications}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.AppInfo.Applications}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Applications>
+  nameWithType: Task<Applications>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.AppInfo.Applications>
+  nameWithType.vb: Task(Of Applications)
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Discovery.Eureka.AppInfo.Applications)
+  name.vb: Task(Of Applications)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.Applications
+    name: Applications
+    nameWithType: Applications
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.Applications
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.Applications
+    name: Applications
+    nameWithType: Applications
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.Applications
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync
+  name: FetchRegistryDeltaAsync
+  nameWithType: DiscoveryClient.FetchRegistryDeltaAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo
+  name: RefreshInstanceInfo
+  nameWithType: DiscoveryClient.RefreshInstanceInfo
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RefreshInstanceInfo
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo
+  name: RegisterDirtyInstanceInfo
+  nameWithType: DiscoveryClient.RegisterDirtyInstanceInfo
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterDirtyInstanceInfo
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize
+  name: Initialize
+  nameWithType: DiscoveryClient.Initialize
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.Initialize
+- uid: Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync
+  name: InitializeAsync
+  nameWithType: DiscoveryClient.InitializeAsync
+  fullName: Steeltoe.Discovery.Eureka.DiscoveryClient.InitializeAsync

@@ -1,0 +1,1233 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  commentId: T:Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  id: ICredHubClient
+  parent: Steeltoe.Security.DataProtection.CredHub
+  children:
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync(System.String,System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission})
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync(System.String,System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync``1(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync``1(System.Guid)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync``1(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync``1(System.String,System.Int32)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync``1(System.String)
+  - Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync``1(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest)
+  langs:
+  - csharp
+  - vb
+  name: ICredHubClient
+  nameWithType: ICredHubClient
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  type: Interface
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ICredHubClient
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  syntax:
+    content: public interface ICredHubClient
+    content.vb: Public Interface ICredHubClient
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync``1(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync``1(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest)
+  id: WriteAsync``1(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync<T>(CredentialSetRequest)
+  nameWithType: ICredHubClient.WriteAsync<T>(CredentialSetRequest)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync<T>(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: WriteAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nWrite a new credential to CredHub, or overwrite an existing credential with a new value.\n"
+  example: []
+  syntax:
+    content: Task<CredHubCredential<T>> WriteAsync<T>(CredentialSetRequest credentialRequest)
+    parameters:
+    - id: credentialRequest
+      type: Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest
+      description: The credential to write to CredHub; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    typeParameters:
+    - id: T
+      description: Type of CredHub credential to be written
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}
+      description: Newly written credential
+    content.vb: Function WriteAsync(Of T)(credentialRequest As CredentialSetRequest) As Task(Of CredHubCredential(Of T))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync*
+  nameWithType.vb: ICredHubClient.WriteAsync(Of T)(CredentialSetRequest)
+  fullName.vb: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync(Of T)(Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest)
+  name.vb: WriteAsync(Of T)(CredentialSetRequest)
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync``1(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync``1(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest)
+  id: GenerateAsync``1(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: GenerateAsync<T>(CredHubGenerateRequest)
+  nameWithType: ICredHubClient.GenerateAsync<T>(CredHubGenerateRequest)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync<T>(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GenerateAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nGenerate a new credential in CredHub, or overwrite an existing credential with a new generated value.\n"
+  example: []
+  syntax:
+    content: Task<CredHubCredential<T>> GenerateAsync<T>(CredHubGenerateRequest requestParameters)
+    parameters:
+    - id: requestParameters
+      type: Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest
+      description: Parameters for the new credential to be generated in CredHub
+    typeParameters:
+    - id: T
+      description: Type of CredHub credential to be generated
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}
+      description: The details of the generated credential
+    content.vb: Function GenerateAsync(Of T)(requestParameters As CredHubGenerateRequest) As Task(Of CredHubCredential(Of T))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync*
+  nameWithType.vb: ICredHubClient.GenerateAsync(Of T)(CredHubGenerateRequest)
+  fullName.vb: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync(Of T)(Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest)
+  name.vb: GenerateAsync(Of T)(CredHubGenerateRequest)
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync``1(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync``1(System.String)
+  id: RegenerateAsync``1(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: RegenerateAsync<T>(String)
+  nameWithType: ICredHubClient.RegenerateAsync<T>(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegenerateAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nRegenerate a credential in CredHub. Only credentials that were previously generated can be re-generated.\n"
+  example: []
+  syntax:
+    content: Task<CredHubCredential<T>> RegenerateAsync<T>(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the credential to regenerate
+    typeParameters:
+    - id: T
+      description: Type of CredHub credential to be regenerated
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}
+      description: Regenerated credential details
+    content.vb: Function RegenerateAsync(Of T)(name As String) As Task(Of CredHubCredential(Of T))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync*
+  nameWithType.vb: ICredHubClient.RegenerateAsync(Of T)(String)
+  fullName.vb: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync(Of T)(System.String)
+  name.vb: RegenerateAsync(Of T)(String)
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync(System.String)
+  id: BulkRegenerateAsync(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: BulkRegenerateAsync(String)
+  nameWithType: ICredHubClient.BulkRegenerateAsync(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BulkRegenerateAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nRegenerate all certificates generated by a given certificate authority\n"
+  example: []
+  syntax:
+    content: Task<RegeneratedCertificates> BulkRegenerateAsync(string certificateAuthority)
+    parameters:
+    - id: certificateAuthority
+      type: System.String
+      description: Name of certificate authority used to generate certificates that should be regenerated
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates}
+      description: List of regenerated certificates
+    content.vb: Function BulkRegenerateAsync(certificateAuthority As String) As Task(Of RegeneratedCertificates)
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync*
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync``1(System.Guid)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync``1(System.Guid)
+  id: GetByIdAsync``1(System.Guid)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync<T>(Guid)
+  nameWithType: ICredHubClient.GetByIdAsync<T>(Guid)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync<T>(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetByIdAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nRetrieve a credential using its ID, as returned in a write request.\n"
+  example: []
+  syntax:
+    content: Task<CredHubCredential<T>> GetByIdAsync<T>(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: ID of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    typeParameters:
+    - id: T
+      description: Type of CredHub credential to be retrieved
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}
+      description: The details of the retrieved credential
+    content.vb: Function GetByIdAsync(Of T)(id As Guid) As Task(Of CredHubCredential(Of T))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync*
+  nameWithType.vb: ICredHubClient.GetByIdAsync(Of T)(Guid)
+  fullName.vb: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync(Of T)(System.Guid)
+  name.vb: GetByIdAsync(Of T)(Guid)
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync``1(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync``1(System.String)
+  id: GetByNameAsync``1(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: GetByNameAsync<T>(String)
+  nameWithType: ICredHubClient.GetByNameAsync<T>(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetByNameAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 57
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nRetrieve a credential using its name, as passed to a write request. Only the current credential value will be returned.\n"
+  example: []
+  syntax:
+    content: Task<CredHubCredential<T>> GetByNameAsync<T>(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    typeParameters:
+    - id: T
+      description: Type of CredHub credential to be retrieved
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}
+      description: The details of the retrieved credential
+    content.vb: Function GetByNameAsync(Of T)(name As String) As Task(Of CredHubCredential(Of T))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync*
+  nameWithType.vb: ICredHubClient.GetByNameAsync(Of T)(String)
+  fullName.vb: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync(Of T)(System.String)
+  name.vb: GetByNameAsync(Of T)(String)
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync``1(System.String,System.Int32)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync``1(System.String,System.Int32)
+  id: GetByNameWithHistoryAsync``1(System.String,System.Int32)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: GetByNameWithHistoryAsync<T>(String, Int32)
+  nameWithType: ICredHubClient.GetByNameWithHistoryAsync<T>(String, Int32)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync<T>(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetByNameWithHistoryAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 67
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nRetrieve a credential using its name, as passed to a write request. A collection of all stored values for the named credential will be returned,\nincluding historical values.\n"
+  example: []
+  syntax:
+    content: Task<List<CredHubCredential<T>>> GetByNameWithHistoryAsync<T>(string name, int entries = 10)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    - id: entries
+      type: System.Int32
+      description: Maximum number of entries to retrieve
+    typeParameters:
+    - id: T
+      description: Type of CredHub credential to be retrieved
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}}
+      description: The details of the retrieved credential
+    content.vb: Function GetByNameWithHistoryAsync(Of T)(name As String, entries As Integer = 10) As Task(Of List(Of CredHubCredential(Of T)))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync*
+  nameWithType.vb: ICredHubClient.GetByNameWithHistoryAsync(Of T)(String, Int32)
+  fullName.vb: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync(Of T)(System.String, System.Int32)
+  name.vb: GetByNameWithHistoryAsync(Of T)(String, Int32)
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync(System.String)
+  id: FindByNameAsync(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: FindByNameAsync(String)
+  nameWithType: ICredHubClient.FindByNameAsync(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindByNameAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 74
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nSearch for credentials with a full or partial name.\n"
+  example: []
+  syntax:
+    content: Task<List<FoundCredential>> FindByNameAsync(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.FoundCredential}}
+      description: A summary of the credential search results
+    content.vb: Function FindByNameAsync(name As String) As Task(Of List(Of FoundCredential))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync*
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync(System.String)
+  id: FindByPathAsync(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: FindByPathAsync(String)
+  nameWithType: ICredHubClient.FindByPathAsync(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindByPathAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 81
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nFind a credential using a path.\n"
+  example: []
+  syntax:
+    content: Task<List<FoundCredential>> FindByPathAsync(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.FoundCredential}}
+      description: A summary of the credential search results
+    content.vb: Function FindByPathAsync(path As String) As Task(Of List(Of FoundCredential))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync*
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync(System.String)
+  id: DeleteByNameAsync(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteByNameAsync(String)
+  nameWithType: ICredHubClient.DeleteByNameAsync(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeleteByNameAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 88
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nDelete a credential by its full name.\n"
+  example: []
+  syntax:
+    content: Task<bool> DeleteByNameAsync(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: the name of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Boolean indicating success/failure
+    content.vb: Function DeleteByNameAsync(name As String) As Task(Of Boolean)
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync*
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync(System.String)
+  id: GetPermissionsAsync(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: GetPermissionsAsync(String)
+  nameWithType: ICredHubClient.GetPermissionsAsync(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetPermissionsAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 95
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nGet the permissions associated with a credential.\n"
+  example: []
+  syntax:
+    content: Task<List<CredentialPermission>> GetPermissionsAsync(string credentialName)
+    parameters:
+    - id: credentialName
+      type: System.String
+      description: The name of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission}}
+      description: List of permssions
+    content.vb: Function GetPermissionsAsync(credentialName As String) As Task(Of List(Of CredentialPermission))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync*
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync(System.String,System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission})
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync(System.String,System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission})
+  id: AddPermissionsAsync(System.String,System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission})
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: AddPermissionsAsync(String, List<CredentialPermission>)
+  nameWithType: ICredHubClient.AddPermissionsAsync(String, List<CredentialPermission>)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync(System.String, System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission>)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddPermissionsAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 103
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nAdd permissions to an existing credential.\n"
+  example: []
+  syntax:
+    content: Task<List<CredentialPermission>> AddPermissionsAsync(string credentialName, List<CredentialPermission> permissions)
+    parameters:
+    - id: credentialName
+      type: System.String
+      description: The name of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    - id: permissions
+      type: System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission}
+      description: A collection of permissions to add
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission}}
+      description: List of permissions
+    content.vb: Function AddPermissionsAsync(credentialName As String, permissions As List(Of CredentialPermission)) As Task(Of List(Of CredentialPermission))
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync*
+  nameWithType.vb: ICredHubClient.AddPermissionsAsync(String, List(Of CredentialPermission))
+  fullName.vb: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync(System.String, System.Collections.Generic.List(Of Steeltoe.Security.DataProtection.CredHub.CredentialPermission))
+  name.vb: AddPermissionsAsync(String, List(Of CredentialPermission))
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync(System.String,System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync(System.String,System.String)
+  id: DeletePermissionAsync(System.String,System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: DeletePermissionAsync(String, String)
+  nameWithType: ICredHubClient.DeletePermissionAsync(String, String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeletePermissionAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 111
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nDelete a permission associated with a credential.\n"
+  example: []
+  syntax:
+    content: Task<bool> DeletePermissionAsync(string credentialName, string actor)
+    parameters:
+    - id: credentialName
+      type: System.String
+      description: the name of the credential; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    - id: actor
+      type: System.String
+      description: the actor of the permission; must not be <xref uid="langword_csharp_null" name="null" href=""></xref>
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns true if deleted, false if failed
+    content.vb: Function DeletePermissionAsync(credentialName As String, actor As String) As Task(Of Boolean)
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync*
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync(System.String)
+  commentId: M:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync(System.String)
+  id: InterpolateServiceDataAsync(System.String)
+  parent: Steeltoe.Security.DataProtection.CredHub.ICredHubClient
+  langs:
+  - csharp
+  - vb
+  name: InterpolateServiceDataAsync(String)
+  nameWithType: ICredHubClient.InterpolateServiceDataAsync(String)
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: InterpolateServiceDataAsync
+    path: ../Steeltoe/src/Security/src/DataProtection.CredHubBase/ICredHubClient.cs
+    startLine: 118
+  assemblies:
+  - Steeltoe.Security.DataProtection.CredHubBase
+  namespace: Steeltoe.Security.DataProtection.CredHub
+  summary: "\nSearch the provided data structure of bound service credentials, looking for references to CredHub credentials.\n"
+  example: []
+  syntax:
+    content: Task<string> InterpolateServiceDataAsync(string serviceData)
+    parameters:
+    - id: serviceData
+      type: System.String
+      description: a data structure of bound service credentials, as would be parsed from the {@literal VCAP_SERVICES} environment variable provided to applications running on Cloud Foundry
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: the serviceData structure with CredHub references replaced by stored credential values
+    content.vb: Function InterpolateServiceDataAsync(serviceData As String) As Task(Of String)
+  overload: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync*
+references:
+- uid: Steeltoe.Security.DataProtection.CredHub
+  commentId: N:Steeltoe.Security.DataProtection.CredHub
+  name: Steeltoe.Security.DataProtection.CredHub
+  nameWithType: Steeltoe.Security.DataProtection.CredHub
+  fullName: Steeltoe.Security.DataProtection.CredHub
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync
+  name: WriteAsync
+  nameWithType: ICredHubClient.WriteAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.WriteAsync
+- uid: Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest
+  commentId: T:Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest
+  parent: Steeltoe.Security.DataProtection.CredHub
+  name: CredentialSetRequest
+  nameWithType: CredentialSetRequest
+  fullName: Steeltoe.Security.DataProtection.CredHub.CredentialSetRequest
+- uid: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<CredHubCredential<T>>
+  nameWithType: Task<CredHubCredential<T>>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>
+  nameWithType.vb: Task(Of CredHubCredential(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Security.DataProtection.CredHub.CredHubCredential(Of T))
+  name.vb: Task(Of CredHubCredential(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredHubCredential`1
+    name: CredHubCredential
+    nameWithType: CredHubCredential
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredHubCredential
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredHubCredential`1
+    name: CredHubCredential
+    nameWithType: CredHubCredential
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredHubCredential
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync
+  name: GenerateAsync
+  nameWithType: ICredHubClient.GenerateAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GenerateAsync
+- uid: Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest
+  commentId: T:Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest
+  parent: Steeltoe.Security.DataProtection.CredHub
+  name: CredHubGenerateRequest
+  nameWithType: CredHubGenerateRequest
+  fullName: Steeltoe.Security.DataProtection.CredHub.CredHubGenerateRequest
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync
+  name: RegenerateAsync
+  nameWithType: ICredHubClient.RegenerateAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.RegenerateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync
+  name: BulkRegenerateAsync
+  nameWithType: ICredHubClient.BulkRegenerateAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.BulkRegenerateAsync
+- uid: System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RegeneratedCertificates>
+  nameWithType: Task<RegeneratedCertificates>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates>
+  nameWithType.vb: Task(Of RegeneratedCertificates)
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates)
+  name.vb: Task(Of RegeneratedCertificates)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates
+    name: RegeneratedCertificates
+    nameWithType: RegeneratedCertificates
+    fullName: Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates
+    name: RegeneratedCertificates
+    nameWithType: RegeneratedCertificates
+    fullName: Steeltoe.Security.DataProtection.CredHub.RegeneratedCertificates
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync
+  name: GetByIdAsync
+  nameWithType: ICredHubClient.GetByIdAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync
+  name: GetByNameAsync
+  nameWithType: ICredHubClient.GetByNameAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameAsync
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync
+  name: GetByNameWithHistoryAsync
+  nameWithType: ICredHubClient.GetByNameWithHistoryAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetByNameWithHistoryAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{{T}}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredHubCredential{``0}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<CredHubCredential<T>>>
+  nameWithType: Task<List<CredHubCredential<T>>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredHubCredential<T>>>
+  nameWithType.vb: Task(Of List(Of CredHubCredential(Of T)))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Steeltoe.Security.DataProtection.CredHub.CredHubCredential(Of T)))
+  name.vb: Task(Of List(Of CredHubCredential(Of T)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredHubCredential`1
+    name: CredHubCredential
+    nameWithType: CredHubCredential
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredHubCredential
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredHubCredential`1
+    name: CredHubCredential
+    nameWithType: CredHubCredential
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredHubCredential
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync
+  name: FindByNameAsync
+  nameWithType: ICredHubClient.FindByNameAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByNameAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.FoundCredential}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.FoundCredential}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<FoundCredential>>
+  nameWithType: Task<List<FoundCredential>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.FoundCredential>>
+  nameWithType.vb: Task(Of List(Of FoundCredential))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Steeltoe.Security.DataProtection.CredHub.FoundCredential))
+  name.vb: Task(Of List(Of FoundCredential))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Security.DataProtection.CredHub.FoundCredential
+    name: FoundCredential
+    nameWithType: FoundCredential
+    fullName: Steeltoe.Security.DataProtection.CredHub.FoundCredential
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Security.DataProtection.CredHub.FoundCredential
+    name: FoundCredential
+    nameWithType: FoundCredential
+    fullName: Steeltoe.Security.DataProtection.CredHub.FoundCredential
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync
+  name: FindByPathAsync
+  nameWithType: ICredHubClient.FindByPathAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.FindByPathAsync
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync
+  name: DeleteByNameAsync
+  nameWithType: ICredHubClient.DeleteByNameAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeleteByNameAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync
+  name: GetPermissionsAsync
+  nameWithType: ICredHubClient.GetPermissionsAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.GetPermissionsAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<CredentialPermission>>
+  nameWithType: Task<List<CredentialPermission>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission>>
+  nameWithType.vb: Task(Of List(Of CredentialPermission))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Steeltoe.Security.DataProtection.CredHub.CredentialPermission))
+  name.vb: Task(Of List(Of CredentialPermission))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+    name: CredentialPermission
+    nameWithType: CredentialPermission
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+    name: CredentialPermission
+    nameWithType: CredentialPermission
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync
+  name: AddPermissionsAsync
+  nameWithType: ICredHubClient.AddPermissionsAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.AddPermissionsAsync
+- uid: System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Security.DataProtection.CredHub.CredentialPermission}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<CredentialPermission>
+  nameWithType: List<CredentialPermission>
+  fullName: System.Collections.Generic.List<Steeltoe.Security.DataProtection.CredHub.CredentialPermission>
+  nameWithType.vb: List(Of CredentialPermission)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Security.DataProtection.CredHub.CredentialPermission)
+  name.vb: List(Of CredentialPermission)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+    name: CredentialPermission
+    nameWithType: CredentialPermission
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+    name: CredentialPermission
+    nameWithType: CredentialPermission
+    fullName: Steeltoe.Security.DataProtection.CredHub.CredentialPermission
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync
+  name: DeletePermissionAsync
+  nameWithType: ICredHubClient.DeletePermissionAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.DeletePermissionAsync
+- uid: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync*
+  commentId: Overload:Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync
+  name: InterpolateServiceDataAsync
+  nameWithType: ICredHubClient.InterpolateServiceDataAsync
+  fullName: Steeltoe.Security.DataProtection.CredHub.ICredHubClient.InterpolateServiceDataAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,896 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Transaction.AbstractTransactionOperations
+  commentId: T:Steeltoe.Common.Transaction.AbstractTransactionOperations
+  id: AbstractTransactionOperations
+  parent: Steeltoe.Common.Transaction
+  children:
+  - Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  - Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+  - Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction
+  langs:
+  - csharp
+  - vb
+  name: AbstractTransactionOperations
+  nameWithType: AbstractTransactionOperations
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionOperations
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractTransactionOperations
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+    startLine: 8
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: 'public abstract class AbstractTransactionOperations : ITransactionOperations'
+    content.vb: >-
+      Public MustInherit Class AbstractTransactionOperations
+
+          Implements ITransactionOperations
+  inheritance:
+  - System.Object
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionOperations
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction
+  id: WithoutTransaction
+  parent: Steeltoe.Common.Transaction.AbstractTransactionOperations
+  langs:
+  - csharp
+  - vb
+  name: WithoutTransaction()
+  nameWithType: AbstractTransactionOperations.WithoutTransaction()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: WithoutTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public static ITransactionOperations WithoutTransaction()
+    return:
+      type: Steeltoe.Common.Transaction.ITransactionOperations
+    content.vb: Public Shared Function WithoutTransaction As ITransactionOperations
+  overload: Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  id: Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  parent: Steeltoe.Common.Transaction.AbstractTransactionOperations
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(Func<ITransactionStatus, T>)
+  nameWithType: AbstractTransactionOperations.Execute<T>(Func<ITransactionStatus, T>)
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute<T>(System.Func<Steeltoe.Common.Transaction.ITransactionStatus, T>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public abstract T Execute<T>(Func<ITransactionStatus, T> action)
+    parameters:
+    - id: action
+      type: System.Func{Steeltoe.Common.Transaction.ITransactionStatus,{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public MustOverride Function Execute(Of T)(action As Func(Of ITransactionStatus, T)) As T
+  overload: Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,{T}})
+  nameWithType.vb: AbstractTransactionOperations.Execute(Of T)(Func(Of ITransactionStatus, T))
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute(Of T)(System.Func(Of Steeltoe.Common.Transaction.ITransactionStatus, T))
+  name.vb: Execute(Of T)(Func(Of ITransactionStatus, T))
+- uid: Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+  id: ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+  parent: Steeltoe.Common.Transaction.AbstractTransactionOperations
+  langs:
+  - csharp
+  - vb
+  name: ExecuteWithoutResult(Action<ITransactionStatus>)
+  nameWithType: AbstractTransactionOperations.ExecuteWithoutResult(Action<ITransactionStatus>)
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult(System.Action<Steeltoe.Common.Transaction.ITransactionStatus>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExecuteWithoutResult
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionOperations.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void ExecuteWithoutResult(Action<ITransactionStatus> action)
+    parameters:
+    - id: action
+      type: System.Action{Steeltoe.Common.Transaction.ITransactionStatus}
+    content.vb: Public Overridable Sub ExecuteWithoutResult(action As Action(Of ITransactionStatus))
+  overload: Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+  nameWithType.vb: AbstractTransactionOperations.ExecuteWithoutResult(Action(Of ITransactionStatus))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult(System.Action(Of Steeltoe.Common.Transaction.ITransactionStatus))
+  name.vb: ExecuteWithoutResult(Action(Of ITransactionStatus))
+references:
+- uid: Steeltoe.Common.Transaction
+  commentId: N:Steeltoe.Common.Transaction
+  name: Steeltoe.Common.Transaction
+  nameWithType: Steeltoe.Common.Transaction
+  fullName: Steeltoe.Common.Transaction
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Transaction.ITransactionOperations
+  commentId: T:Steeltoe.Common.Transaction.ITransactionOperations
+  parent: Steeltoe.Common.Transaction
+  name: ITransactionOperations
+  nameWithType: ITransactionOperations
+  fullName: Steeltoe.Common.Transaction.ITransactionOperations
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction
+  name: WithoutTransaction
+  nameWithType: AbstractTransactionOperations.WithoutTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionOperations.WithoutTransaction
+- uid: Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute
+  name: Execute
+  nameWithType: AbstractTransactionOperations.Execute
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionOperations.Execute
+- uid: Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,{T}})
+  commentId: M:Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  parent: Steeltoe.Common.Transaction.ITransactionOperations
+  definition: Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  name: Execute<T>(Func<ITransactionStatus, T>)
+  nameWithType: ITransactionOperations.Execute<T>(Func<ITransactionStatus, T>)
+  fullName: Steeltoe.Common.Transaction.ITransactionOperations.Execute<T>(System.Func<Steeltoe.Common.Transaction.ITransactionStatus, T>)
+  nameWithType.vb: ITransactionOperations.Execute(Of T)(Func(Of ITransactionStatus, T))
+  fullName.vb: Steeltoe.Common.Transaction.ITransactionOperations.Execute(Of T)(System.Func(Of Steeltoe.Common.Transaction.ITransactionStatus, T))
+  name.vb: Execute(Of T)(Func(Of ITransactionStatus, T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+    name: Execute<T>
+    nameWithType: ITransactionOperations.Execute<T>
+    fullName: Steeltoe.Common.Transaction.ITransactionOperations.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+    name: Execute(Of T)
+    nameWithType: ITransactionOperations.Execute(Of T)
+    fullName: Steeltoe.Common.Transaction.ITransactionOperations.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{Steeltoe.Common.Transaction.ITransactionStatus,{T}}
+  commentId: T:System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<ITransactionStatus, T>
+  nameWithType: Func<ITransactionStatus, T>
+  fullName: System.Func<Steeltoe.Common.Transaction.ITransactionStatus, T>
+  nameWithType.vb: Func(Of ITransactionStatus, T)
+  fullName.vb: System.Func(Of Steeltoe.Common.Transaction.ITransactionStatus, T)
+  name.vb: Func(Of ITransactionStatus, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  commentId: M:Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+  isExternal: true
+  name: Execute<T>(Func<ITransactionStatus, T>)
+  nameWithType: ITransactionOperations.Execute<T>(Func<ITransactionStatus, T>)
+  fullName: Steeltoe.Common.Transaction.ITransactionOperations.Execute<T>(System.Func<Steeltoe.Common.Transaction.ITransactionStatus, T>)
+  nameWithType.vb: ITransactionOperations.Execute(Of T)(Func(Of ITransactionStatus, T))
+  fullName.vb: Steeltoe.Common.Transaction.ITransactionOperations.Execute(Of T)(System.Func(Of Steeltoe.Common.Transaction.ITransactionStatus, T))
+  name.vb: Execute(Of T)(Func(Of ITransactionStatus, T))
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+    name: Execute<T>
+    nameWithType: ITransactionOperations.Execute<T>
+    fullName: Steeltoe.Common.Transaction.ITransactionOperations.Execute<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ITransactionOperations.Execute``1(System.Func{Steeltoe.Common.Transaction.ITransactionStatus,``0})
+    name: Execute(Of T)
+    nameWithType: ITransactionOperations.Execute(Of T)
+    fullName: Steeltoe.Common.Transaction.ITransactionOperations.Execute(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult
+  name: ExecuteWithoutResult
+  nameWithType: AbstractTransactionOperations.ExecuteWithoutResult
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionOperations.ExecuteWithoutResult
+- uid: Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+  commentId: M:Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+  parent: Steeltoe.Common.Transaction.ITransactionOperations
+  isExternal: true
+  name: ExecuteWithoutResult(Action<ITransactionStatus>)
+  nameWithType: ITransactionOperations.ExecuteWithoutResult(Action<ITransactionStatus>)
+  fullName: Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action<Steeltoe.Common.Transaction.ITransactionStatus>)
+  nameWithType.vb: ITransactionOperations.ExecuteWithoutResult(Action(Of ITransactionStatus))
+  fullName.vb: Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action(Of Steeltoe.Common.Transaction.ITransactionStatus))
+  name.vb: ExecuteWithoutResult(Action(Of ITransactionStatus))
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+    name: ExecuteWithoutResult
+    nameWithType: ITransactionOperations.ExecuteWithoutResult
+    fullName: Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult(System.Action{Steeltoe.Common.Transaction.ITransactionStatus})
+    name: ExecuteWithoutResult
+    nameWithType: ITransactionOperations.ExecuteWithoutResult
+    fullName: Steeltoe.Common.Transaction.ITransactionOperations.ExecuteWithoutResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Steeltoe.Common.Transaction.ITransactionStatus}
+  commentId: T:System.Action{Steeltoe.Common.Transaction.ITransactionStatus}
+  parent: System
+  definition: System.Action`1
+  name: Action<ITransactionStatus>
+  nameWithType: Action<ITransactionStatus>
+  fullName: System.Action<Steeltoe.Common.Transaction.ITransactionStatus>
+  nameWithType.vb: Action(Of ITransactionStatus)
+  fullName.vb: System.Action(Of Steeltoe.Common.Transaction.ITransactionStatus)
+  name.vb: Action(Of ITransactionStatus)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

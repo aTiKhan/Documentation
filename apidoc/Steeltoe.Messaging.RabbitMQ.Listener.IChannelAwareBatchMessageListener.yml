@@ -1,0 +1,345 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  id: IChannelAwareBatchMessageListener
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  langs:
+  - csharp
+  - vb
+  name: IChannelAwareBatchMessageListener
+  nameWithType: IChannelAwareBatchMessageListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IChannelAwareBatchMessageListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IChannelAwareBatchMessageListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IChannelAwareBatchMessageListener.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: 'public interface IChannelAwareBatchMessageListener : IChannelAwareMessageListener, IMessageListener'
+    content.vb: >-
+      Public Interface IChannelAwareBatchMessageListener
+
+          Inherits IChannelAwareMessageListener
+  inheritedMembers:
+  - Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.ContainerAckMode
+  - Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  id: OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  langs:
+  - csharp
+  - vb
+  name: OnMessage(IMessage, IModel)
+  nameWithType: IChannelAwareBatchMessageListener.OnMessage(IMessage, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage(Steeltoe.Messaging.IMessage, RabbitMQ.Client.IModel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IChannelAwareBatchMessageListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnMessage
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IChannelAwareBatchMessageListener.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: virtual void OnMessage(IMessage message, IModel channel)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    content.vb: Overridable Sub OnMessage(message As IMessage, channel As IModel)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  id: OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  langs:
+  - csharp
+  - vb
+  name: OnMessageBatch(List<IMessage>, IModel)
+  nameWithType: IChannelAwareBatchMessageListener.OnMessageBatch(List<IMessage>, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage>, RabbitMQ.Client.IModel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IChannelAwareBatchMessageListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnMessageBatch
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IChannelAwareBatchMessageListener.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: void OnMessageBatch(List<IMessage> messages, IModel channel)
+    parameters:
+    - id: messages
+      type: System.Collections.Generic.List{Steeltoe.Messaging.IMessage}
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    content.vb: Sub OnMessageBatch(messages As List(Of IMessage), channel As IModel)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch*
+  nameWithType.vb: IChannelAwareBatchMessageListener.OnMessageBatch(List(Of IMessage), IModel)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage), RabbitMQ.Client.IModel)
+  name.vb: OnMessageBatch(List(Of IMessage), IModel)
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Listener
+  name: Steeltoe.Messaging.RabbitMQ.Listener
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Listener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.ContainerAckMode
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.ContainerAckMode
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  name: ContainerAckMode
+  nameWithType: IMessageListener.ContainerAckMode
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.ContainerAckMode
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  name: OnMessage(IMessage)
+  nameWithType: IMessageListener.OnMessage(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage(Steeltoe.Messaging.IMessage)
+    name: OnMessage
+    nameWithType: IMessageListener.OnMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage(Steeltoe.Messaging.IMessage)
+    name: OnMessage
+    nameWithType: IMessageListener.OnMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  isExternal: true
+  name: OnMessageBatch(List<IMessage>)
+  nameWithType: IMessageListener.OnMessageBatch(List<IMessage>)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage>)
+  nameWithType.vb: IMessageListener.OnMessageBatch(List(Of IMessage))
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch(System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage))
+  name.vb: OnMessageBatch(List(Of IMessage))
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+    name: OnMessageBatch
+    nameWithType: IMessageListener.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+    name: OnMessageBatch
+    nameWithType: IMessageListener.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IMessageListener
+  nameWithType: IMessageListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage
+  name: OnMessage
+  nameWithType: IChannelAwareBatchMessageListener.OnMessage
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessage
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: RabbitMQ.Client.IModel
+  commentId: T:RabbitMQ.Client.IModel
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IModel
+  nameWithType: IModel
+  fullName: RabbitMQ.Client.IModel
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch
+  name: OnMessageBatch
+  nameWithType: IChannelAwareBatchMessageListener.OnMessageBatch
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch
+- uid: System.Collections.Generic.List{Steeltoe.Messaging.IMessage}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Messaging.IMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IMessage>
+  nameWithType: List<IMessage>
+  fullName: System.Collections.Generic.List<Steeltoe.Messaging.IMessage>
+  nameWithType.vb: List(Of IMessage)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage)
+  name.vb: List(Of IMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

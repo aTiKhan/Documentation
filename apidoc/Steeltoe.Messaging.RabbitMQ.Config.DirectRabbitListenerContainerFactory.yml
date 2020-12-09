@@ -1,0 +1,2192 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  id: DirectRabbitListenerContainerFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILoggerFactory)
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions},Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DEFAULT_SERVICE_NAME
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck
+  - Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval
+  langs:
+  - csharp
+  - vb
+  name: DirectRabbitListenerContainerFactory
+  nameWithType: DirectRabbitListenerContainerFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DirectRabbitListenerContainerFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: 'public class DirectRabbitListenerContainerFactory : AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>, IRabbitListenerContainerFactory<DirectMessageListenerContainer>, IRabbitListenerContainerFactory, IServiceNameAware'
+    content.vb: >-
+      Public Class DirectRabbitListenerContainerFactory
+
+          Inherits AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer)
+
+          Implements IRabbitListenerContainerFactory(Of DirectMessageListenerContainer), IRabbitListenerContainerFactory, IServiceNameAware
+  inheritance:
+  - System.Object
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  - Steeltoe.Common.Services.IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}._logger
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}._loggerFactory
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ApplicationContext
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ErrorHandler
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MessageConverter
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AcknowledgeMode
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.IsChannelTransacted
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.TransactionManager
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.PrefetchCount
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.DefaultRequeueRejected
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RecoveryInterval
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RecoveryBackOff
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MissingQueuesFatal
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MismatchedQueuesFatal
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ConsumerTagStrategy
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.IdleEventInterval
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.FailedDeclarationRetryInterval
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AutoStartup
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Phase
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AfterReceivePostProcessors
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BeforeSendReplyPostProcessors
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RetryTemplate
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ReplyRecoveryCallback
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ContainerCustomizer
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BatchListener
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BatchingStrategy
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.DeBatchingEnabled
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ServiceName
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.PossibleAuthenticationFailureFatal
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Options
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  - Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DEFAULT_SERVICE_NAME
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DEFAULT_SERVICE_NAME
+  id: DEFAULT_SERVICE_NAME
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_SERVICE_NAME
+  nameWithType: DirectRabbitListenerContainerFactory.DEFAULT_SERVICE_NAME
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DEFAULT_SERVICE_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DEFAULT_SERVICE_NAME
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public const string DEFAULT_SERVICE_NAME = "rabbitListenerContainerFactory"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_SERVICE_NAME As String = "rabbitListenerContainerFactory"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: DirectRabbitListenerContainerFactory(IApplicationContext, ILoggerFactory)
+  nameWithType: DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(IApplicationContext, ILoggerFactory)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(Steeltoe.Common.Contexts.IApplicationContext, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public DirectRabbitListenerContainerFactory(IApplicationContext applicationContext, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: applicationContext
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Public Sub New(applicationContext As IApplicationContext, loggerFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: DirectRabbitListenerContainerFactory(IApplicationContext, IConnectionFactory, ILoggerFactory)
+  nameWithType: DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(IApplicationContext, IConnectionFactory, ILoggerFactory)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public DirectRabbitListenerContainerFactory(IApplicationContext applicationContext, IConnectionFactory connectionFactory, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: applicationContext
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: connectionFactory
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Public Sub New(applicationContext As IApplicationContext, connectionFactory As IConnectionFactory, loggerFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions},Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions},Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions},Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: DirectRabbitListenerContainerFactory(IApplicationContext, IOptionsMonitor<RabbitOptions>, IConnectionFactory, ILoggerFactory)
+  nameWithType: DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(IApplicationContext, IOptionsMonitor<RabbitOptions>, IConnectionFactory, ILoggerFactory)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(Steeltoe.Common.Contexts.IApplicationContext, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions>, Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: >-
+      [ActivatorUtilitiesConstructor]
+
+      public DirectRabbitListenerContainerFactory(IApplicationContext applicationContext, IOptionsMonitor<RabbitOptions> optionsMonitor, IConnectionFactory connectionFactory, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: applicationContext
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: optionsMonitor
+      type: Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions}
+    - id: connectionFactory
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: >-
+      <ActivatorUtilitiesConstructor>
+
+      Public Sub New(applicationContext As IApplicationContext, optionsMonitor As IOptionsMonitor(Of RabbitOptions), connectionFactory As IConnectionFactory, loggerFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor*
+  attributes:
+  - type: Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute
+    ctor: Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute.#ctor
+    arguments: []
+  nameWithType.vb: DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(IApplicationContext, IOptionsMonitor(Of RabbitOptions), IConnectionFactory, ILoggerFactory)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory(Steeltoe.Common.Contexts.IApplicationContext, Microsoft.Extensions.Options.IOptionsMonitor(Of Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions), Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory, Microsoft.Extensions.Logging.ILoggerFactory)
+  name.vb: DirectRabbitListenerContainerFactory(IApplicationContext, IOptionsMonitor(Of RabbitOptions), IConnectionFactory, ILoggerFactory)
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval
+  id: MonitorInterval
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: MonitorInterval
+  nameWithType: DirectRabbitListenerContainerFactory.MonitorInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MonitorInterval
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public int? MonitorInterval { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MonitorInterval As Integer?
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue
+  id: ConsumersPerQueue
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: ConsumersPerQueue
+  nameWithType: DirectRabbitListenerContainerFactory.ConsumersPerQueue
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConsumersPerQueue
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public int? ConsumersPerQueue { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property ConsumersPerQueue As Integer?
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck
+  id: MessagesPerAck
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: MessagesPerAck
+  nameWithType: DirectRabbitListenerContainerFactory.MessagesPerAck
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MessagesPerAck
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public int? MessagesPerAck { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MessagesPerAck As Integer?
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout
+  id: AckTimeout
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: AckTimeout
+  nameWithType: DirectRabbitListenerContainerFactory.AckTimeout
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AckTimeout
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public int? AckTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property AckTimeout As Integer?
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance
+  id: CreateContainerInstance
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateContainerInstance()
+  nameWithType: DirectRabbitListenerContainerFactory.CreateContainerInstance()
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateContainerInstance
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: protected override DirectMessageListenerContainer CreateContainerInstance()
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    content.vb: Protected Overrides Function CreateContainerInstance As DirectMessageListenerContainer
+  overridden: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.CreateContainerInstance
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  id: InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  parent: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory
+  langs:
+  - csharp
+  - vb
+  name: InitializeContainer(DirectMessageListenerContainer, IRabbitListenerEndpoint)
+  nameWithType: DirectRabbitListenerContainerFactory.InitializeContainer(DirectMessageListenerContainer, IRabbitListenerEndpoint)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: InitializeContainer
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/DirectRabbitListenerContainerFactory.cs
+    startLine: 47
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: protected override void InitializeContainer(DirectMessageListenerContainer instance, IRabbitListenerEndpoint endpoint)
+    parameters:
+    - id: instance
+      type: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    - id: endpoint
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    content.vb: Protected Overrides Sub InitializeContainer(instance As DirectMessageListenerContainer, endpoint As IRabbitListenerEndpoint)
+  overridden: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  overload: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Config
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Config
+  name: Steeltoe.Messaging.RabbitMQ.Config
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Config
+  fullName: Steeltoe.Messaging.RabbitMQ.Config
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1
+  name: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer)
+  name.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1
+    name: AbstractRabbitListenerContainerFactory
+    nameWithType: AbstractRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    name: DirectMessageListenerContainer
+    nameWithType: DirectMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1
+    name: AbstractRabbitListenerContainerFactory
+    nameWithType: AbstractRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    name: DirectMessageListenerContainer
+    nameWithType: DirectMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  definition: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory`1
+  name: IRabbitListenerContainerFactory<DirectMessageListenerContainer>
+  nameWithType: IRabbitListenerContainerFactory<DirectMessageListenerContainer>
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>
+  nameWithType.vb: IRabbitListenerContainerFactory(Of DirectMessageListenerContainer)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer)
+  name.vb: IRabbitListenerContainerFactory(Of DirectMessageListenerContainer)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory`1
+    name: IRabbitListenerContainerFactory
+    nameWithType: IRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    name: DirectMessageListenerContainer
+    nameWithType: DirectMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory`1
+    name: IRabbitListenerContainerFactory
+    nameWithType: IRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    name: DirectMessageListenerContainer
+    nameWithType: DirectMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IRabbitListenerContainerFactory
+  nameWithType: IRabbitListenerContainerFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}._logger
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}._logger
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1._logger
+  name: _logger
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>._logger
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>._logger
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer)._logger
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer)._logger
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}._loggerFactory
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}._loggerFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1._loggerFactory
+  name: _loggerFactory
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>._loggerFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>._loggerFactory
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer)._loggerFactory
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer)._loggerFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ApplicationContext
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ApplicationContext
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ApplicationContext
+  name: ApplicationContext
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.ApplicationContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.ApplicationContext
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).ApplicationContext
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).ApplicationContext
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ConnectionFactory
+  name: ConnectionFactory
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.ConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.ConnectionFactory
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).ConnectionFactory
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).ConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ErrorHandler
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ErrorHandler
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ErrorHandler
+  name: ErrorHandler
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.ErrorHandler
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.ErrorHandler
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).ErrorHandler
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).ErrorHandler
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MessageConverter
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MessageConverter
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MessageConverter
+  name: MessageConverter
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.MessageConverter
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.MessageConverter
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).MessageConverter
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).MessageConverter
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AcknowledgeMode
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AcknowledgeMode
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AcknowledgeMode
+  name: AcknowledgeMode
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.AcknowledgeMode
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.AcknowledgeMode
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).AcknowledgeMode
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).AcknowledgeMode
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.IsChannelTransacted
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.IsChannelTransacted
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.IsChannelTransacted
+  name: IsChannelTransacted
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.IsChannelTransacted
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.IsChannelTransacted
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).IsChannelTransacted
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).IsChannelTransacted
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.TransactionManager
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.TransactionManager
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.TransactionManager
+  name: TransactionManager
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.TransactionManager
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.TransactionManager
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).TransactionManager
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).TransactionManager
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.PrefetchCount
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.PrefetchCount
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.PrefetchCount
+  name: PrefetchCount
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.PrefetchCount
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.PrefetchCount
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).PrefetchCount
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).PrefetchCount
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.DefaultRequeueRejected
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.DefaultRequeueRejected
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.DefaultRequeueRejected
+  name: DefaultRequeueRejected
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.DefaultRequeueRejected
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.DefaultRequeueRejected
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).DefaultRequeueRejected
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).DefaultRequeueRejected
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RecoveryInterval
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RecoveryInterval
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RecoveryInterval
+  name: RecoveryInterval
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.RecoveryInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.RecoveryInterval
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).RecoveryInterval
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).RecoveryInterval
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RecoveryBackOff
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RecoveryBackOff
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RecoveryBackOff
+  name: RecoveryBackOff
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.RecoveryBackOff
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.RecoveryBackOff
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).RecoveryBackOff
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).RecoveryBackOff
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MissingQueuesFatal
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MissingQueuesFatal
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MissingQueuesFatal
+  name: MissingQueuesFatal
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.MissingQueuesFatal
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.MissingQueuesFatal
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).MissingQueuesFatal
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).MissingQueuesFatal
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MismatchedQueuesFatal
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.MismatchedQueuesFatal
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MismatchedQueuesFatal
+  name: MismatchedQueuesFatal
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.MismatchedQueuesFatal
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.MismatchedQueuesFatal
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).MismatchedQueuesFatal
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).MismatchedQueuesFatal
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ConsumerTagStrategy
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ConsumerTagStrategy
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ConsumerTagStrategy
+  name: ConsumerTagStrategy
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.ConsumerTagStrategy
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.ConsumerTagStrategy
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).ConsumerTagStrategy
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).ConsumerTagStrategy
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.IdleEventInterval
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.IdleEventInterval
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.IdleEventInterval
+  name: IdleEventInterval
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.IdleEventInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.IdleEventInterval
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).IdleEventInterval
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).IdleEventInterval
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.FailedDeclarationRetryInterval
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.FailedDeclarationRetryInterval
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.FailedDeclarationRetryInterval
+  name: FailedDeclarationRetryInterval
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.FailedDeclarationRetryInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.FailedDeclarationRetryInterval
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).FailedDeclarationRetryInterval
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).FailedDeclarationRetryInterval
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AutoStartup
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AutoStartup
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AutoStartup
+  name: AutoStartup
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.AutoStartup
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.AutoStartup
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).AutoStartup
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).AutoStartup
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Phase
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Phase
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Phase
+  name: Phase
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.Phase
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.Phase
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).Phase
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).Phase
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AfterReceivePostProcessors
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.AfterReceivePostProcessors
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AfterReceivePostProcessors
+  name: AfterReceivePostProcessors
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.AfterReceivePostProcessors
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.AfterReceivePostProcessors
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).AfterReceivePostProcessors
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).AfterReceivePostProcessors
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BeforeSendReplyPostProcessors
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BeforeSendReplyPostProcessors
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BeforeSendReplyPostProcessors
+  name: BeforeSendReplyPostProcessors
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.BeforeSendReplyPostProcessors
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.BeforeSendReplyPostProcessors
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).BeforeSendReplyPostProcessors
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).BeforeSendReplyPostProcessors
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RetryTemplate
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.RetryTemplate
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RetryTemplate
+  name: RetryTemplate
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.RetryTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.RetryTemplate
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).RetryTemplate
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).RetryTemplate
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ReplyRecoveryCallback
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ReplyRecoveryCallback
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ReplyRecoveryCallback
+  name: ReplyRecoveryCallback
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.ReplyRecoveryCallback
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.ReplyRecoveryCallback
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).ReplyRecoveryCallback
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).ReplyRecoveryCallback
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ContainerCustomizer
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ContainerCustomizer
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ContainerCustomizer
+  name: ContainerCustomizer
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.ContainerCustomizer
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.ContainerCustomizer
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).ContainerCustomizer
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).ContainerCustomizer
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BatchListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BatchListener
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BatchListener
+  name: BatchListener
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.BatchListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.BatchListener
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).BatchListener
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).BatchListener
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BatchingStrategy
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.BatchingStrategy
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BatchingStrategy
+  name: BatchingStrategy
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.BatchingStrategy
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.BatchingStrategy
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).BatchingStrategy
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).BatchingStrategy
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.DeBatchingEnabled
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.DeBatchingEnabled
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.DeBatchingEnabled
+  name: DeBatchingEnabled
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.DeBatchingEnabled
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.DeBatchingEnabled
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).DeBatchingEnabled
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).DeBatchingEnabled
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ServiceName
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.ServiceName
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ServiceName
+  name: ServiceName
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.ServiceName
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).ServiceName
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).ServiceName
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.PossibleAuthenticationFailureFatal
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.PossibleAuthenticationFailureFatal
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.PossibleAuthenticationFailureFatal
+  name: PossibleAuthenticationFailureFatal
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.PossibleAuthenticationFailureFatal
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.PossibleAuthenticationFailureFatal
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).PossibleAuthenticationFailureFatal
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).PossibleAuthenticationFailureFatal
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Options
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Options
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Options
+  name: Options
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.Options
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.Options
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).Options
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).Options
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  name: SetAfterReceivePostProcessors(IMessagePostProcessor[])
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.SetAfterReceivePostProcessors(IMessagePostProcessor[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).SetAfterReceivePostProcessors(IMessagePostProcessor())
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor())
+  name.vb: SetAfterReceivePostProcessors(IMessagePostProcessor())
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetAfterReceivePostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.SetAfterReceivePostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.SetAfterReceivePostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetAfterReceivePostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).SetAfterReceivePostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).SetAfterReceivePostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  name: SetBeforeSendReplyPostProcessors(IMessagePostProcessor[])
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.SetBeforeSendReplyPostProcessors(IMessagePostProcessor[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).SetBeforeSendReplyPostProcessors(IMessagePostProcessor())
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor())
+  name.vb: SetBeforeSendReplyPostProcessors(IMessagePostProcessor())
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetBeforeSendReplyPostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.SetBeforeSendReplyPostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.SetBeforeSendReplyPostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetBeforeSendReplyPostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).SetBeforeSendReplyPostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).SetBeforeSendReplyPostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name: CreateListenerContainer(IRabbitListenerEndpoint)
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name: IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name.vb: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: IRabbitListenerContainerFactory.CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.IRabbitListenerContainerFactory.CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1
+  name: AbstractRabbitListenerContainerFactory<C>
+  nameWithType: AbstractRabbitListenerContainerFactory<C>
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C)
+  name.vb: AbstractRabbitListenerContainerFactory(Of C)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1
+    name: AbstractRabbitListenerContainerFactory
+    nameWithType: AbstractRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1
+    name: AbstractRabbitListenerContainerFactory
+    nameWithType: AbstractRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory`1
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory`1
+  name: IRabbitListenerContainerFactory<C>
+  nameWithType: IRabbitListenerContainerFactory<C>
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory<C>
+  nameWithType.vb: IRabbitListenerContainerFactory(Of C)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory(Of C)
+  name.vb: IRabbitListenerContainerFactory(Of C)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory`1
+    name: IRabbitListenerContainerFactory
+    nameWithType: IRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory`1
+    name: IRabbitListenerContainerFactory
+    nameWithType: IRabbitListenerContainerFactory
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Listener
+  name: Steeltoe.Messaging.RabbitMQ.Listener
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Listener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1._logger
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1._logger
+  name: _logger
+  nameWithType: AbstractRabbitListenerContainerFactory<C>._logger
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>._logger
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C)._logger
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C)._logger
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1._loggerFactory
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1._loggerFactory
+  name: _loggerFactory
+  nameWithType: AbstractRabbitListenerContainerFactory<C>._loggerFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>._loggerFactory
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C)._loggerFactory
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C)._loggerFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ApplicationContext
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ApplicationContext
+  name: ApplicationContext
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.ApplicationContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.ApplicationContext
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).ApplicationContext
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).ApplicationContext
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ConnectionFactory
+  name: ConnectionFactory
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.ConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.ConnectionFactory
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).ConnectionFactory
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).ConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ErrorHandler
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ErrorHandler
+  name: ErrorHandler
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.ErrorHandler
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.ErrorHandler
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).ErrorHandler
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).ErrorHandler
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MessageConverter
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MessageConverter
+  name: MessageConverter
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.MessageConverter
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.MessageConverter
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).MessageConverter
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).MessageConverter
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AcknowledgeMode
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AcknowledgeMode
+  name: AcknowledgeMode
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.AcknowledgeMode
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.AcknowledgeMode
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).AcknowledgeMode
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).AcknowledgeMode
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.IsChannelTransacted
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.IsChannelTransacted
+  name: IsChannelTransacted
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.IsChannelTransacted
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.IsChannelTransacted
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).IsChannelTransacted
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).IsChannelTransacted
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.TransactionManager
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.TransactionManager
+  name: TransactionManager
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.TransactionManager
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.TransactionManager
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).TransactionManager
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).TransactionManager
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.PrefetchCount
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.PrefetchCount
+  name: PrefetchCount
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.PrefetchCount
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.PrefetchCount
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).PrefetchCount
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).PrefetchCount
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.DefaultRequeueRejected
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.DefaultRequeueRejected
+  name: DefaultRequeueRejected
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.DefaultRequeueRejected
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.DefaultRequeueRejected
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).DefaultRequeueRejected
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).DefaultRequeueRejected
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RecoveryInterval
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RecoveryInterval
+  name: RecoveryInterval
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.RecoveryInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.RecoveryInterval
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).RecoveryInterval
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).RecoveryInterval
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RecoveryBackOff
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RecoveryBackOff
+  name: RecoveryBackOff
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.RecoveryBackOff
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.RecoveryBackOff
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).RecoveryBackOff
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).RecoveryBackOff
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MissingQueuesFatal
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MissingQueuesFatal
+  name: MissingQueuesFatal
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.MissingQueuesFatal
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.MissingQueuesFatal
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).MissingQueuesFatal
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).MissingQueuesFatal
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MismatchedQueuesFatal
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.MismatchedQueuesFatal
+  name: MismatchedQueuesFatal
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.MismatchedQueuesFatal
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.MismatchedQueuesFatal
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).MismatchedQueuesFatal
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).MismatchedQueuesFatal
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ConsumerTagStrategy
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ConsumerTagStrategy
+  name: ConsumerTagStrategy
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.ConsumerTagStrategy
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.ConsumerTagStrategy
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).ConsumerTagStrategy
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).ConsumerTagStrategy
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.IdleEventInterval
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.IdleEventInterval
+  name: IdleEventInterval
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.IdleEventInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.IdleEventInterval
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).IdleEventInterval
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).IdleEventInterval
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.FailedDeclarationRetryInterval
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.FailedDeclarationRetryInterval
+  name: FailedDeclarationRetryInterval
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.FailedDeclarationRetryInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.FailedDeclarationRetryInterval
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).FailedDeclarationRetryInterval
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).FailedDeclarationRetryInterval
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AutoStartup
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AutoStartup
+  name: AutoStartup
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.AutoStartup
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.AutoStartup
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).AutoStartup
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).AutoStartup
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Phase
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Phase
+  name: Phase
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.Phase
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.Phase
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).Phase
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).Phase
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AfterReceivePostProcessors
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.AfterReceivePostProcessors
+  name: AfterReceivePostProcessors
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.AfterReceivePostProcessors
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.AfterReceivePostProcessors
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).AfterReceivePostProcessors
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).AfterReceivePostProcessors
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BeforeSendReplyPostProcessors
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BeforeSendReplyPostProcessors
+  name: BeforeSendReplyPostProcessors
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.BeforeSendReplyPostProcessors
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.BeforeSendReplyPostProcessors
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).BeforeSendReplyPostProcessors
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).BeforeSendReplyPostProcessors
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RetryTemplate
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.RetryTemplate
+  name: RetryTemplate
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.RetryTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.RetryTemplate
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).RetryTemplate
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).RetryTemplate
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ReplyRecoveryCallback
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ReplyRecoveryCallback
+  name: ReplyRecoveryCallback
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.ReplyRecoveryCallback
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.ReplyRecoveryCallback
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).ReplyRecoveryCallback
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).ReplyRecoveryCallback
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ContainerCustomizer
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ContainerCustomizer
+  name: ContainerCustomizer
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.ContainerCustomizer
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.ContainerCustomizer
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).ContainerCustomizer
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).ContainerCustomizer
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BatchListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BatchListener
+  name: BatchListener
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.BatchListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.BatchListener
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).BatchListener
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).BatchListener
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BatchingStrategy
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.BatchingStrategy
+  name: BatchingStrategy
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.BatchingStrategy
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.BatchingStrategy
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).BatchingStrategy
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).BatchingStrategy
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.DeBatchingEnabled
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.DeBatchingEnabled
+  name: DeBatchingEnabled
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.DeBatchingEnabled
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.DeBatchingEnabled
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).DeBatchingEnabled
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).DeBatchingEnabled
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ServiceName
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.ServiceName
+  name: ServiceName
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.ServiceName
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).ServiceName
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).ServiceName
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.PossibleAuthenticationFailureFatal
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.PossibleAuthenticationFailureFatal
+  name: PossibleAuthenticationFailureFatal
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.PossibleAuthenticationFailureFatal
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.PossibleAuthenticationFailureFatal
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).PossibleAuthenticationFailureFatal
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).PossibleAuthenticationFailureFatal
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Options
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Options
+  name: Options
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.Options
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.Options
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).Options
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).Options
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  name: SetAfterReceivePostProcessors(IMessagePostProcessor[])
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.SetAfterReceivePostProcessors(IMessagePostProcessor[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).SetAfterReceivePostProcessors(IMessagePostProcessor())
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor())
+  name.vb: SetAfterReceivePostProcessors(IMessagePostProcessor())
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetAfterReceivePostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory<C>.SetAfterReceivePostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.SetAfterReceivePostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetAfterReceivePostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetAfterReceivePostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory(Of C).SetAfterReceivePostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).SetAfterReceivePostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  name: SetBeforeSendReplyPostProcessors(IMessagePostProcessor[])
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.SetBeforeSendReplyPostProcessors(IMessagePostProcessor[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).SetBeforeSendReplyPostProcessors(IMessagePostProcessor())
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor())
+  name.vb: SetBeforeSendReplyPostProcessors(IMessagePostProcessor())
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetBeforeSendReplyPostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory<C>.SetBeforeSendReplyPostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.SetBeforeSendReplyPostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetBeforeSendReplyPostProcessors
+    nameWithType: AbstractRabbitListenerContainerFactory(Of C).SetBeforeSendReplyPostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).SetBeforeSendReplyPostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name: CreateListenerContainer(IRabbitListenerEndpoint)
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory<C>.CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory(Of C).CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name: IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name.vb: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer(IRabbitListenerEndpoint)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: IRabbitListenerContainerFactory.CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory<C>.IRabbitListenerContainerFactory.CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.Steeltoe#Messaging#RabbitMQ#Listener#IRabbitListenerContainerFactory#CreateListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+    nameWithType: AbstractRabbitListenerContainerFactory(Of C).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory.CreateListenerContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.#ctor
+  name: DirectRabbitListenerContainerFactory
+  nameWithType: DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.DirectRabbitListenerContainerFactory
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnectionFactory
+  nameWithType: IConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Connection
+  name: Steeltoe.Messaging.RabbitMQ.Connection
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection
+- uid: Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptionsMonitor`1
+  name: IOptionsMonitor<RabbitOptions>
+  nameWithType: IOptionsMonitor<RabbitOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions>
+  nameWithType.vb: IOptionsMonitor(Of RabbitOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions)
+  name.vb: IOptionsMonitor(Of RabbitOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions
+    name: RabbitOptions
+    nameWithType: RabbitOptions
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions
+    name: RabbitOptions
+    nameWithType: RabbitOptions
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+  commentId: T:Microsoft.Extensions.Options.IOptionsMonitor`1
+  isExternal: true
+  name: IOptionsMonitor<TOptions>
+  nameWithType: IOptionsMonitor<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>
+  nameWithType.vb: IOptionsMonitor(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions)
+  name.vb: IOptionsMonitor(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval
+  name: MonitorInterval
+  nameWithType: DirectRabbitListenerContainerFactory.MonitorInterval
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MonitorInterval
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue
+  name: ConsumersPerQueue
+  nameWithType: DirectRabbitListenerContainerFactory.ConsumersPerQueue
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.ConsumersPerQueue
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck
+  name: MessagesPerAck
+  nameWithType: DirectRabbitListenerContainerFactory.MessagesPerAck
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.MessagesPerAck
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout
+  name: AckTimeout
+  nameWithType: DirectRabbitListenerContainerFactory.AckTimeout
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.AckTimeout
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.CreateContainerInstance
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.CreateContainerInstance
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateContainerInstance
+  name: CreateContainerInstance()
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.CreateContainerInstance()
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.CreateContainerInstance()
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).CreateContainerInstance()
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).CreateContainerInstance()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateContainerInstance
+    name: CreateContainerInstance
+    nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.CreateContainerInstance
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.CreateContainerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateContainerInstance
+    name: CreateContainerInstance
+    nameWithType: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).CreateContainerInstance
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).CreateContainerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance
+  name: CreateContainerInstance
+  nameWithType: DirectRabbitListenerContainerFactory.CreateContainerInstance
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.CreateContainerInstance
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: DirectMessageListenerContainer
+  nameWithType: DirectMessageListenerContainer
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateContainerInstance
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateContainerInstance
+  name: CreateContainerInstance()
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.CreateContainerInstance()
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.CreateContainerInstance()
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).CreateContainerInstance()
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).CreateContainerInstance()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateContainerInstance
+    name: CreateContainerInstance
+    nameWithType: AbstractRabbitListenerContainerFactory<C>.CreateContainerInstance
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.CreateContainerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.CreateContainerInstance
+    name: CreateContainerInstance
+    nameWithType: AbstractRabbitListenerContainerFactory(Of C).CreateContainerInstance
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).CreateContainerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  parent: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory{Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer}
+  definition: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.InitializeContainer(`0,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name: InitializeContainer(DirectMessageListenerContainer, IRabbitListenerEndpoint)
+  nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.InitializeContainer(DirectMessageListenerContainer, IRabbitListenerEndpoint)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).InitializeContainer(DirectMessageListenerContainer, IRabbitListenerEndpoint)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).InitializeContainer(Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.InitializeContainer(`0,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: InitializeContainer
+    nameWithType: AbstractRabbitListenerContainerFactory<DirectMessageListenerContainer>.InitializeContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer>.InitializeContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    name: DirectMessageListenerContainer
+    nameWithType: DirectMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.InitializeContainer(`0,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: InitializeContainer
+    nameWithType: AbstractRabbitListenerContainerFactory(Of DirectMessageListenerContainer).InitializeContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer).InitializeContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+    name: DirectMessageListenerContainer
+    nameWithType: DirectMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.DirectMessageListenerContainer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer
+  name: InitializeContainer
+  nameWithType: DirectRabbitListenerContainerFactory.InitializeContainer
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.DirectRabbitListenerContainerFactory.InitializeContainer
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IRabbitListenerEndpoint
+  nameWithType: IRabbitListenerEndpoint
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+- uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.InitializeContainer(`0,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.InitializeContainer(`0,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  name: InitializeContainer(C, IRabbitListenerEndpoint)
+  nameWithType: AbstractRabbitListenerContainerFactory<C>.InitializeContainer(C, IRabbitListenerEndpoint)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.InitializeContainer(C, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  nameWithType.vb: AbstractRabbitListenerContainerFactory(Of C).InitializeContainer(C, IRabbitListenerEndpoint)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).InitializeContainer(C, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.InitializeContainer(`0,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: InitializeContainer
+    nameWithType: AbstractRabbitListenerContainerFactory<C>.InitializeContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory<C>.InitializeContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory`1.InitializeContainer(`0,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint)
+    name: InitializeContainer
+    nameWithType: AbstractRabbitListenerContainerFactory(Of C).InitializeContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.AbstractRabbitListenerContainerFactory(Of C).InitializeContainer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    name: IRabbitListenerEndpoint
+    nameWithType: IRabbitListenerEndpoint
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )

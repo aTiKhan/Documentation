@@ -1,0 +1,2838 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  id: AbstractConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor(RabbitMQ.Client.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor(RabbitMQ.Client.IConnectionFactory,Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._logger
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._loggerFactory
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._rabbitConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener(Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.DEFAULT_CLOSE_TIMEOUT
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener})
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener})
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener(Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener)
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username
+  - Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost
+  langs:
+  - csharp
+  - vb
+  name: AbstractConnectionFactory
+  nameWithType: AbstractConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: 'public abstract class AbstractConnectionFactory : IConnectionFactory, IDisposable, IServiceNameAware'
+    content.vb: >-
+      Public MustInherit Class AbstractConnectionFactory
+
+          Implements IConnectionFactory, IDisposable, IServiceNameAware
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Messaging.RabbitMQ.Connection.CachingConnectionFactory
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  - System.IDisposable
+  - Steeltoe.Common.Services.IServiceNameAware
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.DEFAULT_CLOSE_TIMEOUT
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.DEFAULT_CLOSE_TIMEOUT
+  id: DEFAULT_CLOSE_TIMEOUT
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_CLOSE_TIMEOUT
+  nameWithType: AbstractConnectionFactory.DEFAULT_CLOSE_TIMEOUT
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.DEFAULT_CLOSE_TIMEOUT
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DEFAULT_CLOSE_TIMEOUT
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public const int DEFAULT_CLOSE_TIMEOUT = 30000
+    return:
+      type: System.Int32
+    content.vb: Public Const DEFAULT_CLOSE_TIMEOUT As Integer = 30000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._loggerFactory
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._loggerFactory
+  id: _loggerFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: _loggerFactory
+  nameWithType: AbstractConnectionFactory._loggerFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._loggerFactory
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _loggerFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected readonly ILoggerFactory _loggerFactory
+    return:
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Protected ReadOnly _loggerFactory As ILoggerFactory
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._logger
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._logger
+  id: _logger
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: _logger
+  nameWithType: AbstractConnectionFactory._logger
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._logger
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _logger
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected readonly ILogger _logger
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Protected ReadOnly _logger As ILogger
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._rabbitConnectionFactory
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._rabbitConnectionFactory
+  id: _rabbitConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: _rabbitConnectionFactory
+  nameWithType: AbstractConnectionFactory._rabbitConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory._rabbitConnectionFactory
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _rabbitConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected readonly IConnectionFactory _rabbitConnectionFactory
+    return:
+      type: RabbitMQ.Client.IConnectionFactory
+    content.vb: Protected ReadOnly _rabbitConnectionFactory As IConnectionFactory
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor(RabbitMQ.Client.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor(RabbitMQ.Client.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(RabbitMQ.Client.IConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: AbstractConnectionFactory(IConnectionFactory, ILoggerFactory)
+  nameWithType: AbstractConnectionFactory.AbstractConnectionFactory(IConnectionFactory, ILoggerFactory)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractConnectionFactory(RabbitMQ.Client.IConnectionFactory, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected AbstractConnectionFactory(IConnectionFactory rabbitConnectionFactory, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: rabbitConnectionFactory
+      type: RabbitMQ.Client.IConnectionFactory
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Protected Sub New(rabbitConnectionFactory As IConnectionFactory, loggerFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor(RabbitMQ.Client.IConnectionFactory,Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor(RabbitMQ.Client.IConnectionFactory,Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(RabbitMQ.Client.IConnectionFactory,Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory,Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: AbstractConnectionFactory(IConnectionFactory, AbstractConnectionFactory, ILoggerFactory)
+  nameWithType: AbstractConnectionFactory.AbstractConnectionFactory(IConnectionFactory, AbstractConnectionFactory, ILoggerFactory)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractConnectionFactory(RabbitMQ.Client.IConnectionFactory, Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected AbstractConnectionFactory(IConnectionFactory rabbitConnectionFactory, AbstractConnectionFactory publisherConnectionFactory, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: rabbitConnectionFactory
+      type: RabbitMQ.Client.IConnectionFactory
+    - id: publisherConnectionFactory
+      type: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Protected Sub New(rabbitConnectionFactory As IConnectionFactory, publisherConnectionFactory As AbstractConnectionFactory, loggerFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory
+  id: RabbitConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: RabbitConnectionFactory
+  nameWithType: AbstractConnectionFactory.RabbitConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RabbitConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 58
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual ConnectionFactory RabbitConnectionFactory { get; }
+    parameters: []
+    return:
+      type: RabbitMQ.Client.ConnectionFactory
+    content.vb: Public Overridable ReadOnly Property RabbitConnectionFactory As ConnectionFactory
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username
+  id: Username
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: AbstractConnectionFactory.Username
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Username
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual string Username { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Username As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Username
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password
+  id: Password
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: AbstractConnectionFactory.Password
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Password
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 66
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Password As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri
+  id: Uri
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: AbstractConnectionFactory.Uri
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Uri
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 72
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual Uri Uri { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public Overridable Property Uri As Uri
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host
+  id: Host
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: AbstractConnectionFactory.Host
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Host
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 78
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual string Host { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Host As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Host
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port
+  id: Port
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: AbstractConnectionFactory.Port
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Port
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 84
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property Port As Integer
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Port
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost
+  id: VirtualHost
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: VirtualHost
+  nameWithType: AbstractConnectionFactory.VirtualHost
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: VirtualHost
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 90
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual string VirtualHost { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property VirtualHost As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.VirtualHost
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat
+  id: RequestedHeartBeat
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: RequestedHeartBeat
+  nameWithType: AbstractConnectionFactory.RequestedHeartBeat
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RequestedHeartBeat
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 96
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual ushort RequestedHeartBeat { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Overridable Property RequestedHeartBeat As UShort
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout
+  id: ConnectionTimeout
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ConnectionTimeout
+  nameWithType: AbstractConnectionFactory.ConnectionTimeout
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConnectionTimeout
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 102
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual int ConnectionTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property ConnectionTimeout As Integer
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout
+  id: CloseTimeout
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: CloseTimeout
+  nameWithType: AbstractConnectionFactory.CloseTimeout
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CloseTimeout
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 108
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual int CloseTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property CloseTimeout As Integer
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName
+  id: ServiceName
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ServiceName
+  nameWithType: AbstractConnectionFactory.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceName
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 110
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual string ServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property ServiceName As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName*
+  implements:
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses
+  id: ShuffleAddresses
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ShuffleAddresses
+  nameWithType: AbstractConnectionFactory.ShuffleAddresses
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ShuffleAddresses
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 112
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual bool ShuffleAddresses { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property ShuffleAddresses As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses
+  id: Addresses
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Addresses
+  nameWithType: AbstractConnectionFactory.Addresses
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Addresses
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 114
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual List<AmqpTcpEndpoint> Addresses { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{RabbitMQ.Client.AmqpTcpEndpoint}
+    content.vb: Public Overridable Property Addresses As List(Of AmqpTcpEndpoint)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory
+  id: HasPublisherConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: HasPublisherConnectionFactory
+  nameWithType: AbstractConnectionFactory.HasPublisherConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HasPublisherConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 116
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual bool HasPublisherConnectionFactory { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property HasPublisherConnectionFactory As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory
+  id: PublisherConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: PublisherConnectionFactory
+  nameWithType: AbstractConnectionFactory.PublisherConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PublisherConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 118
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual IConnectionFactory PublisherConnectionFactory { get; protected set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    content.vb: Public Overridable Property PublisherConnectionFactory As IConnectionFactory
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.PublisherConnectionFactory
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Overridable
+  - Get
+  - Protected Set
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener
+  id: BlockedListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: BlockedListener
+  nameWithType: AbstractConnectionFactory.BlockedListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BlockedListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 120
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual IBlockedListener BlockedListener { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+    content.vb: Public Overridable Property BlockedListener As IBlockedListener
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener
+  id: RecoveryListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: RecoveryListener
+  nameWithType: AbstractConnectionFactory.RecoveryListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RecoveryListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 122
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual IRecoveryListener RecoveryListener { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener
+    content.vb: Public Overridable Property RecoveryListener As IRecoveryListener
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms
+  id: IsSimplePublisherConfirms
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: IsSimplePublisherConfirms
+  nameWithType: AbstractConnectionFactory.IsSimplePublisherConfirms
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsSimplePublisherConfirms
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 124
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual bool IsSimplePublisherConfirms { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property IsSimplePublisherConfirms As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsSimplePublisherConfirms
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms
+  id: IsPublisherConfirms
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: IsPublisherConfirms
+  nameWithType: AbstractConnectionFactory.IsPublisherConfirms
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsPublisherConfirms
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 126
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual bool IsPublisherConfirms { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property IsPublisherConfirms As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherConfirms
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns
+  id: IsPublisherReturns
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: IsPublisherReturns
+  nameWithType: AbstractConnectionFactory.IsPublisherReturns
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsPublisherReturns
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 128
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual bool IsPublisherReturns { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property IsPublisherReturns As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherReturns
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener
+  id: ConnectionListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ConnectionListener
+  nameWithType: AbstractConnectionFactory.ConnectionListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConnectionListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 130
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual IConnectionListener ConnectionListener { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    content.vb: Public Overridable ReadOnly Property ConnectionListener As IConnectionListener
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener
+  id: ChannelListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ChannelListener
+  nameWithType: AbstractConnectionFactory.ChannelListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ChannelListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 132
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual IChannelListener ChannelListener { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+    content.vb: Public Overridable ReadOnly Property ChannelListener As IChannelListener
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener})
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener})
+  id: SetConnectionListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener})
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: SetConnectionListeners(List<IConnectionListener>)
+  nameWithType: AbstractConnectionFactory.SetConnectionListeners(List<IConnectionListener>)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners(System.Collections.Generic.List<Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener>)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetConnectionListeners
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 134
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void SetConnectionListeners(List<IConnectionListener> listeners)
+    parameters:
+    - id: listeners
+      type: System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener}
+    content.vb: Public Overridable Sub SetConnectionListeners(listeners As List(Of IConnectionListener))
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners*
+  nameWithType.vb: AbstractConnectionFactory.SetConnectionListeners(List(Of IConnectionListener))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners(System.Collections.Generic.List(Of Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener))
+  name.vb: SetConnectionListeners(List(Of IConnectionListener))
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  id: AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: AddConnectionListener(IConnectionListener)
+  nameWithType: AbstractConnectionFactory.AddConnectionListener(IConnectionListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddConnectionListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 143
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void AddConnectionListener(IConnectionListener connectionListener)
+    parameters:
+    - id: connectionListener
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    content.vb: Public Overridable Sub AddConnectionListener(connectionListener As IConnectionListener)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  id: RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: RemoveConnectionListener(IConnectionListener)
+  nameWithType: AbstractConnectionFactory.RemoveConnectionListener(IConnectionListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveConnectionListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 152
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual bool RemoveConnectionListener(IConnectionListener connectionListener)
+    parameters:
+    - id: connectionListener
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function RemoveConnectionListener(connectionListener As IConnectionListener) As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners
+  id: ClearConnectionListeners
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ClearConnectionListeners()
+  nameWithType: AbstractConnectionFactory.ClearConnectionListeners()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ClearConnectionListeners
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 163
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void ClearConnectionListeners()
+    content.vb: Public Overridable Sub ClearConnectionListeners
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener})
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener})
+  id: SetChannelListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener})
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: SetChannelListeners(List<IChannelListener>)
+  nameWithType: AbstractConnectionFactory.SetChannelListeners(List<IChannelListener>)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners(System.Collections.Generic.List<Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener>)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetChannelListeners
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 172
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void SetChannelListeners(List<IChannelListener> listeners)
+    parameters:
+    - id: listeners
+      type: System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener}
+    content.vb: Public Overridable Sub SetChannelListeners(listeners As List(Of IChannelListener))
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners*
+  nameWithType.vb: AbstractConnectionFactory.SetChannelListeners(List(Of IChannelListener))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners(System.Collections.Generic.List(Of Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener))
+  name.vb: SetChannelListeners(List(Of IChannelListener))
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener(Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener(Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener)
+  id: AddChannelListener(Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: AddChannelListener(IChannelListener)
+  nameWithType: AbstractConnectionFactory.AddChannelListener(IChannelListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener(Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddChannelListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 177
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void AddChannelListener(IChannelListener listener)
+    parameters:
+    - id: listener
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+    content.vb: Public Overridable Sub AddChannelListener(listener As IChannelListener)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener(Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener(Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener)
+  id: SetRecoveryListener(Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: SetRecoveryListener(IRecoveryListener)
+  nameWithType: AbstractConnectionFactory.SetRecoveryListener(IRecoveryListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener(Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetRecoveryListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 186
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void SetRecoveryListener(IRecoveryListener recoveryListener)
+    parameters:
+    - id: recoveryListener
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener
+    content.vb: Public Overridable Sub SetRecoveryListener(recoveryListener As IRecoveryListener)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  id: SetBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: SetBlockedListener(IBlockedListener)
+  nameWithType: AbstractConnectionFactory.SetBlockedListener(IBlockedListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetBlockedListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 195
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void SetBlockedListener(IBlockedListener blockedListener)
+    parameters:
+    - id: blockedListener
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+    content.vb: Public Overridable Sub SetBlockedListener(blockedListener As IBlockedListener)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses(System.String)
+  id: SetAddresses(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: SetAddresses(String)
+  nameWithType: AbstractConnectionFactory.SetAddresses(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetAddresses
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 204
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void SetAddresses(string addresses)
+    parameters:
+    - id: addresses
+      type: System.String
+    content.vb: Public Overridable Sub SetAddresses(addresses As String)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection
+  id: CreateConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateConnection()
+  nameWithType: AbstractConnectionFactory.CreateConnection()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateConnection
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 225
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public abstract IConnection CreateConnection()
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    content.vb: Public MustOverride Function CreateConnection As IConnection
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy
+  id: Destroy
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Destroy()
+  nameWithType: AbstractConnectionFactory.Destroy()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Destroy
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 227
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void Destroy()
+    content.vb: Public Overridable Sub Destroy
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose
+  id: Dispose
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AbstractConnectionFactory.Dispose()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Dispose
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 235
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString
+  id: ToString
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AbstractConnectionFactory.ToString()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToString
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 240
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  id: ConnectionShutdownCompleted(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ConnectionShutdownCompleted(Object, ShutdownEventArgs)
+  nameWithType: AbstractConnectionFactory.ConnectionShutdownCompleted(Object, ShutdownEventArgs)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted(System.Object, RabbitMQ.Client.ShutdownEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConnectionShutdownCompleted
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 245
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected virtual void ConnectionShutdownCompleted(object sender, ShutdownEventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: RabbitMQ.Client.ShutdownEventArgs
+    content.vb: Protected Overridable Sub ConnectionShutdownCompleted(sender As Object, args As ShutdownEventArgs)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory
+  id: AbstractPublisherConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: AbstractPublisherConnectionFactory
+  nameWithType: AbstractConnectionFactory.AbstractPublisherConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractPublisherConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 250
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected virtual AbstractConnectionFactory AbstractPublisherConnectionFactory { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+    content.vb: Protected Overridable ReadOnly Property AbstractPublisherConnectionFactory As AbstractConnectionFactory
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory*
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection
+  id: CreateBareConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateBareConnection()
+  nameWithType: AbstractConnectionFactory.CreateBareConnection()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateBareConnection
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 258
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected virtual IConnection CreateBareConnection()
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    content.vb: Protected Overridable Function CreateBareConnection As IConnection
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName
+  id: GetDefaultHostName
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultHostName()
+  nameWithType: AbstractConnectionFactory.GetDefaultHostName()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetDefaultHostName
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 295
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected virtual string GetDefaultHostName()
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function GetDefaultHostName As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName
+  id: ObtainNewConnectionName
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  langs:
+  - csharp
+  - vb
+  name: ObtainNewConnectionName()
+  nameWithType: AbstractConnectionFactory.ObtainNewConnectionName()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ObtainNewConnectionName
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/AbstractConnectionFactory.cs
+    startLine: 314
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: protected virtual string ObtainNewConnectionName()
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function ObtainNewConnectionName As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Connection
+  name: Steeltoe.Messaging.RabbitMQ.Connection
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnectionFactory
+  nameWithType: IConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: RabbitMQ.Client.IConnectionFactory
+  commentId: T:RabbitMQ.Client.IConnectionFactory
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IConnectionFactory
+  nameWithType: IConnectionFactory
+  fullName: RabbitMQ.Client.IConnectionFactory
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.#ctor
+  name: AbstractConnectionFactory
+  nameWithType: AbstractConnectionFactory.AbstractConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: AbstractConnectionFactory
+  nameWithType: AbstractConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory
+  name: RabbitConnectionFactory
+  nameWithType: AbstractConnectionFactory.RabbitConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RabbitConnectionFactory
+- uid: RabbitMQ.Client.ConnectionFactory
+  commentId: T:RabbitMQ.Client.ConnectionFactory
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: ConnectionFactory
+  nameWithType: ConnectionFactory
+  fullName: RabbitMQ.Client.ConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username
+  name: Username
+  nameWithType: AbstractConnectionFactory.Username
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Username
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Username
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Username
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: Username
+  nameWithType: IConnectionFactory.Username
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Username
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password
+  name: Password
+  nameWithType: AbstractConnectionFactory.Password
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Password
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri
+  name: Uri
+  nameWithType: AbstractConnectionFactory.Uri
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Uri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host
+  name: Host
+  nameWithType: AbstractConnectionFactory.Host
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Host
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Host
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Host
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: Host
+  nameWithType: IConnectionFactory.Host
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Host
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port
+  name: Port
+  nameWithType: AbstractConnectionFactory.Port
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Port
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Port
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Port
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: Port
+  nameWithType: IConnectionFactory.Port
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Port
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost
+  name: VirtualHost
+  nameWithType: AbstractConnectionFactory.VirtualHost
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.VirtualHost
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.VirtualHost
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.VirtualHost
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: VirtualHost
+  nameWithType: IConnectionFactory.VirtualHost
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.VirtualHost
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat
+  name: RequestedHeartBeat
+  nameWithType: AbstractConnectionFactory.RequestedHeartBeat
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RequestedHeartBeat
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout
+  name: ConnectionTimeout
+  nameWithType: AbstractConnectionFactory.ConnectionTimeout
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionTimeout
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout
+  name: CloseTimeout
+  nameWithType: AbstractConnectionFactory.CloseTimeout
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CloseTimeout
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName
+  name: ServiceName
+  nameWithType: AbstractConnectionFactory.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ServiceName
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses
+  name: ShuffleAddresses
+  nameWithType: AbstractConnectionFactory.ShuffleAddresses
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ShuffleAddresses
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses
+  name: Addresses
+  nameWithType: AbstractConnectionFactory.Addresses
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Addresses
+- uid: System.Collections.Generic.List{RabbitMQ.Client.AmqpTcpEndpoint}
+  commentId: T:System.Collections.Generic.List{RabbitMQ.Client.AmqpTcpEndpoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AmqpTcpEndpoint>
+  nameWithType: List<AmqpTcpEndpoint>
+  fullName: System.Collections.Generic.List<RabbitMQ.Client.AmqpTcpEndpoint>
+  nameWithType.vb: List(Of AmqpTcpEndpoint)
+  fullName.vb: System.Collections.Generic.List(Of RabbitMQ.Client.AmqpTcpEndpoint)
+  name.vb: List(Of AmqpTcpEndpoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RabbitMQ.Client.AmqpTcpEndpoint
+    name: AmqpTcpEndpoint
+    nameWithType: AmqpTcpEndpoint
+    fullName: RabbitMQ.Client.AmqpTcpEndpoint
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RabbitMQ.Client.AmqpTcpEndpoint
+    name: AmqpTcpEndpoint
+    nameWithType: AmqpTcpEndpoint
+    fullName: RabbitMQ.Client.AmqpTcpEndpoint
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory
+  name: HasPublisherConnectionFactory
+  nameWithType: AbstractConnectionFactory.HasPublisherConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.HasPublisherConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory
+  name: PublisherConnectionFactory
+  nameWithType: AbstractConnectionFactory.PublisherConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.PublisherConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.PublisherConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.PublisherConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: PublisherConnectionFactory
+  nameWithType: IConnectionFactory.PublisherConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.PublisherConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener
+  name: BlockedListener
+  nameWithType: AbstractConnectionFactory.BlockedListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.BlockedListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IBlockedListener
+  nameWithType: IBlockedListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener
+  name: RecoveryListener
+  nameWithType: AbstractConnectionFactory.RecoveryListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RecoveryListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IRecoveryListener
+  nameWithType: IRecoveryListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IRecoveryListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms
+  name: IsSimplePublisherConfirms
+  nameWithType: AbstractConnectionFactory.IsSimplePublisherConfirms
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsSimplePublisherConfirms
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsSimplePublisherConfirms
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsSimplePublisherConfirms
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: IsSimplePublisherConfirms
+  nameWithType: IConnectionFactory.IsSimplePublisherConfirms
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsSimplePublisherConfirms
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms
+  name: IsPublisherConfirms
+  nameWithType: AbstractConnectionFactory.IsPublisherConfirms
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherConfirms
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherConfirms
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherConfirms
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: IsPublisherConfirms
+  nameWithType: IConnectionFactory.IsPublisherConfirms
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherConfirms
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns
+  name: IsPublisherReturns
+  nameWithType: AbstractConnectionFactory.IsPublisherReturns
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.IsPublisherReturns
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherReturns
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherReturns
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: IsPublisherReturns
+  nameWithType: IConnectionFactory.IsPublisherReturns
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.IsPublisherReturns
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener
+  name: ConnectionListener
+  nameWithType: AbstractConnectionFactory.ConnectionListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnectionListener
+  nameWithType: IConnectionListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener
+  name: ChannelListener
+  nameWithType: AbstractConnectionFactory.ChannelListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ChannelListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IChannelListener
+  nameWithType: IChannelListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners
+  name: SetConnectionListeners
+  nameWithType: AbstractConnectionFactory.SetConnectionListeners
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetConnectionListeners
+- uid: System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IConnectionListener>
+  nameWithType: List<IConnectionListener>
+  fullName: System.Collections.Generic.List<Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener>
+  nameWithType.vb: List(Of IConnectionListener)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  name.vb: List(Of IConnectionListener)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    name: IConnectionListener
+    nameWithType: IConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    name: IConnectionListener
+    nameWithType: IConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener
+  name: AddConnectionListener
+  nameWithType: AbstractConnectionFactory.AddConnectionListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddConnectionListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: AddConnectionListener(IConnectionListener)
+  nameWithType: IConnectionFactory.AddConnectionListener(IConnectionListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+    name: AddConnectionListener
+    nameWithType: IConnectionFactory.AddConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    name: IConnectionListener
+    nameWithType: IConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+    name: AddConnectionListener
+    nameWithType: IConnectionFactory.AddConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.AddConnectionListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    name: IConnectionListener
+    nameWithType: IConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener
+  name: RemoveConnectionListener
+  nameWithType: AbstractConnectionFactory.RemoveConnectionListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.RemoveConnectionListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: RemoveConnectionListener(IConnectionListener)
+  nameWithType: IConnectionFactory.RemoveConnectionListener(IConnectionListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+    name: RemoveConnectionListener
+    nameWithType: IConnectionFactory.RemoveConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    name: IConnectionListener
+    nameWithType: IConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener)
+    name: RemoveConnectionListener
+    nameWithType: IConnectionFactory.RemoveConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.RemoveConnectionListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+    name: IConnectionListener
+    nameWithType: IConnectionListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionListener
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners
+  name: ClearConnectionListeners
+  nameWithType: AbstractConnectionFactory.ClearConnectionListeners
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ClearConnectionListeners
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: ClearConnectionListeners()
+  nameWithType: IConnectionFactory.ClearConnectionListeners()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners
+    name: ClearConnectionListeners
+    nameWithType: IConnectionFactory.ClearConnectionListeners
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners
+    name: ClearConnectionListeners
+    nameWithType: IConnectionFactory.ClearConnectionListeners
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.ClearConnectionListeners
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners
+  name: SetChannelListeners
+  nameWithType: AbstractConnectionFactory.SetChannelListeners
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetChannelListeners
+- uid: System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IChannelListener>
+  nameWithType: List<IChannelListener>
+  fullName: System.Collections.Generic.List<Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener>
+  nameWithType.vb: List(Of IChannelListener)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener)
+  name.vb: List(Of IChannelListener)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+    name: IChannelListener
+    nameWithType: IChannelListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+    name: IChannelListener
+    nameWithType: IChannelListener
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IChannelListener
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener
+  name: AddChannelListener
+  nameWithType: AbstractConnectionFactory.AddChannelListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AddChannelListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener
+  name: SetRecoveryListener
+  nameWithType: AbstractConnectionFactory.SetRecoveryListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetRecoveryListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener
+  name: SetBlockedListener
+  nameWithType: AbstractConnectionFactory.SetBlockedListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetBlockedListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses
+  name: SetAddresses
+  nameWithType: AbstractConnectionFactory.SetAddresses
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.SetAddresses
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection
+  name: CreateConnection
+  nameWithType: AbstractConnectionFactory.CreateConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: CreateConnection()
+  nameWithType: IConnectionFactory.CreateConnection()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection
+    name: CreateConnection
+    nameWithType: IConnectionFactory.CreateConnection
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection
+    name: CreateConnection
+    nameWithType: IConnectionFactory.CreateConnection
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.CreateConnection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnection
+  nameWithType: IConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy
+  name: Destroy
+  nameWithType: AbstractConnectionFactory.Destroy
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Destroy
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  name: Destroy()
+  nameWithType: IConnectionFactory.Destroy()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy
+    name: Destroy
+    nameWithType: IConnectionFactory.Destroy
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy
+    name: Destroy
+    nameWithType: IConnectionFactory.Destroy
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory.Destroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose
+  name: Dispose
+  nameWithType: AbstractConnectionFactory.Dispose
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString
+  name: ToString
+  nameWithType: AbstractConnectionFactory.ToString
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ToString
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted
+  name: ConnectionShutdownCompleted
+  nameWithType: AbstractConnectionFactory.ConnectionShutdownCompleted
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ConnectionShutdownCompleted
+- uid: RabbitMQ.Client.ShutdownEventArgs
+  commentId: T:RabbitMQ.Client.ShutdownEventArgs
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: ShutdownEventArgs
+  nameWithType: ShutdownEventArgs
+  fullName: RabbitMQ.Client.ShutdownEventArgs
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory
+  name: AbstractPublisherConnectionFactory
+  nameWithType: AbstractConnectionFactory.AbstractPublisherConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.AbstractPublisherConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection
+  name: CreateBareConnection
+  nameWithType: AbstractConnectionFactory.CreateBareConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.CreateBareConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName
+  name: GetDefaultHostName
+  nameWithType: AbstractConnectionFactory.GetDefaultHostName
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.GetDefaultHostName
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName
+  name: ObtainNewConnectionName
+  nameWithType: AbstractConnectionFactory.ObtainNewConnectionName
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.AbstractConnectionFactory.ObtainNewConnectionName

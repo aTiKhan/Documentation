@@ -1,0 +1,2402 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  id: BatchMessagingMessageListenerAdapter
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.Object,System.Reflection.MethodInfo,System.Boolean,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler,Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList(System.Type)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList(System.Type)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage(Steeltoe.Messaging.IMessage)
+  langs:
+  - csharp
+  - vb
+  name: BatchMessagingMessageListenerAdapter
+  nameWithType: BatchMessagingMessageListenerAdapter
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BatchMessagingMessageListenerAdapter
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  syntax:
+    content: 'public class BatchMessagingMessageListenerAdapter : MessagingMessageListenerAdapter, IChannelAwareBatchMessageListener, IChannelAwareMessageListener, IMessageListener'
+    content.vb: >-
+      Public Class BatchMessagingMessageListenerAdapter
+
+          Inherits MessagingMessageListenerAdapter
+
+          Implements IChannelAwareBatchMessageListener, IChannelAwareMessageListener, IMessageListener
+  inheritance:
+  - System.Object
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  - Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener
+  - Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  inheritedMembers:
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Instance
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Method
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsBatch
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageList
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageByteArrayList
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InferredArgumentType
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ReturnExceptions
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ErrorHandler
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.HandlerAdapter
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage(RabbitMQ.Client.IModel,System.Object,System.Type)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter._logger
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ApplicationContext
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.Encoding
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseRoutingKey
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExchange
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseAddress
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MandatoryPublish
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessageConverter
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.BeforeSendReplyPostProcessors
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RetryTemplate
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RecoveryCallback
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DefaultRequeueRejected
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ContainerAckMode
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.IsManualAck
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.EvalContext
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessagePropertiesConverter
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExpression
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ReplyPostProcessor
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver(Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException(System.Exception)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress(Steeltoe.Messaging.IMessage,System.Object,Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult)
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+  - Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.Object,System.Reflection.MethodInfo,System.Boolean,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler,Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.Object,System.Reflection.MethodInfo,System.Boolean,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler,Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.Object,System.Reflection.MethodInfo,System.Boolean,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler,Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  langs:
+  - csharp
+  - vb
+  name: BatchMessagingMessageListenerAdapter(IApplicationContext, Object, MethodInfo, Boolean, IRabbitListenerErrorHandler, IBatchingStrategy, ILogger)
+  nameWithType: BatchMessagingMessageListenerAdapter.BatchMessagingMessageListenerAdapter(IApplicationContext, Object, MethodInfo, Boolean, IRabbitListenerErrorHandler, IBatchingStrategy, ILogger)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.BatchMessagingMessageListenerAdapter(Steeltoe.Common.Contexts.IApplicationContext, System.Object, System.Reflection.MethodInfo, System.Boolean, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler, Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  syntax:
+    content: public BatchMessagingMessageListenerAdapter(IApplicationContext context, object bean, MethodInfo method, bool returnExceptions, IRabbitListenerErrorHandler errorHandler, IBatchingStrategy batchingStrategy, ILogger logger = null)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: bean
+      type: System.Object
+    - id: method
+      type: System.Reflection.MethodInfo
+    - id: returnExceptions
+      type: System.Boolean
+    - id: errorHandler
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler
+    - id: batchingStrategy
+      type: Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(context As IApplicationContext, bean As Object, method As MethodInfo, returnExceptions As Boolean, errorHandler As IRabbitListenerErrorHandler, batchingStrategy As IBatchingStrategy, logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  id: OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  langs:
+  - csharp
+  - vb
+  name: OnMessageBatch(List<IMessage>, IModel)
+  nameWithType: BatchMessagingMessageListenerAdapter.OnMessageBatch(List<IMessage>, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage>, RabbitMQ.Client.IModel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnMessageBatch
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+    startLine: 35
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  syntax:
+    content: public override void OnMessageBatch(List<IMessage> messages, IModel channel)
+    parameters:
+    - id: messages
+      type: System.Collections.Generic.List{Steeltoe.Messaging.IMessage}
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    content.vb: Public Overrides Sub OnMessageBatch(messages As List(Of IMessage), channel As IModel)
+  overridden: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  nameWithType.vb: BatchMessagingMessageListenerAdapter.OnMessageBatch(List(Of IMessage), IModel)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage), RabbitMQ.Client.IModel)
+  name.vb: OnMessageBatch(List(Of IMessage), IModel)
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList(System.Type)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList(System.Type)
+  id: CreateMessageList(System.Type)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  langs:
+  - csharp
+  - vb
+  name: CreateMessageList(Type)
+  nameWithType: BatchMessagingMessageListenerAdapter.CreateMessageList(Type)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateMessageList
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+    startLine: 91
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  syntax:
+    content: protected IList CreateMessageList(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Collections.IList
+    content.vb: Protected Function CreateMessageList(type As Type) As IList
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList(System.Type)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList(System.Type)
+  id: CreateList(System.Type)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  langs:
+  - csharp
+  - vb
+  name: CreateList(Type)
+  nameWithType: BatchMessagingMessageListenerAdapter.CreateList(Type)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateList
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+    startLine: 98
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  syntax:
+    content: protected IList CreateList(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Collections.IList
+    content.vb: Protected Function CreateList(type As Type) As IList
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage(Steeltoe.Messaging.IMessage)
+  id: ToMessagingMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter
+  langs:
+  - csharp
+  - vb
+  name: ToMessagingMessage(IMessage)
+  nameWithType: BatchMessagingMessageListenerAdapter.ToMessagingMessage(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToMessagingMessage
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/Adapters/BatchMessagingMessageListenerAdapter.cs
+    startLine: 104
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  syntax:
+    content: protected IMessage ToMessagingMessage(IMessage amqpMessage)
+    parameters:
+    - id: amqpMessage
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Protected Function ToMessagingMessage(amqpMessage As IMessage) As IMessage
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  name: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  name: AbstractMessageListenerAdapter
+  nameWithType: AbstractMessageListenerAdapter
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters
+  name: MessagingMessageListenerAdapter
+  nameWithType: MessagingMessageListenerAdapter
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IChannelAwareBatchMessageListener
+  nameWithType: IChannelAwareBatchMessageListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IChannelAwareMessageListener
+  nameWithType: IChannelAwareMessageListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IMessageListener
+  nameWithType: IMessageListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Instance
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Instance
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: Instance
+  nameWithType: MessagingMessageListenerAdapter.Instance
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Instance
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Method
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Method
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: Method
+  nameWithType: MessagingMessageListenerAdapter.Method
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.Method
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsBatch
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsBatch
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: IsBatch
+  nameWithType: MessagingMessageListenerAdapter.IsBatch
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsBatch
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageList
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageList
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: IsMessageList
+  nameWithType: MessagingMessageListenerAdapter.IsMessageList
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageList
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageByteArrayList
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageByteArrayList
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: IsMessageByteArrayList
+  nameWithType: MessagingMessageListenerAdapter.IsMessageByteArrayList
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.IsMessageByteArrayList
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InferredArgumentType
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InferredArgumentType
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: InferredArgumentType
+  nameWithType: MessagingMessageListenerAdapter.InferredArgumentType
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InferredArgumentType
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ReturnExceptions
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ReturnExceptions
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: ReturnExceptions
+  nameWithType: MessagingMessageListenerAdapter.ReturnExceptions
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ReturnExceptions
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ErrorHandler
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ErrorHandler
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: ErrorHandler
+  nameWithType: MessagingMessageListenerAdapter.ErrorHandler
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.ErrorHandler
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.HandlerAdapter
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.HandlerAdapter
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: HandlerAdapter
+  nameWithType: MessagingMessageListenerAdapter.HandlerAdapter
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.HandlerAdapter
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  isExternal: true
+  name: OnMessage(IMessage, IModel)
+  nameWithType: MessagingMessageListenerAdapter.OnMessage(IMessage, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage, RabbitMQ.Client.IModel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+    name: OnMessage
+    nameWithType: MessagingMessageListenerAdapter.OnMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+    name: OnMessage
+    nameWithType: MessagingMessageListenerAdapter.OnMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.OnMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage(RabbitMQ.Client.IModel,System.Object,System.Type)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage(RabbitMQ.Client.IModel,System.Object,System.Type)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  isExternal: true
+  name: BuildMessage(IModel, Object, Type)
+  nameWithType: MessagingMessageListenerAdapter.BuildMessage(IModel, Object, Type)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage(RabbitMQ.Client.IModel, System.Object, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage(RabbitMQ.Client.IModel,System.Object,System.Type)
+    name: BuildMessage
+    nameWithType: MessagingMessageListenerAdapter.BuildMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage(RabbitMQ.Client.IModel,System.Object,System.Type)
+    name: BuildMessage
+    nameWithType: MessagingMessageListenerAdapter.BuildMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.BuildMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  isExternal: true
+  name: InvokeHandlerAndProcessResult(IMessage, IModel, IMessage)
+  nameWithType: MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult(IMessage, IModel, IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult(Steeltoe.Messaging.IMessage, RabbitMQ.Client.IModel, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+    name: InvokeHandlerAndProcessResult
+    nameWithType: MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult(Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+    name: InvokeHandlerAndProcessResult
+    nameWithType: MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.InvokeHandlerAndProcessResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter
+  name: PreprocesMessage(IMessage)
+  nameWithType: MessagingMessageListenerAdapter.PreprocesMessage(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage(Steeltoe.Messaging.IMessage)
+    name: PreprocesMessage
+    nameWithType: MessagingMessageListenerAdapter.PreprocesMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage(Steeltoe.Messaging.IMessage)
+    name: PreprocesMessage
+    nameWithType: MessagingMessageListenerAdapter.PreprocesMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.MessagingMessageListenerAdapter.PreprocesMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter._logger
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter._logger
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: _logger
+  nameWithType: AbstractMessageListenerAdapter._logger
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter._logger
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ApplicationContext
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ApplicationContext
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ApplicationContext
+  nameWithType: AbstractMessageListenerAdapter.ApplicationContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ApplicationContext
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.Encoding
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.Encoding
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: Encoding
+  nameWithType: AbstractMessageListenerAdapter.Encoding
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.Encoding
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseRoutingKey
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseRoutingKey
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ResponseRoutingKey
+  nameWithType: AbstractMessageListenerAdapter.ResponseRoutingKey
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseRoutingKey
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExchange
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExchange
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ResponseExchange
+  nameWithType: AbstractMessageListenerAdapter.ResponseExchange
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExchange
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseAddress
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseAddress
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ResponseAddress
+  nameWithType: AbstractMessageListenerAdapter.ResponseAddress
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseAddress
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MandatoryPublish
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MandatoryPublish
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: MandatoryPublish
+  nameWithType: AbstractMessageListenerAdapter.MandatoryPublish
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MandatoryPublish
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessageConverter
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessageConverter
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: MessageConverter
+  nameWithType: AbstractMessageListenerAdapter.MessageConverter
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessageConverter
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.BeforeSendReplyPostProcessors
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.BeforeSendReplyPostProcessors
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: BeforeSendReplyPostProcessors
+  nameWithType: AbstractMessageListenerAdapter.BeforeSendReplyPostProcessors
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.BeforeSendReplyPostProcessors
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RetryTemplate
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RetryTemplate
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: RetryTemplate
+  nameWithType: AbstractMessageListenerAdapter.RetryTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RetryTemplate
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RecoveryCallback
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RecoveryCallback
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: RecoveryCallback
+  nameWithType: AbstractMessageListenerAdapter.RecoveryCallback
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.RecoveryCallback
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DefaultRequeueRejected
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DefaultRequeueRejected
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: DefaultRequeueRejected
+  nameWithType: AbstractMessageListenerAdapter.DefaultRequeueRejected
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DefaultRequeueRejected
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ContainerAckMode
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ContainerAckMode
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ContainerAckMode
+  nameWithType: AbstractMessageListenerAdapter.ContainerAckMode
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ContainerAckMode
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.IsManualAck
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.IsManualAck
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: IsManualAck
+  nameWithType: AbstractMessageListenerAdapter.IsManualAck
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.IsManualAck
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.EvalContext
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.EvalContext
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: EvalContext
+  nameWithType: AbstractMessageListenerAdapter.EvalContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.EvalContext
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessagePropertiesConverter
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessagePropertiesConverter
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: MessagePropertiesConverter
+  nameWithType: AbstractMessageListenerAdapter.MessagePropertiesConverter
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.MessagePropertiesConverter
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExpression
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExpression
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ResponseExpression
+  nameWithType: AbstractMessageListenerAdapter.ResponseExpression
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ResponseExpression
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ReplyPostProcessor
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ReplyPostProcessor
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ReplyPostProcessor
+  nameWithType: AbstractMessageListenerAdapter.ReplyPostProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ReplyPostProcessor
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: SetResponseAddress(String)
+  nameWithType: AbstractMessageListenerAdapter.SetResponseAddress(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress(System.String)
+    name: SetResponseAddress
+    nameWithType: AbstractMessageListenerAdapter.SetResponseAddress
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress(System.String)
+    name: SetResponseAddress
+    nameWithType: AbstractMessageListenerAdapter.SetResponseAddress
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetResponseAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver(Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver(Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: SetServiceResolver(IServiceResolver)
+  nameWithType: AbstractMessageListenerAdapter.SetServiceResolver(IServiceResolver)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver(Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver(Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver)
+    name: SetServiceResolver
+    nameWithType: AbstractMessageListenerAdapter.SetServiceResolver
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+    name: IServiceResolver
+    nameWithType: IServiceResolver
+    fullName: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver(Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver)
+    name: SetServiceResolver
+    nameWithType: AbstractMessageListenerAdapter.SetServiceResolver
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetServiceResolver
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+    name: IServiceResolver
+    nameWithType: IServiceResolver
+    fullName: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: SetBeforeSendReplyPostProcessors(IMessagePostProcessor[])
+  nameWithType: AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(IMessagePostProcessor[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+  nameWithType.vb: AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(IMessagePostProcessor())
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor())
+  name.vb: SetBeforeSendReplyPostProcessors(IMessagePostProcessor())
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetBeforeSendReplyPostProcessors
+    nameWithType: AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors(Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor[])
+    name: SetBeforeSendReplyPostProcessors
+    nameWithType: AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SetBeforeSendReplyPostProcessors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+    name: IMessagePostProcessor
+    nameWithType: IMessagePostProcessor
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: OnMessage(IMessage)
+  nameWithType: AbstractMessageListenerAdapter.OnMessage(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage)
+    name: OnMessage
+    nameWithType: AbstractMessageListenerAdapter.OnMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage(Steeltoe.Messaging.IMessage)
+    name: OnMessage
+    nameWithType: AbstractMessageListenerAdapter.OnMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: OnMessageBatch(List<IMessage>)
+  nameWithType: AbstractMessageListenerAdapter.OnMessageBatch(List<IMessage>)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage>)
+  nameWithType.vb: AbstractMessageListenerAdapter.OnMessageBatch(List(Of IMessage))
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage))
+  name.vb: OnMessageBatch(List(Of IMessage))
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+    name: OnMessageBatch
+    nameWithType: AbstractMessageListenerAdapter.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage})
+    name: OnMessageBatch
+    nameWithType: AbstractMessageListenerAdapter.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException(System.Exception)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException(System.Exception)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: HandleListenerException(Exception)
+  nameWithType: AbstractMessageListenerAdapter.HandleListenerException(Exception)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException(System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException(System.Exception)
+    name: HandleListenerException
+    nameWithType: AbstractMessageListenerAdapter.HandleListenerException
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException(System.Exception)
+    name: HandleListenerException
+    nameWithType: AbstractMessageListenerAdapter.HandleListenerException
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleListenerException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: ExtractMessage(IMessage)
+  nameWithType: AbstractMessageListenerAdapter.ExtractMessage(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage(Steeltoe.Messaging.IMessage)
+    name: ExtractMessage
+    nameWithType: AbstractMessageListenerAdapter.ExtractMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage(Steeltoe.Messaging.IMessage)
+    name: ExtractMessage
+    nameWithType: AbstractMessageListenerAdapter.ExtractMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.ExtractMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: HandleResult(InvocationResult, IMessage, IModel)
+  nameWithType: AbstractMessageListenerAdapter.HandleResult(InvocationResult, IMessage, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult, Steeltoe.Messaging.IMessage, RabbitMQ.Client.IModel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+    name: HandleResult
+    nameWithType: AbstractMessageListenerAdapter.HandleResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel)
+    name: HandleResult
+    nameWithType: AbstractMessageListenerAdapter.HandleResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: HandleResult(InvocationResult, IMessage, IModel, Object)
+  nameWithType: AbstractMessageListenerAdapter.HandleResult(InvocationResult, IMessage, IModel, Object)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult, Steeltoe.Messaging.IMessage, RabbitMQ.Client.IModel, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+    name: HandleResult
+    nameWithType: AbstractMessageListenerAdapter.HandleResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+    name: HandleResult
+    nameWithType: AbstractMessageListenerAdapter.HandleResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.HandleResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: DoHandleResult(InvocationResult, IMessage, IModel, Object)
+  nameWithType: AbstractMessageListenerAdapter.DoHandleResult(InvocationResult, IMessage, IModel, Object)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult, Steeltoe.Messaging.IMessage, RabbitMQ.Client.IModel, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+    name: DoHandleResult
+    nameWithType: AbstractMessageListenerAdapter.DoHandleResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult(Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult,Steeltoe.Messaging.IMessage,RabbitMQ.Client.IModel,System.Object)
+    name: DoHandleResult
+    nameWithType: AbstractMessageListenerAdapter.DoHandleResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoHandleResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: GetReceivedExchange(IMessage)
+  nameWithType: AbstractMessageListenerAdapter.GetReceivedExchange(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange(Steeltoe.Messaging.IMessage)
+    name: GetReceivedExchange
+    nameWithType: AbstractMessageListenerAdapter.GetReceivedExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange(Steeltoe.Messaging.IMessage)
+    name: GetReceivedExchange
+    nameWithType: AbstractMessageListenerAdapter.GetReceivedExchange
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReceivedExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  name: PostProcessResponse(IMessage, IMessage)
+  nameWithType: AbstractMessageListenerAdapter.PostProcessResponse(IMessage, IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage)
+    name: PostProcessResponse
+    nameWithType: AbstractMessageListenerAdapter.PostProcessResponse
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage)
+    name: PostProcessResponse
+    nameWithType: AbstractMessageListenerAdapter.PostProcessResponse
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress(Steeltoe.Messaging.IMessage,System.Object,Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress(Steeltoe.Messaging.IMessage,System.Object,Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: GetReplyToAddress(IMessage, Object, InvocationResult)
+  nameWithType: AbstractMessageListenerAdapter.GetReplyToAddress(IMessage, Object, InvocationResult)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress(Steeltoe.Messaging.IMessage, System.Object, Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress(Steeltoe.Messaging.IMessage,System.Object,Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult)
+    name: GetReplyToAddress
+    nameWithType: AbstractMessageListenerAdapter.GetReplyToAddress
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress(Steeltoe.Messaging.IMessage,System.Object,Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult)
+    name: GetReplyToAddress
+    nameWithType: AbstractMessageListenerAdapter.GetReplyToAddress
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.GetReplyToAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+    name: InvocationResult
+    nameWithType: InvocationResult
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.InvocationResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: SendResponse(IModel, Address, IMessage<Byte[]>)
+  nameWithType: AbstractMessageListenerAdapter.SendResponse(IModel, Address, IMessage<Byte[]>)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse(RabbitMQ.Client.IModel, Steeltoe.Messaging.RabbitMQ.Core.Address, Steeltoe.Messaging.IMessage<System.Byte[]>)
+  nameWithType.vb: AbstractMessageListenerAdapter.SendResponse(IModel, Address, IMessage(Of Byte()))
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse(RabbitMQ.Client.IModel, Steeltoe.Messaging.RabbitMQ.Core.Address, Steeltoe.Messaging.IMessage(Of System.Byte()))
+  name.vb: SendResponse(IModel, Address, IMessage(Of Byte()))
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+    name: SendResponse
+    nameWithType: AbstractMessageListenerAdapter.SendResponse
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.Address
+    name: Address
+    nameWithType: Address
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.Address
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+    name: SendResponse
+    nameWithType: AbstractMessageListenerAdapter.SendResponse
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.SendResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.Address
+    name: Address
+    nameWithType: Address
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.Address
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: DoPublish(IModel, Address, IMessage<Byte[]>)
+  nameWithType: AbstractMessageListenerAdapter.DoPublish(IModel, Address, IMessage<Byte[]>)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish(RabbitMQ.Client.IModel, Steeltoe.Messaging.RabbitMQ.Core.Address, Steeltoe.Messaging.IMessage<System.Byte[]>)
+  nameWithType.vb: AbstractMessageListenerAdapter.DoPublish(IModel, Address, IMessage(Of Byte()))
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish(RabbitMQ.Client.IModel, Steeltoe.Messaging.RabbitMQ.Core.Address, Steeltoe.Messaging.IMessage(Of System.Byte()))
+  name.vb: DoPublish(IModel, Address, IMessage(Of Byte()))
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+    name: DoPublish
+    nameWithType: AbstractMessageListenerAdapter.DoPublish
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.Address
+    name: Address
+    nameWithType: Address
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.Address
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.Address,Steeltoe.Messaging.IMessage{System.Byte[]})
+    name: DoPublish
+    nameWithType: AbstractMessageListenerAdapter.DoPublish
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.DoPublish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.Address
+    name: Address
+    nameWithType: Address
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.Address
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: PostProcessChannel(IModel, IMessage)
+  nameWithType: AbstractMessageListenerAdapter.PostProcessChannel(IModel, IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel(RabbitMQ.Client.IModel, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+    name: PostProcessChannel
+    nameWithType: AbstractMessageListenerAdapter.PostProcessChannel
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.IMessage)
+    name: PostProcessChannel
+    nameWithType: AbstractMessageListenerAdapter.PostProcessChannel
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.PostProcessChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.RabbitMQ.Listener
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Listener
+  name: Steeltoe.Messaging.RabbitMQ.Listener
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Listener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.#ctor
+  name: BatchMessagingMessageListenerAdapter
+  nameWithType: BatchMessagingMessageListenerAdapter.BatchMessagingMessageListenerAdapter
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.BatchMessagingMessageListenerAdapter
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IRabbitListenerErrorHandler
+  nameWithType: IRabbitListenerErrorHandler
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerErrorHandler
+- uid: Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy
+  parent: Steeltoe.Messaging.RabbitMQ.Batch
+  name: IBatchingStrategy
+  nameWithType: IBatchingStrategy
+  fullName: Steeltoe.Messaging.RabbitMQ.Batch.IBatchingStrategy
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Steeltoe.Messaging.RabbitMQ.Batch
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Batch
+  name: Steeltoe.Messaging.RabbitMQ.Batch
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Batch
+  fullName: Steeltoe.Messaging.RabbitMQ.Batch
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter
+  isExternal: true
+  name: OnMessageBatch(List<IMessage>, IModel)
+  nameWithType: AbstractMessageListenerAdapter.OnMessageBatch(List<IMessage>, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage>, RabbitMQ.Client.IModel)
+  nameWithType.vb: AbstractMessageListenerAdapter.OnMessageBatch(List(Of IMessage), IModel)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage), RabbitMQ.Client.IModel)
+  name.vb: OnMessageBatch(List(Of IMessage), IModel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+    name: OnMessageBatch
+    nameWithType: AbstractMessageListenerAdapter.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+    name: OnMessageBatch
+    nameWithType: AbstractMessageListenerAdapter.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.AbstractMessageListenerAdapter.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch
+  name: OnMessageBatch
+  nameWithType: BatchMessagingMessageListenerAdapter.OnMessageBatch
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.OnMessageBatch
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener
+  isExternal: true
+  name: OnMessageBatch(List<IMessage>, IModel)
+  nameWithType: IChannelAwareBatchMessageListener.OnMessageBatch(List<IMessage>, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage>, RabbitMQ.Client.IModel)
+  nameWithType.vb: IChannelAwareBatchMessageListener.OnMessageBatch(List(Of IMessage), IModel)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage), RabbitMQ.Client.IModel)
+  name.vb: OnMessageBatch(List(Of IMessage), IModel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+    name: OnMessageBatch
+    nameWithType: IChannelAwareBatchMessageListener.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+    name: OnMessageBatch
+    nameWithType: IChannelAwareBatchMessageListener.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareBatchMessageListener.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener
+  isExternal: true
+  name: OnMessageBatch(List<IMessage>, IModel)
+  nameWithType: IChannelAwareMessageListener.OnMessageBatch(List<IMessage>, IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch(System.Collections.Generic.List<Steeltoe.Messaging.IMessage>, RabbitMQ.Client.IModel)
+  nameWithType.vb: IChannelAwareMessageListener.OnMessageBatch(List(Of IMessage), IModel)
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch(System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage), RabbitMQ.Client.IModel)
+  name.vb: OnMessageBatch(List(Of IMessage), IModel)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+    name: OnMessageBatch
+    nameWithType: IChannelAwareMessageListener.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch(System.Collections.Generic.List{Steeltoe.Messaging.IMessage},RabbitMQ.Client.IModel)
+    name: OnMessageBatch
+    nameWithType: IChannelAwareMessageListener.OnMessageBatch
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IChannelAwareMessageListener.OnMessageBatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IModel
+    name: IModel
+    nameWithType: IModel
+    fullName: RabbitMQ.Client.IModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Steeltoe.Messaging.IMessage}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Messaging.IMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IMessage>
+  nameWithType: List<IMessage>
+  fullName: System.Collections.Generic.List<Steeltoe.Messaging.IMessage>
+  nameWithType.vb: List(Of IMessage)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Messaging.IMessage)
+  name.vb: List(Of IMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RabbitMQ.Client.IModel
+  commentId: T:RabbitMQ.Client.IModel
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IModel
+  nameWithType: IModel
+  fullName: RabbitMQ.Client.IModel
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList
+  name: CreateMessageList
+  nameWithType: BatchMessagingMessageListenerAdapter.CreateMessageList
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateMessageList
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList
+  name: CreateList
+  nameWithType: BatchMessagingMessageListenerAdapter.CreateList
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.CreateList
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage
+  name: ToMessagingMessage
+  nameWithType: BatchMessagingMessageListenerAdapter.ToMessagingMessage
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.Adapters.BatchMessagingMessageListenerAdapter.ToMessagingMessage
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging

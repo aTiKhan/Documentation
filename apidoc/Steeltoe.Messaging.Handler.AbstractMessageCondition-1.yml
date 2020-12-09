@@ -1,0 +1,1112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  commentId: T:Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  id: AbstractMessageCondition`1
+  parent: Steeltoe.Messaging.Handler
+  children:
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Combine(`0)
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Equals(System.Object)
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetContent
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetHashCode
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetToStringInfix
+  - Steeltoe.Messaging.Handler.AbstractMessageCondition`1.ToString
+  langs:
+  - csharp
+  - vb
+  name: AbstractMessageCondition<T>
+  nameWithType: AbstractMessageCondition<T>
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractMessageCondition
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 9
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: 'public abstract class AbstractMessageCondition<T> : IMessageCondition<T>, IMessageCondition'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class AbstractMessageCondition(Of T)
+
+          Implements IMessageCondition(Of T), IMessageCondition
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Messaging.Handler.DestinationPatternsMessageCondition
+  implements:
+  - Steeltoe.Messaging.Handler.IMessageCondition{{T}}
+  - Steeltoe.Messaging.Handler.IMessageCondition
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: AbstractMessageCondition(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T)
+  name.vb: AbstractMessageCondition(Of T)
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Combine(`0)
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Combine(`0)
+  id: Combine(`0)
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: Combine(T)
+  nameWithType: AbstractMessageCondition<T>.Combine(T)
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.Combine(T)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Combine
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: public abstract T Combine(T other)
+    parameters:
+    - id: other
+      type: '{T}'
+    return:
+      type: '{T}'
+    content.vb: Public MustOverride Function Combine(other As T) As T
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Combine*
+  implements:
+  - Steeltoe.Messaging.Handler.IMessageCondition{{T}}.Combine({T})
+  nameWithType.vb: AbstractMessageCondition(Of T).Combine(T)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).Combine(T)
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  id: CompareTo(`0,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(T, IMessage)
+  nameWithType: AbstractMessageCondition<T>.CompareTo(T, IMessage)
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.CompareTo(T, Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CompareTo
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: public abstract int CompareTo(T other, IMessage message)
+    parameters:
+    - id: other
+      type: '{T}'
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride Function CompareTo(other As T, message As IMessage) As Integer
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.CompareTo*
+  implements:
+  - Steeltoe.Messaging.Handler.IMessageCondition{{T}}.CompareTo({T},Steeltoe.Messaging.IMessage)
+  nameWithType.vb: AbstractMessageCondition(Of T).CompareTo(T, IMessage)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).CompareTo(T, Steeltoe.Messaging.IMessage)
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  id: GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCondition(IMessage)
+  nameWithType: AbstractMessageCondition<T>.GetMatchingCondition(IMessage)
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetMatchingCondition
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: public abstract T GetMatchingCondition(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: '{T}'
+    content.vb: Public MustOverride Function GetMatchingCondition(message As IMessage) As T
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetMatchingCondition*
+  implements:
+  - Steeltoe.Messaging.Handler.IMessageCondition{{T}}.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  nameWithType.vb: AbstractMessageCondition(Of T).GetMatchingCondition(IMessage)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetMatchingCondition(Steeltoe.Messaging.IMessage)
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Equals(System.Object)
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: AbstractMessageCondition<T>.Equals(Object)
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Equals
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Equals*
+  nameWithType.vb: AbstractMessageCondition(Of T).Equals(Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).Equals(System.Object)
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetHashCode
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetHashCode
+  id: GetHashCode
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AbstractMessageCondition<T>.GetHashCode()
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetHashCode
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 48
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetHashCode*
+  nameWithType.vb: AbstractMessageCondition(Of T).GetHashCode()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetHashCode()
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.ToString
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.ToString
+  id: ToString
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AbstractMessageCondition<T>.ToString()
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToString
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 53
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.ToString*
+  nameWithType.vb: AbstractMessageCondition(Of T).ToString()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).ToString()
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetContent
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetContent
+  id: GetContent
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: GetContent()
+  nameWithType: AbstractMessageCondition<T>.GetContent()
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetContent()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetContent
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 66
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: protected abstract IList GetContent()
+    return:
+      type: System.Collections.IList
+    content.vb: Protected MustOverride Function GetContent As IList
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetContent*
+  nameWithType.vb: AbstractMessageCondition(Of T).GetContent()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetContent()
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetToStringInfix
+  commentId: M:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetToStringInfix
+  id: GetToStringInfix
+  parent: Steeltoe.Messaging.Handler.AbstractMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: GetToStringInfix()
+  nameWithType: AbstractMessageCondition<T>.GetToStringInfix()
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetToStringInfix()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetToStringInfix
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Handler/AbstractMessageCondition.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Handler
+  syntax:
+    content: protected abstract string GetToStringInfix()
+    return:
+      type: System.String
+    content.vb: Protected MustOverride Function GetToStringInfix As String
+  overload: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetToStringInfix*
+  nameWithType.vb: AbstractMessageCondition(Of T).GetToStringInfix()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetToStringInfix()
+references:
+- uid: Steeltoe.Messaging.Handler
+  commentId: N:Steeltoe.Messaging.Handler
+  name: Steeltoe.Messaging.Handler
+  nameWithType: Steeltoe.Messaging.Handler
+  fullName: Steeltoe.Messaging.Handler
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.Handler.IMessageCondition{{T}}
+  commentId: T:Steeltoe.Messaging.Handler.IMessageCondition{`0}
+  parent: Steeltoe.Messaging.Handler
+  definition: Steeltoe.Messaging.Handler.IMessageCondition`1
+  name: IMessageCondition<T>
+  nameWithType: IMessageCondition<T>
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>
+  nameWithType.vb: IMessageCondition(Of T)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T)
+  name.vb: IMessageCondition(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1
+    name: IMessageCondition
+    nameWithType: IMessageCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1
+    name: IMessageCondition
+    nameWithType: IMessageCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.IMessageCondition
+  commentId: T:Steeltoe.Messaging.Handler.IMessageCondition
+  parent: Steeltoe.Messaging.Handler
+  name: IMessageCondition
+  nameWithType: IMessageCondition
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1
+  commentId: T:Steeltoe.Messaging.Handler.IMessageCondition`1
+  name: IMessageCondition<T>
+  nameWithType: IMessageCondition<T>
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>
+  nameWithType.vb: IMessageCondition(Of T)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T)
+  name.vb: IMessageCondition(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1
+    name: IMessageCondition
+    nameWithType: IMessageCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1
+    name: IMessageCondition
+    nameWithType: IMessageCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Combine*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Combine
+  name: Combine
+  nameWithType: AbstractMessageCondition<T>.Combine
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.Combine
+  nameWithType.vb: AbstractMessageCondition(Of T).Combine
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).Combine
+- uid: Steeltoe.Messaging.Handler.IMessageCondition{{T}}.Combine({T})
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition{`0}.Combine(`0)
+  parent: Steeltoe.Messaging.Handler.IMessageCondition{{T}}
+  definition: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+  name: Combine(T)
+  nameWithType: IMessageCondition<T>.Combine(T)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.Combine(T)
+  nameWithType.vb: IMessageCondition(Of T).Combine(T)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).Combine(T)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+    name: Combine
+    nameWithType: IMessageCondition<T>.Combine
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.Combine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+    name: Combine
+    nameWithType: IMessageCondition(Of T).Combine
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition(Of T).Combine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+  name: Combine(T)
+  nameWithType: IMessageCondition<T>.Combine(T)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.Combine(T)
+  nameWithType.vb: IMessageCondition(Of T).Combine(T)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).Combine(T)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+    name: Combine
+    nameWithType: IMessageCondition<T>.Combine
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.Combine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+    name: Combine
+    nameWithType: IMessageCondition(Of T).Combine
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition(Of T).Combine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.CompareTo*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.CompareTo
+  name: CompareTo
+  nameWithType: AbstractMessageCondition<T>.CompareTo
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.CompareTo
+  nameWithType.vb: AbstractMessageCondition(Of T).CompareTo
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).CompareTo
+- uid: Steeltoe.Messaging.Handler.IMessageCondition{{T}}.CompareTo({T},Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition{`0}.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.IMessageCondition{{T}}
+  definition: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  name: CompareTo(T, IMessage)
+  nameWithType: IMessageCondition<T>.CompareTo(T, IMessage)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.CompareTo(T, Steeltoe.Messaging.IMessage)
+  nameWithType.vb: IMessageCondition(Of T).CompareTo(T, IMessage)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).CompareTo(T, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+    name: CompareTo
+    nameWithType: IMessageCondition<T>.CompareTo
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+    name: CompareTo
+    nameWithType: IMessageCondition(Of T).CompareTo
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition(Of T).CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  name: CompareTo(T, IMessage)
+  nameWithType: IMessageCondition<T>.CompareTo(T, IMessage)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.CompareTo(T, Steeltoe.Messaging.IMessage)
+  nameWithType.vb: IMessageCondition(Of T).CompareTo(T, IMessage)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).CompareTo(T, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+    name: CompareTo
+    nameWithType: IMessageCondition<T>.CompareTo
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+    name: CompareTo
+    nameWithType: IMessageCondition(Of T).CompareTo
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition(Of T).CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetMatchingCondition*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetMatchingCondition
+  name: GetMatchingCondition
+  nameWithType: AbstractMessageCondition<T>.GetMatchingCondition
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetMatchingCondition
+  nameWithType.vb: AbstractMessageCondition(Of T).GetMatchingCondition
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetMatchingCondition
+- uid: Steeltoe.Messaging.Handler.IMessageCondition{{T}}.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition{`0}.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.IMessageCondition{{T}}
+  definition: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  name: GetMatchingCondition(IMessage)
+  nameWithType: IMessageCondition<T>.GetMatchingCondition(IMessage)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  nameWithType.vb: IMessageCondition(Of T).GetMatchingCondition(IMessage)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+    name: GetMatchingCondition
+    nameWithType: IMessageCondition<T>.GetMatchingCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.GetMatchingCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+    name: GetMatchingCondition
+    nameWithType: IMessageCondition(Of T).GetMatchingCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition(Of T).GetMatchingCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  name: GetMatchingCondition(IMessage)
+  nameWithType: IMessageCondition<T>.GetMatchingCondition(IMessage)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  nameWithType.vb: IMessageCondition(Of T).GetMatchingCondition(IMessage)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+    name: GetMatchingCondition
+    nameWithType: IMessageCondition<T>.GetMatchingCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.GetMatchingCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+    name: GetMatchingCondition
+    nameWithType: IMessageCondition(Of T).GetMatchingCondition
+    fullName: Steeltoe.Messaging.Handler.IMessageCondition(Of T).GetMatchingCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Equals*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.Equals
+  name: Equals
+  nameWithType: AbstractMessageCondition<T>.Equals
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.Equals
+  nameWithType.vb: AbstractMessageCondition(Of T).Equals
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetHashCode*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetHashCode
+  name: GetHashCode
+  nameWithType: AbstractMessageCondition<T>.GetHashCode
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetHashCode
+  nameWithType.vb: AbstractMessageCondition(Of T).GetHashCode
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.ToString*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.ToString
+  name: ToString
+  nameWithType: AbstractMessageCondition<T>.ToString
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.ToString
+  nameWithType.vb: AbstractMessageCondition(Of T).ToString
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetContent*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetContent
+  name: GetContent
+  nameWithType: AbstractMessageCondition<T>.GetContent
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetContent
+  nameWithType.vb: AbstractMessageCondition(Of T).GetContent
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetContent
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetToStringInfix*
+  commentId: Overload:Steeltoe.Messaging.Handler.AbstractMessageCondition`1.GetToStringInfix
+  name: GetToStringInfix
+  nameWithType: AbstractMessageCondition<T>.GetToStringInfix
+  fullName: Steeltoe.Messaging.Handler.AbstractMessageCondition<T>.GetToStringInfix
+  nameWithType.vb: AbstractMessageCondition(Of T).GetToStringInfix
+  fullName.vb: Steeltoe.Messaging.Handler.AbstractMessageCondition(Of T).GetToStringInfix

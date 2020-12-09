@@ -1,0 +1,1507 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  commentId: T:Steeltoe.Common.Diagnostics.DiagnosticObserver
+  id: DiagnosticObserver
+  parent: Steeltoe.Common.Diagnostics
+  children:
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.#ctor(System.String,System.String,ILogger)
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticObserver
+  nameWithType: DiagnosticObserver
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DiagnosticObserver
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: 'public abstract class DiagnosticObserver : IDiagnosticObserver, IObserver<KeyValuePair<string, object>>'
+    content.vb: >-
+      Public MustInherit Class DiagnosticObserver
+
+          Implements IDiagnosticObserver, IObserver(Of KeyValuePair(Of String, Object))
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Management.Endpoint.Metrics.Observer.MetricsObserver
+  - Steeltoe.Management.Endpoint.Trace.HttpTraceDiagnosticObserver
+  - Steeltoe.Management.Endpoint.Trace.TraceDiagnosticObserver
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  - Steeltoe.Management.Tracing.Observer.HttpClientTracingObserver
+  implements:
+  - Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  - System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  id: ListenerName
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: ListenerName
+  nameWithType: DiagnosticObserver.ListenerName
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ListenerName
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public string ListenerName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ListenerName As String
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName*
+  implements:
+  - Steeltoe.Common.Diagnostics.IDiagnosticObserver.ListenerName
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  id: ObserverName
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: ObserverName
+  nameWithType: DiagnosticObserver.ObserverName
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ObserverName
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public string ObserverName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ObserverName As String
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName*
+  implements:
+  - Steeltoe.Common.Diagnostics.IDiagnosticObserver.ObserverName
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  id: Logger
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: DiagnosticObserver.Logger
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Logger
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: protected ILogger Logger { get; }
+    parameters: []
+    return:
+      type: ILogger
+    content.vb: Protected ReadOnly Property Logger As ILogger
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  id: Subscription
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: Subscription
+  nameWithType: DiagnosticObserver.Subscription
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Subscription
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: protected IDisposable Subscription { get; set; }
+    parameters: []
+    return:
+      type: System.IDisposable
+    content.vb: Protected Property Subscription As IDisposable
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.#ctor(System.String,System.String,ILogger)
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.#ctor(System.String,System.String,ILogger)
+  id: '#ctor(System.String,System.String,ILogger)'
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticObserver(String, String, ILogger)
+  nameWithType: DiagnosticObserver.DiagnosticObserver(String, String, ILogger)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.DiagnosticObserver(System.String, System.String, ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: protected DiagnosticObserver(string name, string listenerName, ILogger logger = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: listenerName
+      type: System.String
+    - id: logger
+      type: ILogger
+    content.vb: Protected Sub New(name As String, listenerName As String, logger As ILogger = Nothing)
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  id: Dispose
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DiagnosticObserver.Dispose()
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Dispose
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose*
+  implements:
+  - Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  id: Subscribe(System.Diagnostics.DiagnosticListener)
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(DiagnosticListener)
+  nameWithType: DiagnosticObserver.Subscribe(DiagnosticListener)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Subscribe
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public void Subscribe(DiagnosticListener listener)
+    parameters:
+    - id: listener
+      type: System.Diagnostics.DiagnosticListener
+    content.vb: Public Sub Subscribe(listener As DiagnosticListener)
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe*
+  implements:
+  - Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  id: OnCompleted
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: OnCompleted()
+  nameWithType: DiagnosticObserver.OnCompleted()
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted()
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnCompleted
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 63
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public virtual void OnCompleted()
+    content.vb: Public Overridable Sub OnCompleted
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted*
+  implements:
+  - System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnCompleted
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  id: OnError(System.Exception)
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: OnError(Exception)
+  nameWithType: DiagnosticObserver.OnError(Exception)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnError
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 67
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public virtual void OnError(Exception error)
+    parameters:
+    - id: error
+      type: System.Exception
+    content.vb: Public Overridable Sub OnError(error As Exception)
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError*
+  implements:
+  - System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnError(System.Exception)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  id: OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: OnNext(KeyValuePair<String, Object>)
+  nameWithType: DiagnosticObserver.OnNext(KeyValuePair<String, Object>)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnNext
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 71
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public virtual void OnNext(KeyValuePair<string, object> event)
+    parameters:
+    - id: event
+      type: System.Collections.Generic.KeyValuePair{System.String,System.Object}
+    content.vb: Public Overridable Sub OnNext(event As KeyValuePair(Of String, Object))
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext*
+  implements:
+  - System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  nameWithType.vb: DiagnosticObserver.OnNext(KeyValuePair(Of String, Object))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: OnNext(KeyValuePair(Of String, Object))
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+  id: ProcessEvent(System.String,System.Object)
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  langs:
+  - csharp
+  - vb
+  name: ProcessEvent(String, Object)
+  nameWithType: DiagnosticObserver.ProcessEvent(String, Object)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ProcessEvent
+    path: ../Steeltoe/src/Management/src/Abstractions/Diagnostics/DiagnosticObserver.cs
+    startLine: 83
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Common.Diagnostics
+  syntax:
+    content: public abstract void ProcessEvent(string event, object arg)
+    parameters:
+    - id: event
+      type: System.String
+    - id: arg
+      type: System.Object
+    content.vb: Public MustOverride Sub ProcessEvent(event As String, arg As Object)
+  overload: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent*
+  implements:
+  - Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent(System.String,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Steeltoe.Common.Diagnostics
+  commentId: N:Steeltoe.Common.Diagnostics
+  name: Steeltoe.Common.Diagnostics
+  nameWithType: Steeltoe.Common.Diagnostics
+  fullName: Steeltoe.Common.Diagnostics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  commentId: T:Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  parent: Steeltoe.Common.Diagnostics
+  name: IDiagnosticObserver
+  nameWithType: IDiagnosticObserver
+  fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+- uid: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  commentId: T:System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  parent: System
+  definition: System.IObserver`1
+  name: IObserver<KeyValuePair<String, Object>>
+  nameWithType: IObserver<KeyValuePair<String, Object>>
+  fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>
+  nameWithType.vb: IObserver(Of KeyValuePair(Of String, Object))
+  fullName.vb: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: IObserver(Of KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IObserver`1
+  commentId: T:System.IObserver`1
+  isExternal: true
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: System.IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  fullName.vb: System.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  name: ListenerName
+  nameWithType: DiagnosticObserver.ListenerName
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+- uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ListenerName
+  commentId: P:Steeltoe.Common.Diagnostics.IDiagnosticObserver.ListenerName
+  parent: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  name: ListenerName
+  nameWithType: IDiagnosticObserver.ListenerName
+  fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ListenerName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  name: ObserverName
+  nameWithType: DiagnosticObserver.ObserverName
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+- uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ObserverName
+  commentId: P:Steeltoe.Common.Diagnostics.IDiagnosticObserver.ObserverName
+  parent: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  name: ObserverName
+  nameWithType: IDiagnosticObserver.ObserverName
+  fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ObserverName
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  name: Logger
+  nameWithType: DiagnosticObserver.Logger
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  name: Subscription
+  nameWithType: DiagnosticObserver.Subscription
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.#ctor*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.#ctor
+  name: DiagnosticObserver
+  nameWithType: DiagnosticObserver.DiagnosticObserver
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.DiagnosticObserver
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  name: Dispose
+  nameWithType: DiagnosticObserver.Dispose
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+- uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose
+  commentId: M:Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose
+  parent: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  name: Dispose()
+  nameWithType: IDiagnosticObserver.Dispose()
+  fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose()
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose
+    name: Dispose
+    nameWithType: IDiagnosticObserver.Dispose
+    fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose
+    name: Dispose
+    nameWithType: IDiagnosticObserver.Dispose
+    fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe
+  name: Subscribe
+  nameWithType: DiagnosticObserver.Subscribe
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe
+- uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  commentId: M:Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  parent: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  isExternal: true
+  name: Subscribe(DiagnosticListener)
+  nameWithType: IDiagnosticObserver.Subscribe(DiagnosticListener)
+  fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+    name: Subscribe
+    nameWithType: IDiagnosticObserver.Subscribe
+    fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.DiagnosticListener
+    name: DiagnosticListener
+    nameWithType: DiagnosticListener
+    fullName: System.Diagnostics.DiagnosticListener
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+    name: Subscribe
+    nameWithType: IDiagnosticObserver.Subscribe
+    fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.DiagnosticListener
+    name: DiagnosticListener
+    nameWithType: DiagnosticListener
+    fullName: System.Diagnostics.DiagnosticListener
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.DiagnosticListener
+  commentId: T:System.Diagnostics.DiagnosticListener
+  parent: System.Diagnostics
+  isExternal: true
+  name: DiagnosticListener
+  nameWithType: DiagnosticListener
+  fullName: System.Diagnostics.DiagnosticListener
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  name: OnCompleted
+  nameWithType: DiagnosticObserver.OnCompleted
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+- uid: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnCompleted
+  commentId: M:System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnCompleted
+  parent: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  definition: System.IObserver`1.OnCompleted
+  name: OnCompleted()
+  nameWithType: IObserver<KeyValuePair<String, Object>>.OnCompleted()
+  fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.OnCompleted()
+  nameWithType.vb: IObserver(Of KeyValuePair(Of String, Object)).OnCompleted()
+  fullName.vb: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object)).OnCompleted()
+  spec.csharp:
+  - uid: System.IObserver`1.OnCompleted
+    name: OnCompleted
+    nameWithType: IObserver<KeyValuePair<String, Object>>.OnCompleted
+    fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.OnCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IObserver`1.OnCompleted
+    name: OnCompleted
+    nameWithType: IObserver(Of KeyValuePair(Of String, Object)).OnCompleted
+    fullName: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object)).OnCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IObserver`1.OnCompleted
+  commentId: M:System.IObserver`1.OnCompleted
+  isExternal: true
+  name: OnCompleted()
+  nameWithType: IObserver<T>.OnCompleted()
+  fullName: System.IObserver<T>.OnCompleted()
+  nameWithType.vb: IObserver(Of T).OnCompleted()
+  fullName.vb: System.IObserver(Of T).OnCompleted()
+  spec.csharp:
+  - uid: System.IObserver`1.OnCompleted
+    name: OnCompleted
+    nameWithType: IObserver<T>.OnCompleted
+    fullName: System.IObserver<T>.OnCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IObserver`1.OnCompleted
+    name: OnCompleted
+    nameWithType: IObserver(Of T).OnCompleted
+    fullName: System.IObserver(Of T).OnCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError
+  name: OnError
+  nameWithType: DiagnosticObserver.OnError
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError
+- uid: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnError(System.Exception)
+  commentId: M:System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnError(System.Exception)
+  parent: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  definition: System.IObserver`1.OnError(System.Exception)
+  name: OnError(Exception)
+  nameWithType: IObserver<KeyValuePair<String, Object>>.OnError(Exception)
+  fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.OnError(System.Exception)
+  nameWithType.vb: IObserver(Of KeyValuePair(Of String, Object)).OnError(Exception)
+  fullName.vb: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object)).OnError(System.Exception)
+  spec.csharp:
+  - uid: System.IObserver`1.OnError(System.Exception)
+    name: OnError
+    nameWithType: IObserver<KeyValuePair<String, Object>>.OnError
+    fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.OnError
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IObserver`1.OnError(System.Exception)
+    name: OnError
+    nameWithType: IObserver(Of KeyValuePair(Of String, Object)).OnError
+    fullName: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object)).OnError
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.IObserver`1.OnError(System.Exception)
+  commentId: M:System.IObserver`1.OnError(System.Exception)
+  isExternal: true
+  name: OnError(Exception)
+  nameWithType: IObserver<T>.OnError(Exception)
+  fullName: System.IObserver<T>.OnError(System.Exception)
+  nameWithType.vb: IObserver(Of T).OnError(Exception)
+  fullName.vb: System.IObserver(Of T).OnError(System.Exception)
+  spec.csharp:
+  - uid: System.IObserver`1.OnError(System.Exception)
+    name: OnError
+    nameWithType: IObserver<T>.OnError
+    fullName: System.IObserver<T>.OnError
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IObserver`1.OnError(System.Exception)
+    name: OnError
+    nameWithType: IObserver(Of T).OnError
+    fullName: System.IObserver(Of T).OnError
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext
+  name: OnNext
+  nameWithType: DiagnosticObserver.OnNext
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext
+- uid: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  commentId: M:System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  definition: System.IObserver`1.OnNext(`0)
+  name: OnNext(KeyValuePair<String, Object>)
+  nameWithType: IObserver<KeyValuePair<String, Object>>.OnNext(KeyValuePair<String, Object>)
+  fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.OnNext(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  nameWithType.vb: IObserver(Of KeyValuePair(Of String, Object)).OnNext(KeyValuePair(Of String, Object))
+  fullName.vb: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object)).OnNext(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: OnNext(KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: System.IObserver`1.OnNext(`0)
+    name: OnNext
+    nameWithType: IObserver<KeyValuePair<String, Object>>.OnNext
+    fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.OnNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IObserver`1.OnNext(`0)
+    name: OnNext
+    nameWithType: IObserver(Of KeyValuePair(Of String, Object)).OnNext
+    fullName: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object)).OnNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair{System.String,System.Object}
+  commentId: T:System.Collections.Generic.KeyValuePair{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  name: KeyValuePair<String, Object>
+  nameWithType: KeyValuePair<String, Object>
+  fullName: System.Collections.Generic.KeyValuePair<System.String, System.Object>
+  nameWithType.vb: KeyValuePair(Of String, Object)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of System.String, System.Object)
+  name.vb: KeyValuePair(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IObserver`1.OnNext(`0)
+  commentId: M:System.IObserver`1.OnNext(`0)
+  isExternal: true
+  name: OnNext(T)
+  nameWithType: IObserver<T>.OnNext(T)
+  fullName: System.IObserver<T>.OnNext(T)
+  nameWithType.vb: IObserver(Of T).OnNext(T)
+  fullName.vb: System.IObserver(Of T).OnNext(T)
+  spec.csharp:
+  - uid: System.IObserver`1.OnNext(`0)
+    name: OnNext
+    nameWithType: IObserver<T>.OnNext
+    fullName: System.IObserver<T>.OnNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IObserver`1.OnNext(`0)
+    name: OnNext
+    nameWithType: IObserver(Of T).OnNext
+    fullName: System.IObserver(Of T).OnNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent*
+  commentId: Overload:Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent
+  name: ProcessEvent
+  nameWithType: DiagnosticObserver.ProcessEvent
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent
+- uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent(System.String,System.Object)
+  commentId: M:Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent(System.String,System.Object)
+  parent: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  isExternal: true
+  name: ProcessEvent(String, Object)
+  nameWithType: IDiagnosticObserver.ProcessEvent(String, Object)
+  fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent(System.String, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent(System.String,System.Object)
+    name: ProcessEvent
+    nameWithType: IDiagnosticObserver.ProcessEvent
+    fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent(System.String,System.Object)
+    name: ProcessEvent
+    nameWithType: IDiagnosticObserver.ProcessEvent
+    fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver.ProcessEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

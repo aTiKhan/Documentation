@@ -1,0 +1,2153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  commentId: T:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  id: AbstractPlatformTransactionManager
+  parent: Steeltoe.Common.Transaction
+  children:
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.#ctor(ILogger)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  langs:
+  - csharp
+  - vb
+  name: AbstractPlatformTransactionManager
+  nameWithType: AbstractPlatformTransactionManager
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractPlatformTransactionManager
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: 'public abstract class AbstractPlatformTransactionManager : IPlatformTransactionManager'
+    content.vb: >-
+      Public MustInherit Class AbstractPlatformTransactionManager
+
+          Implements IPlatformTransactionManager
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  implements:
+  - Steeltoe.Common.Transaction.IPlatformTransactionManager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  id: SYNCHRONIZATION_ALWAYS
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: SYNCHRONIZATION_ALWAYS
+  nameWithType: AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  type: Field
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SYNCHRONIZATION_ALWAYS
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public const int SYNCHRONIZATION_ALWAYS = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const SYNCHRONIZATION_ALWAYS As Integer = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  id: SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  nameWithType: AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  type: Field
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public const int SYNCHRONIZATION_ON_ACTUAL_TRANSACTION = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const SYNCHRONIZATION_ON_ACTUAL_TRANSACTION As Integer = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  id: SYNCHRONIZATION_NEVER
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: SYNCHRONIZATION_NEVER
+  nameWithType: AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  type: Field
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SYNCHRONIZATION_NEVER
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public const int SYNCHRONIZATION_NEVER = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const SYNCHRONIZATION_NEVER As Integer = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+  id: _logger
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: _logger
+  nameWithType: AbstractPlatformTransactionManager._logger
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+  type: Field
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _logger
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected readonly ILogger _logger
+    return:
+      type: ILogger
+    content.vb: Protected ReadOnly _logger As ILogger
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.#ctor(ILogger)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.#ctor(ILogger)
+  id: '#ctor(ILogger)'
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: AbstractPlatformTransactionManager(ILogger)
+  nameWithType: AbstractPlatformTransactionManager.AbstractPlatformTransactionManager(ILogger)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.AbstractPlatformTransactionManager(ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected AbstractPlatformTransactionManager(ILogger logger = null)
+    parameters:
+    - id: logger
+      type: ILogger
+    content.vb: Protected Sub New(logger As ILogger = Nothing)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  id: TransactionSynchronization
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: TransactionSynchronization
+  nameWithType: AbstractPlatformTransactionManager.TransactionSynchronization
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TransactionSynchronization
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual int TransactionSynchronization { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property TransactionSynchronization As Integer
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  id: DefaultTimeout
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DefaultTimeout
+  nameWithType: AbstractPlatformTransactionManager.DefaultTimeout
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultTimeout
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual int DefaultTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property DefaultTimeout As Integer
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  id: NestedTransactionAllowed
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: NestedTransactionAllowed
+  nameWithType: AbstractPlatformTransactionManager.NestedTransactionAllowed
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: NestedTransactionAllowed
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 44
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool NestedTransactionAllowed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property NestedTransactionAllowed As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  id: ValidateExistingTransaction
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: ValidateExistingTransaction
+  nameWithType: AbstractPlatformTransactionManager.ValidateExistingTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ValidateExistingTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 46
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool ValidateExistingTransaction { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property ValidateExistingTransaction As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  id: GlobalRollbackOnParticipationFailure
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: GlobalRollbackOnParticipationFailure
+  nameWithType: AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GlobalRollbackOnParticipationFailure
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 48
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool GlobalRollbackOnParticipationFailure { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property GlobalRollbackOnParticipationFailure As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  id: FailEarlyOnGlobalRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: FailEarlyOnGlobalRollbackOnly
+  nameWithType: AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FailEarlyOnGlobalRollbackOnly
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 50
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool FailEarlyOnGlobalRollbackOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property FailEarlyOnGlobalRollbackOnly As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  id: RollbackOnCommitFailure
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: RollbackOnCommitFailure
+  nameWithType: AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RollbackOnCommitFailure
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 52
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool RollbackOnCommitFailure { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property RollbackOnCommitFailure As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  id: GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: GetTransaction(ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.GetTransaction(ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 54
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual ITransactionStatus GetTransaction(ITransactionDefinition definition)
+    parameters:
+    - id: definition
+      type: Steeltoe.Common.Transaction.ITransactionDefinition
+    return:
+      type: Steeltoe.Common.Transaction.ITransactionStatus
+    content.vb: Public Overridable Function GetTransaction(definition As ITransactionDefinition) As ITransactionStatus
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction*
+  implements:
+  - Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  id: Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: Commit(ITransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.Commit(ITransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Commit
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 113
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void Commit(ITransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.ITransactionStatus
+    content.vb: Public Overridable Sub Commit(status As ITransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit*
+  implements:
+  - Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  id: Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: Rollback(ITransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.Rollback(ITransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Rollback
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 139
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void Rollback(ITransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.ITransactionStatus
+    content.vb: Public Overridable Sub Rollback(status As ITransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback*
+  implements:
+  - Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  id: PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: PrepareTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  nameWithType: AbstractPlatformTransactionManager.PrepareTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition, System.Object, System.Boolean, System.Boolean, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PrepareTransactionStatus
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 150
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual DefaultTransactionStatus PrepareTransactionStatus(ITransactionDefinition definition, object transaction, bool newTransaction, bool newSynchronization, object suspendedResources)
+    parameters:
+    - id: definition
+      type: Steeltoe.Common.Transaction.ITransactionDefinition
+    - id: transaction
+      type: System.Object
+    - id: newTransaction
+      type: System.Boolean
+    - id: newSynchronization
+      type: System.Boolean
+    - id: suspendedResources
+      type: System.Object
+    return:
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overridable Function PrepareTransactionStatus(definition As ITransactionDefinition, transaction As Object, newTransaction As Boolean, newSynchronization As Boolean, suspendedResources As Object) As DefaultTransactionStatus
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  id: NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: NewTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  nameWithType: AbstractPlatformTransactionManager.NewTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition, System.Object, System.Boolean, System.Boolean, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: NewTransactionStatus
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 157
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual DefaultTransactionStatus NewTransactionStatus(ITransactionDefinition definition, object transaction, bool newTransaction, bool newSynchronization, object suspendedResources)
+    parameters:
+    - id: definition
+      type: Steeltoe.Common.Transaction.ITransactionDefinition
+    - id: transaction
+      type: System.Object
+    - id: newTransaction
+      type: System.Boolean
+    - id: newSynchronization
+      type: System.Boolean
+    - id: suspendedResources
+      type: System.Object
+    return:
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overridable Function NewTransactionStatus(definition As ITransactionDefinition, transaction As Object, newTransaction As Boolean, newSynchronization As Boolean, suspendedResources As Object) As DefaultTransactionStatus
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+  id: PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: PrepareSynchronization(DefaultTransactionStatus, ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.PrepareSynchronization(DefaultTransactionStatus, ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus, Steeltoe.Common.Transaction.ITransactionDefinition)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PrepareSynchronization
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 163
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void PrepareSynchronization(DefaultTransactionStatus status, ITransactionDefinition definition)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    - id: definition
+      type: Steeltoe.Common.Transaction.ITransactionDefinition
+    content.vb: Protected Overridable Sub PrepareSynchronization(status As DefaultTransactionStatus, definition As ITransactionDefinition)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  id: DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DetermineTimeout(ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.DetermineTimeout(ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DetermineTimeout
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 175
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual int DetermineTimeout(ITransactionDefinition definition)
+    parameters:
+    - id: definition
+      type: Steeltoe.Common.Transaction.ITransactionDefinition
+    return:
+      type: System.Int32
+    content.vb: Protected Overridable Function DetermineTimeout(definition As ITransactionDefinition) As Integer
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  id: Suspend(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: Suspend(Object)
+  nameWithType: AbstractPlatformTransactionManager.Suspend(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Suspend
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 185
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual AbstractPlatformTransactionManager.SuspendedResourcesHolder Suspend(object transaction)
+    parameters:
+    - id: transaction
+      type: System.Object
+    return:
+      type: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    content.vb: Protected Overridable Function Suspend(transaction As Object) As AbstractPlatformTransactionManager.SuspendedResourcesHolder
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  id: Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: Resume(Object, AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  nameWithType: AbstractPlatformTransactionManager.Resume(Object, AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object, Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Resume
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 228
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void Resume(object transaction, AbstractPlatformTransactionManager.SuspendedResourcesHolder resourcesHolder)
+    parameters:
+    - id: transaction
+      type: System.Object
+    - id: resourcesHolder
+      type: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    content.vb: Protected Overridable Sub Resume(transaction As Object, resourcesHolder As AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: TriggerBeforeCommit(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCommit(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TriggerBeforeCommit
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 250
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void TriggerBeforeCommit(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overridable Sub TriggerBeforeCommit(status As DefaultTransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: TriggerBeforeCompletion(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCompletion(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TriggerBeforeCompletion
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 259
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void TriggerBeforeCompletion(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overridable Sub TriggerBeforeCompletion(status As DefaultTransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+  id: InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: InvokeAfterCompletion(List<ITransactionSynchronization>, Int32)
+  nameWithType: AbstractPlatformTransactionManager.InvokeAfterCompletion(List<ITransactionSynchronization>, Int32)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: InvokeAfterCompletion
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 268
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void InvokeAfterCompletion(List<ITransactionSynchronization> synchronizations, int completionStatus)
+    parameters:
+    - id: synchronizations
+      type: System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization}
+    - id: completionStatus
+      type: System.Int32
+    content.vb: Protected Overridable Sub InvokeAfterCompletion(synchronizations As List(Of ITransactionSynchronization), completionStatus As Integer)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion*
+  nameWithType.vb: AbstractPlatformTransactionManager.InvokeAfterCompletion(List(Of ITransactionSynchronization), Int32)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List(Of Steeltoe.Common.Transaction.ITransactionSynchronization), System.Int32)
+  name.vb: InvokeAfterCompletion(List(Of ITransactionSynchronization), Int32)
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  id: DoGetTransaction
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoGetTransaction()
+  nameWithType: AbstractPlatformTransactionManager.DoGetTransaction()
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoGetTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 273
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected abstract object DoGetTransaction()
+    return:
+      type: System.Object
+    content.vb: Protected MustOverride Function DoGetTransaction As Object
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  id: IsExistingTransaction(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: IsExistingTransaction(Object)
+  nameWithType: AbstractPlatformTransactionManager.IsExistingTransaction(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsExistingTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 275
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual bool IsExistingTransaction(object transaction)
+    parameters:
+    - id: transaction
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function IsExistingTransaction(transaction As Object) As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  id: DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoBegin(Object, ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.DoBegin(Object, ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object, Steeltoe.Common.Transaction.ITransactionDefinition)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoBegin
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 280
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected abstract void DoBegin(object transaction, ITransactionDefinition definition)
+    parameters:
+    - id: transaction
+      type: System.Object
+    - id: definition
+      type: Steeltoe.Common.Transaction.ITransactionDefinition
+    content.vb: Protected MustOverride Sub DoBegin(transaction As Object, definition As ITransactionDefinition)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  id: DoSuspend(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoSuspend(Object)
+  nameWithType: AbstractPlatformTransactionManager.DoSuspend(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSuspend
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 282
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual object DoSuspend(object transaction)
+    parameters:
+    - id: transaction
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Protected Overridable Function DoSuspend(transaction As Object) As Object
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+  id: DoResume(System.Object,System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoResume(Object, Object)
+  nameWithType: AbstractPlatformTransactionManager.DoResume(Object, Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoResume
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 287
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void DoResume(object transaction, object suspendedResources)
+    parameters:
+    - id: transaction
+      type: System.Object
+    - id: suspendedResources
+      type: System.Object
+    content.vb: Protected Overridable Sub DoResume(transaction As Object, suspendedResources As Object)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: PrepareForCommit(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.PrepareForCommit(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PrepareForCommit
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 292
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void PrepareForCommit(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overridable Sub PrepareForCommit(status As DefaultTransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoSetRollbackOnly(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.DoSetRollbackOnly(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSetRollbackOnly
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 296
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void DoSetRollbackOnly(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overridable Sub DoSetRollbackOnly(status As DefaultTransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+  id: RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterAfterCompletionWithExistingTransaction(Object, List<ITransactionSynchronization>)
+  nameWithType: AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(Object, List<ITransactionSynchronization>)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object, System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterAfterCompletionWithExistingTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 303
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void RegisterAfterCompletionWithExistingTransaction(object transaction, List<ITransactionSynchronization> synchronizations)
+    parameters:
+    - id: transaction
+      type: System.Object
+    - id: synchronizations
+      type: System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization}
+    content.vb: Protected Overridable Sub RegisterAfterCompletionWithExistingTransaction(transaction As Object, synchronizations As List(Of ITransactionSynchronization))
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction*
+  nameWithType.vb: AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(Object, List(Of ITransactionSynchronization))
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object, System.Collections.Generic.List(Of Steeltoe.Common.Transaction.ITransactionSynchronization))
+  name.vb: RegisterAfterCompletionWithExistingTransaction(Object, List(Of ITransactionSynchronization))
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  id: DoCleanupAfterCompletion(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoCleanupAfterCompletion(Object)
+  nameWithType: AbstractPlatformTransactionManager.DoCleanupAfterCompletion(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoCleanupAfterCompletion
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 310
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual void DoCleanupAfterCompletion(object transaction)
+    parameters:
+    - id: transaction
+      type: System.Object
+    content.vb: Protected Overridable Sub DoCleanupAfterCompletion(transaction As Object)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoCommit(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.DoCommit(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoCommit
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 314
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected abstract void DoCommit(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected MustOverride Sub DoCommit(status As DefaultTransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoRollback(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.DoRollback(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoRollback
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 316
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected abstract void DoRollback(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected MustOverride Sub DoRollback(status As DefaultTransactionStatus)
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  id: ShouldCommitOnGlobalRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: ShouldCommitOnGlobalRollbackOnly
+  nameWithType: AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ShouldCommitOnGlobalRollbackOnly
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 318
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual bool ShouldCommitOnGlobalRollbackOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable ReadOnly Property ShouldCommitOnGlobalRollbackOnly As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly*
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  id: UseSavepointForNestedTransaction
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: UseSavepointForNestedTransaction
+  nameWithType: AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UseSavepointForNestedTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractPlatformTransactionManager.cs
+    startLine: 320
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual bool UseSavepointForNestedTransaction { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable ReadOnly Property UseSavepointForNestedTransaction As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction*
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+references:
+- uid: Steeltoe.Common.Transaction
+  commentId: N:Steeltoe.Common.Transaction
+  name: Steeltoe.Common.Transaction
+  nameWithType: Steeltoe.Common.Transaction
+  fullName: Steeltoe.Common.Transaction
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Transaction.IPlatformTransactionManager
+  commentId: T:Steeltoe.Common.Transaction.IPlatformTransactionManager
+  parent: Steeltoe.Common.Transaction
+  name: IPlatformTransactionManager
+  nameWithType: IPlatformTransactionManager
+  fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.#ctor*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.#ctor
+  name: AbstractPlatformTransactionManager
+  nameWithType: AbstractPlatformTransactionManager.AbstractPlatformTransactionManager
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.AbstractPlatformTransactionManager
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  name: TransactionSynchronization
+  nameWithType: AbstractPlatformTransactionManager.TransactionSynchronization
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  name: DefaultTimeout
+  nameWithType: AbstractPlatformTransactionManager.DefaultTimeout
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  name: NestedTransactionAllowed
+  nameWithType: AbstractPlatformTransactionManager.NestedTransactionAllowed
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  name: ValidateExistingTransaction
+  nameWithType: AbstractPlatformTransactionManager.ValidateExistingTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  name: GlobalRollbackOnParticipationFailure
+  nameWithType: AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  name: FailEarlyOnGlobalRollbackOnly
+  nameWithType: AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  name: RollbackOnCommitFailure
+  nameWithType: AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction
+  name: GetTransaction
+  nameWithType: AbstractPlatformTransactionManager.GetTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction
+- uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.IPlatformTransactionManager
+  name: GetTransaction(ITransactionDefinition)
+  nameWithType: IPlatformTransactionManager.GetTransaction(ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: GetTransaction
+    nameWithType: IPlatformTransactionManager.GetTransaction
+    fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: GetTransaction
+    nameWithType: IPlatformTransactionManager.GetTransaction
+    fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.GetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ITransactionDefinition
+  commentId: T:Steeltoe.Common.Transaction.ITransactionDefinition
+  parent: Steeltoe.Common.Transaction
+  name: ITransactionDefinition
+  nameWithType: ITransactionDefinition
+  fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+- uid: Steeltoe.Common.Transaction.ITransactionStatus
+  commentId: T:Steeltoe.Common.Transaction.ITransactionStatus
+  parent: Steeltoe.Common.Transaction
+  name: ITransactionStatus
+  nameWithType: ITransactionStatus
+  fullName: Steeltoe.Common.Transaction.ITransactionStatus
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit
+  name: Commit
+  nameWithType: AbstractPlatformTransactionManager.Commit
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit
+- uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  parent: Steeltoe.Common.Transaction.IPlatformTransactionManager
+  name: Commit(ITransactionStatus)
+  nameWithType: IPlatformTransactionManager.Commit(ITransactionStatus)
+  fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Commit
+    nameWithType: IPlatformTransactionManager.Commit
+    fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Commit
+    nameWithType: IPlatformTransactionManager.Commit
+    fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback
+  name: Rollback
+  nameWithType: AbstractPlatformTransactionManager.Rollback
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback
+- uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  parent: Steeltoe.Common.Transaction.IPlatformTransactionManager
+  name: Rollback(ITransactionStatus)
+  nameWithType: IPlatformTransactionManager.Rollback(ITransactionStatus)
+  fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Rollback
+    nameWithType: IPlatformTransactionManager.Rollback
+    fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Rollback
+    nameWithType: IPlatformTransactionManager.Rollback
+    fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus
+  name: PrepareTransactionStatus
+  nameWithType: AbstractPlatformTransactionManager.PrepareTransactionStatus
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus
+- uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  commentId: T:Steeltoe.Common.Transaction.DefaultTransactionStatus
+  parent: Steeltoe.Common.Transaction
+  name: DefaultTransactionStatus
+  nameWithType: DefaultTransactionStatus
+  fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus
+  name: NewTransactionStatus
+  nameWithType: AbstractPlatformTransactionManager.NewTransactionStatus
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization
+  name: PrepareSynchronization
+  nameWithType: AbstractPlatformTransactionManager.PrepareSynchronization
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout
+  name: DetermineTimeout
+  nameWithType: AbstractPlatformTransactionManager.DetermineTimeout
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend
+  name: Suspend
+  nameWithType: AbstractPlatformTransactionManager.Suspend
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+  commentId: T:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+  parent: Steeltoe.Common.Transaction
+  name: AbstractPlatformTransactionManager.SuspendedResourcesHolder
+  nameWithType: AbstractPlatformTransactionManager.SuspendedResourcesHolder
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume
+  name: Resume
+  nameWithType: AbstractPlatformTransactionManager.Resume
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit
+  name: TriggerBeforeCommit
+  nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCommit
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion
+  name: TriggerBeforeCompletion
+  nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCompletion
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion
+  name: InvokeAfterCompletion
+  nameWithType: AbstractPlatformTransactionManager.InvokeAfterCompletion
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion
+- uid: System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ITransactionSynchronization>
+  nameWithType: List<ITransactionSynchronization>
+  fullName: System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization>
+  nameWithType.vb: List(Of ITransactionSynchronization)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Common.Transaction.ITransactionSynchronization)
+  name.vb: List(Of ITransactionSynchronization)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionSynchronization
+    name: ITransactionSynchronization
+    nameWithType: ITransactionSynchronization
+    fullName: Steeltoe.Common.Transaction.ITransactionSynchronization
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionSynchronization
+    name: ITransactionSynchronization
+    nameWithType: ITransactionSynchronization
+    fullName: Steeltoe.Common.Transaction.ITransactionSynchronization
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  name: DoGetTransaction
+  nameWithType: AbstractPlatformTransactionManager.DoGetTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction
+  name: IsExistingTransaction
+  nameWithType: AbstractPlatformTransactionManager.IsExistingTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin
+  name: DoBegin
+  nameWithType: AbstractPlatformTransactionManager.DoBegin
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend
+  name: DoSuspend
+  nameWithType: AbstractPlatformTransactionManager.DoSuspend
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume
+  name: DoResume
+  nameWithType: AbstractPlatformTransactionManager.DoResume
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit
+  name: PrepareForCommit
+  nameWithType: AbstractPlatformTransactionManager.PrepareForCommit
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly
+  name: DoSetRollbackOnly
+  nameWithType: AbstractPlatformTransactionManager.DoSetRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction
+  name: RegisterAfterCompletionWithExistingTransaction
+  nameWithType: AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion
+  name: DoCleanupAfterCompletion
+  nameWithType: AbstractPlatformTransactionManager.DoCleanupAfterCompletion
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit
+  name: DoCommit
+  nameWithType: AbstractPlatformTransactionManager.DoCommit
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback
+  name: DoRollback
+  nameWithType: AbstractPlatformTransactionManager.DoRollback
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  name: ShouldCommitOnGlobalRollbackOnly
+  nameWithType: AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  name: UseSavepointForNestedTransaction
+  nameWithType: AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction

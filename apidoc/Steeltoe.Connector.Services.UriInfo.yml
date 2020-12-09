@@ -1,0 +1,1243 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Connector.Services.UriInfo
+  commentId: T:Steeltoe.Connector.Services.UriInfo
+  id: UriInfo
+  parent: Steeltoe.Connector.Services
+  children:
+  - Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.Boolean)
+  - Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)
+  - Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.String,System.String)
+  - Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri(System.String@)
+  - Steeltoe.Connector.Services.UriInfo.GetPath(System.String)
+  - Steeltoe.Connector.Services.UriInfo.GetQuery(System.String)
+  - Steeltoe.Connector.Services.UriInfo.GetUserInfo(System.String)
+  - Steeltoe.Connector.Services.UriInfo.Host
+  - Steeltoe.Connector.Services.UriInfo.Hosts
+  - Steeltoe.Connector.Services.UriInfo.MakeUri(System.String)
+  - Steeltoe.Connector.Services.UriInfo.MakeUri(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)
+  - Steeltoe.Connector.Services.UriInfo.Password
+  - Steeltoe.Connector.Services.UriInfo.Path
+  - Steeltoe.Connector.Services.UriInfo.Port
+  - Steeltoe.Connector.Services.UriInfo.Query
+  - Steeltoe.Connector.Services.UriInfo.Scheme
+  - Steeltoe.Connector.Services.UriInfo.ToString
+  - Steeltoe.Connector.Services.UriInfo.Uri
+  - Steeltoe.Connector.Services.UriInfo.UriString
+  - Steeltoe.Connector.Services.UriInfo.UserName
+  langs:
+  - csharp
+  - vb
+  name: UriInfo
+  nameWithType: UriInfo
+  fullName: Steeltoe.Connector.Services.UriInfo
+  type: Class
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UriInfo
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public class UriInfo
+    content.vb: Public Class UriInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)'
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: UriInfo(String, String, Int32, String, String, String, String)
+  nameWithType: UriInfo.UriInfo(String, String, Int32, String, String, String, String)
+  fullName: Steeltoe.Connector.Services.UriInfo.UriInfo(System.String, System.String, System.Int32, System.String, System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public UriInfo(string scheme, string host, int port, string username, string password, string path = null, string query = null)
+    parameters:
+    - id: scheme
+      type: System.String
+    - id: host
+      type: System.String
+    - id: port
+      type: System.Int32
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    - id: path
+      type: System.String
+    - id: query
+      type: System.String
+    content.vb: Public Sub New(scheme As String, host As String, port As Integer, username As String, password As String, path As String = Nothing, query As String = Nothing)
+  overload: Steeltoe.Connector.Services.UriInfo.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.Boolean)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: UriInfo(String, Boolean)
+  nameWithType: UriInfo.UriInfo(String, Boolean)
+  fullName: Steeltoe.Connector.Services.UriInfo.UriInfo(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public UriInfo(string uristring, bool urlEncodedCredentials = false)
+    parameters:
+    - id: uristring
+      type: System.String
+    - id: urlEncodedCredentials
+      type: System.Boolean
+    content.vb: Public Sub New(uristring As String, urlEncodedCredentials As Boolean = False)
+  overload: Steeltoe.Connector.Services.UriInfo.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.String,System.String)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: UriInfo(String, String, String)
+  nameWithType: UriInfo.UriInfo(String, String, String)
+  fullName: Steeltoe.Connector.Services.UriInfo.UriInfo(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public UriInfo(string uristring, string username, string password)
+    parameters:
+    - id: uristring
+      type: System.String
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    content.vb: Public Sub New(uristring As String, username As String, password As String)
+  overload: Steeltoe.Connector.Services.UriInfo.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Connector.Services.UriInfo.Scheme
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Scheme
+  id: Scheme
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Scheme
+  nameWithType: UriInfo.Scheme
+  fullName: Steeltoe.Connector.Services.UriInfo.Scheme
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Scheme
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 82
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string Scheme { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Scheme As String
+  overload: Steeltoe.Connector.Services.UriInfo.Scheme*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.Host
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Host
+  id: Host
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: UriInfo.Host
+  fullName: Steeltoe.Connector.Services.UriInfo.Host
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Host
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 84
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string Host { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Host As String
+  overload: Steeltoe.Connector.Services.UriInfo.Host*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.Hosts
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Hosts
+  id: Hosts
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Hosts
+  nameWithType: UriInfo.Hosts
+  fullName: Steeltoe.Connector.Services.UriInfo.Hosts
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Hosts
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 86
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string[] Hosts { get; protected set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Hosts As String()
+  overload: Steeltoe.Connector.Services.UriInfo.Hosts*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.Port
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Port
+  id: Port
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: UriInfo.Port
+  fullName: Steeltoe.Connector.Services.UriInfo.Port
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Port
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 88
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public int Port { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: Steeltoe.Connector.Services.UriInfo.Port*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.UserName
+  commentId: P:Steeltoe.Connector.Services.UriInfo.UserName
+  id: UserName
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: UriInfo.UserName
+  fullName: Steeltoe.Connector.Services.UriInfo.UserName
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UserName
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 90
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string UserName { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserName As String
+  overload: Steeltoe.Connector.Services.UriInfo.UserName*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.Password
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Password
+  id: Password
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: UriInfo.Password
+  fullName: Steeltoe.Connector.Services.UriInfo.Password
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Password
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 92
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string Password { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Password As String
+  overload: Steeltoe.Connector.Services.UriInfo.Password*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.Path
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Path
+  id: Path
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: UriInfo.Path
+  fullName: Steeltoe.Connector.Services.UriInfo.Path
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Path
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 94
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string Path { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Path As String
+  overload: Steeltoe.Connector.Services.UriInfo.Path*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.Query
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Query
+  id: Query
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: UriInfo.Query
+  fullName: Steeltoe.Connector.Services.UriInfo.Query
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Query
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 96
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string Query { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Query As String
+  overload: Steeltoe.Connector.Services.UriInfo.Query*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.UriString
+  commentId: P:Steeltoe.Connector.Services.UriInfo.UriString
+  id: UriString
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: UriString
+  nameWithType: UriInfo.UriString
+  fullName: Steeltoe.Connector.Services.UriInfo.UriString
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UriString
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 98
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public string UriString { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UriString As String
+  overload: Steeltoe.Connector.Services.UriInfo.UriString*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Steeltoe.Connector.Services.UriInfo.Uri
+  commentId: P:Steeltoe.Connector.Services.UriInfo.Uri
+  id: Uri
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: UriInfo.Uri
+  fullName: Steeltoe.Connector.Services.UriInfo.Uri
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Uri
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 100
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public Uri Uri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property Uri As Uri
+  overload: Steeltoe.Connector.Services.UriInfo.Uri*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Connector.Services.UriInfo.ToString
+  commentId: M:Steeltoe.Connector.Services.UriInfo.ToString
+  id: ToString
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: UriInfo.ToString()
+  fullName: Steeltoe.Connector.Services.UriInfo.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToString
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 108
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Steeltoe.Connector.Services.UriInfo.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Connector.Services.UriInfo.MakeUri(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.MakeUri(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)
+  id: MakeUri(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: MakeUri(String, String, Int32, String, String, String, String)
+  nameWithType: UriInfo.MakeUri(String, String, Int32, String, String, String, String)
+  fullName: Steeltoe.Connector.Services.UriInfo.MakeUri(System.String, System.String, System.Int32, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MakeUri
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 113
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: protected Uri MakeUri(string scheme, string host, int port, string username, string password, string path, string query)
+    parameters:
+    - id: scheme
+      type: System.String
+    - id: host
+      type: System.String
+    - id: port
+      type: System.Int32
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    - id: path
+      type: System.String
+    - id: query
+      type: System.String
+    return:
+      type: System.Uri
+    content.vb: Protected Function MakeUri(scheme As String, host As String, port As Integer, username As String, password As String, path As String, query As String) As Uri
+  overload: Steeltoe.Connector.Services.UriInfo.MakeUri*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Connector.Services.UriInfo.MakeUri(System.String)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.MakeUri(System.String)
+  id: MakeUri(System.String)
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: MakeUri(String)
+  nameWithType: UriInfo.MakeUri(String)
+  fullName: Steeltoe.Connector.Services.UriInfo.MakeUri(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MakeUri
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 144
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: protected Uri MakeUri(string uriString)
+    parameters:
+    - id: uriString
+      type: System.String
+    return:
+      type: System.Uri
+    content.vb: Protected Function MakeUri(uriString As String) As Uri
+  overload: Steeltoe.Connector.Services.UriInfo.MakeUri*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri(System.String@)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri(System.String@)
+  id: ConvertJdbcToUri(System.String@)
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: ConvertJdbcToUri(ref String)
+  nameWithType: UriInfo.ConvertJdbcToUri(ref String)
+  fullName: Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri(ref System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertJdbcToUri
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 182
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: protected void ConvertJdbcToUri(ref string uriString)
+    parameters:
+    - id: uriString
+      type: System.String
+    content.vb: Protected Sub ConvertJdbcToUri(ByRef uriString As String)
+  overload: Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri*
+  nameWithType.vb: UriInfo.ConvertJdbcToUri(ByRef String)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri(ByRef System.String)
+  name.vb: ConvertJdbcToUri(ByRef String)
+- uid: Steeltoe.Connector.Services.UriInfo.GetPath(System.String)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.GetPath(System.String)
+  id: GetPath(System.String)
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: GetPath(String)
+  nameWithType: UriInfo.GetPath(String)
+  fullName: Steeltoe.Connector.Services.UriInfo.GetPath(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetPath
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 211
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: protected string GetPath(string pathAndQuery)
+    parameters:
+    - id: pathAndQuery
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Function GetPath(pathAndQuery As String) As String
+  overload: Steeltoe.Connector.Services.UriInfo.GetPath*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Connector.Services.UriInfo.GetQuery(System.String)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.GetQuery(System.String)
+  id: GetQuery(System.String)
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: GetQuery(String)
+  nameWithType: UriInfo.GetQuery(String)
+  fullName: Steeltoe.Connector.Services.UriInfo.GetQuery(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetQuery
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 227
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: protected string GetQuery(string pathAndQuery)
+    parameters:
+    - id: pathAndQuery
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Function GetQuery(pathAndQuery As String) As String
+  overload: Steeltoe.Connector.Services.UriInfo.GetQuery*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Connector.Services.UriInfo.GetUserInfo(System.String)
+  commentId: M:Steeltoe.Connector.Services.UriInfo.GetUserInfo(System.String)
+  id: GetUserInfo(System.String)
+  parent: Steeltoe.Connector.Services.UriInfo
+  langs:
+  - csharp
+  - vb
+  name: GetUserInfo(String)
+  nameWithType: UriInfo.GetUserInfo(String)
+  fullName: Steeltoe.Connector.Services.UriInfo.GetUserInfo(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/Abstractions/Services/UriInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetUserInfo
+    path: ../Steeltoe/src/Connectors/src/Abstractions/Services/UriInfo.cs
+    startLine: 243
+  assemblies:
+  - Steeltoe.Connector.Abstractions
+  namespace: Steeltoe.Connector.Services
+  syntax:
+    content: protected string[] GetUserInfo(string userPass)
+    parameters:
+    - id: userPass
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Protected Function GetUserInfo(userPass As String) As String()
+  overload: Steeltoe.Connector.Services.UriInfo.GetUserInfo*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Connector.Services
+  commentId: N:Steeltoe.Connector.Services
+  name: Steeltoe.Connector.Services
+  nameWithType: Steeltoe.Connector.Services
+  fullName: Steeltoe.Connector.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Connector.Services.UriInfo.#ctor*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.#ctor
+  name: UriInfo
+  nameWithType: UriInfo.UriInfo
+  fullName: Steeltoe.Connector.Services.UriInfo.UriInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Connector.Services.UriInfo.Scheme*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Scheme
+  name: Scheme
+  nameWithType: UriInfo.Scheme
+  fullName: Steeltoe.Connector.Services.UriInfo.Scheme
+- uid: Steeltoe.Connector.Services.UriInfo.Host*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Host
+  name: Host
+  nameWithType: UriInfo.Host
+  fullName: Steeltoe.Connector.Services.UriInfo.Host
+- uid: Steeltoe.Connector.Services.UriInfo.Hosts*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Hosts
+  name: Hosts
+  nameWithType: UriInfo.Hosts
+  fullName: Steeltoe.Connector.Services.UriInfo.Hosts
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Steeltoe.Connector.Services.UriInfo.Port*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Port
+  name: Port
+  nameWithType: UriInfo.Port
+  fullName: Steeltoe.Connector.Services.UriInfo.Port
+- uid: Steeltoe.Connector.Services.UriInfo.UserName*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.UserName
+  name: UserName
+  nameWithType: UriInfo.UserName
+  fullName: Steeltoe.Connector.Services.UriInfo.UserName
+- uid: Steeltoe.Connector.Services.UriInfo.Password*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Password
+  name: Password
+  nameWithType: UriInfo.Password
+  fullName: Steeltoe.Connector.Services.UriInfo.Password
+- uid: Steeltoe.Connector.Services.UriInfo.Path*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Path
+  name: Path
+  nameWithType: UriInfo.Path
+  fullName: Steeltoe.Connector.Services.UriInfo.Path
+- uid: Steeltoe.Connector.Services.UriInfo.Query*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Query
+  name: Query
+  nameWithType: UriInfo.Query
+  fullName: Steeltoe.Connector.Services.UriInfo.Query
+- uid: Steeltoe.Connector.Services.UriInfo.UriString*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.UriString
+  name: UriString
+  nameWithType: UriInfo.UriString
+  fullName: Steeltoe.Connector.Services.UriInfo.UriString
+- uid: Steeltoe.Connector.Services.UriInfo.Uri*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.Uri
+  name: Uri
+  nameWithType: UriInfo.Uri
+  fullName: Steeltoe.Connector.Services.UriInfo.Uri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Connector.Services.UriInfo.ToString*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.ToString
+  name: ToString
+  nameWithType: UriInfo.ToString
+  fullName: Steeltoe.Connector.Services.UriInfo.ToString
+- uid: Steeltoe.Connector.Services.UriInfo.MakeUri*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.MakeUri
+  name: MakeUri
+  nameWithType: UriInfo.MakeUri
+  fullName: Steeltoe.Connector.Services.UriInfo.MakeUri
+- uid: Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri
+  name: ConvertJdbcToUri
+  nameWithType: UriInfo.ConvertJdbcToUri
+  fullName: Steeltoe.Connector.Services.UriInfo.ConvertJdbcToUri
+- uid: Steeltoe.Connector.Services.UriInfo.GetPath*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.GetPath
+  name: GetPath
+  nameWithType: UriInfo.GetPath
+  fullName: Steeltoe.Connector.Services.UriInfo.GetPath
+- uid: Steeltoe.Connector.Services.UriInfo.GetQuery*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.GetQuery
+  name: GetQuery
+  nameWithType: UriInfo.GetQuery
+  fullName: Steeltoe.Connector.Services.UriInfo.GetQuery
+- uid: Steeltoe.Connector.Services.UriInfo.GetUserInfo*
+  commentId: Overload:Steeltoe.Connector.Services.UriInfo.GetUserInfo
+  name: GetUserInfo
+  nameWithType: UriInfo.GetUserInfo
+  fullName: Steeltoe.Connector.Services.UriInfo.GetUserInfo

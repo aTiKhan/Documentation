@@ -1,0 +1,1082 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  id: EventCounterListener
+  parent: Steeltoe.Management.Endpoint.Metrics.Observer
+  children:
+  - Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.#ctor(Steeltoe.Management.OpenTelemetry.Stats.IStats,ILogger{Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener})
+  - Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  - Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: EventCounterListener
+  nameWithType: EventCounterListener
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: EventCounterListener
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics.Observer
+  syntax:
+    content: 'public class EventCounterListener : EventListener, IDisposable'
+    content.vb: >-
+      Public Class EventCounterListener
+
+          Inherits EventListener
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Diagnostics.Tracing.EventListener
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)
+  - System.Diagnostics.Tracing.EventListener.Dispose
+  - System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel)
+  - System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+  - System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Collections.Generic.IDictionary{System.String,System.String})
+  - System.Diagnostics.Tracing.EventListener.EventSourceIndex(System.Diagnostics.Tracing.EventSource)
+  - System.Diagnostics.Tracing.EventListener.EventSourceCreated
+  - System.Diagnostics.Tracing.EventListener.EventWritten
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.#ctor(Steeltoe.Management.OpenTelemetry.Stats.IStats,ILogger{Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener})
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.#ctor(Steeltoe.Management.OpenTelemetry.Stats.IStats,ILogger{Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener})
+  id: '#ctor(Steeltoe.Management.OpenTelemetry.Stats.IStats,ILogger{Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener})'
+  parent: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  langs:
+  - csharp
+  - vb
+  name: EventCounterListener(IStats, ILogger<EventCounterListener>)
+  nameWithType: EventCounterListener.EventCounterListener(IStats, ILogger<EventCounterListener>)
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.EventCounterListener(Steeltoe.Management.OpenTelemetry.Stats.IStats, ILogger<Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics.Observer
+  syntax:
+    content: public EventCounterListener(IStats stats, ILogger<EventCounterListener> logger = null)
+    parameters:
+    - id: stats
+      type: Steeltoe.Management.OpenTelemetry.Stats.IStats
+    - id: logger
+      type: ILogger{Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener}
+    content.vb: Public Sub New(stats As IStats, logger As ILogger(Of EventCounterListener) = Nothing)
+  overload: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.#ctor*
+  nameWithType.vb: EventCounterListener.EventCounterListener(IStats, ILogger(Of EventCounterListener))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.EventCounterListener(Steeltoe.Management.OpenTelemetry.Stats.IStats, ILogger(Of Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener))
+  name.vb: EventCounterListener(IStats, ILogger(Of EventCounterListener))
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  id: OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  parent: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  langs:
+  - csharp
+  - vb
+  name: OnEventWritten(EventWrittenEventArgs)
+  nameWithType: EventCounterListener.OnEventWritten(EventWrittenEventArgs)
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnEventWritten
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics.Observer
+  summary: "\nProcesses a new EventSource event.\n"
+  example: []
+  syntax:
+    content: protected override void OnEventWritten(EventWrittenEventArgs eventData)
+    parameters:
+    - id: eventData
+      type: System.Diagnostics.Tracing.EventWrittenEventArgs
+      description: Event to process.
+    content.vb: Protected Overrides Sub OnEventWritten(eventData As EventWrittenEventArgs)
+  overridden: System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  overload: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  id: OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  parent: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  langs:
+  - csharp
+  - vb
+  name: OnEventSourceCreated(EventSource)
+  nameWithType: EventCounterListener.OnEventSourceCreated(EventSource)
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnEventSourceCreated
+    path: ../Steeltoe/src/Management/src/EndpointBase/Metrics/Observer/EventCounterListener.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Management.EndpointBase
+  namespace: Steeltoe.Management.Endpoint.Metrics.Observer
+  syntax:
+    content: protected override void OnEventSourceCreated(EventSource eventSource)
+    parameters:
+    - id: eventSource
+      type: System.Diagnostics.Tracing.EventSource
+    content.vb: Protected Overrides Sub OnEventSourceCreated(eventSource As EventSource)
+  overridden: System.Diagnostics.Tracing.EventListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  overload: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer
+  commentId: N:Steeltoe.Management.Endpoint.Metrics.Observer
+  name: Steeltoe.Management.Endpoint.Metrics.Observer
+  nameWithType: Steeltoe.Management.Endpoint.Metrics.Observer
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Diagnostics.Tracing.EventListener
+  commentId: T:System.Diagnostics.Tracing.EventListener
+  parent: System.Diagnostics.Tracing
+  isExternal: true
+  name: EventListener
+  nameWithType: EventListener
+  fullName: System.Diagnostics.Tracing.EventListener
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)
+  commentId: M:System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: DisableEvents(EventSource)
+  nameWithType: EventListener.DisableEvents(EventSource)
+  fullName: System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)
+    name: DisableEvents
+    nameWithType: EventListener.DisableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.DisableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)
+    name: DisableEvents
+    nameWithType: EventListener.DisableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.DisableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventListener.Dispose
+  commentId: M:System.Diagnostics.Tracing.EventListener.Dispose
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: Dispose()
+  nameWithType: EventListener.Dispose()
+  fullName: System.Diagnostics.Tracing.EventListener.Dispose()
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.Dispose
+    name: Dispose
+    nameWithType: EventListener.Dispose
+    fullName: System.Diagnostics.Tracing.EventListener.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.Dispose
+    name: Dispose
+    nameWithType: EventListener.Dispose
+    fullName: System.Diagnostics.Tracing.EventListener.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel)
+  commentId: M:System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel)
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: EnableEvents(EventSource, EventLevel)
+  nameWithType: EventListener.EnableEvents(EventSource, EventLevel)
+  fullName: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing.EventLevel)
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel)
+    name: EnableEvents
+    nameWithType: EventListener.EnableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.EnableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventLevel
+    name: EventLevel
+    nameWithType: EventLevel
+    fullName: System.Diagnostics.Tracing.EventLevel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel)
+    name: EnableEvents
+    nameWithType: EventListener.EnableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.EnableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventLevel
+    name: EventLevel
+    nameWithType: EventLevel
+    fullName: System.Diagnostics.Tracing.EventLevel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+  commentId: M:System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: EnableEvents(EventSource, EventLevel, EventKeywords)
+  nameWithType: EventListener.EnableEvents(EventSource, EventLevel, EventKeywords)
+  fullName: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing.EventLevel, System.Diagnostics.Tracing.EventKeywords)
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+    name: EnableEvents
+    nameWithType: EventListener.EnableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.EnableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventLevel
+    name: EventLevel
+    nameWithType: EventLevel
+    fullName: System.Diagnostics.Tracing.EventLevel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventKeywords
+    name: EventKeywords
+    nameWithType: EventKeywords
+    fullName: System.Diagnostics.Tracing.EventKeywords
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+    name: EnableEvents
+    nameWithType: EventListener.EnableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.EnableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventLevel
+    name: EventLevel
+    nameWithType: EventLevel
+    fullName: System.Diagnostics.Tracing.EventLevel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventKeywords
+    name: EventKeywords
+    nameWithType: EventKeywords
+    fullName: System.Diagnostics.Tracing.EventKeywords
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: EnableEvents(EventSource, EventLevel, EventKeywords, IDictionary<String, String>)
+  nameWithType: EventListener.EnableEvents(EventSource, EventLevel, EventKeywords, IDictionary<String, String>)
+  fullName: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing.EventLevel, System.Diagnostics.Tracing.EventKeywords, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: EventListener.EnableEvents(EventSource, EventLevel, EventKeywords, IDictionary(Of String, String))
+  fullName.vb: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing.EventLevel, System.Diagnostics.Tracing.EventKeywords, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: EnableEvents(EventSource, EventLevel, EventKeywords, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: EnableEvents
+    nameWithType: EventListener.EnableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.EnableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventLevel
+    name: EventLevel
+    nameWithType: EventLevel
+    fullName: System.Diagnostics.Tracing.EventLevel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventKeywords
+    name: EventKeywords
+    nameWithType: EventKeywords
+    fullName: System.Diagnostics.Tracing.EventKeywords
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: EnableEvents
+    nameWithType: EventListener.EnableEvents
+    fullName: System.Diagnostics.Tracing.EventListener.EnableEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventLevel
+    name: EventLevel
+    nameWithType: EventLevel
+    fullName: System.Diagnostics.Tracing.EventLevel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Diagnostics.Tracing.EventKeywords
+    name: EventKeywords
+    nameWithType: EventKeywords
+    fullName: System.Diagnostics.Tracing.EventKeywords
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventListener.EventSourceIndex(System.Diagnostics.Tracing.EventSource)
+  commentId: M:System.Diagnostics.Tracing.EventListener.EventSourceIndex(System.Diagnostics.Tracing.EventSource)
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: EventSourceIndex(EventSource)
+  nameWithType: EventListener.EventSourceIndex(EventSource)
+  fullName: System.Diagnostics.Tracing.EventListener.EventSourceIndex(System.Diagnostics.Tracing.EventSource)
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.EventSourceIndex(System.Diagnostics.Tracing.EventSource)
+    name: EventSourceIndex
+    nameWithType: EventListener.EventSourceIndex
+    fullName: System.Diagnostics.Tracing.EventListener.EventSourceIndex
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.EventSourceIndex(System.Diagnostics.Tracing.EventSource)
+    name: EventSourceIndex
+    nameWithType: EventListener.EventSourceIndex
+    fullName: System.Diagnostics.Tracing.EventListener.EventSourceIndex
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventListener.EventSourceCreated
+  commentId: E:System.Diagnostics.Tracing.EventListener.EventSourceCreated
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: EventSourceCreated
+  nameWithType: EventListener.EventSourceCreated
+  fullName: System.Diagnostics.Tracing.EventListener.EventSourceCreated
+- uid: System.Diagnostics.Tracing.EventListener.EventWritten
+  commentId: E:System.Diagnostics.Tracing.EventListener.EventWritten
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: EventWritten
+  nameWithType: EventListener.EventWritten
+  fullName: System.Diagnostics.Tracing.EventListener.EventWritten
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Diagnostics.Tracing
+  commentId: N:System.Diagnostics.Tracing
+  isExternal: true
+  name: System.Diagnostics.Tracing
+  nameWithType: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.#ctor*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.#ctor
+  name: EventCounterListener
+  nameWithType: EventCounterListener.EventCounterListener
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.EventCounterListener
+- uid: Steeltoe.Management.OpenTelemetry.Stats.IStats
+  commentId: T:Steeltoe.Management.OpenTelemetry.Stats.IStats
+  parent: Steeltoe.Management.OpenTelemetry.Stats
+  name: IStats
+  nameWithType: IStats
+  fullName: Steeltoe.Management.OpenTelemetry.Stats.IStats
+- uid: ILogger{Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener}
+  commentId: '!:ILogger{Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener}'
+  definition: ILogger`1
+  name: ILogger<EventCounterListener>
+  nameWithType: ILogger<EventCounterListener>
+  fullName: ILogger<Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener>
+  nameWithType.vb: ILogger(Of EventCounterListener)
+  fullName.vb: ILogger(Of Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener)
+  name.vb: ILogger(Of EventCounterListener)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+    name: EventCounterListener
+    nameWithType: EventCounterListener
+    fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+    name: EventCounterListener
+    nameWithType: EventCounterListener
+    fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.OpenTelemetry.Stats
+  commentId: N:Steeltoe.Management.OpenTelemetry.Stats
+  name: Steeltoe.Management.OpenTelemetry.Stats
+  nameWithType: Steeltoe.Management.OpenTelemetry.Stats
+  fullName: Steeltoe.Management.OpenTelemetry.Stats
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  commentId: M:System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: OnEventWritten(EventWrittenEventArgs)
+  nameWithType: EventListener.OnEventWritten(EventWrittenEventArgs)
+  fullName: System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+    name: OnEventWritten
+    nameWithType: EventListener.OnEventWritten
+    fullName: System.Diagnostics.Tracing.EventListener.OnEventWritten
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventWrittenEventArgs
+    name: EventWrittenEventArgs
+    nameWithType: EventWrittenEventArgs
+    fullName: System.Diagnostics.Tracing.EventWrittenEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+    name: OnEventWritten
+    nameWithType: EventListener.OnEventWritten
+    fullName: System.Diagnostics.Tracing.EventListener.OnEventWritten
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventWrittenEventArgs
+    name: EventWrittenEventArgs
+    nameWithType: EventWrittenEventArgs
+    fullName: System.Diagnostics.Tracing.EventWrittenEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten
+  name: OnEventWritten
+  nameWithType: EventCounterListener.OnEventWritten
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventWritten
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs
+  commentId: T:System.Diagnostics.Tracing.EventWrittenEventArgs
+  parent: System.Diagnostics.Tracing
+  isExternal: true
+  name: EventWrittenEventArgs
+  nameWithType: EventWrittenEventArgs
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs
+- uid: System.Diagnostics.Tracing.EventListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  commentId: M:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  parent: System.Diagnostics.Tracing.EventListener
+  isExternal: true
+  name: OnEventSourceCreated(EventSource)
+  nameWithType: EventListener.OnEventSourceCreated(EventSource)
+  fullName: System.Diagnostics.Tracing.EventListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+    name: OnEventSourceCreated
+    nameWithType: EventListener.OnEventSourceCreated
+    fullName: System.Diagnostics.Tracing.EventListener.OnEventSourceCreated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+    name: OnEventSourceCreated
+    nameWithType: EventListener.OnEventSourceCreated
+    fullName: System.Diagnostics.Tracing.EventListener.OnEventSourceCreated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    nameWithType: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated
+  name: OnEventSourceCreated
+  nameWithType: EventCounterListener.OnEventSourceCreated
+  fullName: Steeltoe.Management.Endpoint.Metrics.Observer.EventCounterListener.OnEventSourceCreated
+- uid: System.Diagnostics.Tracing.EventSource
+  commentId: T:System.Diagnostics.Tracing.EventSource
+  parent: System.Diagnostics.Tracing
+  isExternal: true
+  name: EventSource
+  nameWithType: EventSource
+  fullName: System.Diagnostics.Tracing.EventSource

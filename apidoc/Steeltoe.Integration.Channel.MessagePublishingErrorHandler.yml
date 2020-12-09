@@ -1,0 +1,1146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  commentId: T:Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  id: MessagePublishingErrorHandler
+  parent: Steeltoe.Integration.Channel
+  children:
+  - Steeltoe.Integration.Channel.MessagePublishingErrorHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DEFAULT_SERVICE_NAME
+  - Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel
+  - Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName
+  - Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError(System.Exception)
+  - Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName
+  langs:
+  - csharp
+  - vb
+  name: MessagePublishingErrorHandler
+  nameWithType: MessagePublishingErrorHandler
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  type: Class
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MessagePublishingErrorHandler
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Channel
+  syntax:
+    content: 'public class MessagePublishingErrorHandler : ErrorMessagePublisher, IErrorHandler, IServiceNameAware'
+    content.vb: >-
+      Public Class MessagePublishingErrorHandler
+
+          Inherits ErrorMessagePublisher
+
+          Implements IErrorHandler, IServiceNameAware
+  inheritance:
+  - System.Object
+  - Steeltoe.Integration.ErrorMessagePublisher
+  implements:
+  - Steeltoe.Common.Util.IErrorHandler
+  - Steeltoe.Common.Services.IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Integration.ErrorMessagePublisher._messagingTemplate
+  - Steeltoe.Integration.ErrorMessagePublisher._logger
+  - Steeltoe.Integration.ErrorMessagePublisher.IntegrationServices
+  - Steeltoe.Integration.ErrorMessagePublisher.ErrorMessageStrategy
+  - Steeltoe.Integration.ErrorMessagePublisher.Channel
+  - Steeltoe.Integration.ErrorMessagePublisher.ChannelName
+  - Steeltoe.Integration.ErrorMessagePublisher.SendTimeout
+  - Steeltoe.Integration.ErrorMessagePublisher.ChannelResolver
+  - Steeltoe.Integration.ErrorMessagePublisher.MessagingTemplate
+  - Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.MessagingException)
+  - Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,System.Exception)
+  - Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.MessagingException)
+  - Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage,System.Exception)
+  - Steeltoe.Integration.ErrorMessagePublisher.Publish(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+  - Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+  - Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DEFAULT_SERVICE_NAME
+  commentId: F:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DEFAULT_SERVICE_NAME
+  id: DEFAULT_SERVICE_NAME
+  parent: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_SERVICE_NAME
+  nameWithType: MessagePublishingErrorHandler.DEFAULT_SERVICE_NAME
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DEFAULT_SERVICE_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DEFAULT_SERVICE_NAME
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Channel
+  syntax:
+    content: public const string DEFAULT_SERVICE_NAME = "MessagePublishingErrorHandler"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_SERVICE_NAME As String = "MessagePublishingErrorHandler"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  langs:
+  - csharp
+  - vb
+  name: MessagePublishingErrorHandler(IApplicationContext, ILogger)
+  nameWithType: MessagePublishingErrorHandler.MessagePublishingErrorHandler(IApplicationContext, ILogger)
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.MessagePublishingErrorHandler(Steeltoe.Common.Contexts.IApplicationContext, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Channel
+  syntax:
+    content: public MessagePublishingErrorHandler(IApplicationContext context, ILogger logger = null)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(context As IApplicationContext, logger As ILogger = Nothing)
+  overload: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName
+  commentId: P:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName
+  id: ServiceName
+  parent: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  langs:
+  - csharp
+  - vb
+  name: ServiceName
+  nameWithType: MessagePublishingErrorHandler.ServiceName
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceName
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Channel
+  syntax:
+    content: public string ServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServiceName As String
+  overload: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName*
+  implements:
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel
+  commentId: P:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel
+  id: DefaultErrorChannel
+  parent: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  langs:
+  - csharp
+  - vb
+  name: DefaultErrorChannel
+  nameWithType: MessagePublishingErrorHandler.DefaultErrorChannel
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultErrorChannel
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Channel
+  syntax:
+    content: public IMessageChannel DefaultErrorChannel { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.IMessageChannel
+    content.vb: Public Property DefaultErrorChannel As IMessageChannel
+  overload: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName
+  commentId: P:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName
+  id: DefaultErrorChannelName
+  parent: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  langs:
+  - csharp
+  - vb
+  name: DefaultErrorChannelName
+  nameWithType: MessagePublishingErrorHandler.DefaultErrorChannelName
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultErrorChannelName
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Channel
+  syntax:
+    content: public string DefaultErrorChannelName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultErrorChannelName As String
+  overload: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError(System.Exception)
+  commentId: M:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError(System.Exception)
+  id: HandleError(System.Exception)
+  parent: Steeltoe.Integration.Channel.MessagePublishingErrorHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleError(Exception)
+  nameWithType: MessagePublishingErrorHandler.HandleError(Exception)
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleError
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Channel/MessagePublishingErrorHandler.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Channel
+  syntax:
+    content: public bool HandleError(Exception exception)
+    parameters:
+    - id: exception
+      type: System.Exception
+    return:
+      type: System.Boolean
+    content.vb: Public Function HandleError(exception As Exception) As Boolean
+  overload: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError*
+  implements:
+  - Steeltoe.Common.Util.IErrorHandler.HandleError(System.Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Integration.Channel
+  commentId: N:Steeltoe.Integration.Channel
+  name: Steeltoe.Integration.Channel
+  nameWithType: Steeltoe.Integration.Channel
+  fullName: Steeltoe.Integration.Channel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.ErrorMessagePublisher
+  commentId: T:Steeltoe.Integration.ErrorMessagePublisher
+  parent: Steeltoe.Integration
+  name: ErrorMessagePublisher
+  nameWithType: ErrorMessagePublisher
+  fullName: Steeltoe.Integration.ErrorMessagePublisher
+- uid: Steeltoe.Common.Util.IErrorHandler
+  commentId: T:Steeltoe.Common.Util.IErrorHandler
+  parent: Steeltoe.Common.Util
+  name: IErrorHandler
+  nameWithType: IErrorHandler
+  fullName: Steeltoe.Common.Util.IErrorHandler
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Integration.ErrorMessagePublisher._messagingTemplate
+  commentId: F:Steeltoe.Integration.ErrorMessagePublisher._messagingTemplate
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: _messagingTemplate
+  nameWithType: ErrorMessagePublisher._messagingTemplate
+  fullName: Steeltoe.Integration.ErrorMessagePublisher._messagingTemplate
+- uid: Steeltoe.Integration.ErrorMessagePublisher._logger
+  commentId: F:Steeltoe.Integration.ErrorMessagePublisher._logger
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: _logger
+  nameWithType: ErrorMessagePublisher._logger
+  fullName: Steeltoe.Integration.ErrorMessagePublisher._logger
+- uid: Steeltoe.Integration.ErrorMessagePublisher.IntegrationServices
+  commentId: P:Steeltoe.Integration.ErrorMessagePublisher.IntegrationServices
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: IntegrationServices
+  nameWithType: ErrorMessagePublisher.IntegrationServices
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.IntegrationServices
+- uid: Steeltoe.Integration.ErrorMessagePublisher.ErrorMessageStrategy
+  commentId: P:Steeltoe.Integration.ErrorMessagePublisher.ErrorMessageStrategy
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: ErrorMessageStrategy
+  nameWithType: ErrorMessagePublisher.ErrorMessageStrategy
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.ErrorMessageStrategy
+- uid: Steeltoe.Integration.ErrorMessagePublisher.Channel
+  commentId: P:Steeltoe.Integration.ErrorMessagePublisher.Channel
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: Channel
+  nameWithType: ErrorMessagePublisher.Channel
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.Channel
+- uid: Steeltoe.Integration.ErrorMessagePublisher.ChannelName
+  commentId: P:Steeltoe.Integration.ErrorMessagePublisher.ChannelName
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: ChannelName
+  nameWithType: ErrorMessagePublisher.ChannelName
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.ChannelName
+- uid: Steeltoe.Integration.ErrorMessagePublisher.SendTimeout
+  commentId: P:Steeltoe.Integration.ErrorMessagePublisher.SendTimeout
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: SendTimeout
+  nameWithType: ErrorMessagePublisher.SendTimeout
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.SendTimeout
+- uid: Steeltoe.Integration.ErrorMessagePublisher.ChannelResolver
+  commentId: P:Steeltoe.Integration.ErrorMessagePublisher.ChannelResolver
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: ChannelResolver
+  nameWithType: ErrorMessagePublisher.ChannelResolver
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.ChannelResolver
+- uid: Steeltoe.Integration.ErrorMessagePublisher.MessagingTemplate
+  commentId: P:Steeltoe.Integration.ErrorMessagePublisher.MessagingTemplate
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: MessagingTemplate
+  nameWithType: ErrorMessagePublisher.MessagingTemplate
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.MessagingTemplate
+- uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.MessagingException)
+  commentId: M:Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.MessagingException)
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: Publish(MessagingException)
+  nameWithType: ErrorMessagePublisher.Publish(MessagingException)
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.MessagingException)
+  spec.csharp:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.MessagingException)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.MessagingException
+    name: MessagingException
+    nameWithType: MessagingException
+    fullName: Steeltoe.Messaging.MessagingException
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.MessagingException)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.MessagingException
+    name: MessagingException
+    nameWithType: MessagingException
+    fullName: Steeltoe.Messaging.MessagingException
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,System.Exception)
+  commentId: M:Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,System.Exception)
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  isExternal: true
+  name: Publish(IMessage, Exception)
+  nameWithType: ErrorMessagePublisher.Publish(IMessage, Exception)
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage, System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,System.Exception)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,System.Exception)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.MessagingException)
+  commentId: M:Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.MessagingException)
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: Publish(IMessage, MessagingException)
+  nameWithType: ErrorMessagePublisher.Publish(IMessage, MessagingException)
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.MessagingException)
+  spec.csharp:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.MessagingException)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.MessagingException
+    name: MessagingException
+    nameWithType: MessagingException
+    fullName: Steeltoe.Messaging.MessagingException
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.MessagingException)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.MessagingException
+    name: MessagingException
+    nameWithType: MessagingException
+    fullName: Steeltoe.Messaging.MessagingException
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage,System.Exception)
+  commentId: M:Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage,System.Exception)
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  isExternal: true
+  name: Publish(IMessage, IMessage, Exception)
+  nameWithType: ErrorMessagePublisher.Publish(IMessage, IMessage, Exception)
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage, System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage,System.Exception)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage,System.Exception)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+  commentId: M:Steeltoe.Integration.ErrorMessagePublisher.Publish(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  isExternal: true
+  name: Publish(Exception, IAttributeAccessor)
+  nameWithType: ErrorMessagePublisher.Publish(Exception, IAttributeAccessor)
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish(System.Exception, Steeltoe.Common.Util.IAttributeAccessor)
+  spec.csharp:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.Publish(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+    name: Publish
+    nameWithType: ErrorMessagePublisher.Publish
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+  commentId: M:Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  isExternal: true
+  name: DeterminePayload(Exception, IAttributeAccessor)
+  nameWithType: ErrorMessagePublisher.DeterminePayload(Exception, IAttributeAccessor)
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload(System.Exception, Steeltoe.Common.Util.IAttributeAccessor)
+  spec.csharp:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+    name: DeterminePayload
+    nameWithType: ErrorMessagePublisher.DeterminePayload
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload(System.Exception,Steeltoe.Common.Util.IAttributeAccessor)
+    name: DeterminePayload
+    nameWithType: ErrorMessagePublisher.DeterminePayload
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.DeterminePayload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor)
+  commentId: M:Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor)
+  parent: Steeltoe.Integration.ErrorMessagePublisher
+  name: PayloadWhenNull(IAttributeAccessor)
+  nameWithType: ErrorMessagePublisher.PayloadWhenNull(IAttributeAccessor)
+  fullName: Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor)
+  spec.csharp:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor)
+    name: PayloadWhenNull
+    nameWithType: ErrorMessagePublisher.PayloadWhenNull
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull(Steeltoe.Common.Util.IAttributeAccessor)
+    name: PayloadWhenNull
+    nameWithType: ErrorMessagePublisher.PayloadWhenNull
+    fullName: Steeltoe.Integration.ErrorMessagePublisher.PayloadWhenNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Integration
+  commentId: N:Steeltoe.Integration
+  name: Steeltoe.Integration
+  nameWithType: Steeltoe.Integration
+  fullName: Steeltoe.Integration
+- uid: Steeltoe.Common.Util
+  commentId: N:Steeltoe.Common.Util
+  name: Steeltoe.Common.Util
+  nameWithType: Steeltoe.Common.Util
+  fullName: Steeltoe.Common.Util
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.#ctor*
+  commentId: Overload:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.#ctor
+  name: MessagePublishingErrorHandler
+  nameWithType: MessagePublishingErrorHandler.MessagePublishingErrorHandler
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.MessagePublishingErrorHandler
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName*
+  commentId: Overload:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName
+  name: ServiceName
+  nameWithType: MessagePublishingErrorHandler.ServiceName
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.ServiceName
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel*
+  commentId: Overload:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel
+  name: DefaultErrorChannel
+  nameWithType: MessagePublishingErrorHandler.DefaultErrorChannel
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannel
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName*
+  commentId: Overload:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName
+  name: DefaultErrorChannelName
+  nameWithType: MessagePublishingErrorHandler.DefaultErrorChannelName
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.DefaultErrorChannelName
+- uid: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError*
+  commentId: Overload:Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError
+  name: HandleError
+  nameWithType: MessagePublishingErrorHandler.HandleError
+  fullName: Steeltoe.Integration.Channel.MessagePublishingErrorHandler.HandleError
+- uid: Steeltoe.Common.Util.IErrorHandler.HandleError(System.Exception)
+  commentId: M:Steeltoe.Common.Util.IErrorHandler.HandleError(System.Exception)
+  parent: Steeltoe.Common.Util.IErrorHandler
+  isExternal: true
+  name: HandleError(Exception)
+  nameWithType: IErrorHandler.HandleError(Exception)
+  fullName: Steeltoe.Common.Util.IErrorHandler.HandleError(System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Common.Util.IErrorHandler.HandleError(System.Exception)
+    name: HandleError
+    nameWithType: IErrorHandler.HandleError
+    fullName: Steeltoe.Common.Util.IErrorHandler.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Util.IErrorHandler.HandleError(System.Exception)
+    name: HandleError
+    nameWithType: IErrorHandler.HandleError
+    fullName: Steeltoe.Common.Util.IErrorHandler.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

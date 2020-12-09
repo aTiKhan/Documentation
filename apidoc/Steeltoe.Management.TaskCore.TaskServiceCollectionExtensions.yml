@@ -1,0 +1,785 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions
+  commentId: T:Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions
+  id: TaskServiceCollectionExtensions
+  parent: Steeltoe.Management.TaskCore
+  children:
+  - Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,Steeltoe.Common.IApplicationTask)
+  - Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,Steeltoe.Common.IApplicationTask},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  - Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.IServiceProvider},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  - Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  langs:
+  - csharp
+  - vb
+  name: TaskServiceCollectionExtensions
+  nameWithType: TaskServiceCollectionExtensions
+  fullName: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TaskServiceCollectionExtensions
+    path: ../Steeltoe/src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Management.TaskCore
+  namespace: Steeltoe.Management.TaskCore
+  syntax:
+    content: public static class TaskServiceCollectionExtensions
+    content.vb: Public Module TaskServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  commentId: M:Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  id: AddTask``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  isExtensionMethod: true
+  parent: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddTask<T>(IServiceCollection, ServiceLifetime)
+  nameWithType: TaskServiceCollectionExtensions.AddTask<T>(IServiceCollection, ServiceLifetime)
+  fullName: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask<T>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddTask
+    path: ../Steeltoe/src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Management.TaskCore
+  namespace: Steeltoe.Management.TaskCore
+  summary: "\nRegister a one-off task that can be executed from command line\n"
+  example: []
+  syntax:
+    content: >-
+      public static void AddTask<T>(this IServiceCollection services, ServiceLifetime lifetime = ServiceLifetime.Singleton)
+
+          where T : class, IApplicationTask
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: Service container
+    - id: lifetime
+      type: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+      description: Task lifetime
+    typeParameters:
+    - id: T
+      description: Task implementation
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddTask(Of T As {Class, IApplicationTask})(services As IServiceCollection, lifetime As ServiceLifetime = ServiceLifetime.Singleton)
+  overload: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask*
+  nameWithType.vb: TaskServiceCollectionExtensions.AddTask(Of T)(IServiceCollection, ServiceLifetime)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name.vb: AddTask(Of T)(IServiceCollection, ServiceLifetime)
+- uid: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,Steeltoe.Common.IApplicationTask)
+  commentId: M:Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,Steeltoe.Common.IApplicationTask)
+  id: AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,Steeltoe.Common.IApplicationTask)
+  isExtensionMethod: true
+  parent: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddTask(IServiceCollection, IApplicationTask)
+  nameWithType: TaskServiceCollectionExtensions.AddTask(IServiceCollection, IApplicationTask)
+  fullName: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection, Steeltoe.Common.IApplicationTask)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddTask
+    path: ../Steeltoe/src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Management.TaskCore
+  namespace: Steeltoe.Management.TaskCore
+  summary: "\nRegister a one-off task that can be executed from command line\n"
+  example: []
+  syntax:
+    content: public static void AddTask(this IServiceCollection services, IApplicationTask task)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: Service container
+    - id: task
+      type: Steeltoe.Common.IApplicationTask
+      description: Task instance
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddTask(services As IServiceCollection, task As IApplicationTask)
+  overload: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,Steeltoe.Common.IApplicationTask},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  commentId: M:Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,Steeltoe.Common.IApplicationTask},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  id: AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,Steeltoe.Common.IApplicationTask},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  isExtensionMethod: true
+  parent: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddTask(IServiceCollection, Func<IServiceProvider, IApplicationTask>, ServiceLifetime)
+  nameWithType: TaskServiceCollectionExtensions.AddTask(IServiceCollection, Func<IServiceProvider, IApplicationTask>, ServiceLifetime)
+  fullName: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func<System.IServiceProvider, Steeltoe.Common.IApplicationTask>, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddTask
+    path: ../Steeltoe/src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Management.TaskCore
+  namespace: Steeltoe.Management.TaskCore
+  summary: "\nRegister a one-off task that can be executed from command line\n"
+  example: []
+  syntax:
+    content: public static void AddTask(this IServiceCollection services, Func<IServiceProvider, IApplicationTask> factory, ServiceLifetime lifetime = ServiceLifetime.Singleton)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: Service container
+    - id: factory
+      type: System.Func{System.IServiceProvider,Steeltoe.Common.IApplicationTask}
+      description: A factory method to create an application task
+    - id: lifetime
+      type: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+      description: Task lifetime
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddTask(services As IServiceCollection, factory As Func(Of IServiceProvider, IApplicationTask), lifetime As ServiceLifetime = ServiceLifetime.Singleton)
+  overload: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask*
+  nameWithType.vb: TaskServiceCollectionExtensions.AddTask(IServiceCollection, Func(Of IServiceProvider, IApplicationTask), ServiceLifetime)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func(Of System.IServiceProvider, Steeltoe.Common.IApplicationTask), Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name.vb: AddTask(IServiceCollection, Func(Of IServiceProvider, IApplicationTask), ServiceLifetime)
+- uid: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.IServiceProvider},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  commentId: M:Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.IServiceProvider},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  id: AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.IServiceProvider},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  isExtensionMethod: true
+  parent: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddTask(IServiceCollection, String, Action<IServiceProvider>, ServiceLifetime)
+  nameWithType: TaskServiceCollectionExtensions.AddTask(IServiceCollection, String, Action<IServiceProvider>, ServiceLifetime)
+  fullName: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String, System.Action<System.IServiceProvider>, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddTask
+    path: ../Steeltoe/src/Management/src/TaskCore/TaskServiceCollectionExtensions.cs
+    startLine: 52
+  assemblies:
+  - Steeltoe.Management.TaskCore
+  namespace: Steeltoe.Management.TaskCore
+  summary: "\nRegister a one-off task that can be executed from command line\n"
+  example: []
+  syntax:
+    content: public static void AddTask(this IServiceCollection services, string name, Action<IServiceProvider> runAction, ServiceLifetime lifetime = ServiceLifetime.Singleton)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: Service container
+    - id: name
+      type: System.String
+      description: Well known name of the task. This is how it&apos;s identified when called
+    - id: runAction
+      type: System.Action{System.IServiceProvider}
+      description: Task method body
+    - id: lifetime
+      type: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+      description: Task lifetime
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddTask(services As IServiceCollection, name As String, runAction As Action(Of IServiceProvider), lifetime As ServiceLifetime = ServiceLifetime.Singleton)
+  overload: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask*
+  nameWithType.vb: TaskServiceCollectionExtensions.AddTask(IServiceCollection, String, Action(Of IServiceProvider), ServiceLifetime)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String, System.Action(Of System.IServiceProvider), Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name.vb: AddTask(IServiceCollection, String, Action(Of IServiceProvider), ServiceLifetime)
+references:
+- uid: Steeltoe.Management.TaskCore
+  commentId: N:Steeltoe.Management.TaskCore
+  name: Steeltoe.Management.TaskCore
+  nameWithType: Steeltoe.Management.TaskCore
+  fullName: Steeltoe.Management.TaskCore
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask*
+  commentId: Overload:Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask
+  name: AddTask
+  nameWithType: TaskServiceCollectionExtensions.AddTask
+  fullName: Steeltoe.Management.TaskCore.TaskServiceCollectionExtensions.AddTask
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceLifetime
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: ServiceLifetime
+  nameWithType: ServiceLifetime
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: Steeltoe.Common.IApplicationTask
+  commentId: T:Steeltoe.Common.IApplicationTask
+  parent: Steeltoe.Common
+  name: IApplicationTask
+  nameWithType: IApplicationTask
+  fullName: Steeltoe.Common.IApplicationTask
+- uid: Steeltoe.Common
+  commentId: N:Steeltoe.Common
+  name: Steeltoe.Common
+  nameWithType: Steeltoe.Common
+  fullName: Steeltoe.Common
+- uid: System.Func{System.IServiceProvider,Steeltoe.Common.IApplicationTask}
+  commentId: T:System.Func{System.IServiceProvider,Steeltoe.Common.IApplicationTask}
+  parent: System
+  definition: System.Func`2
+  name: Func<IServiceProvider, IApplicationTask>
+  nameWithType: Func<IServiceProvider, IApplicationTask>
+  fullName: System.Func<System.IServiceProvider, Steeltoe.Common.IApplicationTask>
+  nameWithType.vb: Func(Of IServiceProvider, IApplicationTask)
+  fullName.vb: System.Func(Of System.IServiceProvider, Steeltoe.Common.IApplicationTask)
+  name.vb: Func(Of IServiceProvider, IApplicationTask)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: System.IServiceProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.IApplicationTask
+    name: IApplicationTask
+    nameWithType: IApplicationTask
+    fullName: Steeltoe.Common.IApplicationTask
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: System.IServiceProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.IApplicationTask
+    name: IApplicationTask
+    nameWithType: IApplicationTask
+    fullName: Steeltoe.Common.IApplicationTask
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Action{System.IServiceProvider}
+  commentId: T:System.Action{System.IServiceProvider}
+  parent: System
+  definition: System.Action`1
+  name: Action<IServiceProvider>
+  nameWithType: Action<IServiceProvider>
+  fullName: System.Action<System.IServiceProvider>
+  nameWithType.vb: Action(Of IServiceProvider)
+  fullName.vb: System.Action(Of System.IServiceProvider)
+  name.vb: Action(Of IServiceProvider)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: System.IServiceProvider
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: System.IServiceProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

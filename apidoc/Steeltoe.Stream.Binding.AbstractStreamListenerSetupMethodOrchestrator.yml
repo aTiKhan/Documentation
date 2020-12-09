@@ -1,0 +1,864 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  commentId: T:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  id: AbstractStreamListenerSetupMethodOrchestrator
+  parent: Steeltoe.Stream.Binding
+  children:
+  - Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  - Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator._context
+  - Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  - Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+  - Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  langs:
+  - csharp
+  - vb
+  name: AbstractStreamListenerSetupMethodOrchestrator
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractStreamListenerSetupMethodOrchestrator
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: 'public abstract class AbstractStreamListenerSetupMethodOrchestrator : IStreamListenerSetupMethodOrchestrator'
+    content.vb: >-
+      Public MustInherit Class AbstractStreamListenerSetupMethodOrchestrator
+
+          Implements IStreamListenerSetupMethodOrchestrator
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Stream.Binding.DefaultStreamListenerSetupMethodOrchestrator
+  implements:
+  - Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator._context
+  commentId: F:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator._context
+  id: _context
+  parent: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  langs:
+  - csharp
+  - vb
+  name: _context
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator._context
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator._context
+  type: Field
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _context
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected readonly IApplicationContext _context
+    return:
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Protected ReadOnly _context As IApplicationContext
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  commentId: M:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext)'
+  parent: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  langs:
+  - csharp
+  - vb
+  name: AbstractStreamListenerSetupMethodOrchestrator(IApplicationContext)
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.AbstractStreamListenerSetupMethodOrchestrator(IApplicationContext)
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AbstractStreamListenerSetupMethodOrchestrator(Steeltoe.Common.Contexts.IApplicationContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected AbstractStreamListenerSetupMethodOrchestrator(IApplicationContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Protected Sub New(context As IApplicationContext)
+  overload: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  commentId: M:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  id: AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  parent: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  langs:
+  - csharp
+  - vb
+  name: AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter[])
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter[])
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo, System.String, Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AdaptAndRetrieveInboundArguments
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public object[] AdaptAndRetrieveInboundArguments(MethodInfo method, string inboundName, params IStreamListenerParameterAdapter[] streamListenerParameterAdapters)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+    - id: inboundName
+      type: System.String
+    - id: streamListenerParameterAdapters
+      type: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[]
+    return:
+      type: System.Object[]
+    content.vb: Public Function AdaptAndRetrieveInboundArguments(method As MethodInfo, inboundName As String, ParamArray streamListenerParameterAdapters As IStreamListenerParameterAdapter()) As Object()
+  overload: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments*
+  implements:
+  - Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  nameWithType.vb: AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo, System.String, Steeltoe.Stream.Binding.IStreamListenerParameterAdapter())
+  name.vb: AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter())
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+  commentId: M:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+  id: OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+  parent: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  langs:
+  - csharp
+  - vb
+  name: OrchestrateStreamListener(StreamListenerAttribute, MethodInfo, Type)
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(StreamListenerAttribute, MethodInfo, Type)
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute, System.Reflection.MethodInfo, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OrchestrateStreamListener
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+    startLine: 78
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public abstract void OrchestrateStreamListener(StreamListenerAttribute streamListener, MethodInfo method, Type bean)
+    parameters:
+    - id: streamListener
+      type: Steeltoe.Stream.Attributes.StreamListenerAttribute
+    - id: method
+      type: System.Reflection.MethodInfo
+    - id: bean
+      type: System.Type
+    content.vb: Public MustOverride Sub OrchestrateStreamListener(streamListener As StreamListenerAttribute, method As MethodInfo, bean As Type)
+  overload: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener*
+  implements:
+  - Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  commentId: M:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  id: Supports(System.Reflection.MethodInfo)
+  parent: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator
+  langs:
+  - csharp
+  - vb
+  name: Supports(MethodInfo)
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.Supports(MethodInfo)
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Supports
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractStreamListenerSetupMethodOrchestrator.cs
+    startLine: 80
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public abstract bool Supports(MethodInfo method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function Supports(method As MethodInfo) As Boolean
+  overload: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports*
+  implements:
+  - Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Steeltoe.Stream.Binding
+  commentId: N:Steeltoe.Stream.Binding
+  name: Steeltoe.Stream.Binding
+  nameWithType: Steeltoe.Stream.Binding
+  fullName: Steeltoe.Stream.Binding
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator
+  commentId: T:Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator
+  parent: Steeltoe.Stream.Binding
+  name: IStreamListenerSetupMethodOrchestrator
+  nameWithType: IStreamListenerSetupMethodOrchestrator
+  fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.#ctor
+  name: AbstractStreamListenerSetupMethodOrchestrator
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.AbstractStreamListenerSetupMethodOrchestrator
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AbstractStreamListenerSetupMethodOrchestrator
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments
+  name: AdaptAndRetrieveInboundArguments
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments
+- uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  commentId: M:Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  parent: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator
+  isExternal: true
+  name: AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter[])
+  nameWithType: IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter[])
+  fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo, System.String, Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+  nameWithType.vb: IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter())
+  fullName.vb: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo, System.String, Steeltoe.Stream.Binding.IStreamListenerParameterAdapter())
+  name.vb: AdaptAndRetrieveInboundArguments(MethodInfo, String, IStreamListenerParameterAdapter())
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+    name: AdaptAndRetrieveInboundArguments
+    nameWithType: IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments
+    fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+    name: IStreamListenerParameterAdapter
+    nameWithType: IStreamListenerParameterAdapter
+    fullName: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments(System.Reflection.MethodInfo,System.String,Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[])
+    name: AdaptAndRetrieveInboundArguments
+    nameWithType: IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments
+    fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.AdaptAndRetrieveInboundArguments
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+    name: IStreamListenerParameterAdapter
+    nameWithType: IStreamListenerParameterAdapter
+    fullName: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[]
+  isExternal: true
+  name: IStreamListenerParameterAdapter[]
+  nameWithType: IStreamListenerParameterAdapter[]
+  fullName: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter[]
+  nameWithType.vb: IStreamListenerParameterAdapter()
+  fullName.vb: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter()
+  name.vb: IStreamListenerParameterAdapter()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+    name: IStreamListenerParameterAdapter
+    nameWithType: IStreamListenerParameterAdapter
+    fullName: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+    name: IStreamListenerParameterAdapter
+    nameWithType: IStreamListenerParameterAdapter
+    fullName: Steeltoe.Stream.Binding.IStreamListenerParameterAdapter
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener
+  name: OrchestrateStreamListener
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener
+- uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+  commentId: M:Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+  parent: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator
+  isExternal: true
+  name: OrchestrateStreamListener(StreamListenerAttribute, MethodInfo, Type)
+  nameWithType: IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(StreamListenerAttribute, MethodInfo, Type)
+  fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute, System.Reflection.MethodInfo, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+    name: OrchestrateStreamListener
+    nameWithType: IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener
+    fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Attributes.StreamListenerAttribute
+    name: StreamListenerAttribute
+    nameWithType: StreamListenerAttribute
+    fullName: Steeltoe.Stream.Attributes.StreamListenerAttribute
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener(Steeltoe.Stream.Attributes.StreamListenerAttribute,System.Reflection.MethodInfo,System.Type)
+    name: OrchestrateStreamListener
+    nameWithType: IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener
+    fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.OrchestrateStreamListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Attributes.StreamListenerAttribute
+    name: StreamListenerAttribute
+    nameWithType: StreamListenerAttribute
+    fullName: Steeltoe.Stream.Attributes.StreamListenerAttribute
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Attributes.StreamListenerAttribute
+  commentId: T:Steeltoe.Stream.Attributes.StreamListenerAttribute
+  parent: Steeltoe.Stream.Attributes
+  name: StreamListenerAttribute
+  nameWithType: StreamListenerAttribute
+  fullName: Steeltoe.Stream.Attributes.StreamListenerAttribute
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Steeltoe.Stream.Attributes
+  commentId: N:Steeltoe.Stream.Attributes
+  name: Steeltoe.Stream.Attributes
+  nameWithType: Steeltoe.Stream.Attributes
+  fullName: Steeltoe.Stream.Attributes
+- uid: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports
+  name: Supports
+  nameWithType: AbstractStreamListenerSetupMethodOrchestrator.Supports
+  fullName: Steeltoe.Stream.Binding.AbstractStreamListenerSetupMethodOrchestrator.Supports
+- uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  commentId: M:Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  parent: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator
+  isExternal: true
+  name: Supports(MethodInfo)
+  nameWithType: IStreamListenerSetupMethodOrchestrator.Supports(MethodInfo)
+  fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+    name: Supports
+    nameWithType: IStreamListenerSetupMethodOrchestrator.Supports
+    fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports(System.Reflection.MethodInfo)
+    name: Supports
+    nameWithType: IStreamListenerSetupMethodOrchestrator.Supports
+    fullName: Steeltoe.Stream.Binding.IStreamListenerSetupMethodOrchestrator.Supports
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

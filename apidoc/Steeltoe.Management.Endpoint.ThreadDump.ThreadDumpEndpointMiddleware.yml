@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  commentId: T:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  id: ThreadDumpEndpointMiddleware
+  parent: Steeltoe.Management.Endpoint.ThreadDump
+  children:
+  - Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware})
+  - Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  - Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  langs:
+  - csharp
+  - vb
+  name: ThreadDumpEndpointMiddleware
+  nameWithType: ThreadDumpEndpointMiddleware
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ThreadDumpEndpointMiddleware
+    path: ../Steeltoe/src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.ThreadDump
+  syntax:
+    content: 'public class ThreadDumpEndpointMiddleware : EndpointMiddleware<List<ThreadInfo>>'
+    content.vb: >-
+      Public Class ThreadDumpEndpointMiddleware
+
+          Inherits EndpointMiddleware(Of List(Of ThreadInfo))
+  inheritance:
+  - System.Object
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  inheritedMembers:
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._endpoint
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._logger
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._mgmtOptions
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.Endpoint
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.HandleRequest
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.Serialize(System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware})
+  commentId: M:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware})
+  id: '#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware})'
+  parent: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  langs:
+  - csharp
+  - vb
+  name: ThreadDumpEndpointMiddleware(RequestDelegate, ThreadDumpEndpoint, IManagementOptions, ILogger<ThreadDumpEndpointMiddleware>)
+  nameWithType: ThreadDumpEndpointMiddleware.ThreadDumpEndpointMiddleware(RequestDelegate, ThreadDumpEndpoint, IManagementOptions, ILogger<ThreadDumpEndpointMiddleware>)
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.ThreadDumpEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint, Steeltoe.Management.IManagementOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.ThreadDump
+  syntax:
+    content: public ThreadDumpEndpointMiddleware(RequestDelegate next, ThreadDumpEndpoint endpoint, IManagementOptions mgmtOptions, ILogger<ThreadDumpEndpointMiddleware> logger = null)
+    parameters:
+    - id: next
+      type: Microsoft.AspNetCore.Http.RequestDelegate
+    - id: endpoint
+      type: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint
+    - id: mgmtOptions
+      type: Steeltoe.Management.IManagementOptions
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware}
+    content.vb: Public Sub New(next As RequestDelegate, endpoint As ThreadDumpEndpoint, mgmtOptions As IManagementOptions, logger As ILogger(Of ThreadDumpEndpointMiddleware) = Nothing)
+  overload: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.#ctor*
+  nameWithType.vb: ThreadDumpEndpointMiddleware.ThreadDumpEndpointMiddleware(RequestDelegate, ThreadDumpEndpoint, IManagementOptions, ILogger(Of ThreadDumpEndpointMiddleware))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.ThreadDumpEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint, Steeltoe.Management.IManagementOptions, Microsoft.Extensions.Logging.ILogger(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware))
+  name.vb: ThreadDumpEndpointMiddleware(RequestDelegate, ThreadDumpEndpoint, IManagementOptions, ILogger(Of ThreadDumpEndpointMiddleware))
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  id: Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  parent: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Invoke(HttpContext)
+  nameWithType: ThreadDumpEndpointMiddleware.Invoke(HttpContext)
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Invoke
+    path: ../Steeltoe/src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.ThreadDump
+  syntax:
+    content: public Task Invoke(HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Invoke(context As HttpContext) As Task
+  overload: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  id: HandleThreadDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  parent: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  langs:
+  - csharp
+  - vb
+  name: HandleThreadDumpRequestAsync(HttpContext)
+  nameWithType: ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync(HttpContext)
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleThreadDumpRequestAsync
+    path: ../Steeltoe/src/Management/src/EndpointCore/ThreadDump/ThreadDumpEndpointMiddleware.cs
+    startLine: 33
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.ThreadDump
+  syntax:
+    content: protected Task HandleThreadDumpRequestAsync(HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Function HandleThreadDumpRequestAsync(context As HttpContext) As Task
+  overload: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Management.Endpoint.ThreadDump
+  commentId: N:Steeltoe.Management.Endpoint.ThreadDump
+  name: Steeltoe.Management.Endpoint.ThreadDump
+  nameWithType: Steeltoe.Management.Endpoint.ThreadDump
+  fullName: Steeltoe.Management.Endpoint.ThreadDump
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  commentId: T:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  parent: Steeltoe.Management.Endpoint.Middleware
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+  name: EndpointMiddleware<List<ThreadInfo>>
+  nameWithType: EndpointMiddleware<List<ThreadInfo>>
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>
+  nameWithType.vb: EndpointMiddleware(Of List(Of ThreadInfo))
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo))
+  name.vb: EndpointMiddleware(Of List(Of ThreadInfo))
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+    name: ThreadInfo
+    nameWithType: ThreadInfo
+    fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+    name: ThreadInfo
+    nameWithType: ThreadInfo
+    fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._endpoint
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._endpoint
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._endpoint
+  name: _endpoint
+  nameWithType: EndpointMiddleware<List<ThreadInfo>>._endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>._endpoint
+  nameWithType.vb: EndpointMiddleware(Of List(Of ThreadInfo))._endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo))._endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._logger
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._logger
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._logger
+  name: _logger
+  nameWithType: EndpointMiddleware<List<ThreadInfo>>._logger
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>._logger
+  nameWithType.vb: EndpointMiddleware(Of List(Of ThreadInfo))._logger
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo))._logger
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._mgmtOptions
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}._mgmtOptions
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._mgmtOptions
+  name: _mgmtOptions
+  nameWithType: EndpointMiddleware<List<ThreadInfo>>._mgmtOptions
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>._mgmtOptions
+  nameWithType.vb: EndpointMiddleware(Of List(Of ThreadInfo))._mgmtOptions
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo))._mgmtOptions
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.Endpoint
+  commentId: P:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.Endpoint
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Endpoint
+  name: Endpoint
+  nameWithType: EndpointMiddleware<List<ThreadInfo>>.Endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>.Endpoint
+  nameWithType.vb: EndpointMiddleware(Of List(Of ThreadInfo)).Endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo)).Endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.HandleRequest
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.HandleRequest
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+  name: HandleRequest()
+  nameWithType: EndpointMiddleware<List<ThreadInfo>>.HandleRequest()
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>.HandleRequest()
+  nameWithType.vb: EndpointMiddleware(Of List(Of ThreadInfo)).HandleRequest()
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo)).HandleRequest()
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware<List<ThreadInfo>>.HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>.HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware(Of List(Of ThreadInfo)).HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo)).HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.Serialize(System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo})
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}.Serialize(System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo})
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.Collections.Generic.List{Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo}}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+  name: Serialize(List<ThreadInfo>)
+  nameWithType: EndpointMiddleware<List<ThreadInfo>>.Serialize(List<ThreadInfo>)
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>.Serialize(System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>)
+  nameWithType.vb: EndpointMiddleware(Of List(Of ThreadInfo)).Serialize(List(Of ThreadInfo))
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo)).Serialize(System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo))
+  name.vb: Serialize(List(Of ThreadInfo))
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware<List<ThreadInfo>>.Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.Collections.Generic.List<Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo>>.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+    name: ThreadInfo
+    nameWithType: ThreadInfo
+    fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware(Of List(Of ThreadInfo)).Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.Collections.Generic.List(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo)).Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+    name: ThreadInfo
+    nameWithType: ThreadInfo
+    fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+  commentId: T:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+  name: EndpointMiddleware<TResult>
+  nameWithType: EndpointMiddleware<TResult>
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>
+  nameWithType.vb: EndpointMiddleware(Of TResult)
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)
+  name.vb: EndpointMiddleware(Of TResult)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Middleware
+  commentId: N:Steeltoe.Management.Endpoint.Middleware
+  name: Steeltoe.Management.Endpoint.Middleware
+  nameWithType: Steeltoe.Management.Endpoint.Middleware
+  fullName: Steeltoe.Management.Endpoint.Middleware
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._endpoint
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._endpoint
+  name: _endpoint
+  nameWithType: EndpointMiddleware<TResult>._endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>._endpoint
+  nameWithType.vb: EndpointMiddleware(Of TResult)._endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)._endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._logger
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._logger
+  name: _logger
+  nameWithType: EndpointMiddleware<TResult>._logger
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>._logger
+  nameWithType.vb: EndpointMiddleware(Of TResult)._logger
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)._logger
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._mgmtOptions
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._mgmtOptions
+  name: _mgmtOptions
+  nameWithType: EndpointMiddleware<TResult>._mgmtOptions
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>._mgmtOptions
+  nameWithType.vb: EndpointMiddleware(Of TResult)._mgmtOptions
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)._mgmtOptions
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Endpoint
+  commentId: P:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Endpoint
+  name: Endpoint
+  nameWithType: EndpointMiddleware<TResult>.Endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.Endpoint
+  nameWithType.vb: EndpointMiddleware(Of TResult).Endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).Endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+  name: HandleRequest()
+  nameWithType: EndpointMiddleware<TResult>.HandleRequest()
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.HandleRequest()
+  nameWithType.vb: EndpointMiddleware(Of TResult).HandleRequest()
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).HandleRequest()
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware<TResult>.HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware(Of TResult).HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+  name: Serialize(TResult)
+  nameWithType: EndpointMiddleware<TResult>.Serialize(TResult)
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.Serialize(TResult)
+  nameWithType.vb: EndpointMiddleware(Of TResult).Serialize(TResult)
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).Serialize(TResult)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware<TResult>.Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware(Of TResult).Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.#ctor*
+  commentId: Overload:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.#ctor
+  name: ThreadDumpEndpointMiddleware
+  nameWithType: ThreadDumpEndpointMiddleware.ThreadDumpEndpointMiddleware
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.ThreadDumpEndpointMiddleware
+- uid: Microsoft.AspNetCore.Http.RequestDelegate
+  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: RequestDelegate
+  nameWithType: RequestDelegate
+  fullName: Microsoft.AspNetCore.Http.RequestDelegate
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint
+  commentId: T:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint
+  parent: Steeltoe.Management.Endpoint.ThreadDump
+  name: ThreadDumpEndpoint
+  nameWithType: ThreadDumpEndpoint
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpoint
+- uid: Steeltoe.Management.IManagementOptions
+  commentId: T:Steeltoe.Management.IManagementOptions
+  parent: Steeltoe.Management
+  name: IManagementOptions
+  nameWithType: IManagementOptions
+  fullName: Steeltoe.Management.IManagementOptions
+- uid: Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<ThreadDumpEndpointMiddleware>
+  nameWithType: ILogger<ThreadDumpEndpointMiddleware>
+  fullName: Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware>
+  nameWithType.vb: ILogger(Of ThreadDumpEndpointMiddleware)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware)
+  name.vb: ILogger(Of ThreadDumpEndpointMiddleware)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+    name: ThreadDumpEndpointMiddleware
+    nameWithType: ThreadDumpEndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+    name: ThreadDumpEndpointMiddleware
+    nameWithType: ThreadDumpEndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Steeltoe.Management
+  commentId: N:Steeltoe.Management
+  name: Steeltoe.Management
+  nameWithType: Steeltoe.Management
+  fullName: Steeltoe.Management
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke*
+  commentId: Overload:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke
+  name: Invoke
+  nameWithType: ThreadDumpEndpointMiddleware.Invoke
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.Invoke
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync*
+  commentId: Overload:Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync
+  name: HandleThreadDumpRequestAsync
+  nameWithType: ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync
+  fullName: Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointMiddleware.HandleThreadDumpRequestAsync

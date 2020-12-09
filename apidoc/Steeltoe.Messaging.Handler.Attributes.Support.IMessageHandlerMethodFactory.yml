@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+  commentId: T:Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+  id: IMessageHandlerMethodFactory
+  parent: Steeltoe.Messaging.Handler.Attributes.Support
+  children:
+  - Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod(System.Object,System.Reflection.MethodInfo)
+  - Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize
+  langs:
+  - csharp
+  - vb
+  name: IMessageHandlerMethodFactory
+  nameWithType: IMessageHandlerMethodFactory
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Handler/Attributes/Support/IMessageHandlerMethodFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageHandlerMethodFactory
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Handler/Attributes/Support/IMessageHandlerMethodFactory.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Handler.Attributes.Support
+  summary: "\nA factory for invokable handler methods that is suitable to process an incoming message\n"
+  example: []
+  syntax:
+    content: 'public interface IMessageHandlerMethodFactory : IServiceNameAware'
+    content.vb: >-
+      Public Interface IMessageHandlerMethodFactory
+
+          Inherits IServiceNameAware
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod(System.Object,System.Reflection.MethodInfo)
+  commentId: M:Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod(System.Object,System.Reflection.MethodInfo)
+  id: CreateInvocableHandlerMethod(System.Object,System.Reflection.MethodInfo)
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateInvocableHandlerMethod(Object, MethodInfo)
+  nameWithType: IMessageHandlerMethodFactory.CreateInvocableHandlerMethod(Object, MethodInfo)
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod(System.Object, System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Handler/Attributes/Support/IMessageHandlerMethodFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateInvocableHandlerMethod
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Handler/Attributes/Support/IMessageHandlerMethodFactory.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Handler.Attributes.Support
+  summary: "\nCreate the invokable handler method that can process the specified method endpoint.\n"
+  example: []
+  syntax:
+    content: IInvocableHandlerMethod CreateInvocableHandlerMethod(object instance, MethodInfo method)
+    parameters:
+    - id: instance
+      type: System.Object
+      description: the instance of the object
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: the method to invoke
+    return:
+      type: Steeltoe.Messaging.Handler.Invocation.IInvocableHandlerMethod
+      description: a suitable invokable handler for the method
+    content.vb: Function CreateInvocableHandlerMethod(instance As Object, method As MethodInfo) As IInvocableHandlerMethod
+  overload: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod*
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize
+  commentId: M:Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize
+  id: Initialize
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: IMessageHandlerMethodFactory.Initialize()
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Handler/Attributes/Support/IMessageHandlerMethodFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Handler/Attributes/Support/IMessageHandlerMethodFactory.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Handler.Attributes.Support
+  syntax:
+    content: void Initialize()
+    content.vb: Sub Initialize
+  overload: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize*
+references:
+- uid: Steeltoe.Messaging.Handler.Attributes.Support
+  commentId: N:Steeltoe.Messaging.Handler.Attributes.Support
+  name: Steeltoe.Messaging.Handler.Attributes.Support
+  nameWithType: Steeltoe.Messaging.Handler.Attributes.Support
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod*
+  commentId: Overload:Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod
+  name: CreateInvocableHandlerMethod
+  nameWithType: IMessageHandlerMethodFactory.CreateInvocableHandlerMethod
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.CreateInvocableHandlerMethod
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: Steeltoe.Messaging.Handler.Invocation.IInvocableHandlerMethod
+  commentId: T:Steeltoe.Messaging.Handler.Invocation.IInvocableHandlerMethod
+  parent: Steeltoe.Messaging.Handler.Invocation
+  name: IInvocableHandlerMethod
+  nameWithType: IInvocableHandlerMethod
+  fullName: Steeltoe.Messaging.Handler.Invocation.IInvocableHandlerMethod
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Steeltoe.Messaging.Handler.Invocation
+  commentId: N:Steeltoe.Messaging.Handler.Invocation
+  name: Steeltoe.Messaging.Handler.Invocation
+  nameWithType: Steeltoe.Messaging.Handler.Invocation
+  fullName: Steeltoe.Messaging.Handler.Invocation
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize*
+  commentId: Overload:Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize
+  name: Initialize
+  nameWithType: IMessageHandlerMethodFactory.Initialize
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory.Initialize

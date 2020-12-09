@@ -1,0 +1,223 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1
+  commentId: T:Steeltoe.Messaging.Handler.IMessageCondition`1
+  id: IMessageCondition`1
+  parent: Steeltoe.Messaging.Handler
+  children:
+  - Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+  - Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  langs:
+  - csharp
+  - vb
+  name: IMessageCondition<T>
+  nameWithType: IMessageCondition<T>
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageCondition
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Handler
+  summary: "\nContract for mapping conditions to messages\n"
+  example: []
+  syntax:
+    content: 'public interface IMessageCondition<T> : IMessageCondition'
+    typeParameters:
+    - id: T
+      description: the kind of condition that this condition can be combined with
+    content.vb: >-
+      Public Interface IMessageCondition(Of T)
+
+          Inherits IMessageCondition
+  nameWithType.vb: IMessageCondition(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T)
+  name.vb: IMessageCondition(Of T)
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition`1.Combine(`0)
+  id: Combine(`0)
+  parent: Steeltoe.Messaging.Handler.IMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: Combine(T)
+  nameWithType: IMessageCondition<T>.Combine(T)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.Combine(T)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Combine
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Handler
+  summary: "\nDefine the rules for combining this condition with another.\n"
+  example: []
+  syntax:
+    content: T Combine(T other)
+    parameters:
+    - id: other
+      type: '{T}'
+      description: the condition to combine with
+    return:
+      type: '{T}'
+      description: the resulting message condition
+    content.vb: Function Combine(other As T) As T
+  overload: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine*
+  nameWithType.vb: IMessageCondition(Of T).Combine(T)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).Combine(T)
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  id: GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.IMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCondition(IMessage)
+  nameWithType: IMessageCondition<T>.GetMatchingCondition(IMessage)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.GetMatchingCondition(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetMatchingCondition
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Handler
+  summary: "\nCheck if this condition matches the given Message and returns a\npotentially new condition with content tailored to the current message.\n"
+  example: []
+  syntax:
+    content: T GetMatchingCondition(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message under process
+    return:
+      type: '{T}'
+      description: a condition instance in case of a match; or null if no match
+    content.vb: Function GetMatchingCondition(message As IMessage) As T
+  overload: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition*
+  nameWithType.vb: IMessageCondition(Of T).GetMatchingCondition(IMessage)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).GetMatchingCondition(Steeltoe.Messaging.IMessage)
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo(`0,Steeltoe.Messaging.IMessage)
+  id: CompareTo(`0,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.IMessageCondition`1
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(T, IMessage)
+  nameWithType: IMessageCondition<T>.CompareTo(T, IMessage)
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.CompareTo(T, Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CompareTo
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Handler/IMessageCondition.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Handler
+  summary: "\nCompare this condition to another in the context of a specific message.\n"
+  example: []
+  syntax:
+    content: int CompareTo(T other, IMessage message)
+    parameters:
+    - id: other
+      type: '{T}'
+      description: the other condition to compare to
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message under process
+    return:
+      type: System.Int32
+      description: results of the comparison
+    content.vb: Function CompareTo(other As T, message As IMessage) As Integer
+  overload: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo*
+  nameWithType.vb: IMessageCondition(Of T).CompareTo(T, IMessage)
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).CompareTo(T, Steeltoe.Messaging.IMessage)
+references:
+- uid: Steeltoe.Messaging.Handler
+  commentId: N:Steeltoe.Messaging.Handler
+  name: Steeltoe.Messaging.Handler
+  nameWithType: Steeltoe.Messaging.Handler
+  fullName: Steeltoe.Messaging.Handler
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.Combine*
+  commentId: Overload:Steeltoe.Messaging.Handler.IMessageCondition`1.Combine
+  name: Combine
+  nameWithType: IMessageCondition<T>.Combine
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.Combine
+  nameWithType.vb: IMessageCondition(Of T).Combine
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).Combine
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition*
+  commentId: Overload:Steeltoe.Messaging.Handler.IMessageCondition`1.GetMatchingCondition
+  name: GetMatchingCondition
+  nameWithType: IMessageCondition<T>.GetMatchingCondition
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.GetMatchingCondition
+  nameWithType.vb: IMessageCondition(Of T).GetMatchingCondition
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).GetMatchingCondition
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo*
+  commentId: Overload:Steeltoe.Messaging.Handler.IMessageCondition`1.CompareTo
+  name: CompareTo
+  nameWithType: IMessageCondition<T>.CompareTo
+  fullName: Steeltoe.Messaging.Handler.IMessageCondition<T>.CompareTo
+  nameWithType.vb: IMessageCondition(Of T).CompareTo
+  fullName.vb: Steeltoe.Messaging.Handler.IMessageCondition(Of T).CompareTo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

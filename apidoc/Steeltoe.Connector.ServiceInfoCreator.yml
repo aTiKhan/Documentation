@@ -1,0 +1,1175 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Connector.ServiceInfoCreator
+  commentId: T:Steeltoe.Connector.ServiceInfoCreator
+  id: ServiceInfoCreator
+  parent: Steeltoe.Connector
+  children:
+  - Steeltoe.Connector.ServiceInfoCreator.#ctor(IConfiguration)
+  - Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories
+  - Steeltoe.Connector.ServiceInfoCreator.Configuration
+  - Steeltoe.Connector.ServiceInfoCreator.Factories
+  - Steeltoe.Connector.ServiceInfoCreator.FindFactory(Service)
+  - Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo(System.String)
+  - Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo``1(System.String)
+  - Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos(System.Type)
+  - Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos``1
+  - Steeltoe.Connector.ServiceInfoCreator.Instance(IConfiguration)
+  - Steeltoe.Connector.ServiceInfoCreator.IsRelevant
+  - Steeltoe.Connector.ServiceInfoCreator.ServiceInfos
+  langs:
+  - csharp
+  - vb
+  name: ServiceInfoCreator
+  nameWithType: ServiceInfoCreator
+  fullName: Steeltoe.Connector.ServiceInfoCreator
+  type: Class
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceInfoCreator
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  syntax:
+    content: public class ServiceInfoCreator
+    content.vb: Public Class ServiceInfoCreator
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Connector.CloudFoundry.CloudFoundryServiceInfoCreator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Connector.ServiceInfoCreator.Configuration
+  commentId: P:Steeltoe.Connector.ServiceInfoCreator.Configuration
+  id: Configuration
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: ServiceInfoCreator.Configuration
+  fullName: Steeltoe.Connector.ServiceInfoCreator.Configuration
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Configuration
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  syntax:
+    content: protected IConfiguration Configuration { get; }
+    parameters: []
+    return:
+      type: IConfiguration
+    content.vb: Protected ReadOnly Property Configuration As IConfiguration
+  overload: Steeltoe.Connector.ServiceInfoCreator.Configuration*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Connector.ServiceInfoCreator.#ctor(IConfiguration)
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.#ctor(IConfiguration)
+  id: '#ctor(IConfiguration)'
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: ServiceInfoCreator(IConfiguration)
+  nameWithType: ServiceInfoCreator.ServiceInfoCreator(IConfiguration)
+  fullName: Steeltoe.Connector.ServiceInfoCreator.ServiceInfoCreator(IConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  syntax:
+    content: protected ServiceInfoCreator(IConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: IConfiguration
+    content.vb: Protected Sub New(configuration As IConfiguration)
+  overload: Steeltoe.Connector.ServiceInfoCreator.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Connector.ServiceInfoCreator.IsRelevant
+  commentId: P:Steeltoe.Connector.ServiceInfoCreator.IsRelevant
+  id: IsRelevant
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: IsRelevant
+  nameWithType: ServiceInfoCreator.IsRelevant
+  fullName: Steeltoe.Connector.ServiceInfoCreator.IsRelevant
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsRelevant
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  summary: "\nGets a value indicating whether this ServiceInfoCreator should be used\n"
+  example: []
+  syntax:
+    content: public static bool IsRelevant { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property IsRelevant As Boolean
+  overload: Steeltoe.Connector.ServiceInfoCreator.IsRelevant*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.Connector.ServiceInfoCreator.ServiceInfos
+  commentId: P:Steeltoe.Connector.ServiceInfoCreator.ServiceInfos
+  id: ServiceInfos
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: ServiceInfos
+  nameWithType: ServiceInfoCreator.ServiceInfos
+  fullName: Steeltoe.Connector.ServiceInfoCreator.ServiceInfos
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceInfos
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 33
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  summary: "\nGets a list of <xref href=\"Steeltoe.Connector.Services.IServiceInfo\" data-throw-if-not-resolved=\"false\"></xref> that are configured in the applicaiton configuration\n"
+  example: []
+  syntax:
+    content: public IList<IServiceInfo> ServiceInfos { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Connector.Services.IServiceInfo}
+    content.vb: Public ReadOnly Property ServiceInfos As IList(Of IServiceInfo)
+  overload: Steeltoe.Connector.ServiceInfoCreator.ServiceInfos*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Connector.ServiceInfoCreator.Factories
+  commentId: P:Steeltoe.Connector.ServiceInfoCreator.Factories
+  id: Factories
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: Factories
+  nameWithType: ServiceInfoCreator.Factories
+  fullName: Steeltoe.Connector.ServiceInfoCreator.Factories
+  type: Property
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Factories
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  summary: "\nGets a list of <xref href=\"Steeltoe.Connector.Services.IServiceInfoFactory\" data-throw-if-not-resolved=\"false\"></xref> available for finding <xref href=\"Steeltoe.Connector.Services.IServiceInfo\" data-throw-if-not-resolved=\"false\"></xref>s\n"
+  example: []
+  syntax:
+    content: protected IList<IServiceInfoFactory> Factories { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Connector.Services.IServiceInfoFactory}
+    content.vb: Protected ReadOnly Property Factories As IList(Of IServiceInfoFactory)
+  overload: Steeltoe.Connector.ServiceInfoCreator.Factories*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Connector.ServiceInfoCreator.Instance(IConfiguration)
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.Instance(IConfiguration)
+  id: Instance(IConfiguration)
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: Instance(IConfiguration)
+  nameWithType: ServiceInfoCreator.Instance(IConfiguration)
+  fullName: Steeltoe.Connector.ServiceInfoCreator.Instance(IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Instance
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  syntax:
+    content: public static ServiceInfoCreator Instance(IConfiguration config)
+    parameters:
+    - id: config
+      type: IConfiguration
+    return:
+      type: Steeltoe.Connector.ServiceInfoCreator
+    content.vb: Public Shared Function Instance(config As IConfiguration) As ServiceInfoCreator
+  overload: Steeltoe.Connector.ServiceInfoCreator.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos``1
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos``1
+  id: GetServiceInfos``1
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: GetServiceInfos<TServiceInfo>()
+  nameWithType: ServiceInfoCreator.GetServiceInfos<TServiceInfo>()
+  fullName: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos<TServiceInfo>()
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetServiceInfos
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  summary: "\nGet all Service Infos of type\n"
+  example: []
+  syntax:
+    content: >-
+      public IEnumerable<TServiceInfo> GetServiceInfos<TServiceInfo>()
+
+          where TServiceInfo : class
+    typeParameters:
+    - id: TServiceInfo
+      description: Service Info Type to retrieve
+    return:
+      type: System.Collections.Generic.IEnumerable{{TServiceInfo}}
+      description: List of matching Service Infos
+    content.vb: Public Function GetServiceInfos(Of TServiceInfo As Class) As IEnumerable(Of TServiceInfo)
+  overload: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos*
+  nameWithType.vb: ServiceInfoCreator.GetServiceInfos(Of TServiceInfo)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos(Of TServiceInfo)()
+  name.vb: GetServiceInfos(Of TServiceInfo)()
+- uid: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos(System.Type)
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos(System.Type)
+  id: GetServiceInfos(System.Type)
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: GetServiceInfos(Type)
+  nameWithType: ServiceInfoCreator.GetServiceInfos(Type)
+  fullName: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetServiceInfos
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 77
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  summary: "\nGet all Service Infos of type\n"
+  example: []
+  syntax:
+    content: public IEnumerable<IServiceInfo> GetServiceInfos(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Service Info Type to retrieve
+    return:
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Connector.Services.IServiceInfo}
+      description: List of matching Service Infos
+    content.vb: Public Function GetServiceInfos(type As Type) As IEnumerable(Of IServiceInfo)
+  overload: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo``1(System.String)
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo``1(System.String)
+  id: GetServiceInfo``1(System.String)
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: GetServiceInfo<TServiceInfo>(String)
+  nameWithType: ServiceInfoCreator.GetServiceInfo<TServiceInfo>(String)
+  fullName: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo<TServiceInfo>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetServiceInfo
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 86
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  summary: "\nGet a named service\n"
+  example: []
+  syntax:
+    content: >-
+      public TServiceInfo GetServiceInfo<TServiceInfo>(string name)
+
+          where TServiceInfo : class
+    parameters:
+    - id: name
+      type: System.String
+      description: Service name
+    typeParameters:
+    - id: TServiceInfo
+      description: Service Info type
+    return:
+      type: '{TServiceInfo}'
+      description: Service info or null
+    content.vb: Public Function GetServiceInfo(Of TServiceInfo As Class)(name As String) As TServiceInfo
+  overload: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo*
+  nameWithType.vb: ServiceInfoCreator.GetServiceInfo(Of TServiceInfo)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo(Of TServiceInfo)(System.String)
+  name.vb: GetServiceInfo(Of TServiceInfo)(String)
+- uid: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo(System.String)
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo(System.String)
+  id: GetServiceInfo(System.String)
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: GetServiceInfo(String)
+  nameWithType: ServiceInfoCreator.GetServiceInfo(String)
+  fullName: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetServiceInfo
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 107
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  summary: "\nGet a named Service Info\n"
+  example: []
+  syntax:
+    content: public IServiceInfo GetServiceInfo(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of service info
+    return:
+      type: Steeltoe.Connector.Services.IServiceInfo
+      description: Service info
+    content.vb: Public Function GetServiceInfo(name As String) As IServiceInfo
+  overload: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories
+  id: BuildServiceInfoFactories
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: BuildServiceInfoFactories()
+  nameWithType: ServiceInfoCreator.BuildServiceInfoFactories()
+  fullName: Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories()
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BuildServiceInfoFactories
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 124
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  syntax:
+    content: protected virtual void BuildServiceInfoFactories()
+    content.vb: Protected Overridable Sub BuildServiceInfoFactories
+  overload: Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Connector.ServiceInfoCreator.FindFactory(Service)
+  commentId: M:Steeltoe.Connector.ServiceInfoCreator.FindFactory(Service)
+  id: FindFactory(Service)
+  parent: Steeltoe.Connector.ServiceInfoCreator
+  langs:
+  - csharp
+  - vb
+  name: FindFactory(Service)
+  nameWithType: ServiceInfoCreator.FindFactory(Service)
+  fullName: Steeltoe.Connector.ServiceInfoCreator.FindFactory(Service)
+  type: Method
+  source:
+    remote:
+      path: src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindFactory
+    path: ../Steeltoe/src/Connectors/src/ConnectorBase/ServiceInfoCreator.cs
+    startLine: 139
+  assemblies:
+  - Steeltoe.Connector.ConnectorBase
+  namespace: Steeltoe.Connector
+  syntax:
+    content: protected IServiceInfoFactory FindFactory(Service s)
+    parameters:
+    - id: s
+      type: Service
+    return:
+      type: Steeltoe.Connector.Services.IServiceInfoFactory
+    content.vb: Protected Function FindFactory(s As Service) As IServiceInfoFactory
+  overload: Steeltoe.Connector.ServiceInfoCreator.FindFactory*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Connector
+  commentId: N:Steeltoe.Connector
+  name: Steeltoe.Connector
+  nameWithType: Steeltoe.Connector
+  fullName: Steeltoe.Connector
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Connector.ServiceInfoCreator.Configuration*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.Configuration
+  name: Configuration
+  nameWithType: ServiceInfoCreator.Configuration
+  fullName: Steeltoe.Connector.ServiceInfoCreator.Configuration
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Steeltoe.Connector.ServiceInfoCreator.#ctor*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.#ctor
+  name: ServiceInfoCreator
+  nameWithType: ServiceInfoCreator.ServiceInfoCreator
+  fullName: Steeltoe.Connector.ServiceInfoCreator.ServiceInfoCreator
+- uid: Steeltoe.Connector.ServiceInfoCreator.IsRelevant*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.IsRelevant
+  name: IsRelevant
+  nameWithType: ServiceInfoCreator.IsRelevant
+  fullName: Steeltoe.Connector.ServiceInfoCreator.IsRelevant
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Connector.Services.IServiceInfo
+  commentId: T:Steeltoe.Connector.Services.IServiceInfo
+  parent: Steeltoe.Connector.Services
+  name: IServiceInfo
+  nameWithType: IServiceInfo
+  fullName: Steeltoe.Connector.Services.IServiceInfo
+- uid: Steeltoe.Connector.ServiceInfoCreator.ServiceInfos*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.ServiceInfos
+  name: ServiceInfos
+  nameWithType: ServiceInfoCreator.ServiceInfos
+  fullName: Steeltoe.Connector.ServiceInfoCreator.ServiceInfos
+- uid: System.Collections.Generic.IList{Steeltoe.Connector.Services.IServiceInfo}
+  commentId: T:System.Collections.Generic.IList{Steeltoe.Connector.Services.IServiceInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<IServiceInfo>
+  nameWithType: IList<IServiceInfo>
+  fullName: System.Collections.Generic.IList<Steeltoe.Connector.Services.IServiceInfo>
+  nameWithType.vb: IList(Of IServiceInfo)
+  fullName.vb: System.Collections.Generic.IList(Of Steeltoe.Connector.Services.IServiceInfo)
+  name.vb: IList(Of IServiceInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Connector.Services.IServiceInfo
+    name: IServiceInfo
+    nameWithType: IServiceInfo
+    fullName: Steeltoe.Connector.Services.IServiceInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Connector.Services.IServiceInfo
+    name: IServiceInfo
+    nameWithType: IServiceInfo
+    fullName: Steeltoe.Connector.Services.IServiceInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Connector.Services
+  commentId: N:Steeltoe.Connector.Services
+  name: Steeltoe.Connector.Services
+  nameWithType: Steeltoe.Connector.Services
+  fullName: Steeltoe.Connector.Services
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Connector.Services.IServiceInfoFactory
+  commentId: T:Steeltoe.Connector.Services.IServiceInfoFactory
+  parent: Steeltoe.Connector.Services
+  name: IServiceInfoFactory
+  nameWithType: IServiceInfoFactory
+  fullName: Steeltoe.Connector.Services.IServiceInfoFactory
+- uid: Steeltoe.Connector.ServiceInfoCreator.Factories*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.Factories
+  name: Factories
+  nameWithType: ServiceInfoCreator.Factories
+  fullName: Steeltoe.Connector.ServiceInfoCreator.Factories
+- uid: System.Collections.Generic.IList{Steeltoe.Connector.Services.IServiceInfoFactory}
+  commentId: T:System.Collections.Generic.IList{Steeltoe.Connector.Services.IServiceInfoFactory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<IServiceInfoFactory>
+  nameWithType: IList<IServiceInfoFactory>
+  fullName: System.Collections.Generic.IList<Steeltoe.Connector.Services.IServiceInfoFactory>
+  nameWithType.vb: IList(Of IServiceInfoFactory)
+  fullName.vb: System.Collections.Generic.IList(Of Steeltoe.Connector.Services.IServiceInfoFactory)
+  name.vb: IList(Of IServiceInfoFactory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Connector.Services.IServiceInfoFactory
+    name: IServiceInfoFactory
+    nameWithType: IServiceInfoFactory
+    fullName: Steeltoe.Connector.Services.IServiceInfoFactory
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Connector.Services.IServiceInfoFactory
+    name: IServiceInfoFactory
+    nameWithType: IServiceInfoFactory
+    fullName: Steeltoe.Connector.Services.IServiceInfoFactory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Connector.ServiceInfoCreator.Instance*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.Instance
+  name: Instance
+  nameWithType: ServiceInfoCreator.Instance
+  fullName: Steeltoe.Connector.ServiceInfoCreator.Instance
+- uid: Steeltoe.Connector.ServiceInfoCreator
+  commentId: T:Steeltoe.Connector.ServiceInfoCreator
+  parent: Steeltoe.Connector
+  name: ServiceInfoCreator
+  nameWithType: ServiceInfoCreator
+  fullName: Steeltoe.Connector.ServiceInfoCreator
+- uid: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos
+  name: GetServiceInfos
+  nameWithType: ServiceInfoCreator.GetServiceInfos
+  fullName: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfos
+- uid: System.Collections.Generic.IEnumerable{{TServiceInfo}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TServiceInfo>
+  nameWithType: IEnumerable<TServiceInfo>
+  fullName: System.Collections.Generic.IEnumerable<TServiceInfo>
+  nameWithType.vb: IEnumerable(Of TServiceInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TServiceInfo)
+  name.vb: IEnumerable(Of TServiceInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TServiceInfo
+    nameWithType: TServiceInfo
+    fullName: TServiceInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TServiceInfo
+    nameWithType: TServiceInfo
+    fullName: TServiceInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Connector.Services.IServiceInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Connector.Services.IServiceInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IServiceInfo>
+  nameWithType: IEnumerable<IServiceInfo>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Connector.Services.IServiceInfo>
+  nameWithType.vb: IEnumerable(Of IServiceInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Connector.Services.IServiceInfo)
+  name.vb: IEnumerable(Of IServiceInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Connector.Services.IServiceInfo
+    name: IServiceInfo
+    nameWithType: IServiceInfo
+    fullName: Steeltoe.Connector.Services.IServiceInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Connector.Services.IServiceInfo
+    name: IServiceInfo
+    nameWithType: IServiceInfo
+    fullName: Steeltoe.Connector.Services.IServiceInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo
+  name: GetServiceInfo
+  nameWithType: ServiceInfoCreator.GetServiceInfo
+  fullName: Steeltoe.Connector.ServiceInfoCreator.GetServiceInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{TServiceInfo}'
+  commentId: '!:TServiceInfo'
+  definition: TServiceInfo
+  name: TServiceInfo
+  nameWithType: TServiceInfo
+  fullName: TServiceInfo
+- uid: TServiceInfo
+  name: TServiceInfo
+  nameWithType: TServiceInfo
+  fullName: TServiceInfo
+- uid: Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories
+  name: BuildServiceInfoFactories
+  nameWithType: ServiceInfoCreator.BuildServiceInfoFactories
+  fullName: Steeltoe.Connector.ServiceInfoCreator.BuildServiceInfoFactories
+- uid: Steeltoe.Connector.ServiceInfoCreator.FindFactory*
+  commentId: Overload:Steeltoe.Connector.ServiceInfoCreator.FindFactory
+  name: FindFactory
+  nameWithType: ServiceInfoCreator.FindFactory
+  fullName: Steeltoe.Connector.ServiceInfoCreator.FindFactory
+- uid: Service
+  isExternal: true
+  name: Service
+  nameWithType: Service
+  fullName: Service

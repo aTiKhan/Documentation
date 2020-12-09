@@ -1,0 +1,1428 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  commentId: T:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  id: AspNetCoreMvcViewObserver
+  parent: Steeltoe.Management.Tracing.Observer
+  children:
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.#ctor(Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions,Steeltoe.Management.OpenTelemetry.Trace.ITracing,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver})
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: AspNetCoreMvcViewObserver
+  nameWithType: AspNetCoreMvcViewObserver
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AspNetCoreMvcViewObserver
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: 'public class AspNetCoreMvcViewObserver : AspNetCoreTracingObserver, IDiagnosticObserver, IObserver<KeyValuePair<string, object>>'
+    content.vb: >-
+      Public Class AspNetCoreMvcViewObserver
+
+          Inherits AspNetCoreTracingObserver
+
+          Implements IDiagnosticObserver, IObserver(Of KeyValuePair(Of String, Object))
+  inheritance:
+  - System.Object
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  implements:
+  - Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  - System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  inheritedMembers:
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracing
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Propagation
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracer
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Options
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.PathMatcher
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest(Microsoft.AspNetCore.Http.PathString)
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage(System.Exception)
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace(System.Exception)
+  - Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  - Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.#ctor(Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions,Steeltoe.Management.OpenTelemetry.Trace.ITracing,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver})
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.#ctor(Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions,Steeltoe.Management.OpenTelemetry.Trace.ITracing,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver})
+  id: '#ctor(Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions,Steeltoe.Management.OpenTelemetry.Trace.ITracing,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver})'
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  langs:
+  - csharp
+  - vb
+  name: AspNetCoreMvcViewObserver(ITracingOptions, ITracing, ILogger<AspNetCoreMvcViewObserver>)
+  nameWithType: AspNetCoreMvcViewObserver.AspNetCoreMvcViewObserver(ITracingOptions, ITracing, ILogger<AspNetCoreMvcViewObserver>)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.AspNetCoreMvcViewObserver(Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions, Steeltoe.Management.OpenTelemetry.Trace.ITracing, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: public AspNetCoreMvcViewObserver(ITracingOptions options, ITracing tracing, ILogger<AspNetCoreMvcViewObserver> logger = null)
+    parameters:
+    - id: options
+      type: Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions
+    - id: tracing
+      type: Steeltoe.Management.OpenTelemetry.Trace.ITracing
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver}
+    content.vb: Public Sub New(options As ITracingOptions, tracing As ITracing, logger As ILogger(Of AspNetCoreMvcViewObserver) = Nothing)
+  overload: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.#ctor*
+  nameWithType.vb: AspNetCoreMvcViewObserver.AspNetCoreMvcViewObserver(ITracingOptions, ITracing, ILogger(Of AspNetCoreMvcViewObserver))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.AspNetCoreMvcViewObserver(Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions, Steeltoe.Management.OpenTelemetry.Trace.ITracing, Microsoft.Extensions.Logging.ILogger(Of Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver))
+  name.vb: AspNetCoreMvcViewObserver(ITracingOptions, ITracing, ILogger(Of AspNetCoreMvcViewObserver))
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active
+  commentId: P:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active
+  id: Active
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: AspNetCoreMvcViewObserver.Active
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Active
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: protected TelemetrySpan Active { get; }
+    parameters: []
+    return:
+      type: OpenTelemetry.Trace.TelemetrySpan
+    content.vb: Protected ReadOnly Property Active As TelemetrySpan
+  overload: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent(System.String,System.Object)
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent(System.String,System.Object)
+  id: ProcessEvent(System.String,System.Object)
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  langs:
+  - csharp
+  - vb
+  name: ProcessEvent(String, Object)
+  nameWithType: AspNetCoreMvcViewObserver.ProcessEvent(String, Object)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ProcessEvent
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: public override void ProcessEvent(string evnt, object arg)
+    parameters:
+    - id: evnt
+      type: System.String
+    - id: arg
+      type: System.Object
+    content.vb: Public Overrides Sub ProcessEvent(evnt As String, arg As Object)
+  overridden: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+  overload: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: HandleBeforeViewEvent(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  langs:
+  - csharp
+  - vb
+  name: HandleBeforeViewEvent(HttpContext, ViewContext)
+  nameWithType: AspNetCoreMvcViewObserver.HandleBeforeViewEvent(HttpContext, ViewContext)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleBeforeViewEvent
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 66
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: protected virtual void HandleBeforeViewEvent(HttpContext context, ViewContext viewContext)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    - id: viewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    content.vb: Protected Overridable Sub HandleBeforeViewEvent(context As HttpContext, viewContext As ViewContext)
+  overload: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent
+  id: HandleAfterViewEvent
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  langs:
+  - csharp
+  - vb
+  name: HandleAfterViewEvent()
+  nameWithType: AspNetCoreMvcViewObserver.HandleAfterViewEvent()
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent()
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleAfterViewEvent
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 95
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: protected virtual void HandleAfterViewEvent()
+    content.vb: Protected Overridable Sub HandleAfterViewEvent
+  overload: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: ExtractSpanName(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  langs:
+  - csharp
+  - vb
+  name: ExtractSpanName(ViewContext)
+  nameWithType: AspNetCoreMvcViewObserver.ExtractSpanName(ViewContext)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExtractSpanName
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 109
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: protected virtual string ExtractSpanName(ViewContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function ExtractSpanName(context As ViewContext) As String
+  overload: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: ExtractViewPath(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  langs:
+  - csharp
+  - vb
+  name: ExtractViewPath(ViewContext)
+  nameWithType: AspNetCoreMvcViewObserver.ExtractViewPath(ViewContext)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExtractViewPath
+    path: ../Steeltoe/src/Management/src/TracingCore/Observer/AspNetCoreMvcViewObserver.cs
+    startLine: 114
+  assemblies:
+  - Steeltoe.Management.TracingCore
+  namespace: Steeltoe.Management.Tracing.Observer
+  syntax:
+    content: protected string ExtractViewPath(ViewContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    return:
+      type: System.String
+    content.vb: Protected Function ExtractViewPath(context As ViewContext) As String
+  overload: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Management.Tracing.Observer
+  commentId: N:Steeltoe.Management.Tracing.Observer
+  name: Steeltoe.Management.Tracing.Observer
+  nameWithType: Steeltoe.Management.Tracing.Observer
+  fullName: Steeltoe.Management.Tracing.Observer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  commentId: T:Steeltoe.Common.Diagnostics.DiagnosticObserver
+  parent: Steeltoe.Common.Diagnostics
+  name: DiagnosticObserver
+  nameWithType: DiagnosticObserver
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  commentId: T:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  parent: Steeltoe.Management.Tracing.Observer
+  name: AspNetCoreTracingObserver
+  nameWithType: AspNetCoreTracingObserver
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+- uid: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  commentId: T:Steeltoe.Common.Diagnostics.IDiagnosticObserver
+  parent: Steeltoe.Common.Diagnostics
+  name: IDiagnosticObserver
+  nameWithType: IDiagnosticObserver
+  fullName: Steeltoe.Common.Diagnostics.IDiagnosticObserver
+- uid: System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  commentId: T:System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  parent: System
+  definition: System.IObserver`1
+  name: IObserver<KeyValuePair<String, Object>>
+  nameWithType: IObserver<KeyValuePair<String, Object>>
+  fullName: System.IObserver<System.Collections.Generic.KeyValuePair<System.String, System.Object>>
+  nameWithType.vb: IObserver(Of KeyValuePair(Of String, Object))
+  fullName.vb: System.IObserver(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: IObserver(Of KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracing
+  commentId: P:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracing
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  name: Tracing
+  nameWithType: AspNetCoreTracingObserver.Tracing
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracing
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Propagation
+  commentId: P:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Propagation
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  name: Propagation
+  nameWithType: AspNetCoreTracingObserver.Propagation
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Propagation
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracer
+  commentId: P:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracer
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  name: Tracer
+  nameWithType: AspNetCoreTracingObserver.Tracer
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Tracer
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Options
+  commentId: P:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Options
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  name: Options
+  nameWithType: AspNetCoreTracingObserver.Options
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.Options
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.PathMatcher
+  commentId: P:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.PathMatcher
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  name: PathMatcher
+  nameWithType: AspNetCoreTracingObserver.PathMatcher
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.PathMatcher
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest(Microsoft.AspNetCore.Http.PathString)
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest(Microsoft.AspNetCore.Http.PathString)
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  isExternal: true
+  name: ShouldIgnoreRequest(PathString)
+  nameWithType: AspNetCoreTracingObserver.ShouldIgnoreRequest(PathString)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest(Microsoft.AspNetCore.Http.PathString)
+  spec.csharp:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest(Microsoft.AspNetCore.Http.PathString)
+    name: ShouldIgnoreRequest
+    nameWithType: AspNetCoreTracingObserver.ShouldIgnoreRequest
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Http.PathString
+    name: PathString
+    nameWithType: PathString
+    fullName: Microsoft.AspNetCore.Http.PathString
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest(Microsoft.AspNetCore.Http.PathString)
+    name: ShouldIgnoreRequest
+    nameWithType: AspNetCoreTracingObserver.ShouldIgnoreRequest
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.ShouldIgnoreRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Http.PathString
+    name: PathString
+    nameWithType: PathString
+    fullName: Microsoft.AspNetCore.Http.PathString
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage(System.Exception)
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage(System.Exception)
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  isExternal: true
+  name: GetExceptionMessage(Exception)
+  nameWithType: AspNetCoreTracingObserver.GetExceptionMessage(Exception)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage(System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage(System.Exception)
+    name: GetExceptionMessage
+    nameWithType: AspNetCoreTracingObserver.GetExceptionMessage
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage(System.Exception)
+    name: GetExceptionMessage
+    nameWithType: AspNetCoreTracingObserver.GetExceptionMessage
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace(System.Exception)
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace(System.Exception)
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  isExternal: true
+  name: GetExceptionStackTrace(Exception)
+  nameWithType: AspNetCoreTracingObserver.GetExceptionStackTrace(Exception)
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace(System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace(System.Exception)
+    name: GetExceptionStackTrace
+    nameWithType: AspNetCoreTracingObserver.GetExceptionStackTrace
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace(System.Exception)
+    name: GetExceptionStackTrace
+    nameWithType: AspNetCoreTracingObserver.GetExceptionStackTrace
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetExceptionStackTrace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan
+  commentId: M:Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan
+  parent: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver
+  name: GetCurrentSpan()
+  nameWithType: AspNetCoreTracingObserver.GetCurrentSpan()
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan()
+  spec.csharp:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan
+    name: GetCurrentSpan
+    nameWithType: AspNetCoreTracingObserver.GetCurrentSpan
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan
+    name: GetCurrentSpan
+    nameWithType: AspNetCoreTracingObserver.GetCurrentSpan
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreTracingObserver.GetCurrentSpan
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  name: ListenerName
+  nameWithType: DiagnosticObserver.ListenerName
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ListenerName
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  name: ObserverName
+  nameWithType: DiagnosticObserver.ObserverName
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ObserverName
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  name: Logger
+  nameWithType: DiagnosticObserver.Logger
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Logger
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  commentId: P:Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  name: Subscription
+  nameWithType: DiagnosticObserver.Subscription
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscription
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  name: Dispose()
+  nameWithType: DiagnosticObserver.Dispose()
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose()
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+    name: Dispose
+    nameWithType: DiagnosticObserver.Dispose
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+    name: Dispose
+    nameWithType: DiagnosticObserver.Dispose
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  isExternal: true
+  name: Subscribe(DiagnosticListener)
+  nameWithType: DiagnosticObserver.Subscribe(DiagnosticListener)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+    name: Subscribe
+    nameWithType: DiagnosticObserver.Subscribe
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.DiagnosticListener
+    name: DiagnosticListener
+    nameWithType: DiagnosticListener
+    fullName: System.Diagnostics.DiagnosticListener
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe(System.Diagnostics.DiagnosticListener)
+    name: Subscribe
+    nameWithType: DiagnosticObserver.Subscribe
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Diagnostics.DiagnosticListener
+    name: DiagnosticListener
+    nameWithType: DiagnosticListener
+    fullName: System.Diagnostics.DiagnosticListener
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  name: OnCompleted()
+  nameWithType: DiagnosticObserver.OnCompleted()
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted()
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+    name: OnCompleted
+    nameWithType: DiagnosticObserver.OnCompleted
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+    name: OnCompleted
+    nameWithType: DiagnosticObserver.OnCompleted
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnCompleted
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  isExternal: true
+  name: OnError(Exception)
+  nameWithType: DiagnosticObserver.OnError(Exception)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+    name: OnError
+    nameWithType: DiagnosticObserver.OnError
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError(System.Exception)
+    name: OnError
+    nameWithType: DiagnosticObserver.OnError
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  isExternal: true
+  name: OnNext(KeyValuePair<String, Object>)
+  nameWithType: DiagnosticObserver.OnNext(KeyValuePair<String, Object>)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  nameWithType.vb: DiagnosticObserver.OnNext(KeyValuePair(Of String, Object))
+  fullName.vb: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: OnNext(KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: OnNext
+    nameWithType: DiagnosticObserver.OnNext
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: OnNext
+    nameWithType: DiagnosticObserver.OnNext
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.OnNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Diagnostics
+  commentId: N:Steeltoe.Common.Diagnostics
+  name: Steeltoe.Common.Diagnostics
+  nameWithType: Steeltoe.Common.Diagnostics
+  fullName: Steeltoe.Common.Diagnostics
+- uid: System.IObserver`1
+  commentId: T:System.IObserver`1
+  isExternal: true
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: System.IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  fullName.vb: System.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.#ctor*
+  commentId: Overload:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.#ctor
+  name: AspNetCoreMvcViewObserver
+  nameWithType: AspNetCoreMvcViewObserver.AspNetCoreMvcViewObserver
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.AspNetCoreMvcViewObserver
+- uid: Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions
+  commentId: T:Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions
+  parent: Steeltoe.Management.OpenTelemetry.Trace
+  name: ITracingOptions
+  nameWithType: ITracingOptions
+  fullName: Steeltoe.Management.OpenTelemetry.Trace.ITracingOptions
+- uid: Steeltoe.Management.OpenTelemetry.Trace.ITracing
+  commentId: T:Steeltoe.Management.OpenTelemetry.Trace.ITracing
+  parent: Steeltoe.Management.OpenTelemetry.Trace
+  name: ITracing
+  nameWithType: ITracing
+  fullName: Steeltoe.Management.OpenTelemetry.Trace.ITracing
+- uid: Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<AspNetCoreMvcViewObserver>
+  nameWithType: ILogger<AspNetCoreMvcViewObserver>
+  fullName: Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver>
+  nameWithType.vb: ILogger(Of AspNetCoreMvcViewObserver)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver)
+  name.vb: ILogger(Of AspNetCoreMvcViewObserver)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+    name: AspNetCoreMvcViewObserver
+    nameWithType: AspNetCoreMvcViewObserver
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+    name: AspNetCoreMvcViewObserver
+    nameWithType: AspNetCoreMvcViewObserver
+    fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.OpenTelemetry.Trace
+  commentId: N:Steeltoe.Management.OpenTelemetry.Trace
+  name: Steeltoe.Management.OpenTelemetry.Trace
+  nameWithType: Steeltoe.Management.OpenTelemetry.Trace
+  fullName: Steeltoe.Management.OpenTelemetry.Trace
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active*
+  commentId: Overload:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active
+  name: Active
+  nameWithType: AspNetCoreMvcViewObserver.Active
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.Active
+- uid: OpenTelemetry.Trace.TelemetrySpan
+  commentId: T:OpenTelemetry.Trace.TelemetrySpan
+  parent: OpenTelemetry.Trace
+  isExternal: true
+  name: TelemetrySpan
+  nameWithType: TelemetrySpan
+  fullName: OpenTelemetry.Trace.TelemetrySpan
+- uid: OpenTelemetry.Trace
+  commentId: N:OpenTelemetry.Trace
+  isExternal: true
+  name: OpenTelemetry.Trace
+  nameWithType: OpenTelemetry.Trace
+  fullName: OpenTelemetry.Trace
+- uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+  commentId: M:Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+  parent: Steeltoe.Common.Diagnostics.DiagnosticObserver
+  isExternal: true
+  name: ProcessEvent(String, Object)
+  nameWithType: DiagnosticObserver.ProcessEvent(String, Object)
+  fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+    name: ProcessEvent
+    nameWithType: DiagnosticObserver.ProcessEvent
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent(System.String,System.Object)
+    name: ProcessEvent
+    nameWithType: DiagnosticObserver.ProcessEvent
+    fullName: Steeltoe.Common.Diagnostics.DiagnosticObserver.ProcessEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent*
+  commentId: Overload:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent
+  name: ProcessEvent
+  nameWithType: AspNetCoreMvcViewObserver.ProcessEvent
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ProcessEvent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent*
+  commentId: Overload:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent
+  name: HandleBeforeViewEvent
+  nameWithType: AspNetCoreMvcViewObserver.HandleBeforeViewEvent
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleBeforeViewEvent
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+  parent: Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  name: ViewContext
+  nameWithType: ViewContext
+  fullName: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Microsoft.AspNetCore.Mvc.Rendering
+  commentId: N:Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc.Rendering
+  nameWithType: Microsoft.AspNetCore.Mvc.Rendering
+  fullName: Microsoft.AspNetCore.Mvc.Rendering
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent*
+  commentId: Overload:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent
+  name: HandleAfterViewEvent
+  nameWithType: AspNetCoreMvcViewObserver.HandleAfterViewEvent
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.HandleAfterViewEvent
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName*
+  commentId: Overload:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName
+  name: ExtractSpanName
+  nameWithType: AspNetCoreMvcViewObserver.ExtractSpanName
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractSpanName
+- uid: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath*
+  commentId: Overload:Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath
+  name: ExtractViewPath
+  nameWithType: AspNetCoreMvcViewObserver.ExtractViewPath
+  fullName: Steeltoe.Management.Tracing.Observer.AspNetCoreMvcViewObserver.ExtractViewPath

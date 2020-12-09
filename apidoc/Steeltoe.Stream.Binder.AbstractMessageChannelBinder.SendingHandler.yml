@@ -1,0 +1,924 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  commentId: T:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  id: AbstractMessageChannelBinder.SendingHandler
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.IMessageHandler,System.Boolean,System.String[],System.Boolean)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop
+  langs:
+  - csharp
+  - vb
+  name: AbstractMessageChannelBinder.SendingHandler
+  nameWithType: AbstractMessageChannelBinder.SendingHandler
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SendingHandler
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+    startLine: 585
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: 'protected class SendingHandler : AbstractMessageHandler, IMessageHandler, IServiceNameAware, IOrdered, ILifecycle'
+    content.vb: >-
+      Protected Class SendingHandler
+
+          Inherits AbstractMessageHandler
+
+          Implements IMessageHandler, IServiceNameAware, IOrdered, ILifecycle
+  inheritance:
+  - System.Object
+  - Steeltoe.Integration.Handler.AbstractMessageHandler
+  implements:
+  - Steeltoe.Messaging.IMessageHandler
+  - IServiceNameAware
+  - Steeltoe.Common.Order.IOrdered
+  - Steeltoe.Common.Lifecycle.ILifecycle
+  inheritedMembers:
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - protected
+  - class
+  modifiers.vb:
+  - Protected
+  - Class
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.IMessageHandler,System.Boolean,System.String[],System.Boolean)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.IMessageHandler,System.Boolean,System.String[],System.Boolean)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.IMessageHandler,System.Boolean,System.String[],System.Boolean)'
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  langs:
+  - csharp
+  - vb
+  name: SendingHandler(IApplicationContext, IMessageHandler, Boolean, String[], Boolean)
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.SendingHandler(IApplicationContext, IMessageHandler, Boolean, String[], Boolean)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.SendingHandler(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.IMessageHandler, System.Boolean, System.String[], System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+    startLine: 595
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public SendingHandler(IApplicationContext context, IMessageHandler handler, bool embedHeaders, string[] headersToEmbed, bool useNativeEncoding)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+    - id: embedHeaders
+      type: System.Boolean
+    - id: headersToEmbed
+      type: System.String[]
+    - id: useNativeEncoding
+      type: System.Boolean
+    content.vb: Public Sub New(context As IApplicationContext, handler As IMessageHandler, embedHeaders As Boolean, headersToEmbed As String(), useNativeEncoding As Boolean)
+  overload: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.#ctor*
+  nameWithType.vb: AbstractMessageChannelBinder.SendingHandler.SendingHandler(IApplicationContext, IMessageHandler, Boolean, String(), Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.SendingHandler(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.IMessageHandler, System.Boolean, System.String(), System.Boolean)
+  name.vb: SendingHandler(IApplicationContext, IMessageHandler, Boolean, String(), Boolean)
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize
+  id: Initialize
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.Initialize()
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+    startLine: 604
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override void Initialize()
+    content.vb: Public Overrides Sub Initialize
+  overridden: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  overload: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start
+  id: Start
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.Start()
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Start
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+    startLine: 608
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public Task Start()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Start As Task
+  overload: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycle.Start
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop
+  id: Stop
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.Stop()
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Stop
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+    startLine: 618
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public Task Stop()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Stop As Task
+  overload: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning
+  commentId: P:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning
+  id: IsRunning
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.IsRunning
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsRunning
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+    startLine: 628
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRunning As Boolean
+  overload: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  id: HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleMessageInternal(IMessage)
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal(IMessage)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleMessageInternal
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractMessageChannelBinder.cs
+    startLine: 636
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected override void HandleMessageInternal(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Protected Overrides Sub HandleMessageInternal(message As IMessage)
+  overridden: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  overload: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler
+  commentId: T:Steeltoe.Integration.Handler.AbstractMessageHandler
+  parent: Steeltoe.Integration.Handler
+  name: AbstractMessageHandler
+  nameWithType: AbstractMessageHandler
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler
+- uid: Steeltoe.Messaging.IMessageHandler
+  commentId: T:Steeltoe.Messaging.IMessageHandler
+  parent: Steeltoe.Messaging
+  name: IMessageHandler
+  nameWithType: IMessageHandler
+  fullName: Steeltoe.Messaging.IMessageHandler
+- uid: IServiceNameAware
+  isExternal: true
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: IServiceNameAware
+- uid: Steeltoe.Common.Order.IOrdered
+  commentId: T:Steeltoe.Common.Order.IOrdered
+  parent: Steeltoe.Common.Order
+  name: IOrdered
+  nameWithType: IOrdered
+  fullName: Steeltoe.Common.Order.IOrdered
+- uid: Steeltoe.Common.Lifecycle.ILifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycle
+  nameWithType: ILifecycle
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: IntegrationServices
+  nameWithType: AbstractMessageHandler.IntegrationServices
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ApplicationContext
+  nameWithType: AbstractMessageHandler.ApplicationContext
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ComponentType
+  nameWithType: AbstractMessageHandler.ComponentType
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ServiceName
+  nameWithType: AbstractMessageHandler.ServiceName
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ComponentName
+  nameWithType: AbstractMessageHandler.ComponentName
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: Order
+  nameWithType: AbstractMessageHandler.Order
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: HandleMessage(IMessage)
+  nameWithType: AbstractMessageHandler.HandleMessage(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+    name: HandleMessage
+    nameWithType: AbstractMessageHandler.HandleMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+    name: HandleMessage
+    nameWithType: AbstractMessageHandler.HandleMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Integration.Handler
+  commentId: N:Steeltoe.Integration.Handler
+  name: Steeltoe.Integration.Handler
+  nameWithType: Steeltoe.Integration.Handler
+  fullName: Steeltoe.Integration.Handler
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Common.Order
+  commentId: N:Steeltoe.Common.Order
+  name: Steeltoe.Common.Order
+  nameWithType: Steeltoe.Common.Order
+  fullName: Steeltoe.Common.Order
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.#ctor
+  name: SendingHandler
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.SendingHandler
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.SendingHandler
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: Initialize()
+  nameWithType: AbstractMessageHandler.Initialize()
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+    name: Initialize
+    nameWithType: AbstractMessageHandler.Initialize
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+    name: Initialize
+    nameWithType: AbstractMessageHandler.Initialize
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize
+  name: Initialize
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.Initialize
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Initialize
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start
+  name: Start
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.Start
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Start
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Start
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Start()
+  nameWithType: ILifecycle.Start()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop
+  name: Stop
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.Stop
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.Stop
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Stop()
+  nameWithType: ILifecycle.Stop()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning
+  name: IsRunning
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.IsRunning
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.IsRunning
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  commentId: P:Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: IsRunning
+  nameWithType: ILifecycle.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: HandleMessageInternal(IMessage)
+  nameWithType: AbstractMessageHandler.HandleMessageInternal(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+    name: HandleMessageInternal
+    nameWithType: AbstractMessageHandler.HandleMessageInternal
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+    name: HandleMessageInternal
+    nameWithType: AbstractMessageHandler.HandleMessageInternal
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal
+  name: HandleMessageInternal
+  nameWithType: AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.SendingHandler.HandleMessageInternal
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage

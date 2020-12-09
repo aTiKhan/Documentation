@@ -1,0 +1,1480 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.AbstractEndpointOptions
+  commentId: T:Steeltoe.Management.AbstractEndpointOptions
+  id: AbstractEndpointOptions
+  parent: Steeltoe.Management
+  children:
+  - Steeltoe.Management.AbstractEndpointOptions.#ctor
+  - Steeltoe.Management.AbstractEndpointOptions.#ctor(System.String,IConfiguration)
+  - Steeltoe.Management.AbstractEndpointOptions._enabled
+  - Steeltoe.Management.AbstractEndpointOptions._path
+  - Steeltoe.Management.AbstractEndpointOptions._sensitive
+  - Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs
+  - Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled
+  - Steeltoe.Management.AbstractEndpointOptions.Enabled
+  - Steeltoe.Management.AbstractEndpointOptions.ExactMatch
+  - Steeltoe.Management.AbstractEndpointOptions.Global
+  - Steeltoe.Management.AbstractEndpointOptions.Id
+  - Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  - Steeltoe.Management.AbstractEndpointOptions.Path
+  - Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions
+  langs:
+  - csharp
+  - vb
+  name: AbstractEndpointOptions
+  nameWithType: AbstractEndpointOptions
+  fullName: Steeltoe.Management.AbstractEndpointOptions
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractEndpointOptions
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: 'public abstract class AbstractEndpointOptions : IEndpointOptions'
+    content.vb: >-
+      Public MustInherit Class AbstractEndpointOptions
+
+          Implements IEndpointOptions
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpointOptions
+  - Steeltoe.Management.Endpoint.DbMigrations.DbMigrationsEndpointOptions
+  - Steeltoe.Management.Endpoint.Env.EnvEndpointOptions
+  - Steeltoe.Management.Endpoint.Health.HealthEndpointOptions
+  - Steeltoe.Management.Endpoint.HeapDump.HeapDumpEndpointOptions
+  - Steeltoe.Management.Endpoint.Hypermedia.HypermediaEndpointOptions
+  - Steeltoe.Management.Endpoint.Info.InfoEndpointOptions
+  - Steeltoe.Management.Endpoint.Loggers.LoggersEndpointOptions
+  - Steeltoe.Management.Endpoint.Mappings.MappingsEndpointOptions
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpointOptions
+  - Steeltoe.Management.Endpoint.Metrics.PrometheusEndpointOptions
+  - Steeltoe.Management.Endpoint.Refresh.RefreshEndpointOptions
+  - Steeltoe.Management.Endpoint.ThreadDump.ThreadDumpEndpointOptions
+  - Steeltoe.Management.Endpoint.Trace.HttpTraceEndpointOptions
+  - Steeltoe.Management.Endpoint.Trace.TraceEndpointOptions
+  implements:
+  - Steeltoe.Management.IEndpointOptions
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Steeltoe.Management.IEndpointOptions.Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  - Steeltoe.Management.IEndpointOptions.Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  - Steeltoe.Management.IEndpointOptions.Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IManagementOptions)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Management.AbstractEndpointOptions._enabled
+  commentId: F:Steeltoe.Management.AbstractEndpointOptions._enabled
+  id: _enabled
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: _enabled
+  nameWithType: AbstractEndpointOptions._enabled
+  fullName: Steeltoe.Management.AbstractEndpointOptions._enabled
+  type: Field
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _enabled
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: protected bool? _enabled
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Protected _enabled As Boolean?
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Management.AbstractEndpointOptions._sensitive
+  commentId: F:Steeltoe.Management.AbstractEndpointOptions._sensitive
+  id: _sensitive
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: _sensitive
+  nameWithType: AbstractEndpointOptions._sensitive
+  fullName: Steeltoe.Management.AbstractEndpointOptions._sensitive
+  type: Field
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _sensitive
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: protected bool? _sensitive
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Protected _sensitive As Boolean?
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Management.AbstractEndpointOptions._path
+  commentId: F:Steeltoe.Management.AbstractEndpointOptions._path
+  id: _path
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: _path
+  nameWithType: AbstractEndpointOptions._path
+  fullName: Steeltoe.Management.AbstractEndpointOptions._path
+  type: Field
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _path
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: protected string _path
+    return:
+      type: System.String
+    content.vb: Protected _path As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Management.AbstractEndpointOptions.#ctor
+  commentId: M:Steeltoe.Management.AbstractEndpointOptions.#ctor
+  id: '#ctor'
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: AbstractEndpointOptions()
+  nameWithType: AbstractEndpointOptions.AbstractEndpointOptions()
+  fullName: Steeltoe.Management.AbstractEndpointOptions.AbstractEndpointOptions()
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public AbstractEndpointOptions()
+    content.vb: Public Sub New
+  overload: Steeltoe.Management.AbstractEndpointOptions.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Management.AbstractEndpointOptions.#ctor(System.String,IConfiguration)
+  commentId: M:Steeltoe.Management.AbstractEndpointOptions.#ctor(System.String,IConfiguration)
+  id: '#ctor(System.String,IConfiguration)'
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: AbstractEndpointOptions(String, IConfiguration)
+  nameWithType: AbstractEndpointOptions.AbstractEndpointOptions(String, IConfiguration)
+  fullName: Steeltoe.Management.AbstractEndpointOptions.AbstractEndpointOptions(System.String, IConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public AbstractEndpointOptions(string sectionName, IConfiguration config)
+    parameters:
+    - id: sectionName
+      type: System.String
+    - id: config
+      type: IConfiguration
+    content.vb: Public Sub New(sectionName As String, config As IConfiguration)
+  overload: Steeltoe.Management.AbstractEndpointOptions.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Management.AbstractEndpointOptions.Enabled
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.Enabled
+  id: Enabled
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: AbstractEndpointOptions.Enabled
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Enabled
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Enabled
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 45
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public virtual bool? Enabled { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Overridable Property Enabled As Boolean?
+  overload: Steeltoe.Management.AbstractEndpointOptions.Enabled*
+  implements:
+  - Steeltoe.Management.IEndpointOptions.Enabled
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Management.AbstractEndpointOptions.Id
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.Id
+  id: Id
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AbstractEndpointOptions.Id
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Id
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Id
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 58
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public virtual string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Id As String
+  overload: Steeltoe.Management.AbstractEndpointOptions.Id*
+  implements:
+  - Steeltoe.Management.IEndpointOptions.Id
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Management.AbstractEndpointOptions.Path
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.Path
+  id: Path
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: AbstractEndpointOptions.Path
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Path
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Path
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public virtual string Path { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Path As String
+  overload: Steeltoe.Management.AbstractEndpointOptions.Path*
+  implements:
+  - Steeltoe.Management.IEndpointOptions.Path
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions
+  id: RequiredPermissions
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: RequiredPermissions
+  nameWithType: AbstractEndpointOptions.RequiredPermissions
+  fullName: Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RequiredPermissions
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 78
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public Permissions RequiredPermissions { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Management.Permissions
+    content.vb: Public Property RequiredPermissions As Permissions
+  overload: Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions*
+  implements:
+  - Steeltoe.Management.IEndpointOptions.RequiredPermissions
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Management.AbstractEndpointOptions.Global
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.Global
+  id: Global
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: Global
+  nameWithType: AbstractEndpointOptions.Global
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Global
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Global
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 80
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public IManagementOptions Global { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Management.IManagementOptions
+    content.vb: Public Property Global As IManagementOptions
+  overload: Steeltoe.Management.AbstractEndpointOptions.Global*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  commentId: M:Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  id: IsAccessAllowed(Steeltoe.Management.Permissions)
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: IsAccessAllowed(Permissions)
+  nameWithType: AbstractEndpointOptions.IsAccessAllowed(Permissions)
+  fullName: Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsAccessAllowed
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 82
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public virtual bool IsAccessAllowed(Permissions permissions)
+    parameters:
+    - id: permissions
+      type: Steeltoe.Management.Permissions
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function IsAccessAllowed(permissions As Permissions) As Boolean
+  overload: Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed*
+  implements:
+  - Steeltoe.Management.IEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled
+  id: DefaultEnabled
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultEnabled
+  nameWithType: AbstractEndpointOptions.DefaultEnabled
+  fullName: Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultEnabled
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 87
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public virtual bool DefaultEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property DefaultEnabled As Boolean
+  overload: Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs
+  id: AllowedVerbs
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: AllowedVerbs
+  nameWithType: AbstractEndpointOptions.AllowedVerbs
+  fullName: Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AllowedVerbs
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 89
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public IEnumerable<string> AllowedVerbs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Property AllowedVerbs As IEnumerable(Of String)
+  overload: Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs*
+  implements:
+  - Steeltoe.Management.IEndpointOptions.AllowedVerbs
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Management.AbstractEndpointOptions.ExactMatch
+  commentId: P:Steeltoe.Management.AbstractEndpointOptions.ExactMatch
+  id: ExactMatch
+  parent: Steeltoe.Management.AbstractEndpointOptions
+  langs:
+  - csharp
+  - vb
+  name: ExactMatch
+  nameWithType: AbstractEndpointOptions.ExactMatch
+  fullName: Steeltoe.Management.AbstractEndpointOptions.ExactMatch
+  type: Property
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpointOptions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExactMatch
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpointOptions.cs
+    startLine: 91
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public bool ExactMatch { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ExactMatch As Boolean
+  overload: Steeltoe.Management.AbstractEndpointOptions.ExactMatch*
+  implements:
+  - Steeltoe.Management.IEndpointOptions.ExactMatch
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Management
+  commentId: N:Steeltoe.Management
+  name: Steeltoe.Management
+  nameWithType: Steeltoe.Management
+  fullName: Steeltoe.Management
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Management.IEndpointOptions
+  commentId: T:Steeltoe.Management.IEndpointOptions
+  parent: Steeltoe.Management
+  name: IEndpointOptions
+  nameWithType: IEndpointOptions
+  fullName: Steeltoe.Management.IEndpointOptions
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpointOptions.Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  name: IsEnabled(IManagementOptions)
+  nameWithType: EndPointExtensions.IsEnabled(IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpointOptions.Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  name: IsExposed(IManagementOptions)
+  nameWithType: EndPointExtensions.IsExposed(IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpointOptions.Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  name: GetContextPath(IManagementOptions)
+  nameWithType: EndPointExtensions.GetContextPath(IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IManagementOptions)
+    name: GetContextPath
+    nameWithType: EndPointExtensions.GetContextPath
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IManagementOptions)
+    name: GetContextPath
+    nameWithType: EndPointExtensions.GetContextPath
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  name: IsEnabled(IEndpointOptions, IManagementOptions)
+  nameWithType: EndPointExtensions.IsEnabled(IEndpointOptions, IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpointOptions, Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpointOptions
+    name: IEndpointOptions
+    nameWithType: IEndpointOptions
+    fullName: Steeltoe.Management.IEndpointOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpointOptions
+    name: IEndpointOptions
+    nameWithType: IEndpointOptions
+    fullName: Steeltoe.Management.IEndpointOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions
+  commentId: T:Steeltoe.Management.Endpoint.EndPointExtensions
+  parent: Steeltoe.Management.Endpoint
+  name: EndPointExtensions
+  nameWithType: EndPointExtensions
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  name: IsExposed(IEndpointOptions, IManagementOptions)
+  nameWithType: EndPointExtensions.IsExposed(IEndpointOptions, IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpointOptions, Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpointOptions
+    name: IEndpointOptions
+    nameWithType: IEndpointOptions
+    fullName: Steeltoe.Management.IEndpointOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpointOptions
+    name: IEndpointOptions
+    nameWithType: IEndpointOptions
+    fullName: Steeltoe.Management.IEndpointOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+  name: GetContextPath(IEndpointOptions, IManagementOptions)
+  nameWithType: EndPointExtensions.GetContextPath(IEndpointOptions, IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IEndpointOptions, Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+    name: GetContextPath
+    nameWithType: EndPointExtensions.GetContextPath
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpointOptions
+    name: IEndpointOptions
+    nameWithType: IEndpointOptions
+    fullName: Steeltoe.Management.IEndpointOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath(Steeltoe.Management.IEndpointOptions,Steeltoe.Management.IManagementOptions)
+    name: GetContextPath
+    nameWithType: EndPointExtensions.GetContextPath
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.GetContextPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpointOptions
+    name: IEndpointOptions
+    nameWithType: IEndpointOptions
+    fullName: Steeltoe.Management.IEndpointOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint
+  commentId: N:Steeltoe.Management.Endpoint
+  name: Steeltoe.Management.Endpoint
+  nameWithType: Steeltoe.Management.Endpoint
+  fullName: Steeltoe.Management.Endpoint
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Management.AbstractEndpointOptions.#ctor*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.#ctor
+  name: AbstractEndpointOptions
+  nameWithType: AbstractEndpointOptions.AbstractEndpointOptions
+  fullName: Steeltoe.Management.AbstractEndpointOptions.AbstractEndpointOptions
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Steeltoe.Management.AbstractEndpointOptions.Enabled*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.Enabled
+  name: Enabled
+  nameWithType: AbstractEndpointOptions.Enabled
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Enabled
+- uid: Steeltoe.Management.IEndpointOptions.Enabled
+  commentId: P:Steeltoe.Management.IEndpointOptions.Enabled
+  parent: Steeltoe.Management.IEndpointOptions
+  name: Enabled
+  nameWithType: IEndpointOptions.Enabled
+  fullName: Steeltoe.Management.IEndpointOptions.Enabled
+- uid: Steeltoe.Management.AbstractEndpointOptions.Id*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.Id
+  name: Id
+  nameWithType: AbstractEndpointOptions.Id
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Id
+- uid: Steeltoe.Management.IEndpointOptions.Id
+  commentId: P:Steeltoe.Management.IEndpointOptions.Id
+  parent: Steeltoe.Management.IEndpointOptions
+  name: Id
+  nameWithType: IEndpointOptions.Id
+  fullName: Steeltoe.Management.IEndpointOptions.Id
+- uid: Steeltoe.Management.AbstractEndpointOptions.Path*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.Path
+  name: Path
+  nameWithType: AbstractEndpointOptions.Path
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Path
+- uid: Steeltoe.Management.IEndpointOptions.Path
+  commentId: P:Steeltoe.Management.IEndpointOptions.Path
+  parent: Steeltoe.Management.IEndpointOptions
+  name: Path
+  nameWithType: IEndpointOptions.Path
+  fullName: Steeltoe.Management.IEndpointOptions.Path
+- uid: Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions
+  name: RequiredPermissions
+  nameWithType: AbstractEndpointOptions.RequiredPermissions
+  fullName: Steeltoe.Management.AbstractEndpointOptions.RequiredPermissions
+- uid: Steeltoe.Management.IEndpointOptions.RequiredPermissions
+  commentId: P:Steeltoe.Management.IEndpointOptions.RequiredPermissions
+  parent: Steeltoe.Management.IEndpointOptions
+  name: RequiredPermissions
+  nameWithType: IEndpointOptions.RequiredPermissions
+  fullName: Steeltoe.Management.IEndpointOptions.RequiredPermissions
+- uid: Steeltoe.Management.Permissions
+  commentId: T:Steeltoe.Management.Permissions
+  parent: Steeltoe.Management
+  name: Permissions
+  nameWithType: Permissions
+  fullName: Steeltoe.Management.Permissions
+- uid: Steeltoe.Management.AbstractEndpointOptions.Global*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.Global
+  name: Global
+  nameWithType: AbstractEndpointOptions.Global
+  fullName: Steeltoe.Management.AbstractEndpointOptions.Global
+- uid: Steeltoe.Management.IManagementOptions
+  commentId: T:Steeltoe.Management.IManagementOptions
+  parent: Steeltoe.Management
+  name: IManagementOptions
+  nameWithType: IManagementOptions
+  fullName: Steeltoe.Management.IManagementOptions
+- uid: Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed
+  name: IsAccessAllowed
+  nameWithType: AbstractEndpointOptions.IsAccessAllowed
+  fullName: Steeltoe.Management.AbstractEndpointOptions.IsAccessAllowed
+- uid: Steeltoe.Management.IEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  commentId: M:Steeltoe.Management.IEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  parent: Steeltoe.Management.IEndpointOptions
+  name: IsAccessAllowed(Permissions)
+  nameWithType: IEndpointOptions.IsAccessAllowed(Permissions)
+  fullName: Steeltoe.Management.IEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+  spec.csharp:
+  - uid: Steeltoe.Management.IEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+    name: IsAccessAllowed
+    nameWithType: IEndpointOptions.IsAccessAllowed
+    fullName: Steeltoe.Management.IEndpointOptions.IsAccessAllowed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.Permissions
+    name: Permissions
+    nameWithType: Permissions
+    fullName: Steeltoe.Management.Permissions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.IEndpointOptions.IsAccessAllowed(Steeltoe.Management.Permissions)
+    name: IsAccessAllowed
+    nameWithType: IEndpointOptions.IsAccessAllowed
+    fullName: Steeltoe.Management.IEndpointOptions.IsAccessAllowed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.Permissions
+    name: Permissions
+    nameWithType: Permissions
+    fullName: Steeltoe.Management.Permissions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled
+  name: DefaultEnabled
+  nameWithType: AbstractEndpointOptions.DefaultEnabled
+  fullName: Steeltoe.Management.AbstractEndpointOptions.DefaultEnabled
+- uid: Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs
+  name: AllowedVerbs
+  nameWithType: AbstractEndpointOptions.AllowedVerbs
+  fullName: Steeltoe.Management.AbstractEndpointOptions.AllowedVerbs
+- uid: Steeltoe.Management.IEndpointOptions.AllowedVerbs
+  commentId: P:Steeltoe.Management.IEndpointOptions.AllowedVerbs
+  parent: Steeltoe.Management.IEndpointOptions
+  name: AllowedVerbs
+  nameWithType: IEndpointOptions.AllowedVerbs
+  fullName: Steeltoe.Management.IEndpointOptions.AllowedVerbs
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Management.AbstractEndpointOptions.ExactMatch*
+  commentId: Overload:Steeltoe.Management.AbstractEndpointOptions.ExactMatch
+  name: ExactMatch
+  nameWithType: AbstractEndpointOptions.ExactMatch
+  fullName: Steeltoe.Management.AbstractEndpointOptions.ExactMatch
+- uid: Steeltoe.Management.IEndpointOptions.ExactMatch
+  commentId: P:Steeltoe.Management.IEndpointOptions.ExactMatch
+  parent: Steeltoe.Management.IEndpointOptions
+  name: ExactMatch
+  nameWithType: IEndpointOptions.ExactMatch
+  fullName: Steeltoe.Management.IEndpointOptions.ExactMatch

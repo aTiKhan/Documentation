@@ -1,0 +1,2015 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1
+  commentId: T:Steeltoe.Stream.Binder.AbstractBinder`1
+  id: AbstractBinder`1
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.AbstractBinder`1.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext
+  - Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.DoBindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.DoBindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext
+  - Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser
+  - Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  - Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+  - Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName
+  - Steeltoe.Stream.Binder.AbstractBinder`1.TargetType
+  langs:
+  - csharp
+  - vb
+  name: AbstractBinder<T>
+  nameWithType: AbstractBinder<T>
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractBinder
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: 'public abstract class AbstractBinder<T> : IBinder<T>, IBinder, IServiceNameAware'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class AbstractBinder(Of T)
+
+          Implements IBinder(Of T), IBinder, IServiceNameAware
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  implements:
+  - Steeltoe.Stream.Binder.IBinder{{T}}
+  - Steeltoe.Stream.Binder.IBinder
+  - Steeltoe.Common.Services.IServiceNameAware
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: AbstractBinder(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T)
+  name.vb: AbstractBinder(Of T)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext)'
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: AbstractBinder(IApplicationContext)
+  nameWithType: AbstractBinder<T>.AbstractBinder(IApplicationContext)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.AbstractBinder(Steeltoe.Common.Contexts.IApplicationContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected AbstractBinder(IApplicationContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Protected Sub New(context As IApplicationContext)
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.#ctor*
+  nameWithType.vb: AbstractBinder(Of T).AbstractBinder(IApplicationContext)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).AbstractBinder(Steeltoe.Common.Contexts.IApplicationContext)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+  id: ApplyPrefix(System.String,System.String)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: ApplyPrefix(String, String)
+  nameWithType: AbstractBinder<T>.ApplyPrefix(String, String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ApplyPrefix(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ApplyPrefix
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public static string ApplyPrefix(string prefix, string name)
+    parameters:
+    - id: prefix
+      type: System.String
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ApplyPrefix(prefix As String, name As String) As String
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix*
+  nameWithType.vb: AbstractBinder(Of T).ApplyPrefix(String, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ApplyPrefix(System.String, System.String)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+  id: ConstructDLQName(System.String)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: ConstructDLQName(String)
+  nameWithType: AbstractBinder<T>.ConstructDLQName(String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ConstructDLQName(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConstructDLQName
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 33
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public static string ConstructDLQName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ConstructDLQName(name As String) As String
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName*
+  nameWithType.vb: AbstractBinder(Of T).ConstructDLQName(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ConstructDLQName(System.String)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName
+  id: ServiceName
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: ServiceName
+  nameWithType: AbstractBinder<T>.ServiceName
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ServiceName
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceName
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public abstract string ServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride Property ServiceName As String
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName*
+  implements:
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  nameWithType.vb: AbstractBinder(Of T).ServiceName
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ServiceName
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.TargetType
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.TargetType
+  id: TargetType
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: TargetType
+  nameWithType: AbstractBinder<T>.TargetType
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.TargetType
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TargetType
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public abstract Type TargetType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public MustOverride ReadOnly Property TargetType As Type
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.TargetType*
+  implements:
+  - Steeltoe.Stream.Binder.IBinder.TargetType
+  nameWithType.vb: AbstractBinder(Of T).TargetType
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).TargetType
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  id: BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: BindConsumer(String, String, T, IConsumerOptions)
+  nameWithType: AbstractBinder<T>.BindConsumer(String, String, T, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindConsumer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IBinding BindConsumer(string name, string group, T inboundTarget, IConsumerOptions consumerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: group
+      type: System.String
+    - id: inboundTarget
+      type: '{T}'
+    - id: consumerOptions
+      type: Steeltoe.Stream.Config.IConsumerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Public Function BindConsumer(name As String, group As String, inboundTarget As T, consumerOptions As IConsumerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer*
+  implements:
+  - Steeltoe.Stream.Binder.IBinder{{T}}.BindConsumer(System.String,System.String,{T},Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindConsumer(String, String, T, IConsumerOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  id: BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: BindConsumer(String, String, Object, IConsumerOptions)
+  nameWithType: AbstractBinder<T>.BindConsumer(String, String, Object, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindConsumer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 52
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IBinding BindConsumer(string name, string group, object inboundTarget, IConsumerOptions consumerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: group
+      type: System.String
+    - id: inboundTarget
+      type: System.Object
+    - id: consumerOptions
+      type: Steeltoe.Stream.Config.IConsumerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Public Function BindConsumer(name As String, group As String, inboundTarget As Object, consumerOptions As IConsumerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer*
+  implements:
+  - Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindConsumer(String, String, Object, IConsumerOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  id: BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: BindProducer(String, T, IProducerOptions)
+  nameWithType: AbstractBinder<T>.BindProducer(String, T, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindProducer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 57
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IBinding BindProducer(string name, T outboundTarget, IProducerOptions producerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: outboundTarget
+      type: '{T}'
+    - id: producerOptions
+      type: Steeltoe.Stream.Config.IProducerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Public Function BindProducer(name As String, outboundTarget As T, producerOptions As IProducerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer*
+  implements:
+  - Steeltoe.Stream.Binder.IBinder{{T}}.BindProducer(System.String,{T},Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindProducer(String, T, IProducerOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  id: BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: BindProducer(String, Object, IProducerOptions)
+  nameWithType: AbstractBinder<T>.BindProducer(String, Object, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindProducer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 62
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IBinding BindProducer(string name, object outboundTarget, IProducerOptions producerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: outboundTarget
+      type: System.Object
+    - id: producerOptions
+      type: Steeltoe.Stream.Config.IProducerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Public Function BindProducer(name As String, outboundTarget As Object, producerOptions As IProducerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer*
+  implements:
+  - Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindProducer(String, Object, IProducerOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.DoBindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.DoBindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  id: DoBindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: DoBindProducer(String, T, IProducerOptions)
+  nameWithType: AbstractBinder<T>.DoBindProducer(String, T, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.DoBindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoBindProducer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 67
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected abstract IBinding DoBindProducer(string name, T outboundTarget, IProducerOptions producerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: outboundTarget
+      type: '{T}'
+    - id: producerOptions
+      type: Steeltoe.Stream.Config.IProducerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Protected MustOverride Function DoBindProducer(name As String, outboundTarget As T, producerOptions As IProducerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.DoBindProducer*
+  nameWithType.vb: AbstractBinder(Of T).DoBindProducer(String, T, IProducerOptions)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).DoBindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.DoBindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.DoBindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  id: DoBindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: DoBindConsumer(String, String, T, IConsumerOptions)
+  nameWithType: AbstractBinder<T>.DoBindConsumer(String, String, T, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.DoBindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoBindConsumer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 69
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected abstract IBinding DoBindConsumer(string name, string group, T inputTarget, IConsumerOptions consumerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: group
+      type: System.String
+    - id: inputTarget
+      type: '{T}'
+    - id: consumerOptions
+      type: Steeltoe.Stream.Config.IConsumerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Protected MustOverride Function DoBindConsumer(name As String, group As String, inputTarget As T, consumerOptions As IConsumerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.DoBindConsumer*
+  nameWithType.vb: AbstractBinder(Of T).DoBindConsumer(String, String, T, IConsumerOptions)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).DoBindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext
+  id: EvaluationContext
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: EvaluationContext
+  nameWithType: AbstractBinder<T>.EvaluationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.EvaluationContext
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: EvaluationContext
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 71
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual IEvaluationContext EvaluationContext { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Expression.IEvaluationContext
+    content.vb: Protected Overridable Property EvaluationContext As IEvaluationContext
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext*
+  nameWithType.vb: AbstractBinder(Of T).EvaluationContext
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).EvaluationContext
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser
+  id: ExpressionParser
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: ExpressionParser
+  nameWithType: AbstractBinder<T>.ExpressionParser
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ExpressionParser
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExpressionParser
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 89
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual IExpressionParser ExpressionParser { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Expression.IExpressionParser
+    content.vb: Protected Overridable Property ExpressionParser As IExpressionParser
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser*
+  nameWithType.vb: AbstractBinder(Of T).ExpressionParser
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ExpressionParser
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext
+  id: ApplicationContext
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: ApplicationContext
+  nameWithType: AbstractBinder<T>.ApplicationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ApplicationContext
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ApplicationContext
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 107
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual IApplicationContext ApplicationContext { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Protected Overridable ReadOnly Property ApplicationContext As IApplicationContext
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext*
+  nameWithType.vb: AbstractBinder(Of T).ApplicationContext
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ApplicationContext
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+  id: GroupedName(System.String,System.String)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: GroupedName(String, String)
+  nameWithType: AbstractBinder<T>.GroupedName(String, String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GroupedName(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GroupedName
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 112
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual string GroupedName(string name, string group)
+    parameters:
+    - id: name
+      type: System.String
+    - id: group
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function GroupedName(name As String, group As String) As String
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName*
+  nameWithType.vb: AbstractBinder(Of T).GroupedName(String, String)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).GroupedName(System.String, System.String)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  id: BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: BuildRetryTemplate(IConsumerOptions)
+  nameWithType: AbstractBinder<T>.BuildRetryTemplate(IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BuildRetryTemplate
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 118
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected RetryTemplate BuildRetryTemplate(IConsumerOptions options)
+    parameters:
+    - id: options
+      type: Steeltoe.Stream.Config.IConsumerOptions
+    return:
+      type: Steeltoe.Common.Retry.RetryTemplate
+    content.vb: Protected Function BuildRetryTemplate(options As IConsumerOptions) As RetryTemplate
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate*
+  nameWithType.vb: AbstractBinder(Of T).BuildRetryTemplate(IConsumerOptions)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  id: GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  parent: Steeltoe.Stream.Binder.AbstractBinder`1
+  langs:
+  - csharp
+  - vb
+  name: GetRetryableExceptions(List<String>)
+  nameWithType: AbstractBinder<T>.GetRetryableExceptions(List<String>)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GetRetryableExceptions(System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetRetryableExceptions
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractBinder.cs
+    startLine: 123
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected Dictionary<Type, bool> GetRetryableExceptions(List<string> exceptionList)
+    parameters:
+    - id: exceptionList
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: System.Collections.Generic.Dictionary{System.Type,System.Boolean}
+    content.vb: Protected Function GetRetryableExceptions(exceptionList As List(Of String)) As Dictionary(Of Type, Boolean)
+  overload: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions*
+  nameWithType.vb: AbstractBinder(Of T).GetRetryableExceptions(List(Of String))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).GetRetryableExceptions(System.Collections.Generic.List(Of System.String))
+  name.vb: GetRetryableExceptions(List(Of String))
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Binder.IBinder{{T}}
+  commentId: T:Steeltoe.Stream.Binder.IBinder{`0}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.IBinder`1
+  name: IBinder<T>
+  nameWithType: IBinder<T>
+  fullName: Steeltoe.Stream.Binder.IBinder<T>
+  nameWithType.vb: IBinder(Of T)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T)
+  name.vb: IBinder(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IBinder
+  commentId: T:Steeltoe.Stream.Binder.IBinder
+  parent: Steeltoe.Stream.Binder
+  name: IBinder
+  nameWithType: IBinder
+  fullName: Steeltoe.Stream.Binder.IBinder
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Binder.IBinder`1
+  commentId: T:Steeltoe.Stream.Binder.IBinder`1
+  name: IBinder<T>
+  nameWithType: IBinder<T>
+  fullName: Steeltoe.Stream.Binder.IBinder<T>
+  nameWithType.vb: IBinder(Of T)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T)
+  name.vb: IBinder(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.#ctor
+  name: AbstractBinder
+  nameWithType: AbstractBinder<T>.AbstractBinder
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.AbstractBinder
+  nameWithType.vb: AbstractBinder(Of T).AbstractBinder
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).AbstractBinder
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix
+  name: ApplyPrefix
+  nameWithType: AbstractBinder<T>.ApplyPrefix
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ApplyPrefix
+  nameWithType.vb: AbstractBinder(Of T).ApplyPrefix
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ApplyPrefix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName
+  name: ConstructDLQName
+  nameWithType: AbstractBinder<T>.ConstructDLQName
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ConstructDLQName
+  nameWithType.vb: AbstractBinder(Of T).ConstructDLQName
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ConstructDLQName
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName
+  name: ServiceName
+  nameWithType: AbstractBinder<T>.ServiceName
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ServiceName
+  nameWithType.vb: AbstractBinder(Of T).ServiceName
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ServiceName
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.TargetType*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.TargetType
+  name: TargetType
+  nameWithType: AbstractBinder<T>.TargetType
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.TargetType
+  nameWithType.vb: AbstractBinder(Of T).TargetType
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).TargetType
+- uid: Steeltoe.Stream.Binder.IBinder.TargetType
+  commentId: P:Steeltoe.Stream.Binder.IBinder.TargetType
+  parent: Steeltoe.Stream.Binder.IBinder
+  name: TargetType
+  nameWithType: IBinder.TargetType
+  fullName: Steeltoe.Stream.Binder.IBinder.TargetType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer
+  name: BindConsumer
+  nameWithType: AbstractBinder<T>.BindConsumer
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindConsumer
+  nameWithType.vb: AbstractBinder(Of T).BindConsumer
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindConsumer
+- uid: Steeltoe.Stream.Binder.IBinder{{T}}.BindConsumer(System.String,System.String,{T},Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder{`0}.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder{{T}}
+  definition: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  name: BindConsumer(String, String, T, IConsumerOptions)
+  nameWithType: IBinder<T>.BindConsumer(String, String, T, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<T>.BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: IBinder(Of T).BindConsumer(String, String, T, IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T).BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder<T>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder<T>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder(Of T).BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of T).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Stream.Config.IConsumerOptions
+  commentId: T:Steeltoe.Stream.Config.IConsumerOptions
+  parent: Steeltoe.Stream.Config
+  name: IConsumerOptions
+  nameWithType: IConsumerOptions
+  fullName: Steeltoe.Stream.Config.IConsumerOptions
+- uid: Steeltoe.Stream.Binder.IBinding
+  commentId: T:Steeltoe.Stream.Binder.IBinding
+  parent: Steeltoe.Stream.Binder
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Steeltoe.Stream.Binder.IBinding
+- uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  isExternal: true
+  name: BindConsumer(String, String, T, IConsumerOptions)
+  nameWithType: IBinder<T>.BindConsumer(String, String, T, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<T>.BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: IBinder(Of T).BindConsumer(String, String, T, IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T).BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder<T>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder<T>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder(Of T).BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of T).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Stream.Config
+  commentId: N:Steeltoe.Stream.Config
+  name: Steeltoe.Stream.Config
+  nameWithType: Steeltoe.Stream.Config
+  fullName: Steeltoe.Stream.Config
+- uid: Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder
+  isExternal: true
+  name: BindConsumer(String, String, Object, IConsumerOptions)
+  nameWithType: IBinder.BindConsumer(String, String, Object, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder.BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder.BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer
+  name: BindProducer
+  nameWithType: AbstractBinder<T>.BindProducer
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindProducer
+  nameWithType.vb: AbstractBinder(Of T).BindProducer
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindProducer
+- uid: Steeltoe.Stream.Binder.IBinder{{T}}.BindProducer(System.String,{T},Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder{`0}.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder{{T}}
+  definition: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  name: BindProducer(String, T, IProducerOptions)
+  nameWithType: IBinder<T>.BindProducer(String, T, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<T>.BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: IBinder(Of T).BindProducer(String, T, IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T).BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder<T>.BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder<T>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder(Of T).BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of T).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Config.IProducerOptions
+  commentId: T:Steeltoe.Stream.Config.IProducerOptions
+  parent: Steeltoe.Stream.Config
+  name: IProducerOptions
+  nameWithType: IProducerOptions
+  fullName: Steeltoe.Stream.Config.IProducerOptions
+- uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  isExternal: true
+  name: BindProducer(String, T, IProducerOptions)
+  nameWithType: IBinder<T>.BindProducer(String, T, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<T>.BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: IBinder(Of T).BindProducer(String, T, IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T).BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder<T>.BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder<T>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder(Of T).BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of T).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder
+  isExternal: true
+  name: BindProducer(String, Object, IProducerOptions)
+  nameWithType: IBinder.BindProducer(String, Object, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder.BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder.BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder.BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.DoBindProducer*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.DoBindProducer
+  name: DoBindProducer
+  nameWithType: AbstractBinder<T>.DoBindProducer
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.DoBindProducer
+  nameWithType.vb: AbstractBinder(Of T).DoBindProducer
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).DoBindProducer
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.DoBindConsumer*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.DoBindConsumer
+  name: DoBindConsumer
+  nameWithType: AbstractBinder<T>.DoBindConsumer
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.DoBindConsumer
+  nameWithType.vb: AbstractBinder(Of T).DoBindConsumer
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).DoBindConsumer
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext
+  name: EvaluationContext
+  nameWithType: AbstractBinder<T>.EvaluationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.EvaluationContext
+  nameWithType.vb: AbstractBinder(Of T).EvaluationContext
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).EvaluationContext
+- uid: Steeltoe.Common.Expression.IEvaluationContext
+  commentId: T:Steeltoe.Common.Expression.IEvaluationContext
+  parent: Steeltoe.Common.Expression
+  name: IEvaluationContext
+  nameWithType: IEvaluationContext
+  fullName: Steeltoe.Common.Expression.IEvaluationContext
+- uid: Steeltoe.Common.Expression
+  commentId: N:Steeltoe.Common.Expression
+  name: Steeltoe.Common.Expression
+  nameWithType: Steeltoe.Common.Expression
+  fullName: Steeltoe.Common.Expression
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser
+  name: ExpressionParser
+  nameWithType: AbstractBinder<T>.ExpressionParser
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ExpressionParser
+  nameWithType.vb: AbstractBinder(Of T).ExpressionParser
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ExpressionParser
+- uid: Steeltoe.Common.Expression.IExpressionParser
+  commentId: T:Steeltoe.Common.Expression.IExpressionParser
+  parent: Steeltoe.Common.Expression
+  name: IExpressionParser
+  nameWithType: IExpressionParser
+  fullName: Steeltoe.Common.Expression.IExpressionParser
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext
+  name: ApplicationContext
+  nameWithType: AbstractBinder<T>.ApplicationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ApplicationContext
+  nameWithType.vb: AbstractBinder(Of T).ApplicationContext
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ApplicationContext
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName
+  name: GroupedName
+  nameWithType: AbstractBinder<T>.GroupedName
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GroupedName
+  nameWithType.vb: AbstractBinder(Of T).GroupedName
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).GroupedName
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate
+  name: BuildRetryTemplate
+  nameWithType: AbstractBinder<T>.BuildRetryTemplate
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BuildRetryTemplate
+  nameWithType.vb: AbstractBinder(Of T).BuildRetryTemplate
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BuildRetryTemplate
+- uid: Steeltoe.Common.Retry.RetryTemplate
+  commentId: T:Steeltoe.Common.Retry.RetryTemplate
+  parent: Steeltoe.Common.Retry
+  name: RetryTemplate
+  nameWithType: RetryTemplate
+  fullName: Steeltoe.Common.Retry.RetryTemplate
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions
+  name: GetRetryableExceptions
+  nameWithType: AbstractBinder<T>.GetRetryableExceptions
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GetRetryableExceptions
+  nameWithType.vb: AbstractBinder(Of T).GetRetryableExceptions
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).GetRetryableExceptions
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary{System.Type,System.Boolean}
+  commentId: T:System.Collections.Generic.Dictionary{System.Type,System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Type, Boolean>
+  nameWithType: Dictionary<Type, Boolean>
+  fullName: System.Collections.Generic.Dictionary<System.Type, System.Boolean>
+  nameWithType.vb: Dictionary(Of Type, Boolean)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Type, System.Boolean)
+  name.vb: Dictionary(Of Type, Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,386 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.ISmartMessageConverter
+  id: ISmartMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  children:
+  - Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  - Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+  - Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ISmartMessageConverter
+  nameWithType: ISmartMessageConverter
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ISmartMessageConverter
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nAn extended message converter supporting conversion hints\n"
+  example: []
+  syntax:
+    content: 'public interface ISmartMessageConverter : IMessageConverter, IServiceNameAware'
+    content.vb: >-
+      Public Interface ISmartMessageConverter
+
+          Inherits IMessageConverter
+  inheritedMembers:
+  - Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+  - Steeltoe.Messaging.Converter.IMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Converter.IMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  id: FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  parent: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  langs:
+  - csharp
+  - vb
+  name: FromMessage(IMessage, Type, Object)
+  nameWithType: ISmartMessageConverter.FromMessage(IMessage, Type, Object)
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage(Steeltoe.Messaging.IMessage, System.Type, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FromMessage
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nConvert the payload of a message to a typed object.\n"
+  example: []
+  syntax:
+    content: object FromMessage(IMessage message, Type targetClass, object conversionHint)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the input message
+    - id: targetClass
+      type: System.Type
+      description: the target type of the conversion
+    - id: conversionHint
+      type: System.Object
+      description: an extra object passed to the converter which may used for handling the conversion
+    return:
+      type: System.Object
+      description: the result of the conversion
+    content.vb: Function FromMessage(message As IMessage, targetClass As Type, conversionHint As Object) As Object
+  overload: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage*
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+  id: FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+  parent: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  langs:
+  - csharp
+  - vb
+  name: FromMessage<T>(IMessage, Object)
+  nameWithType: ISmartMessageConverter.FromMessage<T>(IMessage, Object)
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage<T>(Steeltoe.Messaging.IMessage, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FromMessage
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nConvert the payload of a message to a typed object.\n"
+  example: []
+  syntax:
+    content: T FromMessage<T>(IMessage message, object conversionHint)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the input message
+    - id: conversionHint
+      type: System.Object
+      description: an extra object passed to the converter which may used for handling the conversion
+    typeParameters:
+    - id: T
+      description: the target type for the conversion
+    return:
+      type: '{T}'
+      description: the result of the conversion
+    content.vb: Function FromMessage(Of T)(message As IMessage, conversionHint As Object) As T
+  overload: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage*
+  nameWithType.vb: ISmartMessageConverter.FromMessage(Of T)(IMessage, Object)
+  fullName.vb: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage(Of T)(Steeltoe.Messaging.IMessage, System.Object)
+  name.vb: FromMessage(Of T)(IMessage, Object)
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  id: ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  parent: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  langs:
+  - csharp
+  - vb
+  name: ToMessage(Object, IMessageHeaders, Object)
+  nameWithType: ISmartMessageConverter.ToMessage(Object, IMessageHeaders, Object)
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage(System.Object, Steeltoe.Messaging.IMessageHeaders, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToMessage
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/ISmartMessageConverter.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nCreate a message whose payload is the result of converting the given payload object\nto serialized form.\n"
+  example: []
+  syntax:
+    content: IMessage ToMessage(object payload, IMessageHeaders headers, object conversionHint)
+    parameters:
+    - id: payload
+      type: System.Object
+      description: the object to convert
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+      description: optional headers for the message
+    - id: conversionHint
+      type: System.Object
+      description: an extra object passed to the converter which may used for handling the conversion
+    return:
+      type: Steeltoe.Messaging.IMessage
+      description: the new messagee or null if converter does not support the payload type
+    content.vb: Function ToMessage(payload As Object, headers As IMessageHeaders, conversionHint As Object) As IMessage
+  overload: Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage*
+references:
+- uid: Steeltoe.Messaging.Converter
+  commentId: N:Steeltoe.Messaging.Converter
+  name: Steeltoe.Messaging.Converter
+  nameWithType: Steeltoe.Messaging.Converter
+  fullName: Steeltoe.Messaging.Converter
+- uid: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+  parent: Steeltoe.Messaging.Converter.IMessageConverter
+  isExternal: true
+  name: FromMessage(IMessage, Type)
+  nameWithType: IMessageConverter.FromMessage(IMessage, Type)
+  fullName: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Steeltoe.Messaging.IMessage, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+    name: FromMessage
+    nameWithType: IMessageConverter.FromMessage
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+    name: FromMessage
+    nameWithType: IMessageConverter.FromMessage
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Converter.IMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Converter.IMessageConverter
+  name: FromMessage<T>(IMessage)
+  nameWithType: IMessageConverter.FromMessage<T>(IMessage)
+  fullName: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage<T>(Steeltoe.Messaging.IMessage)
+  nameWithType.vb: IMessageConverter.FromMessage(Of T)(IMessage)
+  fullName.vb: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Of T)(Steeltoe.Messaging.IMessage)
+  name.vb: FromMessage(Of T)(IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+    name: FromMessage<T>
+    nameWithType: IMessageConverter.FromMessage<T>
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+    name: FromMessage(Of T)
+    nameWithType: IMessageConverter.FromMessage(Of T)
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter.FromMessage(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.IMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.IMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.IMessageConverter
+  isExternal: true
+  name: ToMessage(Object, IMessageHeaders)
+  nameWithType: IMessageConverter.ToMessage(Object, IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.IMessageConverter.ToMessage(System.Object, Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: ToMessage
+    nameWithType: IMessageConverter.ToMessage
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter.ToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: ToMessage
+    nameWithType: IMessageConverter.ToMessage
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter.ToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.IMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.IMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: IMessageConverter
+  nameWithType: IMessageConverter
+  fullName: Steeltoe.Messaging.Converter.IMessageConverter
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage*
+  commentId: Overload:Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage
+  name: FromMessage
+  nameWithType: ISmartMessageConverter.FromMessage
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter.FromMessage
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage*
+  commentId: Overload:Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage
+  name: ToMessage
+  nameWithType: ISmartMessageConverter.ToMessage
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter.ToMessage
+- uid: Steeltoe.Messaging.IMessageHeaders
+  commentId: T:Steeltoe.Messaging.IMessageHeaders
+  parent: Steeltoe.Messaging
+  name: IMessageHeaders
+  nameWithType: IMessageHeaders
+  fullName: Steeltoe.Messaging.IMessageHeaders

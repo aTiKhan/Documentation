@@ -1,0 +1,219 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Extensions.Configuration.IServicesInfo
+  commentId: T:Steeltoe.Extensions.Configuration.IServicesInfo
+  id: IServicesInfo
+  parent: Steeltoe.Extensions.Configuration
+  children:
+  - Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType(System.String)
+  - Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList
+  langs:
+  - csharp
+  - vb
+  name: IServicesInfo
+  nameWithType: IServicesInfo
+  fullName: Steeltoe.Extensions.Configuration.IServicesInfo
+  type: Interface
+  source:
+    remote:
+      path: src/Configuration/src/Abstractions/IServicesInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IServicesInfo
+    path: ../Steeltoe/src/Configuration/src/Abstractions/IServicesInfo.cs
+    startLine: 8
+  assemblies:
+  - Steeltoe.Extensions.Configuration.Abstractions
+  namespace: Steeltoe.Extensions.Configuration
+  syntax:
+    content: public interface IServicesInfo
+    content.vb: Public Interface IServicesInfo
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList
+  commentId: M:Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList
+  id: GetServicesList
+  parent: Steeltoe.Extensions.Configuration.IServicesInfo
+  langs:
+  - csharp
+  - vb
+  name: GetServicesList()
+  nameWithType: IServicesInfo.GetServicesList()
+  fullName: Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList()
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/Abstractions/IServicesInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetServicesList
+    path: ../Steeltoe/src/Configuration/src/Abstractions/IServicesInfo.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Extensions.Configuration.Abstractions
+  namespace: Steeltoe.Extensions.Configuration
+  summary: "\nRetrieves a list of all service instances for all service types\n"
+  example: []
+  syntax:
+    content: IEnumerable<Service> GetServicesList()
+    return:
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Extensions.Configuration.Service}
+      description: A complete list of service instances known to the application
+    content.vb: Function GetServicesList As IEnumerable(Of Service)
+  overload: Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList*
+- uid: Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType(System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType(System.String)
+  id: GetInstancesOfType(System.String)
+  parent: Steeltoe.Extensions.Configuration.IServicesInfo
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesOfType(String)
+  nameWithType: IServicesInfo.GetInstancesOfType(String)
+  fullName: Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/Abstractions/IServicesInfo.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstancesOfType
+    path: ../Steeltoe/src/Configuration/src/Abstractions/IServicesInfo.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Extensions.Configuration.Abstractions
+  namespace: Steeltoe.Extensions.Configuration
+  summary: "\nRetrieves a list of all service instances of a given service type\n"
+  remarks: 'Sample values include: p-mysql, azure-mysql-5-7, p-configserver, p.configserver'
+  example: []
+  syntax:
+    content: IEnumerable<Service> GetInstancesOfType(string serviceType)
+    parameters:
+    - id: serviceType
+      type: System.String
+      description: String value that identifies the service type. May be platform/broker/version dependent
+    return:
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Extensions.Configuration.Service}
+      description: A list of service instances configured under the given type
+    content.vb: Function GetInstancesOfType(serviceType As String) As IEnumerable(Of Service)
+  overload: Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType*
+references:
+- uid: Steeltoe.Extensions.Configuration
+  commentId: N:Steeltoe.Extensions.Configuration
+  name: Steeltoe.Extensions.Configuration
+  nameWithType: Steeltoe.Extensions.Configuration
+  fullName: Steeltoe.Extensions.Configuration
+- uid: Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList*
+  commentId: Overload:Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList
+  name: GetServicesList
+  nameWithType: IServicesInfo.GetServicesList
+  fullName: Steeltoe.Extensions.Configuration.IServicesInfo.GetServicesList
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Extensions.Configuration.Service}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Extensions.Configuration.Service}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Service>
+  nameWithType: IEnumerable<Service>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Extensions.Configuration.Service>
+  nameWithType.vb: IEnumerable(Of Service)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Extensions.Configuration.Service)
+  name.vb: IEnumerable(Of Service)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Extensions.Configuration.Service
+    name: Service
+    nameWithType: Service
+    fullName: Steeltoe.Extensions.Configuration.Service
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Extensions.Configuration.Service
+    name: Service
+    nameWithType: Service
+    fullName: Steeltoe.Extensions.Configuration.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType*
+  commentId: Overload:Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType
+  name: GetInstancesOfType
+  nameWithType: IServicesInfo.GetInstancesOfType
+  fullName: Steeltoe.Extensions.Configuration.IServicesInfo.GetInstancesOfType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,430 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.IPollableChannel
+  commentId: T:Steeltoe.Messaging.IPollableChannel
+  id: IPollableChannel
+  parent: Steeltoe.Messaging
+  children:
+  - Steeltoe.Messaging.IPollableChannel.Receive
+  - Steeltoe.Messaging.IPollableChannel.Receive(System.Int32)
+  - Steeltoe.Messaging.IPollableChannel.ReceiveAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IPollableChannel
+  nameWithType: IPollableChannel
+  fullName: Steeltoe.Messaging.IPollableChannel
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/IPollableChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IPollableChannel
+    path: ../Steeltoe/src/Messaging/src/Abstractions/IPollableChannel.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging
+  summary: "\nA MessageChannel from which messages may be actively received through polling\n"
+  example: []
+  syntax:
+    content: 'public interface IPollableChannel : IMessageChannel, IServiceNameAware'
+    content.vb: >-
+      Public Interface IPollableChannel
+
+          Inherits IMessageChannel
+  inheritedMembers:
+  - Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.IPollableChannel.ReceiveAsync(System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.IPollableChannel.ReceiveAsync(System.Threading.CancellationToken)
+  id: ReceiveAsync(System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.IPollableChannel
+  langs:
+  - csharp
+  - vb
+  name: ReceiveAsync(CancellationToken)
+  nameWithType: IPollableChannel.ReceiveAsync(CancellationToken)
+  fullName: Steeltoe.Messaging.IPollableChannel.ReceiveAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/IPollableChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReceiveAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/IPollableChannel.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging
+  summary: "\nReceive a message from this channel\n"
+  example: []
+  syntax:
+    content: ValueTask<IMessage> ReceiveAsync(CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.ValueTask{Steeltoe.Messaging.IMessage}
+      description: a task to signal completion
+    content.vb: Function ReceiveAsync(cancellationToken As CancellationToken = Nothing) As ValueTask(Of IMessage)
+  overload: Steeltoe.Messaging.IPollableChannel.ReceiveAsync*
+- uid: Steeltoe.Messaging.IPollableChannel.Receive
+  commentId: M:Steeltoe.Messaging.IPollableChannel.Receive
+  id: Receive
+  parent: Steeltoe.Messaging.IPollableChannel
+  langs:
+  - csharp
+  - vb
+  name: Receive()
+  nameWithType: IPollableChannel.Receive()
+  fullName: Steeltoe.Messaging.IPollableChannel.Receive()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/IPollableChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Receive
+    path: ../Steeltoe/src/Messaging/src/Abstractions/IPollableChannel.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging
+  summary: "\nReceive a message from this channel, blocking forever if necessary.\n"
+  example: []
+  syntax:
+    content: IMessage Receive()
+    return:
+      type: Steeltoe.Messaging.IMessage
+      description: the message
+    content.vb: Function Receive As IMessage
+  overload: Steeltoe.Messaging.IPollableChannel.Receive*
+- uid: Steeltoe.Messaging.IPollableChannel.Receive(System.Int32)
+  commentId: M:Steeltoe.Messaging.IPollableChannel.Receive(System.Int32)
+  id: Receive(System.Int32)
+  parent: Steeltoe.Messaging.IPollableChannel
+  langs:
+  - csharp
+  - vb
+  name: Receive(Int32)
+  nameWithType: IPollableChannel.Receive(Int32)
+  fullName: Steeltoe.Messaging.IPollableChannel.Receive(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/IPollableChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Receive
+    path: ../Steeltoe/src/Messaging/src/Abstractions/IPollableChannel.cs
+    startLine: 33
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging
+  summary: "\nReceive a message from this channel, blocking until either a message is available\nor the specified timeout period elapses.\n"
+  example: []
+  syntax:
+    content: IMessage Receive(int timeout)
+    parameters:
+    - id: timeout
+      type: System.Int32
+      description: the timeout value in milliseconds
+    return:
+      type: Steeltoe.Messaging.IMessage
+      description: the message or null
+    content.vb: Function Receive(timeout As Integer) As IMessage
+  overload: Steeltoe.Messaging.IPollableChannel.Receive*
+references:
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.IMessageChannel
+  isExternal: true
+  name: SendAsync(IMessage, CancellationToken)
+  nameWithType: IMessageChannel.SendAsync(IMessage, CancellationToken)
+  fullName: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    nameWithType: IMessageChannel.SendAsync
+    fullName: Steeltoe.Messaging.IMessageChannel.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    nameWithType: IMessageChannel.SendAsync
+    fullName: Steeltoe.Messaging.IMessageChannel.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.IMessageChannel
+  name: Send(IMessage)
+  nameWithType: IMessageChannel.Send(IMessage)
+  fullName: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  commentId: M:Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  parent: Steeltoe.Messaging.IMessageChannel
+  isExternal: true
+  name: Send(IMessage, Int32)
+  nameWithType: IMessageChannel.Send(IMessage, Int32)
+  fullName: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage, System.Int32)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: Steeltoe.Messaging.IPollableChannel.ReceiveAsync*
+  commentId: Overload:Steeltoe.Messaging.IPollableChannel.ReceiveAsync
+  name: ReceiveAsync
+  nameWithType: IPollableChannel.ReceiveAsync
+  fullName: Steeltoe.Messaging.IPollableChannel.ReceiveAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.ValueTask{Steeltoe.Messaging.IMessage}
+  commentId: T:System.Threading.Tasks.ValueTask{Steeltoe.Messaging.IMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  name: ValueTask<IMessage>
+  nameWithType: ValueTask<IMessage>
+  fullName: System.Threading.Tasks.ValueTask<Steeltoe.Messaging.IMessage>
+  nameWithType.vb: ValueTask(Of IMessage)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Steeltoe.Messaging.IMessage)
+  name.vb: ValueTask(Of IMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Messaging.IPollableChannel.Receive*
+  commentId: Overload:Steeltoe.Messaging.IPollableChannel.Receive
+  name: Receive
+  nameWithType: IPollableChannel.Receive
+  fullName: Steeltoe.Messaging.IPollableChannel.Receive
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,721 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+  commentId: T:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+  id: TokenExchanger
+  parent: Steeltoe.Security.Authentication.CloudFoundry
+  children:
+  - Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.#ctor(Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions,System.Net.Http.HttpClient,ILogger)
+  - Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity(System.String)
+  - Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken(System.String,System.String,System.Threading.CancellationToken)
+  - Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials(System.String)
+  langs:
+  - csharp
+  - vb
+  name: TokenExchanger
+  nameWithType: TokenExchanger
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+  type: Class
+  source:
+    remote:
+      path: src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TokenExchanger
+    path: ../Steeltoe/src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Security.Authentication.CloudFoundryBase
+  namespace: Steeltoe.Security.Authentication.CloudFoundry
+  syntax:
+    content: public class TokenExchanger
+    content.vb: Public Class TokenExchanger
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.#ctor(Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions,System.Net.Http.HttpClient,ILogger)
+  commentId: M:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.#ctor(Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions,System.Net.Http.HttpClient,ILogger)
+  id: '#ctor(Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions,System.Net.Http.HttpClient,ILogger)'
+  parent: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+  langs:
+  - csharp
+  - vb
+  name: TokenExchanger(AuthServerOptions, HttpClient, ILogger)
+  nameWithType: TokenExchanger.TokenExchanger(AuthServerOptions, HttpClient, ILogger)
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.TokenExchanger(Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions, System.Net.Http.HttpClient, ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Security.Authentication.CloudFoundryBase
+  namespace: Steeltoe.Security.Authentication.CloudFoundry
+  syntax:
+    content: public TokenExchanger(AuthServerOptions options, HttpClient httpclient = null, ILogger logger = null)
+    parameters:
+    - id: options
+      type: Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions
+    - id: httpclient
+      type: System.Net.Http.HttpClient
+    - id: logger
+      type: ILogger
+    content.vb: Public Sub New(options As AuthServerOptions, httpclient As HttpClient = Nothing, logger As ILogger = Nothing)
+  overload: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken(System.String,System.String,System.Threading.CancellationToken)
+  id: ExchangeCodeForToken(System.String,System.String,System.Threading.CancellationToken)
+  parent: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+  langs:
+  - csharp
+  - vb
+  name: ExchangeCodeForToken(String, String, CancellationToken)
+  nameWithType: TokenExchanger.ExchangeCodeForToken(String, String, CancellationToken)
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExchangeCodeForToken
+    path: ../Steeltoe/src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Security.Authentication.CloudFoundryBase
+  namespace: Steeltoe.Security.Authentication.CloudFoundry
+  summary: "\nPerform the HTTP call to exchange an authorization code for a token\n"
+  example: []
+  syntax:
+    content: public Task<HttpResponseMessage> ExchangeCodeForToken(string code, string targetUrl, CancellationToken cancellationToken)
+    parameters:
+    - id: code
+      type: System.String
+      description: The auth code to exchange
+    - id: targetUrl
+      type: System.String
+      description: The full address of the token endpoint
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Your CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: The response from the remote server
+    content.vb: Public Function ExchangeCodeForToken(code As String, targetUrl As String, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity(System.String)
+  commentId: M:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity(System.String)
+  id: ExchangeAuthCodeForClaimsIdentity(System.String)
+  parent: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+  langs:
+  - csharp
+  - vb
+  name: ExchangeAuthCodeForClaimsIdentity(String)
+  nameWithType: TokenExchanger.ExchangeAuthCodeForClaimsIdentity(String)
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExchangeAuthCodeForClaimsIdentity
+    path: ../Steeltoe/src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+    startLine: 65
+  assemblies:
+  - Steeltoe.Security.Authentication.CloudFoundryBase
+  namespace: Steeltoe.Security.Authentication.CloudFoundry
+  summary: "\nPasses an authorization code to OAuth server, maps server&apos;s <xref href=\"Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse\" data-throw-if-not-resolved=\"false\"></xref> mapped to <xref href=\"System.Security.Claims.ClaimsIdentity\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public Task<ClaimsIdentity> ExchangeAuthCodeForClaimsIdentity(string code)
+    parameters:
+    - id: code
+      type: System.String
+      description: Auth code received after user logs in at remote server
+    return:
+      type: System.Threading.Tasks.Task{System.Security.Claims.ClaimsIdentity}
+      description: The user&apos;s ClaimsIdentity
+    content.vb: Public Function ExchangeAuthCodeForClaimsIdentity(code As String) As Task(Of ClaimsIdentity)
+  overload: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials(System.String)
+  commentId: M:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials(System.String)
+  id: GetAccessTokenWithClientCredentials(System.String)
+  parent: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger
+  langs:
+  - csharp
+  - vb
+  name: GetAccessTokenWithClientCredentials(String)
+  nameWithType: TokenExchanger.GetAccessTokenWithClientCredentials(String)
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetAccessTokenWithClientCredentials
+    path: ../Steeltoe/src/Security/src/Authentication.CloudFoundryBase/TokenExchanger.cs
+    startLine: 97
+  assemblies:
+  - Steeltoe.Security.Authentication.CloudFoundryBase
+  namespace: Steeltoe.Security.Authentication.CloudFoundry
+  summary: "\nGet an access token using client_credentials grant\n"
+  example: []
+  syntax:
+    content: public Task<HttpResponseMessage> GetAccessTokenWithClientCredentials(string targetUrl)
+    parameters:
+    - id: targetUrl
+      type: System.String
+      description: full address of the token endpoint at the auth server
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: HttpResponse from the auth server
+    content.vb: Public Function GetAccessTokenWithClientCredentials(targetUrl As String) As Task(Of HttpResponseMessage)
+  overload: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Security.Authentication.CloudFoundry
+  commentId: N:Steeltoe.Security.Authentication.CloudFoundry
+  name: Steeltoe.Security.Authentication.CloudFoundry
+  nameWithType: Steeltoe.Security.Authentication.CloudFoundry
+  fullName: Steeltoe.Security.Authentication.CloudFoundry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.#ctor*
+  commentId: Overload:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.#ctor
+  name: TokenExchanger
+  nameWithType: TokenExchanger.TokenExchanger
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.TokenExchanger
+- uid: Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions
+  commentId: T:Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions
+  parent: Steeltoe.Security.Authentication.CloudFoundry
+  name: AuthServerOptions
+  nameWithType: AuthServerOptions
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.AuthServerOptions
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken*
+  commentId: Overload:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken
+  name: ExchangeCodeForToken
+  nameWithType: TokenExchanger.ExchangeCodeForToken
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeCodeForToken
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse
+  commentId: T:Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse
+  name: OpenIdTokenResponse
+  nameWithType: OpenIdTokenResponse
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.OpenIdTokenResponse
+- uid: System.Security.Claims.ClaimsIdentity
+  commentId: T:System.Security.Claims.ClaimsIdentity
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsIdentity
+  nameWithType: ClaimsIdentity
+  fullName: System.Security.Claims.ClaimsIdentity
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity*
+  commentId: Overload:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity
+  name: ExchangeAuthCodeForClaimsIdentity
+  nameWithType: TokenExchanger.ExchangeAuthCodeForClaimsIdentity
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.ExchangeAuthCodeForClaimsIdentity
+- uid: System.Threading.Tasks.Task{System.Security.Claims.ClaimsIdentity}
+  commentId: T:System.Threading.Tasks.Task{System.Security.Claims.ClaimsIdentity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ClaimsIdentity>
+  nameWithType: Task<ClaimsIdentity>
+  fullName: System.Threading.Tasks.Task<System.Security.Claims.ClaimsIdentity>
+  nameWithType.vb: Task(Of ClaimsIdentity)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Security.Claims.ClaimsIdentity)
+  name.vb: Task(Of ClaimsIdentity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    nameWithType: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    nameWithType: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials*
+  commentId: Overload:Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials
+  name: GetAccessTokenWithClientCredentials
+  nameWithType: TokenExchanger.GetAccessTokenWithClientCredentials
+  fullName: Steeltoe.Security.Authentication.CloudFoundry.TokenExchanger.GetAccessTokenWithClientCredentials

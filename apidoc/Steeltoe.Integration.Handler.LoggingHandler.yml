@@ -1,0 +1,864 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Handler.LoggingHandler
+  commentId: T:Steeltoe.Integration.Handler.LoggingHandler
+  id: LoggingHandler
+  parent: Steeltoe.Integration.Handler
+  children:
+  - Steeltoe.Integration.Handler.LoggingHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Integration.Handler.LoggingHandler.ComponentType
+  - Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Handler.LoggingHandler.Initialize
+  - Steeltoe.Integration.Handler.LoggingHandler.Level
+  - Steeltoe.Integration.Handler.LoggingHandler.MessageLogger
+  langs:
+  - csharp
+  - vb
+  name: LoggingHandler
+  nameWithType: LoggingHandler
+  fullName: Steeltoe.Integration.Handler.LoggingHandler
+  type: Class
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LoggingHandler
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: 'public class LoggingHandler : AbstractMessageHandler, IMessageHandler, IServiceNameAware, IOrdered'
+    content.vb: >-
+      Public Class LoggingHandler
+
+          Inherits AbstractMessageHandler
+
+          Implements IMessageHandler, IServiceNameAware, IOrdered
+  inheritance:
+  - System.Object
+  - Steeltoe.Integration.Handler.AbstractMessageHandler
+  implements:
+  - Steeltoe.Messaging.IMessageHandler
+  - IServiceNameAware
+  - Steeltoe.Common.Order.IOrdered
+  inheritedMembers:
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  - Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Integration.Handler.LoggingHandler.Level
+  commentId: P:Steeltoe.Integration.Handler.LoggingHandler.Level
+  id: Level
+  parent: Steeltoe.Integration.Handler.LoggingHandler
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: LoggingHandler.Level
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.Level
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Level
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: public LogLevel Level { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+    content.vb: Public ReadOnly Property Level As LogLevel
+  overload: Steeltoe.Integration.Handler.LoggingHandler.Level*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Integration.Handler.LoggingHandler.ComponentType
+  commentId: P:Steeltoe.Integration.Handler.LoggingHandler.ComponentType
+  id: ComponentType
+  parent: Steeltoe.Integration.Handler.LoggingHandler
+  langs:
+  - csharp
+  - vb
+  name: ComponentType
+  nameWithType: LoggingHandler.ComponentType
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.ComponentType
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ComponentType
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: public override string ComponentType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property ComponentType As String
+  overridden: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  overload: Steeltoe.Integration.Handler.LoggingHandler.ComponentType*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Steeltoe.Integration.Handler.LoggingHandler.MessageLogger
+  commentId: P:Steeltoe.Integration.Handler.LoggingHandler.MessageLogger
+  id: MessageLogger
+  parent: Steeltoe.Integration.Handler.LoggingHandler
+  langs:
+  - csharp
+  - vb
+  name: MessageLogger
+  nameWithType: LoggingHandler.MessageLogger
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.MessageLogger
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MessageLogger
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: public ILogger MessageLogger { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public ReadOnly Property MessageLogger As ILogger
+  overload: Steeltoe.Integration.Handler.LoggingHandler.MessageLogger*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Integration.Handler.LoggingHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Integration.Handler.LoggingHandler.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Integration.Handler.LoggingHandler
+  langs:
+  - csharp
+  - vb
+  name: LoggingHandler(IApplicationContext, LogLevel, ILogger)
+  nameWithType: LoggingHandler.LoggingHandler(IApplicationContext, LogLevel, ILogger)
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.LoggingHandler(Steeltoe.Common.Contexts.IApplicationContext, Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: public LoggingHandler(IApplicationContext context, LogLevel level, ILogger logger)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: level
+      type: Microsoft.Extensions.Logging.LogLevel
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(context As IApplicationContext, level As LogLevel, logger As ILogger)
+  overload: Steeltoe.Integration.Handler.LoggingHandler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Handler.LoggingHandler.Initialize
+  commentId: M:Steeltoe.Integration.Handler.LoggingHandler.Initialize
+  id: Initialize
+  parent: Steeltoe.Integration.Handler.LoggingHandler
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: LoggingHandler.Initialize()
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: public override void Initialize()
+    content.vb: Public Overrides Sub Initialize
+  overridden: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  overload: Steeltoe.Integration.Handler.LoggingHandler.Initialize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  id: HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.LoggingHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleMessageInternal(IMessage)
+  nameWithType: LoggingHandler.HandleMessageInternal(IMessage)
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleMessageInternal
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: protected override void HandleMessageInternal(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Protected Overrides Sub HandleMessageInternal(message As IMessage)
+  overridden: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  overload: Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage(Steeltoe.Messaging.IMessage)
+  id: CreateLogMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.LoggingHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateLogMessage(IMessage)
+  nameWithType: LoggingHandler.CreateLogMessage(IMessage)
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateLogMessage
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Handler/LoggingHandler.cs
+    startLine: 84
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Handler
+  syntax:
+    content: protected virtual string CreateLogMessage(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function CreateLogMessage(message As IMessage) As String
+  overload: Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Steeltoe.Integration.Handler
+  commentId: N:Steeltoe.Integration.Handler
+  name: Steeltoe.Integration.Handler
+  nameWithType: Steeltoe.Integration.Handler
+  fullName: Steeltoe.Integration.Handler
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler
+  commentId: T:Steeltoe.Integration.Handler.AbstractMessageHandler
+  parent: Steeltoe.Integration.Handler
+  name: AbstractMessageHandler
+  nameWithType: AbstractMessageHandler
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler
+- uid: Steeltoe.Messaging.IMessageHandler
+  commentId: T:Steeltoe.Messaging.IMessageHandler
+  parent: Steeltoe.Messaging
+  name: IMessageHandler
+  nameWithType: IMessageHandler
+  fullName: Steeltoe.Messaging.IMessageHandler
+- uid: IServiceNameAware
+  isExternal: true
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: IServiceNameAware
+- uid: Steeltoe.Common.Order.IOrdered
+  commentId: T:Steeltoe.Common.Order.IOrdered
+  parent: Steeltoe.Common.Order
+  name: IOrdered
+  nameWithType: IOrdered
+  fullName: Steeltoe.Common.Order.IOrdered
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: IntegrationServices
+  nameWithType: AbstractMessageHandler.IntegrationServices
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.IntegrationServices
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ApplicationContext
+  nameWithType: AbstractMessageHandler.ApplicationContext
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ApplicationContext
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ServiceName
+  nameWithType: AbstractMessageHandler.ServiceName
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ServiceName
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ComponentName
+  nameWithType: AbstractMessageHandler.ComponentName
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentName
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: Order
+  nameWithType: AbstractMessageHandler.Order
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Order
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: HandleMessage(IMessage)
+  nameWithType: AbstractMessageHandler.HandleMessage(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+    name: HandleMessage
+    nameWithType: AbstractMessageHandler.HandleMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage(Steeltoe.Messaging.IMessage)
+    name: HandleMessage
+    nameWithType: AbstractMessageHandler.HandleMessage
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Common.Order
+  commentId: N:Steeltoe.Common.Order
+  name: Steeltoe.Common.Order
+  nameWithType: Steeltoe.Common.Order
+  fullName: Steeltoe.Common.Order
+- uid: Steeltoe.Integration.Handler.LoggingHandler.Level*
+  commentId: Overload:Steeltoe.Integration.Handler.LoggingHandler.Level
+  name: Level
+  nameWithType: LoggingHandler.Level
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.Level
+- uid: Microsoft.Extensions.Logging.LogLevel
+  commentId: T:Microsoft.Extensions.Logging.LogLevel
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  commentId: P:Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: ComponentType
+  nameWithType: AbstractMessageHandler.ComponentType
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.ComponentType
+- uid: Steeltoe.Integration.Handler.LoggingHandler.ComponentType*
+  commentId: Overload:Steeltoe.Integration.Handler.LoggingHandler.ComponentType
+  name: ComponentType
+  nameWithType: LoggingHandler.ComponentType
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.ComponentType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Integration.Handler.LoggingHandler.MessageLogger*
+  commentId: Overload:Steeltoe.Integration.Handler.LoggingHandler.MessageLogger
+  name: MessageLogger
+  nameWithType: LoggingHandler.MessageLogger
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.MessageLogger
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Steeltoe.Integration.Handler.LoggingHandler.#ctor*
+  commentId: Overload:Steeltoe.Integration.Handler.LoggingHandler.#ctor
+  name: LoggingHandler
+  nameWithType: LoggingHandler.LoggingHandler
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.LoggingHandler
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: Initialize()
+  nameWithType: AbstractMessageHandler.Initialize()
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+    name: Initialize
+    nameWithType: AbstractMessageHandler.Initialize
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+    name: Initialize
+    nameWithType: AbstractMessageHandler.Initialize
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.LoggingHandler.Initialize*
+  commentId: Overload:Steeltoe.Integration.Handler.LoggingHandler.Initialize
+  name: Initialize
+  nameWithType: LoggingHandler.Initialize
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.Initialize
+- uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.AbstractMessageHandler
+  name: HandleMessageInternal(IMessage)
+  nameWithType: AbstractMessageHandler.HandleMessageInternal(IMessage)
+  fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+    name: HandleMessageInternal
+    nameWithType: AbstractMessageHandler.HandleMessageInternal
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal(Steeltoe.Messaging.IMessage)
+    name: HandleMessageInternal
+    nameWithType: AbstractMessageHandler.HandleMessageInternal
+    fullName: Steeltoe.Integration.Handler.AbstractMessageHandler.HandleMessageInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal*
+  commentId: Overload:Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal
+  name: HandleMessageInternal
+  nameWithType: LoggingHandler.HandleMessageInternal
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.HandleMessageInternal
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage*
+  commentId: Overload:Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage
+  name: CreateLogMessage
+  nameWithType: LoggingHandler.CreateLogMessage
+  fullName: Steeltoe.Integration.Handler.LoggingHandler.CreateLogMessage

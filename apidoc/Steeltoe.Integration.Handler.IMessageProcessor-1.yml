@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Handler.IMessageProcessor`1
+  commentId: T:Steeltoe.Integration.Handler.IMessageProcessor`1
+  id: IMessageProcessor`1
+  parent: Steeltoe.Integration.Handler
+  children:
+  - Steeltoe.Integration.Handler.IMessageProcessor`1.ProcessMessage(Steeltoe.Messaging.IMessage)
+  langs:
+  - csharp
+  - vb
+  name: IMessageProcessor<T>
+  nameWithType: IMessageProcessor<T>
+  fullName: Steeltoe.Integration.Handler.IMessageProcessor<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Handler/IMessageProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageProcessor
+    path: ../Steeltoe/src/Integration/src/Abstractions/Handler/IMessageProcessor.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Handler
+  summary: "\nThis defines the lowest-level strategy of processing a Message and returning\nsome Object(or null). Implementations will be focused on generic concerns,\nsuch as invoking a method, running a script, or evaluating an expression.\n"
+  example: []
+  syntax:
+    content: 'public interface IMessageProcessor<out T> : IMessageProcessor'
+    typeParameters:
+    - id: T
+      description: the type of the processing result
+    content.vb: >-
+      Public Interface IMessageProcessor(Of Out T)
+
+          Inherits IMessageProcessor
+  nameWithType.vb: IMessageProcessor(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Steeltoe.Integration.Handler.IMessageProcessor(Of T)
+  name.vb: IMessageProcessor(Of T)
+- uid: Steeltoe.Integration.Handler.IMessageProcessor`1.ProcessMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Handler.IMessageProcessor`1.ProcessMessage(Steeltoe.Messaging.IMessage)
+  id: ProcessMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Handler.IMessageProcessor`1
+  langs:
+  - csharp
+  - vb
+  name: ProcessMessage(IMessage)
+  nameWithType: IMessageProcessor<T>.ProcessMessage(IMessage)
+  fullName: Steeltoe.Integration.Handler.IMessageProcessor<T>.ProcessMessage(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Handler/IMessageProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ProcessMessage
+    path: ../Steeltoe/src/Integration/src/Abstractions/Handler/IMessageProcessor.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Handler
+  summary: "\nProcess a message and return a value or null\n"
+  example: []
+  syntax:
+    content: T ProcessMessage(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: message to process
+    return:
+      type: '{T}'
+      description: result after processing
+    content.vb: Function ProcessMessage(message As IMessage) As T
+  overload: Steeltoe.Integration.Handler.IMessageProcessor`1.ProcessMessage*
+  nameWithType.vb: IMessageProcessor(Of T).ProcessMessage(IMessage)
+  fullName.vb: Steeltoe.Integration.Handler.IMessageProcessor(Of T).ProcessMessage(Steeltoe.Messaging.IMessage)
+references:
+- uid: Steeltoe.Integration.Handler
+  commentId: N:Steeltoe.Integration.Handler
+  name: Steeltoe.Integration.Handler
+  nameWithType: Steeltoe.Integration.Handler
+  fullName: Steeltoe.Integration.Handler
+- uid: Steeltoe.Integration.Handler.IMessageProcessor`1.ProcessMessage*
+  commentId: Overload:Steeltoe.Integration.Handler.IMessageProcessor`1.ProcessMessage
+  name: ProcessMessage
+  nameWithType: IMessageProcessor<T>.ProcessMessage
+  fullName: Steeltoe.Integration.Handler.IMessageProcessor<T>.ProcessMessage
+  nameWithType.vb: IMessageProcessor(Of T).ProcessMessage
+  fullName.vb: Steeltoe.Integration.Handler.IMessageProcessor(Of T).ProcessMessage
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

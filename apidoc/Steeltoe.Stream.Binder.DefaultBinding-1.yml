@@ -1,0 +1,1403 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1
+  commentId: T:Steeltoe.Stream.Binder.DefaultBinding`1
+  id: DefaultBinding`1
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.DefaultBinding`1.#ctor(System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)
+  - Steeltoe.Stream.Binder.DefaultBinding`1.#ctor(System.String,System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)
+  - Steeltoe.Stream.Binder.DefaultBinding`1._lifecycle
+  - Steeltoe.Stream.Binder.DefaultBinding`1._target
+  - Steeltoe.Stream.Binder.DefaultBinding`1.AfterUnbind
+  - Steeltoe.Stream.Binder.DefaultBinding`1.BindingName
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Endpoint
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Group
+  - Steeltoe.Stream.Binder.DefaultBinding`1.IsPausable
+  - Steeltoe.Stream.Binder.DefaultBinding`1.IsRunning
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Name
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Pause
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Resume
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Start
+  - Steeltoe.Stream.Binder.DefaultBinding`1.State
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Stop
+  - Steeltoe.Stream.Binder.DefaultBinding`1.ToString
+  - Steeltoe.Stream.Binder.DefaultBinding`1.Unbind
+  langs:
+  - csharp
+  - vb
+  name: DefaultBinding<T>
+  nameWithType: DefaultBinding<T>
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultBinding
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: 'public class DefaultBinding<T> : AbstractBinding, IBinding, IPausable, ILifecycle'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class DefaultBinding(Of T)
+
+          Inherits AbstractBinding
+
+          Implements IBinding, IPausable, ILifecycle
+  inheritance:
+  - System.Object
+  - Steeltoe.Stream.Binder.AbstractBinding
+  derivedClasses:
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DefaultConsumerMessageChannelBinding
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DefaultPollableChannelBinding
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DefaultProducingMessageChannelBinding
+  implements:
+  - Steeltoe.Stream.Binder.IBinding
+  - Steeltoe.Stream.Binder.IPausable
+  - Steeltoe.Common.Lifecycle.ILifecycle
+  inheritedMembers:
+  - Steeltoe.Stream.Binder.AbstractBinding.ExtendedInfo
+  - Steeltoe.Stream.Binder.AbstractBinding.IsInput
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: DefaultBinding(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T)
+  name.vb: DefaultBinding(Of T)
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1._target
+  commentId: F:Steeltoe.Stream.Binder.DefaultBinding`1._target
+  id: _target
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: _target
+  nameWithType: DefaultBinding<T>._target
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>._target
+  type: Field
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _target
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected readonly T _target
+    return:
+      type: '{T}'
+    content.vb: Protected ReadOnly _target As T
+  nameWithType.vb: DefaultBinding(Of T)._target
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T)._target
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1._lifecycle
+  commentId: F:Steeltoe.Stream.Binder.DefaultBinding`1._lifecycle
+  id: _lifecycle
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: _lifecycle
+  nameWithType: DefaultBinding<T>._lifecycle
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>._lifecycle
+  type: Field
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _lifecycle
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected readonly ILifecycle _lifecycle
+    return:
+      type: Steeltoe.Common.Lifecycle.ILifecycle
+    content.vb: Protected ReadOnly _lifecycle As ILifecycle
+  nameWithType.vb: DefaultBinding(Of T)._lifecycle
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T)._lifecycle
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.#ctor(System.String,System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.#ctor(System.String,System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)
+  id: '#ctor(System.String,System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)'
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: DefaultBinding(String, String, T, ILifecycle)
+  nameWithType: DefaultBinding<T>.DefaultBinding(String, String, T, ILifecycle)
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.DefaultBinding(System.String, System.String, T, Steeltoe.Common.Lifecycle.ILifecycle)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public DefaultBinding(string name, string group, T target, ILifecycle lifecycle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: group
+      type: System.String
+    - id: target
+      type: '{T}'
+    - id: lifecycle
+      type: Steeltoe.Common.Lifecycle.ILifecycle
+    content.vb: Public Sub New(name As String, group As String, target As T, lifecycle As ILifecycle)
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.#ctor*
+  nameWithType.vb: DefaultBinding(Of T).DefaultBinding(String, String, T, ILifecycle)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).DefaultBinding(System.String, System.String, T, Steeltoe.Common.Lifecycle.ILifecycle)
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.#ctor(System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.#ctor(System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)
+  id: '#ctor(System.String,`0,Steeltoe.Common.Lifecycle.ILifecycle)'
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: DefaultBinding(String, T, ILifecycle)
+  nameWithType: DefaultBinding<T>.DefaultBinding(String, T, ILifecycle)
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.DefaultBinding(System.String, T, Steeltoe.Common.Lifecycle.ILifecycle)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public DefaultBinding(string name, T target, ILifecycle lifecycle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: target
+      type: '{T}'
+    - id: lifecycle
+      type: Steeltoe.Common.Lifecycle.ILifecycle
+    content.vb: Public Sub New(name As String, target As T, lifecycle As ILifecycle)
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.#ctor*
+  nameWithType.vb: DefaultBinding(Of T).DefaultBinding(String, T, ILifecycle)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).DefaultBinding(System.String, T, Steeltoe.Common.Lifecycle.ILifecycle)
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Name
+  commentId: P:Steeltoe.Stream.Binder.DefaultBinding`1.Name
+  id: Name
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: DefaultBinding<T>.Name
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Name
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Name
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Name As String
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.Name
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Name*
+  nameWithType.vb: DefaultBinding(Of T).Name
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Name
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Group
+  commentId: P:Steeltoe.Stream.Binder.DefaultBinding`1.Group
+  id: Group
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Group
+  nameWithType: DefaultBinding<T>.Group
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Group
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Group
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public virtual string Group { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property Group As String
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Group*
+  nameWithType.vb: DefaultBinding(Of T).Group
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Group
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.BindingName
+  commentId: P:Steeltoe.Stream.Binder.DefaultBinding`1.BindingName
+  id: BindingName
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: BindingName
+  nameWithType: DefaultBinding<T>.BindingName
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.BindingName
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindingName
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override string BindingName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property BindingName As String
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.BindingName
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.BindingName*
+  nameWithType.vb: DefaultBinding(Of T).BindingName
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).BindingName
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.State
+  commentId: P:Steeltoe.Stream.Binder.DefaultBinding`1.State
+  id: State
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: DefaultBinding<T>.State
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.State
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: State
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 44
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public virtual string State { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property State As String
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.State*
+  nameWithType.vb: DefaultBinding(Of T).State
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).State
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.IsRunning
+  commentId: P:Steeltoe.Stream.Binder.DefaultBinding`1.IsRunning
+  id: IsRunning
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: DefaultBinding<T>.IsRunning
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.IsRunning
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsRunning
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 65
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property IsRunning As Boolean
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.IsRunning
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.IsRunning*
+  nameWithType.vb: DefaultBinding(Of T).IsRunning
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).IsRunning
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.IsPausable
+  commentId: P:Steeltoe.Stream.Binder.DefaultBinding`1.IsPausable
+  id: IsPausable
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: IsPausable
+  nameWithType: DefaultBinding<T>.IsPausable
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.IsPausable
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsPausable
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 70
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public virtual bool IsPausable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsPausable As Boolean
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.IsPausable*
+  nameWithType.vb: DefaultBinding(Of T).IsPausable
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).IsPausable
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Start
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.Start
+  id: Start
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: DefaultBinding<T>.Start()
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Start()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Start
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 75
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override Task Start()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function Start As Task
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.Start
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Start*
+  nameWithType.vb: DefaultBinding(Of T).Start()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Start()
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Stop
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.Stop
+  id: Stop
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: DefaultBinding<T>.Stop()
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Stop
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 85
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override Task Stop()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function Stop As Task
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.Stop
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Stop*
+  nameWithType.vb: DefaultBinding(Of T).Stop()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Stop()
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Pause
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.Pause
+  id: Pause
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: DefaultBinding<T>.Pause()
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Pause()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Pause
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 95
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override Task Pause()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function Pause As Task
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.Pause
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Pause*
+  nameWithType.vb: DefaultBinding(Of T).Pause()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Pause()
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Resume
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.Resume
+  id: Resume
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: DefaultBinding<T>.Resume()
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Resume()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Resume
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 108
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override Task Resume()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function Resume As Task
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.Resume
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Resume*
+  nameWithType.vb: DefaultBinding(Of T).Resume()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Resume()
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Unbind
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.Unbind
+  id: Unbind
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Unbind()
+  nameWithType: DefaultBinding<T>.Unbind()
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Unbind()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Unbind
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 121
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override Task Unbind()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function Unbind As Task
+  overridden: Steeltoe.Stream.Binder.AbstractBinding.Unbind
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Unbind*
+  nameWithType.vb: DefaultBinding(Of T).Unbind()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Unbind()
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Endpoint
+  commentId: P:Steeltoe.Stream.Binder.DefaultBinding`1.Endpoint
+  id: Endpoint
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: Endpoint
+  nameWithType: DefaultBinding<T>.Endpoint
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Endpoint
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Endpoint
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 127
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual ILifecycle Endpoint { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Lifecycle.ILifecycle
+    content.vb: Protected Overridable ReadOnly Property Endpoint As ILifecycle
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.Endpoint*
+  nameWithType.vb: DefaultBinding(Of T).Endpoint
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Endpoint
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.ToString
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.ToString
+  id: ToString
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DefaultBinding<T>.ToString()
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToString
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 132
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.ToString*
+  nameWithType.vb: DefaultBinding(Of T).ToString()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).ToString()
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.AfterUnbind
+  commentId: M:Steeltoe.Stream.Binder.DefaultBinding`1.AfterUnbind
+  id: AfterUnbind
+  parent: Steeltoe.Stream.Binder.DefaultBinding`1
+  langs:
+  - csharp
+  - vb
+  name: AfterUnbind()
+  nameWithType: DefaultBinding<T>.AfterUnbind()
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.AfterUnbind()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AfterUnbind
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultBinding.cs
+    startLine: 139
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual void AfterUnbind()
+    content.vb: Protected Overridable Sub AfterUnbind
+  overload: Steeltoe.Stream.Binder.DefaultBinding`1.AfterUnbind*
+  nameWithType.vb: DefaultBinding(Of T).AfterUnbind()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).AfterUnbind()
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Binder.AbstractBinding
+  commentId: T:Steeltoe.Stream.Binder.AbstractBinding
+  parent: Steeltoe.Stream.Binder
+  name: AbstractBinding
+  nameWithType: AbstractBinding
+  fullName: Steeltoe.Stream.Binder.AbstractBinding
+- uid: Steeltoe.Stream.Binder.IBinding
+  commentId: T:Steeltoe.Stream.Binder.IBinding
+  parent: Steeltoe.Stream.Binder
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Steeltoe.Stream.Binder.IBinding
+- uid: Steeltoe.Stream.Binder.IPausable
+  commentId: T:Steeltoe.Stream.Binder.IPausable
+  parent: Steeltoe.Stream.Binder
+  name: IPausable
+  nameWithType: IPausable
+  fullName: Steeltoe.Stream.Binder.IPausable
+- uid: Steeltoe.Common.Lifecycle.ILifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycle
+  nameWithType: ILifecycle
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle
+- uid: Steeltoe.Stream.Binder.AbstractBinding.ExtendedInfo
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinding.ExtendedInfo
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: ExtendedInfo
+  nameWithType: AbstractBinding.ExtendedInfo
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.ExtendedInfo
+- uid: Steeltoe.Stream.Binder.AbstractBinding.IsInput
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinding.IsInput
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: IsInput
+  nameWithType: AbstractBinding.IsInput
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.IsInput
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.#ctor
+  name: DefaultBinding
+  nameWithType: DefaultBinding<T>.DefaultBinding
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.DefaultBinding
+  nameWithType.vb: DefaultBinding(Of T).DefaultBinding
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).DefaultBinding
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Stream.Binder.AbstractBinding.Name
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinding.Name
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: Name
+  nameWithType: AbstractBinding.Name
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.Name
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Name*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Name
+  name: Name
+  nameWithType: DefaultBinding<T>.Name
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Name
+  nameWithType.vb: DefaultBinding(Of T).Name
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Name
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Group*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Group
+  name: Group
+  nameWithType: DefaultBinding<T>.Group
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Group
+  nameWithType.vb: DefaultBinding(Of T).Group
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Group
+- uid: Steeltoe.Stream.Binder.AbstractBinding.BindingName
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinding.BindingName
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: BindingName
+  nameWithType: AbstractBinding.BindingName
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.BindingName
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.BindingName*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.BindingName
+  name: BindingName
+  nameWithType: DefaultBinding<T>.BindingName
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.BindingName
+  nameWithType.vb: DefaultBinding(Of T).BindingName
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).BindingName
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.State*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.State
+  name: State
+  nameWithType: DefaultBinding<T>.State
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.State
+  nameWithType.vb: DefaultBinding(Of T).State
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).State
+- uid: Steeltoe.Stream.Binder.AbstractBinding.IsRunning
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinding.IsRunning
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: IsRunning
+  nameWithType: AbstractBinding.IsRunning
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.IsRunning
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.IsRunning*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.IsRunning
+  name: IsRunning
+  nameWithType: DefaultBinding<T>.IsRunning
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.IsRunning
+  nameWithType.vb: DefaultBinding(Of T).IsRunning
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.IsPausable*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.IsPausable
+  name: IsPausable
+  nameWithType: DefaultBinding<T>.IsPausable
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.IsPausable
+  nameWithType.vb: DefaultBinding(Of T).IsPausable
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).IsPausable
+- uid: Steeltoe.Stream.Binder.AbstractBinding.Start
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinding.Start
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: Start()
+  nameWithType: AbstractBinding.Start()
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.Start()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Start
+    name: Start
+    nameWithType: AbstractBinding.Start
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Start
+    name: Start
+    nameWithType: AbstractBinding.Start
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Start*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Start
+  name: Start
+  nameWithType: DefaultBinding<T>.Start
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Start
+  nameWithType.vb: DefaultBinding(Of T).Start
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Start
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Stream.Binder.AbstractBinding.Stop
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinding.Stop
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: Stop()
+  nameWithType: AbstractBinding.Stop()
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Stop
+    name: Stop
+    nameWithType: AbstractBinding.Stop
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Stop
+    name: Stop
+    nameWithType: AbstractBinding.Stop
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Stop*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Stop
+  name: Stop
+  nameWithType: DefaultBinding<T>.Stop
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Stop
+  nameWithType.vb: DefaultBinding(Of T).Stop
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Stop
+- uid: Steeltoe.Stream.Binder.AbstractBinding.Pause
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinding.Pause
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: Pause()
+  nameWithType: AbstractBinding.Pause()
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.Pause()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Pause
+    name: Pause
+    nameWithType: AbstractBinding.Pause
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Pause
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Pause
+    name: Pause
+    nameWithType: AbstractBinding.Pause
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Pause
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Pause*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Pause
+  name: Pause
+  nameWithType: DefaultBinding<T>.Pause
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Pause
+  nameWithType.vb: DefaultBinding(Of T).Pause
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Pause
+- uid: Steeltoe.Stream.Binder.AbstractBinding.Resume
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinding.Resume
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: Resume()
+  nameWithType: AbstractBinding.Resume()
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.Resume()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Resume
+    name: Resume
+    nameWithType: AbstractBinding.Resume
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Resume
+    name: Resume
+    nameWithType: AbstractBinding.Resume
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Resume*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Resume
+  name: Resume
+  nameWithType: DefaultBinding<T>.Resume
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Resume
+  nameWithType.vb: DefaultBinding(Of T).Resume
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Resume
+- uid: Steeltoe.Stream.Binder.AbstractBinding.Unbind
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinding.Unbind
+  parent: Steeltoe.Stream.Binder.AbstractBinding
+  name: Unbind()
+  nameWithType: AbstractBinding.Unbind()
+  fullName: Steeltoe.Stream.Binder.AbstractBinding.Unbind()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Unbind
+    name: Unbind
+    nameWithType: AbstractBinding.Unbind
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Unbind
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinding.Unbind
+    name: Unbind
+    nameWithType: AbstractBinding.Unbind
+    fullName: Steeltoe.Stream.Binder.AbstractBinding.Unbind
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Unbind*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Unbind
+  name: Unbind
+  nameWithType: DefaultBinding<T>.Unbind
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Unbind
+  nameWithType.vb: DefaultBinding(Of T).Unbind
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Unbind
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.Endpoint*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.Endpoint
+  name: Endpoint
+  nameWithType: DefaultBinding<T>.Endpoint
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.Endpoint
+  nameWithType.vb: DefaultBinding(Of T).Endpoint
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).Endpoint
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.ToString*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.ToString
+  name: ToString
+  nameWithType: DefaultBinding<T>.ToString
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.ToString
+  nameWithType.vb: DefaultBinding(Of T).ToString
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).ToString
+- uid: Steeltoe.Stream.Binder.DefaultBinding`1.AfterUnbind*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultBinding`1.AfterUnbind
+  name: AfterUnbind
+  nameWithType: DefaultBinding<T>.AfterUnbind
+  fullName: Steeltoe.Stream.Binder.DefaultBinding<T>.AfterUnbind
+  nameWithType.vb: DefaultBinding(Of T).AfterUnbind
+  fullName.vb: Steeltoe.Stream.Binder.DefaultBinding(Of T).AfterUnbind

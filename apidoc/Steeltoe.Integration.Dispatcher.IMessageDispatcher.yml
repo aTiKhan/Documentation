@@ -1,0 +1,431 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  commentId: T:Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  id: IMessageDispatcher
+  parent: Steeltoe.Integration.Dispatcher
+  children:
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler(Steeltoe.Messaging.IMessageHandler)
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator
+  - Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler(Steeltoe.Messaging.IMessageHandler)
+  langs:
+  - csharp
+  - vb
+  name: IMessageDispatcher
+  nameWithType: IMessageDispatcher
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  type: Interface
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageDispatcher
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nStrategy interface for dispatching messages to handlers.\n"
+  example: []
+  syntax:
+    content: public interface IMessageDispatcher
+    content.vb: Public Interface IMessageDispatcher
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount
+  commentId: P:Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount
+  id: HandlerCount
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: HandlerCount
+  nameWithType: IMessageDispatcher.HandlerCount
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandlerCount
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nGets the current handler count\n"
+  example: []
+  syntax:
+    content: int HandlerCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property HandlerCount As Integer
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers
+  commentId: P:Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers
+  id: MaxSubscribers
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: MaxSubscribers
+  nameWithType: IMessageDispatcher.MaxSubscribers
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MaxSubscribers
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nGets or sets the maximum number of subscribers this dispatcher supports\n"
+  example: []
+  syntax:
+    content: int MaxSubscribers { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MaxSubscribers As Integer
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy
+  commentId: P:Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy
+  id: LoadBalancingStrategy
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: LoadBalancingStrategy
+  nameWithType: IMessageDispatcher.LoadBalancingStrategy
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LoadBalancingStrategy
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nGets or sets the load balancing strategy in use by the dispatcher\n"
+  example: []
+  syntax:
+    content: ILoadBalancingStrategy LoadBalancingStrategy { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+    content.vb: Property LoadBalancingStrategy As ILoadBalancingStrategy
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover
+  commentId: P:Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover
+  id: Failover
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Failover
+  nameWithType: IMessageDispatcher.Failover
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Failover
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nGets or sets a value indicating whether this dispatcher should failover upon a dispatching error\n"
+  example: []
+  syntax:
+    content: bool Failover { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Failover As Boolean
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator
+  commentId: P:Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator
+  id: MessageHandlingDecorator
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: MessageHandlingDecorator
+  nameWithType: IMessageDispatcher.MessageHandlingDecorator
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MessageHandlingDecorator
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nGets or sets the message handling decorator that should be applied to the message for processing\n"
+  example: []
+  syntax:
+    content: IMessageHandlingDecorator MessageHandlingDecorator { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator
+    content.vb: Property MessageHandlingDecorator As IMessageHandlingDecorator
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler(Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler(Steeltoe.Messaging.IMessageHandler)
+  id: AddHandler(Steeltoe.Messaging.IMessageHandler)
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: AddHandler(IMessageHandler)
+  nameWithType: IMessageDispatcher.AddHandler(IMessageHandler)
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler(Steeltoe.Messaging.IMessageHandler)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddHandler
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 44
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nAdds a handler to the dispatcher\n"
+  example: []
+  syntax:
+    content: bool AddHandler(IMessageHandler handler)
+    parameters:
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+      description: the handler to add
+    return:
+      type: System.Boolean
+      description: true if added
+    content.vb: Function AddHandler(handler As IMessageHandler) As Boolean
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler*
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler(Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler(Steeltoe.Messaging.IMessageHandler)
+  id: RemoveHandler(Steeltoe.Messaging.IMessageHandler)
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: RemoveHandler(IMessageHandler)
+  nameWithType: IMessageDispatcher.RemoveHandler(IMessageHandler)
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler(Steeltoe.Messaging.IMessageHandler)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveHandler
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 51
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nRemove the specified handler from the dispatcher\n"
+  example: []
+  syntax:
+    content: bool RemoveHandler(IMessageHandler handler)
+    parameters:
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+      description: the handler to remove
+    return:
+      type: System.Boolean
+      description: true if removed
+    content.vb: Function RemoveHandler(handler As IMessageHandler) As Boolean
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler*
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  id: Dispatch(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Integration.Dispatcher.IMessageDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Dispatch(IMessage, CancellationToken)
+  nameWithType: IMessageDispatcher.Dispatch(IMessage, CancellationToken)
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Dispatch
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/IMessageDispatcher.cs
+    startLine: 59
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nDispatch the message to one or more handlers\n"
+  example: []
+  syntax:
+    content: bool Dispatch(IMessage message, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message to dispatch
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to cancel the operation
+    return:
+      type: System.Boolean
+      description: the value returned from the handler
+    content.vb: Function Dispatch(message As IMessage, cancellationToken As CancellationToken = Nothing) As Boolean
+  overload: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch*
+references:
+- uid: Steeltoe.Integration.Dispatcher
+  commentId: N:Steeltoe.Integration.Dispatcher
+  name: Steeltoe.Integration.Dispatcher
+  nameWithType: Steeltoe.Integration.Dispatcher
+  fullName: Steeltoe.Integration.Dispatcher
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount
+  name: HandlerCount
+  nameWithType: IMessageDispatcher.HandlerCount
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.HandlerCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers
+  name: MaxSubscribers
+  nameWithType: IMessageDispatcher.MaxSubscribers
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MaxSubscribers
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy
+  name: LoadBalancingStrategy
+  nameWithType: IMessageDispatcher.LoadBalancingStrategy
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.LoadBalancingStrategy
+- uid: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+  commentId: T:Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+  parent: Steeltoe.Integration.Dispatcher
+  name: ILoadBalancingStrategy
+  nameWithType: ILoadBalancingStrategy
+  fullName: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover
+  name: Failover
+  nameWithType: IMessageDispatcher.Failover
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Failover
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator
+  name: MessageHandlingDecorator
+  nameWithType: IMessageDispatcher.MessageHandlingDecorator
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.MessageHandlingDecorator
+- uid: Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator
+  commentId: T:Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator
+  parent: Steeltoe.Integration.Dispatcher
+  name: IMessageHandlingDecorator
+  nameWithType: IMessageHandlingDecorator
+  fullName: Steeltoe.Integration.Dispatcher.IMessageHandlingDecorator
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler
+  name: AddHandler
+  nameWithType: IMessageDispatcher.AddHandler
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.AddHandler
+- uid: Steeltoe.Messaging.IMessageHandler
+  commentId: T:Steeltoe.Messaging.IMessageHandler
+  parent: Steeltoe.Messaging
+  name: IMessageHandler
+  nameWithType: IMessageHandler
+  fullName: Steeltoe.Messaging.IMessageHandler
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler
+  name: RemoveHandler
+  nameWithType: IMessageDispatcher.RemoveHandler
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.RemoveHandler
+- uid: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch
+  name: Dispatch
+  nameWithType: IMessageDispatcher.Dispatch
+  fullName: Steeltoe.Integration.Dispatcher.IMessageDispatcher.Dispatch
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading

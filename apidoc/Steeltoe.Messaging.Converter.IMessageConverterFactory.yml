@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory
+  commentId: T:Steeltoe.Messaging.Converter.IMessageConverterFactory
+  id: IMessageConverterFactory
+  parent: Steeltoe.Messaging.Converter
+  children:
+  - Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered
+  - Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType(Steeltoe.Common.Util.MimeType)
+  - Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered
+  langs:
+  - csharp
+  - vb
+  name: IMessageConverterFactory
+  nameWithType: IMessageConverterFactory
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageConverterFactory
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nAn implementation provides a factory for obtaining message converters\n"
+  example: []
+  syntax:
+    content: public interface IMessageConverterFactory
+    content.vb: Public Interface IMessageConverterFactory
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType(Steeltoe.Common.Util.MimeType)
+  commentId: M:Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType(Steeltoe.Common.Util.MimeType)
+  id: GetMessageConverterForType(Steeltoe.Common.Util.MimeType)
+  parent: Steeltoe.Messaging.Converter.IMessageConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: GetMessageConverterForType(MimeType)
+  nameWithType: IMessageConverterFactory.GetMessageConverterForType(MimeType)
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType(Steeltoe.Common.Util.MimeType)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetMessageConverterForType
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nObtain a message converter for the given MimeType\n"
+  example: []
+  syntax:
+    content: IMessageConverter GetMessageConverterForType(MimeType mimeType)
+    parameters:
+    - id: mimeType
+      type: Steeltoe.Common.Util.MimeType
+      description: the MimeType to obtain a converter for
+    return:
+      type: Steeltoe.Messaging.Converter.IMessageConverter
+      description: a message converter or null if no converter exists
+    content.vb: Function GetMessageConverterForType(mimeType As MimeType) As IMessageConverter
+  overload: Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType*
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered
+  commentId: P:Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered
+  id: MessageConverterForAllRegistered
+  parent: Steeltoe.Messaging.Converter.IMessageConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: MessageConverterForAllRegistered
+  nameWithType: IMessageConverterFactory.MessageConverterForAllRegistered
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MessageConverterForAllRegistered
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nGets a single composite message converter for all registered converters\n"
+  example: []
+  syntax:
+    content: ISmartMessageConverter MessageConverterForAllRegistered { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.Converter.ISmartMessageConverter
+    content.vb: ReadOnly Property MessageConverterForAllRegistered As ISmartMessageConverter
+  overload: Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered
+  commentId: P:Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered
+  id: AllRegistered
+  parent: Steeltoe.Messaging.Converter.IMessageConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: AllRegistered
+  nameWithType: IMessageConverterFactory.AllRegistered
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AllRegistered
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Converter/IMessageConverterFactory.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Converter
+  summary: "\nGets all the message converters provided by this factory\n"
+  example: []
+  syntax:
+    content: IList<IMessageConverter> AllRegistered { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Messaging.Converter.IMessageConverter}
+    content.vb: ReadOnly Property AllRegistered As IList(Of IMessageConverter)
+  overload: Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Steeltoe.Messaging.Converter
+  commentId: N:Steeltoe.Messaging.Converter
+  name: Steeltoe.Messaging.Converter
+  nameWithType: Steeltoe.Messaging.Converter
+  fullName: Steeltoe.Messaging.Converter
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType*
+  commentId: Overload:Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType
+  name: GetMessageConverterForType
+  nameWithType: IMessageConverterFactory.GetMessageConverterForType
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory.GetMessageConverterForType
+- uid: Steeltoe.Common.Util.MimeType
+  commentId: T:Steeltoe.Common.Util.MimeType
+  parent: Steeltoe.Common.Util
+  name: MimeType
+  nameWithType: MimeType
+  fullName: Steeltoe.Common.Util.MimeType
+- uid: Steeltoe.Messaging.Converter.IMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.IMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: IMessageConverter
+  nameWithType: IMessageConverter
+  fullName: Steeltoe.Messaging.Converter.IMessageConverter
+- uid: Steeltoe.Common.Util
+  commentId: N:Steeltoe.Common.Util
+  name: Steeltoe.Common.Util
+  nameWithType: Steeltoe.Common.Util
+  fullName: Steeltoe.Common.Util
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered*
+  commentId: Overload:Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered
+  name: MessageConverterForAllRegistered
+  nameWithType: IMessageConverterFactory.MessageConverterForAllRegistered
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory.MessageConverterForAllRegistered
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.ISmartMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: ISmartMessageConverter
+  nameWithType: ISmartMessageConverter
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered*
+  commentId: Overload:Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered
+  name: AllRegistered
+  nameWithType: IMessageConverterFactory.AllRegistered
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory.AllRegistered
+- uid: System.Collections.Generic.IList{Steeltoe.Messaging.Converter.IMessageConverter}
+  commentId: T:System.Collections.Generic.IList{Steeltoe.Messaging.Converter.IMessageConverter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<IMessageConverter>
+  nameWithType: IList<IMessageConverter>
+  fullName: System.Collections.Generic.IList<Steeltoe.Messaging.Converter.IMessageConverter>
+  nameWithType.vb: IList(Of IMessageConverter)
+  fullName.vb: System.Collections.Generic.IList(Of Steeltoe.Messaging.Converter.IMessageConverter)
+  name.vb: IList(Of IMessageConverter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter
+    name: IMessageConverter
+    nameWithType: IMessageConverter
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.Converter.IMessageConverter
+    name: IMessageConverter
+    nameWithType: IMessageConverter
+    fullName: Steeltoe.Messaging.Converter.IMessageConverter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

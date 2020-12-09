@@ -1,0 +1,1244 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Support.IMessageBuilder
+  commentId: T:Steeltoe.Integration.Support.IMessageBuilder
+  id: IMessageBuilder
+  parent: Steeltoe.Integration.Support
+  children:
+  - Steeltoe.Integration.Support.IMessageBuilder.Build
+  - Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary{System.String,System.Object})
+  - Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object})
+  - Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object},System.String[])
+  - Steeltoe.Integration.Support.IMessageBuilder.Headers
+  - Steeltoe.Integration.Support.IMessageBuilder.Payload
+  - Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails
+  - Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails(System.Object,System.Int32,System.Int32)
+  - Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader(System.String)
+  - Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders(System.String[])
+  - Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId(System.Object)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel(Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName(System.String)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Int64)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Nullable{System.DateTime})
+  - Steeltoe.Integration.Support.IMessageBuilder.SetHeader(System.String,System.Object)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent(System.String,System.Object)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetPriority(System.Int32)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel(Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName(System.String)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber(System.Int32)
+  - Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IMessageBuilder
+  nameWithType: IMessageBuilder
+  fullName: Steeltoe.Integration.Support.IMessageBuilder
+  type: Interface
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageBuilder
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nA message builder that creates immutable GenericMessages.\n"
+  example: []
+  syntax:
+    content: public interface IMessageBuilder
+    content.vb: Public Interface IMessageBuilder
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Int64)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Int64)
+  id: SetExpirationDate(System.Int64)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetExpirationDate(Int64)
+  nameWithType: IMessageBuilder.SetExpirationDate(Int64)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetExpirationDate
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds an expiration date in the headers\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetExpirationDate(long expirationDate)
+    parameters:
+    - id: expirationDate
+      type: System.Int64
+      description: expiration date added to header
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetExpirationDate(expirationDate As Long) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Nullable{System.DateTime})
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Nullable{System.DateTime})
+  id: SetExpirationDate(System.Nullable{System.DateTime})
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetExpirationDate(Nullable<DateTime>)
+  nameWithType: IMessageBuilder.SetExpirationDate(Nullable<DateTime>)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Nullable<System.DateTime>)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetExpirationDate
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds an expiration date in the headers\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetExpirationDate(DateTime? expirationDate)
+    parameters:
+    - id: expirationDate
+      type: System.Nullable{System.DateTime}
+      description: expiration date added to header
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetExpirationDate(expirationDate As Date?) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate*
+  nameWithType.vb: IMessageBuilder.SetExpirationDate(Nullable(Of DateTime))
+  fullName.vb: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate(System.Nullable(Of System.DateTime))
+  name.vb: SetExpirationDate(Nullable(Of DateTime))
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId(System.Object)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId(System.Object)
+  id: SetCorrelationId(System.Object)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetCorrelationId(Object)
+  nameWithType: IMessageBuilder.SetCorrelationId(Object)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetCorrelationId
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds the correlationId to the headers\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetCorrelationId(object correlationId)
+    parameters:
+    - id: correlationId
+      type: System.Object
+      description: the id to add
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetCorrelationId(correlationId As Object) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails(System.Object,System.Int32,System.Int32)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails(System.Object,System.Int32,System.Int32)
+  id: PushSequenceDetails(System.Object,System.Int32,System.Int32)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: PushSequenceDetails(Object, Int32, Int32)
+  nameWithType: IMessageBuilder.PushSequenceDetails(Object, Int32, Int32)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails(System.Object, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PushSequenceDetails
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds a sequence details header to the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder PushSequenceDetails(object correlationId, int sequenceNumber, int sequenceSize)
+    parameters:
+    - id: correlationId
+      type: System.Object
+      description: correlation id to use in sequence
+    - id: sequenceNumber
+      type: System.Int32
+      description: the sequence number
+    - id: sequenceSize
+      type: System.Int32
+      description: the size of the sequence number
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function PushSequenceDetails(correlationId As Object, sequenceNumber As Integer, sequenceSize As Integer) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails
+  id: PopSequenceDetails
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: PopSequenceDetails()
+  nameWithType: IMessageBuilder.PopSequenceDetails()
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PopSequenceDetails
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nRemoves a sequence details header from the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder PopSequenceDetails()
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function PopSequenceDetails As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel(Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel(Steeltoe.Messaging.IMessageChannel)
+  id: SetReplyChannel(Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetReplyChannel(IMessageChannel)
+  nameWithType: IMessageBuilder.SetReplyChannel(IMessageChannel)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel(Steeltoe.Messaging.IMessageChannel)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetReplyChannel
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds a reply channel to the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetReplyChannel(IMessageChannel replyChannel)
+    parameters:
+    - id: replyChannel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the reply channel
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetReplyChannel(replyChannel As IMessageChannel) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName(System.String)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName(System.String)
+  id: SetReplyChannelName(System.String)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetReplyChannelName(String)
+  nameWithType: IMessageBuilder.SetReplyChannelName(String)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetReplyChannelName
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 63
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds a reply channel name to the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetReplyChannelName(string replyChannelName)
+    parameters:
+    - id: replyChannelName
+      type: System.String
+      description: the reply channel name
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetReplyChannelName(replyChannelName As String) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel(Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel(Steeltoe.Messaging.IMessageChannel)
+  id: SetErrorChannel(Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetErrorChannel(IMessageChannel)
+  nameWithType: IMessageBuilder.SetErrorChannel(IMessageChannel)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel(Steeltoe.Messaging.IMessageChannel)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetErrorChannel
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 70
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds an error channel to the messsage\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetErrorChannel(IMessageChannel errorChannel)
+    parameters:
+    - id: errorChannel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the error channel
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetErrorChannel(errorChannel As IMessageChannel) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName(System.String)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName(System.String)
+  id: SetErrorChannelName(System.String)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetErrorChannelName(String)
+  nameWithType: IMessageBuilder.SetErrorChannelName(String)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetErrorChannelName
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 77
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds an error channel name to the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetErrorChannelName(string errorChannelName)
+    parameters:
+    - id: errorChannelName
+      type: System.String
+      description: the name of the error channel
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetErrorChannelName(errorChannelName As String) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber(System.Int32)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber(System.Int32)
+  id: SetSequenceNumber(System.Int32)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetSequenceNumber(Int32)
+  nameWithType: IMessageBuilder.SetSequenceNumber(Int32)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetSequenceNumber
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 84
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds sequence details header to the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetSequenceNumber(int sequenceNumber)
+    parameters:
+    - id: sequenceNumber
+      type: System.Int32
+      description: the sequence number
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetSequenceNumber(sequenceNumber As Integer) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize(System.Int32)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize(System.Int32)
+  id: SetSequenceSize(System.Int32)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetSequenceSize(Int32)
+  nameWithType: IMessageBuilder.SetSequenceSize(Int32)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetSequenceSize
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 91
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nSets the size of the sequence number\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetSequenceSize(int sequenceSize)
+    parameters:
+    - id: sequenceSize
+      type: System.Int32
+      description: the size
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetSequenceSize(sequenceSize As Integer) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetPriority(System.Int32)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetPriority(System.Int32)
+  id: SetPriority(System.Int32)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetPriority(Int32)
+  nameWithType: IMessageBuilder.SetPriority(Int32)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetPriority(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetPriority
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 98
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds a priority header to the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetPriority(int priority)
+    parameters:
+    - id: priority
+      type: System.Int32
+      description: the priority to add
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetPriority(priority As Integer) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetPriority*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object},System.String[])
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object},System.String[])
+  id: FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object},System.String[])
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: FilterAndCopyHeadersIfAbsent(IDictionary<String, Object>, String[])
+  nameWithType: IMessageBuilder.FilterAndCopyHeadersIfAbsent(IDictionary<String, Object>, String[])
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary<System.String, System.Object>, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FilterAndCopyHeadersIfAbsent
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 107
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nRemove headers from the provided map matching to the provided pattens\nand only after that copy the result into the target message headers.\n"
+  example: []
+  syntax:
+    content: IMessageBuilder FilterAndCopyHeadersIfAbsent(IDictionary<string, object> headersToCopy, params string[] headerPatternsToFilter)
+    parameters:
+    - id: headersToCopy
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: the set of headers to copy
+    - id: headerPatternsToFilter
+      type: System.String[]
+      description: header patterns to filter before copy
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function FilterAndCopyHeadersIfAbsent(headersToCopy As IDictionary(Of String, Object), ParamArray headerPatternsToFilter As String()) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent*
+  nameWithType.vb: IMessageBuilder.FilterAndCopyHeadersIfAbsent(IDictionary(Of String, Object), String())
+  fullName.vb: Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent(System.Collections.Generic.IDictionary(Of System.String, System.Object), System.String())
+  name.vb: FilterAndCopyHeadersIfAbsent(IDictionary(Of String, Object), String())
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetHeader(System.String,System.Object)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetHeader(System.String,System.Object)
+  id: SetHeader(System.String,System.Object)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetHeader(String, Object)
+  nameWithType: IMessageBuilder.SetHeader(String, Object)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetHeader(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetHeader
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 115
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdd a header and value to the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetHeader(string headerName, object headerValue)
+    parameters:
+    - id: headerName
+      type: System.String
+      description: name of the header
+    - id: headerValue
+      type: System.Object
+      description: value of the header item
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetHeader(headerName As String, headerValue As Object) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetHeader*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent(System.String,System.Object)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent(System.String,System.Object)
+  id: SetHeaderIfAbsent(System.String,System.Object)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetHeaderIfAbsent(String, Object)
+  nameWithType: IMessageBuilder.SetHeaderIfAbsent(String, Object)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetHeaderIfAbsent
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 123
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdd a header and value to the message if not present\n"
+  example: []
+  syntax:
+    content: IMessageBuilder SetHeaderIfAbsent(string headerName, object headerValue)
+    parameters:
+    - id: headerName
+      type: System.String
+      description: name of the header
+    - id: headerValue
+      type: System.Object
+      description: value of the header item
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function SetHeaderIfAbsent(headerName As String, headerValue As Object) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders(System.String[])
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders(System.String[])
+  id: RemoveHeaders(System.String[])
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: RemoveHeaders(String[])
+  nameWithType: IMessageBuilder.RemoveHeaders(String[])
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders(System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveHeaders
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 130
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nRemove the headers matched by the header patterns from the message\n"
+  example: []
+  syntax:
+    content: IMessageBuilder RemoveHeaders(params string[] headerPatterns)
+    parameters:
+    - id: headerPatterns
+      type: System.String[]
+      description: header patterns to match
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function RemoveHeaders(ParamArray headerPatterns As String()) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders*
+  nameWithType.vb: IMessageBuilder.RemoveHeaders(String())
+  fullName.vb: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders(System.String())
+  name.vb: RemoveHeaders(String())
+- uid: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader(System.String)
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader(System.String)
+  id: RemoveHeader(System.String)
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: RemoveHeader(String)
+  nameWithType: IMessageBuilder.RemoveHeader(String)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveHeader
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 137
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nRemove the header if present\n"
+  example: []
+  syntax:
+    content: IMessageBuilder RemoveHeader(string headerName)
+    parameters:
+    - id: headerName
+      type: System.String
+      description: the name of the header to remove
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function RemoveHeader(headerName As String) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader*
+- uid: Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: CopyHeaders(System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: CopyHeaders(IDictionary<String, Object>)
+  nameWithType: IMessageBuilder.CopyHeaders(IDictionary<String, Object>)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CopyHeaders
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 144
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds the headers to the message overwriting any existing values.\n"
+  example: []
+  syntax:
+    content: IMessageBuilder CopyHeaders(IDictionary<string, object> headersToCopy)
+    parameters:
+    - id: headersToCopy
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: the headers to add
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function CopyHeaders(headersToCopy As IDictionary(Of String, Object)) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders*
+  nameWithType.vb: IMessageBuilder.CopyHeaders(IDictionary(Of String, Object))
+  fullName.vb: Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders(System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  name.vb: CopyHeaders(IDictionary(Of String, Object))
+- uid: Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: CopyHeadersIfAbsent(System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: CopyHeadersIfAbsent(IDictionary<String, Object>)
+  nameWithType: IMessageBuilder.CopyHeadersIfAbsent(IDictionary<String, Object>)
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CopyHeadersIfAbsent
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 151
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nAdds the headers to the message but will not overwrite any existing values.\n"
+  example: []
+  syntax:
+    content: IMessageBuilder CopyHeadersIfAbsent(IDictionary<string, object> headersToCopy)
+    parameters:
+    - id: headersToCopy
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: the headers to add
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilder
+      description: the builder
+    content.vb: Function CopyHeadersIfAbsent(headersToCopy As IDictionary(Of String, Object)) As IMessageBuilder
+  overload: Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent*
+  nameWithType.vb: IMessageBuilder.CopyHeadersIfAbsent(IDictionary(Of String, Object))
+  fullName.vb: Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent(System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  name.vb: CopyHeadersIfAbsent(IDictionary(Of String, Object))
+- uid: Steeltoe.Integration.Support.IMessageBuilder.Payload
+  commentId: P:Steeltoe.Integration.Support.IMessageBuilder.Payload
+  id: Payload
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: Payload
+  nameWithType: IMessageBuilder.Payload
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.Payload
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Payload
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 156
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nGets the payload of the message\n"
+  example: []
+  syntax:
+    content: object Payload { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property Payload As Object
+  overload: Steeltoe.Integration.Support.IMessageBuilder.Payload*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Integration.Support.IMessageBuilder.Headers
+  commentId: P:Steeltoe.Integration.Support.IMessageBuilder.Headers
+  id: Headers
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: Headers
+  nameWithType: IMessageBuilder.Headers
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.Headers
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Headers
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 161
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nGets the current headers of the message\n"
+  example: []
+  syntax:
+    content: IDictionary<string, object> Headers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: ReadOnly Property Headers As IDictionary(Of String, Object)
+  overload: Steeltoe.Integration.Support.IMessageBuilder.Headers*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Integration.Support.IMessageBuilder.Build
+  commentId: M:Steeltoe.Integration.Support.IMessageBuilder.Build
+  id: Build
+  parent: Steeltoe.Integration.Support.IMessageBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: IMessageBuilder.Build()
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.Build()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Build
+    path: ../Steeltoe/src/Integration/src/Abstractions/Support/IMessageBuilder.cs
+    startLine: 167
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Support
+  summary: "\nBuild the message\n"
+  example: []
+  syntax:
+    content: IMessage Build()
+    return:
+      type: Steeltoe.Messaging.IMessage
+      description: the message
+    content.vb: Function Build As IMessage
+  overload: Steeltoe.Integration.Support.IMessageBuilder.Build*
+references:
+- uid: Steeltoe.Integration.Support
+  commentId: N:Steeltoe.Integration.Support
+  name: Steeltoe.Integration.Support
+  nameWithType: Steeltoe.Integration.Support
+  fullName: Steeltoe.Integration.Support
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate
+  name: SetExpirationDate
+  nameWithType: IMessageBuilder.SetExpirationDate
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetExpirationDate
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Steeltoe.Integration.Support.IMessageBuilder
+  commentId: T:Steeltoe.Integration.Support.IMessageBuilder
+  parent: Steeltoe.Integration.Support
+  name: IMessageBuilder
+  nameWithType: IMessageBuilder
+  fullName: Steeltoe.Integration.Support.IMessageBuilder
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId
+  name: SetCorrelationId
+  nameWithType: IMessageBuilder.SetCorrelationId
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetCorrelationId
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails
+  name: PushSequenceDetails
+  nameWithType: IMessageBuilder.PushSequenceDetails
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.PushSequenceDetails
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails
+  name: PopSequenceDetails
+  nameWithType: IMessageBuilder.PopSequenceDetails
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.PopSequenceDetails
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel
+  name: SetReplyChannel
+  nameWithType: IMessageBuilder.SetReplyChannel
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannel
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName
+  name: SetReplyChannelName
+  nameWithType: IMessageBuilder.SetReplyChannelName
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetReplyChannelName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel
+  name: SetErrorChannel
+  nameWithType: IMessageBuilder.SetErrorChannel
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannel
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName
+  name: SetErrorChannelName
+  nameWithType: IMessageBuilder.SetErrorChannelName
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetErrorChannelName
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber
+  name: SetSequenceNumber
+  nameWithType: IMessageBuilder.SetSequenceNumber
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceNumber
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize
+  name: SetSequenceSize
+  nameWithType: IMessageBuilder.SetSequenceSize
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetSequenceSize
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetPriority*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetPriority
+  name: SetPriority
+  nameWithType: IMessageBuilder.SetPriority
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetPriority
+- uid: Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent
+  name: FilterAndCopyHeadersIfAbsent
+  nameWithType: IMessageBuilder.FilterAndCopyHeadersIfAbsent
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.FilterAndCopyHeadersIfAbsent
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetHeader*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetHeader
+  name: SetHeader
+  nameWithType: IMessageBuilder.SetHeader
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetHeader
+- uid: Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent
+  name: SetHeaderIfAbsent
+  nameWithType: IMessageBuilder.SetHeaderIfAbsent
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.SetHeaderIfAbsent
+- uid: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders
+  name: RemoveHeaders
+  nameWithType: IMessageBuilder.RemoveHeaders
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeaders
+- uid: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader
+  name: RemoveHeader
+  nameWithType: IMessageBuilder.RemoveHeader
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.RemoveHeader
+- uid: Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders
+  name: CopyHeaders
+  nameWithType: IMessageBuilder.CopyHeaders
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.CopyHeaders
+- uid: Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent
+  name: CopyHeadersIfAbsent
+  nameWithType: IMessageBuilder.CopyHeadersIfAbsent
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.CopyHeadersIfAbsent
+- uid: Steeltoe.Integration.Support.IMessageBuilder.Payload*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.Payload
+  name: Payload
+  nameWithType: IMessageBuilder.Payload
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.Payload
+- uid: Steeltoe.Integration.Support.IMessageBuilder.Headers*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.Headers
+  name: Headers
+  nameWithType: IMessageBuilder.Headers
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.Headers
+- uid: Steeltoe.Integration.Support.IMessageBuilder.Build*
+  commentId: Overload:Steeltoe.Integration.Support.IMessageBuilder.Build
+  name: Build
+  nameWithType: IMessageBuilder.Build
+  fullName: Steeltoe.Integration.Support.IMessageBuilder.Build
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage

@@ -1,0 +1,1028 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  id: RollingDistributionStreamBase
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  children:
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.#ctor
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+  langs:
+  - csharp
+  - vb
+  name: RollingDistributionStreamBase
+  nameWithType: RollingDistributionStreamBase
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  type: Class
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RollingDistributionStreamBase
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: public abstract class RollingDistributionStreamBase
+    content.vb: Public MustInherit Class RollingDistributionStreamBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStream`1
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.#ctor
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.#ctor
+  id: '#ctor'
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  langs:
+  - csharp
+  - vb
+  name: RollingDistributionStreamBase()
+  nameWithType: RollingDistributionStreamBase.RollingDistributionStreamBase()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.RollingDistributionStreamBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: protected RollingDistributionStreamBase()
+    content.vb: Protected Sub New
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator
+  id: DistributionAggregator
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  langs:
+  - csharp
+  - vb
+  name: DistributionAggregator
+  nameWithType: RollingDistributionStreamBase.DistributionAggregator
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DistributionAggregator
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: protected static Func<LongHistogram, LongHistogram, LongHistogram> DistributionAggregator { get; }
+    parameters: []
+    return:
+      type: System.Func{LongHistogram,LongHistogram,LongHistogram}
+    content.vb: Protected Shared ReadOnly Property DistributionAggregator As Func(Of LongHistogram, LongHistogram, LongHistogram)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator*
+  modifiers.csharp:
+  - protected
+  - static
+  - get
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+  id: ReduceWindowToSingleDistribution
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  langs:
+  - csharp
+  - vb
+  name: ReduceWindowToSingleDistribution
+  nameWithType: RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReduceWindowToSingleDistribution
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: protected static Func<IObservable<LongHistogram>, IObservable<LongHistogram>> ReduceWindowToSingleDistribution { get; }
+    parameters: []
+    return:
+      type: System.Func{System.IObservable{LongHistogram},System.IObservable{LongHistogram}}
+    content.vb: Protected Shared ReadOnly Property ReduceWindowToSingleDistribution As Func(Of IObservable(Of LongHistogram), IObservable(Of LongHistogram))
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution*
+  modifiers.csharp:
+  - protected
+  - static
+  - get
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues
+  id: CacheHistogramValues
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  langs:
+  - csharp
+  - vb
+  name: CacheHistogramValues
+  nameWithType: RollingDistributionStreamBase.CacheHistogramValues
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CacheHistogramValues
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: protected static Func<LongHistogram, CachedValuesHistogram> CacheHistogramValues { get; }
+    parameters: []
+    return:
+      type: System.Func{LongHistogram,Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram}
+    content.vb: Protected Shared ReadOnly Property CacheHistogramValues As Func(Of LongHistogram, CachedValuesHistogram)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues*
+  modifiers.csharp:
+  - protected
+  - static
+  - get
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList
+  id: ConvertToList
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase
+  langs:
+  - csharp
+  - vb
+  name: ConvertToList
+  nameWithType: RollingDistributionStreamBase.ConvertToList
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertToList
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/RollingDistributionStreamBase.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: protected static Func<IObservable<CachedValuesHistogram>, IObservable<IList<CachedValuesHistogram>>> ConvertToList { get; }
+    parameters: []
+    return:
+      type: System.Func{System.IObservable{Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram},System.IObservable{System.Collections.Generic.IList{Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram}}}
+    content.vb: Protected Shared ReadOnly Property ConvertToList As Func(Of IObservable(Of CachedValuesHistogram), IObservable(Of IList(Of CachedValuesHistogram)))
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList*
+  modifiers.csharp:
+  - protected
+  - static
+  - get
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+references:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  name: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.#ctor*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.#ctor
+  name: RollingDistributionStreamBase
+  nameWithType: RollingDistributionStreamBase.RollingDistributionStreamBase
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.RollingDistributionStreamBase
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator
+  name: DistributionAggregator
+  nameWithType: RollingDistributionStreamBase.DistributionAggregator
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.DistributionAggregator
+- uid: System.Func{LongHistogram,LongHistogram,LongHistogram}
+  commentId: T:System.Func{LongHistogram,LongHistogram,LongHistogram}
+  parent: System
+  definition: System.Func`3
+  name: Func<LongHistogram, LongHistogram, LongHistogram>
+  nameWithType: Func<LongHistogram, LongHistogram, LongHistogram>
+  fullName: System.Func<LongHistogram, LongHistogram, LongHistogram>
+  nameWithType.vb: Func(Of LongHistogram, LongHistogram, LongHistogram)
+  fullName.vb: System.Func(Of LongHistogram, LongHistogram, LongHistogram)
+  name.vb: Func(Of LongHistogram, LongHistogram, LongHistogram)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+  name: ReduceWindowToSingleDistribution
+  nameWithType: RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ReduceWindowToSingleDistribution
+- uid: System.Func{System.IObservable{LongHistogram},System.IObservable{LongHistogram}}
+  commentId: T:System.Func{System.IObservable{LongHistogram},System.IObservable{LongHistogram}}
+  parent: System
+  definition: System.Func`2
+  name: Func<IObservable<LongHistogram>, IObservable<LongHistogram>>
+  nameWithType: Func<IObservable<LongHistogram>, IObservable<LongHistogram>>
+  fullName: System.Func<System.IObservable<LongHistogram>, System.IObservable<LongHistogram>>
+  nameWithType.vb: Func(Of IObservable(Of LongHistogram), IObservable(Of LongHistogram))
+  fullName.vb: System.Func(Of System.IObservable(Of LongHistogram), System.IObservable(Of LongHistogram))
+  name.vb: Func(Of IObservable(Of LongHistogram), IObservable(Of LongHistogram))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues
+  name: CacheHistogramValues
+  nameWithType: RollingDistributionStreamBase.CacheHistogramValues
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.CacheHistogramValues
+- uid: System.Func{LongHistogram,Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram}
+  commentId: T:System.Func{LongHistogram,Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram}
+  parent: System
+  definition: System.Func`2
+  name: Func<LongHistogram, CachedValuesHistogram>
+  nameWithType: Func<LongHistogram, CachedValuesHistogram>
+  fullName: System.Func<LongHistogram, Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram>
+  nameWithType.vb: Func(Of LongHistogram, CachedValuesHistogram)
+  fullName.vb: System.Func(Of LongHistogram, Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram)
+  name.vb: Func(Of LongHistogram, CachedValuesHistogram)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+    name: CachedValuesHistogram
+    nameWithType: CachedValuesHistogram
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: LongHistogram
+    name: LongHistogram
+    nameWithType: LongHistogram
+    fullName: LongHistogram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+    name: CachedValuesHistogram
+    nameWithType: CachedValuesHistogram
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList
+  name: ConvertToList
+  nameWithType: RollingDistributionStreamBase.ConvertToList
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingDistributionStreamBase.ConvertToList
+- uid: System.Func{System.IObservable{Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram},System.IObservable{System.Collections.Generic.IList{Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram}}}
+  commentId: T:System.Func{System.IObservable{Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram},System.IObservable{System.Collections.Generic.IList{Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram}}}
+  parent: System
+  definition: System.Func`2
+  name: Func<IObservable<CachedValuesHistogram>, IObservable<IList<CachedValuesHistogram>>>
+  nameWithType: Func<IObservable<CachedValuesHistogram>, IObservable<IList<CachedValuesHistogram>>>
+  fullName: System.Func<System.IObservable<Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram>, System.IObservable<System.Collections.Generic.IList<Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram>>>
+  nameWithType.vb: Func(Of IObservable(Of CachedValuesHistogram), IObservable(Of IList(Of CachedValuesHistogram)))
+  fullName.vb: System.Func(Of System.IObservable(Of Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram), System.IObservable(Of System.Collections.Generic.IList(Of Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram)))
+  name.vb: Func(Of IObservable(Of CachedValuesHistogram), IObservable(Of IList(Of CachedValuesHistogram)))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+    name: CachedValuesHistogram
+    nameWithType: CachedValuesHistogram
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+    name: CachedValuesHistogram
+    nameWithType: CachedValuesHistogram
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+    name: CachedValuesHistogram
+    nameWithType: CachedValuesHistogram
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+    name: CachedValuesHistogram
+    nameWithType: CachedValuesHistogram
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.CachedValuesHistogram
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

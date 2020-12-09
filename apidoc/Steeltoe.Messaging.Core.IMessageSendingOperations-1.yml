@@ -1,0 +1,931 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  commentId: T:Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  id: IMessageSendingOperations`1
+  parent: Steeltoe.Messaging.Core
+  children:
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(System.Object)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(System.Object,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send(`0,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync(`0,Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IMessageSendingOperations<D>
+  nameWithType: IMessageSendingOperations<D>
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageSendingOperations
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nOperations for sending messages to a destination.\n"
+  example: []
+  syntax:
+    content: public interface IMessageSendingOperations<D>
+    typeParameters:
+    - id: D
+      description: the type of the destination
+    content.vb: Public Interface IMessageSendingOperations(Of D)
+  nameWithType.vb: IMessageSendingOperations(Of D)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D)
+  name.vb: IMessageSendingOperations(Of D)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  id: SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(IMessage, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.SendAsync(IMessage, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.SendAsync(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nSend a message to a default destination.\n"
+  example: []
+  syntax:
+    content: Task SendAsync(IMessage message, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function SendAsync(message As IMessage, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).SendAsync(IMessage, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).SendAsync(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync(`0,Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync(`0,Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  id: SendAsync(`0,Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(D, IMessage, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.SendAsync(D, IMessage, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.SendAsync(D, Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nSend a message to the given destination.\n"
+  example: []
+  syntax:
+    content: Task SendAsync(D destination, IMessage message, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function SendAsync(destination As D, message As IMessage, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).SendAsync(D, IMessage, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).SendAsync(D, Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(System.Object,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(System.Object,System.Threading.CancellationToken)
+  id: ConvertAndSendAsync(System.Object,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSendAsync(Object, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSendAsync(Object, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSendAsync(System.Object, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message\nand send it to a default destination.\n"
+  example: []
+  syntax:
+    content: Task ConvertAndSendAsync(object payload, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function ConvertAndSendAsync(payload As Object, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSendAsync(Object, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSendAsync(System.Object, System.Threading.CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Threading.CancellationToken)
+  id: ConvertAndSendAsync(`0,System.Object,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSendAsync(D, Object, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSendAsync(D, Object, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSendAsync(D, System.Object, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 50
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message\nand send it to a specified destination.\n"
+  example: []
+  syntax:
+    content: Task ConvertAndSendAsync(D destination, object payload, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function ConvertAndSendAsync(destination As D, payload As Object, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSendAsync(D, Object, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSendAsync(D, System.Object, System.Threading.CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  id: ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSendAsync(D, Object, IDictionary<String, Object>, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSendAsync(D, Object, IDictionary<String, Object>, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSendAsync(D, System.Object, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message\nwith the provided headers, and send it to a specified destination.\n"
+  example: []
+  syntax:
+    content: Task ConvertAndSendAsync(D destination, object payload, IDictionary<string, object> headers, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: the headers to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function ConvertAndSendAsync(destination As D, payload As Object, headers As IDictionary(Of String, Object), cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSendAsync(D, Object, IDictionary(Of String, Object), CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSendAsync(D, System.Object, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Threading.CancellationToken)
+  name.vb: ConvertAndSendAsync(D, Object, IDictionary(Of String, Object), CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  id: ConvertAndSendAsync(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSendAsync(Object, IMessagePostProcessor, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSendAsync(Object, IMessagePostProcessor, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSendAsync(System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 71
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message,\napply the psot processor, and send it to the default destination.\n"
+  example: []
+  syntax:
+    content: Task ConvertAndSendAsync(object payload, IMessagePostProcessor postProcessor, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: postProcessor
+      type: Steeltoe.Messaging.Core.IMessagePostProcessor
+      description: the post processor to apply
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function ConvertAndSendAsync(payload As Object, postProcessor As IMessagePostProcessor, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSendAsync(Object, IMessagePostProcessor, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSendAsync(System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor, System.Threading.CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  id: ConvertAndSendAsync(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSendAsync(D, Object, IMessagePostProcessor, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSendAsync(D, Object, IMessagePostProcessor, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSendAsync(D, System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 82
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message,\napply the psot processor, and send it to the specified destination.\n"
+  example: []
+  syntax:
+    content: Task ConvertAndSendAsync(D destination, object payload, IMessagePostProcessor postProcessor, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: postProcessor
+      type: Steeltoe.Messaging.Core.IMessagePostProcessor
+      description: the post processor to apply
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function ConvertAndSendAsync(destination As D, payload As Object, postProcessor As IMessagePostProcessor, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSendAsync(D, Object, IMessagePostProcessor, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSendAsync(D, System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor, System.Threading.CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  id: ConvertAndSendAsync(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSendAsync(D, Object, IDictionary<String, Object>, IMessagePostProcessor, CancellationToken)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSendAsync(D, Object, IDictionary<String, Object>, IMessagePostProcessor, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSendAsync(D, System.Object, System.Collections.Generic.IDictionary<System.String, System.Object>, Steeltoe.Messaging.Core.IMessagePostProcessor, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSendAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 94
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message,\nwith the provided headers, apply the psot processor, and send it to the specified destination.\n"
+  example: []
+  syntax:
+    content: Task ConvertAndSendAsync(D destination, object payload, IDictionary<string, object> headers, IMessagePostProcessor postProcessor, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: the headers to send
+    - id: postProcessor
+      type: Steeltoe.Messaging.Core.IMessagePostProcessor
+      description: the post processor to apply
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: token used to signal cancelation
+    return:
+      type: System.Threading.Tasks.Task
+      description: a task to signal completion
+    content.vb: Function ConvertAndSendAsync(destination As D, payload As Object, headers As IDictionary(Of String, Object), postProcessor As IMessagePostProcessor, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSendAsync(D, Object, IDictionary(Of String, Object), IMessagePostProcessor, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSendAsync(D, System.Object, System.Collections.Generic.IDictionary(Of System.String, System.Object), Steeltoe.Messaging.Core.IMessagePostProcessor, System.Threading.CancellationToken)
+  name.vb: ConvertAndSendAsync(D, Object, IDictionary(Of String, Object), IMessagePostProcessor, CancellationToken)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send(Steeltoe.Messaging.IMessage)
+  id: Send(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: Send(IMessage)
+  nameWithType: IMessageSendingOperations<D>.Send(IMessage)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.Send(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Send
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 100
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nSend a message to a default destination.\n"
+  example: []
+  syntax:
+    content: void Send(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message to send
+    content.vb: Sub Send(message As IMessage)
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send*
+  nameWithType.vb: IMessageSendingOperations(Of D).Send(IMessage)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).Send(Steeltoe.Messaging.IMessage)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send(`0,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send(`0,Steeltoe.Messaging.IMessage)
+  id: Send(`0,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: Send(D, IMessage)
+  nameWithType: IMessageSendingOperations<D>.Send(D, IMessage)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.Send(D, Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Send
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 107
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nSend a message to the given destination.\n"
+  example: []
+  syntax:
+    content: void Send(D destination, IMessage message)
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message to send
+    content.vb: Sub Send(destination As D, message As IMessage)
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send*
+  nameWithType.vb: IMessageSendingOperations(Of D).Send(D, IMessage)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).Send(D, Steeltoe.Messaging.IMessage)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(System.Object)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(System.Object)
+  id: ConvertAndSend(System.Object)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSend(Object)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSend(Object)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSend(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 114
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message\nand send it to a default destination.\n"
+  example: []
+  syntax:
+    content: void ConvertAndSend(object payload)
+    parameters:
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    content.vb: Sub ConvertAndSend(payload As Object)
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSend(Object)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSend(System.Object)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object)
+  id: ConvertAndSend(`0,System.Object)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSend(D, Object)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSend(D, Object)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSend(D, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 122
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message\nand send it to a specified destination.\n"
+  example: []
+  syntax:
+    content: void ConvertAndSend(D destination, object payload)
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    content.vb: Sub ConvertAndSend(destination As D, payload As Object)
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSend(D, Object)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSend(D, System.Object)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSend(D, Object, IDictionary<String, Object>)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSend(D, Object, IDictionary<String, Object>)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSend(D, System.Object, System.Collections.Generic.IDictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 131
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message\nwith the provided headers, and send it to a specified destination.\n"
+  example: []
+  syntax:
+    content: void ConvertAndSend(D destination, object payload, IDictionary<string, object> headers)
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: the headers to send
+    content.vb: Sub ConvertAndSend(destination As D, payload As Object, headers As IDictionary(Of String, Object))
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSend(D, Object, IDictionary(Of String, Object))
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSend(D, System.Object, System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  name.vb: ConvertAndSend(D, Object, IDictionary(Of String, Object))
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  id: ConvertAndSend(System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSend(Object, IMessagePostProcessor)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSend(Object, IMessagePostProcessor)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSend(System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 139
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message,\napply the psot processor, and send it to the default destination.\n"
+  example: []
+  syntax:
+    content: void ConvertAndSend(object payload, IMessagePostProcessor postProcessor)
+    parameters:
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: postProcessor
+      type: Steeltoe.Messaging.Core.IMessagePostProcessor
+      description: the post processor to apply
+    content.vb: Sub ConvertAndSend(payload As Object, postProcessor As IMessagePostProcessor)
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSend(Object, IMessagePostProcessor)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSend(System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  id: ConvertAndSend(`0,System.Object,Steeltoe.Messaging.Core.IMessagePostProcessor)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSend(D, Object, IMessagePostProcessor)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSend(D, Object, IMessagePostProcessor)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSend(D, System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 148
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message,\napply the psot processor, and send it to the specified destination.\n"
+  example: []
+  syntax:
+    content: void ConvertAndSend(D destination, object payload, IMessagePostProcessor postProcessor)
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: postProcessor
+      type: Steeltoe.Messaging.Core.IMessagePostProcessor
+      description: the post processor to apply
+    content.vb: Sub ConvertAndSend(destination As D, payload As Object, postProcessor As IMessagePostProcessor)
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSend(D, Object, IMessagePostProcessor)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSend(D, System.Object, Steeltoe.Messaging.Core.IMessagePostProcessor)
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor)
+  commentId: M:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor)
+  id: ConvertAndSend(`0,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},Steeltoe.Messaging.Core.IMessagePostProcessor)
+  parent: Steeltoe.Messaging.Core.IMessageSendingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAndSend(D, Object, IDictionary<String, Object>, IMessagePostProcessor)
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSend(D, Object, IDictionary<String, Object>, IMessagePostProcessor)
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSend(D, System.Object, System.Collections.Generic.IDictionary<System.String, System.Object>, Steeltoe.Messaging.Core.IMessagePostProcessor)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertAndSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IMessageSendingOperations.cs
+    startLine: 158
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nConvert the given object to serialized form, possibly using a message converter, wrap it as a message,\nwith the provided headers, apply the psot processor, and send it to the specified destination.\n"
+  example: []
+  syntax:
+    content: void ConvertAndSend(D destination, object payload, IDictionary<string, object> headers, IMessagePostProcessor postProcessor)
+    parameters:
+    - id: destination
+      type: '{D}'
+      description: the target destination
+    - id: payload
+      type: System.Object
+      description: the payload to send
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: the headers to send
+    - id: postProcessor
+      type: Steeltoe.Messaging.Core.IMessagePostProcessor
+      description: the post processor to apply
+    content.vb: Sub ConvertAndSend(destination As D, payload As Object, headers As IDictionary(Of String, Object), postProcessor As IMessagePostProcessor)
+  overload: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend*
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSend(D, Object, IDictionary(Of String, Object), IMessagePostProcessor)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSend(D, System.Object, System.Collections.Generic.IDictionary(Of System.String, System.Object), Steeltoe.Messaging.Core.IMessagePostProcessor)
+  name.vb: ConvertAndSend(D, Object, IDictionary(Of String, Object), IMessagePostProcessor)
+references:
+- uid: Steeltoe.Messaging.Core
+  commentId: N:Steeltoe.Messaging.Core
+  name: Steeltoe.Messaging.Core
+  nameWithType: Steeltoe.Messaging.Core
+  fullName: Steeltoe.Messaging.Core
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync*
+  commentId: Overload:Steeltoe.Messaging.Core.IMessageSendingOperations`1.SendAsync
+  name: SendAsync
+  nameWithType: IMessageSendingOperations<D>.SendAsync
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.SendAsync
+  nameWithType.vb: IMessageSendingOperations(Of D).SendAsync
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).SendAsync
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: '{D}'
+  commentId: '!:D'
+  definition: D
+  name: D
+  nameWithType: D
+  fullName: D
+- uid: D
+  name: D
+  nameWithType: D
+  fullName: D
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync*
+  commentId: Overload:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSendAsync
+  name: ConvertAndSendAsync
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSendAsync
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSendAsync
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSendAsync
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSendAsync
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Messaging.Core.IMessagePostProcessor
+  commentId: T:Steeltoe.Messaging.Core.IMessagePostProcessor
+  parent: Steeltoe.Messaging.Core
+  name: IMessagePostProcessor
+  nameWithType: IMessagePostProcessor
+  fullName: Steeltoe.Messaging.Core.IMessagePostProcessor
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send*
+  commentId: Overload:Steeltoe.Messaging.Core.IMessageSendingOperations`1.Send
+  name: Send
+  nameWithType: IMessageSendingOperations<D>.Send
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.Send
+  nameWithType.vb: IMessageSendingOperations(Of D).Send
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).Send
+- uid: Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend*
+  commentId: Overload:Steeltoe.Messaging.Core.IMessageSendingOperations`1.ConvertAndSend
+  name: ConvertAndSend
+  nameWithType: IMessageSendingOperations<D>.ConvertAndSend
+  fullName: Steeltoe.Messaging.Core.IMessageSendingOperations<D>.ConvertAndSend
+  nameWithType.vb: IMessageSendingOperations(Of D).ConvertAndSend
+  fullName.vb: Steeltoe.Messaging.Core.IMessageSendingOperations(Of D).ConvertAndSend

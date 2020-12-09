@@ -1,0 +1,1015 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  id: RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply)
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  nameWithType: RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSendAndReceiveTemplateConsumer
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+    startLine: 2642
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: 'protected class DoSendAndReceiveTemplateConsumer : RabbitTemplate.AbstractTemplateConsumer, IBasicConsumer'
+    content.vb: >-
+      Protected Class DoSendAndReceiveTemplateConsumer
+
+          Inherits RabbitTemplate.AbstractTemplateConsumer
+
+          Implements IBasicConsumer
+  inheritance:
+  - System.Object
+  - RabbitMQ.Client.DefaultBasicConsumer
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer
+  implements:
+  - RabbitMQ.Client.IBasicConsumer
+  inheritedMembers:
+  - Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString
+  - RabbitMQ.Client.DefaultBasicConsumer.m_eventLock
+  - RabbitMQ.Client.DefaultBasicConsumer.m_consumerCancelled
+  - RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel(System.String)
+  - RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk(System.String)
+  - RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk(System.String)
+  - RabbitMQ.Client.DefaultBasicConsumer.OnCancel
+  - RabbitMQ.Client.DefaultBasicConsumer.ConsumerTag
+  - RabbitMQ.Client.DefaultBasicConsumer.IsRunning
+  - RabbitMQ.Client.DefaultBasicConsumer.ShutdownReason
+  - RabbitMQ.Client.DefaultBasicConsumer.Model
+  - RabbitMQ.Client.DefaultBasicConsumer.ConsumerCancelled
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - protected
+  - class
+  modifiers.vb:
+  - Protected
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply)
+  id: '#ctor(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate,RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply)'
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  langs:
+  - csharp
+  - vb
+  name: DoSendAndReceiveTemplateConsumer(RabbitTemplate, IModel, RabbitTemplate.PendingReply)
+  nameWithType: RabbitTemplate.DoSendAndReceiveTemplateConsumer.DoSendAndReceiveTemplateConsumer(RabbitTemplate, IModel, RabbitTemplate.PendingReply)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.DoSendAndReceiveTemplateConsumer(Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate, RabbitMQ.Client.IModel, Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+    startLine: 2647
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public DoSendAndReceiveTemplateConsumer(RabbitTemplate template, IModel channel, RabbitTemplate.PendingReply pendingReply)
+    parameters:
+    - id: template
+      type: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    - id: pendingReply
+      type: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply
+    content.vb: Public Sub New(template As RabbitTemplate, channel As IModel, pendingReply As RabbitTemplate.PendingReply)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  id: HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  langs:
+  - csharp
+  - vb
+  name: HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte[])
+  nameWithType: RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver(System.String, System.UInt64, System.Boolean, System.String, System.String, RabbitMQ.Client.IBasicProperties, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleBasicDeliver
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+    startLine: 2654
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public override void HandleBasicDeliver(string consumerTag, ulong deliveryTag, bool redelivered, string exchange, string routingKey, IBasicProperties properties, byte[] body)
+    parameters:
+    - id: consumerTag
+      type: System.String
+    - id: deliveryTag
+      type: System.UInt64
+    - id: redelivered
+      type: System.Boolean
+    - id: exchange
+      type: System.String
+    - id: routingKey
+      type: System.String
+    - id: properties
+      type: RabbitMQ.Client.IBasicProperties
+    - id: body
+      type: System.Byte[]
+    content.vb: Public Overrides Sub HandleBasicDeliver(consumerTag As String, deliveryTag As ULong, redelivered As Boolean, exchange As String, routingKey As String, properties As IBasicProperties, body As Byte())
+  overridden: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver*
+  nameWithType.vb: RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte())
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver(System.String, System.UInt64, System.Boolean, System.String, System.String, RabbitMQ.Client.IBasicProperties, System.Byte())
+  name.vb: HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte())
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  id: HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer
+  langs:
+  - csharp
+  - vb
+  name: HandleModelShutdown(Object, ShutdownEventArgs)
+  nameWithType: RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown(Object, ShutdownEventArgs)
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown(System.Object, RabbitMQ.Client.ShutdownEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleModelShutdown
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Core/RabbitTemplate.cs
+    startLine: 2674
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Core
+  syntax:
+    content: public override void HandleModelShutdown(object model, ShutdownEventArgs reason)
+    parameters:
+    - id: model
+      type: System.Object
+    - id: reason
+      type: RabbitMQ.Client.ShutdownEventArgs
+    content.vb: Public Overrides Sub HandleModelShutdown(model As Object, reason As ShutdownEventArgs)
+  overridden: RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  overload: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Core
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Core
+  name: Steeltoe.Messaging.RabbitMQ.Core
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Core
+  fullName: Steeltoe.Messaging.RabbitMQ.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RabbitMQ.Client.DefaultBasicConsumer
+  commentId: T:RabbitMQ.Client.DefaultBasicConsumer
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: DefaultBasicConsumer
+  nameWithType: DefaultBasicConsumer
+  fullName: RabbitMQ.Client.DefaultBasicConsumer
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  name: RabbitTemplate.AbstractTemplateConsumer
+  nameWithType: RabbitTemplate.AbstractTemplateConsumer
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer
+- uid: RabbitMQ.Client.IBasicConsumer
+  commentId: T:RabbitMQ.Client.IBasicConsumer
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IBasicConsumer
+  nameWithType: IBasicConsumer
+  fullName: RabbitMQ.Client.IBasicConsumer
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString
+  parent: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer
+  name: ToString()
+  nameWithType: RabbitTemplate.AbstractTemplateConsumer.ToString()
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString
+    name: ToString
+    nameWithType: RabbitTemplate.AbstractTemplateConsumer.ToString
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString
+    name: ToString
+    nameWithType: RabbitTemplate.AbstractTemplateConsumer.ToString
+    fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.AbstractTemplateConsumer.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RabbitMQ.Client.DefaultBasicConsumer.m_eventLock
+  commentId: F:RabbitMQ.Client.DefaultBasicConsumer.m_eventLock
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: m_eventLock
+  nameWithType: DefaultBasicConsumer.m_eventLock
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.m_eventLock
+- uid: RabbitMQ.Client.DefaultBasicConsumer.m_consumerCancelled
+  commentId: F:RabbitMQ.Client.DefaultBasicConsumer.m_consumerCancelled
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: m_consumerCancelled
+  nameWithType: DefaultBasicConsumer.m_consumerCancelled
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.m_consumerCancelled
+- uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel(System.String)
+  commentId: M:RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel(System.String)
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: HandleBasicCancel(String)
+  nameWithType: DefaultBasicConsumer.HandleBasicCancel(String)
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel(System.String)
+  spec.csharp:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel(System.String)
+    name: HandleBasicCancel
+    nameWithType: DefaultBasicConsumer.HandleBasicCancel
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel(System.String)
+    name: HandleBasicCancel
+    nameWithType: DefaultBasicConsumer.HandleBasicCancel
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk(System.String)
+  commentId: M:RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk(System.String)
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: HandleBasicCancelOk(String)
+  nameWithType: DefaultBasicConsumer.HandleBasicCancelOk(String)
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk(System.String)
+  spec.csharp:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk(System.String)
+    name: HandleBasicCancelOk
+    nameWithType: DefaultBasicConsumer.HandleBasicCancelOk
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk(System.String)
+    name: HandleBasicCancelOk
+    nameWithType: DefaultBasicConsumer.HandleBasicCancelOk
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicCancelOk
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk(System.String)
+  commentId: M:RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk(System.String)
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: HandleBasicConsumeOk(String)
+  nameWithType: DefaultBasicConsumer.HandleBasicConsumeOk(String)
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk(System.String)
+  spec.csharp:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk(System.String)
+    name: HandleBasicConsumeOk
+    nameWithType: DefaultBasicConsumer.HandleBasicConsumeOk
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk(System.String)
+    name: HandleBasicConsumeOk
+    nameWithType: DefaultBasicConsumer.HandleBasicConsumeOk
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicConsumeOk
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RabbitMQ.Client.DefaultBasicConsumer.OnCancel
+  commentId: M:RabbitMQ.Client.DefaultBasicConsumer.OnCancel
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: OnCancel()
+  nameWithType: DefaultBasicConsumer.OnCancel()
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.OnCancel()
+  spec.csharp:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.OnCancel
+    name: OnCancel
+    nameWithType: DefaultBasicConsumer.OnCancel
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.OnCancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.OnCancel
+    name: OnCancel
+    nameWithType: DefaultBasicConsumer.OnCancel
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.OnCancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RabbitMQ.Client.DefaultBasicConsumer.ConsumerTag
+  commentId: P:RabbitMQ.Client.DefaultBasicConsumer.ConsumerTag
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: ConsumerTag
+  nameWithType: DefaultBasicConsumer.ConsumerTag
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.ConsumerTag
+- uid: RabbitMQ.Client.DefaultBasicConsumer.IsRunning
+  commentId: P:RabbitMQ.Client.DefaultBasicConsumer.IsRunning
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: IsRunning
+  nameWithType: DefaultBasicConsumer.IsRunning
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.IsRunning
+- uid: RabbitMQ.Client.DefaultBasicConsumer.ShutdownReason
+  commentId: P:RabbitMQ.Client.DefaultBasicConsumer.ShutdownReason
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: ShutdownReason
+  nameWithType: DefaultBasicConsumer.ShutdownReason
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.ShutdownReason
+- uid: RabbitMQ.Client.DefaultBasicConsumer.Model
+  commentId: P:RabbitMQ.Client.DefaultBasicConsumer.Model
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: Model
+  nameWithType: DefaultBasicConsumer.Model
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.Model
+- uid: RabbitMQ.Client.DefaultBasicConsumer.ConsumerCancelled
+  commentId: E:RabbitMQ.Client.DefaultBasicConsumer.ConsumerCancelled
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: ConsumerCancelled
+  nameWithType: DefaultBasicConsumer.ConsumerCancelled
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.ConsumerCancelled
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.#ctor
+  name: DoSendAndReceiveTemplateConsumer
+  nameWithType: RabbitTemplate.DoSendAndReceiveTemplateConsumer.DoSendAndReceiveTemplateConsumer
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.DoSendAndReceiveTemplateConsumer
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  name: RabbitTemplate
+  nameWithType: RabbitTemplate
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate
+- uid: RabbitMQ.Client.IModel
+  commentId: T:RabbitMQ.Client.IModel
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IModel
+  nameWithType: IModel
+  fullName: RabbitMQ.Client.IModel
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  name: RabbitTemplate.PendingReply
+  nameWithType: RabbitTemplate.PendingReply
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.PendingReply
+- uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  commentId: M:RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte[])
+  nameWithType: DefaultBasicConsumer.HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte[])
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver(System.String, System.UInt64, System.Boolean, System.String, System.String, RabbitMQ.Client.IBasicProperties, System.Byte[])
+  nameWithType.vb: DefaultBasicConsumer.HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte())
+  fullName.vb: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver(System.String, System.UInt64, System.Boolean, System.String, System.String, RabbitMQ.Client.IBasicProperties, System.Byte())
+  name.vb: HandleBasicDeliver(String, UInt64, Boolean, String, String, IBasicProperties, Byte())
+  spec.csharp:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+    name: HandleBasicDeliver
+    nameWithType: DefaultBasicConsumer.HandleBasicDeliver
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IBasicProperties
+    name: IBasicProperties
+    nameWithType: IBasicProperties
+    fullName: RabbitMQ.Client.IBasicProperties
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver(System.String,System.UInt64,System.Boolean,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+    name: HandleBasicDeliver
+    nameWithType: DefaultBasicConsumer.HandleBasicDeliver
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleBasicDeliver
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.IBasicProperties
+    name: IBasicProperties
+    nameWithType: IBasicProperties
+    fullName: RabbitMQ.Client.IBasicProperties
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver
+  name: HandleBasicDeliver
+  nameWithType: RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleBasicDeliver
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: RabbitMQ.Client.IBasicProperties
+  commentId: T:RabbitMQ.Client.IBasicProperties
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IBasicProperties
+  nameWithType: IBasicProperties
+  fullName: RabbitMQ.Client.IBasicProperties
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  commentId: M:RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+  parent: RabbitMQ.Client.DefaultBasicConsumer
+  isExternal: true
+  name: HandleModelShutdown(Object, ShutdownEventArgs)
+  nameWithType: DefaultBasicConsumer.HandleModelShutdown(Object, ShutdownEventArgs)
+  fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown(System.Object, RabbitMQ.Client.ShutdownEventArgs)
+  spec.csharp:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+    name: HandleModelShutdown
+    nameWithType: DefaultBasicConsumer.HandleModelShutdown
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.ShutdownEventArgs
+    name: ShutdownEventArgs
+    nameWithType: ShutdownEventArgs
+    fullName: RabbitMQ.Client.ShutdownEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+    name: HandleModelShutdown
+    nameWithType: DefaultBasicConsumer.HandleModelShutdown
+    fullName: RabbitMQ.Client.DefaultBasicConsumer.HandleModelShutdown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RabbitMQ.Client.ShutdownEventArgs
+    name: ShutdownEventArgs
+    nameWithType: ShutdownEventArgs
+    fullName: RabbitMQ.Client.ShutdownEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown
+  name: HandleModelShutdown
+  nameWithType: RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.RabbitTemplate.DoSendAndReceiveTemplateConsumer.HandleModelShutdown
+- uid: RabbitMQ.Client.ShutdownEventArgs
+  commentId: T:RabbitMQ.Client.ShutdownEventArgs
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: ShutdownEventArgs
+  nameWithType: ShutdownEventArgs
+  fullName: RabbitMQ.Client.ShutdownEventArgs

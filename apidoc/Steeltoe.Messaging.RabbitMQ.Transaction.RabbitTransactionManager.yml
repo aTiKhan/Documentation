@@ -1,0 +1,2182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  id: RabbitTransactionManager
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion(System.Object)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume(System.Object,System.Object)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend(System.Object)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction(System.Object)
+  - Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory
+  langs:
+  - csharp
+  - vb
+  name: RabbitTransactionManager
+  nameWithType: RabbitTransactionManager
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RabbitTransactionManager
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: 'public class RabbitTransactionManager : AbstractPlatformTransactionManager, IResourceTransactionManager, IPlatformTransactionManager'
+    content.vb: >-
+      Public Class RabbitTransactionManager
+
+          Inherits AbstractPlatformTransactionManager
+
+          Implements IResourceTransactionManager, IPlatformTransactionManager
+  inheritance:
+  - System.Object
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  implements:
+  - Steeltoe.Common.Transaction.IResourceTransactionManager
+  - Steeltoe.Common.Transaction.IPlatformTransactionManager
+  inheritedMembers:
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  - Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor
+  id: '#ctor'
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: RabbitTransactionManager()
+  nameWithType: RabbitTransactionManager.RabbitTransactionManager()
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.RabbitTransactionManager()
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: public RabbitTransactionManager()
+    content.vb: Public Sub New
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: RabbitTransactionManager(IConnectionFactory, ILogger)
+  nameWithType: RabbitTransactionManager.RabbitTransactionManager(IConnectionFactory, ILogger)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.RabbitTransactionManager(Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: public RabbitTransactionManager(IConnectionFactory connectionFactory, ILogger logger = null)
+    parameters:
+    - id: connectionFactory
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(connectionFactory As IConnectionFactory, logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory
+  id: ConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: ConnectionFactory
+  nameWithType: RabbitTransactionManager.ConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConnectionFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: public IConnectionFactory ConnectionFactory { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+    content.vb: Public Property ConnectionFactory As IConnectionFactory
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory
+  id: ResourceFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: ResourceFactory
+  nameWithType: RabbitTransactionManager.ResourceFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ResourceFactory
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: public object ResourceFactory { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property ResourceFactory As Object
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory*
+  implements:
+  - Steeltoe.Common.Transaction.IResourceTransactionManager.ResourceFactory
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction
+  id: DoGetTransaction
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoGetTransaction()
+  nameWithType: RabbitTransactionManager.DoGetTransaction()
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoGetTransaction
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override object DoGetTransaction()
+    return:
+      type: System.Object
+    content.vb: Protected Overrides Function DoGetTransaction As Object
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction(System.Object)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction(System.Object)
+  id: IsExistingTransaction(System.Object)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: IsExistingTransaction(Object)
+  nameWithType: RabbitTransactionManager.IsExistingTransaction(Object)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsExistingTransaction
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override bool IsExistingTransaction(object transaction)
+    parameters:
+    - id: transaction
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function IsExistingTransaction(transaction As Object) As Boolean
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  id: DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoBegin(Object, ITransactionDefinition)
+  nameWithType: RabbitTransactionManager.DoBegin(Object, ITransactionDefinition)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin(System.Object, Steeltoe.Common.Transaction.ITransactionDefinition)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoBegin
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 46
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override void DoBegin(object transaction, ITransactionDefinition definition)
+    parameters:
+    - id: transaction
+      type: System.Object
+    - id: definition
+      type: Steeltoe.Common.Transaction.ITransactionDefinition
+    content.vb: Protected Overrides Sub DoBegin(transaction As Object, definition As ITransactionDefinition)
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend(System.Object)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend(System.Object)
+  id: DoSuspend(System.Object)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoSuspend(Object)
+  nameWithType: RabbitTransactionManager.DoSuspend(Object)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSuspend
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 81
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override object DoSuspend(object transaction)
+    parameters:
+    - id: transaction
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Protected Overrides Function DoSuspend(transaction As Object) As Object
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume(System.Object,System.Object)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume(System.Object,System.Object)
+  id: DoResume(System.Object,System.Object)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoResume(Object, Object)
+  nameWithType: RabbitTransactionManager.DoResume(Object, Object)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoResume
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 88
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override void DoResume(object transaction, object suspendedResources)
+    parameters:
+    - id: transaction
+      type: System.Object
+    - id: suspendedResources
+      type: System.Object
+    content.vb: Protected Overrides Sub DoResume(transaction As Object, suspendedResources As Object)
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoCommit(DefaultTransactionStatus)
+  nameWithType: RabbitTransactionManager.DoCommit(DefaultTransactionStatus)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoCommit
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 94
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override void DoCommit(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overrides Sub DoCommit(status As DefaultTransactionStatus)
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoRollback(DefaultTransactionStatus)
+  nameWithType: RabbitTransactionManager.DoRollback(DefaultTransactionStatus)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoRollback
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 101
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override void DoRollback(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overrides Sub DoRollback(status As DefaultTransactionStatus)
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  id: DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoSetRollbackOnly(DefaultTransactionStatus)
+  nameWithType: RabbitTransactionManager.DoSetRollbackOnly(DefaultTransactionStatus)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSetRollbackOnly
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 108
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override void DoSetRollbackOnly(DefaultTransactionStatus status)
+    parameters:
+    - id: status
+      type: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    content.vb: Protected Overrides Sub DoSetRollbackOnly(status As DefaultTransactionStatus)
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion(System.Object)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion(System.Object)
+  id: DoCleanupAfterCompletion(System.Object)
+  parent: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager
+  langs:
+  - csharp
+  - vb
+  name: DoCleanupAfterCompletion(Object)
+  nameWithType: RabbitTransactionManager.DoCleanupAfterCompletion(Object)
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoCleanupAfterCompletion
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Transaction/RabbitTransactionManager.cs
+    startLine: 114
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Transaction
+  syntax:
+    content: protected override void DoCleanupAfterCompletion(object transaction)
+    parameters:
+    - id: transaction
+      type: System.Object
+    content.vb: Protected Overrides Sub DoCleanupAfterCompletion(transaction As Object)
+  overridden: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  overload: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Transaction
+  name: Steeltoe.Messaging.RabbitMQ.Transaction
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Transaction
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  commentId: T:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  parent: Steeltoe.Common.Transaction
+  name: AbstractPlatformTransactionManager
+  nameWithType: AbstractPlatformTransactionManager
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+- uid: Steeltoe.Common.Transaction.IResourceTransactionManager
+  commentId: T:Steeltoe.Common.Transaction.IResourceTransactionManager
+  parent: Steeltoe.Common.Transaction
+  name: IResourceTransactionManager
+  nameWithType: IResourceTransactionManager
+  fullName: Steeltoe.Common.Transaction.IResourceTransactionManager
+- uid: Steeltoe.Common.Transaction.IPlatformTransactionManager
+  commentId: T:Steeltoe.Common.Transaction.IPlatformTransactionManager
+  parent: Steeltoe.Common.Transaction
+  name: IPlatformTransactionManager
+  nameWithType: IPlatformTransactionManager
+  fullName: Steeltoe.Common.Transaction.IPlatformTransactionManager
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: SYNCHRONIZATION_ALWAYS
+  nameWithType: AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ALWAYS
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  nameWithType: AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: SYNCHRONIZATION_NEVER
+  nameWithType: AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SYNCHRONIZATION_NEVER
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+  commentId: F:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: _logger
+  nameWithType: AbstractPlatformTransactionManager._logger
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager._logger
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: TransactionSynchronization
+  nameWithType: AbstractPlatformTransactionManager.TransactionSynchronization
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TransactionSynchronization
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: DefaultTimeout
+  nameWithType: AbstractPlatformTransactionManager.DefaultTimeout
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DefaultTimeout
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: NestedTransactionAllowed
+  nameWithType: AbstractPlatformTransactionManager.NestedTransactionAllowed
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NestedTransactionAllowed
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: ValidateExistingTransaction
+  nameWithType: AbstractPlatformTransactionManager.ValidateExistingTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ValidateExistingTransaction
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: GlobalRollbackOnParticipationFailure
+  nameWithType: AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GlobalRollbackOnParticipationFailure
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: FailEarlyOnGlobalRollbackOnly
+  nameWithType: AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.FailEarlyOnGlobalRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: RollbackOnCommitFailure
+  nameWithType: AbstractPlatformTransactionManager.RollbackOnCommitFailure
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RollbackOnCommitFailure
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: GetTransaction(ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.GetTransaction(ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: GetTransaction
+    nameWithType: AbstractPlatformTransactionManager.GetTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction(Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: GetTransaction
+    nameWithType: AbstractPlatformTransactionManager.GetTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.GetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: Commit(ITransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.Commit(ITransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Commit
+    nameWithType: AbstractPlatformTransactionManager.Commit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Commit
+    nameWithType: AbstractPlatformTransactionManager.Commit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: Rollback(ITransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.Rollback(ITransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Rollback
+    nameWithType: AbstractPlatformTransactionManager.Rollback
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback(Steeltoe.Common.Transaction.ITransactionStatus)
+    name: Rollback
+    nameWithType: AbstractPlatformTransactionManager.Rollback
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus
+    name: ITransactionStatus
+    nameWithType: ITransactionStatus
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: PrepareTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  nameWithType: AbstractPlatformTransactionManager.PrepareTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition, System.Object, System.Boolean, System.Boolean, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+    name: PrepareTransactionStatus
+    nameWithType: AbstractPlatformTransactionManager.PrepareTransactionStatus
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+    name: PrepareTransactionStatus
+    nameWithType: AbstractPlatformTransactionManager.PrepareTransactionStatus
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareTransactionStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: NewTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  nameWithType: AbstractPlatformTransactionManager.NewTransactionStatus(ITransactionDefinition, Object, Boolean, Boolean, Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition, System.Object, System.Boolean, System.Boolean, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+    name: NewTransactionStatus
+    nameWithType: AbstractPlatformTransactionManager.NewTransactionStatus
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus(Steeltoe.Common.Transaction.ITransactionDefinition,System.Object,System.Boolean,System.Boolean,System.Object)
+    name: NewTransactionStatus
+    nameWithType: AbstractPlatformTransactionManager.NewTransactionStatus
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.NewTransactionStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: PrepareSynchronization(DefaultTransactionStatus, ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.PrepareSynchronization(DefaultTransactionStatus, ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus, Steeltoe.Common.Transaction.ITransactionDefinition)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: PrepareSynchronization
+    nameWithType: AbstractPlatformTransactionManager.PrepareSynchronization
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization(Steeltoe.Common.Transaction.DefaultTransactionStatus,Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: PrepareSynchronization
+    nameWithType: AbstractPlatformTransactionManager.PrepareSynchronization
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareSynchronization
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: DetermineTimeout(ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.DetermineTimeout(ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: DetermineTimeout
+    nameWithType: AbstractPlatformTransactionManager.DetermineTimeout
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout(Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: DetermineTimeout
+    nameWithType: AbstractPlatformTransactionManager.DetermineTimeout
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DetermineTimeout
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: Suspend(Object)
+  nameWithType: AbstractPlatformTransactionManager.Suspend(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+    name: Suspend
+    nameWithType: AbstractPlatformTransactionManager.Suspend
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend(System.Object)
+    name: Suspend
+    nameWithType: AbstractPlatformTransactionManager.Suspend
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Suspend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: Resume(Object, AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  nameWithType: AbstractPlatformTransactionManager.Resume(Object, AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object, Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+    name: Resume
+    nameWithType: AbstractPlatformTransactionManager.Resume
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    name: AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    nameWithType: AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume(System.Object,Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder)
+    name: Resume
+    nameWithType: AbstractPlatformTransactionManager.Resume
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    name: AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    nameWithType: AbstractPlatformTransactionManager.SuspendedResourcesHolder
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.SuspendedResourcesHolder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: TriggerBeforeCommit(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCommit(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: TriggerBeforeCommit
+    nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCommit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: TriggerBeforeCommit
+    nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCommit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCommit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: TriggerBeforeCompletion(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCompletion(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: TriggerBeforeCompletion
+    nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCompletion
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: TriggerBeforeCompletion
+    nameWithType: AbstractPlatformTransactionManager.TriggerBeforeCompletion
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.TriggerBeforeCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: InvokeAfterCompletion(List<ITransactionSynchronization>, Int32)
+  nameWithType: AbstractPlatformTransactionManager.InvokeAfterCompletion(List<ITransactionSynchronization>, Int32)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization>, System.Int32)
+  nameWithType.vb: AbstractPlatformTransactionManager.InvokeAfterCompletion(List(Of ITransactionSynchronization), Int32)
+  fullName.vb: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List(Of Steeltoe.Common.Transaction.ITransactionSynchronization), System.Int32)
+  name.vb: InvokeAfterCompletion(List(Of ITransactionSynchronization), Int32)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+    name: InvokeAfterCompletion
+    nameWithType: AbstractPlatformTransactionManager.InvokeAfterCompletion
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionSynchronization
+    name: ITransactionSynchronization
+    nameWithType: ITransactionSynchronization
+    fullName: Steeltoe.Common.Transaction.ITransactionSynchronization
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion(System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization},System.Int32)
+    name: InvokeAfterCompletion
+    nameWithType: AbstractPlatformTransactionManager.InvokeAfterCompletion
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.InvokeAfterCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionSynchronization
+    name: ITransactionSynchronization
+    nameWithType: ITransactionSynchronization
+    fullName: Steeltoe.Common.Transaction.ITransactionSynchronization
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: PrepareForCommit(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.PrepareForCommit(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: PrepareForCommit
+    nameWithType: AbstractPlatformTransactionManager.PrepareForCommit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: PrepareForCommit
+    nameWithType: AbstractPlatformTransactionManager.PrepareForCommit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.PrepareForCommit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: RegisterAfterCompletionWithExistingTransaction(Object, List<ITransactionSynchronization>)
+  nameWithType: AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(Object, List<ITransactionSynchronization>)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object, System.Collections.Generic.List<Steeltoe.Common.Transaction.ITransactionSynchronization>)
+  nameWithType.vb: AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(Object, List(Of ITransactionSynchronization))
+  fullName.vb: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object, System.Collections.Generic.List(Of Steeltoe.Common.Transaction.ITransactionSynchronization))
+  name.vb: RegisterAfterCompletionWithExistingTransaction(Object, List(Of ITransactionSynchronization))
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+    name: RegisterAfterCompletionWithExistingTransaction
+    nameWithType: AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Transaction.ITransactionSynchronization
+    name: ITransactionSynchronization
+    nameWithType: ITransactionSynchronization
+    fullName: Steeltoe.Common.Transaction.ITransactionSynchronization
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction(System.Object,System.Collections.Generic.List{Steeltoe.Common.Transaction.ITransactionSynchronization})
+    name: RegisterAfterCompletionWithExistingTransaction
+    nameWithType: AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.RegisterAfterCompletionWithExistingTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Transaction.ITransactionSynchronization
+    name: ITransactionSynchronization
+    nameWithType: ITransactionSynchronization
+    fullName: Steeltoe.Common.Transaction.ITransactionSynchronization
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: ShouldCommitOnGlobalRollbackOnly
+  nameWithType: AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.ShouldCommitOnGlobalRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  commentId: P:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: UseSavepointForNestedTransaction
+  nameWithType: AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.UseSavepointForNestedTransaction
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Transaction
+  commentId: N:Steeltoe.Common.Transaction
+  name: Steeltoe.Common.Transaction
+  nameWithType: Steeltoe.Common.Transaction
+  fullName: Steeltoe.Common.Transaction
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.#ctor
+  name: RabbitTransactionManager
+  nameWithType: RabbitTransactionManager.RabbitTransactionManager
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.RabbitTransactionManager
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnectionFactory
+  nameWithType: IConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnectionFactory
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Steeltoe.Messaging.RabbitMQ.Connection
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Connection
+  name: Steeltoe.Messaging.RabbitMQ.Connection
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory
+  name: ConnectionFactory
+  nameWithType: RabbitTransactionManager.ConnectionFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ConnectionFactory
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory
+  name: ResourceFactory
+  nameWithType: RabbitTransactionManager.ResourceFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.ResourceFactory
+- uid: Steeltoe.Common.Transaction.IResourceTransactionManager.ResourceFactory
+  commentId: P:Steeltoe.Common.Transaction.IResourceTransactionManager.ResourceFactory
+  parent: Steeltoe.Common.Transaction.IResourceTransactionManager
+  name: ResourceFactory
+  nameWithType: IResourceTransactionManager.ResourceFactory
+  fullName: Steeltoe.Common.Transaction.IResourceTransactionManager.ResourceFactory
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: DoGetTransaction()
+  nameWithType: AbstractPlatformTransactionManager.DoGetTransaction()
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+    name: DoGetTransaction
+    nameWithType: AbstractPlatformTransactionManager.DoGetTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+    name: DoGetTransaction
+    nameWithType: AbstractPlatformTransactionManager.DoGetTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoGetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction
+  name: DoGetTransaction
+  nameWithType: RabbitTransactionManager.DoGetTransaction
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoGetTransaction
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: IsExistingTransaction(Object)
+  nameWithType: AbstractPlatformTransactionManager.IsExistingTransaction(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+    name: IsExistingTransaction
+    nameWithType: AbstractPlatformTransactionManager.IsExistingTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction(System.Object)
+    name: IsExistingTransaction
+    nameWithType: AbstractPlatformTransactionManager.IsExistingTransaction
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.IsExistingTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction
+  name: IsExistingTransaction
+  nameWithType: RabbitTransactionManager.IsExistingTransaction
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.IsExistingTransaction
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: DoBegin(Object, ITransactionDefinition)
+  nameWithType: AbstractPlatformTransactionManager.DoBegin(Object, ITransactionDefinition)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object, Steeltoe.Common.Transaction.ITransactionDefinition)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: DoBegin
+    nameWithType: AbstractPlatformTransactionManager.DoBegin
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin(System.Object,Steeltoe.Common.Transaction.ITransactionDefinition)
+    name: DoBegin
+    nameWithType: AbstractPlatformTransactionManager.DoBegin
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoBegin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Transaction.ITransactionDefinition
+    name: ITransactionDefinition
+    nameWithType: ITransactionDefinition
+    fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin
+  name: DoBegin
+  nameWithType: RabbitTransactionManager.DoBegin
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoBegin
+- uid: Steeltoe.Common.Transaction.ITransactionDefinition
+  commentId: T:Steeltoe.Common.Transaction.ITransactionDefinition
+  parent: Steeltoe.Common.Transaction
+  name: ITransactionDefinition
+  nameWithType: ITransactionDefinition
+  fullName: Steeltoe.Common.Transaction.ITransactionDefinition
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: DoSuspend(Object)
+  nameWithType: AbstractPlatformTransactionManager.DoSuspend(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+    name: DoSuspend
+    nameWithType: AbstractPlatformTransactionManager.DoSuspend
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend(System.Object)
+    name: DoSuspend
+    nameWithType: AbstractPlatformTransactionManager.DoSuspend
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSuspend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend
+  name: DoSuspend
+  nameWithType: RabbitTransactionManager.DoSuspend
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSuspend
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: DoResume(Object, Object)
+  nameWithType: AbstractPlatformTransactionManager.DoResume(Object, Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+    name: DoResume
+    nameWithType: AbstractPlatformTransactionManager.DoResume
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume(System.Object,System.Object)
+    name: DoResume
+    nameWithType: AbstractPlatformTransactionManager.DoResume
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoResume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume
+  name: DoResume
+  nameWithType: RabbitTransactionManager.DoResume
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoResume
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: DoCommit(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.DoCommit(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: DoCommit
+    nameWithType: AbstractPlatformTransactionManager.DoCommit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: DoCommit
+    nameWithType: AbstractPlatformTransactionManager.DoCommit
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCommit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit
+  name: DoCommit
+  nameWithType: RabbitTransactionManager.DoCommit
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCommit
+- uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  commentId: T:Steeltoe.Common.Transaction.DefaultTransactionStatus
+  parent: Steeltoe.Common.Transaction
+  name: DefaultTransactionStatus
+  nameWithType: DefaultTransactionStatus
+  fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: DoRollback(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.DoRollback(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: DoRollback
+    nameWithType: AbstractPlatformTransactionManager.DoRollback
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: DoRollback
+    nameWithType: AbstractPlatformTransactionManager.DoRollback
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoRollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback
+  name: DoRollback
+  nameWithType: RabbitTransactionManager.DoRollback
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoRollback
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  name: DoSetRollbackOnly(DefaultTransactionStatus)
+  nameWithType: AbstractPlatformTransactionManager.DoSetRollbackOnly(DefaultTransactionStatus)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: DoSetRollbackOnly
+    nameWithType: AbstractPlatformTransactionManager.DoSetRollbackOnly
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly(Steeltoe.Common.Transaction.DefaultTransactionStatus)
+    name: DoSetRollbackOnly
+    nameWithType: AbstractPlatformTransactionManager.DoSetRollbackOnly
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoSetRollbackOnly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Transaction.DefaultTransactionStatus
+    name: DefaultTransactionStatus
+    nameWithType: DefaultTransactionStatus
+    fullName: Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly
+  name: DoSetRollbackOnly
+  nameWithType: RabbitTransactionManager.DoSetRollbackOnly
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoSetRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager
+  isExternal: true
+  name: DoCleanupAfterCompletion(Object)
+  nameWithType: AbstractPlatformTransactionManager.DoCleanupAfterCompletion(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+    name: DoCleanupAfterCompletion
+    nameWithType: AbstractPlatformTransactionManager.DoCleanupAfterCompletion
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion(System.Object)
+    name: DoCleanupAfterCompletion
+    nameWithType: AbstractPlatformTransactionManager.DoCleanupAfterCompletion
+    fullName: Steeltoe.Common.Transaction.AbstractPlatformTransactionManager.DoCleanupAfterCompletion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion
+  name: DoCleanupAfterCompletion
+  nameWithType: RabbitTransactionManager.DoCleanupAfterCompletion
+  fullName: Steeltoe.Messaging.RabbitMQ.Transaction.RabbitTransactionManager.DoCleanupAfterCompletion

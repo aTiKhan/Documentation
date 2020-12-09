@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager
+  commentId: T:Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager
+  id: EurekaApplicationInfoManager
+  parent: Steeltoe.Discovery.Eureka
+  children:
+  - Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.#ctor(IOptionsMonitor{Steeltoe.Discovery.Eureka.EurekaInstanceOptions},ILoggerFactory)
+  - Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig
+  langs:
+  - csharp
+  - vb
+  name: EurekaApplicationInfoManager
+  nameWithType: EurekaApplicationInfoManager
+  fullName: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager
+  type: Class
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/EurekaApplicationInfoManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: EurekaApplicationInfoManager
+    path: ../Steeltoe/src/Discovery/src/Eureka/EurekaApplicationInfoManager.cs
+    startLine: 9
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: 'public class EurekaApplicationInfoManager : ApplicationInfoManager'
+    content.vb: >-
+      Public Class EurekaApplicationInfoManager
+
+          Inherits ApplicationInfoManager
+  inheritance:
+  - System.Object
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  inheritedMembers:
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager._instance
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager._logger
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager.Instance
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceInfo
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager.StatusChangedEvent
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceStatus
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaInstanceConfig,ILoggerFactory)
+  - Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.#ctor(IOptionsMonitor{Steeltoe.Discovery.Eureka.EurekaInstanceOptions},ILoggerFactory)
+  commentId: M:Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.#ctor(IOptionsMonitor{Steeltoe.Discovery.Eureka.EurekaInstanceOptions},ILoggerFactory)
+  id: '#ctor(IOptionsMonitor{Steeltoe.Discovery.Eureka.EurekaInstanceOptions},ILoggerFactory)'
+  parent: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager
+  langs:
+  - csharp
+  - vb
+  name: EurekaApplicationInfoManager(IOptionsMonitor<EurekaInstanceOptions>, ILoggerFactory)
+  nameWithType: EurekaApplicationInfoManager.EurekaApplicationInfoManager(IOptionsMonitor<EurekaInstanceOptions>, ILoggerFactory)
+  fullName: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.EurekaApplicationInfoManager(IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaInstanceOptions>, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/EurekaApplicationInfoManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Discovery/src/Eureka/EurekaApplicationInfoManager.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public EurekaApplicationInfoManager(IOptionsMonitor<EurekaInstanceOptions> instConfig, ILoggerFactory logFactory = null)
+    parameters:
+    - id: instConfig
+      type: IOptionsMonitor{Steeltoe.Discovery.Eureka.EurekaInstanceOptions}
+    - id: logFactory
+      type: ILoggerFactory
+    content.vb: Public Sub New(instConfig As IOptionsMonitor(Of EurekaInstanceOptions), logFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.#ctor*
+  nameWithType.vb: EurekaApplicationInfoManager.EurekaApplicationInfoManager(IOptionsMonitor(Of EurekaInstanceOptions), ILoggerFactory)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.EurekaApplicationInfoManager(IOptionsMonitor(Of Steeltoe.Discovery.Eureka.EurekaInstanceOptions), ILoggerFactory)
+  name.vb: EurekaApplicationInfoManager(IOptionsMonitor(Of EurekaInstanceOptions), ILoggerFactory)
+- uid: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig
+  commentId: P:Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig
+  id: InstanceConfig
+  parent: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager
+  langs:
+  - csharp
+  - vb
+  name: InstanceConfig
+  nameWithType: EurekaApplicationInfoManager.InstanceConfig
+  fullName: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig
+  type: Property
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/EurekaApplicationInfoManager.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: InstanceConfig
+    path: ../Steeltoe/src/Discovery/src/Eureka/EurekaApplicationInfoManager.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka
+  syntax:
+    content: public override IEurekaInstanceConfig InstanceConfig { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+    content.vb: Public Overrides ReadOnly Property InstanceConfig As IEurekaInstanceConfig
+  overridden: Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceConfig
+  overload: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+references:
+- uid: Steeltoe.Discovery.Eureka
+  commentId: N:Steeltoe.Discovery.Eureka
+  name: Steeltoe.Discovery.Eureka
+  nameWithType: Steeltoe.Discovery.Eureka
+  fullName: Steeltoe.Discovery.Eureka
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  commentId: T:Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  parent: Steeltoe.Discovery.Eureka
+  name: ApplicationInfoManager
+  nameWithType: ApplicationInfoManager
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager._instance
+  commentId: F:Steeltoe.Discovery.Eureka.ApplicationInfoManager._instance
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: _instance
+  nameWithType: ApplicationInfoManager._instance
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager._instance
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager._logger
+  commentId: F:Steeltoe.Discovery.Eureka.ApplicationInfoManager._logger
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: _logger
+  nameWithType: ApplicationInfoManager._logger
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager._logger
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Instance
+  commentId: P:Steeltoe.Discovery.Eureka.ApplicationInfoManager.Instance
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: Instance
+  nameWithType: ApplicationInfoManager.Instance
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Instance
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceInfo
+  commentId: P:Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceInfo
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: InstanceInfo
+  nameWithType: ApplicationInfoManager.InstanceInfo
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceInfo
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.StatusChangedEvent
+  commentId: E:Steeltoe.Discovery.Eureka.ApplicationInfoManager.StatusChangedEvent
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: StatusChangedEvent
+  nameWithType: ApplicationInfoManager.StatusChangedEvent
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.StatusChangedEvent
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceStatus
+  commentId: P:Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceStatus
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: InstanceStatus
+  nameWithType: ApplicationInfoManager.InstanceStatus
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceStatus
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaInstanceConfig,ILoggerFactory)
+  commentId: M:Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaInstanceConfig,ILoggerFactory)
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  isExternal: true
+  name: Initialize(IEurekaInstanceConfig, ILoggerFactory)
+  nameWithType: ApplicationInfoManager.Initialize(IEurekaInstanceConfig, ILoggerFactory)
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaInstanceConfig, ILoggerFactory)
+  spec.csharp:
+  - uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaInstanceConfig,ILoggerFactory)
+    name: Initialize
+    nameWithType: ApplicationInfoManager.Initialize
+    fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+    name: IEurekaInstanceConfig
+    nameWithType: IEurekaInstanceConfig
+    fullName: Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize(Steeltoe.Discovery.Eureka.IEurekaInstanceConfig,ILoggerFactory)
+    name: Initialize
+    nameWithType: ApplicationInfoManager.Initialize
+    fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+    name: IEurekaInstanceConfig
+    nameWithType: IEurekaInstanceConfig
+    fullName: Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo
+  commentId: M:Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: RefreshLeaseInfo()
+  nameWithType: ApplicationInfoManager.RefreshLeaseInfo()
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo()
+  spec.csharp:
+  - uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo
+    name: RefreshLeaseInfo
+    nameWithType: ApplicationInfoManager.RefreshLeaseInfo
+    fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo
+    name: RefreshLeaseInfo
+    nameWithType: ApplicationInfoManager.RefreshLeaseInfo
+    fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.RefreshLeaseInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.#ctor*
+  commentId: Overload:Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.#ctor
+  name: EurekaApplicationInfoManager
+  nameWithType: EurekaApplicationInfoManager.EurekaApplicationInfoManager
+  fullName: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.EurekaApplicationInfoManager
+- uid: IOptionsMonitor{Steeltoe.Discovery.Eureka.EurekaInstanceOptions}
+  commentId: '!:IOptionsMonitor{Steeltoe.Discovery.Eureka.EurekaInstanceOptions}'
+  definition: IOptionsMonitor`1
+  name: IOptionsMonitor<EurekaInstanceOptions>
+  nameWithType: IOptionsMonitor<EurekaInstanceOptions>
+  fullName: IOptionsMonitor<Steeltoe.Discovery.Eureka.EurekaInstanceOptions>
+  nameWithType.vb: IOptionsMonitor(Of EurekaInstanceOptions)
+  fullName.vb: IOptionsMonitor(Of Steeltoe.Discovery.Eureka.EurekaInstanceOptions)
+  name.vb: IOptionsMonitor(Of EurekaInstanceOptions)
+  spec.csharp:
+  - uid: IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: IOptionsMonitor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.EurekaInstanceOptions
+    name: EurekaInstanceOptions
+    nameWithType: EurekaInstanceOptions
+    fullName: Steeltoe.Discovery.Eureka.EurekaInstanceOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: IOptionsMonitor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.EurekaInstanceOptions
+    name: EurekaInstanceOptions
+    nameWithType: EurekaInstanceOptions
+    fullName: Steeltoe.Discovery.Eureka.EurekaInstanceOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: IOptionsMonitor`1
+  isExternal: true
+  name: IOptionsMonitor<>
+  nameWithType: IOptionsMonitor<>
+  fullName: IOptionsMonitor<>
+  nameWithType.vb: IOptionsMonitor(Of )
+  fullName.vb: IOptionsMonitor(Of )
+  name.vb: IOptionsMonitor(Of )
+  spec.csharp:
+  - uid: IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: IOptionsMonitor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: IOptionsMonitor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceConfig
+  commentId: P:Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceConfig
+  parent: Steeltoe.Discovery.Eureka.ApplicationInfoManager
+  name: InstanceConfig
+  nameWithType: ApplicationInfoManager.InstanceConfig
+  fullName: Steeltoe.Discovery.Eureka.ApplicationInfoManager.InstanceConfig
+- uid: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig*
+  commentId: Overload:Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig
+  name: InstanceConfig
+  nameWithType: EurekaApplicationInfoManager.InstanceConfig
+  fullName: Steeltoe.Discovery.Eureka.EurekaApplicationInfoManager.InstanceConfig
+- uid: Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+  commentId: T:Steeltoe.Discovery.Eureka.IEurekaInstanceConfig
+  parent: Steeltoe.Discovery.Eureka
+  name: IEurekaInstanceConfig
+  nameWithType: IEurekaInstanceConfig
+  fullName: Steeltoe.Discovery.Eureka.IEurekaInstanceConfig

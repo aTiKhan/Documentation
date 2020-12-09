@@ -1,0 +1,497 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Security.ConfigurationExtensions
+  commentId: T:Steeltoe.Common.Security.ConfigurationExtensions
+  id: ConfigurationExtensions
+  parent: Steeltoe.Common.Security
+  children:
+  - Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile(IConfigurationBuilder,System.String,System.Boolean)
+  - Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(IConfigurationBuilder,System.String,System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationExtensions
+  nameWithType: ConfigurationExtensions
+  fullName: Steeltoe.Common.Security.ConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common.Security/ConfigurationExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConfigurationExtensions
+    path: ../Steeltoe/src/Common/src/Common.Security/ConfigurationExtensions.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Common.Security
+  namespace: Steeltoe.Common.Security
+  syntax:
+    content: public static class ConfigurationExtensions
+    content.vb: Public Module ConfigurationExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(IConfigurationBuilder,System.String,System.String,System.Boolean)
+  commentId: M:Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(IConfigurationBuilder,System.String,System.String,System.Boolean)
+  id: AddPemFiles(IConfigurationBuilder,System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Steeltoe.Common.Security.ConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPemFiles(IConfigurationBuilder, String, String, Boolean)
+  nameWithType: ConfigurationExtensions.AddPemFiles(IConfigurationBuilder, String, String, Boolean)
+  fullName: Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(IConfigurationBuilder, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.Security/ConfigurationExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddPemFiles
+    path: ../Steeltoe/src/Common/src/Common.Security/ConfigurationExtensions.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Common.Security
+  namespace: Steeltoe.Common.Security
+  summary: "\nAdds the contents of pem encoded certificate and key files to configuration, for use with <xref href=\"Steeltoe.Common.Options.CertificateOptions\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static IConfigurationBuilder AddPemFiles(this IConfigurationBuilder builder, string certFilePath, string keyFilePath, bool optional = false)
+    parameters:
+    - id: builder
+      type: IConfigurationBuilder
+      description: Your <see cref="!:IConfigurationBuilder"></see>
+    - id: certFilePath
+      type: System.String
+      description: The path on disk to locate a valid pem-encoded certificate file
+    - id: keyFilePath
+      type: System.String
+      description: The path on disk to locate a valid pem-encoded RSA key
+    - id: optional
+      type: System.Boolean
+      description: Whether or not to throw an exception if the files aren&apos;t found
+    return:
+      type: IConfigurationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPemFiles(builder As IConfigurationBuilder, certFilePath As String, keyFilePath As String, optional As Boolean = False) As IConfigurationBuilder
+  overload: Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile(IConfigurationBuilder,System.String,System.Boolean)
+  commentId: M:Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile(IConfigurationBuilder,System.String,System.Boolean)
+  id: AddCertificateFile(IConfigurationBuilder,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Steeltoe.Common.Security.ConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddCertificateFile(IConfigurationBuilder, String, Boolean)
+  nameWithType: ConfigurationExtensions.AddCertificateFile(IConfigurationBuilder, String, Boolean)
+  fullName: Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile(IConfigurationBuilder, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.Security/ConfigurationExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddCertificateFile
+    path: ../Steeltoe/src/Common/src/Common.Security/ConfigurationExtensions.cs
+    startLine: 53
+  assemblies:
+  - Steeltoe.Common.Security
+  namespace: Steeltoe.Common.Security
+  summary: "\nAdds information on a certificate file to configuration, for use with <xref href=\"Steeltoe.Common.Options.CertificateOptions\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  remarks: In contast with <xref href="Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(IConfigurationBuilder%2cSystem.String%2cSystem.String%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>, this extension adds the path of the file instead of the contents. Certificate parsing is handled by <xref href="Steeltoe.Common.Security.ConfigureCertificateOptions" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static IConfigurationBuilder AddCertificateFile(this IConfigurationBuilder builder, string certFilePath, bool optional = false)
+    parameters:
+    - id: builder
+      type: IConfigurationBuilder
+      description: Your <see cref="!:IConfigurationBuilder"></see>
+    - id: certFilePath
+      type: System.String
+      description: The path on disk to locate a valid certificate file
+    - id: optional
+      type: System.Boolean
+      description: Whether or not to throw an exception if the file isn&apos;t found
+    return:
+      type: IConfigurationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddCertificateFile(builder As IConfigurationBuilder, certFilePath As String, optional As Boolean = False) As IConfigurationBuilder
+  overload: Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Steeltoe.Common.Security
+  commentId: N:Steeltoe.Common.Security
+  name: Steeltoe.Common.Security
+  nameWithType: Steeltoe.Common.Security
+  fullName: Steeltoe.Common.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Options.CertificateOptions
+  commentId: T:Steeltoe.Common.Options.CertificateOptions
+  parent: Steeltoe.Common.Options
+  name: CertificateOptions
+  nameWithType: CertificateOptions
+  fullName: Steeltoe.Common.Options.CertificateOptions
+- uid: Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles*
+  commentId: Overload:Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles
+  name: AddPemFiles
+  nameWithType: ConfigurationExtensions.AddPemFiles
+  fullName: Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles
+- uid: IConfigurationBuilder
+  isExternal: true
+  name: IConfigurationBuilder
+  nameWithType: IConfigurationBuilder
+  fullName: IConfigurationBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Common.Options
+  commentId: N:Steeltoe.Common.Options
+  name: Steeltoe.Common.Options
+  nameWithType: Steeltoe.Common.Options
+  fullName: Steeltoe.Common.Options
+- uid: Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(IConfigurationBuilder,System.String,System.String,System.Boolean)
+  commentId: M:Steeltoe.Common.Security.ConfigurationExtensions.AddPemFiles(IConfigurationBuilder,System.String,System.String,System.Boolean)
+  isExternal: true
+- uid: Steeltoe.Common.Security.ConfigureCertificateOptions
+  commentId: T:Steeltoe.Common.Security.ConfigureCertificateOptions
+  name: ConfigureCertificateOptions
+  nameWithType: ConfigureCertificateOptions
+  fullName: Steeltoe.Common.Security.ConfigureCertificateOptions
+- uid: Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile*
+  commentId: Overload:Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile
+  name: AddCertificateFile
+  nameWithType: ConfigurationExtensions.AddCertificateFile
+  fullName: Steeltoe.Common.Security.ConfigurationExtensions.AddCertificateFile

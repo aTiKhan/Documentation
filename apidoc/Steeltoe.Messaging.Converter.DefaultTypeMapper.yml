@@ -1,0 +1,1280 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper
+  commentId: T:Steeltoe.Messaging.Converter.DefaultTypeMapper
+  id: DefaultTypeMapper
+  parent: Steeltoe.Messaging.Converter
+  children:
+  - Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType
+  - Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence
+  - Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  langs:
+  - csharp
+  - vb
+  name: DefaultTypeMapper
+  nameWithType: DefaultTypeMapper
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultTypeMapper
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Converter
+  syntax:
+    content: 'public class DefaultTypeMapper : AbstractTypeMapper, ITypeMapper'
+    content.vb: >-
+      Public Class DefaultTypeMapper
+
+          Inherits AbstractTypeMapper
+
+          Implements ITypeMapper
+  inheritance:
+  - System.Object
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper
+  implements:
+  - Steeltoe.Messaging.Converter.ITypeMapper
+  inheritedMembers:
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CLASSID_FIELD_NAME
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CONTENT_CLASSID_FIELD_NAME
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_KEY_CLASSID_FIELD_NAME
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.IdClassMapping
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.ClassIdFieldName
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.ContentClassIdFieldName
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.KeyClassIdFieldName
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping(System.Collections.Generic.Dictionary{System.String,System.Type})
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader(Steeltoe.Messaging.IMessageHeaders,System.String,System.Type)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader(Steeltoe.Messaging.IMessageHeaders,System.String)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString(Steeltoe.Messaging.IMessageHeaders,System.String)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType(System.Type)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType(System.Type)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType(System.Type)
+  - Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName(System.Type)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence
+  commentId: P:Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence
+  id: Precedence
+  parent: Steeltoe.Messaging.Converter.DefaultTypeMapper
+  langs:
+  - csharp
+  - vb
+  name: Precedence
+  nameWithType: DefaultTypeMapper.Precedence
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Precedence
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Converter
+  syntax:
+    content: public TypePrecedence Precedence { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.Converter.TypePrecedence
+    content.vb: Public Property Precedence As TypePrecedence
+  overload: Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence*
+  implements:
+  - Steeltoe.Messaging.Converter.ITypeMapper.Precedence
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType
+  commentId: P:Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType
+  id: DefaultType
+  parent: Steeltoe.Messaging.Converter.DefaultTypeMapper
+  langs:
+  - csharp
+  - vb
+  name: DefaultType
+  nameWithType: DefaultTypeMapper.DefaultType
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultType
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Converter
+  syntax:
+    content: public Type DefaultType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property DefaultType As Type
+  overload: Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType*
+  implements:
+  - Steeltoe.Messaging.Converter.ITypeMapper.DefaultType
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  id: ToType(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.DefaultTypeMapper
+  langs:
+  - csharp
+  - vb
+  name: ToType(IMessageHeaders)
+  nameWithType: DefaultTypeMapper.ToType(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToType
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Converter
+  syntax:
+    content: public Type ToType(IMessageHeaders headers)
+    parameters:
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    return:
+      type: System.Type
+    content.vb: Public Function ToType(headers As IMessageHeaders) As Type
+  overload: Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType*
+  implements:
+  - Steeltoe.Messaging.Converter.ITypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+  id: FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.DefaultTypeMapper
+  langs:
+  - csharp
+  - vb
+  name: FromType(Type, IMessageHeaders)
+  nameWithType: DefaultTypeMapper.FromType(Type, IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType(System.Type, Steeltoe.Messaging.IMessageHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FromType
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Converter
+  syntax:
+    content: public void FromType(Type type, IMessageHeaders headers)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    content.vb: Public Sub FromType(type As Type, headers As IMessageHeaders)
+  overload: Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType*
+  implements:
+  - Steeltoe.Messaging.Converter.ITypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  id: GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.DefaultTypeMapper
+  langs:
+  - csharp
+  - vb
+  name: GetInferredType(IMessageHeaders)
+  nameWithType: DefaultTypeMapper.GetInferredType(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInferredType
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Converter/DefaultTypeMapper.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Converter
+  syntax:
+    content: public Type GetInferredType(IMessageHeaders headers)
+    parameters:
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    return:
+      type: System.Type
+    content.vb: Public Function GetInferredType(headers As IMessageHeaders) As Type
+  overload: Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType*
+  implements:
+  - Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Messaging.Converter
+  commentId: N:Steeltoe.Messaging.Converter
+  name: Steeltoe.Messaging.Converter
+  nameWithType: Steeltoe.Messaging.Converter
+  fullName: Steeltoe.Messaging.Converter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  commentId: T:Steeltoe.Messaging.Converter.AbstractTypeMapper
+  parent: Steeltoe.Messaging.Converter
+  name: AbstractTypeMapper
+  nameWithType: AbstractTypeMapper
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper
+- uid: Steeltoe.Messaging.Converter.ITypeMapper
+  commentId: T:Steeltoe.Messaging.Converter.ITypeMapper
+  parent: Steeltoe.Messaging.Converter
+  name: ITypeMapper
+  nameWithType: ITypeMapper
+  fullName: Steeltoe.Messaging.Converter.ITypeMapper
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CLASSID_FIELD_NAME
+  commentId: F:Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CLASSID_FIELD_NAME
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: DEFAULT_CLASSID_FIELD_NAME
+  nameWithType: AbstractTypeMapper.DEFAULT_CLASSID_FIELD_NAME
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CLASSID_FIELD_NAME
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CONTENT_CLASSID_FIELD_NAME
+  commentId: F:Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CONTENT_CLASSID_FIELD_NAME
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: DEFAULT_CONTENT_CLASSID_FIELD_NAME
+  nameWithType: AbstractTypeMapper.DEFAULT_CONTENT_CLASSID_FIELD_NAME
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_CONTENT_CLASSID_FIELD_NAME
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_KEY_CLASSID_FIELD_NAME
+  commentId: F:Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_KEY_CLASSID_FIELD_NAME
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: DEFAULT_KEY_CLASSID_FIELD_NAME
+  nameWithType: AbstractTypeMapper.DEFAULT_KEY_CLASSID_FIELD_NAME
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.DEFAULT_KEY_CLASSID_FIELD_NAME
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.IdClassMapping
+  commentId: P:Steeltoe.Messaging.Converter.AbstractTypeMapper.IdClassMapping
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: IdClassMapping
+  nameWithType: AbstractTypeMapper.IdClassMapping
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.IdClassMapping
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.ClassIdFieldName
+  commentId: P:Steeltoe.Messaging.Converter.AbstractTypeMapper.ClassIdFieldName
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: ClassIdFieldName
+  nameWithType: AbstractTypeMapper.ClassIdFieldName
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.ClassIdFieldName
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.ContentClassIdFieldName
+  commentId: P:Steeltoe.Messaging.Converter.AbstractTypeMapper.ContentClassIdFieldName
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: ContentClassIdFieldName
+  nameWithType: AbstractTypeMapper.ContentClassIdFieldName
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.ContentClassIdFieldName
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.KeyClassIdFieldName
+  commentId: P:Steeltoe.Messaging.Converter.AbstractTypeMapper.KeyClassIdFieldName
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: KeyClassIdFieldName
+  nameWithType: AbstractTypeMapper.KeyClassIdFieldName
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.KeyClassIdFieldName
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping(System.Collections.Generic.Dictionary{System.String,System.Type})
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping(System.Collections.Generic.Dictionary{System.String,System.Type})
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: SetIdClassMapping(Dictionary<String, Type>)
+  nameWithType: AbstractTypeMapper.SetIdClassMapping(Dictionary<String, Type>)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping(System.Collections.Generic.Dictionary<System.String, System.Type>)
+  nameWithType.vb: AbstractTypeMapper.SetIdClassMapping(Dictionary(Of String, Type))
+  fullName.vb: Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping(System.Collections.Generic.Dictionary(Of System.String, System.Type))
+  name.vb: SetIdClassMapping(Dictionary(Of String, Type))
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping(System.Collections.Generic.Dictionary{System.String,System.Type})
+    name: SetIdClassMapping
+    nameWithType: AbstractTypeMapper.SetIdClassMapping
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping(System.Collections.Generic.Dictionary{System.String,System.Type})
+    name: SetIdClassMapping
+    nameWithType: AbstractTypeMapper.SetIdClassMapping
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.SetIdClassMapping
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader(Steeltoe.Messaging.IMessageHeaders,System.String,System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader(Steeltoe.Messaging.IMessageHeaders,System.String,System.Type)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: AddHeader(IMessageHeaders, String, Type)
+  nameWithType: AbstractTypeMapper.AddHeader(IMessageHeaders, String, Type)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader(Steeltoe.Messaging.IMessageHeaders, System.String, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader(Steeltoe.Messaging.IMessageHeaders,System.String,System.Type)
+    name: AddHeader
+    nameWithType: AbstractTypeMapper.AddHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader(Steeltoe.Messaging.IMessageHeaders,System.String,System.Type)
+    name: AddHeader
+    nameWithType: AbstractTypeMapper.AddHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.AddHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader(Steeltoe.Messaging.IMessageHeaders,System.String)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader(Steeltoe.Messaging.IMessageHeaders,System.String)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: RetrieveHeader(IMessageHeaders, String)
+  nameWithType: AbstractTypeMapper.RetrieveHeader(IMessageHeaders, String)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader(Steeltoe.Messaging.IMessageHeaders, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader(Steeltoe.Messaging.IMessageHeaders,System.String)
+    name: RetrieveHeader
+    nameWithType: AbstractTypeMapper.RetrieveHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader(Steeltoe.Messaging.IMessageHeaders,System.String)
+    name: RetrieveHeader
+    nameWithType: AbstractTypeMapper.RetrieveHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString(Steeltoe.Messaging.IMessageHeaders,System.String)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString(Steeltoe.Messaging.IMessageHeaders,System.String)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: RetrieveHeaderAsString(IMessageHeaders, String)
+  nameWithType: AbstractTypeMapper.RetrieveHeaderAsString(IMessageHeaders, String)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString(Steeltoe.Messaging.IMessageHeaders, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString(Steeltoe.Messaging.IMessageHeaders,System.String)
+    name: RetrieveHeaderAsString
+    nameWithType: AbstractTypeMapper.RetrieveHeaderAsString
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString(Steeltoe.Messaging.IMessageHeaders,System.String)
+    name: RetrieveHeaderAsString
+    nameWithType: AbstractTypeMapper.RetrieveHeaderAsString
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.RetrieveHeaderAsString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: HasInferredTypeHeader(IMessageHeaders)
+  nameWithType: AbstractTypeMapper.HasInferredTypeHeader(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+    name: HasInferredTypeHeader
+    nameWithType: AbstractTypeMapper.HasInferredTypeHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+    name: HasInferredTypeHeader
+    nameWithType: AbstractTypeMapper.HasInferredTypeHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.HasInferredTypeHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  name: FromInferredTypeHeader(IMessageHeaders)
+  nameWithType: AbstractTypeMapper.FromInferredTypeHeader(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+    name: FromInferredTypeHeader
+    nameWithType: AbstractTypeMapper.FromInferredTypeHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader(Steeltoe.Messaging.IMessageHeaders)
+    name: FromInferredTypeHeader
+    nameWithType: AbstractTypeMapper.FromInferredTypeHeader
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.FromInferredTypeHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType(System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType(System.Type)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: GetContentType(Type)
+  nameWithType: AbstractTypeMapper.GetContentType(Type)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType(System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType(System.Type)
+    name: GetContentType
+    nameWithType: AbstractTypeMapper.GetContentType
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType(System.Type)
+    name: GetContentType
+    nameWithType: AbstractTypeMapper.GetContentType
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetContentType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType(System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType(System.Type)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: IsContainerType(Type)
+  nameWithType: AbstractTypeMapper.IsContainerType(Type)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType(System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType(System.Type)
+    name: IsContainerType
+    nameWithType: AbstractTypeMapper.IsContainerType
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType(System.Type)
+    name: IsContainerType
+    nameWithType: AbstractTypeMapper.IsContainerType
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.IsContainerType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType(System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType(System.Type)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: GetKeyType(Type)
+  nameWithType: AbstractTypeMapper.GetKeyType(Type)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType(System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType(System.Type)
+    name: GetKeyType
+    nameWithType: AbstractTypeMapper.GetKeyType
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType(System.Type)
+    name: GetKeyType
+    nameWithType: AbstractTypeMapper.GetKeyType
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetKeyType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName(System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName(System.Type)
+  parent: Steeltoe.Messaging.Converter.AbstractTypeMapper
+  isExternal: true
+  name: GetClassName(Type)
+  nameWithType: AbstractTypeMapper.GetClassName(Type)
+  fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName(System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName(System.Type)
+    name: GetClassName
+    nameWithType: AbstractTypeMapper.GetClassName
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName(System.Type)
+    name: GetClassName
+    nameWithType: AbstractTypeMapper.GetClassName
+    fullName: Steeltoe.Messaging.Converter.AbstractTypeMapper.GetClassName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence*
+  commentId: Overload:Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence
+  name: Precedence
+  nameWithType: DefaultTypeMapper.Precedence
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.Precedence
+- uid: Steeltoe.Messaging.Converter.ITypeMapper.Precedence
+  commentId: P:Steeltoe.Messaging.Converter.ITypeMapper.Precedence
+  parent: Steeltoe.Messaging.Converter.ITypeMapper
+  name: Precedence
+  nameWithType: ITypeMapper.Precedence
+  fullName: Steeltoe.Messaging.Converter.ITypeMapper.Precedence
+- uid: Steeltoe.Messaging.Converter.TypePrecedence
+  commentId: T:Steeltoe.Messaging.Converter.TypePrecedence
+  parent: Steeltoe.Messaging.Converter
+  name: TypePrecedence
+  nameWithType: TypePrecedence
+  fullName: Steeltoe.Messaging.Converter.TypePrecedence
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType*
+  commentId: Overload:Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType
+  name: DefaultType
+  nameWithType: DefaultTypeMapper.DefaultType
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.DefaultType
+- uid: Steeltoe.Messaging.Converter.ITypeMapper.DefaultType
+  commentId: P:Steeltoe.Messaging.Converter.ITypeMapper.DefaultType
+  parent: Steeltoe.Messaging.Converter.ITypeMapper
+  name: DefaultType
+  nameWithType: ITypeMapper.DefaultType
+  fullName: Steeltoe.Messaging.Converter.ITypeMapper.DefaultType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType*
+  commentId: Overload:Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType
+  name: ToType
+  nameWithType: DefaultTypeMapper.ToType
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.ToType
+- uid: Steeltoe.Messaging.Converter.ITypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.ITypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.ITypeMapper
+  name: ToType(IMessageHeaders)
+  nameWithType: ITypeMapper.ToType(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.ITypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.ITypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+    name: ToType
+    nameWithType: ITypeMapper.ToType
+    fullName: Steeltoe.Messaging.Converter.ITypeMapper.ToType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.ITypeMapper.ToType(Steeltoe.Messaging.IMessageHeaders)
+    name: ToType
+    nameWithType: ITypeMapper.ToType
+    fullName: Steeltoe.Messaging.Converter.ITypeMapper.ToType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageHeaders
+  commentId: T:Steeltoe.Messaging.IMessageHeaders
+  parent: Steeltoe.Messaging
+  name: IMessageHeaders
+  nameWithType: IMessageHeaders
+  fullName: Steeltoe.Messaging.IMessageHeaders
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType*
+  commentId: Overload:Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType
+  name: FromType
+  nameWithType: DefaultTypeMapper.FromType
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.FromType
+- uid: Steeltoe.Messaging.Converter.ITypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.ITypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.ITypeMapper
+  isExternal: true
+  name: FromType(Type, IMessageHeaders)
+  nameWithType: ITypeMapper.FromType(Type, IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.ITypeMapper.FromType(System.Type, Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.ITypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+    name: FromType
+    nameWithType: ITypeMapper.FromType
+    fullName: Steeltoe.Messaging.Converter.ITypeMapper.FromType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.ITypeMapper.FromType(System.Type,Steeltoe.Messaging.IMessageHeaders)
+    name: FromType
+    nameWithType: ITypeMapper.FromType
+    fullName: Steeltoe.Messaging.Converter.ITypeMapper.FromType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType*
+  commentId: Overload:Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType
+  name: GetInferredType
+  nameWithType: DefaultTypeMapper.GetInferredType
+  fullName: Steeltoe.Messaging.Converter.DefaultTypeMapper.GetInferredType
+- uid: Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.ITypeMapper
+  name: GetInferredType(IMessageHeaders)
+  nameWithType: ITypeMapper.GetInferredType(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+    name: GetInferredType
+    nameWithType: ITypeMapper.GetInferredType
+    fullName: Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType(Steeltoe.Messaging.IMessageHeaders)
+    name: GetInferredType
+    nameWithType: ITypeMapper.GetInferredType
+    fullName: Steeltoe.Messaging.Converter.ITypeMapper.GetInferredType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )

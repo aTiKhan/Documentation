@@ -1,0 +1,851 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  id: HystrixPlugins
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  children:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier(Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset
+  langs:
+  - csharp
+  - vb
+  name: HystrixPlugins
+  nameWithType: HystrixPlugins
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  type: Class
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HystrixPlugins
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static class HystrixPlugins
+    content.vb: Public Module HystrixPlugins
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier
+  id: EventNotifier
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: EventNotifier
+  nameWithType: HystrixPlugins.EventNotifier
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: EventNotifier
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static HystrixEventNotifier EventNotifier { get; }
+    parameters: []
+    return:
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+    content.vb: Public Shared ReadOnly Property EventNotifier As HystrixEventNotifier
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier(Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier(Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier)
+  id: RegisterEventNotifier(Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier)
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: RegisterEventNotifier(HystrixEventNotifier)
+  nameWithType: HystrixPlugins.RegisterEventNotifier(HystrixEventNotifier)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier(Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterEventNotifier
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static void RegisterEventNotifier(HystrixEventNotifier impl)
+    parameters:
+    - id: impl
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+    content.vb: Public Shared Sub RegisterEventNotifier(impl As HystrixEventNotifier)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy
+  id: ConcurrencyStrategy
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: ConcurrencyStrategy
+  nameWithType: HystrixPlugins.ConcurrencyStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConcurrencyStrategy
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 50
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static HystrixConcurrencyStrategy ConcurrencyStrategy { get; }
+    parameters: []
+    return:
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+    content.vb: Public Shared ReadOnly Property ConcurrencyStrategy As HystrixConcurrencyStrategy
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy)
+  id: RegisterConcurrencyStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy)
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: RegisterConcurrencyStrategy(HystrixConcurrencyStrategy)
+  nameWithType: HystrixPlugins.RegisterConcurrencyStrategy(HystrixConcurrencyStrategy)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterConcurrencyStrategy
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 63
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static void RegisterConcurrencyStrategy(HystrixConcurrencyStrategy impl)
+    parameters:
+    - id: impl
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+    content.vb: Public Shared Sub RegisterConcurrencyStrategy(impl As HystrixConcurrencyStrategy)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher
+  id: MetricsPublisher
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: MetricsPublisher
+  nameWithType: HystrixPlugins.MetricsPublisher
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MetricsPublisher
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 73
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static HystrixMetricsPublisher MetricsPublisher { get; }
+    parameters: []
+    return:
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+    content.vb: Public Shared ReadOnly Property MetricsPublisher As HystrixMetricsPublisher
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher)
+  id: RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher)
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: RegisterMetricsPublisher(HystrixMetricsPublisher)
+  nameWithType: HystrixPlugins.RegisterMetricsPublisher(HystrixMetricsPublisher)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterMetricsPublisher
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 87
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static void RegisterMetricsPublisher(HystrixMetricsPublisher impl)
+    parameters:
+    - id: impl
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+    content.vb: Public Shared Sub RegisterMetricsPublisher(impl As HystrixMetricsPublisher)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook
+  id: CommandExecutionHook
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: CommandExecutionHook
+  nameWithType: HystrixPlugins.CommandExecutionHook
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CommandExecutionHook
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 98
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static HystrixCommandExecutionHook CommandExecutionHook { get; }
+    parameters: []
+    return:
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+    content.vb: Public Shared ReadOnly Property CommandExecutionHook As HystrixCommandExecutionHook
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook)
+  id: RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook)
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: RegisterMetricsPublisher(HystrixCommandExecutionHook)
+  nameWithType: HystrixPlugins.RegisterMetricsPublisher(HystrixCommandExecutionHook)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher(Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterMetricsPublisher
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 111
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static void RegisterMetricsPublisher(HystrixCommandExecutionHook impl)
+    parameters:
+    - id: impl
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+    content.vb: Public Shared Sub RegisterMetricsPublisher(impl As HystrixCommandExecutionHook)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy
+  id: OptionsStrategy
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: OptionsStrategy
+  nameWithType: HystrixPlugins.OptionsStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OptionsStrategy
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 121
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static HystrixOptionsStrategy OptionsStrategy { get; }
+    parameters: []
+    return:
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy
+    content.vb: Public Shared ReadOnly Property OptionsStrategy As HystrixOptionsStrategy
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy)
+  id: RegisterOptionsStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy)
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: RegisterOptionsStrategy(HystrixOptionsStrategy)
+  nameWithType: HystrixPlugins.RegisterOptionsStrategy(HystrixOptionsStrategy)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy(Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterOptionsStrategy
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 134
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static void RegisterOptionsStrategy(HystrixOptionsStrategy impl)
+    parameters:
+    - id: impl
+      type: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy
+    content.vb: Public Shared Sub RegisterOptionsStrategy(impl As HystrixOptionsStrategy)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset
+  id: Reset
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: HystrixPlugins.Reset()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Reset
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/HystrixPlugins.cs
+    startLine: 143
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  syntax:
+    content: public static void Reset()
+    content.vb: Public Shared Sub Reset
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Strategy
+  name: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Strategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier
+  name: EventNotifier
+  nameWithType: HystrixPlugins.EventNotifier
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.EventNotifier
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier
+  name: HystrixEventNotifier
+  nameWithType: HystrixEventNotifier
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier.HystrixEventNotifier
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier
+  name: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.EventNotifier
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier
+  name: RegisterEventNotifier
+  nameWithType: HystrixPlugins.RegisterEventNotifier
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterEventNotifier
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy
+  name: ConcurrencyStrategy
+  nameWithType: HystrixPlugins.ConcurrencyStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.ConcurrencyStrategy
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  name: HystrixConcurrencyStrategy
+  nameWithType: HystrixConcurrencyStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixConcurrencyStrategy
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  name: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy
+  name: RegisterConcurrencyStrategy
+  nameWithType: HystrixPlugins.RegisterConcurrencyStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterConcurrencyStrategy
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher
+  name: MetricsPublisher
+  nameWithType: HystrixPlugins.MetricsPublisher
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.MetricsPublisher
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics
+  name: HystrixMetricsPublisher
+  nameWithType: HystrixMetricsPublisher
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics.HystrixMetricsPublisher
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics
+  name: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Metrics
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher
+  name: RegisterMetricsPublisher
+  nameWithType: HystrixPlugins.RegisterMetricsPublisher
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterMetricsPublisher
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook
+  name: CommandExecutionHook
+  nameWithType: HystrixPlugins.CommandExecutionHook
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.CommandExecutionHook
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook
+  name: HystrixCommandExecutionHook
+  nameWithType: HystrixCommandExecutionHook
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook.HystrixCommandExecutionHook
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook
+  name: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy
+  name: OptionsStrategy
+  nameWithType: HystrixPlugins.OptionsStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.OptionsStrategy
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options
+  name: HystrixOptionsStrategy
+  nameWithType: HystrixOptionsStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options.HystrixOptionsStrategy
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Strategy.Options
+  name: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Options
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy
+  name: RegisterOptionsStrategy
+  nameWithType: HystrixPlugins.RegisterOptionsStrategy
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.RegisterOptionsStrategy
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset
+  name: Reset
+  nameWithType: HystrixPlugins.Reset
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.HystrixPlugins.Reset

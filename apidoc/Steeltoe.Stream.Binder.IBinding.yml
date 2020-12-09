@@ -1,0 +1,537 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.IBinding
+  commentId: T:Steeltoe.Stream.Binder.IBinding
+  id: IBinding
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.IBinding.BindingName
+  - Steeltoe.Stream.Binder.IBinding.ExtendedInfo
+  - Steeltoe.Stream.Binder.IBinding.IsInput
+  - Steeltoe.Stream.Binder.IBinding.Name
+  - Steeltoe.Stream.Binder.IBinding.Unbind
+  langs:
+  - csharp
+  - vb
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Steeltoe.Stream.Binder.IBinding
+  type: Interface
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IBinding
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinding.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nRepresents a binding between an input or output and an adapter endpoint that connects\nvia a Binder.The binding could be for a consumer or a producer. A consumer binding\nrepresents a connection from an adapter to an input. A producer binding represents a\nconnection from an output to an adapter.\n"
+  example: []
+  syntax:
+    content: 'public interface IBinding : IPausable, ILifecycle'
+    content.vb: >-
+      Public Interface IBinding
+
+          Inherits IPausable
+  inheritedMembers:
+  - Steeltoe.Stream.Binder.IPausable.Pause
+  - Steeltoe.Stream.Binder.IPausable.Resume
+  - Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Stream.Binder.IBinding.ExtendedInfo
+  commentId: P:Steeltoe.Stream.Binder.IBinding.ExtendedInfo
+  id: ExtendedInfo
+  parent: Steeltoe.Stream.Binder.IBinding
+  langs:
+  - csharp
+  - vb
+  name: ExtendedInfo
+  nameWithType: IBinding.ExtendedInfo
+  fullName: Steeltoe.Stream.Binder.IBinding.ExtendedInfo
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExtendedInfo
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinding.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nGets the extended info associated with the binding\n"
+  example: []
+  syntax:
+    content: IDictionary<string, object> ExtendedInfo { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: ReadOnly Property ExtendedInfo As IDictionary(Of String, Object)
+  overload: Steeltoe.Stream.Binder.IBinding.ExtendedInfo*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Stream.Binder.IBinding.Name
+  commentId: P:Steeltoe.Stream.Binder.IBinding.Name
+  id: Name
+  parent: Steeltoe.Stream.Binder.IBinding
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IBinding.Name
+  fullName: Steeltoe.Stream.Binder.IBinding.Name
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Name
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinding.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nGets the name of the destination for this binding.\n"
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Steeltoe.Stream.Binder.IBinding.Name*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Stream.Binder.IBinding.BindingName
+  commentId: P:Steeltoe.Stream.Binder.IBinding.BindingName
+  id: BindingName
+  parent: Steeltoe.Stream.Binder.IBinding
+  langs:
+  - csharp
+  - vb
+  name: BindingName
+  nameWithType: IBinding.BindingName
+  fullName: Steeltoe.Stream.Binder.IBinding.BindingName
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindingName
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinding.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nGets the name of the target for this binding (i.e., channel name).\n"
+  example: []
+  syntax:
+    content: string BindingName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property BindingName As String
+  overload: Steeltoe.Stream.Binder.IBinding.BindingName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Stream.Binder.IBinding.IsInput
+  commentId: P:Steeltoe.Stream.Binder.IBinding.IsInput
+  id: IsInput
+  parent: Steeltoe.Stream.Binder.IBinding
+  langs:
+  - csharp
+  - vb
+  name: IsInput
+  nameWithType: IBinding.IsInput
+  fullName: Steeltoe.Stream.Binder.IBinding.IsInput
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsInput
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinding.cs
+    startLine: 35
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nGets a value indicating whether this binding is an input binding\n"
+  example: []
+  syntax:
+    content: bool IsInput { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsInput As Boolean
+  overload: Steeltoe.Stream.Binder.IBinding.IsInput*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Stream.Binder.IBinding.Unbind
+  commentId: M:Steeltoe.Stream.Binder.IBinding.Unbind
+  id: Unbind
+  parent: Steeltoe.Stream.Binder.IBinding
+  langs:
+  - csharp
+  - vb
+  name: Unbind()
+  nameWithType: IBinding.Unbind()
+  fullName: Steeltoe.Stream.Binder.IBinding.Unbind()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinding.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Unbind
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinding.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nUnbinds the target component represented by this instance and stops any active components\n"
+  example: []
+  syntax:
+    content: Task Unbind()
+    return:
+      type: System.Threading.Tasks.Task
+      description: task to signal results
+    content.vb: Function Unbind As Task
+  overload: Steeltoe.Stream.Binder.IBinding.Unbind*
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: Steeltoe.Stream.Binder.IPausable.Pause
+  commentId: M:Steeltoe.Stream.Binder.IPausable.Pause
+  parent: Steeltoe.Stream.Binder.IPausable
+  name: Pause()
+  nameWithType: IPausable.Pause()
+  fullName: Steeltoe.Stream.Binder.IPausable.Pause()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPausable.Pause
+    name: Pause
+    nameWithType: IPausable.Pause
+    fullName: Steeltoe.Stream.Binder.IPausable.Pause
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPausable.Pause
+    name: Pause
+    nameWithType: IPausable.Pause
+    fullName: Steeltoe.Stream.Binder.IPausable.Pause
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPausable.Resume
+  commentId: M:Steeltoe.Stream.Binder.IPausable.Resume
+  parent: Steeltoe.Stream.Binder.IPausable
+  name: Resume()
+  nameWithType: IPausable.Resume()
+  fullName: Steeltoe.Stream.Binder.IPausable.Resume()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPausable.Resume
+    name: Resume
+    nameWithType: IPausable.Resume
+    fullName: Steeltoe.Stream.Binder.IPausable.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPausable.Resume
+    name: Resume
+    nameWithType: IPausable.Resume
+    fullName: Steeltoe.Stream.Binder.IPausable.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Start
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Start()
+  nameWithType: ILifecycle.Start()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Stop()
+  nameWithType: ILifecycle.Stop()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  commentId: P:Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: IsRunning
+  nameWithType: ILifecycle.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+- uid: Steeltoe.Stream.Binder.IPausable
+  commentId: T:Steeltoe.Stream.Binder.IPausable
+  parent: Steeltoe.Stream.Binder
+  name: IPausable
+  nameWithType: IPausable
+  fullName: Steeltoe.Stream.Binder.IPausable
+- uid: Steeltoe.Common.Lifecycle.ILifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycle
+  nameWithType: ILifecycle
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: Steeltoe.Stream.Binder.IBinding.ExtendedInfo*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinding.ExtendedInfo
+  name: ExtendedInfo
+  nameWithType: IBinding.ExtendedInfo
+  fullName: Steeltoe.Stream.Binder.IBinding.ExtendedInfo
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Stream.Binder.IBinding.Name*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinding.Name
+  name: Name
+  nameWithType: IBinding.Name
+  fullName: Steeltoe.Stream.Binder.IBinding.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Binder.IBinding.BindingName*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinding.BindingName
+  name: BindingName
+  nameWithType: IBinding.BindingName
+  fullName: Steeltoe.Stream.Binder.IBinding.BindingName
+- uid: Steeltoe.Stream.Binder.IBinding.IsInput*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinding.IsInput
+  name: IsInput
+  nameWithType: IBinding.IsInput
+  fullName: Steeltoe.Stream.Binder.IBinding.IsInput
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Stream.Binder.IBinding.Unbind*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinding.Unbind
+  name: Unbind
+  nameWithType: IBinding.Unbind
+  fullName: Steeltoe.Stream.Binder.IBinding.Unbind
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,939 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  commentId: T:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  id: IEurekaHttpClient
+  parent: Steeltoe.Discovery.Eureka.Transport
+  children:
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync(System.String,System.String)
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync(System.String)
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync(System.Collections.Generic.ISet{System.String})
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync(System.Collections.Generic.ISet{System.String})
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String)
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String,System.String)
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus)
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown
+  - Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  langs:
+  - csharp
+  - vb
+  name: IEurekaHttpClient
+  nameWithType: IEurekaHttpClient
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  type: Interface
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IEurekaHttpClient
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: public interface IEurekaHttpClient
+    content.vb: Public Interface IEurekaHttpClient
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  id: RegisterAsync(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsync(InstanceInfo)
+  nameWithType: IEurekaHttpClient.RegisterAsync(InstanceInfo)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync(Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse> RegisterAsync(InstanceInfo info)
+    parameters:
+    - id: info
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse}
+    content.vb: Function RegisterAsync(info As InstanceInfo) As Task(Of EurekaHttpResponse)
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync(System.String,System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync(System.String,System.String)
+  id: CancelAsync(System.String,System.String)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: CancelAsync(String, String)
+  nameWithType: IEurekaHttpClient.CancelAsync(String, String)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CancelAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse> CancelAsync(string appName, string id)
+    parameters:
+    - id: appName
+      type: System.String
+    - id: id
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse}
+    content.vb: Function CancelAsync(appName As String, id As String) As Task(Of EurekaHttpResponse)
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus)
+  id: SendHeartBeatAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: SendHeartBeatAsync(String, String, InstanceInfo, InstanceStatus)
+  nameWithType: IEurekaHttpClient.SendHeartBeatAsync(String, String, InstanceInfo, InstanceStatus)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync(System.String, System.String, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo, Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SendHeartBeatAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<InstanceInfo>> SendHeartBeatAsync(string appName, string id, InstanceInfo info, InstanceStatus overriddenStatus)
+    parameters:
+    - id: appName
+      type: System.String
+    - id: id
+      type: System.String
+    - id: info
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    - id: overriddenStatus
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}}
+    content.vb: Function SendHeartBeatAsync(appName As String, id As String, info As InstanceInfo, overriddenStatus As InstanceStatus) As Task(Of EurekaHttpResponse(Of InstanceInfo))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  id: StatusUpdateAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: StatusUpdateAsync(String, String, InstanceStatus, InstanceInfo)
+  nameWithType: IEurekaHttpClient.StatusUpdateAsync(String, String, InstanceStatus, InstanceInfo)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync(System.String, System.String, Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: StatusUpdateAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse> StatusUpdateAsync(string appName, string id, InstanceStatus newStatus, InstanceInfo info)
+    parameters:
+    - id: appName
+      type: System.String
+    - id: id
+      type: System.String
+    - id: newStatus
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+    - id: info
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse}
+    content.vb: Function StatusUpdateAsync(appName As String, id As String, newStatus As InstanceStatus, info As InstanceInfo) As Task(Of EurekaHttpResponse)
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  id: DeleteStatusOverrideAsync(System.String,System.String,Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteStatusOverrideAsync(String, String, InstanceInfo)
+  nameWithType: IEurekaHttpClient.DeleteStatusOverrideAsync(String, String, InstanceInfo)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync(System.String, System.String, Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DeleteStatusOverrideAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse> DeleteStatusOverrideAsync(string appName, string id, InstanceInfo info)
+    parameters:
+    - id: appName
+      type: System.String
+    - id: id
+      type: System.String
+    - id: info
+      type: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse}
+    content.vb: Function DeleteStatusOverrideAsync(appName As String, id As String, info As InstanceInfo) As Task(Of EurekaHttpResponse)
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync(System.Collections.Generic.ISet{System.String})
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync(System.Collections.Generic.ISet{System.String})
+  id: GetApplicationsAsync(System.Collections.Generic.ISet{System.String})
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetApplicationsAsync(ISet<String>)
+  nameWithType: IEurekaHttpClient.GetApplicationsAsync(ISet<String>)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync(System.Collections.Generic.ISet<System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetApplicationsAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<Applications>> GetApplicationsAsync(ISet<string> regions = null)
+    parameters:
+    - id: regions
+      type: System.Collections.Generic.ISet{System.String}
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Applications}}
+    content.vb: Function GetApplicationsAsync(regions As ISet(Of String) = Nothing) As Task(Of EurekaHttpResponse(Of Applications))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync*
+  nameWithType.vb: IEurekaHttpClient.GetApplicationsAsync(ISet(Of String))
+  fullName.vb: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync(System.Collections.Generic.ISet(Of System.String))
+  name.vb: GetApplicationsAsync(ISet(Of String))
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync(System.Collections.Generic.ISet{System.String})
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync(System.Collections.Generic.ISet{System.String})
+  id: GetDeltaAsync(System.Collections.Generic.ISet{System.String})
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetDeltaAsync(ISet<String>)
+  nameWithType: IEurekaHttpClient.GetDeltaAsync(ISet<String>)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync(System.Collections.Generic.ISet<System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetDeltaAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<Applications>> GetDeltaAsync(ISet<string> regions = null)
+    parameters:
+    - id: regions
+      type: System.Collections.Generic.ISet{System.String}
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Applications}}
+    content.vb: Function GetDeltaAsync(regions As ISet(Of String) = Nothing) As Task(Of EurekaHttpResponse(Of Applications))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync*
+  nameWithType.vb: IEurekaHttpClient.GetDeltaAsync(ISet(Of String))
+  fullName.vb: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync(System.Collections.Generic.ISet(Of System.String))
+  name.vb: GetDeltaAsync(ISet(Of String))
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  id: GetVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetVipAsync(String, ISet<String>)
+  nameWithType: IEurekaHttpClient.GetVipAsync(String, ISet<String>)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync(System.String, System.Collections.Generic.ISet<System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetVipAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<Applications>> GetVipAsync(string vipAddress, ISet<string> regions = null)
+    parameters:
+    - id: vipAddress
+      type: System.String
+    - id: regions
+      type: System.Collections.Generic.ISet{System.String}
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Applications}}
+    content.vb: Function GetVipAsync(vipAddress As String, regions As ISet(Of String) = Nothing) As Task(Of EurekaHttpResponse(Of Applications))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync*
+  nameWithType.vb: IEurekaHttpClient.GetVipAsync(String, ISet(Of String))
+  fullName.vb: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync(System.String, System.Collections.Generic.ISet(Of System.String))
+  name.vb: GetVipAsync(String, ISet(Of String))
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  id: GetSecureVipAsync(System.String,System.Collections.Generic.ISet{System.String})
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetSecureVipAsync(String, ISet<String>)
+  nameWithType: IEurekaHttpClient.GetSecureVipAsync(String, ISet<String>)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync(System.String, System.Collections.Generic.ISet<System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetSecureVipAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<Applications>> GetSecureVipAsync(string secureVipAddress, ISet<string> regions = null)
+    parameters:
+    - id: secureVipAddress
+      type: System.String
+    - id: regions
+      type: System.Collections.Generic.ISet{System.String}
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Applications}}
+    content.vb: Function GetSecureVipAsync(secureVipAddress As String, regions As ISet(Of String) = Nothing) As Task(Of EurekaHttpResponse(Of Applications))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync*
+  nameWithType.vb: IEurekaHttpClient.GetSecureVipAsync(String, ISet(Of String))
+  fullName.vb: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync(System.String, System.Collections.Generic.ISet(Of System.String))
+  name.vb: GetSecureVipAsync(String, ISet(Of String))
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync(System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync(System.String)
+  id: GetApplicationAsync(System.String)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetApplicationAsync(String)
+  nameWithType: IEurekaHttpClient.GetApplicationAsync(String)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetApplicationAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<Application>> GetApplicationAsync(string appName)
+    parameters:
+    - id: appName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Application}}
+    content.vb: Function GetApplicationAsync(appName As String) As Task(Of EurekaHttpResponse(Of Application))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String,System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String,System.String)
+  id: GetInstanceAsync(System.String,System.String)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetInstanceAsync(String, String)
+  nameWithType: IEurekaHttpClient.GetInstanceAsync(String, String)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstanceAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<InstanceInfo>> GetInstanceAsync(string appName, string id)
+    parameters:
+    - id: appName
+      type: System.String
+    - id: id
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}}
+    content.vb: Function GetInstanceAsync(appName As String, id As String) As Task(Of EurekaHttpResponse(Of InstanceInfo))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String)
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String)
+  id: GetInstanceAsync(System.String)
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetInstanceAsync(String)
+  nameWithType: IEurekaHttpClient.GetInstanceAsync(String)
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstanceAsync
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: Task<EurekaHttpResponse<InstanceInfo>> GetInstanceAsync(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}}
+    content.vb: Function GetInstanceAsync(id As String) As Task(Of EurekaHttpResponse(Of InstanceInfo))
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync*
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown
+  commentId: M:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown
+  id: Shutdown
+  parent: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: IEurekaHttpClient.Shutdown()
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown()
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Shutdown
+    path: ../Steeltoe/src/Discovery/src/Eureka/Transport/IEurekaHttpClient.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Discovery.Eureka
+  namespace: Steeltoe.Discovery.Eureka.Transport
+  syntax:
+    content: void Shutdown()
+    content.vb: Sub Shutdown
+  overload: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown*
+references:
+- uid: Steeltoe.Discovery.Eureka.Transport
+  commentId: N:Steeltoe.Discovery.Eureka.Transport
+  name: Steeltoe.Discovery.Eureka.Transport
+  nameWithType: Steeltoe.Discovery.Eureka.Transport
+  fullName: Steeltoe.Discovery.Eureka.Transport
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync
+  name: RegisterAsync
+  nameWithType: IEurekaHttpClient.RegisterAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.RegisterAsync
+- uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  commentId: T:Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  parent: Steeltoe.Discovery.Eureka.AppInfo
+  name: InstanceInfo
+  nameWithType: InstanceInfo
+  fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+- uid: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<EurekaHttpResponse>
+  nameWithType: Task<EurekaHttpResponse>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse>
+  nameWithType.vb: Task(Of EurekaHttpResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse)
+  name.vb: Task(Of EurekaHttpResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.AppInfo
+  commentId: N:Steeltoe.Discovery.Eureka.AppInfo
+  name: Steeltoe.Discovery.Eureka.AppInfo
+  nameWithType: Steeltoe.Discovery.Eureka.AppInfo
+  fullName: Steeltoe.Discovery.Eureka.AppInfo
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync
+  name: CancelAsync
+  nameWithType: IEurekaHttpClient.CancelAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.CancelAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync
+  name: SendHeartBeatAsync
+  nameWithType: IEurekaHttpClient.SendHeartBeatAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.SendHeartBeatAsync
+- uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+  commentId: T:Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+  parent: Steeltoe.Discovery.Eureka.AppInfo
+  name: InstanceStatus
+  nameWithType: InstanceStatus
+  fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceStatus
+- uid: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<EurekaHttpResponse<InstanceInfo>>
+  nameWithType: Task<EurekaHttpResponse<InstanceInfo>>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo>>
+  nameWithType.vb: Task(Of EurekaHttpResponse(Of InstanceInfo))
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse(Of Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo))
+  name.vb: Task(Of EurekaHttpResponse(Of InstanceInfo))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse`1
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    name: InstanceInfo
+    nameWithType: InstanceInfo
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse`1
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+    name: InstanceInfo
+    nameWithType: InstanceInfo
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.InstanceInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync
+  name: StatusUpdateAsync
+  nameWithType: IEurekaHttpClient.StatusUpdateAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.StatusUpdateAsync
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync
+  name: DeleteStatusOverrideAsync
+  nameWithType: IEurekaHttpClient.DeleteStatusOverrideAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.DeleteStatusOverrideAsync
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync
+  name: GetApplicationsAsync
+  nameWithType: IEurekaHttpClient.GetApplicationsAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationsAsync
+- uid: System.Collections.Generic.ISet{System.String}
+  commentId: T:System.Collections.Generic.ISet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ISet`1
+  name: ISet<String>
+  nameWithType: ISet<String>
+  fullName: System.Collections.Generic.ISet<System.String>
+  nameWithType.vb: ISet(Of String)
+  fullName.vb: System.Collections.Generic.ISet(Of System.String)
+  name.vb: ISet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Applications}}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Applications}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<EurekaHttpResponse<Applications>>
+  nameWithType: Task<EurekaHttpResponse<Applications>>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Applications>>
+  nameWithType.vb: Task(Of EurekaHttpResponse(Of Applications))
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse(Of Steeltoe.Discovery.Eureka.AppInfo.Applications))
+  name.vb: Task(Of EurekaHttpResponse(Of Applications))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse`1
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.Applications
+    name: Applications
+    nameWithType: Applications
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.Applications
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse`1
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.Applications
+    name: Applications
+    nameWithType: Applications
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.Applications
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1
+  commentId: T:System.Collections.Generic.ISet`1
+  isExternal: true
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullName.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync
+  name: GetDeltaAsync
+  nameWithType: IEurekaHttpClient.GetDeltaAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetDeltaAsync
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync
+  name: GetVipAsync
+  nameWithType: IEurekaHttpClient.GetVipAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetVipAsync
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync
+  name: GetSecureVipAsync
+  nameWithType: IEurekaHttpClient.GetSecureVipAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetSecureVipAsync
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync
+  name: GetApplicationAsync
+  nameWithType: IEurekaHttpClient.GetApplicationAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetApplicationAsync
+- uid: System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Application}}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse{Steeltoe.Discovery.Eureka.AppInfo.Application}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<EurekaHttpResponse<Application>>
+  nameWithType: Task<EurekaHttpResponse<Application>>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse<Steeltoe.Discovery.Eureka.AppInfo.Application>>
+  nameWithType.vb: Task(Of EurekaHttpResponse(Of Application))
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse(Of Steeltoe.Discovery.Eureka.AppInfo.Application))
+  name.vb: Task(Of EurekaHttpResponse(Of Application))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse`1
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.Application
+    name: Application
+    nameWithType: Application
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.Application
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse`1
+    name: EurekaHttpResponse
+    nameWithType: EurekaHttpResponse
+    fullName: Steeltoe.Discovery.Eureka.Transport.EurekaHttpResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Eureka.AppInfo.Application
+    name: Application
+    nameWithType: Application
+    fullName: Steeltoe.Discovery.Eureka.AppInfo.Application
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync
+  name: GetInstanceAsync
+  nameWithType: IEurekaHttpClient.GetInstanceAsync
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.GetInstanceAsync
+- uid: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown*
+  commentId: Overload:Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown
+  name: Shutdown
+  nameWithType: IEurekaHttpClient.Shutdown
+  fullName: Steeltoe.Discovery.Eureka.Transport.IEurekaHttpClient.Shutdown

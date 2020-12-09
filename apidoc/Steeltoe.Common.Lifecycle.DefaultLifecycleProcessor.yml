@@ -1,0 +1,999 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  commentId: T:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  id: DefaultLifecycleProcessor
+  parent: Steeltoe.Common.Lifecycle
+  children:
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.#ctor(System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ILifecycle},System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ISmartLifecycle},ILogger)
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop
+  - Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+  langs:
+  - csharp
+  - vb
+  name: DefaultLifecycleProcessor
+  nameWithType: DefaultLifecycleProcessor
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultLifecycleProcessor
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: 'public class DefaultLifecycleProcessor : ILifecycleProcessor, IDisposable'
+    content.vb: >-
+      Public Class DefaultLifecycleProcessor
+
+          Implements ILifecycleProcessor, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.#ctor(System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ILifecycle},System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ISmartLifecycle},ILogger)
+  commentId: M:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.#ctor(System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ILifecycle},System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ISmartLifecycle},ILogger)
+  id: '#ctor(System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ILifecycle},System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ISmartLifecycle},ILogger)'
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: DefaultLifecycleProcessor(IEnumerable<ILifecycle>, IEnumerable<ISmartLifecycle>, ILogger)
+  nameWithType: DefaultLifecycleProcessor.DefaultLifecycleProcessor(IEnumerable<ILifecycle>, IEnumerable<ISmartLifecycle>, ILogger)
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.DefaultLifecycleProcessor(System.Collections.Generic.IEnumerable<Steeltoe.Common.Lifecycle.ILifecycle>, System.Collections.Generic.IEnumerable<Steeltoe.Common.Lifecycle.ISmartLifecycle>, ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public DefaultLifecycleProcessor(IEnumerable<ILifecycle> lifecyclesServices, IEnumerable<ISmartLifecycle> smartLifecyclesServices, ILogger logger = null)
+    parameters:
+    - id: lifecyclesServices
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ILifecycle}
+    - id: smartLifecyclesServices
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ISmartLifecycle}
+    - id: logger
+      type: ILogger
+    content.vb: Public Sub New(lifecyclesServices As IEnumerable(Of ILifecycle), smartLifecyclesServices As IEnumerable(Of ISmartLifecycle), logger As ILogger = Nothing)
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.#ctor*
+  nameWithType.vb: DefaultLifecycleProcessor.DefaultLifecycleProcessor(IEnumerable(Of ILifecycle), IEnumerable(Of ISmartLifecycle), ILogger)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.DefaultLifecycleProcessor(System.Collections.Generic.IEnumerable(Of Steeltoe.Common.Lifecycle.ILifecycle), System.Collections.Generic.IEnumerable(Of Steeltoe.Common.Lifecycle.ISmartLifecycle), ILogger)
+  name.vb: DefaultLifecycleProcessor(IEnumerable(Of ILifecycle), IEnumerable(Of ISmartLifecycle), ILogger)
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+  commentId: P:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+  id: TimeoutPerShutdownPhase
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: TimeoutPerShutdownPhase
+  nameWithType: DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TimeoutPerShutdownPhase
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public int TimeoutPerShutdownPhase { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TimeoutPerShutdownPhase As Integer
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning
+  commentId: P:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning
+  id: IsRunning
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: DefaultLifecycleProcessor.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsRunning
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public bool IsRunning { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRunning As Boolean
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycleProcessor.IsRunning
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start
+  commentId: M:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start
+  id: Start
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: DefaultLifecycleProcessor.Start()
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Start
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public Task Start()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Start As Task
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop
+  commentId: M:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop
+  id: Stop
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: DefaultLifecycleProcessor.Stop()
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Stop
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public Task Stop()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Stop As Task
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh
+  commentId: M:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh
+  id: OnRefresh
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: OnRefresh()
+  nameWithType: DefaultLifecycleProcessor.OnRefresh()
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnRefresh
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public Task OnRefresh()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function OnRefresh As Task
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose
+  commentId: M:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose
+  id: OnClose
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: OnClose()
+  nameWithType: DefaultLifecycleProcessor.OnClose()
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnClose
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public Task OnClose()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function OnClose As Task
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose
+  commentId: M:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose
+  id: Dispose
+  parent: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DefaultLifecycleProcessor.Dispose()
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Dispose
+    path: ../Steeltoe/src/Common/src/Common/Lifecycle/DefaultLifecycleProcessor.cs
+    startLine: 55
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Lifecycle
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycleProcessor
+  nameWithType: ILifecycleProcessor
+  fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.#ctor*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.#ctor
+  name: DefaultLifecycleProcessor
+  nameWithType: DefaultLifecycleProcessor.DefaultLifecycleProcessor
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.DefaultLifecycleProcessor
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ILifecycle}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ILifecycle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ILifecycle>
+  nameWithType: IEnumerable<ILifecycle>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Common.Lifecycle.ILifecycle>
+  nameWithType.vb: IEnumerable(Of ILifecycle)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Common.Lifecycle.ILifecycle)
+  name.vb: IEnumerable(Of ILifecycle)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle
+    name: ILifecycle
+    nameWithType: ILifecycle
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle
+    name: ILifecycle
+    nameWithType: ILifecycle
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ISmartLifecycle}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Common.Lifecycle.ISmartLifecycle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ISmartLifecycle>
+  nameWithType: IEnumerable<ISmartLifecycle>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Common.Lifecycle.ISmartLifecycle>
+  nameWithType.vb: IEnumerable(Of ISmartLifecycle)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Common.Lifecycle.ISmartLifecycle)
+  name.vb: IEnumerable(Of ISmartLifecycle)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Lifecycle.ISmartLifecycle
+    name: ISmartLifecycle
+    nameWithType: ISmartLifecycle
+    fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Lifecycle.ISmartLifecycle
+    name: ISmartLifecycle
+    nameWithType: ISmartLifecycle
+    fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+  name: TimeoutPerShutdownPhase
+  nameWithType: DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.TimeoutPerShutdownPhase
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning
+  name: IsRunning
+  nameWithType: DefaultLifecycleProcessor.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.IsRunning
+- uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.IsRunning
+  commentId: P:Steeltoe.Common.Lifecycle.ILifecycleProcessor.IsRunning
+  parent: Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  name: IsRunning
+  nameWithType: ILifecycleProcessor.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start
+  name: Start
+  nameWithType: DefaultLifecycleProcessor.Start
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Start
+- uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start
+  parent: Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  name: Start()
+  nameWithType: ILifecycleProcessor.Start()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start
+    name: Start
+    nameWithType: ILifecycleProcessor.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start
+    name: Start
+    nameWithType: ILifecycleProcessor.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop
+  name: Stop
+  nameWithType: DefaultLifecycleProcessor.Stop
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Stop
+- uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop
+  parent: Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  name: Stop()
+  nameWithType: ILifecycleProcessor.Stop()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop
+    name: Stop
+    nameWithType: ILifecycleProcessor.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop
+    name: Stop
+    nameWithType: ILifecycleProcessor.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh
+  name: OnRefresh
+  nameWithType: DefaultLifecycleProcessor.OnRefresh
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnRefresh
+- uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh
+  parent: Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  name: OnRefresh()
+  nameWithType: ILifecycleProcessor.OnRefresh()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh
+    name: OnRefresh
+    nameWithType: ILifecycleProcessor.OnRefresh
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh
+    name: OnRefresh
+    nameWithType: ILifecycleProcessor.OnRefresh
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnRefresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose
+  name: OnClose
+  nameWithType: DefaultLifecycleProcessor.OnClose
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.OnClose
+- uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose
+  parent: Steeltoe.Common.Lifecycle.ILifecycleProcessor
+  name: OnClose()
+  nameWithType: ILifecycleProcessor.OnClose()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose
+    name: OnClose
+    nameWithType: ILifecycleProcessor.OnClose
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose
+    name: OnClose
+    nameWithType: ILifecycleProcessor.OnClose
+    fullName: Steeltoe.Common.Lifecycle.ILifecycleProcessor.OnClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose*
+  commentId: Overload:Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose
+  name: Dispose
+  nameWithType: DefaultLifecycleProcessor.Dispose
+  fullName: Steeltoe.Common.Lifecycle.DefaultLifecycleProcessor.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,411 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  commentId: T:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  id: RandomValueProvider
+  parent: Steeltoe.Extensions.Configuration.RandomValue
+  children:
+  - Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.#ctor(System.String,ILoggerFactory)
+  - Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)
+  - Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load
+  - Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set(System.String,System.String)
+  - Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet(System.String,System.String@)
+  langs:
+  - csharp
+  - vb
+  name: RandomValueProvider
+  nameWithType: RandomValueProvider
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  type: Class
+  source:
+    remote:
+      path: src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RandomValueProvider
+    path: ../Steeltoe/src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Extensions.Configuration.RandomValueBase
+  namespace: Steeltoe.Extensions.Configuration.RandomValue
+  summary: "\nConfiguration provider that provides random values.\nNote: This code was inspired by the Spring Boot equivalent class.\n"
+  example: []
+  syntax:
+    content: 'public class RandomValueProvider : ConfigurationProvider'
+    content.vb: >-
+      Public Class RandomValueProvider
+
+          Inherits ConfigurationProvider
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.#ctor(System.String,ILoggerFactory)
+  commentId: M:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.#ctor(System.String,ILoggerFactory)
+  id: '#ctor(System.String,ILoggerFactory)'
+  parent: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  langs:
+  - csharp
+  - vb
+  name: RandomValueProvider(String, ILoggerFactory)
+  nameWithType: RandomValueProvider.RandomValueProvider(String, ILoggerFactory)
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.RandomValueProvider(System.String, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Extensions.Configuration.RandomValueBase
+  namespace: Steeltoe.Extensions.Configuration.RandomValue
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider\" data-throw-if-not-resolved=\"false\"></xref> class.\nThe new placeholder resolver wraps the provided configuration\n"
+  example: []
+  syntax:
+    content: public RandomValueProvider(string prefix, ILoggerFactory logFactory = null)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: key prefix to use to match random number keys
+    - id: logFactory
+      type: ILoggerFactory
+      description: the logger factory to use
+    content.vb: Public Sub New(prefix As String, logFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet(System.String,System.String@)
+  commentId: M:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet(System.String,System.String@)
+  id: TryGet(System.String,System.String@)
+  parent: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  langs:
+  - csharp
+  - vb
+  name: TryGet(String, out String)
+  nameWithType: RandomValueProvider.TryGet(String, out String)
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet(System.String, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TryGet
+    path: ../Steeltoe/src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Extensions.Configuration.RandomValueBase
+  namespace: Steeltoe.Extensions.Configuration.RandomValue
+  summary: "\nTries to get a configuration value for the specified key. If the key starts with the\nconfigured prefix (default random:), then the key will be parsed and the appropriate\nrandom value will be generated.\n"
+  example: []
+  syntax:
+    content: public override bool TryGet(string key, out string value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key which should start with prefix
+    - id: value
+      type: System.String
+      description: The random value returned
+    return:
+      type: System.Boolean
+      description: <code>True</code> if a value for the specified key was found, otherwise <code>false</code>.
+    content.vb: Public Overrides Function TryGet(key As String, ByRef value As String) As Boolean
+  overload: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet*
+  nameWithType.vb: RandomValueProvider.TryGet(String, ByRef String)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet(System.String, ByRef System.String)
+  name.vb: TryGet(String, ByRef String)
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set(System.String,System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set(System.String,System.String)
+  id: Set(System.String,System.String)
+  parent: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  langs:
+  - csharp
+  - vb
+  name: Set(String, String)
+  nameWithType: RandomValueProvider.Set(String, String)
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Set
+    path: ../Steeltoe/src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Extensions.Configuration.RandomValueBase
+  namespace: Steeltoe.Extensions.Configuration.RandomValue
+  summary: "\nSets a configuration value for the specified key. Currently ignored.\n"
+  example: []
+  syntax:
+    content: public override void Set(string key, string value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key.
+    - id: value
+      type: System.String
+      description: The value.
+    content.vb: Public Overrides Sub Set(key As String, value As String)
+  overload: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load
+  commentId: M:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load
+  id: Load
+  parent: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: RandomValueProvider.Load()
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load()
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Load
+    path: ../Steeltoe/src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+    startLine: 69
+  assemblies:
+  - Steeltoe.Extensions.Configuration.RandomValueBase
+  namespace: Steeltoe.Extensions.Configuration.RandomValue
+  summary: "\nCreates a new underlying Random number generator.\n"
+  example: []
+  syntax:
+    content: public override void Load()
+    content.vb: Public Overrides Sub Load
+  overload: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)
+  parent: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  langs:
+  - csharp
+  - vb
+  name: GetChildKeys(IEnumerable<String>, String)
+  nameWithType: RandomValueProvider.GetChildKeys(IEnumerable<String>, String)
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys(System.Collections.Generic.IEnumerable<System.String>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetChildKeys
+    path: ../Steeltoe/src/Configuration/src/RandomValueBase/RandomValueProvider.cs
+    startLine: 80
+  assemblies:
+  - Steeltoe.Extensions.Configuration.RandomValueBase
+  namespace: Steeltoe.Extensions.Configuration.RandomValue
+  summary: "\nReturns an empty list.\n"
+  example: []
+  syntax:
+    content: public override IEnumerable<string> GetChildKeys(IEnumerable<string> earlierKeys, string parentPath)
+    parameters:
+    - id: earlierKeys
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The child keys returned by the preceding providers for the same parent path.
+    - id: parentPath
+      type: System.String
+      description: The parent path.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The child keys.
+    content.vb: Public Overrides Function GetChildKeys(earlierKeys As IEnumerable(Of String), parentPath As String) As IEnumerable(Of String)
+  overload: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys*
+  nameWithType.vb: RandomValueProvider.GetChildKeys(IEnumerable(Of String), String)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys(System.Collections.Generic.IEnumerable(Of System.String), System.String)
+  name.vb: GetChildKeys(IEnumerable(Of String), String)
+references:
+- uid: Steeltoe.Extensions.Configuration.RandomValue
+  commentId: N:Steeltoe.Extensions.Configuration.RandomValue
+  name: Steeltoe.Extensions.Configuration.RandomValue
+  nameWithType: Steeltoe.Extensions.Configuration.RandomValue
+  fullName: Steeltoe.Extensions.Configuration.RandomValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  commentId: T:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+  name: RandomValueProvider
+  nameWithType: RandomValueProvider
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.#ctor*
+  commentId: Overload:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.#ctor
+  name: RandomValueProvider
+  nameWithType: RandomValueProvider.RandomValueProvider
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.RandomValueProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet*
+  commentId: Overload:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet
+  name: TryGet
+  nameWithType: RandomValueProvider.TryGet
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.TryGet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set*
+  commentId: Overload:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set
+  name: Set
+  nameWithType: RandomValueProvider.Set
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Set
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load*
+  commentId: Overload:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load
+  name: Load
+  nameWithType: RandomValueProvider.Load
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.Load
+- uid: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys*
+  commentId: Overload:Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys
+  name: GetChildKeys
+  nameWithType: RandomValueProvider.GetChildKeys
+  fullName: Steeltoe.Extensions.Configuration.RandomValue.RandomValueProvider.GetChildKeys
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

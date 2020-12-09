@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions
+  id: LoadBalancerHttpClientBuilderExtensions
+  parent: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer``1(IHttpClientBuilder)
+  - Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer(IHttpClientBuilder)
+  - Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer(IHttpClientBuilder)
+  langs:
+  - csharp
+  - vb
+  name: LoadBalancerHttpClientBuilderExtensions
+  nameWithType: LoadBalancerHttpClientBuilderExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LoadBalancerHttpClientBuilderExtensions
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public static class LoadBalancerHttpClientBuilderExtensions
+    content.vb: Public Module LoadBalancerHttpClientBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer(IHttpClientBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer(IHttpClientBuilder)
+  id: AddRandomLoadBalancer(IHttpClientBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddRandomLoadBalancer(IHttpClientBuilder)
+  nameWithType: LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer(IHttpClientBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer(IHttpClientBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddRandomLoadBalancer
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nAdds a <xref href=\"System.Net.Http.DelegatingHandler\" data-throw-if-not-resolved=\"false\"></xref> that performs random load balancing\n"
+  remarks: Requires an <see cref="!:IServiceInstanceProvider"></see> or <xref href="Steeltoe.Discovery.IDiscoveryClient" data-throw-if-not-resolved="false"></xref> in the DI container so the load balancer can sent traffic to more than one address
+  example: []
+  syntax:
+    content: public static IHttpClientBuilder AddRandomLoadBalancer(this IHttpClientBuilder httpClientBuilder)
+    parameters:
+    - id: httpClientBuilder
+      type: IHttpClientBuilder
+      description: The <see cref="!:IHttpClientBuilder"></see>.
+    return:
+      type: IHttpClientBuilder
+      description: An <see cref="!:IHttpClientBuilder"></see> that can be used to configure the client.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddRandomLoadBalancer(httpClientBuilder As IHttpClientBuilder) As IHttpClientBuilder
+  overload: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer(IHttpClientBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer(IHttpClientBuilder)
+  id: AddRoundRobinLoadBalancer(IHttpClientBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddRoundRobinLoadBalancer(IHttpClientBuilder)
+  nameWithType: LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer(IHttpClientBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer(IHttpClientBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddRoundRobinLoadBalancer
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nAdds a <xref href=\"System.Net.Http.DelegatingHandler\" data-throw-if-not-resolved=\"false\"></xref> that performs round robin load balancing, optionally backed by an <see cref=\"!:IDistributedCache\"></see>\n"
+  remarks: "\nRequires an <see cref=\"!:IServiceInstanceProvider\"></see> or <xref href=\"Steeltoe.Discovery.IDiscoveryClient\" data-throw-if-not-resolved=\"false\"></xref> in the DI container so the load balancer can sent traffic to more than one address<p></p>\nAlso requires an <see cref=\"!:IDistributedCache\"></see> in the DI Container for consistent round robin balancing across multiple client instances\n"
+  example: []
+  syntax:
+    content: public static IHttpClientBuilder AddRoundRobinLoadBalancer(this IHttpClientBuilder httpClientBuilder)
+    parameters:
+    - id: httpClientBuilder
+      type: IHttpClientBuilder
+      description: The <see cref="!:IHttpClientBuilder"></see>.
+    return:
+      type: IHttpClientBuilder
+      description: An <see cref="!:IHttpClientBuilder"></see> that can be used to configure the client.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddRoundRobinLoadBalancer(httpClientBuilder As IHttpClientBuilder) As IHttpClientBuilder
+  overload: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer``1(IHttpClientBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer``1(IHttpClientBuilder)
+  id: AddLoadBalancer``1(IHttpClientBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddLoadBalancer<T>(IHttpClientBuilder)
+  nameWithType: LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer<T>(IHttpClientBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer<T>(IHttpClientBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddLoadBalancer
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientBuilderExtensions.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nAdds an <xref href=\"System.Net.Http.HttpMessageHandler\" data-throw-if-not-resolved=\"false\"></xref> with specified load balancer <p></p>\nDoes NOT add the specified load balancer to the container. Please add your load balancer separately.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IHttpClientBuilder AddLoadBalancer<T>(this IHttpClientBuilder httpClientBuilder)
+
+          where T : ILoadBalancer
+    parameters:
+    - id: httpClientBuilder
+      type: IHttpClientBuilder
+      description: The <see cref="!:IHttpClientBuilder"></see>.
+    typeParameters:
+    - id: T
+      description: The type of <see cref="!:ILoadBalancer"></see> to use
+    return:
+      type: IHttpClientBuilder
+      description: An <see cref="!:IHttpClientBuilder"></see> that can be used to configure the client.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddLoadBalancer(Of T As ILoadBalancer)(httpClientBuilder As IHttpClientBuilder) As IHttpClientBuilder
+  overload: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer*
+  nameWithType.vb: LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer(Of T)(IHttpClientBuilder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer(Of T)(IHttpClientBuilder)
+  name.vb: AddLoadBalancer(Of T)(IHttpClientBuilder)
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Net.Http.DelegatingHandler
+  commentId: T:System.Net.Http.DelegatingHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: DelegatingHandler
+  nameWithType: DelegatingHandler
+  fullName: System.Net.Http.DelegatingHandler
+- uid: Steeltoe.Discovery.IDiscoveryClient
+  commentId: T:Steeltoe.Discovery.IDiscoveryClient
+  parent: Steeltoe.Discovery
+  name: IDiscoveryClient
+  nameWithType: IDiscoveryClient
+  fullName: Steeltoe.Discovery.IDiscoveryClient
+- uid: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer
+  name: AddRandomLoadBalancer
+  nameWithType: LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer
+  fullName: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRandomLoadBalancer
+- uid: IHttpClientBuilder
+  isExternal: true
+  name: IHttpClientBuilder
+  nameWithType: IHttpClientBuilder
+  fullName: IHttpClientBuilder
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: Steeltoe.Discovery
+  commentId: N:Steeltoe.Discovery
+  name: Steeltoe.Discovery
+  nameWithType: Steeltoe.Discovery
+  fullName: Steeltoe.Discovery
+- uid: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer
+  name: AddRoundRobinLoadBalancer
+  nameWithType: LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer
+  fullName: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddRoundRobinLoadBalancer
+- uid: System.Net.Http.HttpMessageHandler
+  commentId: T:System.Net.Http.HttpMessageHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpMessageHandler
+  nameWithType: HttpMessageHandler
+  fullName: System.Net.Http.HttpMessageHandler
+- uid: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer
+  name: AddLoadBalancer
+  nameWithType: LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer
+  fullName: Microsoft.Extensions.DependencyInjection.LoadBalancerHttpClientBuilderExtensions.AddLoadBalancer

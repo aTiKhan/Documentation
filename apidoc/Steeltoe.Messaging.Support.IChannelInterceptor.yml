@@ -1,0 +1,346 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor
+  commentId: T:Steeltoe.Messaging.Support.IChannelInterceptor
+  id: IChannelInterceptor
+  parent: Steeltoe.Messaging.Support
+  children:
+  - Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+  - Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+  - Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Messaging.Support.IChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+  - Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Messaging.Support.IChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  langs:
+  - csharp
+  - vb
+  name: IChannelInterceptor
+  nameWithType: IChannelInterceptor
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IChannelInterceptor
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Support
+  summary: "\nInterface for interceptors that are able to view and/or modify the Messages\nbeing sent-to and/or received-from a MessageChannel\n"
+  example: []
+  syntax:
+    content: 'public interface IChannelInterceptor : IOrdered'
+    content.vb: >-
+      Public Interface IChannelInterceptor
+
+          Inherits IOrdered
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Messaging.Support.IChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  id: PreSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Messaging.Support.IChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: PreSend(IMessage, IMessageChannel)
+  nameWithType: IChannelInterceptor.PreSend(IMessage, IMessageChannel)
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PreSend(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PreSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Support
+  summary: "\nInvoked before the Message is actually sent to the channel.\nThis allows for modification of the Message if necessary.\n"
+  example: []
+  syntax:
+    content: IMessage PreSend(IMessage message, IMessageChannel channel)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message being processed
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the channel the message for
+    return:
+      type: Steeltoe.Messaging.IMessage
+      description: the resulting message to send; can be null
+    content.vb: Function PreSend(message As IMessage, channel As IMessageChannel) As IMessage
+  overload: Steeltoe.Messaging.Support.IChannelInterceptor.PreSend*
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+  commentId: M:Steeltoe.Messaging.Support.IChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+  id: PostSend(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean)
+  parent: Steeltoe.Messaging.Support.IChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: PostSend(IMessage, IMessageChannel, Boolean)
+  nameWithType: IChannelInterceptor.PostSend(IMessage, IMessageChannel, Boolean)
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PostSend(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PostSend
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Support
+  summary: "\nInvoked immediately after the send invocation.\n"
+  example: []
+  syntax:
+    content: void PostSend(IMessage message, IMessageChannel channel, bool sent)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message being processed
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the channel the message for
+    - id: sent
+      type: System.Boolean
+      description: the return value of the send
+    content.vb: Sub PostSend(message As IMessage, channel As IMessageChannel, sent As Boolean)
+  overload: Steeltoe.Messaging.Support.IChannelInterceptor.PostSend*
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+  commentId: M:Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+  id: AfterSendCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Boolean,System.Exception)
+  parent: Steeltoe.Messaging.Support.IChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: AfterSendCompletion(IMessage, IMessageChannel, Boolean, Exception)
+  nameWithType: IChannelInterceptor.AfterSendCompletion(IMessage, IMessageChannel, Boolean, Exception)
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, System.Boolean, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AfterSendCompletion
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Support
+  summary: "\nInvoked after the completion of a send regardless of any exception that\nhave been raised thus allowing for proper resource cleanup.\n"
+  example: []
+  syntax:
+    content: void AfterSendCompletion(IMessage message, IMessageChannel channel, bool sent, Exception exception)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message being processed
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the channel the message for
+    - id: sent
+      type: System.Boolean
+      description: the return value of the send
+    - id: exception
+      type: System.Exception
+      description: the exception that may have occured; can be null
+    content.vb: Sub AfterSendCompletion(message As IMessage, channel As IMessageChannel, sent As Boolean, exception As Exception)
+  overload: Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion*
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  id: PreReceive(Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Messaging.Support.IChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: PreReceive(IMessageChannel)
+  nameWithType: IChannelInterceptor.PreReceive(IMessageChannel)
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive(Steeltoe.Messaging.IMessageChannel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PreReceive
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+    startLine: 47
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Support
+  summary: "\nInvoked as soon as receive is called and before a Message is actually retrieved.\n"
+  example: []
+  syntax:
+    content: bool PreReceive(IMessageChannel channel)
+    parameters:
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the channel the message for
+    return:
+      type: System.Boolean
+      description: false if no receive should be done;
+    content.vb: Function PreReceive(channel As IMessageChannel) As Boolean
+  overload: Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive*
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  id: PostReceive(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Messaging.Support.IChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: PostReceive(IMessage, IMessageChannel)
+  nameWithType: IChannelInterceptor.PostReceive(IMessage, IMessageChannel)
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PostReceive
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+    startLine: 55
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Support
+  summary: "\nInvoked immediately after a Message has been retrieved but before it is returned to the caller.\n"
+  example: []
+  syntax:
+    content: IMessage PostReceive(IMessage message, IMessageChannel channel)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message being processed
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the channel the message is from
+    return:
+      type: Steeltoe.Messaging.IMessage
+      description: the resulting message after post processing; can be null
+    content.vb: Function PostReceive(message As IMessage, channel As IMessageChannel) As IMessage
+  overload: Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive*
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+  commentId: M:Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+  id: AfterReceiveCompletion(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessageChannel,System.Exception)
+  parent: Steeltoe.Messaging.Support.IChannelInterceptor
+  langs:
+  - csharp
+  - vb
+  name: AfterReceiveCompletion(IMessage, IMessageChannel, Exception)
+  nameWithType: IChannelInterceptor.AfterReceiveCompletion(IMessage, IMessageChannel, Exception)
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessageChannel, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AfterReceiveCompletion
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Support/IChannelInterceptor.cs
+    startLine: 63
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Support
+  summary: "\nInvoked after the completion of a receive regardless of any exception that have been raised thus allowing for proper resource cleanup.\n"
+  example: []
+  syntax:
+    content: void AfterReceiveCompletion(IMessage message, IMessageChannel channel, Exception exception)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message being processed
+    - id: channel
+      type: Steeltoe.Messaging.IMessageChannel
+      description: the channel the message is from
+    - id: exception
+      type: System.Exception
+      description: the exception that may have occured; can be null
+    content.vb: Sub AfterReceiveCompletion(message As IMessage, channel As IMessageChannel, exception As Exception)
+  overload: Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion*
+references:
+- uid: Steeltoe.Messaging.Support
+  commentId: N:Steeltoe.Messaging.Support
+  name: Steeltoe.Messaging.Support
+  nameWithType: Steeltoe.Messaging.Support
+  fullName: Steeltoe.Messaging.Support
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PreSend*
+  commentId: Overload:Steeltoe.Messaging.Support.IChannelInterceptor.PreSend
+  name: PreSend
+  nameWithType: IChannelInterceptor.PreSend
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PreSend
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PostSend*
+  commentId: Overload:Steeltoe.Messaging.Support.IChannelInterceptor.PostSend
+  name: PostSend
+  nameWithType: IChannelInterceptor.PostSend
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PostSend
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion*
+  commentId: Overload:Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion
+  name: AfterSendCompletion
+  nameWithType: IChannelInterceptor.AfterSendCompletion
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.AfterSendCompletion
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive*
+  commentId: Overload:Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive
+  name: PreReceive
+  nameWithType: IChannelInterceptor.PreReceive
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PreReceive
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive*
+  commentId: Overload:Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive
+  name: PostReceive
+  nameWithType: IChannelInterceptor.PostReceive
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.PostReceive
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion*
+  commentId: Overload:Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion
+  name: AfterReceiveCompletion
+  nameWithType: IChannelInterceptor.AfterReceiveCompletion
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor.AfterReceiveCompletion

@@ -1,0 +1,849 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver
+  commentId: T:Steeltoe.Stream.Config.SmartPayloadArgumentResolver
+  id: SmartPayloadArgumentResolver
+  parent: Steeltoe.Stream.Config
+  children:
+  - Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor(Steeltoe.Messaging.Converter.IMessageConverter)
+  - Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor(Steeltoe.Messaging.Converter.IMessageConverter,System.Boolean)
+  - Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  langs:
+  - csharp
+  - vb
+  name: SmartPayloadArgumentResolver
+  nameWithType: SmartPayloadArgumentResolver
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SmartPayloadArgumentResolver
+    path: ../Steeltoe/src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Config
+  syntax:
+    content: 'public class SmartPayloadArgumentResolver : PayloadMethodArgumentResolver, IHandlerMethodArgumentResolver'
+    content.vb: >-
+      Public Class SmartPayloadArgumentResolver
+
+          Inherits PayloadMethodArgumentResolver
+
+          Implements IHandlerMethodArgumentResolver
+  inheritance:
+  - System.Object
+  - Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  implements:
+  - Steeltoe.Messaging.Handler.Invocation.IHandlerMethodArgumentResolver
+  inheritedMembers:
+  - Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._converter
+  - Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._useDefaultResolution
+  - Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload(System.Object)
+  - Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate(Steeltoe.Messaging.IMessage,System.Reflection.ParameterInfo,System.Object)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor(Steeltoe.Messaging.Converter.IMessageConverter)
+  commentId: M:Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor(Steeltoe.Messaging.Converter.IMessageConverter)
+  id: '#ctor(Steeltoe.Messaging.Converter.IMessageConverter)'
+  parent: Steeltoe.Stream.Config.SmartPayloadArgumentResolver
+  langs:
+  - csharp
+  - vb
+  name: SmartPayloadArgumentResolver(IMessageConverter)
+  nameWithType: SmartPayloadArgumentResolver.SmartPayloadArgumentResolver(IMessageConverter)
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SmartPayloadArgumentResolver(Steeltoe.Messaging.Converter.IMessageConverter)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Config
+  syntax:
+    content: public SmartPayloadArgumentResolver(IMessageConverter messageConverter)
+    parameters:
+    - id: messageConverter
+      type: Steeltoe.Messaging.Converter.IMessageConverter
+    content.vb: Public Sub New(messageConverter As IMessageConverter)
+  overload: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor(Steeltoe.Messaging.Converter.IMessageConverter,System.Boolean)
+  commentId: M:Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor(Steeltoe.Messaging.Converter.IMessageConverter,System.Boolean)
+  id: '#ctor(Steeltoe.Messaging.Converter.IMessageConverter,System.Boolean)'
+  parent: Steeltoe.Stream.Config.SmartPayloadArgumentResolver
+  langs:
+  - csharp
+  - vb
+  name: SmartPayloadArgumentResolver(IMessageConverter, Boolean)
+  nameWithType: SmartPayloadArgumentResolver.SmartPayloadArgumentResolver(IMessageConverter, Boolean)
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SmartPayloadArgumentResolver(Steeltoe.Messaging.Converter.IMessageConverter, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Config
+  syntax:
+    content: public SmartPayloadArgumentResolver(IMessageConverter messageConverter, bool useDefaultResolution)
+    parameters:
+    - id: messageConverter
+      type: Steeltoe.Messaging.Converter.IMessageConverter
+    - id: useDefaultResolution
+      type: System.Boolean
+    content.vb: Public Sub New(messageConverter As IMessageConverter, useDefaultResolution As Boolean)
+  overload: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  commentId: M:Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  id: SupportsParameter(System.Reflection.ParameterInfo)
+  parent: Steeltoe.Stream.Config.SmartPayloadArgumentResolver
+  langs:
+  - csharp
+  - vb
+  name: SupportsParameter(ParameterInfo)
+  nameWithType: SmartPayloadArgumentResolver.SupportsParameter(ParameterInfo)
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SupportsParameter
+    path: ../Steeltoe/src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Config
+  syntax:
+    content: public override bool SupportsParameter(ParameterInfo parameter)
+    parameters:
+    - id: parameter
+      type: System.Reflection.ParameterInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function SupportsParameter(parameter As ParameterInfo) As Boolean
+  overridden: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  overload: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  id: ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Stream.Config.SmartPayloadArgumentResolver
+  langs:
+  - csharp
+  - vb
+  name: ResolveArgument(ParameterInfo, IMessage)
+  nameWithType: SmartPayloadArgumentResolver.ResolveArgument(ParameterInfo, IMessage)
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo, Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ResolveArgument
+    path: ../Steeltoe/src/Stream/src/StreamBase/Config/SmartPayloadArgumentResolver.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Config
+  syntax:
+    content: public override object ResolveArgument(ParameterInfo parameter, IMessage message)
+    parameters:
+    - id: parameter
+      type: System.Reflection.ParameterInfo
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function ResolveArgument(parameter As ParameterInfo, message As IMessage) As Object
+  overridden: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  overload: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Steeltoe.Stream.Config
+  commentId: N:Steeltoe.Stream.Config
+  name: Steeltoe.Stream.Config
+  nameWithType: Steeltoe.Stream.Config
+  fullName: Steeltoe.Stream.Config
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  commentId: T:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  parent: Steeltoe.Messaging.Handler.Attributes.Support
+  name: PayloadMethodArgumentResolver
+  nameWithType: PayloadMethodArgumentResolver
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+- uid: Steeltoe.Messaging.Handler.Invocation.IHandlerMethodArgumentResolver
+  commentId: T:Steeltoe.Messaging.Handler.Invocation.IHandlerMethodArgumentResolver
+  parent: Steeltoe.Messaging.Handler.Invocation
+  name: IHandlerMethodArgumentResolver
+  nameWithType: IHandlerMethodArgumentResolver
+  fullName: Steeltoe.Messaging.Handler.Invocation.IHandlerMethodArgumentResolver
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._converter
+  commentId: F:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._converter
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  name: _converter
+  nameWithType: PayloadMethodArgumentResolver._converter
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._converter
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._useDefaultResolution
+  commentId: F:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._useDefaultResolution
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  name: _useDefaultResolution
+  nameWithType: PayloadMethodArgumentResolver._useDefaultResolution
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver._useDefaultResolution
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  isExternal: true
+  name: ResolveTargetClass(ParameterInfo, IMessage)
+  nameWithType: PayloadMethodArgumentResolver.ResolveTargetClass(ParameterInfo, IMessage)
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass(System.Reflection.ParameterInfo, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+    name: ResolveTargetClass
+    nameWithType: PayloadMethodArgumentResolver.ResolveTargetClass
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+    name: ResolveTargetClass
+    nameWithType: PayloadMethodArgumentResolver.ResolveTargetClass
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveTargetClass
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload(System.Object)
+  commentId: M:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload(System.Object)
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  isExternal: true
+  name: IsEmptyPayload(Object)
+  nameWithType: PayloadMethodArgumentResolver.IsEmptyPayload(Object)
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload(System.Object)
+    name: IsEmptyPayload
+    nameWithType: PayloadMethodArgumentResolver.IsEmptyPayload
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload(System.Object)
+    name: IsEmptyPayload
+    nameWithType: PayloadMethodArgumentResolver.IsEmptyPayload
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.IsEmptyPayload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate(Steeltoe.Messaging.IMessage,System.Reflection.ParameterInfo,System.Object)
+  commentId: M:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate(Steeltoe.Messaging.IMessage,System.Reflection.ParameterInfo,System.Object)
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  isExternal: true
+  name: Validate(IMessage, ParameterInfo, Object)
+  nameWithType: PayloadMethodArgumentResolver.Validate(IMessage, ParameterInfo, Object)
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate(Steeltoe.Messaging.IMessage, System.Reflection.ParameterInfo, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate(Steeltoe.Messaging.IMessage,System.Reflection.ParameterInfo,System.Object)
+    name: Validate
+    nameWithType: PayloadMethodArgumentResolver.Validate
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate(Steeltoe.Messaging.IMessage,System.Reflection.ParameterInfo,System.Object)
+    name: Validate
+    nameWithType: PayloadMethodArgumentResolver.Validate
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.Handler.Attributes.Support
+  commentId: N:Steeltoe.Messaging.Handler.Attributes.Support
+  name: Steeltoe.Messaging.Handler.Attributes.Support
+  nameWithType: Steeltoe.Messaging.Handler.Attributes.Support
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support
+- uid: Steeltoe.Messaging.Handler.Invocation
+  commentId: N:Steeltoe.Messaging.Handler.Invocation
+  name: Steeltoe.Messaging.Handler.Invocation
+  nameWithType: Steeltoe.Messaging.Handler.Invocation
+  fullName: Steeltoe.Messaging.Handler.Invocation
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor*
+  commentId: Overload:Steeltoe.Stream.Config.SmartPayloadArgumentResolver.#ctor
+  name: SmartPayloadArgumentResolver
+  nameWithType: SmartPayloadArgumentResolver.SmartPayloadArgumentResolver
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SmartPayloadArgumentResolver
+- uid: Steeltoe.Messaging.Converter.IMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.IMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: IMessageConverter
+  nameWithType: IMessageConverter
+  fullName: Steeltoe.Messaging.Converter.IMessageConverter
+- uid: Steeltoe.Messaging.Converter
+  commentId: N:Steeltoe.Messaging.Converter
+  name: Steeltoe.Messaging.Converter
+  nameWithType: Steeltoe.Messaging.Converter
+  fullName: Steeltoe.Messaging.Converter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  commentId: M:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  isExternal: true
+  name: SupportsParameter(ParameterInfo)
+  nameWithType: PayloadMethodArgumentResolver.SupportsParameter(ParameterInfo)
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+    name: SupportsParameter
+    nameWithType: PayloadMethodArgumentResolver.SupportsParameter
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter(System.Reflection.ParameterInfo)
+    name: SupportsParameter
+    nameWithType: PayloadMethodArgumentResolver.SupportsParameter
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.SupportsParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter*
+  commentId: Overload:Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter
+  name: SupportsParameter
+  nameWithType: SmartPayloadArgumentResolver.SupportsParameter
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.SupportsParameter
+- uid: System.Reflection.ParameterInfo
+  commentId: T:System.Reflection.ParameterInfo
+  parent: System.Reflection
+  isExternal: true
+  name: ParameterInfo
+  nameWithType: ParameterInfo
+  fullName: System.Reflection.ParameterInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver
+  isExternal: true
+  name: ResolveArgument(ParameterInfo, IMessage)
+  nameWithType: PayloadMethodArgumentResolver.ResolveArgument(ParameterInfo, IMessage)
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo, Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+    name: ResolveArgument
+    nameWithType: PayloadMethodArgumentResolver.ResolveArgument
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument(System.Reflection.ParameterInfo,Steeltoe.Messaging.IMessage)
+    name: ResolveArgument
+    nameWithType: PayloadMethodArgumentResolver.ResolveArgument
+    fullName: Steeltoe.Messaging.Handler.Attributes.Support.PayloadMethodArgumentResolver.ResolveArgument
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument*
+  commentId: Overload:Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument
+  name: ResolveArgument
+  nameWithType: SmartPayloadArgumentResolver.ResolveArgument
+  fullName: Steeltoe.Stream.Config.SmartPayloadArgumentResolver.ResolveArgument
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging

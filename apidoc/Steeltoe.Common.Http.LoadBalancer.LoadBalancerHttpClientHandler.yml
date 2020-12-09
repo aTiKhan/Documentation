@@ -1,0 +1,1038 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  commentId: T:Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  id: LoadBalancerHttpClientHandler
+  parent: Steeltoe.Common.Http.LoadBalancer
+  children:
+  - Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor(ILoadBalancer)
+  - Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor(ILoadBalancer,ILogger)
+  - Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: LoadBalancerHttpClientHandler
+  nameWithType: LoadBalancerHttpClientHandler
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LoadBalancerHttpClientHandler
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Steeltoe.Common.Http.LoadBalancer
+  summary: "\nSame as <xref href=\"Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler\" data-throw-if-not-resolved=\"false\"></xref> except is an <xref href=\"System.Net.Http.HttpClientHandler\" data-throw-if-not-resolved=\"false\"></xref>, for non-HttpClientFactory use\n"
+  example: []
+  syntax:
+    content: 'public class LoadBalancerHttpClientHandler : HttpClientHandler, IDisposable'
+    content.vb: >-
+      Public Class LoadBalancerHttpClientHandler
+
+          Inherits HttpClientHandler
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Net.Http.HttpMessageHandler
+  - System.Net.Http.HttpClientHandler
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Net.Http.HttpClientHandler.Dispose(System.Boolean)
+  - System.Net.Http.HttpClientHandler.Send(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClientHandler.AllowAutoRedirect
+  - System.Net.Http.HttpClientHandler.AutomaticDecompression
+  - System.Net.Http.HttpClientHandler.CheckCertificateRevocationList
+  - System.Net.Http.HttpClientHandler.ClientCertificateOptions
+  - System.Net.Http.HttpClientHandler.ClientCertificates
+  - System.Net.Http.HttpClientHandler.CookieContainer
+  - System.Net.Http.HttpClientHandler.Credentials
+  - System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+  - System.Net.Http.HttpClientHandler.DefaultProxyCredentials
+  - System.Net.Http.HttpClientHandler.MaxAutomaticRedirections
+  - System.Net.Http.HttpClientHandler.MaxConnectionsPerServer
+  - System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize
+  - System.Net.Http.HttpClientHandler.MaxResponseHeadersLength
+  - System.Net.Http.HttpClientHandler.PreAuthenticate
+  - System.Net.Http.HttpClientHandler.Properties
+  - System.Net.Http.HttpClientHandler.Proxy
+  - System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback
+  - System.Net.Http.HttpClientHandler.SslProtocols
+  - System.Net.Http.HttpClientHandler.SupportsAutomaticDecompression
+  - System.Net.Http.HttpClientHandler.SupportsProxy
+  - System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration
+  - System.Net.Http.HttpClientHandler.UseCookies
+  - System.Net.Http.HttpClientHandler.UseDefaultCredentials
+  - System.Net.Http.HttpClientHandler.UseProxy
+  - System.Net.Http.HttpMessageHandler.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor(ILoadBalancer)
+  commentId: M:Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor(ILoadBalancer)
+  id: '#ctor(ILoadBalancer)'
+  parent: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  langs:
+  - csharp
+  - vb
+  name: LoadBalancerHttpClientHandler(ILoadBalancer)
+  nameWithType: LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler(ILoadBalancer)
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler(ILoadBalancer)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Steeltoe.Common.Http.LoadBalancer
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler\" data-throw-if-not-resolved=\"false\"></xref> class. <p></p>\nFor use with <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> without <see cref=\"!:IHttpClientFactory\"></see>\n"
+  example: []
+  syntax:
+    content: public LoadBalancerHttpClientHandler(ILoadBalancer loadBalancer)
+    parameters:
+    - id: loadBalancer
+      type: ILoadBalancer
+      description: Load balancer to use
+    content.vb: Public Sub New(loadBalancer As ILoadBalancer)
+  overload: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor(ILoadBalancer,ILogger)
+  commentId: M:Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor(ILoadBalancer,ILogger)
+  id: '#ctor(ILoadBalancer,ILogger)'
+  parent: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  langs:
+  - csharp
+  - vb
+  name: LoadBalancerHttpClientHandler(ILoadBalancer, ILogger)
+  nameWithType: LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler(ILoadBalancer, ILogger)
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler(ILoadBalancer, ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Steeltoe.Common.Http.LoadBalancer
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler\" data-throw-if-not-resolved=\"false\"></xref> class. <p></p>\nFor use with <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> without <see cref=\"!:IHttpClientFactory\"></see>\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Please remove ILogger parameter")]
+
+      public LoadBalancerHttpClientHandler(ILoadBalancer loadBalancer, ILogger logger)
+    parameters:
+    - id: loadBalancer
+      type: ILoadBalancer
+      description: Load balancer to use
+    - id: logger
+      type: ILogger
+      description: For logging
+    content.vb: >-
+      <Obsolete("Please remove ILogger parameter")>
+
+      Public Sub New(loadBalancer As ILoadBalancer, logger As ILogger)
+  overload: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Please remove ILogger parameter
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  nameWithType: LoadBalancerHttpClientHandler.SendAsync(HttpRequestMessage, CancellationToken)
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SendAsync
+    path: ../Steeltoe/src/Common/src/Common.Http/LoadBalancer/LoadBalancerHttpClientHandler.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Common.Http
+  namespace: Steeltoe.Common.Http.LoadBalancer
+  example: []
+  syntax:
+    content: protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Protected Overrides Function SendAsync(request As HttpRequestMessage, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overridden: System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  overload: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler
+  commentId: T:Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler
+  name: LoadBalancerDelegatingHandler
+  nameWithType: LoadBalancerDelegatingHandler
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerDelegatingHandler
+- uid: System.Net.Http.HttpClientHandler
+  commentId: T:System.Net.Http.HttpClientHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClientHandler
+  nameWithType: HttpClientHandler
+  fullName: System.Net.Http.HttpClientHandler
+- uid: Steeltoe.Common.Http.LoadBalancer
+  commentId: N:Steeltoe.Common.Http.LoadBalancer
+  name: Steeltoe.Common.Http.LoadBalancer
+  nameWithType: Steeltoe.Common.Http.LoadBalancer
+  fullName: Steeltoe.Common.Http.LoadBalancer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Net.Http.HttpMessageHandler
+  commentId: T:System.Net.Http.HttpMessageHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpMessageHandler
+  nameWithType: HttpMessageHandler
+  fullName: System.Net.Http.HttpMessageHandler
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Net.Http.HttpClientHandler.Dispose(System.Boolean)
+  commentId: M:System.Net.Http.HttpClientHandler.Dispose(System.Boolean)
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: HttpClientHandler.Dispose(Boolean)
+  fullName: System.Net.Http.HttpClientHandler.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Net.Http.HttpClientHandler.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: HttpClientHandler.Dispose
+    fullName: System.Net.Http.HttpClientHandler.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpClientHandler.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: HttpClientHandler.Dispose
+    fullName: System.Net.Http.HttpClientHandler.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http.HttpClientHandler.Send(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClientHandler.Send(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: Send(HttpRequestMessage, CancellationToken)
+  nameWithType: HttpClientHandler.Send(HttpRequestMessage, CancellationToken)
+  fullName: System.Net.Http.HttpClientHandler.Send(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.Net.Http.HttpClientHandler.Send(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: Send
+    nameWithType: HttpClientHandler.Send
+    fullName: System.Net.Http.HttpClientHandler.Send
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpClientHandler.Send(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: Send
+    nameWithType: HttpClientHandler.Send
+    fullName: System.Net.Http.HttpClientHandler.Send
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http.HttpClientHandler.AllowAutoRedirect
+  commentId: P:System.Net.Http.HttpClientHandler.AllowAutoRedirect
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: AllowAutoRedirect
+  nameWithType: HttpClientHandler.AllowAutoRedirect
+  fullName: System.Net.Http.HttpClientHandler.AllowAutoRedirect
+- uid: System.Net.Http.HttpClientHandler.AutomaticDecompression
+  commentId: P:System.Net.Http.HttpClientHandler.AutomaticDecompression
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: AutomaticDecompression
+  nameWithType: HttpClientHandler.AutomaticDecompression
+  fullName: System.Net.Http.HttpClientHandler.AutomaticDecompression
+- uid: System.Net.Http.HttpClientHandler.CheckCertificateRevocationList
+  commentId: P:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: CheckCertificateRevocationList
+  nameWithType: HttpClientHandler.CheckCertificateRevocationList
+  fullName: System.Net.Http.HttpClientHandler.CheckCertificateRevocationList
+- uid: System.Net.Http.HttpClientHandler.ClientCertificateOptions
+  commentId: P:System.Net.Http.HttpClientHandler.ClientCertificateOptions
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: ClientCertificateOptions
+  nameWithType: HttpClientHandler.ClientCertificateOptions
+  fullName: System.Net.Http.HttpClientHandler.ClientCertificateOptions
+- uid: System.Net.Http.HttpClientHandler.ClientCertificates
+  commentId: P:System.Net.Http.HttpClientHandler.ClientCertificates
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: ClientCertificates
+  nameWithType: HttpClientHandler.ClientCertificates
+  fullName: System.Net.Http.HttpClientHandler.ClientCertificates
+- uid: System.Net.Http.HttpClientHandler.CookieContainer
+  commentId: P:System.Net.Http.HttpClientHandler.CookieContainer
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: CookieContainer
+  nameWithType: HttpClientHandler.CookieContainer
+  fullName: System.Net.Http.HttpClientHandler.CookieContainer
+- uid: System.Net.Http.HttpClientHandler.Credentials
+  commentId: P:System.Net.Http.HttpClientHandler.Credentials
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: Credentials
+  nameWithType: HttpClientHandler.Credentials
+  fullName: System.Net.Http.HttpClientHandler.Credentials
+- uid: System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+  commentId: P:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: DangerousAcceptAnyServerCertificateValidator
+  nameWithType: HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+  fullName: System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+- uid: System.Net.Http.HttpClientHandler.DefaultProxyCredentials
+  commentId: P:System.Net.Http.HttpClientHandler.DefaultProxyCredentials
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: DefaultProxyCredentials
+  nameWithType: HttpClientHandler.DefaultProxyCredentials
+  fullName: System.Net.Http.HttpClientHandler.DefaultProxyCredentials
+- uid: System.Net.Http.HttpClientHandler.MaxAutomaticRedirections
+  commentId: P:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: MaxAutomaticRedirections
+  nameWithType: HttpClientHandler.MaxAutomaticRedirections
+  fullName: System.Net.Http.HttpClientHandler.MaxAutomaticRedirections
+- uid: System.Net.Http.HttpClientHandler.MaxConnectionsPerServer
+  commentId: P:System.Net.Http.HttpClientHandler.MaxConnectionsPerServer
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: MaxConnectionsPerServer
+  nameWithType: HttpClientHandler.MaxConnectionsPerServer
+  fullName: System.Net.Http.HttpClientHandler.MaxConnectionsPerServer
+- uid: System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize
+  commentId: P:System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: MaxRequestContentBufferSize
+  nameWithType: HttpClientHandler.MaxRequestContentBufferSize
+  fullName: System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize
+- uid: System.Net.Http.HttpClientHandler.MaxResponseHeadersLength
+  commentId: P:System.Net.Http.HttpClientHandler.MaxResponseHeadersLength
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: MaxResponseHeadersLength
+  nameWithType: HttpClientHandler.MaxResponseHeadersLength
+  fullName: System.Net.Http.HttpClientHandler.MaxResponseHeadersLength
+- uid: System.Net.Http.HttpClientHandler.PreAuthenticate
+  commentId: P:System.Net.Http.HttpClientHandler.PreAuthenticate
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: PreAuthenticate
+  nameWithType: HttpClientHandler.PreAuthenticate
+  fullName: System.Net.Http.HttpClientHandler.PreAuthenticate
+- uid: System.Net.Http.HttpClientHandler.Properties
+  commentId: P:System.Net.Http.HttpClientHandler.Properties
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: Properties
+  nameWithType: HttpClientHandler.Properties
+  fullName: System.Net.Http.HttpClientHandler.Properties
+- uid: System.Net.Http.HttpClientHandler.Proxy
+  commentId: P:System.Net.Http.HttpClientHandler.Proxy
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: Proxy
+  nameWithType: HttpClientHandler.Proxy
+  fullName: System.Net.Http.HttpClientHandler.Proxy
+- uid: System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback
+  commentId: P:System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: ServerCertificateCustomValidationCallback
+  nameWithType: HttpClientHandler.ServerCertificateCustomValidationCallback
+  fullName: System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback
+- uid: System.Net.Http.HttpClientHandler.SslProtocols
+  commentId: P:System.Net.Http.HttpClientHandler.SslProtocols
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: SslProtocols
+  nameWithType: HttpClientHandler.SslProtocols
+  fullName: System.Net.Http.HttpClientHandler.SslProtocols
+- uid: System.Net.Http.HttpClientHandler.SupportsAutomaticDecompression
+  commentId: P:System.Net.Http.HttpClientHandler.SupportsAutomaticDecompression
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: SupportsAutomaticDecompression
+  nameWithType: HttpClientHandler.SupportsAutomaticDecompression
+  fullName: System.Net.Http.HttpClientHandler.SupportsAutomaticDecompression
+- uid: System.Net.Http.HttpClientHandler.SupportsProxy
+  commentId: P:System.Net.Http.HttpClientHandler.SupportsProxy
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: SupportsProxy
+  nameWithType: HttpClientHandler.SupportsProxy
+  fullName: System.Net.Http.HttpClientHandler.SupportsProxy
+- uid: System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration
+  commentId: P:System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: SupportsRedirectConfiguration
+  nameWithType: HttpClientHandler.SupportsRedirectConfiguration
+  fullName: System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration
+- uid: System.Net.Http.HttpClientHandler.UseCookies
+  commentId: P:System.Net.Http.HttpClientHandler.UseCookies
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: UseCookies
+  nameWithType: HttpClientHandler.UseCookies
+  fullName: System.Net.Http.HttpClientHandler.UseCookies
+- uid: System.Net.Http.HttpClientHandler.UseDefaultCredentials
+  commentId: P:System.Net.Http.HttpClientHandler.UseDefaultCredentials
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: UseDefaultCredentials
+  nameWithType: HttpClientHandler.UseDefaultCredentials
+  fullName: System.Net.Http.HttpClientHandler.UseDefaultCredentials
+- uid: System.Net.Http.HttpClientHandler.UseProxy
+  commentId: P:System.Net.Http.HttpClientHandler.UseProxy
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: UseProxy
+  nameWithType: HttpClientHandler.UseProxy
+  fullName: System.Net.Http.HttpClientHandler.UseProxy
+- uid: System.Net.Http.HttpMessageHandler.Dispose
+  commentId: M:System.Net.Http.HttpMessageHandler.Dispose
+  parent: System.Net.Http.HttpMessageHandler
+  isExternal: true
+  name: Dispose()
+  nameWithType: HttpMessageHandler.Dispose()
+  fullName: System.Net.Http.HttpMessageHandler.Dispose()
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose
+    name: Dispose
+    nameWithType: HttpMessageHandler.Dispose
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose
+    name: Dispose
+    nameWithType: HttpMessageHandler.Dispose
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  commentId: T:Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+  name: LoadBalancerHttpClientHandler
+  nameWithType: LoadBalancerHttpClientHandler
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor*
+  commentId: Overload:Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.#ctor
+  name: LoadBalancerHttpClientHandler
+  nameWithType: LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.LoadBalancerHttpClientHandler
+- uid: ILoadBalancer
+  isExternal: true
+  name: ILoadBalancer
+  nameWithType: ILoadBalancer
+  fullName: ILoadBalancer
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClientHandler
+  isExternal: true
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  nameWithType: HttpClientHandler.SendAsync(HttpRequestMessage, CancellationToken)
+  fullName: System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    nameWithType: HttpClientHandler.SendAsync
+    fullName: System.Net.Http.HttpClientHandler.SendAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    nameWithType: HttpClientHandler.SendAsync
+    fullName: System.Net.Http.HttpClientHandler.SendAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync*
+  commentId: Overload:Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync
+  name: SendAsync
+  nameWithType: LoadBalancerHttpClientHandler.SendAsync
+  fullName: Steeltoe.Common.Http.LoadBalancer.LoadBalancerHttpClientHandler.SendAsync
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,377 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  id: IPublisherCallbackChannel.IListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm(Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm,System.Boolean)
+  - Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn(System.Int32,System.String,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  - Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener
+  - Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener
+  - Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke(RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID
+  langs:
+  - csharp
+  - vb
+  name: IPublisherCallbackChannel.IListener
+  nameWithType: IPublisherCallbackChannel.IListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+    startLine: 59
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public interface IListener
+    content.vb: Public Interface IListener
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm(Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm,System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm(Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm,System.Boolean)
+  id: HandleConfirm(Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm,System.Boolean)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  langs:
+  - csharp
+  - vb
+  name: HandleConfirm(PendingConfirm, Boolean)
+  nameWithType: IPublisherCallbackChannel.IListener.HandleConfirm(PendingConfirm, Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm(Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleConfirm
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+    startLine: 66
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nInvoked by the channel when a confirmation is received\n"
+  example: []
+  syntax:
+    content: void HandleConfirm(PendingConfirm pendingConfirm, bool ack)
+    parameters:
+    - id: pendingConfirm
+      type: Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm
+      description: the pending confirmation
+    - id: ack
+      type: System.Boolean
+      description: true when an ack; false when a nack
+    content.vb: Sub HandleConfirm(pendingConfirm As PendingConfirm, ack As Boolean)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm*
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn(System.Int32,System.String,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn(System.Int32,System.String,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  id: HandleReturn(System.Int32,System.String,System.String,System.String,RabbitMQ.Client.IBasicProperties,System.Byte[])
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  langs:
+  - csharp
+  - vb
+  name: HandleReturn(Int32, String, String, String, IBasicProperties, Byte[])
+  nameWithType: IPublisherCallbackChannel.IListener.HandleReturn(Int32, String, String, String, IBasicProperties, Byte[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn(System.Int32, System.String, System.String, System.String, RabbitMQ.Client.IBasicProperties, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleReturn
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+    startLine: 77
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nInvoked when a basic return command is received\n"
+  example: []
+  syntax:
+    content: void HandleReturn(int replyCode, string replyText, string exchange, string routingKey, IBasicProperties properties, byte[] body)
+    parameters:
+    - id: replyCode
+      type: System.Int32
+      description: the reason code of the return
+    - id: replyText
+      type: System.String
+      description: the text from the broker describing the return
+    - id: exchange
+      type: System.String
+      description: the exchange the returned message was originally published to.
+    - id: routingKey
+      type: System.String
+      description: the routing key used when the message was originally published.
+    - id: properties
+      type: RabbitMQ.Client.IBasicProperties
+      description: the content header of the message.
+    - id: body
+      type: System.Byte[]
+      description: the body of the message
+    content.vb: Sub HandleReturn(replyCode As Integer, replyText As String, exchange As String, routingKey As String, properties As IBasicProperties, body As Byte())
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn*
+  nameWithType.vb: IPublisherCallbackChannel.IListener.HandleReturn(Int32, String, String, String, IBasicProperties, Byte())
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn(System.Int32, System.String, System.String, System.String, RabbitMQ.Client.IBasicProperties, System.Byte())
+  name.vb: HandleReturn(Int32, String, String, String, IBasicProperties, Byte())
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke(RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke(RabbitMQ.Client.IModel)
+  id: Revoke(RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  langs:
+  - csharp
+  - vb
+  name: Revoke(IModel)
+  nameWithType: IPublisherCallbackChannel.IListener.Revoke(IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke(RabbitMQ.Client.IModel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Revoke
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+    startLine: 83
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nWhen called this listener should remove all references to the channel\n"
+  example: []
+  syntax:
+    content: void Revoke(IModel channel)
+    parameters:
+    - id: channel
+      type: RabbitMQ.Client.IModel
+      description: the channel
+    content.vb: Sub Revoke(channel As IModel)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke*
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID
+  id: UUID
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  langs:
+  - csharp
+  - vb
+  name: UUID
+  nameWithType: IPublisherCallbackChannel.IListener.UUID
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UUID
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+    startLine: 88
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nGets the UUID used to identify this listener for returns\n"
+  example: []
+  syntax:
+    content: string UUID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property UUID As String
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener
+  id: IsConfirmListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  langs:
+  - csharp
+  - vb
+  name: IsConfirmListener
+  nameWithType: IPublisherCallbackChannel.IListener.IsConfirmListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsConfirmListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+    startLine: 93
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nGets a value indicating whether this is a confirm listener\n"
+  example: []
+  syntax:
+    content: bool IsConfirmListener { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsConfirmListener As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener
+  id: IsReturnListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener
+  langs:
+  - csharp
+  - vb
+  name: IsReturnListener
+  nameWithType: IPublisherCallbackChannel.IListener.IsReturnListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsReturnListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IPublisherCallbackChannel.cs
+    startLine: 98
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nGets a value indicating whether this is a returns listener\n"
+  example: []
+  syntax:
+    content: bool IsReturnListener { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsReturnListener As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Connection
+  name: Steeltoe.Messaging.RabbitMQ.Connection
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm
+  name: HandleConfirm
+  nameWithType: IPublisherCallbackChannel.IListener.HandleConfirm
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleConfirm
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: PendingConfirm
+  nameWithType: PendingConfirm
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.PendingConfirm
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn
+  name: HandleReturn
+  nameWithType: IPublisherCallbackChannel.IListener.HandleReturn
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.HandleReturn
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: RabbitMQ.Client.IBasicProperties
+  commentId: T:RabbitMQ.Client.IBasicProperties
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IBasicProperties
+  nameWithType: IBasicProperties
+  fullName: RabbitMQ.Client.IBasicProperties
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke
+  name: Revoke
+  nameWithType: IPublisherCallbackChannel.IListener.Revoke
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.Revoke
+- uid: RabbitMQ.Client.IModel
+  commentId: T:RabbitMQ.Client.IModel
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IModel
+  nameWithType: IModel
+  fullName: RabbitMQ.Client.IModel
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID
+  name: UUID
+  nameWithType: IPublisherCallbackChannel.IListener.UUID
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.UUID
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener
+  name: IsConfirmListener
+  nameWithType: IPublisherCallbackChannel.IListener.IsConfirmListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsConfirmListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener
+  name: IsReturnListener
+  nameWithType: IPublisherCallbackChannel.IListener.IsReturnListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IPublisherCallbackChannel.IListener.IsReturnListener

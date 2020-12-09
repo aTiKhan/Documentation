@@ -1,0 +1,406 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  id: IConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel(System.Boolean)
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort
+  - Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  langs:
+  - csharp
+  - vb
+  name: IConnection
+  nameWithType: IConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IConnection
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 9
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: 'public interface IConnection : IDisposable'
+    content.vb: >-
+      Public Interface IConnection
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen
+  id: IsOpen
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  langs:
+  - csharp
+  - vb
+  name: IsOpen
+  nameWithType: IConnection.IsOpen
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsOpen
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nGets a value indicating whether the connection is open\n"
+  example: []
+  syntax:
+    content: bool IsOpen { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsOpen As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort
+  id: LocalPort
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  langs:
+  - csharp
+  - vb
+  name: LocalPort
+  nameWithType: IConnection.LocalPort
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LocalPort
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nGets the local port of the connection\n"
+  example: []
+  syntax:
+    content: int LocalPort { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property LocalPort As Integer
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel(System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel(System.Boolean)
+  id: CreateChannel(System.Boolean)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  langs:
+  - csharp
+  - vb
+  name: CreateChannel(Boolean)
+  nameWithType: IConnection.CreateChannel(Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateChannel
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nCreate a new channel, using an inernally allocated channel number\n"
+  example: []
+  syntax:
+    content: IModel CreateChannel(bool transactional = false)
+    parameters:
+    - id: transactional
+      type: System.Boolean
+      description: true if transaction support on channel
+    return:
+      type: RabbitMQ.Client.IModel
+      description: the new channel
+    content.vb: Function CreateChannel(transactional As Boolean = False) As IModel
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel*
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close
+  id: Close
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: IConnection.Close()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Close
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nClose the connection\n"
+  example: []
+  syntax:
+    content: void Close()
+    content.vb: Sub Close
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close*
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection
+  id: Connection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  langs:
+  - csharp
+  - vb
+  name: Connection
+  nameWithType: IConnection.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Connection
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nGets the underlying RabbitMQ connection\n"
+  example: []
+  syntax:
+    content: IConnection Connection { get; }
+    parameters: []
+    return:
+      type: RabbitMQ.Client.IConnection
+    content.vb: ReadOnly Property Connection As IConnection
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  id: AddBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  langs:
+  - csharp
+  - vb
+  name: AddBlockedListener(IBlockedListener)
+  nameWithType: IConnection.AddBlockedListener(IBlockedListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddBlockedListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nAdd a Blocked listener to the connection\n"
+  example: []
+  syntax:
+    content: void AddBlockedListener(IBlockedListener listener)
+    parameters:
+    - id: listener
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+      description: the listener to add
+    content.vb: Sub AddBlockedListener(listener As IBlockedListener)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener*
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  id: RemoveBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  langs:
+  - csharp
+  - vb
+  name: RemoveBlockedListener(IBlockedListener)
+  nameWithType: IConnection.RemoveBlockedListener(IBlockedListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener(Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveBlockedListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/IConnection.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  summary: "\nRemove a Blocked listener from the connection\n"
+  example: []
+  syntax:
+    content: bool RemoveBlockedListener(IBlockedListener listener)
+    parameters:
+    - id: listener
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+      description: the listener to remove
+    return:
+      type: System.Boolean
+      description: true if successful
+    content.vb: Function RemoveBlockedListener(listener As IBlockedListener) As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener*
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Connection
+  name: Steeltoe.Messaging.RabbitMQ.Connection
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen
+  name: IsOpen
+  nameWithType: IConnection.IsOpen
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.IsOpen
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort
+  name: LocalPort
+  nameWithType: IConnection.LocalPort
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.LocalPort
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel
+  name: CreateChannel
+  nameWithType: IConnection.CreateChannel
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.CreateChannel
+- uid: RabbitMQ.Client.IModel
+  commentId: T:RabbitMQ.Client.IModel
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IModel
+  nameWithType: IModel
+  fullName: RabbitMQ.Client.IModel
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close
+  name: Close
+  nameWithType: IConnection.Close
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Close
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection
+  name: Connection
+  nameWithType: IConnection.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.Connection
+- uid: RabbitMQ.Client.IConnection
+  commentId: T:RabbitMQ.Client.IConnection
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IConnection
+  nameWithType: IConnection
+  fullName: RabbitMQ.Client.IConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener
+  name: AddBlockedListener
+  nameWithType: IConnection.AddBlockedListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.AddBlockedListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IBlockedListener
+  nameWithType: IBlockedListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IBlockedListener
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener
+  name: RemoveBlockedListener
+  nameWithType: IConnection.RemoveBlockedListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection.RemoveBlockedListener

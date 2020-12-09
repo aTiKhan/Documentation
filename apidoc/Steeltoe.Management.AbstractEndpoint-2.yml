@@ -1,0 +1,1061 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.AbstractEndpoint`2
+  commentId: T:Steeltoe.Management.AbstractEndpoint`2
+  id: AbstractEndpoint`2
+  parent: Steeltoe.Management
+  children:
+  - Steeltoe.Management.AbstractEndpoint`2.#ctor(Steeltoe.Management.IEndpointOptions)
+  - Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+  langs:
+  - csharp
+  - vb
+  name: AbstractEndpoint<TResult, TRequest>
+  nameWithType: AbstractEndpoint<TResult, TRequest>
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractEndpoint
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpoint.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  summary: "\nBase class for endpoints that allow POST requests\n"
+  example: []
+  syntax:
+    content: 'public abstract class AbstractEndpoint<TResult, TRequest> : AbstractEndpoint, IEndpoint<TResult, TRequest>, IEndpoint'
+    typeParameters:
+    - id: TResult
+      description: Type of response returned from calls to this endpoint
+    - id: TRequest
+      description: Type of request that can be passed to this endpoint
+    content.vb: >-
+      Public MustInherit Class AbstractEndpoint(Of TResult, TRequest)
+
+          Inherits AbstractEndpoint
+
+          Implements IEndpoint(Of TResult, TRequest), IEndpoint
+  inheritance:
+  - System.Object
+  - Steeltoe.Management.AbstractEndpoint
+  derivedClasses:
+  - Steeltoe.Management.Endpoint.CloudFoundry.CloudFoundryEndpoint
+  - Steeltoe.Management.Endpoint.Health.HealthEndpoint
+  - Steeltoe.Management.Endpoint.Hypermedia.ActuatorEndpoint
+  - Steeltoe.Management.Endpoint.Loggers.LoggersEndpoint
+  - Steeltoe.Management.Endpoint.Metrics.MetricsEndpoint
+  implements:
+  - Steeltoe.Management.IEndpoint{{TResult},{TRequest}}
+  - Steeltoe.Management.IEndpoint
+  inheritedMembers:
+  - Steeltoe.Management.AbstractEndpoint.options
+  - Steeltoe.Management.AbstractEndpoint.Id
+  - Steeltoe.Management.AbstractEndpoint.Enabled
+  - Steeltoe.Management.AbstractEndpoint.Options
+  - Steeltoe.Management.AbstractEndpoint.Path
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  - Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  - Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest)
+  name.vb: AbstractEndpoint(Of TResult, TRequest)
+- uid: Steeltoe.Management.AbstractEndpoint`2.#ctor(Steeltoe.Management.IEndpointOptions)
+  commentId: M:Steeltoe.Management.AbstractEndpoint`2.#ctor(Steeltoe.Management.IEndpointOptions)
+  id: '#ctor(Steeltoe.Management.IEndpointOptions)'
+  parent: Steeltoe.Management.AbstractEndpoint`2
+  langs:
+  - csharp
+  - vb
+  name: AbstractEndpoint(IEndpointOptions)
+  nameWithType: AbstractEndpoint<TResult, TRequest>.AbstractEndpoint(IEndpointOptions)
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.AbstractEndpoint(Steeltoe.Management.IEndpointOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpoint.cs
+    startLine: 55
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  summary: "\nInitializes a new instance of the <xref href=\"Steeltoe.Management.AbstractEndpoint%602\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public AbstractEndpoint(IEndpointOptions options)
+    parameters:
+    - id: options
+      type: Steeltoe.Management.IEndpointOptions
+      description: Endpoint configuration options
+    content.vb: Public Sub New(options As IEndpointOptions)
+  overload: Steeltoe.Management.AbstractEndpoint`2.#ctor*
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest).AbstractEndpoint(IEndpointOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest).AbstractEndpoint(Steeltoe.Management.IEndpointOptions)
+- uid: Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+  commentId: M:Steeltoe.Management.AbstractEndpoint`2.Invoke(`1)
+  id: Invoke(`1)
+  parent: Steeltoe.Management.AbstractEndpoint`2
+  langs:
+  - csharp
+  - vb
+  name: Invoke(TRequest)
+  nameWithType: AbstractEndpoint<TResult, TRequest>.Invoke(TRequest)
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.Invoke(TRequest)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/Abstractions/AbstractEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Invoke
+    path: ../Steeltoe/src/Management/src/Abstractions/AbstractEndpoint.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Management.Abstractions
+  namespace: Steeltoe.Management
+  syntax:
+    content: public virtual TResult Invoke(TRequest arg)
+    parameters:
+    - id: arg
+      type: '{TRequest}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function Invoke(arg As TRequest) As TResult
+  overload: Steeltoe.Management.AbstractEndpoint`2.Invoke*
+  implements:
+  - Steeltoe.Management.IEndpoint{{TResult},{TRequest}}.Invoke({TRequest})
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest).Invoke(TRequest)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest).Invoke(TRequest)
+references:
+- uid: Steeltoe.Management
+  commentId: N:Steeltoe.Management
+  name: Steeltoe.Management
+  nameWithType: Steeltoe.Management
+  fullName: Steeltoe.Management
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Management.AbstractEndpoint
+  commentId: T:Steeltoe.Management.AbstractEndpoint
+  parent: Steeltoe.Management
+  name: AbstractEndpoint
+  nameWithType: AbstractEndpoint
+  fullName: Steeltoe.Management.AbstractEndpoint
+- uid: Steeltoe.Management.IEndpoint{{TResult},{TRequest}}
+  commentId: T:Steeltoe.Management.IEndpoint{`0,`1}
+  parent: Steeltoe.Management
+  definition: Steeltoe.Management.IEndpoint`2
+  name: IEndpoint<TResult, TRequest>
+  nameWithType: IEndpoint<TResult, TRequest>
+  fullName: Steeltoe.Management.IEndpoint<TResult, TRequest>
+  nameWithType.vb: IEndpoint(Of TResult, TRequest)
+  fullName.vb: Steeltoe.Management.IEndpoint(Of TResult, TRequest)
+  name.vb: IEndpoint(Of TResult, TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint
+  commentId: T:Steeltoe.Management.IEndpoint
+  parent: Steeltoe.Management
+  name: IEndpoint
+  nameWithType: IEndpoint
+  fullName: Steeltoe.Management.IEndpoint
+- uid: Steeltoe.Management.AbstractEndpoint.options
+  commentId: F:Steeltoe.Management.AbstractEndpoint.options
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: options
+  nameWithType: AbstractEndpoint.options
+  fullName: Steeltoe.Management.AbstractEndpoint.options
+- uid: Steeltoe.Management.AbstractEndpoint.Id
+  commentId: P:Steeltoe.Management.AbstractEndpoint.Id
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: Id
+  nameWithType: AbstractEndpoint.Id
+  fullName: Steeltoe.Management.AbstractEndpoint.Id
+- uid: Steeltoe.Management.AbstractEndpoint.Enabled
+  commentId: P:Steeltoe.Management.AbstractEndpoint.Enabled
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: Enabled
+  nameWithType: AbstractEndpoint.Enabled
+  fullName: Steeltoe.Management.AbstractEndpoint.Enabled
+- uid: Steeltoe.Management.AbstractEndpoint.Options
+  commentId: P:Steeltoe.Management.AbstractEndpoint.Options
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: Options
+  nameWithType: AbstractEndpoint.Options
+  fullName: Steeltoe.Management.AbstractEndpoint.Options
+- uid: Steeltoe.Management.AbstractEndpoint.Path
+  commentId: P:Steeltoe.Management.AbstractEndpoint.Path
+  parent: Steeltoe.Management.AbstractEndpoint
+  name: Path
+  nameWithType: AbstractEndpoint.Path
+  fullName: Steeltoe.Management.AbstractEndpoint.Path
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsEnabled(IManagementOptions)
+  nameWithType: EndPointExtensions.IsEnabled(IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsExposed(IManagementOptions)
+  nameWithType: EndPointExtensions.IsExposed(IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.IEndpoint.Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  parent: Steeltoe.Management.Endpoint.EndPointExtensions
+  definition: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  name: ShouldInvoke(IManagementOptions, ILogger)
+  nameWithType: EndPointExtensions.ShouldInvoke(IManagementOptions, ILogger)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions, ILogger)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Management.IEndpoint`2
+  commentId: T:Steeltoe.Management.IEndpoint`2
+  name: IEndpoint<TResult, TRequest>
+  nameWithType: IEndpoint<TResult, TRequest>
+  fullName: Steeltoe.Management.IEndpoint<TResult, TRequest>
+  nameWithType.vb: IEndpoint(Of TResult, TRequest)
+  fullName.vb: Steeltoe.Management.IEndpoint(Of TResult, TRequest)
+  name.vb: IEndpoint(Of TResult, TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.IEndpoint`2
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsEnabled(IEndpoint, IManagementOptions)
+  nameWithType: EndPointExtensions.IsEnabled(IEndpoint, IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint, Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsEnabled
+    nameWithType: EndPointExtensions.IsEnabled
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsEnabled
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions
+  commentId: T:Steeltoe.Management.Endpoint.EndPointExtensions
+  parent: Steeltoe.Management.Endpoint
+  name: EndPointExtensions
+  nameWithType: EndPointExtensions
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+  name: IsExposed(IEndpoint, IManagementOptions)
+  nameWithType: EndPointExtensions.IsExposed(IEndpoint, IManagementOptions)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint, Steeltoe.Management.IManagementOptions)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions)
+    name: IsExposed
+    nameWithType: EndPointExtensions.IsExposed
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.IsExposed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  commentId: M:Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+  isExternal: true
+  name: ShouldInvoke(IEndpoint, IManagementOptions, ILogger)
+  nameWithType: EndPointExtensions.ShouldInvoke(IEndpoint, IManagementOptions, ILogger)
+  fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint, Steeltoe.Management.IManagementOptions, ILogger)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke(Steeltoe.Management.IEndpoint,Steeltoe.Management.IManagementOptions,ILogger)
+    name: ShouldInvoke
+    nameWithType: EndPointExtensions.ShouldInvoke
+    fullName: Steeltoe.Management.Endpoint.EndPointExtensions.ShouldInvoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Management.IEndpoint
+    name: IEndpoint
+    nameWithType: IEndpoint
+    fullName: Steeltoe.Management.IEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Management.IManagementOptions
+    name: IManagementOptions
+    nameWithType: IManagementOptions
+    fullName: Steeltoe.Management.IManagementOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint
+  commentId: N:Steeltoe.Management.Endpoint
+  name: Steeltoe.Management.Endpoint
+  nameWithType: Steeltoe.Management.Endpoint
+  fullName: Steeltoe.Management.Endpoint
+- uid: Steeltoe.Management.AbstractEndpoint`2
+  commentId: T:Steeltoe.Management.AbstractEndpoint`2
+  name: AbstractEndpoint<TResult, TRequest>
+  nameWithType: AbstractEndpoint<TResult, TRequest>
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest)
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest)
+  name.vb: AbstractEndpoint(Of TResult, TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.AbstractEndpoint`2
+    name: AbstractEndpoint
+    nameWithType: AbstractEndpoint
+    fullName: Steeltoe.Management.AbstractEndpoint
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.AbstractEndpoint`2
+    name: AbstractEndpoint
+    nameWithType: AbstractEndpoint
+    fullName: Steeltoe.Management.AbstractEndpoint
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.AbstractEndpoint`2.#ctor*
+  commentId: Overload:Steeltoe.Management.AbstractEndpoint`2.#ctor
+  name: AbstractEndpoint
+  nameWithType: AbstractEndpoint<TResult, TRequest>.AbstractEndpoint
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.AbstractEndpoint
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest).AbstractEndpoint
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest).AbstractEndpoint
+- uid: Steeltoe.Management.IEndpointOptions
+  commentId: T:Steeltoe.Management.IEndpointOptions
+  parent: Steeltoe.Management
+  name: IEndpointOptions
+  nameWithType: IEndpointOptions
+  fullName: Steeltoe.Management.IEndpointOptions
+- uid: Steeltoe.Management.AbstractEndpoint`2.Invoke*
+  commentId: Overload:Steeltoe.Management.AbstractEndpoint`2.Invoke
+  name: Invoke
+  nameWithType: AbstractEndpoint<TResult, TRequest>.Invoke
+  fullName: Steeltoe.Management.AbstractEndpoint<TResult, TRequest>.Invoke
+  nameWithType.vb: AbstractEndpoint(Of TResult, TRequest).Invoke
+  fullName.vb: Steeltoe.Management.AbstractEndpoint(Of TResult, TRequest).Invoke
+- uid: Steeltoe.Management.IEndpoint{{TResult},{TRequest}}.Invoke({TRequest})
+  commentId: M:Steeltoe.Management.IEndpoint{`0,`1}.Invoke(`1)
+  parent: Steeltoe.Management.IEndpoint{{TResult},{TRequest}}
+  definition: Steeltoe.Management.IEndpoint`2.Invoke(`1)
+  name: Invoke(TRequest)
+  nameWithType: IEndpoint<TResult, TRequest>.Invoke(TRequest)
+  fullName: Steeltoe.Management.IEndpoint<TResult, TRequest>.Invoke(TRequest)
+  nameWithType.vb: IEndpoint(Of TResult, TRequest).Invoke(TRequest)
+  fullName.vb: Steeltoe.Management.IEndpoint(Of TResult, TRequest).Invoke(TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.IEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: IEndpoint<TResult, TRequest>.Invoke
+    fullName: Steeltoe.Management.IEndpoint<TResult, TRequest>.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.IEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: IEndpoint(Of TResult, TRequest).Invoke
+    fullName: Steeltoe.Management.IEndpoint(Of TResult, TRequest).Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TRequest}'
+  commentId: '!:TRequest'
+  definition: TRequest
+  name: TRequest
+  nameWithType: TRequest
+  fullName: TRequest
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Steeltoe.Management.IEndpoint`2.Invoke(`1)
+  commentId: M:Steeltoe.Management.IEndpoint`2.Invoke(`1)
+  name: Invoke(TRequest)
+  nameWithType: IEndpoint<TResult, TRequest>.Invoke(TRequest)
+  fullName: Steeltoe.Management.IEndpoint<TResult, TRequest>.Invoke(TRequest)
+  nameWithType.vb: IEndpoint(Of TResult, TRequest).Invoke(TRequest)
+  fullName.vb: Steeltoe.Management.IEndpoint(Of TResult, TRequest).Invoke(TRequest)
+  spec.csharp:
+  - uid: Steeltoe.Management.IEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: IEndpoint<TResult, TRequest>.Invoke
+    fullName: Steeltoe.Management.IEndpoint<TResult, TRequest>.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.IEndpoint`2.Invoke(`1)
+    name: Invoke
+    nameWithType: IEndpoint(Of TResult, TRequest).Invoke
+    fullName: Steeltoe.Management.IEndpoint(Of TResult, TRequest).Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRequest
+    nameWithType: TRequest
+    fullName: TRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TRequest
+  name: TRequest
+  nameWithType: TRequest
+  fullName: TRequest
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult

@@ -1,0 +1,965 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer
+  commentId: T:Steeltoe.Stream.Binding.MessageConverterConfigurer
+  id: MessageConverterConfigurer
+  parent: Steeltoe.Stream.Binding
+  children:
+  - Steeltoe.Stream.Binding.MessageConverterConfigurer.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Stream.Config.BindingServiceOptions},Steeltoe.Messaging.Converter.IMessageConverterFactory,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy},System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionSelectorStrategy})
+  - Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  - Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  - Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MessageConverterConfigurer
+  nameWithType: MessageConverterConfigurer
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MessageConverterConfigurer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: 'public class MessageConverterConfigurer : IMessageChannelAndSourceConfigurer, IMessageChannelConfigurer'
+    content.vb: >-
+      Public Class MessageConverterConfigurer
+
+          Implements IMessageChannelAndSourceConfigurer, IMessageChannelConfigurer
+  inheritance:
+  - System.Object
+  implements:
+  - Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer
+  - Steeltoe.Stream.Binding.IMessageChannelConfigurer
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Stream.Config.BindingServiceOptions},Steeltoe.Messaging.Converter.IMessageConverterFactory,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy},System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionSelectorStrategy})
+  commentId: M:Steeltoe.Stream.Binding.MessageConverterConfigurer.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Stream.Config.BindingServiceOptions},Steeltoe.Messaging.Converter.IMessageConverterFactory,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy},System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionSelectorStrategy})
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Stream.Config.BindingServiceOptions},Steeltoe.Messaging.Converter.IMessageConverterFactory,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy},System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionSelectorStrategy})'
+  parent: Steeltoe.Stream.Binding.MessageConverterConfigurer
+  langs:
+  - csharp
+  - vb
+  name: MessageConverterConfigurer(IApplicationContext, IOptionsMonitor<BindingServiceOptions>, IMessageConverterFactory, IEnumerable<IPartitionKeyExtractorStrategy>, IEnumerable<IPartitionSelectorStrategy>)
+  nameWithType: MessageConverterConfigurer.MessageConverterConfigurer(IApplicationContext, IOptionsMonitor<BindingServiceOptions>, IMessageConverterFactory, IEnumerable<IPartitionKeyExtractorStrategy>, IEnumerable<IPartitionSelectorStrategy>)
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.MessageConverterConfigurer(Steeltoe.Common.Contexts.IApplicationContext, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Config.BindingServiceOptions>, Steeltoe.Messaging.Converter.IMessageConverterFactory, System.Collections.Generic.IEnumerable<Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy>, System.Collections.Generic.IEnumerable<Steeltoe.Stream.Binder.IPartitionSelectorStrategy>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public MessageConverterConfigurer(IApplicationContext applicationContext, IOptionsMonitor<BindingServiceOptions> optionsMonitor, IMessageConverterFactory messageConverterFactory, IEnumerable<IPartitionKeyExtractorStrategy> extractors, IEnumerable<IPartitionSelectorStrategy> seledctors)
+    parameters:
+    - id: applicationContext
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: optionsMonitor
+      type: Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Stream.Config.BindingServiceOptions}
+    - id: messageConverterFactory
+      type: Steeltoe.Messaging.Converter.IMessageConverterFactory
+    - id: extractors
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy}
+    - id: seledctors
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionSelectorStrategy}
+    content.vb: Public Sub New(applicationContext As IApplicationContext, optionsMonitor As IOptionsMonitor(Of BindingServiceOptions), messageConverterFactory As IMessageConverterFactory, extractors As IEnumerable(Of IPartitionKeyExtractorStrategy), seledctors As IEnumerable(Of IPartitionSelectorStrategy))
+  overload: Steeltoe.Stream.Binding.MessageConverterConfigurer.#ctor*
+  nameWithType.vb: MessageConverterConfigurer.MessageConverterConfigurer(IApplicationContext, IOptionsMonitor(Of BindingServiceOptions), IMessageConverterFactory, IEnumerable(Of IPartitionKeyExtractorStrategy), IEnumerable(Of IPartitionSelectorStrategy))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binding.MessageConverterConfigurer.MessageConverterConfigurer(Steeltoe.Common.Contexts.IApplicationContext, Microsoft.Extensions.Options.IOptionsMonitor(Of Steeltoe.Stream.Config.BindingServiceOptions), Steeltoe.Messaging.Converter.IMessageConverterFactory, System.Collections.Generic.IEnumerable(Of Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy), System.Collections.Generic.IEnumerable(Of Steeltoe.Stream.Binder.IPartitionSelectorStrategy))
+  name.vb: MessageConverterConfigurer(IApplicationContext, IOptionsMonitor(Of BindingServiceOptions), IMessageConverterFactory, IEnumerable(Of IPartitionKeyExtractorStrategy), IEnumerable(Of IPartitionSelectorStrategy))
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  commentId: M:Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  id: ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  parent: Steeltoe.Stream.Binding.MessageConverterConfigurer
+  langs:
+  - csharp
+  - vb
+  name: ConfigureInputChannel(IMessageChannel, String)
+  nameWithType: MessageConverterConfigurer.ConfigureInputChannel(IMessageChannel, String)
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConfigureInputChannel
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+    startLine: 50
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public void ConfigureInputChannel(IMessageChannel messageChannel, string channelName)
+    parameters:
+    - id: messageChannel
+      type: Steeltoe.Messaging.IMessageChannel
+    - id: channelName
+      type: System.String
+    content.vb: Public Sub ConfigureInputChannel(messageChannel As IMessageChannel, channelName As String)
+  overload: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel*
+  implements:
+  - Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  commentId: M:Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  id: ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  parent: Steeltoe.Stream.Binding.MessageConverterConfigurer
+  langs:
+  - csharp
+  - vb
+  name: ConfigureOutputChannel(IMessageChannel, String)
+  nameWithType: MessageConverterConfigurer.ConfigureOutputChannel(IMessageChannel, String)
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConfigureOutputChannel
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+    startLine: 55
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public void ConfigureOutputChannel(IMessageChannel messageChannel, string channelName)
+    parameters:
+    - id: messageChannel
+      type: Steeltoe.Messaging.IMessageChannel
+    - id: channelName
+      type: System.String
+    content.vb: Public Sub ConfigureOutputChannel(messageChannel As IMessageChannel, channelName As String)
+  overload: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel*
+  implements:
+  - Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+  commentId: M:Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+  id: ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+  parent: Steeltoe.Stream.Binding.MessageConverterConfigurer
+  langs:
+  - csharp
+  - vb
+  name: ConfigurePolledMessageSource(IPollableMessageSource, String)
+  nameWithType: MessageConverterConfigurer.ConfigurePolledMessageSource(IPollableMessageSource, String)
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConfigurePolledMessageSource
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/MessageConverterConfigurer.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public void ConfigurePolledMessageSource(IPollableMessageSource binding, string name)
+    parameters:
+    - id: binding
+      type: Steeltoe.Stream.Binder.IPollableMessageSource
+    - id: name
+      type: System.String
+    content.vb: Public Sub ConfigurePolledMessageSource(binding As IPollableMessageSource, name As String)
+  overload: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource*
+  implements:
+  - Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Stream.Binding
+  commentId: N:Steeltoe.Stream.Binding
+  name: Steeltoe.Stream.Binding
+  nameWithType: Steeltoe.Stream.Binding
+  fullName: Steeltoe.Stream.Binding
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer
+  commentId: T:Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer
+  parent: Steeltoe.Stream.Binding
+  name: IMessageChannelAndSourceConfigurer
+  nameWithType: IMessageChannelAndSourceConfigurer
+  fullName: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer
+- uid: Steeltoe.Stream.Binding.IMessageChannelConfigurer
+  commentId: T:Steeltoe.Stream.Binding.IMessageChannelConfigurer
+  parent: Steeltoe.Stream.Binding
+  name: IMessageChannelConfigurer
+  nameWithType: IMessageChannelConfigurer
+  fullName: Steeltoe.Stream.Binding.IMessageChannelConfigurer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binding.MessageConverterConfigurer.#ctor
+  name: MessageConverterConfigurer
+  nameWithType: MessageConverterConfigurer.MessageConverterConfigurer
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.MessageConverterConfigurer
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Stream.Config.BindingServiceOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptionsMonitor{Steeltoe.Stream.Config.BindingServiceOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptionsMonitor`1
+  name: IOptionsMonitor<BindingServiceOptions>
+  nameWithType: IOptionsMonitor<BindingServiceOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Stream.Config.BindingServiceOptions>
+  nameWithType.vb: IOptionsMonitor(Of BindingServiceOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of Steeltoe.Stream.Config.BindingServiceOptions)
+  name.vb: IOptionsMonitor(Of BindingServiceOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Stream.Config.BindingServiceOptions
+    name: BindingServiceOptions
+    nameWithType: BindingServiceOptions
+    fullName: Steeltoe.Stream.Config.BindingServiceOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Stream.Config.BindingServiceOptions
+    name: BindingServiceOptions
+    nameWithType: BindingServiceOptions
+    fullName: Steeltoe.Stream.Config.BindingServiceOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.IMessageConverterFactory
+  commentId: T:Steeltoe.Messaging.Converter.IMessageConverterFactory
+  parent: Steeltoe.Messaging.Converter
+  name: IMessageConverterFactory
+  nameWithType: IMessageConverterFactory
+  fullName: Steeltoe.Messaging.Converter.IMessageConverterFactory
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IPartitionKeyExtractorStrategy>
+  nameWithType: IEnumerable<IPartitionKeyExtractorStrategy>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy>
+  nameWithType.vb: IEnumerable(Of IPartitionKeyExtractorStrategy)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy)
+  name.vb: IEnumerable(Of IPartitionKeyExtractorStrategy)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+    name: IPartitionKeyExtractorStrategy
+    nameWithType: IPartitionKeyExtractorStrategy
+    fullName: Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+    name: IPartitionKeyExtractorStrategy
+    nameWithType: IPartitionKeyExtractorStrategy
+    fullName: Steeltoe.Stream.Binder.IPartitionKeyExtractorStrategy
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionSelectorStrategy}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binder.IPartitionSelectorStrategy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IPartitionSelectorStrategy>
+  nameWithType: IEnumerable<IPartitionSelectorStrategy>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Stream.Binder.IPartitionSelectorStrategy>
+  nameWithType.vb: IEnumerable(Of IPartitionSelectorStrategy)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Stream.Binder.IPartitionSelectorStrategy)
+  name.vb: IEnumerable(Of IPartitionSelectorStrategy)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+    name: IPartitionSelectorStrategy
+    nameWithType: IPartitionSelectorStrategy
+    fullName: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+    name: IPartitionSelectorStrategy
+    nameWithType: IPartitionSelectorStrategy
+    fullName: Steeltoe.Stream.Binder.IPartitionSelectorStrategy
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+  commentId: T:Microsoft.Extensions.Options.IOptionsMonitor`1
+  isExternal: true
+  name: IOptionsMonitor<TOptions>
+  nameWithType: IOptionsMonitor<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>
+  nameWithType.vb: IOptionsMonitor(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions)
+  name.vb: IOptionsMonitor(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    nameWithType: IOptionsMonitor
+    fullName: Microsoft.Extensions.Options.IOptionsMonitor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+- uid: Steeltoe.Messaging.Converter
+  commentId: N:Steeltoe.Messaging.Converter
+  name: Steeltoe.Messaging.Converter
+  nameWithType: Steeltoe.Messaging.Converter
+  fullName: Steeltoe.Messaging.Converter
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel*
+  commentId: Overload:Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel
+  name: ConfigureInputChannel
+  nameWithType: MessageConverterConfigurer.ConfigureInputChannel
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureInputChannel
+- uid: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  commentId: M:Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  parent: Steeltoe.Stream.Binding.IMessageChannelConfigurer
+  isExternal: true
+  name: ConfigureInputChannel(IMessageChannel, String)
+  nameWithType: IMessageChannelConfigurer.ConfigureInputChannel(IMessageChannel, String)
+  fullName: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+    name: ConfigureInputChannel
+    nameWithType: IMessageChannelConfigurer.ConfigureInputChannel
+    fullName: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+    name: ConfigureInputChannel
+    nameWithType: IMessageChannelConfigurer.ConfigureInputChannel
+    fullName: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureInputChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel*
+  commentId: Overload:Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel
+  name: ConfigureOutputChannel
+  nameWithType: MessageConverterConfigurer.ConfigureOutputChannel
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigureOutputChannel
+- uid: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  commentId: M:Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+  parent: Steeltoe.Stream.Binding.IMessageChannelConfigurer
+  isExternal: true
+  name: ConfigureOutputChannel(IMessageChannel, String)
+  nameWithType: IMessageChannelConfigurer.ConfigureOutputChannel(IMessageChannel, String)
+  fullName: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+    name: ConfigureOutputChannel
+    nameWithType: IMessageChannelConfigurer.ConfigureOutputChannel
+    fullName: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel(Steeltoe.Messaging.IMessageChannel,System.String)
+    name: ConfigureOutputChannel
+    nameWithType: IMessageChannelConfigurer.ConfigureOutputChannel
+    fullName: Steeltoe.Stream.Binding.IMessageChannelConfigurer.ConfigureOutputChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource*
+  commentId: Overload:Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource
+  name: ConfigurePolledMessageSource
+  nameWithType: MessageConverterConfigurer.ConfigurePolledMessageSource
+  fullName: Steeltoe.Stream.Binding.MessageConverterConfigurer.ConfigurePolledMessageSource
+- uid: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+  commentId: M:Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+  parent: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer
+  isExternal: true
+  name: ConfigurePolledMessageSource(IPollableMessageSource, String)
+  nameWithType: IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource(IPollableMessageSource, String)
+  fullName: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+    name: ConfigurePolledMessageSource
+    nameWithType: IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource
+    fullName: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binder.IPollableMessageSource
+    name: IPollableMessageSource
+    nameWithType: IPollableMessageSource
+    fullName: Steeltoe.Stream.Binder.IPollableMessageSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource(Steeltoe.Stream.Binder.IPollableMessageSource,System.String)
+    name: ConfigurePolledMessageSource
+    nameWithType: IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource
+    fullName: Steeltoe.Stream.Binding.IMessageChannelAndSourceConfigurer.ConfigurePolledMessageSource
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binder.IPollableMessageSource
+    name: IPollableMessageSource
+    nameWithType: IPollableMessageSource
+    fullName: Steeltoe.Stream.Binder.IPollableMessageSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableMessageSource
+  commentId: T:Steeltoe.Stream.Binder.IPollableMessageSource
+  parent: Steeltoe.Stream.Binder
+  name: IPollableMessageSource
+  nameWithType: IPollableMessageSource
+  fullName: Steeltoe.Stream.Binder.IPollableMessageSource
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder

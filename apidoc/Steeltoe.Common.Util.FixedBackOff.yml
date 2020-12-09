@@ -1,0 +1,690 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Util.FixedBackOff
+  commentId: T:Steeltoe.Common.Util.FixedBackOff
+  id: FixedBackOff
+  parent: Steeltoe.Common.Util
+  children:
+  - Steeltoe.Common.Util.FixedBackOff.#ctor
+  - Steeltoe.Common.Util.FixedBackOff.#ctor(System.Int32,System.Int32)
+  - Steeltoe.Common.Util.FixedBackOff.DEFAULT_INTERVAL
+  - Steeltoe.Common.Util.FixedBackOff.Interval
+  - Steeltoe.Common.Util.FixedBackOff.MaxAttempts
+  - Steeltoe.Common.Util.FixedBackOff.Start
+  - Steeltoe.Common.Util.FixedBackOff.STOP
+  - Steeltoe.Common.Util.FixedBackOff.UNLIMITED_ATTEMPTS
+  langs:
+  - csharp
+  - vb
+  name: FixedBackOff
+  nameWithType: FixedBackOff
+  fullName: Steeltoe.Common.Util.FixedBackOff
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FixedBackOff
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 6
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: 'public class FixedBackOff : IBackOff'
+    content.vb: >-
+      Public Class FixedBackOff
+
+          Implements IBackOff
+  inheritance:
+  - System.Object
+  implements:
+  - Steeltoe.Common.Util.IBackOff
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Common.Util.FixedBackOff.STOP
+  commentId: F:Steeltoe.Common.Util.FixedBackOff.STOP
+  id: STOP
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: STOP
+  nameWithType: FixedBackOff.STOP
+  fullName: Steeltoe.Common.Util.FixedBackOff.STOP
+  type: Field
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: STOP
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 8
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public const int STOP = -1
+    return:
+      type: System.Int32
+    content.vb: Public Const STOP As Integer = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Common.Util.FixedBackOff.DEFAULT_INTERVAL
+  commentId: F:Steeltoe.Common.Util.FixedBackOff.DEFAULT_INTERVAL
+  id: DEFAULT_INTERVAL
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_INTERVAL
+  nameWithType: FixedBackOff.DEFAULT_INTERVAL
+  fullName: Steeltoe.Common.Util.FixedBackOff.DEFAULT_INTERVAL
+  type: Field
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DEFAULT_INTERVAL
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 9
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public const int DEFAULT_INTERVAL = 5000
+    return:
+      type: System.Int32
+    content.vb: Public Const DEFAULT_INTERVAL As Integer = 5000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Common.Util.FixedBackOff.UNLIMITED_ATTEMPTS
+  commentId: F:Steeltoe.Common.Util.FixedBackOff.UNLIMITED_ATTEMPTS
+  id: UNLIMITED_ATTEMPTS
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: UNLIMITED_ATTEMPTS
+  nameWithType: FixedBackOff.UNLIMITED_ATTEMPTS
+  fullName: Steeltoe.Common.Util.FixedBackOff.UNLIMITED_ATTEMPTS
+  type: Field
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UNLIMITED_ATTEMPTS
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public const int UNLIMITED_ATTEMPTS = 2147483647
+    return:
+      type: System.Int32
+    content.vb: Public Const UNLIMITED_ATTEMPTS As Integer = 2147483647
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Common.Util.FixedBackOff.#ctor
+  commentId: M:Steeltoe.Common.Util.FixedBackOff.#ctor
+  id: '#ctor'
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: FixedBackOff()
+  nameWithType: FixedBackOff.FixedBackOff()
+  fullName: Steeltoe.Common.Util.FixedBackOff.FixedBackOff()
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public FixedBackOff()
+    content.vb: Public Sub New
+  overload: Steeltoe.Common.Util.FixedBackOff.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Util.FixedBackOff.#ctor(System.Int32,System.Int32)
+  commentId: M:Steeltoe.Common.Util.FixedBackOff.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: FixedBackOff(Int32, Int32)
+  nameWithType: FixedBackOff.FixedBackOff(Int32, Int32)
+  fullName: Steeltoe.Common.Util.FixedBackOff.FixedBackOff(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public FixedBackOff(int interval, int maxAttempts)
+    parameters:
+    - id: interval
+      type: System.Int32
+    - id: maxAttempts
+      type: System.Int32
+    content.vb: Public Sub New(interval As Integer, maxAttempts As Integer)
+  overload: Steeltoe.Common.Util.FixedBackOff.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Util.FixedBackOff.Interval
+  commentId: P:Steeltoe.Common.Util.FixedBackOff.Interval
+  id: Interval
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: Interval
+  nameWithType: FixedBackOff.Interval
+  fullName: Steeltoe.Common.Util.FixedBackOff.Interval
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Interval
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public int Interval { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Interval As Integer
+  overload: Steeltoe.Common.Util.FixedBackOff.Interval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Util.FixedBackOff.MaxAttempts
+  commentId: P:Steeltoe.Common.Util.FixedBackOff.MaxAttempts
+  id: MaxAttempts
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: MaxAttempts
+  nameWithType: FixedBackOff.MaxAttempts
+  fullName: Steeltoe.Common.Util.FixedBackOff.MaxAttempts
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MaxAttempts
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public int MaxAttempts { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxAttempts As Integer
+  overload: Steeltoe.Common.Util.FixedBackOff.MaxAttempts*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Util.FixedBackOff.Start
+  commentId: M:Steeltoe.Common.Util.FixedBackOff.Start
+  id: Start
+  parent: Steeltoe.Common.Util.FixedBackOff
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: FixedBackOff.Start()
+  fullName: Steeltoe.Common.Util.FixedBackOff.Start()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Util/FixedBackOff.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Start
+    path: ../Steeltoe/src/Common/src/Common/Util/FixedBackOff.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Util
+  syntax:
+    content: public IBackOffExecution Start()
+    return:
+      type: Steeltoe.Common.Util.IBackOffExecution
+    content.vb: Public Function Start As IBackOffExecution
+  overload: Steeltoe.Common.Util.FixedBackOff.Start*
+  implements:
+  - Steeltoe.Common.Util.IBackOff.Start
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Common.Util
+  commentId: N:Steeltoe.Common.Util
+  name: Steeltoe.Common.Util
+  nameWithType: Steeltoe.Common.Util
+  fullName: Steeltoe.Common.Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Util.IBackOff
+  commentId: T:Steeltoe.Common.Util.IBackOff
+  parent: Steeltoe.Common.Util
+  name: IBackOff
+  nameWithType: IBackOff
+  fullName: Steeltoe.Common.Util.IBackOff
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Common.Util.FixedBackOff.#ctor*
+  commentId: Overload:Steeltoe.Common.Util.FixedBackOff.#ctor
+  name: FixedBackOff
+  nameWithType: FixedBackOff.FixedBackOff
+  fullName: Steeltoe.Common.Util.FixedBackOff.FixedBackOff
+- uid: Steeltoe.Common.Util.FixedBackOff.Interval*
+  commentId: Overload:Steeltoe.Common.Util.FixedBackOff.Interval
+  name: Interval
+  nameWithType: FixedBackOff.Interval
+  fullName: Steeltoe.Common.Util.FixedBackOff.Interval
+- uid: Steeltoe.Common.Util.FixedBackOff.MaxAttempts*
+  commentId: Overload:Steeltoe.Common.Util.FixedBackOff.MaxAttempts
+  name: MaxAttempts
+  nameWithType: FixedBackOff.MaxAttempts
+  fullName: Steeltoe.Common.Util.FixedBackOff.MaxAttempts
+- uid: Steeltoe.Common.Util.FixedBackOff.Start*
+  commentId: Overload:Steeltoe.Common.Util.FixedBackOff.Start
+  name: Start
+  nameWithType: FixedBackOff.Start
+  fullName: Steeltoe.Common.Util.FixedBackOff.Start
+- uid: Steeltoe.Common.Util.IBackOff.Start
+  commentId: M:Steeltoe.Common.Util.IBackOff.Start
+  parent: Steeltoe.Common.Util.IBackOff
+  name: Start()
+  nameWithType: IBackOff.Start()
+  fullName: Steeltoe.Common.Util.IBackOff.Start()
+  spec.csharp:
+  - uid: Steeltoe.Common.Util.IBackOff.Start
+    name: Start
+    nameWithType: IBackOff.Start
+    fullName: Steeltoe.Common.Util.IBackOff.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Util.IBackOff.Start
+    name: Start
+    nameWithType: IBackOff.Start
+    fullName: Steeltoe.Common.Util.IBackOff.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Util.IBackOffExecution
+  commentId: T:Steeltoe.Common.Util.IBackOffExecution
+  parent: Steeltoe.Common.Util
+  name: IBackOffExecution
+  nameWithType: IBackOffExecution
+  fullName: Steeltoe.Common.Util.IBackOffExecution

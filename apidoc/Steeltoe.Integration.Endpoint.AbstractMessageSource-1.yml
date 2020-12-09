@@ -1,0 +1,1544 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  commentId: T:Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  id: AbstractMessageSource`1
+  parent: Steeltoe.Integration.Endpoint
+  children:
+  - Steeltoe.Integration.Endpoint.AbstractMessageSource`1.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  - Steeltoe.Integration.Endpoint.AbstractMessageSource`1.BuildMessage(System.Object)
+  - Steeltoe.Integration.Endpoint.AbstractMessageSource`1.DoReceive
+  - Steeltoe.Integration.Endpoint.AbstractMessageSource`1.HeaderExpressions
+  - Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Receive
+  - Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Steeltoe#Integration#IMessageSource#Receive
+  langs:
+  - csharp
+  - vb
+  name: AbstractMessageSource<T>
+  nameWithType: AbstractMessageSource<T>
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>
+  type: Class
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractMessageSource
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: 'public abstract class AbstractMessageSource<T> : AbstractExpressionEvaluator, IMessageSource<T>, IMessageSource'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class AbstractMessageSource(Of T)
+
+          Inherits AbstractExpressionEvaluator
+
+          Implements IMessageSource(Of T), IMessageSource
+  inheritance:
+  - System.Object
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  implements:
+  - Steeltoe.Integration.IMessageSource{{T}}
+  - Steeltoe.Integration.IMessageSource
+  inheritedMembers:
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.ExpressionParser
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluationContext
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.IntegrationServices
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.MessageBuilderFactory
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.TypeConverter
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.ApplicationContext
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext(System.Boolean)
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage,System.Type)
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object)
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object,System.Type)
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression)
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,System.Object,System.Type)
+  - Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,System.Object)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: AbstractMessageSource(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T)
+  name.vb: AbstractMessageSource(Of T)
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.HeaderExpressions
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.HeaderExpressions
+  id: HeaderExpressions
+  parent: Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  langs:
+  - csharp
+  - vb
+  name: HeaderExpressions
+  nameWithType: AbstractMessageSource<T>.HeaderExpressions
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.HeaderExpressions
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HeaderExpressions
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: public Dictionary<string, IExpression> HeaderExpressions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Steeltoe.Common.Expression.IExpression}
+    content.vb: Public Property HeaderExpressions As Dictionary(Of String, IExpression)
+  overload: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.HeaderExpressions*
+  nameWithType.vb: AbstractMessageSource(Of T).HeaderExpressions
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).HeaderExpressions
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext)'
+  parent: Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  langs:
+  - csharp
+  - vb
+  name: AbstractMessageSource(IApplicationContext)
+  nameWithType: AbstractMessageSource<T>.AbstractMessageSource(IApplicationContext)
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.AbstractMessageSource(Steeltoe.Common.Contexts.IApplicationContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: public AbstractMessageSource(IApplicationContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Public Sub New(context As IApplicationContext)
+  overload: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.#ctor*
+  nameWithType.vb: AbstractMessageSource(Of T).AbstractMessageSource(IApplicationContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).AbstractMessageSource(Steeltoe.Common.Contexts.IApplicationContext)
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Receive
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Receive
+  id: Receive
+  parent: Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  langs:
+  - csharp
+  - vb
+  name: Receive()
+  nameWithType: AbstractMessageSource<T>.Receive()
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.Receive()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Receive
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: public IMessage<T> Receive()
+    return:
+      type: Steeltoe.Messaging.IMessage{{T}}
+    content.vb: Public Function Receive As IMessage(Of T)
+  overload: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Receive*
+  implements:
+  - Steeltoe.Integration.IMessageSource{{T}}.Receive
+  nameWithType.vb: AbstractMessageSource(Of T).Receive()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).Receive()
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Steeltoe#Integration#IMessageSource#Receive
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Steeltoe#Integration#IMessageSource#Receive
+  id: Steeltoe#Integration#IMessageSource#Receive
+  isEii: true
+  parent: Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  langs:
+  - csharp
+  - vb
+  name: IMessageSource.Receive()
+  nameWithType: AbstractMessageSource<T>.IMessageSource.Receive()
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.Steeltoe.Integration.IMessageSource.Receive()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Steeltoe.Integration.IMessageSource.Receive
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: IMessage IMessageSource.Receive()
+    return:
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Function Steeltoe.Integration.IMessageSource.Receive As IMessage Implements IMessageSource.Receive
+  overload: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Steeltoe#Integration#IMessageSource#Receive*
+  implements:
+  - Steeltoe.Integration.IMessageSource.Receive
+  nameWithType.vb: AbstractMessageSource(Of T).Steeltoe.Integration.IMessageSource.Receive()
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).Steeltoe.Integration.IMessageSource.Receive()
+  name.vb: Steeltoe.Integration.IMessageSource.Receive()
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.BuildMessage(System.Object)
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.BuildMessage(System.Object)
+  id: BuildMessage(System.Object)
+  parent: Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  langs:
+  - csharp
+  - vb
+  name: BuildMessage(Object)
+  nameWithType: AbstractMessageSource<T>.BuildMessage(Object)
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.BuildMessage(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BuildMessage
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+    startLine: 33
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: protected virtual IMessage<T> BuildMessage(object result)
+    parameters:
+    - id: result
+      type: System.Object
+    return:
+      type: Steeltoe.Messaging.IMessage{{T}}
+    content.vb: Protected Overridable Function BuildMessage(result As Object) As IMessage(Of T)
+  overload: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.BuildMessage*
+  nameWithType.vb: AbstractMessageSource(Of T).BuildMessage(Object)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).BuildMessage(System.Object)
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.DoReceive
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.DoReceive
+  id: DoReceive
+  parent: Steeltoe.Integration.Endpoint.AbstractMessageSource`1
+  langs:
+  - csharp
+  - vb
+  name: DoReceive()
+  nameWithType: AbstractMessageSource<T>.DoReceive()
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.DoReceive()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoReceive
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/AbstractMessageSource.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: protected abstract object DoReceive()
+    return:
+      type: System.Object
+    content.vb: Protected MustOverride Function DoReceive As Object
+  overload: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.DoReceive*
+  nameWithType.vb: AbstractMessageSource(Of T).DoReceive()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).DoReceive()
+references:
+- uid: Steeltoe.Integration.Endpoint
+  commentId: N:Steeltoe.Integration.Endpoint
+  name: Steeltoe.Integration.Endpoint
+  nameWithType: Steeltoe.Integration.Endpoint
+  fullName: Steeltoe.Integration.Endpoint
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  commentId: T:Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  parent: Steeltoe.Integration.Util
+  name: AbstractExpressionEvaluator
+  nameWithType: AbstractExpressionEvaluator
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+- uid: Steeltoe.Integration.IMessageSource{{T}}
+  commentId: T:Steeltoe.Integration.IMessageSource{`0}
+  parent: Steeltoe.Integration
+  definition: Steeltoe.Integration.IMessageSource`1
+  name: IMessageSource<T>
+  nameWithType: IMessageSource<T>
+  fullName: Steeltoe.Integration.IMessageSource<T>
+  nameWithType.vb: IMessageSource(Of T)
+  fullName.vb: Steeltoe.Integration.IMessageSource(Of T)
+  name.vb: IMessageSource(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.IMessageSource`1
+    name: IMessageSource
+    nameWithType: IMessageSource
+    fullName: Steeltoe.Integration.IMessageSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Integration.IMessageSource`1
+    name: IMessageSource
+    nameWithType: IMessageSource
+    fullName: Steeltoe.Integration.IMessageSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.IMessageSource
+  commentId: T:Steeltoe.Integration.IMessageSource
+  parent: Steeltoe.Integration
+  name: IMessageSource
+  nameWithType: IMessageSource
+  fullName: Steeltoe.Integration.IMessageSource
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.ExpressionParser
+  commentId: P:Steeltoe.Integration.Util.AbstractExpressionEvaluator.ExpressionParser
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: ExpressionParser
+  nameWithType: AbstractExpressionEvaluator.ExpressionParser
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.ExpressionParser
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluationContext
+  commentId: P:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluationContext
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: EvaluationContext
+  nameWithType: AbstractExpressionEvaluator.EvaluationContext
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluationContext
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.IntegrationServices
+  commentId: P:Steeltoe.Integration.Util.AbstractExpressionEvaluator.IntegrationServices
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: IntegrationServices
+  nameWithType: AbstractExpressionEvaluator.IntegrationServices
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.IntegrationServices
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.MessageBuilderFactory
+  commentId: P:Steeltoe.Integration.Util.AbstractExpressionEvaluator.MessageBuilderFactory
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: MessageBuilderFactory
+  nameWithType: AbstractExpressionEvaluator.MessageBuilderFactory
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.MessageBuilderFactory
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.TypeConverter
+  commentId: P:Steeltoe.Integration.Util.AbstractExpressionEvaluator.TypeConverter
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: TypeConverter
+  nameWithType: AbstractExpressionEvaluator.TypeConverter
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.TypeConverter
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.ApplicationContext
+  commentId: P:Steeltoe.Integration.Util.AbstractExpressionEvaluator.ApplicationContext
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: ApplicationContext
+  nameWithType: AbstractExpressionEvaluator.ApplicationContext
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.ApplicationContext
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: GetMessageBuilderFactory()
+  nameWithType: AbstractExpressionEvaluator.GetMessageBuilderFactory()
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory
+    name: GetMessageBuilderFactory
+    nameWithType: AbstractExpressionEvaluator.GetMessageBuilderFactory
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory
+    name: GetMessageBuilderFactory
+    nameWithType: AbstractExpressionEvaluator.GetMessageBuilderFactory
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetMessageBuilderFactory
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext(System.Boolean)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext(System.Boolean)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  isExternal: true
+  name: GetEvaluationContext(Boolean)
+  nameWithType: AbstractExpressionEvaluator.GetEvaluationContext(Boolean)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext(System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext(System.Boolean)
+    name: GetEvaluationContext
+    nameWithType: AbstractExpressionEvaluator.GetEvaluationContext
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext(System.Boolean)
+    name: GetEvaluationContext
+    nameWithType: AbstractExpressionEvaluator.GetEvaluationContext
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.GetEvaluationContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: EvaluateExpression<T>(IExpression, IMessage)
+  nameWithType: AbstractExpressionEvaluator.EvaluateExpression<T>(IExpression, IMessage)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression<T>(Steeltoe.Common.Expression.IExpression, Steeltoe.Messaging.IMessage)
+  nameWithType.vb: AbstractExpressionEvaluator.EvaluateExpression(Of T)(IExpression, IMessage)
+  fullName.vb: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Of T)(Steeltoe.Common.Expression.IExpression, Steeltoe.Messaging.IMessage)
+  name.vb: EvaluateExpression(Of T)(IExpression, IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage)
+    name: EvaluateExpression<T>
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression<T>
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage)
+    name: EvaluateExpression(Of T)
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression(Of T)
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage,System.Type)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage,System.Type)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  isExternal: true
+  name: EvaluateExpression(IExpression, IMessage, Type)
+  nameWithType: AbstractExpressionEvaluator.EvaluateExpression(IExpression, IMessage, Type)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression, Steeltoe.Messaging.IMessage, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage,System.Type)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,Steeltoe.Messaging.IMessage,System.Type)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  isExternal: true
+  name: EvaluateExpression(String, Object)
+  nameWithType: AbstractExpressionEvaluator.EvaluateExpression(String, Object)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object,System.Type)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object,System.Type)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  isExternal: true
+  name: EvaluateExpression(String, Object, Type)
+  nameWithType: AbstractExpressionEvaluator.EvaluateExpression(String, Object, Type)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String, System.Object, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object,System.Type)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(System.String,System.Object,System.Type)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  name: EvaluateExpression(IExpression)
+  nameWithType: AbstractExpressionEvaluator.EvaluateExpression(IExpression)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,System.Object,System.Type)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,System.Object,System.Type)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  isExternal: true
+  name: EvaluateExpression(IExpression, Object, Type)
+  nameWithType: AbstractExpressionEvaluator.EvaluateExpression(IExpression, Object, Type)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression, System.Object, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,System.Object,System.Type)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Steeltoe.Common.Expression.IExpression,System.Object,System.Type)
+    name: EvaluateExpression
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,System.Object)
+  commentId: M:Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,System.Object)
+  parent: Steeltoe.Integration.Util.AbstractExpressionEvaluator
+  isExternal: true
+  name: EvaluateExpression<T>(IExpression, Object)
+  nameWithType: AbstractExpressionEvaluator.EvaluateExpression<T>(IExpression, Object)
+  fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression<T>(Steeltoe.Common.Expression.IExpression, System.Object)
+  nameWithType.vb: AbstractExpressionEvaluator.EvaluateExpression(Of T)(IExpression, Object)
+  fullName.vb: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Of T)(Steeltoe.Common.Expression.IExpression, System.Object)
+  name.vb: EvaluateExpression(Of T)(IExpression, Object)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,System.Object)
+    name: EvaluateExpression<T>
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression<T>
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression``1(Steeltoe.Common.Expression.IExpression,System.Object)
+    name: EvaluateExpression(Of T)
+    nameWithType: AbstractExpressionEvaluator.EvaluateExpression(Of T)
+    fullName: Steeltoe.Integration.Util.AbstractExpressionEvaluator.EvaluateExpression(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Integration.Util
+  commentId: N:Steeltoe.Integration.Util
+  name: Steeltoe.Integration.Util
+  nameWithType: Steeltoe.Integration.Util
+  fullName: Steeltoe.Integration.Util
+- uid: Steeltoe.Integration.IMessageSource`1
+  commentId: T:Steeltoe.Integration.IMessageSource`1
+  name: IMessageSource<T>
+  nameWithType: IMessageSource<T>
+  fullName: Steeltoe.Integration.IMessageSource<T>
+  nameWithType.vb: IMessageSource(Of T)
+  fullName.vb: Steeltoe.Integration.IMessageSource(Of T)
+  name.vb: IMessageSource(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.IMessageSource`1
+    name: IMessageSource
+    nameWithType: IMessageSource
+    fullName: Steeltoe.Integration.IMessageSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Integration.IMessageSource`1
+    name: IMessageSource
+    nameWithType: IMessageSource
+    fullName: Steeltoe.Integration.IMessageSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration
+  commentId: N:Steeltoe.Integration
+  name: Steeltoe.Integration
+  nameWithType: Steeltoe.Integration
+  fullName: Steeltoe.Integration
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.HeaderExpressions*
+  commentId: Overload:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.HeaderExpressions
+  name: HeaderExpressions
+  nameWithType: AbstractMessageSource<T>.HeaderExpressions
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.HeaderExpressions
+  nameWithType.vb: AbstractMessageSource(Of T).HeaderExpressions
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).HeaderExpressions
+- uid: System.Collections.Generic.Dictionary{System.String,Steeltoe.Common.Expression.IExpression}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Steeltoe.Common.Expression.IExpression}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, IExpression>
+  nameWithType: Dictionary<String, IExpression>
+  fullName: System.Collections.Generic.Dictionary<System.String, Steeltoe.Common.Expression.IExpression>
+  nameWithType.vb: Dictionary(Of String, IExpression)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, Steeltoe.Common.Expression.IExpression)
+  name.vb: Dictionary(Of String, IExpression)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.Expression.IExpression
+    name: IExpression
+    nameWithType: IExpression
+    fullName: Steeltoe.Common.Expression.IExpression
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.#ctor*
+  commentId: Overload:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.#ctor
+  name: AbstractMessageSource
+  nameWithType: AbstractMessageSource<T>.AbstractMessageSource
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.AbstractMessageSource
+  nameWithType.vb: AbstractMessageSource(Of T).AbstractMessageSource
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).AbstractMessageSource
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Receive*
+  commentId: Overload:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Receive
+  name: Receive
+  nameWithType: AbstractMessageSource<T>.Receive
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.Receive
+  nameWithType.vb: AbstractMessageSource(Of T).Receive
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).Receive
+- uid: Steeltoe.Integration.IMessageSource{{T}}.Receive
+  commentId: M:Steeltoe.Integration.IMessageSource{`0}.Receive
+  parent: Steeltoe.Integration.IMessageSource{{T}}
+  definition: Steeltoe.Integration.IMessageSource`1.Receive
+  name: Receive()
+  nameWithType: IMessageSource<T>.Receive()
+  fullName: Steeltoe.Integration.IMessageSource<T>.Receive()
+  nameWithType.vb: IMessageSource(Of T).Receive()
+  fullName.vb: Steeltoe.Integration.IMessageSource(Of T).Receive()
+  spec.csharp:
+  - uid: Steeltoe.Integration.IMessageSource`1.Receive
+    name: Receive
+    nameWithType: IMessageSource<T>.Receive
+    fullName: Steeltoe.Integration.IMessageSource<T>.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.IMessageSource`1.Receive
+    name: Receive
+    nameWithType: IMessageSource(Of T).Receive
+    fullName: Steeltoe.Integration.IMessageSource(Of T).Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage{{T}}
+  commentId: T:Steeltoe.Messaging.IMessage{``0}
+  parent: Steeltoe.Messaging
+  definition: Steeltoe.Messaging.IMessage`1
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Steeltoe.Messaging.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Steeltoe.Messaging.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.IMessageSource`1.Receive
+  commentId: M:Steeltoe.Integration.IMessageSource`1.Receive
+  name: Receive()
+  nameWithType: IMessageSource<T>.Receive()
+  fullName: Steeltoe.Integration.IMessageSource<T>.Receive()
+  nameWithType.vb: IMessageSource(Of T).Receive()
+  fullName.vb: Steeltoe.Integration.IMessageSource(Of T).Receive()
+  spec.csharp:
+  - uid: Steeltoe.Integration.IMessageSource`1.Receive
+    name: Receive
+    nameWithType: IMessageSource<T>.Receive
+    fullName: Steeltoe.Integration.IMessageSource<T>.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.IMessageSource`1.Receive
+    name: Receive
+    nameWithType: IMessageSource(Of T).Receive
+    fullName: Steeltoe.Integration.IMessageSource(Of T).Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage`1
+  commentId: T:Steeltoe.Messaging.IMessage`1
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Steeltoe.Messaging.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Steeltoe.Messaging.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessage`1
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Steeltoe#Integration#IMessageSource#Receive*
+  commentId: Overload:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.Steeltoe#Integration#IMessageSource#Receive
+  name: IMessageSource.Receive
+  nameWithType: AbstractMessageSource<T>.IMessageSource.Receive
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.Steeltoe.Integration.IMessageSource.Receive
+  nameWithType.vb: AbstractMessageSource(Of T).Steeltoe.Integration.IMessageSource.Receive
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).Steeltoe.Integration.IMessageSource.Receive
+  name.vb: Steeltoe.Integration.IMessageSource.Receive
+- uid: Steeltoe.Integration.IMessageSource.Receive
+  commentId: M:Steeltoe.Integration.IMessageSource.Receive
+  parent: Steeltoe.Integration.IMessageSource
+  name: Receive()
+  nameWithType: IMessageSource.Receive()
+  fullName: Steeltoe.Integration.IMessageSource.Receive()
+  spec.csharp:
+  - uid: Steeltoe.Integration.IMessageSource.Receive
+    name: Receive
+    nameWithType: IMessageSource.Receive
+    fullName: Steeltoe.Integration.IMessageSource.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.IMessageSource.Receive
+    name: Receive
+    nameWithType: IMessageSource.Receive
+    fullName: Steeltoe.Integration.IMessageSource.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.BuildMessage*
+  commentId: Overload:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.BuildMessage
+  name: BuildMessage
+  nameWithType: AbstractMessageSource<T>.BuildMessage
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.BuildMessage
+  nameWithType.vb: AbstractMessageSource(Of T).BuildMessage
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).BuildMessage
+- uid: Steeltoe.Integration.Endpoint.AbstractMessageSource`1.DoReceive*
+  commentId: Overload:Steeltoe.Integration.Endpoint.AbstractMessageSource`1.DoReceive
+  name: DoReceive
+  nameWithType: AbstractMessageSource<T>.DoReceive
+  fullName: Steeltoe.Integration.Endpoint.AbstractMessageSource<T>.DoReceive
+  nameWithType.vb: AbstractMessageSource(Of T).DoReceive
+  fullName.vb: Steeltoe.Integration.Endpoint.AbstractMessageSource(Of T).DoReceive

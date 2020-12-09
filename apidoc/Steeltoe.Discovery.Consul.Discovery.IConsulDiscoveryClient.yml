@@ -1,0 +1,431 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient
+  commentId: T:Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient
+  id: IConsulDiscoveryClient
+  parent: Steeltoe.Discovery.Consul.Discovery
+  children:
+  - Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances(QueryOptions)
+  - Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances(System.String,QueryOptions)
+  - Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices(QueryOptions)
+  langs:
+  - csharp
+  - vb
+  name: IConsulDiscoveryClient
+  nameWithType: IConsulDiscoveryClient
+  fullName: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient
+  type: Interface
+  source:
+    remote:
+      path: src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IConsulDiscoveryClient
+    path: ../Steeltoe/src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Discovery.Consul
+  namespace: Steeltoe.Discovery.Consul.Discovery
+  summary: "\nA Consul Discovery client\n"
+  example: []
+  syntax:
+    content: 'public interface IConsulDiscoveryClient : IDiscoveryClient, IServiceInstanceProvider, IDisposable'
+    content.vb: >-
+      Public Interface IConsulDiscoveryClient
+
+          Inherits IDiscoveryClient, IDisposable
+  inheritedMembers:
+  - Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance
+  - Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances(System.String,QueryOptions)
+  commentId: M:Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances(System.String,QueryOptions)
+  id: GetInstances(System.String,QueryOptions)
+  parent: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetInstances(String, QueryOptions)
+  nameWithType: IConsulDiscoveryClient.GetInstances(String, QueryOptions)
+  fullName: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances(System.String, QueryOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInstances
+    path: ../Steeltoe/src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Discovery.Consul
+  namespace: Steeltoe.Discovery.Consul.Discovery
+  summary: "\nGet all the instances for the given service id\n"
+  example: []
+  syntax:
+    content: IList<IServiceInstance> GetInstances(string serviceId, QueryOptions queryOptions = null)
+    parameters:
+    - id: serviceId
+      type: System.String
+      description: the service to lookup
+    - id: queryOptions
+      type: QueryOptions
+      description: any Consul query options to use
+    return:
+      type: System.Collections.Generic.IList{IServiceInstance}
+      description: list of found service instances
+    content.vb: Function GetInstances(serviceId As String, queryOptions As QueryOptions = Nothing) As IList(Of IServiceInstance)
+  overload: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances*
+- uid: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances(QueryOptions)
+  commentId: M:Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances(QueryOptions)
+  id: GetAllInstances(QueryOptions)
+  parent: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetAllInstances(QueryOptions)
+  nameWithType: IConsulDiscoveryClient.GetAllInstances(QueryOptions)
+  fullName: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances(QueryOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetAllInstances
+    path: ../Steeltoe/src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Discovery.Consul
+  namespace: Steeltoe.Discovery.Consul.Discovery
+  summary: "\nGet all the instances from the Consul catalog\n"
+  example: []
+  syntax:
+    content: IList<IServiceInstance> GetAllInstances(QueryOptions queryOptions = null)
+    parameters:
+    - id: queryOptions
+      type: QueryOptions
+      description: any Consul query options to use
+    return:
+      type: System.Collections.Generic.IList{IServiceInstance}
+      description: list of found service instances
+    content.vb: Function GetAllInstances(queryOptions As QueryOptions = Nothing) As IList(Of IServiceInstance)
+  overload: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances*
+- uid: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices(QueryOptions)
+  commentId: M:Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices(QueryOptions)
+  id: GetServices(QueryOptions)
+  parent: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient
+  langs:
+  - csharp
+  - vb
+  name: GetServices(QueryOptions)
+  nameWithType: IConsulDiscoveryClient.GetServices(QueryOptions)
+  fullName: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices(QueryOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetServices
+    path: ../Steeltoe/src/Discovery/src/Consul/Discovery/IConsulDiscoveryClient.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Discovery.Consul
+  namespace: Steeltoe.Discovery.Consul.Discovery
+  summary: "\nGet all of the services from the Consul catalog\n"
+  example: []
+  syntax:
+    content: IList<string> GetServices(QueryOptions queryOptions = null)
+    parameters:
+    - id: queryOptions
+      type: QueryOptions
+      description: any Consul query options to use
+    return:
+      type: System.Collections.Generic.IList{System.String}
+      description: list of found services
+    content.vb: Function GetServices(queryOptions As QueryOptions = Nothing) As IList(Of String)
+  overload: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices*
+references:
+- uid: Steeltoe.Discovery.Consul.Discovery
+  commentId: N:Steeltoe.Discovery.Consul.Discovery
+  name: Steeltoe.Discovery.Consul.Discovery
+  nameWithType: Steeltoe.Discovery.Consul.Discovery
+  fullName: Steeltoe.Discovery.Consul.Discovery
+- uid: Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance
+  commentId: M:Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance
+  parent: Steeltoe.Discovery.IDiscoveryClient
+  name: GetLocalServiceInstance()
+  nameWithType: IDiscoveryClient.GetLocalServiceInstance()
+  fullName: Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance()
+  spec.csharp:
+  - uid: Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance
+    name: GetLocalServiceInstance
+    nameWithType: IDiscoveryClient.GetLocalServiceInstance
+    fullName: Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance
+    name: GetLocalServiceInstance
+    nameWithType: IDiscoveryClient.GetLocalServiceInstance
+    fullName: Steeltoe.Discovery.IDiscoveryClient.GetLocalServiceInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync
+  commentId: M:Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync
+  parent: Steeltoe.Discovery.IDiscoveryClient
+  name: ShutdownAsync()
+  nameWithType: IDiscoveryClient.ShutdownAsync()
+  fullName: Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync()
+  spec.csharp:
+  - uid: Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync
+    name: ShutdownAsync
+    nameWithType: IDiscoveryClient.ShutdownAsync
+    fullName: Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync
+    name: ShutdownAsync
+    nameWithType: IDiscoveryClient.ShutdownAsync
+    fullName: Steeltoe.Discovery.IDiscoveryClient.ShutdownAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.IDiscoveryClient
+  commentId: T:Steeltoe.Discovery.IDiscoveryClient
+  parent: Steeltoe.Discovery
+  name: IDiscoveryClient
+  nameWithType: IDiscoveryClient
+  fullName: Steeltoe.Discovery.IDiscoveryClient
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Steeltoe.Discovery
+  commentId: N:Steeltoe.Discovery
+  name: Steeltoe.Discovery
+  nameWithType: Steeltoe.Discovery
+  fullName: Steeltoe.Discovery
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances*
+  commentId: Overload:Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances
+  name: GetInstances
+  nameWithType: IConsulDiscoveryClient.GetInstances
+  fullName: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetInstances
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: QueryOptions
+  isExternal: true
+  name: QueryOptions
+  nameWithType: QueryOptions
+  fullName: QueryOptions
+- uid: System.Collections.Generic.IList{IServiceInstance}
+  commentId: T:System.Collections.Generic.IList{IServiceInstance}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<IServiceInstance>
+  nameWithType: IList<IServiceInstance>
+  fullName: System.Collections.Generic.IList<IServiceInstance>
+  nameWithType.vb: IList(Of IServiceInstance)
+  fullName.vb: System.Collections.Generic.IList(Of IServiceInstance)
+  name.vb: IList(Of IServiceInstance)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IServiceInstance
+    name: IServiceInstance
+    nameWithType: IServiceInstance
+    fullName: IServiceInstance
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IServiceInstance
+    name: IServiceInstance
+    nameWithType: IServiceInstance
+    fullName: IServiceInstance
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances*
+  commentId: Overload:Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances
+  name: GetAllInstances
+  nameWithType: IConsulDiscoveryClient.GetAllInstances
+  fullName: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetAllInstances
+- uid: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices*
+  commentId: Overload:Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices
+  name: GetServices
+  nameWithType: IConsulDiscoveryClient.GetServices
+  fullName: Steeltoe.Discovery.Consul.Discovery.IConsulDiscoveryClient.GetServices
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  nameWithType: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

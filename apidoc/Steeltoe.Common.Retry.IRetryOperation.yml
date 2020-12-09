@@ -1,0 +1,575 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Retry.IRetryOperation
+  commentId: T:Steeltoe.Common.Retry.IRetryOperation
+  id: IRetryOperation
+  parent: Steeltoe.Common.Retry
+  children:
+  - Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+  - Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+  - Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+  - Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  - Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  - Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  langs:
+  - csharp
+  - vb
+  name: IRetryOperation
+  nameWithType: IRetryOperation
+  fullName: Steeltoe.Common.Retry.IRetryOperation
+  type: Interface
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryOperation.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IRetryOperation
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryOperation.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nDefines the basic set of operations to execute operations with configurable retry behaviour.\n"
+  example: []
+  syntax:
+    content: public interface IRetryOperation
+    content.vb: Public Interface IRetryOperation
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  commentId: M:Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  id: Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  parent: Steeltoe.Common.Retry.IRetryOperation
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(Func<IRetryContext, T>)
+  nameWithType: IRetryOperation.Execute<T>(Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.IRetryOperation.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryOperation.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryOperation.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nExecute the supplied RetryCallback with the configured retry semantics.\n"
+  example: []
+  syntax:
+    content: T Execute<T>(Func<IRetryContext, T> retryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Func{Steeltoe.Common.Retry.IRetryContext,{T}}
+      description: the callback
+    typeParameters:
+    - id: T
+      description: the type of return value
+    return:
+      type: '{T}'
+      description: result of operation
+    content.vb: Function Execute(Of T)(retryCallback As Func(Of IRetryContext, T)) As T
+  overload: Steeltoe.Common.Retry.IRetryOperation.Execute*
+  nameWithType.vb: IRetryOperation.Execute(Of T)(Func(Of IRetryContext, T))
+  fullName.vb: Steeltoe.Common.Retry.IRetryOperation.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T))
+- uid: Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  commentId: M:Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  id: Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},Steeltoe.Common.Retry.IRecoveryCallback{``0})
+  parent: Steeltoe.Common.Retry.IRetryOperation
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  nameWithType: IRetryOperation.Execute<T>(Func<IRetryContext, T>, IRecoveryCallback<T>)
+  fullName: Steeltoe.Common.Retry.IRetryOperation.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>, Steeltoe.Common.Retry.IRecoveryCallback<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryOperation.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryOperation.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nExecute the supplied RetryCallback with the configured retry semantics. When retry\nis exhausted, call the recoverycallback\n"
+  example: []
+  syntax:
+    content: T Execute<T>(Func<IRetryContext, T> retryCallback, IRecoveryCallback<T> recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Func{Steeltoe.Common.Retry.IRetryContext,{T}}
+      description: the callback
+    - id: recoveryCallback
+      type: Steeltoe.Common.Retry.IRecoveryCallback{{T}}
+      description: the callback after retries are exhausted
+    typeParameters:
+    - id: T
+      description: the type of return value
+    return:
+      type: '{T}'
+      description: result of the operation
+    content.vb: Function Execute(Of T)(retryCallback As Func(Of IRetryContext, T), recoveryCallback As IRecoveryCallback(Of T)) As T
+  overload: Steeltoe.Common.Retry.IRetryOperation.Execute*
+  nameWithType.vb: IRetryOperation.Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+  fullName.vb: Steeltoe.Common.Retry.IRetryOperation.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T), Steeltoe.Common.Retry.IRecoveryCallback(Of T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), IRecoveryCallback(Of T))
+- uid: Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  commentId: M:Steeltoe.Common.Retry.IRetryOperation.Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  id: Execute``1(System.Func{Steeltoe.Common.Retry.IRetryContext,``0},System.Func{Steeltoe.Common.Retry.IRetryContext,``0})
+  parent: Steeltoe.Common.Retry.IRetryOperation
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  nameWithType: IRetryOperation.Execute<T>(Func<IRetryContext, T>, Func<IRetryContext, T>)
+  fullName: Steeltoe.Common.Retry.IRetryOperation.Execute<T>(System.Func<Steeltoe.Common.Retry.IRetryContext, T>, System.Func<Steeltoe.Common.Retry.IRetryContext, T>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryOperation.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryOperation.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nExecute the supplied RetryCallback with the configured retry semantics. When retry\nis exhausted, call the recoverycallback\n"
+  example: []
+  syntax:
+    content: T Execute<T>(Func<IRetryContext, T> retryCallback, Func<IRetryContext, T> recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Func{Steeltoe.Common.Retry.IRetryContext,{T}}
+      description: the callback
+    - id: recoveryCallback
+      type: System.Func{Steeltoe.Common.Retry.IRetryContext,{T}}
+      description: the callback after retries are exhausted
+    typeParameters:
+    - id: T
+      description: the type of return value
+    return:
+      type: '{T}'
+      description: result of the operation
+    content.vb: Function Execute(Of T)(retryCallback As Func(Of IRetryContext, T), recoveryCallback As Func(Of IRetryContext, T)) As T
+  overload: Steeltoe.Common.Retry.IRetryOperation.Execute*
+  nameWithType.vb: IRetryOperation.Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+  fullName.vb: Steeltoe.Common.Retry.IRetryOperation.Execute(Of T)(System.Func(Of Steeltoe.Common.Retry.IRetryContext, T), System.Func(Of Steeltoe.Common.Retry.IRetryContext, T))
+  name.vb: Execute(Of T)(Func(Of IRetryContext, T), Func(Of IRetryContext, T))
+- uid: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+  commentId: M:Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+  id: Execute(System.Action{Steeltoe.Common.Retry.IRetryContext})
+  parent: Steeltoe.Common.Retry.IRetryOperation
+  langs:
+  - csharp
+  - vb
+  name: Execute(Action<IRetryContext>)
+  nameWithType: IRetryOperation.Execute(Action<IRetryContext>)
+  fullName: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryOperation.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryOperation.cs
+    startLine: 45
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nExecute the supplied RetryCallback with the configured retry semantics.\n"
+  example: []
+  syntax:
+    content: void Execute(Action<IRetryContext> retryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Action{Steeltoe.Common.Retry.IRetryContext}
+      description: the callback
+    content.vb: Sub Execute(retryCallback As Action(Of IRetryContext))
+  overload: Steeltoe.Common.Retry.IRetryOperation.Execute*
+  nameWithType.vb: IRetryOperation.Execute(Action(Of IRetryContext))
+  fullName.vb: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action(Of Steeltoe.Common.Retry.IRetryContext))
+  name.vb: Execute(Action(Of IRetryContext))
+- uid: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+  commentId: M:Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+  id: Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},Steeltoe.Common.Retry.IRecoveryCallback)
+  parent: Steeltoe.Common.Retry.IRetryOperation
+  langs:
+  - csharp
+  - vb
+  name: Execute(Action<IRetryContext>, IRecoveryCallback)
+  nameWithType: IRetryOperation.Execute(Action<IRetryContext>, IRecoveryCallback)
+  fullName: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext>, Steeltoe.Common.Retry.IRecoveryCallback)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryOperation.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryOperation.cs
+    startLine: 53
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nExecute the supplied RetryCallback with the configured retry semantics. When retry\nis exhausted, call the recoverycallback\n"
+  example: []
+  syntax:
+    content: void Execute(Action<IRetryContext> retryCallback, IRecoveryCallback recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Action{Steeltoe.Common.Retry.IRetryContext}
+      description: the callback
+    - id: recoveryCallback
+      type: Steeltoe.Common.Retry.IRecoveryCallback
+      description: the callback after retries are exhausted
+    content.vb: Sub Execute(retryCallback As Action(Of IRetryContext), recoveryCallback As IRecoveryCallback)
+  overload: Steeltoe.Common.Retry.IRetryOperation.Execute*
+  nameWithType.vb: IRetryOperation.Execute(Action(Of IRetryContext), IRecoveryCallback)
+  fullName.vb: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action(Of Steeltoe.Common.Retry.IRetryContext), Steeltoe.Common.Retry.IRecoveryCallback)
+  name.vb: Execute(Action(Of IRetryContext), IRecoveryCallback)
+- uid: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+  commentId: M:Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+  id: Execute(System.Action{Steeltoe.Common.Retry.IRetryContext},System.Action{Steeltoe.Common.Retry.IRetryContext})
+  parent: Steeltoe.Common.Retry.IRetryOperation
+  langs:
+  - csharp
+  - vb
+  name: Execute(Action<IRetryContext>, Action<IRetryContext>)
+  nameWithType: IRetryOperation.Execute(Action<IRetryContext>, Action<IRetryContext>)
+  fullName: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action<Steeltoe.Common.Retry.IRetryContext>, System.Action<Steeltoe.Common.Retry.IRetryContext>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryOperation.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Execute
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryOperation.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nExecute the supplied RetryCallback with the configured retry semantics. When retry\nis exhausted, call the recoverycallback\n"
+  example: []
+  syntax:
+    content: void Execute(Action<IRetryContext> retryCallback, Action<IRetryContext> recoveryCallback)
+    parameters:
+    - id: retryCallback
+      type: System.Action{Steeltoe.Common.Retry.IRetryContext}
+      description: the callback
+    - id: recoveryCallback
+      type: System.Action{Steeltoe.Common.Retry.IRetryContext}
+      description: the callback after retries are exhausted
+    content.vb: Sub Execute(retryCallback As Action(Of IRetryContext), recoveryCallback As Action(Of IRetryContext))
+  overload: Steeltoe.Common.Retry.IRetryOperation.Execute*
+  nameWithType.vb: IRetryOperation.Execute(Action(Of IRetryContext), Action(Of IRetryContext))
+  fullName.vb: Steeltoe.Common.Retry.IRetryOperation.Execute(System.Action(Of Steeltoe.Common.Retry.IRetryContext), System.Action(Of Steeltoe.Common.Retry.IRetryContext))
+  name.vb: Execute(Action(Of IRetryContext), Action(Of IRetryContext))
+references:
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Common.Retry.IRetryOperation.Execute*
+  commentId: Overload:Steeltoe.Common.Retry.IRetryOperation.Execute
+  name: Execute
+  nameWithType: IRetryOperation.Execute
+  fullName: Steeltoe.Common.Retry.IRetryOperation.Execute
+- uid: System.Func{Steeltoe.Common.Retry.IRetryContext,{T}}
+  commentId: T:System.Func{Steeltoe.Common.Retry.IRetryContext,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<IRetryContext, T>
+  nameWithType: Func<IRetryContext, T>
+  fullName: System.Func<Steeltoe.Common.Retry.IRetryContext, T>
+  nameWithType.vb: Func(Of IRetryContext, T)
+  fullName.vb: System.Func(Of Steeltoe.Common.Retry.IRetryContext, T)
+  name.vb: Func(Of IRetryContext, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Common.Retry.IRecoveryCallback{{T}}
+  commentId: T:Steeltoe.Common.Retry.IRecoveryCallback{``0}
+  parent: Steeltoe.Common.Retry
+  definition: Steeltoe.Common.Retry.IRecoveryCallback`1
+  name: IRecoveryCallback<T>
+  nameWithType: IRecoveryCallback<T>
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback<T>
+  nameWithType.vb: IRecoveryCallback(Of T)
+  fullName.vb: Steeltoe.Common.Retry.IRecoveryCallback(Of T)
+  name.vb: IRecoveryCallback(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+  commentId: T:Steeltoe.Common.Retry.IRecoveryCallback`1
+  name: IRecoveryCallback<T>
+  nameWithType: IRecoveryCallback<T>
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback<T>
+  nameWithType.vb: IRecoveryCallback(Of T)
+  fullName.vb: Steeltoe.Common.Retry.IRecoveryCallback(Of T)
+  name.vb: IRecoveryCallback(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.IRecoveryCallback`1
+    name: IRecoveryCallback
+    nameWithType: IRecoveryCallback
+    fullName: Steeltoe.Common.Retry.IRecoveryCallback
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Steeltoe.Common.Retry.IRetryContext}
+  commentId: T:System.Action{Steeltoe.Common.Retry.IRetryContext}
+  parent: System
+  definition: System.Action`1
+  name: Action<IRetryContext>
+  nameWithType: Action<IRetryContext>
+  fullName: System.Action<Steeltoe.Common.Retry.IRetryContext>
+  nameWithType.vb: Action(Of IRetryContext)
+  fullName.vb: System.Action(Of Steeltoe.Common.Retry.IRetryContext)
+  name.vb: Action(Of IRetryContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.IRecoveryCallback
+  commentId: T:Steeltoe.Common.Retry.IRecoveryCallback
+  parent: Steeltoe.Common.Retry
+  name: IRecoveryCallback
+  nameWithType: IRecoveryCallback
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback

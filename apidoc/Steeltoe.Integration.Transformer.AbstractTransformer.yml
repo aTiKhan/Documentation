@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer
+  commentId: T:Steeltoe.Integration.Transformer.AbstractTransformer
+  id: AbstractTransformer
+  parent: Steeltoe.Integration.Transformer
+  children:
+  - Steeltoe.Integration.Transformer.AbstractTransformer.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  - Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext
+  - Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory
+  - Steeltoe.Integration.Transformer.AbstractTransformer.Transform(Steeltoe.Messaging.IMessage)
+  langs:
+  - csharp
+  - vb
+  name: AbstractTransformer
+  nameWithType: AbstractTransformer
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer
+  type: Class
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractTransformer
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Transformer
+  syntax:
+    content: 'public abstract class AbstractTransformer : ITransformer'
+    content.vb: >-
+      Public MustInherit Class AbstractTransformer
+
+          Implements ITransformer
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Integration.Transformer.JsonToObjectTransformer
+  - Steeltoe.Integration.Transformer.ObjectToJsonTransformer
+  implements:
+  - Steeltoe.Integration.Transformer.ITransformer
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  commentId: M:Steeltoe.Integration.Transformer.AbstractTransformer.#ctor(Steeltoe.Common.Contexts.IApplicationContext)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext)'
+  parent: Steeltoe.Integration.Transformer.AbstractTransformer
+  langs:
+  - csharp
+  - vb
+  name: AbstractTransformer(IApplicationContext)
+  nameWithType: AbstractTransformer.AbstractTransformer(IApplicationContext)
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.AbstractTransformer(Steeltoe.Common.Contexts.IApplicationContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Transformer
+  syntax:
+    content: protected AbstractTransformer(IApplicationContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Protected Sub New(context As IApplicationContext)
+  overload: Steeltoe.Integration.Transformer.AbstractTransformer.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext
+  commentId: P:Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext
+  id: ApplicationContext
+  parent: Steeltoe.Integration.Transformer.AbstractTransformer
+  langs:
+  - csharp
+  - vb
+  name: ApplicationContext
+  nameWithType: AbstractTransformer.ApplicationContext
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ApplicationContext
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Transformer
+  syntax:
+    content: public IApplicationContext ApplicationContext { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Public ReadOnly Property ApplicationContext As IApplicationContext
+  overload: Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory
+  commentId: P:Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory
+  id: MessageBuilderFactory
+  parent: Steeltoe.Integration.Transformer.AbstractTransformer
+  langs:
+  - csharp
+  - vb
+  name: MessageBuilderFactory
+  nameWithType: AbstractTransformer.MessageBuilderFactory
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MessageBuilderFactory
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Transformer
+  syntax:
+    content: public virtual IMessageBuilderFactory MessageBuilderFactory { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Integration.Support.IMessageBuilderFactory
+    content.vb: Public Overridable Property MessageBuilderFactory As IMessageBuilderFactory
+  overload: Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.Transform(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Transformer.AbstractTransformer.Transform(Steeltoe.Messaging.IMessage)
+  id: Transform(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Transformer.AbstractTransformer
+  langs:
+  - csharp
+  - vb
+  name: Transform(IMessage)
+  nameWithType: AbstractTransformer.Transform(IMessage)
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.Transform(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Transform
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Transformer
+  syntax:
+    content: public IMessage Transform(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Public Function Transform(message As IMessage) As IMessage
+  overload: Steeltoe.Integration.Transformer.AbstractTransformer.Transform*
+  implements:
+  - Steeltoe.Integration.Transformer.ITransformer.Transform(Steeltoe.Messaging.IMessage)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform(Steeltoe.Messaging.IMessage)
+  id: DoTransform(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Transformer.AbstractTransformer
+  langs:
+  - csharp
+  - vb
+  name: DoTransform(IMessage)
+  nameWithType: AbstractTransformer.DoTransform(IMessage)
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoTransform
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Transformer/AbstractTransformer.cs
+    startLine: 64
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Transformer
+  syntax:
+    content: protected abstract object DoTransform(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: System.Object
+    content.vb: Protected MustOverride Function DoTransform(message As IMessage) As Object
+  overload: Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+references:
+- uid: Steeltoe.Integration.Transformer
+  commentId: N:Steeltoe.Integration.Transformer
+  name: Steeltoe.Integration.Transformer
+  nameWithType: Steeltoe.Integration.Transformer
+  fullName: Steeltoe.Integration.Transformer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Transformer.ITransformer
+  commentId: T:Steeltoe.Integration.Transformer.ITransformer
+  parent: Steeltoe.Integration.Transformer
+  name: ITransformer
+  nameWithType: ITransformer
+  fullName: Steeltoe.Integration.Transformer.ITransformer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.#ctor*
+  commentId: Overload:Steeltoe.Integration.Transformer.AbstractTransformer.#ctor
+  name: AbstractTransformer
+  nameWithType: AbstractTransformer.AbstractTransformer
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.AbstractTransformer
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext*
+  commentId: Overload:Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext
+  name: ApplicationContext
+  nameWithType: AbstractTransformer.ApplicationContext
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.ApplicationContext
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory*
+  commentId: Overload:Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory
+  name: MessageBuilderFactory
+  nameWithType: AbstractTransformer.MessageBuilderFactory
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.MessageBuilderFactory
+- uid: Steeltoe.Integration.Support.IMessageBuilderFactory
+  commentId: T:Steeltoe.Integration.Support.IMessageBuilderFactory
+  parent: Steeltoe.Integration.Support
+  name: IMessageBuilderFactory
+  nameWithType: IMessageBuilderFactory
+  fullName: Steeltoe.Integration.Support.IMessageBuilderFactory
+- uid: Steeltoe.Integration.Support
+  commentId: N:Steeltoe.Integration.Support
+  name: Steeltoe.Integration.Support
+  nameWithType: Steeltoe.Integration.Support
+  fullName: Steeltoe.Integration.Support
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.Transform*
+  commentId: Overload:Steeltoe.Integration.Transformer.AbstractTransformer.Transform
+  name: Transform
+  nameWithType: AbstractTransformer.Transform
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.Transform
+- uid: Steeltoe.Integration.Transformer.ITransformer.Transform(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Integration.Transformer.ITransformer.Transform(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Integration.Transformer.ITransformer
+  name: Transform(IMessage)
+  nameWithType: ITransformer.Transform(IMessage)
+  fullName: Steeltoe.Integration.Transformer.ITransformer.Transform(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Transformer.ITransformer.Transform(Steeltoe.Messaging.IMessage)
+    name: Transform
+    nameWithType: ITransformer.Transform
+    fullName: Steeltoe.Integration.Transformer.ITransformer.Transform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Transformer.ITransformer.Transform(Steeltoe.Messaging.IMessage)
+    name: Transform
+    nameWithType: ITransformer.Transform
+    fullName: Steeltoe.Integration.Transformer.ITransformer.Transform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform*
+  commentId: Overload:Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform
+  name: DoTransform
+  nameWithType: AbstractTransformer.DoTransform
+  fullName: Steeltoe.Integration.Transformer.AbstractTransformer.DoTransform

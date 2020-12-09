@@ -1,0 +1,949 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  id: PrometheusScraperEndpointMiddleware
+  parent: Steeltoe.Management.Endpoint.Metrics
+  children:
+  - Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware})
+  - Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  - Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest
+  - Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  langs:
+  - csharp
+  - vb
+  name: PrometheusScraperEndpointMiddleware
+  nameWithType: PrometheusScraperEndpointMiddleware
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  type: Class
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PrometheusScraperEndpointMiddleware
+    path: ../Steeltoe/src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: 'public class PrometheusScraperEndpointMiddleware : EndpointMiddleware<string>'
+    content.vb: >-
+      Public Class PrometheusScraperEndpointMiddleware
+
+          Inherits EndpointMiddleware(Of String)
+  inheritance:
+  - System.Object
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  inheritedMembers:
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._endpoint
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._logger
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._mgmtOptions
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.Endpoint
+  - Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.Serialize(System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware})
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware})
+  id: '#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint,Steeltoe.Management.IManagementOptions,Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware})'
+  parent: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  langs:
+  - csharp
+  - vb
+  name: PrometheusScraperEndpointMiddleware(RequestDelegate, PrometheusScraperEndpoint, IManagementOptions, ILogger<PrometheusScraperEndpointMiddleware>)
+  nameWithType: PrometheusScraperEndpointMiddleware.PrometheusScraperEndpointMiddleware(RequestDelegate, PrometheusScraperEndpoint, IManagementOptions, ILogger<PrometheusScraperEndpointMiddleware>)
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.PrometheusScraperEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint, Steeltoe.Management.IManagementOptions, Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: public PrometheusScraperEndpointMiddleware(RequestDelegate next, PrometheusScraperEndpoint endpoint, IManagementOptions mgmtOptions, ILogger<PrometheusScraperEndpointMiddleware> logger = null)
+    parameters:
+    - id: next
+      type: Microsoft.AspNetCore.Http.RequestDelegate
+    - id: endpoint
+      type: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint
+    - id: mgmtOptions
+      type: Steeltoe.Management.IManagementOptions
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware}
+    content.vb: Public Sub New(next As RequestDelegate, endpoint As PrometheusScraperEndpoint, mgmtOptions As IManagementOptions, logger As ILogger(Of PrometheusScraperEndpointMiddleware) = Nothing)
+  overload: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.#ctor*
+  nameWithType.vb: PrometheusScraperEndpointMiddleware.PrometheusScraperEndpointMiddleware(RequestDelegate, PrometheusScraperEndpoint, IManagementOptions, ILogger(Of PrometheusScraperEndpointMiddleware))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.PrometheusScraperEndpointMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint, Steeltoe.Management.IManagementOptions, Microsoft.Extensions.Logging.ILogger(Of Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware))
+  name.vb: PrometheusScraperEndpointMiddleware(RequestDelegate, PrometheusScraperEndpoint, IManagementOptions, ILogger(Of PrometheusScraperEndpointMiddleware))
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  id: Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  parent: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Invoke(HttpContext)
+  nameWithType: PrometheusScraperEndpointMiddleware.Invoke(HttpContext)
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Invoke
+    path: ../Steeltoe/src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: public Task Invoke(HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Invoke(context As HttpContext) As Task
+  overload: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest
+  id: HandleRequest
+  parent: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  langs:
+  - csharp
+  - vb
+  name: HandleRequest()
+  nameWithType: PrometheusScraperEndpointMiddleware.HandleRequest()
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest()
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleRequest
+    path: ../Steeltoe/src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: public override string HandleRequest()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function HandleRequest As String
+  overridden: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.HandleRequest
+  overload: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  id: HandleMetricsRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  parent: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  langs:
+  - csharp
+  - vb
+  name: HandleMetricsRequestAsync(HttpContext)
+  nameWithType: PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync(HttpContext)
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HandleMetricsRequestAsync
+    path: ../Steeltoe/src/Management/src/EndpointCore/Metrics/Prometheus/PrometheusScraperEndpointMiddleware.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Management.EndpointCore
+  namespace: Steeltoe.Management.Endpoint.Metrics
+  syntax:
+    content: protected Task HandleMetricsRequestAsync(HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Function HandleMetricsRequestAsync(context As HttpContext) As Task
+  overload: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Management.Endpoint.Metrics
+  commentId: N:Steeltoe.Management.Endpoint.Metrics
+  name: Steeltoe.Management.Endpoint.Metrics
+  nameWithType: Steeltoe.Management.Endpoint.Metrics
+  fullName: Steeltoe.Management.Endpoint.Metrics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  commentId: T:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  parent: Steeltoe.Management.Endpoint.Middleware
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+  name: EndpointMiddleware<String>
+  nameWithType: EndpointMiddleware<String>
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>
+  nameWithType.vb: EndpointMiddleware(Of String)
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String)
+  name.vb: EndpointMiddleware(Of String)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._endpoint
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._endpoint
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._endpoint
+  name: _endpoint
+  nameWithType: EndpointMiddleware<String>._endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>._endpoint
+  nameWithType.vb: EndpointMiddleware(Of String)._endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String)._endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._logger
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._logger
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._logger
+  name: _logger
+  nameWithType: EndpointMiddleware<String>._logger
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>._logger
+  nameWithType.vb: EndpointMiddleware(Of String)._logger
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String)._logger
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._mgmtOptions
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}._mgmtOptions
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._mgmtOptions
+  name: _mgmtOptions
+  nameWithType: EndpointMiddleware<String>._mgmtOptions
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>._mgmtOptions
+  nameWithType.vb: EndpointMiddleware(Of String)._mgmtOptions
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String)._mgmtOptions
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.Endpoint
+  commentId: P:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.Endpoint
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Endpoint
+  name: Endpoint
+  nameWithType: EndpointMiddleware<String>.Endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>.Endpoint
+  nameWithType.vb: EndpointMiddleware(Of String).Endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String).Endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.Serialize(System.String)
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.Serialize(System.String)
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+  name: Serialize(String)
+  nameWithType: EndpointMiddleware<String>.Serialize(String)
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>.Serialize(System.String)
+  nameWithType.vb: EndpointMiddleware(Of String).Serialize(String)
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String).Serialize(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware<String>.Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware(Of String).Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String).Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+  commentId: T:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+  name: EndpointMiddleware<TResult>
+  nameWithType: EndpointMiddleware<TResult>
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>
+  nameWithType.vb: EndpointMiddleware(Of TResult)
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)
+  name.vb: EndpointMiddleware(Of TResult)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1
+    name: EndpointMiddleware
+    nameWithType: EndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Middleware
+  commentId: N:Steeltoe.Management.Endpoint.Middleware
+  name: Steeltoe.Management.Endpoint.Middleware
+  nameWithType: Steeltoe.Management.Endpoint.Middleware
+  fullName: Steeltoe.Management.Endpoint.Middleware
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._endpoint
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._endpoint
+  name: _endpoint
+  nameWithType: EndpointMiddleware<TResult>._endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>._endpoint
+  nameWithType.vb: EndpointMiddleware(Of TResult)._endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)._endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._logger
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._logger
+  name: _logger
+  nameWithType: EndpointMiddleware<TResult>._logger
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>._logger
+  nameWithType.vb: EndpointMiddleware(Of TResult)._logger
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)._logger
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._mgmtOptions
+  commentId: F:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1._mgmtOptions
+  name: _mgmtOptions
+  nameWithType: EndpointMiddleware<TResult>._mgmtOptions
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>._mgmtOptions
+  nameWithType.vb: EndpointMiddleware(Of TResult)._mgmtOptions
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult)._mgmtOptions
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Endpoint
+  commentId: P:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Endpoint
+  name: Endpoint
+  nameWithType: EndpointMiddleware<TResult>.Endpoint
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.Endpoint
+  nameWithType.vb: EndpointMiddleware(Of TResult).Endpoint
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).Endpoint
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+  name: Serialize(TResult)
+  nameWithType: EndpointMiddleware<TResult>.Serialize(TResult)
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.Serialize(TResult)
+  nameWithType.vb: EndpointMiddleware(Of TResult).Serialize(TResult)
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).Serialize(TResult)
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware<TResult>.Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.Serialize(`0)
+    name: Serialize
+    nameWithType: EndpointMiddleware(Of TResult).Serialize
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.#ctor*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.#ctor
+  name: PrometheusScraperEndpointMiddleware
+  nameWithType: PrometheusScraperEndpointMiddleware.PrometheusScraperEndpointMiddleware
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.PrometheusScraperEndpointMiddleware
+- uid: Microsoft.AspNetCore.Http.RequestDelegate
+  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: RequestDelegate
+  nameWithType: RequestDelegate
+  fullName: Microsoft.AspNetCore.Http.RequestDelegate
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint
+  commentId: T:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint
+  parent: Steeltoe.Management.Endpoint.Metrics
+  name: PrometheusScraperEndpoint
+  nameWithType: PrometheusScraperEndpoint
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpoint
+- uid: Steeltoe.Management.IManagementOptions
+  commentId: T:Steeltoe.Management.IManagementOptions
+  parent: Steeltoe.Management
+  name: IManagementOptions
+  nameWithType: IManagementOptions
+  fullName: Steeltoe.Management.IManagementOptions
+- uid: Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<PrometheusScraperEndpointMiddleware>
+  nameWithType: ILogger<PrometheusScraperEndpointMiddleware>
+  fullName: Microsoft.Extensions.Logging.ILogger<Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware>
+  nameWithType.vb: ILogger(Of PrometheusScraperEndpointMiddleware)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware)
+  name.vb: ILogger(Of PrometheusScraperEndpointMiddleware)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+    name: PrometheusScraperEndpointMiddleware
+    nameWithType: PrometheusScraperEndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+    name: PrometheusScraperEndpointMiddleware
+    nameWithType: PrometheusScraperEndpointMiddleware
+    fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Steeltoe.Management
+  commentId: N:Steeltoe.Management
+  name: Steeltoe.Management
+  nameWithType: Steeltoe.Management
+  fullName: Steeltoe.Management
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke
+  name: Invoke
+  nameWithType: PrometheusScraperEndpointMiddleware.Invoke
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.Invoke
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.HandleRequest
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}.HandleRequest
+  parent: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware{System.String}
+  definition: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+  name: HandleRequest()
+  nameWithType: EndpointMiddleware<String>.HandleRequest()
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>.HandleRequest()
+  nameWithType.vb: EndpointMiddleware(Of String).HandleRequest()
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String).HandleRequest()
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware<String>.HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<System.String>.HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware(Of String).HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of System.String).HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest
+  name: HandleRequest
+  nameWithType: PrometheusScraperEndpointMiddleware.HandleRequest
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleRequest
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+  commentId: M:Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+  name: HandleRequest()
+  nameWithType: EndpointMiddleware<TResult>.HandleRequest()
+  fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.HandleRequest()
+  nameWithType.vb: EndpointMiddleware(Of TResult).HandleRequest()
+  fullName.vb: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).HandleRequest()
+  spec.csharp:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware<TResult>.HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware<TResult>.HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware`1.HandleRequest
+    name: HandleRequest
+    nameWithType: EndpointMiddleware(Of TResult).HandleRequest
+    fullName: Steeltoe.Management.Endpoint.Middleware.EndpointMiddleware(Of TResult).HandleRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync*
+  commentId: Overload:Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync
+  name: HandleMetricsRequestAsync
+  nameWithType: PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync
+  fullName: Steeltoe.Management.Endpoint.Metrics.PrometheusScraperEndpointMiddleware.HandleMetricsRequestAsync

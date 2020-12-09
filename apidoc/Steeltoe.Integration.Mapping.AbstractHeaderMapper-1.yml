@@ -1,0 +1,2217 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  commentId: T:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  id: AbstractHeaderMapper`1
+  parent: Steeltoe.Integration.Mapping
+  children:
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateDefaultHeaderMatcher(System.String,System.Collections.Generic.List{System.String})
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateHeaderMatcher(System.String[])
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateTargetPropertyName(System.String,System.Boolean)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractStandardHeaders(`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractUserDefinedHeaders(`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetHeaderIfAvailable``1(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.Type)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetTransientHeaderNames
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.NON_STANDARD_HEADER_NAME_PATTERN
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateUserDefinedHeader(System.String,System.Object,`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderMatcher
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderNames
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderMatcher
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderNames
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetReplyHeaderNames(System.String[])
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetRequestHeaderNames(System.String[])
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.STANDARD_REPLY_HEADER_NAME_PATTERN
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.STANDARD_REQUEST_HEADER_NAME_PATTERN
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.StandardHeaderPrefix
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromReply(`0)
+  - Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromRequest(`0)
+  langs:
+  - csharp
+  - vb
+  name: AbstractHeaderMapper<T>
+  nameWithType: AbstractHeaderMapper<T>
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>
+  type: Class
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractHeaderMapper
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: 'public abstract class AbstractHeaderMapper<T> : IRequestReplyHeaderMapper<T>'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class AbstractHeaderMapper(Of T)
+
+          Implements IRequestReplyHeaderMapper(Of T)
+  inheritance:
+  - System.Object
+  implements:
+  - Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: AbstractHeaderMapper(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T)
+  name.vb: AbstractHeaderMapper(Of T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.STANDARD_REQUEST_HEADER_NAME_PATTERN
+  commentId: F:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.STANDARD_REQUEST_HEADER_NAME_PATTERN
+  id: STANDARD_REQUEST_HEADER_NAME_PATTERN
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: STANDARD_REQUEST_HEADER_NAME_PATTERN
+  nameWithType: AbstractHeaderMapper<T>.STANDARD_REQUEST_HEADER_NAME_PATTERN
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.STANDARD_REQUEST_HEADER_NAME_PATTERN
+  type: Field
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: STANDARD_REQUEST_HEADER_NAME_PATTERN
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public const string STANDARD_REQUEST_HEADER_NAME_PATTERN = "STANDARD_REQUEST_HEADERS"
+    return:
+      type: System.String
+    content.vb: Public Const STANDARD_REQUEST_HEADER_NAME_PATTERN As String = "STANDARD_REQUEST_HEADERS"
+  nameWithType.vb: AbstractHeaderMapper(Of T).STANDARD_REQUEST_HEADER_NAME_PATTERN
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).STANDARD_REQUEST_HEADER_NAME_PATTERN
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.STANDARD_REPLY_HEADER_NAME_PATTERN
+  commentId: F:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.STANDARD_REPLY_HEADER_NAME_PATTERN
+  id: STANDARD_REPLY_HEADER_NAME_PATTERN
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: STANDARD_REPLY_HEADER_NAME_PATTERN
+  nameWithType: AbstractHeaderMapper<T>.STANDARD_REPLY_HEADER_NAME_PATTERN
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.STANDARD_REPLY_HEADER_NAME_PATTERN
+  type: Field
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: STANDARD_REPLY_HEADER_NAME_PATTERN
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public const string STANDARD_REPLY_HEADER_NAME_PATTERN = "STANDARD_REPLY_HEADERS"
+    return:
+      type: System.String
+    content.vb: Public Const STANDARD_REPLY_HEADER_NAME_PATTERN As String = "STANDARD_REPLY_HEADERS"
+  nameWithType.vb: AbstractHeaderMapper(Of T).STANDARD_REPLY_HEADER_NAME_PATTERN
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).STANDARD_REPLY_HEADER_NAME_PATTERN
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.NON_STANDARD_HEADER_NAME_PATTERN
+  commentId: F:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.NON_STANDARD_HEADER_NAME_PATTERN
+  id: NON_STANDARD_HEADER_NAME_PATTERN
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: NON_STANDARD_HEADER_NAME_PATTERN
+  nameWithType: AbstractHeaderMapper<T>.NON_STANDARD_HEADER_NAME_PATTERN
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.NON_STANDARD_HEADER_NAME_PATTERN
+  type: Field
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: NON_STANDARD_HEADER_NAME_PATTERN
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public const string NON_STANDARD_HEADER_NAME_PATTERN = "NON_STANDARD_HEADERS"
+    return:
+      type: System.String
+    content.vb: Public Const NON_STANDARD_HEADER_NAME_PATTERN As String = "NON_STANDARD_HEADERS"
+  nameWithType.vb: AbstractHeaderMapper(Of T).NON_STANDARD_HEADER_NAME_PATTERN
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).NON_STANDARD_HEADER_NAME_PATTERN
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.StandardHeaderPrefix
+  commentId: P:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.StandardHeaderPrefix
+  id: StandardHeaderPrefix
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: StandardHeaderPrefix
+  nameWithType: AbstractHeaderMapper<T>.StandardHeaderPrefix
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.StandardHeaderPrefix
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: StandardHeaderPrefix
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public string StandardHeaderPrefix { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StandardHeaderPrefix As String
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.StandardHeaderPrefix*
+  nameWithType.vb: AbstractHeaderMapper(Of T).StandardHeaderPrefix
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).StandardHeaderPrefix
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderNames
+  commentId: P:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderNames
+  id: RequestHeaderNames
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: RequestHeaderNames
+  nameWithType: AbstractHeaderMapper<T>.RequestHeaderNames
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderNames
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RequestHeaderNames
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public List<string> RequestHeaderNames { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property RequestHeaderNames As List(Of String)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderNames*
+  nameWithType.vb: AbstractHeaderMapper(Of T).RequestHeaderNames
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).RequestHeaderNames
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderNames
+  commentId: P:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderNames
+  id: ReplyHeaderNames
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: ReplyHeaderNames
+  nameWithType: AbstractHeaderMapper<T>.ReplyHeaderNames
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderNames
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReplyHeaderNames
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public List<string> ReplyHeaderNames { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property ReplyHeaderNames As List(Of String)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderNames*
+  nameWithType.vb: AbstractHeaderMapper(Of T).ReplyHeaderNames
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ReplyHeaderNames
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderMatcher
+  commentId: P:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderMatcher
+  id: RequestHeaderMatcher
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: RequestHeaderMatcher
+  nameWithType: AbstractHeaderMapper<T>.RequestHeaderMatcher
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderMatcher
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RequestHeaderMatcher
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public AbstractHeaderMapper<T>.IHeaderMatcher RequestHeaderMatcher { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+    content.vb: Public Property RequestHeaderMatcher As AbstractHeaderMapper(Of T).IHeaderMatcher
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderMatcher*
+  nameWithType.vb: AbstractHeaderMapper(Of T).RequestHeaderMatcher
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).RequestHeaderMatcher
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderMatcher
+  commentId: P:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderMatcher
+  id: ReplyHeaderMatcher
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: ReplyHeaderMatcher
+  nameWithType: AbstractHeaderMapper<T>.ReplyHeaderMatcher
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderMatcher
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReplyHeaderMatcher
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public AbstractHeaderMapper<T>.IHeaderMatcher ReplyHeaderMatcher { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+    content.vb: Public Property ReplyHeaderMatcher As AbstractHeaderMapper(Of T).IHeaderMatcher
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderMatcher*
+  nameWithType.vb: AbstractHeaderMapper(Of T).ReplyHeaderMatcher
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ReplyHeaderMatcher
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  id: '#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})'
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: AbstractHeaderMapper(String, List<String>, List<String>)
+  nameWithType: AbstractHeaderMapper<T>.AbstractHeaderMapper(String, List<String>, List<String>)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.AbstractHeaderMapper(System.String, System.Collections.Generic.List<System.String>, System.Collections.Generic.List<System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected AbstractHeaderMapper(string standardHeaderPrefix, List<string> requestHeaderNames, List<string> replyHeaderNames)
+    parameters:
+    - id: standardHeaderPrefix
+      type: System.String
+    - id: requestHeaderNames
+      type: System.Collections.Generic.List{System.String}
+    - id: replyHeaderNames
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Protected Sub New(standardHeaderPrefix As String, requestHeaderNames As List(Of String), replyHeaderNames As List(Of String))
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.#ctor*
+  nameWithType.vb: AbstractHeaderMapper(Of T).AbstractHeaderMapper(String, List(Of String), List(Of String))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).AbstractHeaderMapper(System.String, System.Collections.Generic.List(Of System.String), System.Collections.Generic.List(Of System.String))
+  name.vb: AbstractHeaderMapper(String, List(Of String), List(Of String))
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetRequestHeaderNames(System.String[])
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetRequestHeaderNames(System.String[])
+  id: SetRequestHeaderNames(System.String[])
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: SetRequestHeaderNames(String[])
+  nameWithType: AbstractHeaderMapper<T>.SetRequestHeaderNames(String[])
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SetRequestHeaderNames(System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetRequestHeaderNames
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public void SetRequestHeaderNames(params string[] requestHeaderNames)
+    parameters:
+    - id: requestHeaderNames
+      type: System.String[]
+    content.vb: Public Sub SetRequestHeaderNames(ParamArray requestHeaderNames As String())
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetRequestHeaderNames*
+  nameWithType.vb: AbstractHeaderMapper(Of T).SetRequestHeaderNames(String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).SetRequestHeaderNames(System.String())
+  name.vb: SetRequestHeaderNames(String())
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetReplyHeaderNames(System.String[])
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetReplyHeaderNames(System.String[])
+  id: SetReplyHeaderNames(System.String[])
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: SetReplyHeaderNames(String[])
+  nameWithType: AbstractHeaderMapper<T>.SetReplyHeaderNames(String[])
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SetReplyHeaderNames(System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetReplyHeaderNames
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 50
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public void SetReplyHeaderNames(params string[] replyHeaderNames)
+    parameters:
+    - id: replyHeaderNames
+      type: System.String[]
+    content.vb: Public Sub SetReplyHeaderNames(ParamArray replyHeaderNames As String())
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetReplyHeaderNames*
+  nameWithType.vb: AbstractHeaderMapper(Of T).SetReplyHeaderNames(String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).SetReplyHeaderNames(System.String())
+  name.vb: SetReplyHeaderNames(String())
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  id: FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: FromHeadersToRequest(IMessageHeaders, T)
+  nameWithType: AbstractHeaderMapper<T>.FromHeadersToRequest(IMessageHeaders, T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders, T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FromHeadersToRequest
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public void FromHeadersToRequest(IMessageHeaders headers, T target)
+    parameters:
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    - id: target
+      type: '{T}'
+    content.vb: Public Sub FromHeadersToRequest(headers As IMessageHeaders, target As T)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToRequest*
+  implements:
+  - Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,{T})
+  nameWithType.vb: AbstractHeaderMapper(Of T).FromHeadersToRequest(IMessageHeaders, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders, T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  id: FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: FromHeadersToReply(IMessageHeaders, T)
+  nameWithType: AbstractHeaderMapper<T>.FromHeadersToReply(IMessageHeaders, T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders, T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FromHeadersToReply
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 65
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public void FromHeadersToReply(IMessageHeaders headers, T target)
+    parameters:
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    - id: target
+      type: '{T}'
+    content.vb: Public Sub FromHeadersToReply(headers As IMessageHeaders, target As T)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToReply*
+  implements:
+  - Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,{T})
+  nameWithType.vb: AbstractHeaderMapper(Of T).FromHeadersToReply(IMessageHeaders, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders, T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromRequest(`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromRequest(`0)
+  id: ToHeadersFromRequest(`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: ToHeadersFromRequest(T)
+  nameWithType: AbstractHeaderMapper<T>.ToHeadersFromRequest(T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ToHeadersFromRequest(T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToHeadersFromRequest
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 70
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public IDictionary<string, object> ToHeadersFromRequest(T source)
+    parameters:
+    - id: source
+      type: '{T}'
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Public Function ToHeadersFromRequest(source As T) As IDictionary(Of String, Object)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromRequest*
+  implements:
+  - Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.ToHeadersFromRequest({T})
+  nameWithType.vb: AbstractHeaderMapper(Of T).ToHeadersFromRequest(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ToHeadersFromRequest(T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromReply(`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromReply(`0)
+  id: ToHeadersFromReply(`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: ToHeadersFromReply(T)
+  nameWithType: AbstractHeaderMapper<T>.ToHeadersFromReply(T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ToHeadersFromReply(T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToHeadersFromReply
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 75
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: public IDictionary<string, object> ToHeadersFromReply(T source)
+    parameters:
+    - id: source
+      type: '{T}'
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Public Function ToHeadersFromReply(source As T) As IDictionary(Of String, Object)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromReply*
+  implements:
+  - Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.ToHeadersFromReply({T})
+  nameWithType.vb: AbstractHeaderMapper(Of T).ToHeadersFromReply(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ToHeadersFromReply(T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateDefaultHeaderMatcher(System.String,System.Collections.Generic.List{System.String})
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateDefaultHeaderMatcher(System.String,System.Collections.Generic.List{System.String})
+  id: CreateDefaultHeaderMatcher(System.String,System.Collections.Generic.List{System.String})
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultHeaderMatcher(String, List<String>)
+  nameWithType: AbstractHeaderMapper<T>.CreateDefaultHeaderMatcher(String, List<String>)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateDefaultHeaderMatcher(System.String, System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateDefaultHeaderMatcher
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 80
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected virtual AbstractHeaderMapper<T>.IHeaderMatcher CreateDefaultHeaderMatcher(string standardHeaderPrefix, List<string> headerNames)
+    parameters:
+    - id: standardHeaderPrefix
+      type: System.String
+    - id: headerNames
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+    content.vb: Protected Overridable Function CreateDefaultHeaderMatcher(standardHeaderPrefix As String, headerNames As List(Of String)) As AbstractHeaderMapper(Of T).IHeaderMatcher
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateDefaultHeaderMatcher*
+  nameWithType.vb: AbstractHeaderMapper(Of T).CreateDefaultHeaderMatcher(String, List(Of String))
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).CreateDefaultHeaderMatcher(System.String, System.Collections.Generic.List(Of System.String))
+  name.vb: CreateDefaultHeaderMatcher(String, List(Of String))
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateHeaderMatcher(System.String[])
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateHeaderMatcher(System.String[])
+  id: CreateHeaderMatcher(System.String[])
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: CreateHeaderMatcher(String[])
+  nameWithType: AbstractHeaderMapper<T>.CreateHeaderMatcher(String[])
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateHeaderMatcher(System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateHeaderMatcher
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 85
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected virtual AbstractHeaderMapper<T>.IHeaderMatcher CreateHeaderMatcher(string[] patterns)
+    parameters:
+    - id: patterns
+      type: System.String[]
+    return:
+      type: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+    content.vb: Protected Overridable Function CreateHeaderMatcher(patterns As String()) As AbstractHeaderMapper(Of T).IHeaderMatcher
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateHeaderMatcher*
+  nameWithType.vb: AbstractHeaderMapper(Of T).CreateHeaderMatcher(String())
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).CreateHeaderMatcher(System.String())
+  name.vb: CreateHeaderMatcher(String())
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetHeaderIfAvailable``1(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.Type)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetHeaderIfAvailable``1(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.Type)
+  id: GetHeaderIfAvailable``1(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.Type)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: GetHeaderIfAvailable<V>(IDictionary<String, Object>, String, Type)
+  nameWithType: AbstractHeaderMapper<T>.GetHeaderIfAvailable<V>(IDictionary<String, Object>, String, Type)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.GetHeaderIfAvailable<V>(System.Collections.Generic.IDictionary<System.String, System.Object>, System.String, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetHeaderIfAvailable
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 131
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected virtual V GetHeaderIfAvailable<V>(IDictionary<string, object> headers, string name, Type type)
+    parameters:
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    - id: name
+      type: System.String
+    - id: type
+      type: System.Type
+    typeParameters:
+    - id: V
+    return:
+      type: '{V}'
+    content.vb: Protected Overridable Function GetHeaderIfAvailable(Of V)(headers As IDictionary(Of String, Object), name As String, type As Type) As V
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetHeaderIfAvailable*
+  nameWithType.vb: AbstractHeaderMapper(Of T).GetHeaderIfAvailable(Of V)(IDictionary(Of String, Object), String, Type)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).GetHeaderIfAvailable(Of V)(System.Collections.Generic.IDictionary(Of System.String, System.Object), System.String, System.Type)
+  name.vb: GetHeaderIfAvailable(Of V)(IDictionary(Of String, Object), String, Type)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateTargetPropertyName(System.String,System.Boolean)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateTargetPropertyName(System.String,System.Boolean)
+  id: CreateTargetPropertyName(System.String,System.Boolean)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: CreateTargetPropertyName(String, Boolean)
+  nameWithType: AbstractHeaderMapper<T>.CreateTargetPropertyName(String, Boolean)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateTargetPropertyName(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateTargetPropertyName
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 149
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected virtual string CreateTargetPropertyName(string propertyName, bool fromMessageHeaders)
+    parameters:
+    - id: propertyName
+      type: System.String
+    - id: fromMessageHeaders
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function CreateTargetPropertyName(propertyName As String, fromMessageHeaders As Boolean) As String
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateTargetPropertyName*
+  nameWithType.vb: AbstractHeaderMapper(Of T).CreateTargetPropertyName(String, Boolean)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).CreateTargetPropertyName(System.String, System.Boolean)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetTransientHeaderNames
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetTransientHeaderNames
+  id: GetTransientHeaderNames
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: GetTransientHeaderNames()
+  nameWithType: AbstractHeaderMapper<T>.GetTransientHeaderNames()
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.GetTransientHeaderNames()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetTransientHeaderNames
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 154
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected virtual List<string> GetTransientHeaderNames()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Protected Overridable Function GetTransientHeaderNames As List(Of String)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetTransientHeaderNames*
+  nameWithType.vb: AbstractHeaderMapper(Of T).GetTransientHeaderNames()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).GetTransientHeaderNames()
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractStandardHeaders(`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractStandardHeaders(`0)
+  id: ExtractStandardHeaders(`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: ExtractStandardHeaders(T)
+  nameWithType: AbstractHeaderMapper<T>.ExtractStandardHeaders(T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ExtractStandardHeaders(T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExtractStandardHeaders
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 159
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected abstract IDictionary<string, object> ExtractStandardHeaders(T source)
+    parameters:
+    - id: source
+      type: '{T}'
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Protected MustOverride Function ExtractStandardHeaders(source As T) As IDictionary(Of String, Object)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractStandardHeaders*
+  nameWithType.vb: AbstractHeaderMapper(Of T).ExtractStandardHeaders(T)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ExtractStandardHeaders(T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractUserDefinedHeaders(`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractUserDefinedHeaders(`0)
+  id: ExtractUserDefinedHeaders(`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: ExtractUserDefinedHeaders(T)
+  nameWithType: AbstractHeaderMapper<T>.ExtractUserDefinedHeaders(T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ExtractUserDefinedHeaders(T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExtractUserDefinedHeaders
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 161
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected abstract IDictionary<string, object> ExtractUserDefinedHeaders(T source)
+    parameters:
+    - id: source
+      type: '{T}'
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Protected MustOverride Function ExtractUserDefinedHeaders(source As T) As IDictionary(Of String, Object)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractUserDefinedHeaders*
+  nameWithType.vb: AbstractHeaderMapper(Of T).ExtractUserDefinedHeaders(T)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ExtractUserDefinedHeaders(T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  id: PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: PopulateStandardHeaders(IDictionary<String, Object>, T)
+  nameWithType: AbstractHeaderMapper<T>.PopulateStandardHeaders(IDictionary<String, Object>, T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateStandardHeaders(System.Collections.Generic.IDictionary<System.String, System.Object>, T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PopulateStandardHeaders
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 163
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected abstract void PopulateStandardHeaders(IDictionary<string, object> headers, T target)
+    parameters:
+    - id: headers
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    - id: target
+      type: '{T}'
+    content.vb: Protected MustOverride Sub PopulateStandardHeaders(headers As IDictionary(Of String, Object), target As T)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders*
+  nameWithType.vb: AbstractHeaderMapper(Of T).PopulateStandardHeaders(IDictionary(Of String, Object), T)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).PopulateStandardHeaders(System.Collections.Generic.IDictionary(Of System.String, System.Object), T)
+  name.vb: PopulateStandardHeaders(IDictionary(Of String, Object), T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  id: PopulateStandardHeaders(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: PopulateStandardHeaders(IDictionary<String, Object>, IDictionary<String, Object>, T)
+  nameWithType: AbstractHeaderMapper<T>.PopulateStandardHeaders(IDictionary<String, Object>, IDictionary<String, Object>, T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateStandardHeaders(System.Collections.Generic.IDictionary<System.String, System.Object>, System.Collections.Generic.IDictionary<System.String, System.Object>, T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PopulateStandardHeaders
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 165
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected virtual void PopulateStandardHeaders(IDictionary<string, object> allHeaders, IDictionary<string, object> subset, T target)
+    parameters:
+    - id: allHeaders
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    - id: subset
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    - id: target
+      type: '{T}'
+    content.vb: Protected Overridable Sub PopulateStandardHeaders(allHeaders As IDictionary(Of String, Object), subset As IDictionary(Of String, Object), target As T)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders*
+  nameWithType.vb: AbstractHeaderMapper(Of T).PopulateStandardHeaders(IDictionary(Of String, Object), IDictionary(Of String, Object), T)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).PopulateStandardHeaders(System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Collections.Generic.IDictionary(Of System.String, System.Object), T)
+  name.vb: PopulateStandardHeaders(IDictionary(Of String, Object), IDictionary(Of String, Object), T)
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateUserDefinedHeader(System.String,System.Object,`0)
+  commentId: M:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateUserDefinedHeader(System.String,System.Object,`0)
+  id: PopulateUserDefinedHeader(System.String,System.Object,`0)
+  parent: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1
+  langs:
+  - csharp
+  - vb
+  name: PopulateUserDefinedHeader(String, Object, T)
+  nameWithType: AbstractHeaderMapper<T>.PopulateUserDefinedHeader(String, Object, T)
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateUserDefinedHeader(System.String, System.Object, T)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PopulateUserDefinedHeader
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Mapping/AbstractHeaderMapper.cs
+    startLine: 170
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Mapping
+  syntax:
+    content: protected abstract void PopulateUserDefinedHeader(string headerName, object headerValue, T target)
+    parameters:
+    - id: headerName
+      type: System.String
+    - id: headerValue
+      type: System.Object
+    - id: target
+      type: '{T}'
+    content.vb: Protected MustOverride Sub PopulateUserDefinedHeader(headerName As String, headerValue As Object, target As T)
+  overload: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateUserDefinedHeader*
+  nameWithType.vb: AbstractHeaderMapper(Of T).PopulateUserDefinedHeader(String, Object, T)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).PopulateUserDefinedHeader(System.String, System.Object, T)
+references:
+- uid: Steeltoe.Integration.Mapping
+  commentId: N:Steeltoe.Integration.Mapping
+  name: Steeltoe.Integration.Mapping
+  nameWithType: Steeltoe.Integration.Mapping
+  fullName: Steeltoe.Integration.Mapping
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}
+  commentId: T:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{`0}
+  parent: Steeltoe.Integration.Mapping
+  definition: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1
+  name: IRequestReplyHeaderMapper<T>
+  nameWithType: IRequestReplyHeaderMapper<T>
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T)
+  name.vb: IRequestReplyHeaderMapper(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1
+    name: IRequestReplyHeaderMapper
+    nameWithType: IRequestReplyHeaderMapper
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1
+    name: IRequestReplyHeaderMapper
+    nameWithType: IRequestReplyHeaderMapper
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1
+  commentId: T:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1
+  name: IRequestReplyHeaderMapper<T>
+  nameWithType: IRequestReplyHeaderMapper<T>
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T)
+  name.vb: IRequestReplyHeaderMapper(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1
+    name: IRequestReplyHeaderMapper
+    nameWithType: IRequestReplyHeaderMapper
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1
+    name: IRequestReplyHeaderMapper
+    nameWithType: IRequestReplyHeaderMapper
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.StandardHeaderPrefix*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.StandardHeaderPrefix
+  name: StandardHeaderPrefix
+  nameWithType: AbstractHeaderMapper<T>.StandardHeaderPrefix
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.StandardHeaderPrefix
+  nameWithType.vb: AbstractHeaderMapper(Of T).StandardHeaderPrefix
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).StandardHeaderPrefix
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderNames*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderNames
+  name: RequestHeaderNames
+  nameWithType: AbstractHeaderMapper<T>.RequestHeaderNames
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderNames
+  nameWithType.vb: AbstractHeaderMapper(Of T).RequestHeaderNames
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).RequestHeaderNames
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderNames*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderNames
+  name: ReplyHeaderNames
+  nameWithType: AbstractHeaderMapper<T>.ReplyHeaderNames
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderNames
+  nameWithType.vb: AbstractHeaderMapper(Of T).ReplyHeaderNames
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ReplyHeaderNames
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderMatcher*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.RequestHeaderMatcher
+  name: RequestHeaderMatcher
+  nameWithType: AbstractHeaderMapper<T>.RequestHeaderMatcher
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.RequestHeaderMatcher
+  nameWithType.vb: AbstractHeaderMapper(Of T).RequestHeaderMatcher
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).RequestHeaderMatcher
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+  commentId: T:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+  parent: Steeltoe.Integration.Mapping
+  name: AbstractHeaderMapper.IHeaderMatcher<>
+  nameWithType: AbstractHeaderMapper.IHeaderMatcher<>
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper.IHeaderMatcher<>
+  nameWithType.vb: AbstractHeaderMapper.IHeaderMatcher(Of )
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper.IHeaderMatcher(Of )
+  name.vb: AbstractHeaderMapper.IHeaderMatcher(Of )
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+    name: AbstractHeaderMapper.IHeaderMatcher
+    nameWithType: AbstractHeaderMapper.IHeaderMatcher
+    fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper.IHeaderMatcher
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.IHeaderMatcher
+    name: AbstractHeaderMapper.IHeaderMatcher
+    nameWithType: AbstractHeaderMapper.IHeaderMatcher
+    fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper.IHeaderMatcher
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderMatcher*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ReplyHeaderMatcher
+  name: ReplyHeaderMatcher
+  nameWithType: AbstractHeaderMapper<T>.ReplyHeaderMatcher
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ReplyHeaderMatcher
+  nameWithType.vb: AbstractHeaderMapper(Of T).ReplyHeaderMatcher
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ReplyHeaderMatcher
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.#ctor*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.#ctor
+  name: AbstractHeaderMapper
+  nameWithType: AbstractHeaderMapper<T>.AbstractHeaderMapper
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.AbstractHeaderMapper
+  nameWithType.vb: AbstractHeaderMapper(Of T).AbstractHeaderMapper
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).AbstractHeaderMapper
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetRequestHeaderNames*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetRequestHeaderNames
+  name: SetRequestHeaderNames
+  nameWithType: AbstractHeaderMapper<T>.SetRequestHeaderNames
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SetRequestHeaderNames
+  nameWithType.vb: AbstractHeaderMapper(Of T).SetRequestHeaderNames
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).SetRequestHeaderNames
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetReplyHeaderNames*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.SetReplyHeaderNames
+  name: SetReplyHeaderNames
+  nameWithType: AbstractHeaderMapper<T>.SetReplyHeaderNames
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.SetReplyHeaderNames
+  nameWithType.vb: AbstractHeaderMapper(Of T).SetReplyHeaderNames
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).SetReplyHeaderNames
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToRequest*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToRequest
+  name: FromHeadersToRequest
+  nameWithType: AbstractHeaderMapper<T>.FromHeadersToRequest
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.FromHeadersToRequest
+  nameWithType.vb: AbstractHeaderMapper(Of T).FromHeadersToRequest
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).FromHeadersToRequest
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,{T})
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{`0}.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  parent: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}
+  definition: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  name: FromHeadersToRequest(IMessageHeaders, T)
+  nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToRequest(IMessageHeaders, T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders, T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).FromHeadersToRequest(IMessageHeaders, T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders, T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToRequest
+    nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToRequest
+    nameWithType: IRequestReplyHeaderMapper(Of T).FromHeadersToRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageHeaders
+  commentId: T:Steeltoe.Messaging.IMessageHeaders
+  parent: Steeltoe.Messaging
+  name: IMessageHeaders
+  nameWithType: IMessageHeaders
+  fullName: Steeltoe.Messaging.IMessageHeaders
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+  name: FromHeadersToRequest(IMessageHeaders, T)
+  nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToRequest(IMessageHeaders, T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders, T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).FromHeadersToRequest(IMessageHeaders, T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders, T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToRequest
+    nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToRequest(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToRequest
+    nameWithType: IRequestReplyHeaderMapper(Of T).FromHeadersToRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToReply*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.FromHeadersToReply
+  name: FromHeadersToReply
+  nameWithType: AbstractHeaderMapper<T>.FromHeadersToReply
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.FromHeadersToReply
+  nameWithType.vb: AbstractHeaderMapper(Of T).FromHeadersToReply
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).FromHeadersToReply
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,{T})
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{`0}.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  parent: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}
+  definition: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  name: FromHeadersToReply(IMessageHeaders, T)
+  nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToReply(IMessageHeaders, T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders, T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).FromHeadersToReply(IMessageHeaders, T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders, T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToReply
+    nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToReply
+    nameWithType: IRequestReplyHeaderMapper(Of T).FromHeadersToReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+  name: FromHeadersToReply(IMessageHeaders, T)
+  nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToReply(IMessageHeaders, T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders, T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).FromHeadersToReply(IMessageHeaders, T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders, T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToReply
+    nameWithType: IRequestReplyHeaderMapper<T>.FromHeadersToReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.FromHeadersToReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.FromHeadersToReply(Steeltoe.Messaging.IMessageHeaders,`0)
+    name: FromHeadersToReply
+    nameWithType: IRequestReplyHeaderMapper(Of T).FromHeadersToReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).FromHeadersToReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromRequest*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromRequest
+  name: ToHeadersFromRequest
+  nameWithType: AbstractHeaderMapper<T>.ToHeadersFromRequest
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ToHeadersFromRequest
+  nameWithType.vb: AbstractHeaderMapper(Of T).ToHeadersFromRequest
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ToHeadersFromRequest
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.ToHeadersFromRequest({T})
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{`0}.ToHeadersFromRequest(`0)
+  parent: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}
+  definition: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromRequest(`0)
+  name: ToHeadersFromRequest(T)
+  nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromRequest(T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromRequest(T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest(T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest(T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromRequest(`0)
+    name: ToHeadersFromRequest
+    nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromRequest(`0)
+    name: ToHeadersFromRequest
+    nameWithType: IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromRequest(`0)
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromRequest(`0)
+  name: ToHeadersFromRequest(T)
+  nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromRequest(T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromRequest(T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest(T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest(T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromRequest(`0)
+    name: ToHeadersFromRequest
+    nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromRequest(`0)
+    name: ToHeadersFromRequest
+    nameWithType: IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromReply*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ToHeadersFromReply
+  name: ToHeadersFromReply
+  nameWithType: AbstractHeaderMapper<T>.ToHeadersFromReply
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ToHeadersFromReply
+  nameWithType.vb: AbstractHeaderMapper(Of T).ToHeadersFromReply
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ToHeadersFromReply
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}.ToHeadersFromReply({T})
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{`0}.ToHeadersFromReply(`0)
+  parent: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper{{T}}
+  definition: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromReply(`0)
+  name: ToHeadersFromReply(T)
+  nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromReply(T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromReply(T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).ToHeadersFromReply(T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromReply(T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromReply(`0)
+    name: ToHeadersFromReply
+    nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromReply(`0)
+    name: ToHeadersFromReply
+    nameWithType: IRequestReplyHeaderMapper(Of T).ToHeadersFromReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromReply(`0)
+  commentId: M:Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromReply(`0)
+  name: ToHeadersFromReply(T)
+  nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromReply(T)
+  fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromReply(T)
+  nameWithType.vb: IRequestReplyHeaderMapper(Of T).ToHeadersFromReply(T)
+  fullName.vb: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromReply(T)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromReply(`0)
+    name: ToHeadersFromReply
+    nameWithType: IRequestReplyHeaderMapper<T>.ToHeadersFromReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper<T>.ToHeadersFromReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper`1.ToHeadersFromReply(`0)
+    name: ToHeadersFromReply
+    nameWithType: IRequestReplyHeaderMapper(Of T).ToHeadersFromReply
+    fullName: Steeltoe.Integration.Mapping.IRequestReplyHeaderMapper(Of T).ToHeadersFromReply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateDefaultHeaderMatcher*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateDefaultHeaderMatcher
+  name: CreateDefaultHeaderMatcher
+  nameWithType: AbstractHeaderMapper<T>.CreateDefaultHeaderMatcher
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateDefaultHeaderMatcher
+  nameWithType.vb: AbstractHeaderMapper(Of T).CreateDefaultHeaderMatcher
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).CreateDefaultHeaderMatcher
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateHeaderMatcher*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateHeaderMatcher
+  name: CreateHeaderMatcher
+  nameWithType: AbstractHeaderMapper<T>.CreateHeaderMatcher
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateHeaderMatcher
+  nameWithType.vb: AbstractHeaderMapper(Of T).CreateHeaderMatcher
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).CreateHeaderMatcher
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetHeaderIfAvailable*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetHeaderIfAvailable
+  name: GetHeaderIfAvailable
+  nameWithType: AbstractHeaderMapper<T>.GetHeaderIfAvailable
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.GetHeaderIfAvailable
+  nameWithType.vb: AbstractHeaderMapper(Of T).GetHeaderIfAvailable
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).GetHeaderIfAvailable
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: '{V}'
+  commentId: '!:V'
+  definition: V
+  name: V
+  nameWithType: V
+  fullName: V
+- uid: V
+  name: V
+  nameWithType: V
+  fullName: V
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateTargetPropertyName*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.CreateTargetPropertyName
+  name: CreateTargetPropertyName
+  nameWithType: AbstractHeaderMapper<T>.CreateTargetPropertyName
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.CreateTargetPropertyName
+  nameWithType.vb: AbstractHeaderMapper(Of T).CreateTargetPropertyName
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).CreateTargetPropertyName
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetTransientHeaderNames*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.GetTransientHeaderNames
+  name: GetTransientHeaderNames
+  nameWithType: AbstractHeaderMapper<T>.GetTransientHeaderNames
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.GetTransientHeaderNames
+  nameWithType.vb: AbstractHeaderMapper(Of T).GetTransientHeaderNames
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).GetTransientHeaderNames
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractStandardHeaders*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractStandardHeaders
+  name: ExtractStandardHeaders
+  nameWithType: AbstractHeaderMapper<T>.ExtractStandardHeaders
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ExtractStandardHeaders
+  nameWithType.vb: AbstractHeaderMapper(Of T).ExtractStandardHeaders
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ExtractStandardHeaders
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractUserDefinedHeaders*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.ExtractUserDefinedHeaders
+  name: ExtractUserDefinedHeaders
+  nameWithType: AbstractHeaderMapper<T>.ExtractUserDefinedHeaders
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.ExtractUserDefinedHeaders
+  nameWithType.vb: AbstractHeaderMapper(Of T).ExtractUserDefinedHeaders
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).ExtractUserDefinedHeaders
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateStandardHeaders
+  name: PopulateStandardHeaders
+  nameWithType: AbstractHeaderMapper<T>.PopulateStandardHeaders
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateStandardHeaders
+  nameWithType.vb: AbstractHeaderMapper(Of T).PopulateStandardHeaders
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).PopulateStandardHeaders
+- uid: Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateUserDefinedHeader*
+  commentId: Overload:Steeltoe.Integration.Mapping.AbstractHeaderMapper`1.PopulateUserDefinedHeader
+  name: PopulateUserDefinedHeader
+  nameWithType: AbstractHeaderMapper<T>.PopulateUserDefinedHeader
+  fullName: Steeltoe.Integration.Mapping.AbstractHeaderMapper<T>.PopulateUserDefinedHeader
+  nameWithType.vb: AbstractHeaderMapper(Of T).PopulateUserDefinedHeader
+  fullName.vb: Steeltoe.Integration.Mapping.AbstractHeaderMapper(Of T).PopulateUserDefinedHeader

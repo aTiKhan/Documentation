@@ -1,0 +1,4092 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  commentId: T:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  id: AbstractPollableMessageSourceBinder
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider)
+  - Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider,Steeltoe.Stream.Config.IListenerContainerCustomizer,Steeltoe.Stream.Config.IMessageSourceCustomizer)
+  - Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer(System.String,System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer(System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources(System.String,System.String,Steeltoe.Stream.Provisioning.IConsumerDestination,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback(Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource(Steeltoe.Stream.Binder.DefaultPollableMessageSource)
+  langs:
+  - csharp
+  - vb
+  name: AbstractPollableMessageSourceBinder
+  nameWithType: AbstractPollableMessageSourceBinder
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractPollableMessageSourceBinder
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: 'public abstract class AbstractPollableMessageSourceBinder : AbstractMessageChannelBinder, IBinder<IMessageChannel>, IPollableConsumerBinder<IMessageHandler>, IBinder<IPollableSource<IMessageHandler>>, IBinder, IServiceNameAware, IPollableConsumerBinder'
+    content.vb: >-
+      Public MustInherit Class AbstractPollableMessageSourceBinder
+
+          Inherits AbstractMessageChannelBinder
+
+          Implements IBinder(Of IMessageChannel), IPollableConsumerBinder(Of IMessageHandler), IBinder(Of IPollableSource(Of IMessageHandler)), IBinder, IServiceNameAware, IPollableConsumerBinder
+  inheritance:
+  - System.Object
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  implements:
+  - Steeltoe.Stream.Binder.IBinder{Steeltoe.Messaging.IMessageChannel}
+  - Steeltoe.Stream.Binder.IPollableConsumerBinder{Steeltoe.Messaging.IMessageHandler}
+  - Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}
+  - Steeltoe.Stream.Binder.IBinder
+  - Steeltoe.Common.Services.IServiceNameAware
+  - Steeltoe.Stream.Binder.IPollableConsumerBinder
+  inheritedMembers:
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder._provisioningProvider
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder._embeddedHeadersChannelInterceptor
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder._headersToEmbed
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder._producerBindingExist
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.TargetType
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ListenerContainerCustomizer
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.MessageSourceCustomizer
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding(Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel(Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions,System.Boolean)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler(Steeltoe.Stream.Binder.ILastSubscriberAwareChannel,System.Boolean)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ApplyPrefix(System.String,System.String)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ConstructDLQName(System.String)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ServiceName
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.EvaluationContext
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ExpressionParser
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ApplicationContext
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.GroupedName(System.String,System.String)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider)'
+  parent: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  langs:
+  - csharp
+  - vb
+  name: AbstractPollableMessageSourceBinder(IApplicationContext, String[], IProvisioningProvider)
+  nameWithType: AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(IApplicationContext, String[], IProvisioningProvider)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(Steeltoe.Common.Contexts.IApplicationContext, System.String[], Steeltoe.Stream.Provisioning.IProvisioningProvider)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected AbstractPollableMessageSourceBinder(IApplicationContext context, string[] headersToEmbed, IProvisioningProvider provisioningProvider)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: headersToEmbed
+      type: System.String[]
+    - id: provisioningProvider
+      type: Steeltoe.Stream.Provisioning.IProvisioningProvider
+    content.vb: Protected Sub New(context As IApplicationContext, headersToEmbed As String(), provisioningProvider As IProvisioningProvider)
+  overload: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor*
+  nameWithType.vb: AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(IApplicationContext, String(), IProvisioningProvider)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(Steeltoe.Common.Contexts.IApplicationContext, System.String(), Steeltoe.Stream.Provisioning.IProvisioningProvider)
+  name.vb: AbstractPollableMessageSourceBinder(IApplicationContext, String(), IProvisioningProvider)
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider,Steeltoe.Stream.Config.IListenerContainerCustomizer,Steeltoe.Stream.Config.IMessageSourceCustomizer)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider,Steeltoe.Stream.Config.IListenerContainerCustomizer,Steeltoe.Stream.Config.IMessageSourceCustomizer)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,System.String[],Steeltoe.Stream.Provisioning.IProvisioningProvider,Steeltoe.Stream.Config.IListenerContainerCustomizer,Steeltoe.Stream.Config.IMessageSourceCustomizer)'
+  parent: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  langs:
+  - csharp
+  - vb
+  name: AbstractPollableMessageSourceBinder(IApplicationContext, String[], IProvisioningProvider, IListenerContainerCustomizer, IMessageSourceCustomizer)
+  nameWithType: AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(IApplicationContext, String[], IProvisioningProvider, IListenerContainerCustomizer, IMessageSourceCustomizer)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(Steeltoe.Common.Contexts.IApplicationContext, System.String[], Steeltoe.Stream.Provisioning.IProvisioningProvider, Steeltoe.Stream.Config.IListenerContainerCustomizer, Steeltoe.Stream.Config.IMessageSourceCustomizer)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected AbstractPollableMessageSourceBinder(IApplicationContext context, string[] headersToEmbed, IProvisioningProvider provisioningProvider, IListenerContainerCustomizer containerCustomizer, IMessageSourceCustomizer sourceCustomizer)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: headersToEmbed
+      type: System.String[]
+    - id: provisioningProvider
+      type: Steeltoe.Stream.Provisioning.IProvisioningProvider
+    - id: containerCustomizer
+      type: Steeltoe.Stream.Config.IListenerContainerCustomizer
+    - id: sourceCustomizer
+      type: Steeltoe.Stream.Config.IMessageSourceCustomizer
+    content.vb: Protected Sub New(context As IApplicationContext, headersToEmbed As String(), provisioningProvider As IProvisioningProvider, containerCustomizer As IListenerContainerCustomizer, sourceCustomizer As IMessageSourceCustomizer)
+  overload: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor*
+  nameWithType.vb: AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(IApplicationContext, String(), IProvisioningProvider, IListenerContainerCustomizer, IMessageSourceCustomizer)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder(Steeltoe.Common.Contexts.IApplicationContext, System.String(), Steeltoe.Stream.Provisioning.IProvisioningProvider, Steeltoe.Stream.Config.IListenerContainerCustomizer, Steeltoe.Stream.Config.IMessageSourceCustomizer)
+  name.vb: AbstractPollableMessageSourceBinder(IApplicationContext, String(), IProvisioningProvider, IListenerContainerCustomizer, IMessageSourceCustomizer)
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer(System.String,System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer(System.String,System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IConsumerOptions)
+  id: BindConsumer(System.String,System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  langs:
+  - csharp
+  - vb
+  name: BindConsumer(String, String, IPollableSource<IMessageHandler>, IConsumerOptions)
+  nameWithType: AbstractPollableMessageSourceBinder.BindConsumer(String, String, IPollableSource<IMessageHandler>, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer(System.String, System.String, Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindConsumer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public virtual IBinding BindConsumer(string name, string group, IPollableSource<IMessageHandler> inboundTarget, IConsumerOptions consumerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: group
+      type: System.String
+    - id: inboundTarget
+      type: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+    - id: consumerOptions
+      type: Steeltoe.Stream.Config.IConsumerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Public Overridable Function BindConsumer(name As String, group As String, inboundTarget As IPollableSource(Of IMessageHandler), consumerOptions As IConsumerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer*
+  implements:
+  - Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}.BindConsumer(System.String,System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractPollableMessageSourceBinder.BindConsumer(String, String, IPollableSource(Of IMessageHandler), IConsumerOptions)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer(System.String, System.String, Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler), Steeltoe.Stream.Config.IConsumerOptions)
+  name.vb: BindConsumer(String, String, IPollableSource(Of IMessageHandler), IConsumerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer(System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer(System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IProducerOptions)
+  id: BindProducer(System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  langs:
+  - csharp
+  - vb
+  name: BindProducer(String, IPollableSource<IMessageHandler>, IProducerOptions)
+  nameWithType: AbstractPollableMessageSourceBinder.BindProducer(String, IPollableSource<IMessageHandler>, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer(System.String, Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>, Steeltoe.Stream.Config.IProducerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindProducer
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 92
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public virtual IBinding BindProducer(string name, IPollableSource<IMessageHandler> outboundTarget, IProducerOptions producerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: outboundTarget
+      type: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+    - id: producerOptions
+      type: Steeltoe.Stream.Config.IProducerOptions
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+    content.vb: Public Overridable Function BindProducer(name As String, outboundTarget As IPollableSource(Of IMessageHandler), producerOptions As IProducerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer*
+  implements:
+  - Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}.BindProducer(System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: AbstractPollableMessageSourceBinder.BindProducer(String, IPollableSource(Of IMessageHandler), IProducerOptions)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer(System.String, Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler), Steeltoe.Stream.Config.IProducerOptions)
+  name.vb: BindProducer(String, IPollableSource(Of IMessageHandler), IProducerOptions)
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource(Steeltoe.Stream.Binder.DefaultPollableMessageSource)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource(Steeltoe.Stream.Binder.DefaultPollableMessageSource)
+  id: PostProcessPollableSource(Steeltoe.Stream.Binder.DefaultPollableMessageSource)
+  parent: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  langs:
+  - csharp
+  - vb
+  name: PostProcessPollableSource(DefaultPollableMessageSource)
+  nameWithType: AbstractPollableMessageSourceBinder.PostProcessPollableSource(DefaultPollableMessageSource)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource(Steeltoe.Stream.Binder.DefaultPollableMessageSource)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PostProcessPollableSource
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 97
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual void PostProcessPollableSource(DefaultPollableMessageSource bindingTarget)
+    parameters:
+    - id: bindingTarget
+      type: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+    content.vb: Protected Overridable Sub PostProcessPollableSource(bindingTarget As DefaultPollableMessageSource)
+  overload: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback(Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback(Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure,Steeltoe.Stream.Config.IConsumerOptions)
+  id: GetPolledConsumerRecoveryCallback(Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  langs:
+  - csharp
+  - vb
+  name: GetPolledConsumerRecoveryCallback(AbstractMessageChannelBinder.ErrorInfrastructure, IConsumerOptions)
+  nameWithType: AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback(AbstractMessageChannelBinder.ErrorInfrastructure, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback(Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetPolledConsumerRecoveryCallback
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 101
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual IRecoveryCallback GetPolledConsumerRecoveryCallback(AbstractMessageChannelBinder.ErrorInfrastructure errorInfrastructure, IConsumerOptions options)
+    parameters:
+    - id: errorInfrastructure
+      type: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure
+    - id: options
+      type: Steeltoe.Stream.Config.IConsumerOptions
+    return:
+      type: Steeltoe.Common.Retry.IRecoveryCallback
+    content.vb: Protected Overridable Function GetPolledConsumerRecoveryCallback(errorInfrastructure As AbstractMessageChannelBinder.ErrorInfrastructure, options As IConsumerOptions) As IRecoveryCallback
+  overload: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources(System.String,System.String,Steeltoe.Stream.Provisioning.IConsumerDestination,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources(System.String,System.String,Steeltoe.Stream.Provisioning.IConsumerDestination,Steeltoe.Stream.Config.IConsumerOptions)
+  id: CreatePolledConsumerResources(System.String,System.String,Steeltoe.Stream.Provisioning.IConsumerDestination,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder
+  langs:
+  - csharp
+  - vb
+  name: CreatePolledConsumerResources(String, String, IConsumerDestination, IConsumerOptions)
+  nameWithType: AbstractPollableMessageSourceBinder.CreatePolledConsumerResources(String, String, IConsumerDestination, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources(System.String, System.String, Steeltoe.Stream.Provisioning.IConsumerDestination, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreatePolledConsumerResources
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/AbstractPollableMessageSourceBinder.cs
+    startLine: 106
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected virtual AbstractMessageChannelBinder.PolledConsumerResources CreatePolledConsumerResources(string name, string group, IConsumerDestination destination, IConsumerOptions consumerOptions)
+    parameters:
+    - id: name
+      type: System.String
+    - id: group
+      type: System.String
+    - id: destination
+      type: Steeltoe.Stream.Provisioning.IConsumerDestination
+    - id: consumerOptions
+      type: Steeltoe.Stream.Config.IConsumerOptions
+    return:
+      type: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PolledConsumerResources
+    content.vb: Protected Overridable Function CreatePolledConsumerResources(name As String, group As String, destination As IConsumerDestination, consumerOptions As IConsumerOptions) As AbstractMessageChannelBinder.PolledConsumerResources
+  overload: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  commentId: T:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1
+  name: AbstractBinder<IMessageChannel>
+  nameWithType: AbstractBinder<IMessageChannel>
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>
+  nameWithType.vb: AbstractBinder(Of IMessageChannel)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel)
+  name.vb: AbstractBinder(Of IMessageChannel)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1
+    name: AbstractBinder
+    nameWithType: AbstractBinder
+    fullName: Steeltoe.Stream.Binder.AbstractBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1
+    name: AbstractBinder
+    nameWithType: AbstractBinder
+    fullName: Steeltoe.Stream.Binder.AbstractBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  commentId: T:Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  parent: Steeltoe.Stream.Binder
+  name: AbstractMessageChannelBinder
+  nameWithType: AbstractMessageChannelBinder
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+- uid: Steeltoe.Stream.Binder.IBinder{Steeltoe.Messaging.IMessageChannel}
+  commentId: T:Steeltoe.Stream.Binder.IBinder{Steeltoe.Messaging.IMessageChannel}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.IBinder`1
+  name: IBinder<IMessageChannel>
+  nameWithType: IBinder<IMessageChannel>
+  fullName: Steeltoe.Stream.Binder.IBinder<Steeltoe.Messaging.IMessageChannel>
+  nameWithType.vb: IBinder(Of IMessageChannel)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of Steeltoe.Messaging.IMessageChannel)
+  name.vb: IBinder(Of IMessageChannel)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableConsumerBinder{Steeltoe.Messaging.IMessageHandler}
+  commentId: T:Steeltoe.Stream.Binder.IPollableConsumerBinder{Steeltoe.Messaging.IMessageHandler}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.IPollableConsumerBinder`1
+  name: IPollableConsumerBinder<IMessageHandler>
+  nameWithType: IPollableConsumerBinder<IMessageHandler>
+  fullName: Steeltoe.Stream.Binder.IPollableConsumerBinder<Steeltoe.Messaging.IMessageHandler>
+  nameWithType.vb: IPollableConsumerBinder(Of IMessageHandler)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableConsumerBinder(Of Steeltoe.Messaging.IMessageHandler)
+  name.vb: IPollableConsumerBinder(Of IMessageHandler)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableConsumerBinder`1
+    name: IPollableConsumerBinder
+    nameWithType: IPollableConsumerBinder
+    fullName: Steeltoe.Stream.Binder.IPollableConsumerBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableConsumerBinder`1
+    name: IPollableConsumerBinder
+    nameWithType: IPollableConsumerBinder
+    fullName: Steeltoe.Stream.Binder.IPollableConsumerBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}
+  commentId: T:Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.IBinder`1
+  name: IBinder<IPollableSource<IMessageHandler>>
+  nameWithType: IBinder<IPollableSource<IMessageHandler>>
+  fullName: Steeltoe.Stream.Binder.IBinder<Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>>
+  nameWithType.vb: IBinder(Of IPollableSource(Of IMessageHandler))
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler))
+  name.vb: IBinder(Of IPollableSource(Of IMessageHandler))
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IBinder
+  commentId: T:Steeltoe.Stream.Binder.IBinder
+  parent: Steeltoe.Stream.Binder
+  name: IBinder
+  nameWithType: IBinder
+  fullName: Steeltoe.Stream.Binder.IBinder
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Stream.Binder.IPollableConsumerBinder
+  commentId: T:Steeltoe.Stream.Binder.IPollableConsumerBinder
+  parent: Steeltoe.Stream.Binder
+  name: IPollableConsumerBinder
+  nameWithType: IPollableConsumerBinder
+  fullName: Steeltoe.Stream.Binder.IPollableConsumerBinder
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._provisioningProvider
+  commentId: F:Steeltoe.Stream.Binder.AbstractMessageChannelBinder._provisioningProvider
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: _provisioningProvider
+  nameWithType: AbstractMessageChannelBinder._provisioningProvider
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._provisioningProvider
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._embeddedHeadersChannelInterceptor
+  commentId: F:Steeltoe.Stream.Binder.AbstractMessageChannelBinder._embeddedHeadersChannelInterceptor
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: _embeddedHeadersChannelInterceptor
+  nameWithType: AbstractMessageChannelBinder._embeddedHeadersChannelInterceptor
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._embeddedHeadersChannelInterceptor
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._headersToEmbed
+  commentId: F:Steeltoe.Stream.Binder.AbstractMessageChannelBinder._headersToEmbed
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: _headersToEmbed
+  nameWithType: AbstractMessageChannelBinder._headersToEmbed
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._headersToEmbed
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._producerBindingExist
+  commentId: F:Steeltoe.Stream.Binder.AbstractMessageChannelBinder._producerBindingExist
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: _producerBindingExist
+  nameWithType: AbstractMessageChannelBinder._producerBindingExist
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder._producerBindingExist
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.TargetType
+  commentId: P:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.TargetType
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: TargetType
+  nameWithType: AbstractMessageChannelBinder.TargetType
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.TargetType
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ListenerContainerCustomizer
+  commentId: P:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ListenerContainerCustomizer
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: ListenerContainerCustomizer
+  nameWithType: AbstractMessageChannelBinder.ListenerContainerCustomizer
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ListenerContainerCustomizer
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.MessageSourceCustomizer
+  commentId: P:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.MessageSourceCustomizer
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: MessageSourceCustomizer
+  nameWithType: AbstractMessageChannelBinder.MessageSourceCustomizer
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.MessageSourceCustomizer
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: DoBindProducer(String, IMessageChannel, IProducerOptions)
+  nameWithType: AbstractMessageChannelBinder.DoBindProducer(String, IMessageChannel, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer(System.String, Steeltoe.Messaging.IMessageChannel, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+    name: DoBindProducer
+    nameWithType: AbstractMessageChannelBinder.DoBindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+    name: DoBindProducer
+    nameWithType: AbstractMessageChannelBinder.DoBindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding(Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding(Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: UseNativeEncoding(IProducerOptions)
+  nameWithType: AbstractMessageChannelBinder.UseNativeEncoding(IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding(Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding(Steeltoe.Stream.Config.IProducerOptions)
+    name: UseNativeEncoding
+    nameWithType: AbstractMessageChannelBinder.UseNativeEncoding
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding(Steeltoe.Stream.Config.IProducerOptions)
+    name: UseNativeEncoding
+    nameWithType: AbstractMessageChannelBinder.UseNativeEncoding
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.UseNativeEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel(Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel(Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: PostProcessOutputChannel(IMessageChannel, IProducerOptions)
+  nameWithType: AbstractMessageChannelBinder.PostProcessOutputChannel(IMessageChannel, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel(Steeltoe.Messaging.IMessageChannel, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel(Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+    name: PostProcessOutputChannel
+    nameWithType: AbstractMessageChannelBinder.PostProcessOutputChannel
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel(Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+    name: PostProcessOutputChannel
+    nameWithType: AbstractMessageChannelBinder.PostProcessOutputChannel
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PostProcessOutputChannel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: CreateProducerMessageHandler(IProducerDestination, IProducerOptions, IMessageChannel, IMessageChannel)
+  nameWithType: AbstractMessageChannelBinder.CreateProducerMessageHandler(IProducerDestination, IProducerOptions, IMessageChannel, IMessageChannel)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination, Steeltoe.Stream.Config.IProducerOptions, Steeltoe.Messaging.IMessageChannel, Steeltoe.Messaging.IMessageChannel)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageChannel)
+    name: CreateProducerMessageHandler
+    nameWithType: AbstractMessageChannelBinder.CreateProducerMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel,Steeltoe.Messaging.IMessageChannel)
+    name: CreateProducerMessageHandler
+    nameWithType: AbstractMessageChannelBinder.CreateProducerMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: CreateProducerMessageHandler(IProducerDestination, IProducerOptions, IMessageChannel)
+  nameWithType: AbstractMessageChannelBinder.CreateProducerMessageHandler(IProducerDestination, IProducerOptions, IMessageChannel)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination, Steeltoe.Stream.Config.IProducerOptions, Steeltoe.Messaging.IMessageChannel)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel)
+    name: CreateProducerMessageHandler
+    nameWithType: AbstractMessageChannelBinder.CreateProducerMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions,Steeltoe.Messaging.IMessageChannel)
+    name: CreateProducerMessageHandler
+    nameWithType: AbstractMessageChannelBinder.CreateProducerMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateProducerMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: AfterUnbindProducer(IProducerDestination, IProducerOptions)
+  nameWithType: AbstractMessageChannelBinder.AfterUnbindProducer(IProducerDestination, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer(Steeltoe.Stream.Provisioning.IProducerDestination, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions)
+    name: AfterUnbindProducer
+    nameWithType: AbstractMessageChannelBinder.AfterUnbindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer(Steeltoe.Stream.Provisioning.IProducerDestination,Steeltoe.Stream.Config.IProducerOptions)
+    name: AfterUnbindProducer
+    nameWithType: AbstractMessageChannelBinder.AfterUnbindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: DoBindConsumer(String, String, IMessageChannel, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.DoBindConsumer(String, String, IMessageChannel, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer(System.String, System.String, Steeltoe.Messaging.IMessageChannel, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+    name: DoBindConsumer
+    nameWithType: AbstractMessageChannelBinder.DoBindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+    name: DoBindConsumer
+    nameWithType: AbstractMessageChannelBinder.DoBindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.DoBindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: CreateConsumerEndpoint(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.CreateConsumerEndpoint(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: CreateConsumerEndpoint
+    nameWithType: AbstractMessageChannelBinder.CreateConsumerEndpoint
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: CreateConsumerEndpoint
+    nameWithType: AbstractMessageChannelBinder.CreateConsumerEndpoint
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.CreateConsumerEndpoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: AfterUnbindConsumer(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.AfterUnbindConsumer(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: AfterUnbindConsumer
+    nameWithType: AbstractMessageChannelBinder.AfterUnbindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: AfterUnbindConsumer
+    nameWithType: AbstractMessageChannelBinder.AfterUnbindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.AfterUnbindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: RegisterErrorInfrastructure(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.RegisterErrorInfrastructure(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: RegisterErrorInfrastructure
+    nameWithType: AbstractMessageChannelBinder.RegisterErrorInfrastructure
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: RegisterErrorInfrastructure
+    nameWithType: AbstractMessageChannelBinder.RegisterErrorInfrastructure
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions,System.Boolean)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions,System.Boolean)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: RegisterErrorInfrastructure(IConsumerDestination, String, IConsumerOptions, Boolean)
+  nameWithType: AbstractMessageChannelBinder.RegisterErrorInfrastructure(IConsumerDestination, String, IConsumerOptions, Boolean)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions,System.Boolean)
+    name: RegisterErrorInfrastructure
+    nameWithType: AbstractMessageChannelBinder.RegisterErrorInfrastructure
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions,System.Boolean)
+    name: RegisterErrorInfrastructure
+    nameWithType: AbstractMessageChannelBinder.RegisterErrorInfrastructure
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.RegisterErrorInfrastructure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: GetErrorMessageHandler(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.GetErrorMessageHandler(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorMessageHandler
+    nameWithType: AbstractMessageChannelBinder.GetErrorMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorMessageHandler
+    nameWithType: AbstractMessageChannelBinder.GetErrorMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: GetPolledConsumerErrorMessageHandler(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetPolledConsumerErrorMessageHandler
+    nameWithType: AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetPolledConsumerErrorMessageHandler
+    nameWithType: AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetPolledConsumerErrorMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler(Steeltoe.Stream.Binder.ILastSubscriberAwareChannel,System.Boolean)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler(Steeltoe.Stream.Binder.ILastSubscriberAwareChannel,System.Boolean)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: GetDefaultErrorMessageHandler(ILastSubscriberAwareChannel, Boolean)
+  nameWithType: AbstractMessageChannelBinder.GetDefaultErrorMessageHandler(ILastSubscriberAwareChannel, Boolean)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler(Steeltoe.Stream.Binder.ILastSubscriberAwareChannel, System.Boolean)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler(Steeltoe.Stream.Binder.ILastSubscriberAwareChannel,System.Boolean)
+    name: GetDefaultErrorMessageHandler
+    nameWithType: AbstractMessageChannelBinder.GetDefaultErrorMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binder.ILastSubscriberAwareChannel
+    name: ILastSubscriberAwareChannel
+    nameWithType: ILastSubscriberAwareChannel
+    fullName: Steeltoe.Stream.Binder.ILastSubscriberAwareChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler(Steeltoe.Stream.Binder.ILastSubscriberAwareChannel,System.Boolean)
+    name: GetDefaultErrorMessageHandler
+    nameWithType: AbstractMessageChannelBinder.GetDefaultErrorMessageHandler
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetDefaultErrorMessageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binder.ILastSubscriberAwareChannel
+    name: ILastSubscriberAwareChannel
+    nameWithType: ILastSubscriberAwareChannel
+    fullName: Steeltoe.Stream.Binder.ILastSubscriberAwareChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: GetErrorMessageStrategy()
+  nameWithType: AbstractMessageChannelBinder.GetErrorMessageStrategy()
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy()
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy
+    name: GetErrorMessageStrategy
+    nameWithType: AbstractMessageChannelBinder.GetErrorMessageStrategy
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy
+    name: GetErrorMessageStrategy
+    nameWithType: AbstractMessageChannelBinder.GetErrorMessageStrategy
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: GetErrorRecovererName(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.GetErrorRecovererName(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorRecovererName
+    nameWithType: AbstractMessageChannelBinder.GetErrorRecovererName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorRecovererName
+    nameWithType: AbstractMessageChannelBinder.GetErrorRecovererName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorRecovererName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: GetErrorMessageHandlerName(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.GetErrorMessageHandlerName(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorMessageHandlerName
+    nameWithType: AbstractMessageChannelBinder.GetErrorMessageHandlerName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorMessageHandlerName
+    nameWithType: AbstractMessageChannelBinder.GetErrorMessageHandlerName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorMessageHandlerName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: GetErrorsBaseName(IProducerDestination)
+  nameWithType: AbstractMessageChannelBinder.GetErrorsBaseName(IProducerDestination)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IProducerDestination)
+    name: GetErrorsBaseName
+    nameWithType: AbstractMessageChannelBinder.GetErrorsBaseName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IProducerDestination)
+    name: GetErrorsBaseName
+    nameWithType: AbstractMessageChannelBinder.GetErrorsBaseName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: GetErrorsBaseName(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.GetErrorsBaseName(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorsBaseName
+    nameWithType: AbstractMessageChannelBinder.GetErrorsBaseName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorsBaseName
+    nameWithType: AbstractMessageChannelBinder.GetErrorsBaseName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorsBaseName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  isExternal: true
+  name: GetErrorBridgeName(IConsumerDestination, String, IConsumerOptions)
+  nameWithType: AbstractMessageChannelBinder.GetErrorBridgeName(IConsumerDestination, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IConsumerDestination, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorBridgeName
+    nameWithType: AbstractMessageChannelBinder.GetErrorBridgeName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IConsumerDestination,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+    name: GetErrorBridgeName
+    nameWithType: AbstractMessageChannelBinder.GetErrorBridgeName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+    name: IConsumerDestination
+    nameWithType: IConsumerDestination
+    fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  commentId: M:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  parent: Steeltoe.Stream.Binder.AbstractMessageChannelBinder
+  name: GetErrorBridgeName(IProducerDestination)
+  nameWithType: AbstractMessageChannelBinder.GetErrorBridgeName(IProducerDestination)
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IProducerDestination)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IProducerDestination)
+    name: GetErrorBridgeName
+    nameWithType: AbstractMessageChannelBinder.GetErrorBridgeName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName(Steeltoe.Stream.Provisioning.IProducerDestination)
+    name: GetErrorBridgeName
+    nameWithType: AbstractMessageChannelBinder.GetErrorBridgeName
+    fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.GetErrorBridgeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Provisioning.IProducerDestination
+    name: IProducerDestination
+    nameWithType: IProducerDestination
+    fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ApplyPrefix(System.String,System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ApplyPrefix(System.String,System.String)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+  name: ApplyPrefix(String, String)
+  nameWithType: AbstractBinder<IMessageChannel>.ApplyPrefix(String, String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.ApplyPrefix(System.String, System.String)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).ApplyPrefix(String, String)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).ApplyPrefix(System.String, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+    name: ApplyPrefix
+    nameWithType: AbstractBinder<IMessageChannel>.ApplyPrefix
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.ApplyPrefix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+    name: ApplyPrefix
+    nameWithType: AbstractBinder(Of IMessageChannel).ApplyPrefix
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).ApplyPrefix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ConstructDLQName(System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ConstructDLQName(System.String)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+  name: ConstructDLQName(String)
+  nameWithType: AbstractBinder<IMessageChannel>.ConstructDLQName(String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.ConstructDLQName(System.String)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).ConstructDLQName(String)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).ConstructDLQName(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+    name: ConstructDLQName
+    nameWithType: AbstractBinder<IMessageChannel>.ConstructDLQName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.ConstructDLQName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+    name: ConstructDLQName
+    nameWithType: AbstractBinder(Of IMessageChannel).ConstructDLQName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).ConstructDLQName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ServiceName
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ServiceName
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName
+  name: ServiceName
+  nameWithType: AbstractBinder<IMessageChannel>.ServiceName
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.ServiceName
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).ServiceName
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).ServiceName
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindConsumer(System.String,System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  name: BindConsumer(String, String, IMessageChannel, IConsumerOptions)
+  nameWithType: AbstractBinder<IMessageChannel>.BindConsumer(String, String, IMessageChannel, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindConsumer(System.String, System.String, Steeltoe.Messaging.IMessageChannel, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).BindConsumer(String, String, IMessageChannel, IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindConsumer(System.String, System.String, Steeltoe.Messaging.IMessageChannel, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder<IMessageChannel>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder(Of IMessageChannel).BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  name: BindConsumer(String, String, Object, IConsumerOptions)
+  nameWithType: AbstractBinder<IMessageChannel>.BindConsumer(String, String, Object, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).BindConsumer(String, String, Object, IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder<IMessageChannel>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder(Of IMessageChannel).BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindProducer(System.String,Steeltoe.Messaging.IMessageChannel,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  name: BindProducer(String, IMessageChannel, IProducerOptions)
+  nameWithType: AbstractBinder<IMessageChannel>.BindProducer(String, IMessageChannel, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindProducer(System.String, Steeltoe.Messaging.IMessageChannel, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).BindProducer(String, IMessageChannel, IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindProducer(System.String, Steeltoe.Messaging.IMessageChannel, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder<IMessageChannel>.BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder(Of IMessageChannel).BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageChannel
+    name: IMessageChannel
+    nameWithType: IMessageChannel
+    fullName: Steeltoe.Messaging.IMessageChannel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  name: BindProducer(String, Object, IProducerOptions)
+  nameWithType: AbstractBinder<IMessageChannel>.BindProducer(String, Object, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).BindProducer(String, Object, IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder<IMessageChannel>.BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder(Of IMessageChannel).BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.EvaluationContext
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.EvaluationContext
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext
+  name: EvaluationContext
+  nameWithType: AbstractBinder<IMessageChannel>.EvaluationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.EvaluationContext
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).EvaluationContext
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).EvaluationContext
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ExpressionParser
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ExpressionParser
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser
+  name: ExpressionParser
+  nameWithType: AbstractBinder<IMessageChannel>.ExpressionParser
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.ExpressionParser
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).ExpressionParser
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).ExpressionParser
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ApplicationContext
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.ApplicationContext
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext
+  name: ApplicationContext
+  nameWithType: AbstractBinder<IMessageChannel>.ApplicationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.ApplicationContext
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).ApplicationContext
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).ApplicationContext
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.GroupedName(System.String,System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.GroupedName(System.String,System.String)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+  name: GroupedName(String, String)
+  nameWithType: AbstractBinder<IMessageChannel>.GroupedName(String, String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.GroupedName(System.String, System.String)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).GroupedName(String, String)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).GroupedName(System.String, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+    name: GroupedName
+    nameWithType: AbstractBinder<IMessageChannel>.GroupedName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.GroupedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+    name: GroupedName
+    nameWithType: AbstractBinder(Of IMessageChannel).GroupedName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).GroupedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  name: BuildRetryTemplate(IConsumerOptions)
+  nameWithType: AbstractBinder<IMessageChannel>.BuildRetryTemplate(IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).BuildRetryTemplate(IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+    name: BuildRetryTemplate
+    nameWithType: AbstractBinder<IMessageChannel>.BuildRetryTemplate
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.BuildRetryTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+    name: BuildRetryTemplate
+    nameWithType: AbstractBinder(Of IMessageChannel).BuildRetryTemplate
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).BuildRetryTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  parent: Steeltoe.Stream.Binder.AbstractBinder{Steeltoe.Messaging.IMessageChannel}
+  definition: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  name: GetRetryableExceptions(List<String>)
+  nameWithType: AbstractBinder<IMessageChannel>.GetRetryableExceptions(List<String>)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.GetRetryableExceptions(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: AbstractBinder(Of IMessageChannel).GetRetryableExceptions(List(Of String))
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).GetRetryableExceptions(System.Collections.Generic.List(Of System.String))
+  name.vb: GetRetryableExceptions(List(Of String))
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+    name: GetRetryableExceptions
+    nameWithType: AbstractBinder<IMessageChannel>.GetRetryableExceptions
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<Steeltoe.Messaging.IMessageChannel>.GetRetryableExceptions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+    name: GetRetryableExceptions
+    nameWithType: AbstractBinder(Of IMessageChannel).GetRetryableExceptions
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of Steeltoe.Messaging.IMessageChannel).GetRetryableExceptions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1
+  commentId: T:Steeltoe.Stream.Binder.AbstractBinder`1
+  name: AbstractBinder<T>
+  nameWithType: AbstractBinder<T>
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>
+  nameWithType.vb: AbstractBinder(Of T)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T)
+  name.vb: AbstractBinder(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1
+    name: AbstractBinder
+    nameWithType: AbstractBinder
+    fullName: Steeltoe.Stream.Binder.AbstractBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1
+    name: AbstractBinder
+    nameWithType: AbstractBinder
+    fullName: Steeltoe.Stream.Binder.AbstractBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IBinder`1
+  commentId: T:Steeltoe.Stream.Binder.IBinder`1
+  name: IBinder<T>
+  nameWithType: IBinder<T>
+  fullName: Steeltoe.Stream.Binder.IBinder<T>
+  nameWithType.vb: IBinder(Of T)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T)
+  name.vb: IBinder(Of T)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1
+    name: IBinder
+    nameWithType: IBinder
+    fullName: Steeltoe.Stream.Binder.IBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableConsumerBinder`1
+  commentId: T:Steeltoe.Stream.Binder.IPollableConsumerBinder`1
+  name: IPollableConsumerBinder<H>
+  nameWithType: IPollableConsumerBinder<H>
+  fullName: Steeltoe.Stream.Binder.IPollableConsumerBinder<H>
+  nameWithType.vb: IPollableConsumerBinder(Of H)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableConsumerBinder(Of H)
+  name.vb: IPollableConsumerBinder(Of H)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableConsumerBinder`1
+    name: IPollableConsumerBinder
+    nameWithType: IPollableConsumerBinder
+    fullName: Steeltoe.Stream.Binder.IPollableConsumerBinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableConsumerBinder`1
+    name: IPollableConsumerBinder
+    nameWithType: IPollableConsumerBinder
+    fullName: Steeltoe.Stream.Binder.IPollableConsumerBinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+  isExternal: true
+  name: ApplyPrefix(String, String)
+  nameWithType: AbstractBinder<T>.ApplyPrefix(String, String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ApplyPrefix(System.String, System.String)
+  nameWithType.vb: AbstractBinder(Of T).ApplyPrefix(String, String)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ApplyPrefix(System.String, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+    name: ApplyPrefix
+    nameWithType: AbstractBinder<T>.ApplyPrefix
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ApplyPrefix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplyPrefix(System.String,System.String)
+    name: ApplyPrefix
+    nameWithType: AbstractBinder(Of T).ApplyPrefix
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).ApplyPrefix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+  isExternal: true
+  name: ConstructDLQName(String)
+  nameWithType: AbstractBinder<T>.ConstructDLQName(String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ConstructDLQName(System.String)
+  nameWithType.vb: AbstractBinder(Of T).ConstructDLQName(String)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ConstructDLQName(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+    name: ConstructDLQName
+    nameWithType: AbstractBinder<T>.ConstructDLQName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ConstructDLQName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.ConstructDLQName(System.String)
+    name: ConstructDLQName
+    nameWithType: AbstractBinder(Of T).ConstructDLQName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).ConstructDLQName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.ServiceName
+  name: ServiceName
+  nameWithType: AbstractBinder<T>.ServiceName
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ServiceName
+  nameWithType.vb: AbstractBinder(Of T).ServiceName
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ServiceName
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  isExternal: true
+  name: BindConsumer(String, String, T, IConsumerOptions)
+  nameWithType: AbstractBinder<T>.BindConsumer(String, String, T, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindConsumer(String, String, T, IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder<T>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder(Of T).BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  isExternal: true
+  name: BindConsumer(String, String, Object, IConsumerOptions)
+  nameWithType: AbstractBinder<T>.BindConsumer(String, String, Object, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindConsumer(String, String, Object, IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder<T>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: AbstractBinder(Of T).BindConsumer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  isExternal: true
+  name: BindProducer(String, T, IProducerOptions)
+  nameWithType: AbstractBinder<T>.BindProducer(String, T, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindProducer(String, T, IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder<T>.BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder(Of T).BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  isExternal: true
+  name: BindProducer(String, Object, IProducerOptions)
+  nameWithType: AbstractBinder<T>.BindProducer(String, Object, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BindProducer(String, Object, IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder<T>.BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: AbstractBinder(Of T).BindProducer
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.EvaluationContext
+  name: EvaluationContext
+  nameWithType: AbstractBinder<T>.EvaluationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.EvaluationContext
+  nameWithType.vb: AbstractBinder(Of T).EvaluationContext
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).EvaluationContext
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.ExpressionParser
+  name: ExpressionParser
+  nameWithType: AbstractBinder<T>.ExpressionParser
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ExpressionParser
+  nameWithType.vb: AbstractBinder(Of T).ExpressionParser
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ExpressionParser
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext
+  commentId: P:Steeltoe.Stream.Binder.AbstractBinder`1.ApplicationContext
+  name: ApplicationContext
+  nameWithType: AbstractBinder<T>.ApplicationContext
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.ApplicationContext
+  nameWithType.vb: AbstractBinder(Of T).ApplicationContext
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).ApplicationContext
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+  isExternal: true
+  name: GroupedName(String, String)
+  nameWithType: AbstractBinder<T>.GroupedName(String, String)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GroupedName(System.String, System.String)
+  nameWithType.vb: AbstractBinder(Of T).GroupedName(String, String)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).GroupedName(System.String, System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+    name: GroupedName
+    nameWithType: AbstractBinder<T>.GroupedName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GroupedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GroupedName(System.String,System.String)
+    name: GroupedName
+    nameWithType: AbstractBinder(Of T).GroupedName
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).GroupedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  name: BuildRetryTemplate(IConsumerOptions)
+  nameWithType: AbstractBinder<T>.BuildRetryTemplate(IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: AbstractBinder(Of T).BuildRetryTemplate(IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+    name: BuildRetryTemplate
+    nameWithType: AbstractBinder<T>.BuildRetryTemplate
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.BuildRetryTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.BuildRetryTemplate(Steeltoe.Stream.Config.IConsumerOptions)
+    name: BuildRetryTemplate
+    nameWithType: AbstractBinder(Of T).BuildRetryTemplate
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).BuildRetryTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  commentId: M:Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+  isExternal: true
+  name: GetRetryableExceptions(List<String>)
+  nameWithType: AbstractBinder<T>.GetRetryableExceptions(List<String>)
+  fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GetRetryableExceptions(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: AbstractBinder(Of T).GetRetryableExceptions(List(Of String))
+  fullName.vb: Steeltoe.Stream.Binder.AbstractBinder(Of T).GetRetryableExceptions(System.Collections.Generic.List(Of System.String))
+  name.vb: GetRetryableExceptions(List(Of String))
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+    name: GetRetryableExceptions
+    nameWithType: AbstractBinder<T>.GetRetryableExceptions
+    fullName: Steeltoe.Stream.Binder.AbstractBinder<T>.GetRetryableExceptions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractBinder`1.GetRetryableExceptions(System.Collections.Generic.List{System.String})
+    name: GetRetryableExceptions
+    nameWithType: AbstractBinder(Of T).GetRetryableExceptions
+    fullName: Steeltoe.Stream.Binder.AbstractBinder(Of T).GetRetryableExceptions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.#ctor
+  name: AbstractPollableMessageSourceBinder
+  nameWithType: AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.AbstractPollableMessageSourceBinder
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Steeltoe.Stream.Provisioning.IProvisioningProvider
+  commentId: T:Steeltoe.Stream.Provisioning.IProvisioningProvider
+  parent: Steeltoe.Stream.Provisioning
+  name: IProvisioningProvider
+  nameWithType: IProvisioningProvider
+  fullName: Steeltoe.Stream.Provisioning.IProvisioningProvider
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Stream.Provisioning
+  commentId: N:Steeltoe.Stream.Provisioning
+  name: Steeltoe.Stream.Provisioning
+  nameWithType: Steeltoe.Stream.Provisioning
+  fullName: Steeltoe.Stream.Provisioning
+- uid: Steeltoe.Stream.Config.IListenerContainerCustomizer
+  commentId: T:Steeltoe.Stream.Config.IListenerContainerCustomizer
+  parent: Steeltoe.Stream.Config
+  name: IListenerContainerCustomizer
+  nameWithType: IListenerContainerCustomizer
+  fullName: Steeltoe.Stream.Config.IListenerContainerCustomizer
+- uid: Steeltoe.Stream.Config.IMessageSourceCustomizer
+  commentId: T:Steeltoe.Stream.Config.IMessageSourceCustomizer
+  parent: Steeltoe.Stream.Config
+  name: IMessageSourceCustomizer
+  nameWithType: IMessageSourceCustomizer
+  fullName: Steeltoe.Stream.Config.IMessageSourceCustomizer
+- uid: Steeltoe.Stream.Config
+  commentId: N:Steeltoe.Stream.Config
+  name: Steeltoe.Stream.Config
+  nameWithType: Steeltoe.Stream.Config
+  fullName: Steeltoe.Stream.Config
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer
+  name: BindConsumer
+  nameWithType: AbstractPollableMessageSourceBinder.BindConsumer
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindConsumer
+- uid: Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}.BindConsumer(System.String,System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}.BindConsumer(System.String,System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}
+  definition: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  name: BindConsumer(String, String, IPollableSource<IMessageHandler>, IConsumerOptions)
+  nameWithType: IBinder<IPollableSource<IMessageHandler>>.BindConsumer(String, String, IPollableSource<IMessageHandler>, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>>.BindConsumer(System.String, System.String, Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: IBinder(Of IPollableSource(Of IMessageHandler)).BindConsumer(String, String, IPollableSource(Of IMessageHandler), IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler)).BindConsumer(System.String, System.String, Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler), Steeltoe.Stream.Config.IConsumerOptions)
+  name.vb: BindConsumer(String, String, IPollableSource(Of IMessageHandler), IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder<IPollableSource<IMessageHandler>>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder<Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder(Of IPollableSource(Of IMessageHandler)).BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler)).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+  commentId: T:Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.IPollableSource`1
+  name: IPollableSource<IMessageHandler>
+  nameWithType: IPollableSource<IMessageHandler>
+  fullName: Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>
+  nameWithType.vb: IPollableSource(Of IMessageHandler)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler)
+  name.vb: IPollableSource(Of IMessageHandler)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Config.IConsumerOptions
+  commentId: T:Steeltoe.Stream.Config.IConsumerOptions
+  parent: Steeltoe.Stream.Config
+  name: IConsumerOptions
+  nameWithType: IConsumerOptions
+  fullName: Steeltoe.Stream.Config.IConsumerOptions
+- uid: Steeltoe.Stream.Binder.IBinding
+  commentId: T:Steeltoe.Stream.Binder.IBinding
+  parent: Steeltoe.Stream.Binder
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Steeltoe.Stream.Binder.IBinding
+- uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+  isExternal: true
+  name: BindConsumer(String, String, T, IConsumerOptions)
+  nameWithType: IBinder<T>.BindConsumer(String, String, T, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<T>.BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  nameWithType.vb: IBinder(Of T).BindConsumer(String, String, T, IConsumerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T).BindConsumer(System.String, System.String, T, Steeltoe.Stream.Config.IConsumerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder<T>.BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder<T>.BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindConsumer(System.String,System.String,`0,Steeltoe.Stream.Config.IConsumerOptions)
+    name: BindConsumer
+    nameWithType: IBinder(Of T).BindConsumer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of T).BindConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IConsumerOptions
+    name: IConsumerOptions
+    nameWithType: IConsumerOptions
+    fullName: Steeltoe.Stream.Config.IConsumerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource`1
+  commentId: T:Steeltoe.Stream.Binder.IPollableSource`1
+  name: IPollableSource<H>
+  nameWithType: IPollableSource<H>
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>
+  nameWithType.vb: IPollableSource(Of H)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H)
+  name.vb: IPollableSource(Of H)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer
+  name: BindProducer
+  nameWithType: AbstractPollableMessageSourceBinder.BindProducer
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.BindProducer
+- uid: Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}.BindProducer(System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}.BindProducer(System.String,Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler},Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder{Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}}
+  definition: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  name: BindProducer(String, IPollableSource<IMessageHandler>, IProducerOptions)
+  nameWithType: IBinder<IPollableSource<IMessageHandler>>.BindProducer(String, IPollableSource<IMessageHandler>, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>>.BindProducer(System.String, Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: IBinder(Of IPollableSource(Of IMessageHandler)).BindProducer(String, IPollableSource(Of IMessageHandler), IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler)).BindProducer(System.String, Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler), Steeltoe.Stream.Config.IProducerOptions)
+  name.vb: BindProducer(String, IPollableSource(Of IMessageHandler), IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder<IPollableSource<IMessageHandler>>.BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder<Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder(Of IPollableSource(Of IMessageHandler)).BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler)).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Config.IProducerOptions
+  commentId: T:Steeltoe.Stream.Config.IProducerOptions
+  parent: Steeltoe.Stream.Config
+  name: IProducerOptions
+  nameWithType: IProducerOptions
+  fullName: Steeltoe.Stream.Config.IProducerOptions
+- uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+  isExternal: true
+  name: BindProducer(String, T, IProducerOptions)
+  nameWithType: IBinder<T>.BindProducer(String, T, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder<T>.BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  nameWithType.vb: IBinder(Of T).BindProducer(String, T, IProducerOptions)
+  fullName.vb: Steeltoe.Stream.Binder.IBinder(Of T).BindProducer(System.String, T, Steeltoe.Stream.Config.IProducerOptions)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder<T>.BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder<T>.BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IBinder`1.BindProducer(System.String,`0,Steeltoe.Stream.Config.IProducerOptions)
+    name: BindProducer
+    nameWithType: IBinder(Of T).BindProducer
+    fullName: Steeltoe.Stream.Binder.IBinder(Of T).BindProducer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Config.IProducerOptions
+    name: IProducerOptions
+    nameWithType: IProducerOptions
+    fullName: Steeltoe.Stream.Config.IProducerOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource
+  name: PostProcessPollableSource
+  nameWithType: AbstractPollableMessageSourceBinder.PostProcessPollableSource
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.PostProcessPollableSource
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  commentId: T:Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  parent: Steeltoe.Stream.Binder
+  name: DefaultPollableMessageSource
+  nameWithType: DefaultPollableMessageSource
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback
+  name: GetPolledConsumerRecoveryCallback
+  nameWithType: AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.GetPolledConsumerRecoveryCallback
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure
+  commentId: T:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure
+  parent: Steeltoe.Stream.Binder
+  name: AbstractMessageChannelBinder.ErrorInfrastructure
+  nameWithType: AbstractMessageChannelBinder.ErrorInfrastructure
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.ErrorInfrastructure
+- uid: Steeltoe.Common.Retry.IRecoveryCallback
+  commentId: T:Steeltoe.Common.Retry.IRecoveryCallback
+  parent: Steeltoe.Common.Retry
+  name: IRecoveryCallback
+  nameWithType: IRecoveryCallback
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources*
+  commentId: Overload:Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources
+  name: CreatePolledConsumerResources
+  nameWithType: AbstractPollableMessageSourceBinder.CreatePolledConsumerResources
+  fullName: Steeltoe.Stream.Binder.AbstractPollableMessageSourceBinder.CreatePolledConsumerResources
+- uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+  commentId: T:Steeltoe.Stream.Provisioning.IConsumerDestination
+  parent: Steeltoe.Stream.Provisioning
+  name: IConsumerDestination
+  nameWithType: IConsumerDestination
+  fullName: Steeltoe.Stream.Provisioning.IConsumerDestination
+- uid: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PolledConsumerResources
+  commentId: T:Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PolledConsumerResources
+  parent: Steeltoe.Stream.Binder
+  name: AbstractMessageChannelBinder.PolledConsumerResources
+  nameWithType: AbstractMessageChannelBinder.PolledConsumerResources
+  fullName: Steeltoe.Stream.Binder.AbstractMessageChannelBinder.PolledConsumerResources

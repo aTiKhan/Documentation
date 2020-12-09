@@ -1,0 +1,2286 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  commentId: T:Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  id: DefaultPollableMessageSource
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.Converter.ISmartMessageConverter)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open(Steeltoe.Common.Retry.IRetryContext)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue(System.Exception)
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start
+  - Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop
+  langs:
+  - csharp
+  - vb
+  name: DefaultPollableMessageSource
+  nameWithType: DefaultPollableMessageSource
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DefaultPollableMessageSource
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: 'public class DefaultPollableMessageSource : AbstractPollableSource<IMessageHandler>, IPollableMessageSource, IPollableSource<IMessageHandler>, IPollableSource, ILifecycle, IRetryListener'
+    content.vb: >-
+      Public Class DefaultPollableMessageSource
+
+          Inherits AbstractPollableSource(Of IMessageHandler)
+
+          Implements IPollableMessageSource, IPollableSource(Of IMessageHandler), IPollableSource, ILifecycle, IRetryListener
+  inheritance:
+  - System.Object
+  - Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}
+  implements:
+  - Steeltoe.Stream.Binder.IPollableMessageSource
+  - Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+  - Steeltoe.Stream.Binder.IPollableSource
+  - Steeltoe.Common.Lifecycle.ILifecycle
+  - Steeltoe.Common.Retry.IRetryListener
+  inheritedMembers:
+  - Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(System.Object)
+  - Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(System.Object,System.Type)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.Converter.ISmartMessageConverter)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.Converter.ISmartMessageConverter)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.Converter.ISmartMessageConverter)'
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: DefaultPollableMessageSource(IApplicationContext, ISmartMessageConverter)
+  nameWithType: DefaultPollableMessageSource.DefaultPollableMessageSource(IApplicationContext, ISmartMessageConverter)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.DefaultPollableMessageSource(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.Converter.ISmartMessageConverter)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public DefaultPollableMessageSource(IApplicationContext context, ISmartMessageConverter messageConverter)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: messageConverter
+      type: Steeltoe.Messaging.Converter.ISmartMessageConverter
+    content.vb: Public Sub New(context As IApplicationContext, messageConverter As ISmartMessageConverter)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate
+  commentId: P:Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate
+  id: RetryTemplate
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: RetryTemplate
+  nameWithType: DefaultPollableMessageSource.RetryTemplate
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RetryTemplate
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public RetryTemplate RetryTemplate { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Retry.RetryTemplate
+    content.vb: Public Property RetryTemplate As RetryTemplate
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback
+  commentId: P:Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback
+  id: RecoveryCallback
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: RecoveryCallback
+  nameWithType: DefaultPollableMessageSource.RecoveryCallback
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RecoveryCallback
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 55
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IRecoveryCallback RecoveryCallback { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Retry.IRecoveryCallback
+    content.vb: Public Property RecoveryCallback As IRecoveryCallback
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel
+  commentId: P:Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel
+  id: ErrorChannel
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: ErrorChannel
+  nameWithType: DefaultPollableMessageSource.ErrorChannel
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ErrorChannel
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IMessageChannel ErrorChannel { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.IMessageChannel
+    content.vb: Public Property ErrorChannel As IMessageChannel
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy
+  commentId: P:Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy
+  id: ErrorMessageStrategy
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessageStrategy
+  nameWithType: DefaultPollableMessageSource.ErrorMessageStrategy
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ErrorMessageStrategy
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 70
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IErrorMessageStrategy ErrorMessageStrategy { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Integration.Support.IErrorMessageStrategy
+    content.vb: Public Property ErrorMessageStrategy As IErrorMessageStrategy
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider
+  commentId: P:Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider
+  id: AttributeProvider
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: AttributeProvider
+  nameWithType: DefaultPollableMessageSource.AttributeProvider
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AttributeProvider
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 72
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public Action<IAttributeAccessor, IMessage> AttributeProvider { get; set; }
+    parameters: []
+    return:
+      type: System.Action{Steeltoe.Common.Util.IAttributeAccessor,Steeltoe.Messaging.IMessage}
+    content.vb: Public Property AttributeProvider As Action(Of IAttributeAccessor, IMessage)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source
+  commentId: P:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source
+  id: Source
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: DefaultPollableMessageSource.Source
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Source
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 74
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public IMessageSource Source { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Integration.IMessageSource
+    content.vb: Public Property Source As IMessageSource
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning
+  commentId: P:Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning
+  id: IsRunning
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: DefaultPollableMessageSource.IsRunning
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsRunning
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 76
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRunning As Boolean
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  id: AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: AddInterceptor(IChannelInterceptor)
+  nameWithType: DefaultPollableMessageSource.AddInterceptor(IChannelInterceptor)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddInterceptor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 78
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public void AddInterceptor(IChannelInterceptor interceptor)
+    parameters:
+    - id: interceptor
+      type: Steeltoe.Messaging.Support.IChannelInterceptor
+    content.vb: Public Sub AddInterceptor(interceptor As IChannelInterceptor)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  id: AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: AddInterceptor(Int32, IChannelInterceptor)
+  nameWithType: DefaultPollableMessageSource.AddInterceptor(Int32, IChannelInterceptor)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor(System.Int32, Steeltoe.Messaging.Support.IChannelInterceptor)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddInterceptor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 83
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public void AddInterceptor(int index, IChannelInterceptor interceptor)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: interceptor
+      type: Steeltoe.Messaging.Support.IChannelInterceptor
+    content.vb: Public Sub AddInterceptor(index As Integer, interceptor As IChannelInterceptor)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start
+  id: Start
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: DefaultPollableMessageSource.Start()
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Start
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 88
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public Task Start()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Start As Task
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycle.Start
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop
+  id: Stop
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: DefaultPollableMessageSource.Stop()
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Stop
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 99
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public Task Stop()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Stop As Task
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop*
+  implements:
+  - Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler)
+  id: Poll(Steeltoe.Messaging.IMessageHandler)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: Poll(IMessageHandler)
+  nameWithType: DefaultPollableMessageSource.Poll(IMessageHandler)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Poll
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 110
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override bool Poll(IMessageHandler handler)
+    parameters:
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Poll(handler As IMessageHandler) As Boolean
+  overridden: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll*
+  implements:
+  - Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  id: Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: Poll(IMessageHandler, Type)
+  nameWithType: DefaultPollableMessageSource.Poll(IMessageHandler, Type)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll(Steeltoe.Messaging.IMessageHandler, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Poll
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 115
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public override bool Poll(IMessageHandler handler, Type type)
+    parameters:
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+    - id: type
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Poll(handler As IMessageHandler, type As Type) As Boolean
+  overridden: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll*
+  implements:
+  - Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open(Steeltoe.Common.Retry.IRetryContext)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open(Steeltoe.Common.Retry.IRetryContext)
+  id: Open(Steeltoe.Common.Retry.IRetryContext)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: Open(IRetryContext)
+  nameWithType: DefaultPollableMessageSource.Open(IRetryContext)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open(Steeltoe.Common.Retry.IRetryContext)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Open
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 177
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public bool Open(IRetryContext context)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Retry.IRetryContext
+    return:
+      type: System.Boolean
+    content.vb: Public Function Open(context As IRetryContext) As Boolean
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open*
+  implements:
+  - Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  id: Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: Close(IRetryContext, Exception)
+  nameWithType: DefaultPollableMessageSource.Close(IRetryContext, Exception)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close(Steeltoe.Common.Retry.IRetryContext, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Close
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 187
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public void Close(IRetryContext context, Exception exception)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Retry.IRetryContext
+    - id: exception
+      type: System.Exception
+    content.vb: Public Sub Close(context As IRetryContext, exception As Exception)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close*
+  implements:
+  - Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  id: OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: OnError(IRetryContext, Exception)
+  nameWithType: DefaultPollableMessageSource.OnError(IRetryContext, Exception)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError(Steeltoe.Common.Retry.IRetryContext, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OnError
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 192
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: public void OnError(IRetryContext context, Exception exception)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Retry.IRetryContext
+    - id: exception
+      type: System.Exception
+    content.vb: Public Sub OnError(context As IRetryContext, exception As Exception)
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError*
+  implements:
+  - Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue(System.Exception)
+  commentId: M:Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue(System.Exception)
+  id: ShouldRequeue(System.Exception)
+  parent: Steeltoe.Stream.Binder.DefaultPollableMessageSource
+  langs:
+  - csharp
+  - vb
+  name: ShouldRequeue(Exception)
+  nameWithType: DefaultPollableMessageSource.ShouldRequeue(Exception)
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ShouldRequeue
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binder/DefaultPollableMessageSource.cs
+    startLine: 197
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binder
+  syntax:
+    content: protected static bool ShouldRequeue(Exception e)
+    parameters:
+    - id: e
+      type: System.Exception
+    return:
+      type: System.Boolean
+    content.vb: Protected Shared Function ShouldRequeue(e As Exception) As Boolean
+  overload: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}
+  commentId: T:Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.AbstractPollableSource`1
+  name: AbstractPollableSource<IMessageHandler>
+  nameWithType: AbstractPollableSource<IMessageHandler>
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>
+  nameWithType.vb: AbstractPollableSource(Of IMessageHandler)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler)
+  name.vb: AbstractPollableSource(Of IMessageHandler)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1
+    name: AbstractPollableSource
+    nameWithType: AbstractPollableSource
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1
+    name: AbstractPollableSource
+    nameWithType: AbstractPollableSource
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableMessageSource
+  commentId: T:Steeltoe.Stream.Binder.IPollableMessageSource
+  parent: Steeltoe.Stream.Binder
+  name: IPollableMessageSource
+  nameWithType: IPollableMessageSource
+  fullName: Steeltoe.Stream.Binder.IPollableMessageSource
+- uid: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+  commentId: T:Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+  parent: Steeltoe.Stream.Binder
+  definition: Steeltoe.Stream.Binder.IPollableSource`1
+  name: IPollableSource<IMessageHandler>
+  nameWithType: IPollableSource<IMessageHandler>
+  fullName: Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>
+  nameWithType.vb: IPollableSource(Of IMessageHandler)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler)
+  name.vb: IPollableSource(Of IMessageHandler)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource
+  commentId: T:Steeltoe.Stream.Binder.IPollableSource
+  parent: Steeltoe.Stream.Binder
+  name: IPollableSource
+  nameWithType: IPollableSource
+  fullName: Steeltoe.Stream.Binder.IPollableSource
+- uid: Steeltoe.Common.Lifecycle.ILifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycle
+  nameWithType: ILifecycle
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle
+- uid: Steeltoe.Common.Retry.IRetryListener
+  commentId: T:Steeltoe.Common.Retry.IRetryListener
+  parent: Steeltoe.Common.Retry
+  name: IRetryListener
+  nameWithType: IRetryListener
+  fullName: Steeltoe.Common.Retry.IRetryListener
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(System.Object)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(System.Object)
+  parent: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}
+  definition: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object)
+  name: Poll(Object)
+  nameWithType: AbstractPollableSource<IMessageHandler>.Poll(Object)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll(System.Object)
+  nameWithType.vb: AbstractPollableSource(Of IMessageHandler).Poll(Object)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object)
+    name: Poll
+    nameWithType: AbstractPollableSource<IMessageHandler>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of IMessageHandler).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(System.Object,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(System.Object,System.Type)
+  parent: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}
+  definition: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object,System.Type)
+  name: Poll(Object, Type)
+  nameWithType: AbstractPollableSource<IMessageHandler>.Poll(Object, Type)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll(System.Object, System.Type)
+  nameWithType.vb: AbstractPollableSource(Of IMessageHandler).Poll(Object, Type)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll(System.Object, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource<IMessageHandler>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of IMessageHandler).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource`1
+  commentId: T:Steeltoe.Stream.Binder.AbstractPollableSource`1
+  name: AbstractPollableSource<H>
+  nameWithType: AbstractPollableSource<H>
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>
+  nameWithType.vb: AbstractPollableSource(Of H)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of H)
+  name.vb: AbstractPollableSource(Of H)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1
+    name: AbstractPollableSource
+    nameWithType: AbstractPollableSource
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1
+    name: AbstractPollableSource
+    nameWithType: AbstractPollableSource
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource`1
+  commentId: T:Steeltoe.Stream.Binder.IPollableSource`1
+  name: IPollableSource<H>
+  nameWithType: IPollableSource<H>
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>
+  nameWithType.vb: IPollableSource(Of H)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H)
+  name.vb: IPollableSource(Of H)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1
+    name: IPollableSource
+    nameWithType: IPollableSource
+    fullName: Steeltoe.Stream.Binder.IPollableSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object)
+  isExternal: true
+  name: Poll(Object)
+  nameWithType: AbstractPollableSource<H>.Poll(Object)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll(System.Object)
+  nameWithType.vb: AbstractPollableSource(Of H).Poll(Object)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object)
+    name: Poll
+    nameWithType: AbstractPollableSource<H>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of H).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object,System.Type)
+  isExternal: true
+  name: Poll(Object, Type)
+  nameWithType: AbstractPollableSource<H>.Poll(Object, Type)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll(System.Object, System.Type)
+  nameWithType.vb: AbstractPollableSource(Of H).Poll(Object, Type)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll(System.Object, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource<H>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(System.Object,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of H).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.#ctor
+  name: DefaultPollableMessageSource
+  nameWithType: DefaultPollableMessageSource.DefaultPollableMessageSource
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.DefaultPollableMessageSource
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.ISmartMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: ISmartMessageConverter
+  nameWithType: ISmartMessageConverter
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Messaging.Converter
+  commentId: N:Steeltoe.Messaging.Converter
+  name: Steeltoe.Messaging.Converter
+  nameWithType: Steeltoe.Messaging.Converter
+  fullName: Steeltoe.Messaging.Converter
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate
+  name: RetryTemplate
+  nameWithType: DefaultPollableMessageSource.RetryTemplate
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RetryTemplate
+- uid: Steeltoe.Common.Retry.RetryTemplate
+  commentId: T:Steeltoe.Common.Retry.RetryTemplate
+  parent: Steeltoe.Common.Retry
+  name: RetryTemplate
+  nameWithType: RetryTemplate
+  fullName: Steeltoe.Common.Retry.RetryTemplate
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback
+  name: RecoveryCallback
+  nameWithType: DefaultPollableMessageSource.RecoveryCallback
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.RecoveryCallback
+- uid: Steeltoe.Common.Retry.IRecoveryCallback
+  commentId: T:Steeltoe.Common.Retry.IRecoveryCallback
+  parent: Steeltoe.Common.Retry
+  name: IRecoveryCallback
+  nameWithType: IRecoveryCallback
+  fullName: Steeltoe.Common.Retry.IRecoveryCallback
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel
+  name: ErrorChannel
+  nameWithType: DefaultPollableMessageSource.ErrorChannel
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorChannel
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy
+  name: ErrorMessageStrategy
+  nameWithType: DefaultPollableMessageSource.ErrorMessageStrategy
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ErrorMessageStrategy
+- uid: Steeltoe.Integration.Support.IErrorMessageStrategy
+  commentId: T:Steeltoe.Integration.Support.IErrorMessageStrategy
+  parent: Steeltoe.Integration.Support
+  name: IErrorMessageStrategy
+  nameWithType: IErrorMessageStrategy
+  fullName: Steeltoe.Integration.Support.IErrorMessageStrategy
+- uid: Steeltoe.Integration.Support
+  commentId: N:Steeltoe.Integration.Support
+  name: Steeltoe.Integration.Support
+  nameWithType: Steeltoe.Integration.Support
+  fullName: Steeltoe.Integration.Support
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider
+  name: AttributeProvider
+  nameWithType: DefaultPollableMessageSource.AttributeProvider
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AttributeProvider
+- uid: System.Action{Steeltoe.Common.Util.IAttributeAccessor,Steeltoe.Messaging.IMessage}
+  commentId: T:System.Action{Steeltoe.Common.Util.IAttributeAccessor,Steeltoe.Messaging.IMessage}
+  parent: System
+  definition: System.Action`2
+  name: Action<IAttributeAccessor, IMessage>
+  nameWithType: Action<IAttributeAccessor, IMessage>
+  fullName: System.Action<Steeltoe.Common.Util.IAttributeAccessor, Steeltoe.Messaging.IMessage>
+  nameWithType.vb: Action(Of IAttributeAccessor, IMessage)
+  fullName.vb: System.Action(Of Steeltoe.Common.Util.IAttributeAccessor, Steeltoe.Messaging.IMessage)
+  name.vb: Action(Of IAttributeAccessor, IMessage)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Util.IAttributeAccessor
+    name: IAttributeAccessor
+    nameWithType: IAttributeAccessor
+    fullName: Steeltoe.Common.Util.IAttributeAccessor
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source
+  name: Source
+  nameWithType: DefaultPollableMessageSource.Source
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Source
+- uid: Steeltoe.Integration.IMessageSource
+  commentId: T:Steeltoe.Integration.IMessageSource
+  parent: Steeltoe.Integration
+  name: IMessageSource
+  nameWithType: IMessageSource
+  fullName: Steeltoe.Integration.IMessageSource
+- uid: Steeltoe.Integration
+  commentId: N:Steeltoe.Integration
+  name: Steeltoe.Integration
+  nameWithType: Steeltoe.Integration
+  fullName: Steeltoe.Integration
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning
+  name: IsRunning
+  nameWithType: DefaultPollableMessageSource.IsRunning
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.IsRunning
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  commentId: P:Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: IsRunning
+  nameWithType: ILifecycle.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor
+  name: AddInterceptor
+  nameWithType: DefaultPollableMessageSource.AddInterceptor
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.AddInterceptor
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor
+  commentId: T:Steeltoe.Messaging.Support.IChannelInterceptor
+  parent: Steeltoe.Messaging.Support
+  name: IChannelInterceptor
+  nameWithType: IChannelInterceptor
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+- uid: Steeltoe.Messaging.Support
+  commentId: N:Steeltoe.Messaging.Support
+  name: Steeltoe.Messaging.Support
+  nameWithType: Steeltoe.Messaging.Support
+  fullName: Steeltoe.Messaging.Support
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start
+  name: Start
+  nameWithType: DefaultPollableMessageSource.Start
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Start
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Start
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Start()
+  nameWithType: ILifecycle.Start()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop
+  name: Stop
+  nameWithType: DefaultPollableMessageSource.Stop
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Stop
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Stop()
+  nameWithType: ILifecycle.Stop()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler)
+  parent: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}
+  definition: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0)
+  name: Poll(IMessageHandler)
+  nameWithType: AbstractPollableSource<IMessageHandler>.Poll(IMessageHandler)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll(Steeltoe.Messaging.IMessageHandler)
+  nameWithType.vb: AbstractPollableSource(Of IMessageHandler).Poll(IMessageHandler)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll(Steeltoe.Messaging.IMessageHandler)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: AbstractPollableSource<IMessageHandler>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of IMessageHandler).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll
+  name: Poll
+  nameWithType: DefaultPollableMessageSource.Poll
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Poll
+- uid: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler)
+  parent: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+  definition: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+  name: Poll(IMessageHandler)
+  nameWithType: IPollableSource<IMessageHandler>.Poll(IMessageHandler)
+  fullName: Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll(Steeltoe.Messaging.IMessageHandler)
+  nameWithType.vb: IPollableSource(Of IMessageHandler).Poll(IMessageHandler)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll(Steeltoe.Messaging.IMessageHandler)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: IPollableSource<IMessageHandler>.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: IPollableSource(Of IMessageHandler).Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageHandler
+  commentId: T:Steeltoe.Messaging.IMessageHandler
+  parent: Steeltoe.Messaging
+  name: IMessageHandler
+  nameWithType: IMessageHandler
+  fullName: Steeltoe.Messaging.IMessageHandler
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0)
+  name: Poll(H)
+  nameWithType: AbstractPollableSource<H>.Poll(H)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll(H)
+  nameWithType.vb: AbstractPollableSource(Of H).Poll(H)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll(H)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: AbstractPollableSource<H>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of H).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+  name: Poll(H)
+  nameWithType: IPollableSource<H>.Poll(H)
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>.Poll(H)
+  nameWithType.vb: IPollableSource(Of H).Poll(H)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H).Poll(H)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: IPollableSource<H>.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource<H>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+    name: Poll
+    nameWithType: IPollableSource(Of H).Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource(Of H).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  parent: Steeltoe.Stream.Binder.AbstractPollableSource{Steeltoe.Messaging.IMessageHandler}
+  definition: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0,System.Type)
+  name: Poll(IMessageHandler, Type)
+  nameWithType: AbstractPollableSource<IMessageHandler>.Poll(IMessageHandler, Type)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll(Steeltoe.Messaging.IMessageHandler, System.Type)
+  nameWithType.vb: AbstractPollableSource(Of IMessageHandler).Poll(IMessageHandler, Type)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll(Steeltoe.Messaging.IMessageHandler, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource<IMessageHandler>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of IMessageHandler).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}.Poll(Steeltoe.Messaging.IMessageHandler,System.Type)
+  parent: Steeltoe.Stream.Binder.IPollableSource{Steeltoe.Messaging.IMessageHandler}
+  definition: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+  name: Poll(IMessageHandler, Type)
+  nameWithType: IPollableSource<IMessageHandler>.Poll(IMessageHandler, Type)
+  fullName: Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll(Steeltoe.Messaging.IMessageHandler, System.Type)
+  nameWithType.vb: IPollableSource(Of IMessageHandler).Poll(IMessageHandler, Type)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll(Steeltoe.Messaging.IMessageHandler, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: IPollableSource<IMessageHandler>.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource<Steeltoe.Messaging.IMessageHandler>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: IPollableSource(Of IMessageHandler).Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource(Of Steeltoe.Messaging.IMessageHandler).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0,System.Type)
+  isExternal: true
+  name: Poll(H, Type)
+  nameWithType: AbstractPollableSource<H>.Poll(H, Type)
+  fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll(H, System.Type)
+  nameWithType.vb: AbstractPollableSource(Of H).Poll(H, Type)
+  fullName.vb: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll(H, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource<H>.Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource<H>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.AbstractPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: AbstractPollableSource(Of H).Poll
+    fullName: Steeltoe.Stream.Binder.AbstractPollableSource(Of H).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+  isExternal: true
+  name: Poll(H, Type)
+  nameWithType: IPollableSource<H>.Poll(H, Type)
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>.Poll(H, System.Type)
+  nameWithType.vb: IPollableSource(Of H).Poll(H, Type)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H).Poll(H, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: IPollableSource<H>.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource<H>.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+    name: Poll
+    nameWithType: IPollableSource(Of H).Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource(Of H).Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: H
+    nameWithType: H
+    fullName: H
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open
+  name: Open
+  nameWithType: DefaultPollableMessageSource.Open
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Open
+- uid: Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  commentId: M:Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  parent: Steeltoe.Common.Retry.IRetryListener
+  name: Open(IRetryContext)
+  nameWithType: IRetryListener.Open(IRetryContext)
+  fullName: Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+    name: Open
+    nameWithType: IRetryListener.Open
+    fullName: Steeltoe.Common.Retry.IRetryListener.Open
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.IRetryListener.Open(Steeltoe.Common.Retry.IRetryContext)
+    name: Open
+    nameWithType: IRetryListener.Open
+    fullName: Steeltoe.Common.Retry.IRetryListener.Open
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Retry.IRetryContext
+  commentId: T:Steeltoe.Common.Retry.IRetryContext
+  parent: Steeltoe.Common.Retry
+  name: IRetryContext
+  nameWithType: IRetryContext
+  fullName: Steeltoe.Common.Retry.IRetryContext
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close
+  name: Close
+  nameWithType: DefaultPollableMessageSource.Close
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.Close
+- uid: Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  commentId: M:Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  parent: Steeltoe.Common.Retry.IRetryListener
+  isExternal: true
+  name: Close(IRetryContext, Exception)
+  nameWithType: IRetryListener.Close(IRetryContext, Exception)
+  fullName: Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext, System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+    name: Close
+    nameWithType: IRetryListener.Close
+    fullName: Steeltoe.Common.Retry.IRetryListener.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.IRetryListener.Close(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+    name: Close
+    nameWithType: IRetryListener.Close
+    fullName: Steeltoe.Common.Retry.IRetryListener.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError
+  name: OnError
+  nameWithType: DefaultPollableMessageSource.OnError
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.OnError
+- uid: Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  commentId: M:Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+  parent: Steeltoe.Common.Retry.IRetryListener
+  isExternal: true
+  name: OnError(IRetryContext, Exception)
+  nameWithType: IRetryListener.OnError(IRetryContext, Exception)
+  fullName: Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext, System.Exception)
+  spec.csharp:
+  - uid: Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+    name: OnError
+    nameWithType: IRetryListener.OnError
+    fullName: Steeltoe.Common.Retry.IRetryListener.OnError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Retry.IRetryListener.OnError(Steeltoe.Common.Retry.IRetryContext,System.Exception)
+    name: OnError
+    nameWithType: IRetryListener.OnError
+    fullName: Steeltoe.Common.Retry.IRetryListener.OnError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Retry.IRetryContext
+    name: IRetryContext
+    nameWithType: IRetryContext
+    fullName: Steeltoe.Common.Retry.IRetryContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue*
+  commentId: Overload:Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue
+  name: ShouldRequeue
+  nameWithType: DefaultPollableMessageSource.ShouldRequeue
+  fullName: Steeltoe.Stream.Binder.DefaultPollableMessageSource.ShouldRequeue

@@ -1,0 +1,1381 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  id: RabbitListenerAttributeProcessor
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar,Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory,System.Collections.Generic.IEnumerable{Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata},Microsoft.Extensions.Logging.ILoggerFactory)
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.DEFAULT_SERVICE_NAME
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener(Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute,System.Object,System.Object,System.String)
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute},System.Collections.Generic.List{System.Reflection.MethodInfo},System.Object,System.String)
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName
+  - Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver
+  langs:
+  - csharp
+  - vb
+  name: RabbitListenerAttributeProcessor
+  nameWithType: RabbitListenerAttributeProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RabbitListenerAttributeProcessor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: 'public class RabbitListenerAttributeProcessor : IRabbitListenerAttributeProcessor, IServiceNameAware, IOrdered'
+    content.vb: >-
+      Public Class RabbitListenerAttributeProcessor
+
+          Implements IRabbitListenerAttributeProcessor, IServiceNameAware, IOrdered
+  inheritance:
+  - System.Object
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor
+  - Steeltoe.Common.Services.IServiceNameAware
+  - Steeltoe.Common.Order.IOrdered
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.DEFAULT_SERVICE_NAME
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.DEFAULT_SERVICE_NAME
+  id: DEFAULT_SERVICE_NAME
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_SERVICE_NAME
+  nameWithType: RabbitListenerAttributeProcessor.DEFAULT_SERVICE_NAME
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.DEFAULT_SERVICE_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DEFAULT_SERVICE_NAME
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public const string DEFAULT_SERVICE_NAME = "RabbitListenerAttributeProcessor"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_SERVICE_NAME As String = "RabbitListenerAttributeProcessor"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar,Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory,System.Collections.Generic.IEnumerable{Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata},Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar,Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory,System.Collections.Generic.IEnumerable{Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata},Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar,Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory,System.Collections.Generic.IEnumerable{Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata},Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: RabbitListenerAttributeProcessor(IApplicationContext, IRabbitListenerEndpointRegistry, IRabbitListenerEndpointRegistrar, IMessageHandlerMethodFactory, IEnumerable<RabbitListenerMetadata>, ILoggerFactory)
+  nameWithType: RabbitListenerAttributeProcessor.RabbitListenerAttributeProcessor(IApplicationContext, IRabbitListenerEndpointRegistry, IRabbitListenerEndpointRegistrar, IMessageHandlerMethodFactory, IEnumerable<RabbitListenerMetadata>, ILoggerFactory)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.RabbitListenerAttributeProcessor(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar, Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory, System.Collections.Generic.IEnumerable<Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata>, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 36
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public RabbitListenerAttributeProcessor(IApplicationContext applicationContext, IRabbitListenerEndpointRegistry endpointRegistry, IRabbitListenerEndpointRegistrar registrar, IMessageHandlerMethodFactory messageHandlerMethodFactory, IEnumerable<RabbitListenerMetadata> rabbitListeners, ILoggerFactory loggerFactory = null)
+    parameters:
+    - id: applicationContext
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: endpointRegistry
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+    - id: registrar
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar
+    - id: messageHandlerMethodFactory
+      type: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+    - id: rabbitListeners
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata}
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Public Sub New(applicationContext As IApplicationContext, endpointRegistry As IRabbitListenerEndpointRegistry, registrar As IRabbitListenerEndpointRegistrar, messageHandlerMethodFactory As IMessageHandlerMethodFactory, rabbitListeners As IEnumerable(Of RabbitListenerMetadata), loggerFactory As ILoggerFactory = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.#ctor*
+  nameWithType.vb: RabbitListenerAttributeProcessor.RabbitListenerAttributeProcessor(IApplicationContext, IRabbitListenerEndpointRegistry, IRabbitListenerEndpointRegistrar, IMessageHandlerMethodFactory, IEnumerable(Of RabbitListenerMetadata), ILoggerFactory)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.RabbitListenerAttributeProcessor(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar, Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory, System.Collections.Generic.IEnumerable(Of Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata), Microsoft.Extensions.Logging.ILoggerFactory)
+  name.vb: RabbitListenerAttributeProcessor(IApplicationContext, IRabbitListenerEndpointRegistry, IRabbitListenerEndpointRegistrar, IMessageHandlerMethodFactory, IEnumerable(Of RabbitListenerMetadata), ILoggerFactory)
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext
+  id: ApplicationContext
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: ApplicationContext
+  nameWithType: RabbitListenerAttributeProcessor.ApplicationContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ApplicationContext
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 54
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public IApplicationContext ApplicationContext { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    content.vb: Public Property ApplicationContext As IApplicationContext
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order
+  id: Order
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: Order
+  nameWithType: RabbitListenerAttributeProcessor.Order
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Order
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public int Order { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Order As Integer
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order*
+  implements:
+  - Steeltoe.Common.Order.IOrdered.Order
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver
+  id: Resolver
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: Resolver
+  nameWithType: RabbitListenerAttributeProcessor.Resolver
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Resolver
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 58
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public IServiceExpressionResolver Resolver { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionResolver
+    content.vb: Public Property Resolver As IServiceExpressionResolver
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext
+  id: ExpressionContext
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: ExpressionContext
+  nameWithType: RabbitListenerAttributeProcessor.ExpressionContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ExpressionContext
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public IServiceExpressionContext ExpressionContext { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionContext
+    content.vb: Public Property ExpressionContext As IServiceExpressionContext
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver
+  id: ServiceResolver
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: ServiceResolver
+  nameWithType: RabbitListenerAttributeProcessor.ServiceResolver
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceResolver
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 62
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public IServiceResolver ServiceResolver { get; set; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+    content.vb: Public Property ServiceResolver As IServiceResolver
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar
+  id: Registrar
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: Registrar
+  nameWithType: RabbitListenerAttributeProcessor.Registrar
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Registrar
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 64
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public IRabbitListenerEndpointRegistrar Registrar { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar
+    content.vb: Public ReadOnly Property Registrar As IRabbitListenerEndpointRegistrar
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry
+  id: EndpointRegistry
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: EndpointRegistry
+  nameWithType: RabbitListenerAttributeProcessor.EndpointRegistry
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: EndpointRegistry
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 66
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public IRabbitListenerEndpointRegistry EndpointRegistry { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+    content.vb: Public ReadOnly Property EndpointRegistry As IRabbitListenerEndpointRegistry
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset
+  id: Charset
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: Charset
+  nameWithType: RabbitListenerAttributeProcessor.Charset
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Charset
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public Encoding Charset { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public Property Charset As Encoding
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+  id: ContainerFactoryServiceName
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: ContainerFactoryServiceName
+  nameWithType: RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ContainerFactoryServiceName
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 70
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public string ContainerFactoryServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ContainerFactoryServiceName As String
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName
+  id: ServiceName
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: ServiceName
+  nameWithType: RabbitListenerAttributeProcessor.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceName
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 72
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public string ServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServiceName As String
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName*
+  implements:
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize
+  id: Initialize
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: RabbitListenerAttributeProcessor.Initialize()
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 76
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize*
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute},System.Collections.Generic.List{System.Reflection.MethodInfo},System.Object,System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute},System.Collections.Generic.List{System.Reflection.MethodInfo},System.Object,System.String)
+  id: ProcessMultiMethodListeners(System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute},System.Collections.Generic.List{System.Reflection.MethodInfo},System.Object,System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: ProcessMultiMethodListeners(List<RabbitListenerAttribute>, List<MethodInfo>, Object, String)
+  nameWithType: RabbitListenerAttributeProcessor.ProcessMultiMethodListeners(List<RabbitListenerAttribute>, List<MethodInfo>, Object, String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners(System.Collections.Generic.List<Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute>, System.Collections.Generic.List<System.Reflection.MethodInfo>, System.Object, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ProcessMultiMethodListeners
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 120
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: protected void ProcessMultiMethodListeners(List<RabbitListenerAttribute> classLevelListeners, List<MethodInfo> multiMethods, object bean, string beanName)
+    parameters:
+    - id: classLevelListeners
+      type: System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute}
+    - id: multiMethods
+      type: System.Collections.Generic.List{System.Reflection.MethodInfo}
+    - id: bean
+      type: System.Object
+    - id: beanName
+      type: System.String
+    content.vb: Protected Sub ProcessMultiMethodListeners(classLevelListeners As List(Of RabbitListenerAttribute), multiMethods As List(Of MethodInfo), bean As Object, beanName As String)
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners*
+  nameWithType.vb: RabbitListenerAttributeProcessor.ProcessMultiMethodListeners(List(Of RabbitListenerAttribute), List(Of MethodInfo), Object, String)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners(System.Collections.Generic.List(Of Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute), System.Collections.Generic.List(Of System.Reflection.MethodInfo), System.Object, System.String)
+  name.vb: ProcessMultiMethodListeners(List(Of RabbitListenerAttribute), List(Of MethodInfo), Object, String)
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener(Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute,System.Object,System.Object,System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener(Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute,System.Object,System.Object,System.String)
+  id: ProcessListener(Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute,System.Object,System.Object,System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor
+  langs:
+  - csharp
+  - vb
+  name: ProcessListener(MethodRabbitListenerEndpoint, RabbitListenerAttribute, Object, Object, String)
+  nameWithType: RabbitListenerAttributeProcessor.ProcessListener(MethodRabbitListenerEndpoint, RabbitListenerAttribute, Object, Object, String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener(Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint, Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute, System.Object, System.Object, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ProcessListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Config/RabbitListenerAttributeProcessor.cs
+    startLine: 154
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Config
+  syntax:
+    content: protected void ProcessListener(MethodRabbitListenerEndpoint endpoint, RabbitListenerAttribute rabbitListener, object bean, object target, string beanName)
+    parameters:
+    - id: endpoint
+      type: Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint
+    - id: rabbitListener
+      type: Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+    - id: bean
+      type: System.Object
+    - id: target
+      type: System.Object
+    - id: beanName
+      type: System.String
+    content.vb: Protected Sub ProcessListener(endpoint As MethodRabbitListenerEndpoint, rabbitListener As RabbitListenerAttribute, bean As Object, target As Object, beanName As String)
+  overload: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Config
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Config
+  name: Steeltoe.Messaging.RabbitMQ.Config
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Config
+  fullName: Steeltoe.Messaging.RabbitMQ.Config
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor
+  parent: Steeltoe.Messaging.RabbitMQ.Config
+  name: IRabbitListenerAttributeProcessor
+  nameWithType: IRabbitListenerAttributeProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Common.Order.IOrdered
+  commentId: T:Steeltoe.Common.Order.IOrdered
+  parent: Steeltoe.Common.Order
+  name: IOrdered
+  nameWithType: IOrdered
+  fullName: Steeltoe.Common.Order.IOrdered
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Common.Order
+  commentId: N:Steeltoe.Common.Order
+  name: Steeltoe.Common.Order
+  nameWithType: Steeltoe.Common.Order
+  fullName: Steeltoe.Common.Order
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.#ctor
+  name: RabbitListenerAttributeProcessor
+  nameWithType: RabbitListenerAttributeProcessor.RabbitListenerAttributeProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.RabbitListenerAttributeProcessor
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IRabbitListenerEndpointRegistry
+  nameWithType: IRabbitListenerEndpointRegistry
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IRabbitListenerEndpointRegistrar
+  nameWithType: IRabbitListenerEndpointRegistrar
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistrar
+- uid: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+  commentId: T:Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+  parent: Steeltoe.Messaging.Handler.Attributes.Support
+  name: IMessageHandlerMethodFactory
+  nameWithType: IMessageHandlerMethodFactory
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support.IMessageHandlerMethodFactory
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<RabbitListenerMetadata>
+  nameWithType: IEnumerable<RabbitListenerMetadata>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata>
+  nameWithType.vb: IEnumerable(Of RabbitListenerMetadata)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata)
+  name.vb: IEnumerable(Of RabbitListenerMetadata)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata
+    name: RabbitListenerMetadata
+    nameWithType: RabbitListenerMetadata
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata
+    name: RabbitListenerMetadata
+    nameWithType: RabbitListenerMetadata
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerMetadata
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Messaging.RabbitMQ.Listener
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Listener
+  name: Steeltoe.Messaging.RabbitMQ.Listener
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Listener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener
+- uid: Steeltoe.Messaging.Handler.Attributes.Support
+  commentId: N:Steeltoe.Messaging.Handler.Attributes.Support
+  name: Steeltoe.Messaging.Handler.Attributes.Support
+  nameWithType: Steeltoe.Messaging.Handler.Attributes.Support
+  fullName: Steeltoe.Messaging.Handler.Attributes.Support
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext
+  name: ApplicationContext
+  nameWithType: RabbitListenerAttributeProcessor.ApplicationContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ApplicationContext
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order
+  name: Order
+  nameWithType: RabbitListenerAttributeProcessor.Order
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Order
+- uid: Steeltoe.Common.Order.IOrdered.Order
+  commentId: P:Steeltoe.Common.Order.IOrdered.Order
+  parent: Steeltoe.Common.Order.IOrdered
+  name: Order
+  nameWithType: IOrdered.Order
+  fullName: Steeltoe.Common.Order.IOrdered.Order
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver
+  name: Resolver
+  nameWithType: RabbitListenerAttributeProcessor.Resolver
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Resolver
+- uid: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionResolver
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionResolver
+  parent: Steeltoe.Messaging.RabbitMQ.Expressions
+  name: IServiceExpressionResolver
+  nameWithType: IServiceExpressionResolver
+  fullName: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionResolver
+- uid: Steeltoe.Messaging.RabbitMQ.Expressions
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Expressions
+  name: Steeltoe.Messaging.RabbitMQ.Expressions
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Expressions
+  fullName: Steeltoe.Messaging.RabbitMQ.Expressions
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext
+  name: ExpressionContext
+  nameWithType: RabbitListenerAttributeProcessor.ExpressionContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ExpressionContext
+- uid: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionContext
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionContext
+  parent: Steeltoe.Messaging.RabbitMQ.Expressions
+  name: IServiceExpressionContext
+  nameWithType: IServiceExpressionContext
+  fullName: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceExpressionContext
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver
+  name: ServiceResolver
+  nameWithType: RabbitListenerAttributeProcessor.ServiceResolver
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceResolver
+- uid: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+  parent: Steeltoe.Messaging.RabbitMQ.Expressions
+  name: IServiceResolver
+  nameWithType: IServiceResolver
+  fullName: Steeltoe.Messaging.RabbitMQ.Expressions.IServiceResolver
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar
+  name: Registrar
+  nameWithType: RabbitListenerAttributeProcessor.Registrar
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Registrar
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry
+  name: EndpointRegistry
+  nameWithType: RabbitListenerAttributeProcessor.EndpointRegistry
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.EndpointRegistry
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset
+  name: Charset
+  nameWithType: RabbitListenerAttributeProcessor.Charset
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Charset
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+  name: ContainerFactoryServiceName
+  nameWithType: RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ContainerFactoryServiceName
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName
+  name: ServiceName
+  nameWithType: RabbitListenerAttributeProcessor.ServiceName
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ServiceName
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize
+  name: Initialize
+  nameWithType: RabbitListenerAttributeProcessor.Initialize
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.Initialize
+- uid: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize
+  parent: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor
+  name: Initialize()
+  nameWithType: IRabbitListenerAttributeProcessor.Initialize()
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize
+    name: Initialize
+    nameWithType: IRabbitListenerAttributeProcessor.Initialize
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize
+    name: Initialize
+    nameWithType: IRabbitListenerAttributeProcessor.Initialize
+    fullName: Steeltoe.Messaging.RabbitMQ.Config.IRabbitListenerAttributeProcessor.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners
+  name: ProcessMultiMethodListeners
+  nameWithType: RabbitListenerAttributeProcessor.ProcessMultiMethodListeners
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessMultiMethodListeners
+- uid: System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<RabbitListenerAttribute>
+  nameWithType: List<RabbitListenerAttribute>
+  fullName: System.Collections.Generic.List<Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute>
+  nameWithType.vb: List(Of RabbitListenerAttribute)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute)
+  name.vb: List(Of RabbitListenerAttribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+    name: RabbitListenerAttribute
+    nameWithType: RabbitListenerAttribute
+    fullName: Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+    name: RabbitListenerAttribute
+    nameWithType: RabbitListenerAttribute
+    fullName: Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.Reflection.MethodInfo}
+  commentId: T:System.Collections.Generic.List{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MethodInfo>
+  nameWithType: List<MethodInfo>
+  fullName: System.Collections.Generic.List<System.Reflection.MethodInfo>
+  nameWithType.vb: List(Of MethodInfo)
+  fullName.vb: System.Collections.Generic.List(Of System.Reflection.MethodInfo)
+  name.vb: List(Of MethodInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener
+  name: ProcessListener
+  nameWithType: RabbitListenerAttributeProcessor.ProcessListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Config.RabbitListenerAttributeProcessor.ProcessListener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: MethodRabbitListenerEndpoint
+  nameWithType: MethodRabbitListenerEndpoint
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.MethodRabbitListenerEndpoint
+- uid: Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+  parent: Steeltoe.Messaging.RabbitMQ.Attributes
+  name: RabbitListenerAttribute
+  nameWithType: RabbitListenerAttribute
+  fullName: Steeltoe.Messaging.RabbitMQ.Attributes.RabbitListenerAttribute
+- uid: Steeltoe.Messaging.RabbitMQ.Attributes
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Attributes
+  name: Steeltoe.Messaging.RabbitMQ.Attributes
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Attributes
+  fullName: Steeltoe.Messaging.RabbitMQ.Attributes

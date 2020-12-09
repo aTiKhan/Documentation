@@ -1,0 +1,1277 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  id: RabbitResourceHolder
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor(Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor(RabbitMQ.Client.IModel,System.Boolean,Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag(RabbitMQ.Client.IModel,System.UInt64)
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel(RabbitMQ.Client.IModel)
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback
+  - Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll
+  langs:
+  - csharp
+  - vb
+  name: RabbitResourceHolder
+  nameWithType: RabbitResourceHolder
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RabbitResourceHolder
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: 'public class RabbitResourceHolder : ResourceHolderSupport, IResourceHolder'
+    content.vb: >-
+      Public Class RabbitResourceHolder
+
+          Inherits ResourceHolderSupport
+
+          Implements IResourceHolder
+  inheritance:
+  - System.Object
+  - Steeltoe.Common.Transaction.ResourceHolderSupport
+  implements:
+  - Steeltoe.Common.Transaction.IResourceHolder
+  inheritedMembers:
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.SynchronizedWithTransaction
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.RollbackOnly
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.HasTimeout
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.Deadline
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.IsOpen
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.IsVoid
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds(System.Int32)
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis(System.Int64)
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.Requested
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.Released
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.Clear
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.Reset
+  - Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor(Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor(Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: RabbitResourceHolder(ILogger)
+  nameWithType: RabbitResourceHolder.RabbitResourceHolder(ILogger)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RabbitResourceHolder(Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public RabbitResourceHolder(ILogger logger = null)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor(RabbitMQ.Client.IModel,System.Boolean,Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor(RabbitMQ.Client.IModel,System.Boolean,Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(RabbitMQ.Client.IModel,System.Boolean,Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: RabbitResourceHolder(IModel, Boolean, ILogger)
+  nameWithType: RabbitResourceHolder.RabbitResourceHolder(IModel, Boolean, ILogger)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RabbitResourceHolder(RabbitMQ.Client.IModel, System.Boolean, Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public RabbitResourceHolder(IModel channel, bool releaseAfterCompletion, ILogger logger = null)
+    parameters:
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    - id: releaseAfterCompletion
+      type: System.Boolean
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(channel As IModel, releaseAfterCompletion As Boolean, logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion
+  id: ReleaseAfterCompletion
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: ReleaseAfterCompletion
+  nameWithType: RabbitResourceHolder.ReleaseAfterCompletion
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReleaseAfterCompletion
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public bool ReleaseAfterCompletion { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ReleaseAfterCompletion As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback
+  id: RequeueOnRollback
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: RequeueOnRollback
+  nameWithType: RabbitResourceHolder.RequeueOnRollback
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RequeueOnRollback
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public bool RequeueOnRollback { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RequeueOnRollback As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  id: AddConnection(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: AddConnection(IConnection)
+  nameWithType: RabbitResourceHolder.AddConnection(IConnection)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection(Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddConnection
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 43
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public void AddConnection(IConnection connection)
+    parameters:
+    - id: connection
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    content.vb: Public Sub AddConnection(connection As IConnection)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel)
+  id: AddChannel(RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: AddChannel(IModel)
+  nameWithType: RabbitResourceHolder.AddChannel(IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddChannel
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public void AddChannel(IModel channel)
+    parameters:
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    content.vb: Public Sub AddChannel(channel As IModel)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  id: AddChannel(RabbitMQ.Client.IModel,Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: AddChannel(IModel, IConnection)
+  nameWithType: RabbitResourceHolder.AddChannel(IModel, IConnection)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel(RabbitMQ.Client.IModel, Steeltoe.Messaging.RabbitMQ.Connection.IConnection)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddChannel
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public void AddChannel(IModel channel, IConnection connection)
+    parameters:
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    - id: connection
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    content.vb: Public Sub AddChannel(channel As IModel, connection As IConnection)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel(RabbitMQ.Client.IModel)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel(RabbitMQ.Client.IModel)
+  id: ContainsChannel(RabbitMQ.Client.IModel)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: ContainsChannel(IModel)
+  nameWithType: RabbitResourceHolder.ContainsChannel(IModel)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel(RabbitMQ.Client.IModel)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ContainsChannel
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 84
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public bool ContainsChannel(IModel channel)
+    parameters:
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    return:
+      type: System.Boolean
+    content.vb: Public Function ContainsChannel(channel As IModel) As Boolean
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection
+  id: GetConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: GetConnection()
+  nameWithType: RabbitResourceHolder.GetConnection()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetConnection
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 89
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public IConnection GetConnection()
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+    content.vb: Public Function GetConnection As IConnection
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel
+  id: GetChannel
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: GetChannel()
+  nameWithType: RabbitResourceHolder.GetChannel()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetChannel
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 94
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public IModel GetChannel()
+    return:
+      type: RabbitMQ.Client.IModel
+    content.vb: Public Function GetChannel As IModel
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll
+  id: CommitAll
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: CommitAll()
+  nameWithType: RabbitResourceHolder.CommitAll()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CommitAll
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 99
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public void CommitAll()
+    content.vb: Public Sub CommitAll
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll
+  id: CloseAll
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: CloseAll()
+  nameWithType: RabbitResourceHolder.CloseAll()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CloseAll
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 123
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public void CloseAll()
+    content.vb: Public Sub CloseAll
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag(RabbitMQ.Client.IModel,System.UInt64)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag(RabbitMQ.Client.IModel,System.UInt64)
+  id: AddDeliveryTag(RabbitMQ.Client.IModel,System.UInt64)
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: AddDeliveryTag(IModel, UInt64)
+  nameWithType: RabbitResourceHolder.AddDeliveryTag(IModel, UInt64)
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag(RabbitMQ.Client.IModel, System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddDeliveryTag
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 154
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public void AddDeliveryTag(IModel channel, ulong deliveryTag)
+    parameters:
+    - id: channel
+      type: RabbitMQ.Client.IModel
+    - id: deliveryTag
+      type: System.UInt64
+    content.vb: Public Sub AddDeliveryTag(channel As IModel, deliveryTag As ULong)
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll
+  id: RollbackAll
+  parent: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder
+  langs:
+  - csharp
+  - vb
+  name: RollbackAll()
+  nameWithType: RabbitResourceHolder.RollbackAll()
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RollbackAll
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Connection/RabbitResourceHolder.cs
+    startLine: 168
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Connection
+  syntax:
+    content: public void RollbackAll()
+    content.vb: Public Sub RollbackAll
+  overload: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Connection
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Connection
+  name: Steeltoe.Messaging.RabbitMQ.Connection
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Connection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport
+  commentId: T:Steeltoe.Common.Transaction.ResourceHolderSupport
+  parent: Steeltoe.Common.Transaction
+  name: ResourceHolderSupport
+  nameWithType: ResourceHolderSupport
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport
+- uid: Steeltoe.Common.Transaction.IResourceHolder
+  commentId: T:Steeltoe.Common.Transaction.IResourceHolder
+  parent: Steeltoe.Common.Transaction
+  name: IResourceHolder
+  nameWithType: IResourceHolder
+  fullName: Steeltoe.Common.Transaction.IResourceHolder
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.SynchronizedWithTransaction
+  commentId: P:Steeltoe.Common.Transaction.ResourceHolderSupport.SynchronizedWithTransaction
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: SynchronizedWithTransaction
+  nameWithType: ResourceHolderSupport.SynchronizedWithTransaction
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.SynchronizedWithTransaction
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.RollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.ResourceHolderSupport.RollbackOnly
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: RollbackOnly
+  nameWithType: ResourceHolderSupport.RollbackOnly
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.RollbackOnly
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.HasTimeout
+  commentId: P:Steeltoe.Common.Transaction.ResourceHolderSupport.HasTimeout
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: HasTimeout
+  nameWithType: ResourceHolderSupport.HasTimeout
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.HasTimeout
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Deadline
+  commentId: P:Steeltoe.Common.Transaction.ResourceHolderSupport.Deadline
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: Deadline
+  nameWithType: ResourceHolderSupport.Deadline
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Deadline
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.IsOpen
+  commentId: P:Steeltoe.Common.Transaction.ResourceHolderSupport.IsOpen
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: IsOpen
+  nameWithType: ResourceHolderSupport.IsOpen
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.IsOpen
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.IsVoid
+  commentId: P:Steeltoe.Common.Transaction.ResourceHolderSupport.IsVoid
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: IsVoid
+  nameWithType: ResourceHolderSupport.IsVoid
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.IsVoid
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: GetTimetoLiveInSeconds()
+  nameWithType: ResourceHolderSupport.GetTimetoLiveInSeconds()
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds
+    name: GetTimetoLiveInSeconds
+    nameWithType: ResourceHolderSupport.GetTimetoLiveInSeconds
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds
+    name: GetTimetoLiveInSeconds
+    nameWithType: ResourceHolderSupport.GetTimetoLiveInSeconds
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimetoLiveInSeconds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: GetTimeToLiveInMillis()
+  nameWithType: ResourceHolderSupport.GetTimeToLiveInMillis()
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis
+    name: GetTimeToLiveInMillis
+    nameWithType: ResourceHolderSupport.GetTimeToLiveInMillis
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis
+    name: GetTimeToLiveInMillis
+    nameWithType: ResourceHolderSupport.GetTimeToLiveInMillis
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.GetTimeToLiveInMillis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds(System.Int32)
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds(System.Int32)
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  isExternal: true
+  name: SetTimeoutInSeconds(Int32)
+  nameWithType: ResourceHolderSupport.SetTimeoutInSeconds(Int32)
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds(System.Int32)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds(System.Int32)
+    name: SetTimeoutInSeconds
+    nameWithType: ResourceHolderSupport.SetTimeoutInSeconds
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds(System.Int32)
+    name: SetTimeoutInSeconds
+    nameWithType: ResourceHolderSupport.SetTimeoutInSeconds
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInSeconds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis(System.Int64)
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis(System.Int64)
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  isExternal: true
+  name: SetTimeoutInMillis(Int64)
+  nameWithType: ResourceHolderSupport.SetTimeoutInMillis(Int64)
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis(System.Int64)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis(System.Int64)
+    name: SetTimeoutInMillis
+    nameWithType: ResourceHolderSupport.SetTimeoutInMillis
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis(System.Int64)
+    name: SetTimeoutInMillis
+    nameWithType: ResourceHolderSupport.SetTimeoutInMillis
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.SetTimeoutInMillis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Requested
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.Requested
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: Requested()
+  nameWithType: ResourceHolderSupport.Requested()
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Requested()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Requested
+    name: Requested
+    nameWithType: ResourceHolderSupport.Requested
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Requested
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Requested
+    name: Requested
+    nameWithType: ResourceHolderSupport.Requested
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Requested
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Released
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.Released
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: Released()
+  nameWithType: ResourceHolderSupport.Released()
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Released()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Released
+    name: Released
+    nameWithType: ResourceHolderSupport.Released
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Released
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Released
+    name: Released
+    nameWithType: ResourceHolderSupport.Released
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Released
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Clear
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.Clear
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: Clear()
+  nameWithType: ResourceHolderSupport.Clear()
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Clear()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Clear
+    name: Clear
+    nameWithType: ResourceHolderSupport.Clear
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Clear
+    name: Clear
+    nameWithType: ResourceHolderSupport.Clear
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Reset
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.Reset
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: Reset()
+  nameWithType: ResourceHolderSupport.Reset()
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Reset()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Reset
+    name: Reset
+    nameWithType: ResourceHolderSupport.Reset
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Reset
+    name: Reset
+    nameWithType: ResourceHolderSupport.Reset
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound
+  commentId: M:Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound
+  parent: Steeltoe.Common.Transaction.ResourceHolderSupport
+  name: Unbound()
+  nameWithType: ResourceHolderSupport.Unbound()
+  fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound
+    name: Unbound
+    nameWithType: ResourceHolderSupport.Unbound
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound
+    name: Unbound
+    nameWithType: ResourceHolderSupport.Unbound
+    fullName: Steeltoe.Common.Transaction.ResourceHolderSupport.Unbound
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Transaction
+  commentId: N:Steeltoe.Common.Transaction
+  name: Steeltoe.Common.Transaction
+  nameWithType: Steeltoe.Common.Transaction
+  fullName: Steeltoe.Common.Transaction
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.#ctor
+  name: RabbitResourceHolder
+  nameWithType: RabbitResourceHolder.RabbitResourceHolder
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RabbitResourceHolder
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: RabbitMQ.Client.IModel
+  commentId: T:RabbitMQ.Client.IModel
+  parent: RabbitMQ.Client
+  isExternal: true
+  name: IModel
+  nameWithType: IModel
+  fullName: RabbitMQ.Client.IModel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: RabbitMQ.Client
+  commentId: N:RabbitMQ.Client
+  isExternal: true
+  name: RabbitMQ.Client
+  nameWithType: RabbitMQ.Client
+  fullName: RabbitMQ.Client
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion
+  name: ReleaseAfterCompletion
+  nameWithType: RabbitResourceHolder.ReleaseAfterCompletion
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ReleaseAfterCompletion
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback
+  name: RequeueOnRollback
+  nameWithType: RabbitResourceHolder.RequeueOnRollback
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RequeueOnRollback
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection
+  name: AddConnection
+  nameWithType: RabbitResourceHolder.AddConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+  parent: Steeltoe.Messaging.RabbitMQ.Connection
+  name: IConnection
+  nameWithType: IConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.IConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel
+  name: AddChannel
+  nameWithType: RabbitResourceHolder.AddChannel
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddChannel
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel
+  name: ContainsChannel
+  nameWithType: RabbitResourceHolder.ContainsChannel
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.ContainsChannel
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection
+  name: GetConnection
+  nameWithType: RabbitResourceHolder.GetConnection
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetConnection
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel
+  name: GetChannel
+  nameWithType: RabbitResourceHolder.GetChannel
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.GetChannel
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll
+  name: CommitAll
+  nameWithType: RabbitResourceHolder.CommitAll
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CommitAll
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll
+  name: CloseAll
+  nameWithType: RabbitResourceHolder.CloseAll
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.CloseAll
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag
+  name: AddDeliveryTag
+  nameWithType: RabbitResourceHolder.AddDeliveryTag
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.AddDeliveryTag
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll
+  name: RollbackAll
+  nameWithType: RabbitResourceHolder.RollbackAll
+  fullName: Steeltoe.Messaging.RabbitMQ.Connection.RabbitResourceHolder.RollbackAll

@@ -1,0 +1,1957 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel
+  commentId: T:Steeltoe.Messaging.Support.AbstractMessageChannel
+  id: AbstractMessageChannel
+  parent: Steeltoe.Messaging.Support
+  children:
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.#ctor(Microsoft.Extensions.Logging.ILogger)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage,System.Int32)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.INDEFINITE_TIMEOUT
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.Logger
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(System.Int32)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+  - Steeltoe.Messaging.Support.AbstractMessageChannel.ToString
+  langs:
+  - csharp
+  - vb
+  name: AbstractMessageChannel
+  nameWithType: AbstractMessageChannel
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractMessageChannel
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: 'public abstract class AbstractMessageChannel : Channel<IMessage>, IMessageChannel, IServiceNameAware, IInterceptableChannel'
+    content.vb: >-
+      Public MustInherit Class AbstractMessageChannel
+
+          Inherits Channel(Of IMessage)
+
+          Implements IMessageChannel, IServiceNameAware, IInterceptableChannel
+  inheritance:
+  - System.Object
+  - System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}
+  - System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage}
+  derivedClasses:
+  - Steeltoe.Messaging.Support.AbstractSubscribableChannel
+  implements:
+  - Steeltoe.Messaging.IMessageChannel
+  - IServiceNameAware
+  - Steeltoe.Messaging.Support.IInterceptableChannel
+  inheritedMembers:
+  - System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}.Reader
+  - System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}.Writer
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.INDEFINITE_TIMEOUT
+  commentId: F:Steeltoe.Messaging.Support.AbstractMessageChannel.INDEFINITE_TIMEOUT
+  id: INDEFINITE_TIMEOUT
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: INDEFINITE_TIMEOUT
+  nameWithType: AbstractMessageChannel.INDEFINITE_TIMEOUT
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.INDEFINITE_TIMEOUT
+  type: Field
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: INDEFINITE_TIMEOUT
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public const int INDEFINITE_TIMEOUT = -1
+    return:
+      type: System.Int32
+    content.vb: Public Const INDEFINITE_TIMEOUT As Integer = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.#ctor(Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.#ctor(Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger)'
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: AbstractMessageChannel(ILogger)
+  nameWithType: AbstractMessageChannel.AbstractMessageChannel(ILogger)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.AbstractMessageChannel(Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public AbstractMessageChannel(ILogger logger = null)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Sub New(logger As ILogger = Nothing)
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName
+  commentId: P:Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName
+  id: ServiceName
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: ServiceName
+  nameWithType: AbstractMessageChannel.ServiceName
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ServiceName
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual string ServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property ServiceName As String
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.Logger
+  commentId: P:Steeltoe.Messaging.Support.AbstractMessageChannel.Logger
+  id: Logger
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: AbstractMessageChannel.Logger
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.Logger
+  type: Property
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Logger
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public ILogger Logger { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Property Logger As ILogger
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.Logger*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+  id: SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: SetInterceptors(List<IChannelInterceptor>)
+  nameWithType: AbstractMessageChannel.SetInterceptors(List<IChannelInterceptor>)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors(System.Collections.Generic.List<Steeltoe.Messaging.Support.IChannelInterceptor>)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetInterceptors
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual void SetInterceptors(List<IChannelInterceptor> interceptors)
+    parameters:
+    - id: interceptors
+      type: System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor}
+    content.vb: Public Overridable Sub SetInterceptors(interceptors As List(Of IChannelInterceptor))
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors*
+  implements:
+  - Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+  nameWithType.vb: AbstractMessageChannel.SetInterceptors(List(Of IChannelInterceptor))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors(System.Collections.Generic.List(Of Steeltoe.Messaging.Support.IChannelInterceptor))
+  name.vb: SetInterceptors(List(Of IChannelInterceptor))
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  id: AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: AddInterceptor(IChannelInterceptor)
+  nameWithType: AbstractMessageChannel.AddInterceptor(IChannelInterceptor)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddInterceptor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual void AddInterceptor(IChannelInterceptor interceptor)
+    parameters:
+    - id: interceptor
+      type: Steeltoe.Messaging.Support.IChannelInterceptor
+    content.vb: Public Overridable Sub AddInterceptor(interceptor As IChannelInterceptor)
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor*
+  implements:
+  - Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  id: AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: AddInterceptor(Int32, IChannelInterceptor)
+  nameWithType: AbstractMessageChannel.AddInterceptor(Int32, IChannelInterceptor)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor(System.Int32, Steeltoe.Messaging.Support.IChannelInterceptor)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddInterceptor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 50
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual void AddInterceptor(int index, IChannelInterceptor interceptor)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: interceptor
+      type: Steeltoe.Messaging.Support.IChannelInterceptor
+    content.vb: Public Overridable Sub AddInterceptor(index As Integer, interceptor As IChannelInterceptor)
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor*
+  implements:
+  - Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors
+  id: GetInterceptors
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: GetInterceptors()
+  nameWithType: AbstractMessageChannel.GetInterceptors()
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInterceptors
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual List<IChannelInterceptor> GetInterceptors()
+    return:
+      type: System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor}
+    content.vb: Public Overridable Function GetInterceptors As List(Of IChannelInterceptor)
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors*
+  implements:
+  - Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  id: RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: RemoveInterceptor(IChannelInterceptor)
+  nameWithType: AbstractMessageChannel.RemoveInterceptor(IChannelInterceptor)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveInterceptor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual bool RemoveInterceptor(IChannelInterceptor interceptor)
+    parameters:
+    - id: interceptor
+      type: Steeltoe.Messaging.Support.IChannelInterceptor
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function RemoveInterceptor(interceptor As IChannelInterceptor) As Boolean
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor*
+  implements:
+  - Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(System.Int32)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(System.Int32)
+  id: RemoveInterceptor(System.Int32)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: RemoveInterceptor(Int32)
+  nameWithType: AbstractMessageChannel.RemoveInterceptor(Int32)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RemoveInterceptor
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 79
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual IChannelInterceptor RemoveInterceptor(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: Steeltoe.Messaging.Support.IChannelInterceptor
+    content.vb: Public Overridable Function RemoveInterceptor(index As Integer) As IChannelInterceptor
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor*
+  implements:
+  - Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(System.Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  id: Send(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: Send(IMessage)
+  nameWithType: AbstractMessageChannel.Send(IMessage)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Send
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 91
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual bool Send(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Send(message As IMessage) As Boolean
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.Send*
+  implements:
+  - Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  id: Send(Steeltoe.Messaging.IMessage,System.Int32)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: Send(IMessage, Int32)
+  nameWithType: AbstractMessageChannel.Send(IMessage, Int32)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.Send(Steeltoe.Messaging.IMessage, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Send
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 96
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual bool Send(IMessage message, int timeout)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: timeout
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Send(message As IMessage, timeout As Integer) As Boolean
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.Send*
+  implements:
+  - Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  id: SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(IMessage, CancellationToken)
+  nameWithType: AbstractMessageChannel.SendAsync(IMessage, CancellationToken)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SendAsync
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 106
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public virtual ValueTask<bool> SendAsync(IMessage message, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Boolean}
+    content.vb: Public Overridable Function SendAsync(message As IMessage, cancellationToken As CancellationToken = Nothing) As ValueTask(Of Boolean)
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync*
+  implements:
+  - Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.ToString
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.ToString
+  id: ToString
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AbstractMessageChannel.ToString()
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ToString
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 111
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage,System.Int32)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage,System.Int32)
+  id: DoSend(Steeltoe.Messaging.IMessage,System.Int32)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: DoSend(IMessage, Int32)
+  nameWithType: AbstractMessageChannel.DoSend(IMessage, Int32)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSend
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 116
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: protected virtual bool DoSend(IMessage message, int timeout)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: timeout
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function DoSend(message As IMessage, timeout As Integer) As Boolean
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  id: DoSend(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: DoSend(IMessage, CancellationToken)
+  nameWithType: AbstractMessageChannel.DoSend(IMessage, CancellationToken)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSend
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 132
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: protected virtual bool DoSend(IMessage message, CancellationToken cancellationToken)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function DoSend(message As IMessage, cancellationToken As CancellationToken) As Boolean
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  id: DoSendInternal(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Support.AbstractMessageChannel
+  langs:
+  - csharp
+  - vb
+  name: DoSendInternal(IMessage, CancellationToken)
+  nameWithType: AbstractMessageChannel.DoSendInternal(IMessage, CancellationToken)
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoSendInternal
+    path: ../Steeltoe/src/Messaging/src/MessagingBase/Support/AbstractMessageChannel.cs
+    startLine: 176
+  assemblies:
+  - Steeltoe.Messaging.MessagingBase
+  namespace: Steeltoe.Messaging.Support
+  syntax:
+    content: protected abstract bool DoSendInternal(IMessage message, CancellationToken cancellationToken)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Boolean
+    content.vb: Protected MustOverride Function DoSendInternal(message As IMessage, cancellationToken As CancellationToken) As Boolean
+  overload: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+references:
+- uid: Steeltoe.Messaging.Support
+  commentId: N:Steeltoe.Messaging.Support
+  name: Steeltoe.Messaging.Support
+  nameWithType: Steeltoe.Messaging.Support
+  fullName: Steeltoe.Messaging.Support
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}
+  commentId: T:System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}
+  parent: System.Threading.Channels
+  definition: System.Threading.Channels.Channel`2
+  name: Channel<IMessage, IMessage>
+  nameWithType: Channel<IMessage, IMessage>
+  fullName: System.Threading.Channels.Channel<Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage>
+  nameWithType.vb: Channel(Of IMessage, IMessage)
+  fullName.vb: System.Threading.Channels.Channel(Of Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage)
+  name.vb: Channel(Of IMessage, IMessage)
+  spec.csharp:
+  - uid: System.Threading.Channels.Channel`2
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Channels.Channel`2
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage}
+  commentId: T:System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage}
+  parent: System.Threading.Channels
+  definition: System.Threading.Channels.Channel`1
+  name: Channel<IMessage>
+  nameWithType: Channel<IMessage>
+  fullName: System.Threading.Channels.Channel<Steeltoe.Messaging.IMessage>
+  nameWithType.vb: Channel(Of IMessage)
+  fullName.vb: System.Threading.Channels.Channel(Of Steeltoe.Messaging.IMessage)
+  name.vb: Channel(Of IMessage)
+  spec.csharp:
+  - uid: System.Threading.Channels.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Channels.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: IServiceNameAware
+  isExternal: true
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: IServiceNameAware
+- uid: Steeltoe.Messaging.Support.IInterceptableChannel
+  commentId: T:Steeltoe.Messaging.Support.IInterceptableChannel
+  parent: Steeltoe.Messaging.Support
+  name: IInterceptableChannel
+  nameWithType: IInterceptableChannel
+  fullName: Steeltoe.Messaging.Support.IInterceptableChannel
+- uid: System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}.Reader
+  commentId: P:System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}.Reader
+  parent: System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}
+  definition: System.Threading.Channels.Channel`2.Reader
+  name: Reader
+  nameWithType: Channel<IMessage, IMessage>.Reader
+  fullName: System.Threading.Channels.Channel<Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage>.Reader
+  nameWithType.vb: Channel(Of IMessage, IMessage).Reader
+  fullName.vb: System.Threading.Channels.Channel(Of Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage).Reader
+- uid: System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}.Writer
+  commentId: P:System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}.Writer
+  parent: System.Threading.Channels.Channel{Steeltoe.Messaging.IMessage,Steeltoe.Messaging.IMessage}
+  definition: System.Threading.Channels.Channel`2.Writer
+  name: Writer
+  nameWithType: Channel<IMessage, IMessage>.Writer
+  fullName: System.Threading.Channels.Channel<Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage>.Writer
+  nameWithType.vb: Channel(Of IMessage, IMessage).Writer
+  fullName.vb: System.Threading.Channels.Channel(Of Steeltoe.Messaging.IMessage, Steeltoe.Messaging.IMessage).Writer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Channels.Channel`2
+  commentId: T:System.Threading.Channels.Channel`2
+  isExternal: true
+  name: Channel<TWrite, TRead>
+  nameWithType: Channel<TWrite, TRead>
+  fullName: System.Threading.Channels.Channel<TWrite, TRead>
+  nameWithType.vb: Channel(Of TWrite, TRead)
+  fullName.vb: System.Threading.Channels.Channel(Of TWrite, TRead)
+  name.vb: Channel(Of TWrite, TRead)
+  spec.csharp:
+  - uid: System.Threading.Channels.Channel`2
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TWrite
+    nameWithType: TWrite
+    fullName: TWrite
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRead
+    nameWithType: TRead
+    fullName: TRead
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Channels.Channel`2
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TWrite
+    nameWithType: TWrite
+    fullName: TWrite
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRead
+    nameWithType: TRead
+    fullName: TRead
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Channels
+  commentId: N:System.Threading.Channels
+  isExternal: true
+  name: System.Threading.Channels
+  nameWithType: System.Threading.Channels
+  fullName: System.Threading.Channels
+- uid: System.Threading.Channels.Channel`1
+  commentId: T:System.Threading.Channels.Channel`1
+  isExternal: true
+  name: Channel<T>
+  nameWithType: Channel<T>
+  fullName: System.Threading.Channels.Channel<T>
+  nameWithType.vb: Channel(Of T)
+  fullName.vb: System.Threading.Channels.Channel(Of T)
+  name.vb: Channel(Of T)
+  spec.csharp:
+  - uid: System.Threading.Channels.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Channels.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: System.Threading.Channels.Channel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: System.Threading.Channels.Channel`2.Reader
+  commentId: P:System.Threading.Channels.Channel`2.Reader
+  isExternal: true
+  name: Reader
+  nameWithType: Channel<TWrite, TRead>.Reader
+  fullName: System.Threading.Channels.Channel<TWrite, TRead>.Reader
+  nameWithType.vb: Channel(Of TWrite, TRead).Reader
+  fullName.vb: System.Threading.Channels.Channel(Of TWrite, TRead).Reader
+- uid: System.Threading.Channels.Channel`2.Writer
+  commentId: P:System.Threading.Channels.Channel`2.Writer
+  isExternal: true
+  name: Writer
+  nameWithType: Channel<TWrite, TRead>.Writer
+  fullName: System.Threading.Channels.Channel<TWrite, TRead>.Writer
+  nameWithType.vb: Channel(Of TWrite, TRead).Writer
+  fullName.vb: System.Threading.Channels.Channel(Of TWrite, TRead).Writer
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.#ctor*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.#ctor
+  name: AbstractMessageChannel
+  nameWithType: AbstractMessageChannel.AbstractMessageChannel
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.AbstractMessageChannel
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName
+  name: ServiceName
+  nameWithType: AbstractMessageChannel.ServiceName
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.ServiceName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.Logger*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.Logger
+  name: Logger
+  nameWithType: AbstractMessageChannel.Logger
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.Logger
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors
+  name: SetInterceptors
+  nameWithType: AbstractMessageChannel.SetInterceptors
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.SetInterceptors
+- uid: Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+  commentId: M:Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+  parent: Steeltoe.Messaging.Support.IInterceptableChannel
+  isExternal: true
+  name: SetInterceptors(List<IChannelInterceptor>)
+  nameWithType: IInterceptableChannel.SetInterceptors(List<IChannelInterceptor>)
+  fullName: Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors(System.Collections.Generic.List<Steeltoe.Messaging.Support.IChannelInterceptor>)
+  nameWithType.vb: IInterceptableChannel.SetInterceptors(List(Of IChannelInterceptor))
+  fullName.vb: Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors(System.Collections.Generic.List(Of Steeltoe.Messaging.Support.IChannelInterceptor))
+  name.vb: SetInterceptors(List(Of IChannelInterceptor))
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+    name: SetInterceptors
+    nameWithType: IInterceptableChannel.SetInterceptors
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors(System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor})
+    name: SetInterceptors
+    nameWithType: IInterceptableChannel.SetInterceptors
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.SetInterceptors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Messaging.Support.IChannelInterceptor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IChannelInterceptor>
+  nameWithType: List<IChannelInterceptor>
+  fullName: System.Collections.Generic.List<Steeltoe.Messaging.Support.IChannelInterceptor>
+  nameWithType.vb: List(Of IChannelInterceptor)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Messaging.Support.IChannelInterceptor)
+  name.vb: List(Of IChannelInterceptor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor
+  name: AddInterceptor
+  nameWithType: AbstractMessageChannel.AddInterceptor
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.AddInterceptor
+- uid: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Messaging.Support.IInterceptableChannel
+  name: AddInterceptor(IChannelInterceptor)
+  nameWithType: IInterceptableChannel.AddInterceptor(IChannelInterceptor)
+  fullName: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+    name: AddInterceptor
+    nameWithType: IInterceptableChannel.AddInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+    name: AddInterceptor
+    nameWithType: IInterceptableChannel.AddInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.IChannelInterceptor
+  commentId: T:Steeltoe.Messaging.Support.IChannelInterceptor
+  parent: Steeltoe.Messaging.Support
+  name: IChannelInterceptor
+  nameWithType: IChannelInterceptor
+  fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+- uid: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Messaging.Support.IInterceptableChannel
+  isExternal: true
+  name: AddInterceptor(Int32, IChannelInterceptor)
+  nameWithType: IInterceptableChannel.AddInterceptor(Int32, IChannelInterceptor)
+  fullName: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(System.Int32, Steeltoe.Messaging.Support.IChannelInterceptor)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+    name: AddInterceptor
+    nameWithType: IInterceptableChannel.AddInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor(System.Int32,Steeltoe.Messaging.Support.IChannelInterceptor)
+    name: AddInterceptor
+    nameWithType: IInterceptableChannel.AddInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.AddInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors
+  name: GetInterceptors
+  nameWithType: AbstractMessageChannel.GetInterceptors
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.GetInterceptors
+- uid: Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors
+  commentId: M:Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors
+  parent: Steeltoe.Messaging.Support.IInterceptableChannel
+  name: GetInterceptors()
+  nameWithType: IInterceptableChannel.GetInterceptors()
+  fullName: Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors
+    name: GetInterceptors
+    nameWithType: IInterceptableChannel.GetInterceptors
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors
+    name: GetInterceptors
+    nameWithType: IInterceptableChannel.GetInterceptors
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.GetInterceptors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor
+  name: RemoveInterceptor
+  nameWithType: AbstractMessageChannel.RemoveInterceptor
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.RemoveInterceptor
+- uid: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  commentId: M:Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  parent: Steeltoe.Messaging.Support.IInterceptableChannel
+  name: RemoveInterceptor(IChannelInterceptor)
+  nameWithType: IInterceptableChannel.RemoveInterceptor(IChannelInterceptor)
+  fullName: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+    name: RemoveInterceptor
+    nameWithType: IInterceptableChannel.RemoveInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(Steeltoe.Messaging.Support.IChannelInterceptor)
+    name: RemoveInterceptor
+    nameWithType: IInterceptableChannel.RemoveInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.Support.IChannelInterceptor
+    name: IChannelInterceptor
+    nameWithType: IChannelInterceptor
+    fullName: Steeltoe.Messaging.Support.IChannelInterceptor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(System.Int32)
+  commentId: M:Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(System.Int32)
+  parent: Steeltoe.Messaging.Support.IInterceptableChannel
+  isExternal: true
+  name: RemoveInterceptor(Int32)
+  nameWithType: IInterceptableChannel.RemoveInterceptor(Int32)
+  fullName: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(System.Int32)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(System.Int32)
+    name: RemoveInterceptor
+    nameWithType: IInterceptableChannel.RemoveInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor(System.Int32)
+    name: RemoveInterceptor
+    nameWithType: IInterceptableChannel.RemoveInterceptor
+    fullName: Steeltoe.Messaging.Support.IInterceptableChannel.RemoveInterceptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.Send*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.Send
+  name: Send
+  nameWithType: AbstractMessageChannel.Send
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.Send
+- uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.IMessageChannel
+  name: Send(IMessage)
+  nameWithType: IMessageChannel.Send(IMessage)
+  fullName: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  commentId: M:Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+  parent: Steeltoe.Messaging.IMessageChannel
+  isExternal: true
+  name: Send(IMessage, Int32)
+  nameWithType: IMessageChannel.Send(IMessage, Int32)
+  fullName: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage, System.Int32)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessageChannel.Send(Steeltoe.Messaging.IMessage,System.Int32)
+    name: Send
+    nameWithType: IMessageChannel.Send
+    fullName: Steeltoe.Messaging.IMessageChannel.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync
+  name: SendAsync
+  nameWithType: AbstractMessageChannel.SendAsync
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.SendAsync
+- uid: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.IMessageChannel
+  isExternal: true
+  name: SendAsync(IMessage, CancellationToken)
+  nameWithType: IMessageChannel.SendAsync(IMessage, CancellationToken)
+  fullName: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    nameWithType: IMessageChannel.SendAsync
+    fullName: Steeltoe.Messaging.IMessageChannel.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.IMessageChannel.SendAsync(Steeltoe.Messaging.IMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    nameWithType: IMessageChannel.SendAsync
+    fullName: Steeltoe.Messaging.IMessageChannel.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.ValueTask{System.Boolean}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  name: ValueTask<Boolean>
+  nameWithType: ValueTask<Boolean>
+  fullName: System.Threading.Tasks.ValueTask<System.Boolean>
+  nameWithType.vb: ValueTask(Of Boolean)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of System.Boolean)
+  name.vb: ValueTask(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: System.Threading.Tasks.ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.ToString*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.ToString
+  name: ToString
+  nameWithType: AbstractMessageChannel.ToString
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.ToString
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend
+  name: DoSend
+  nameWithType: AbstractMessageChannel.DoSend
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSend
+- uid: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal*
+  commentId: Overload:Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal
+  name: DoSendInternal
+  nameWithType: AbstractMessageChannel.DoSendInternal
+  fullName: Steeltoe.Messaging.Support.AbstractMessageChannel.DoSendInternal

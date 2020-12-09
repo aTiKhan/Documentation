@@ -1,0 +1,389 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Retry.IRetryContext
+  commentId: T:Steeltoe.Common.Retry.IRetryContext
+  id: IRetryContext
+  parent: Steeltoe.Common.Retry
+  children:
+  - Steeltoe.Common.Retry.IRetryContext.LastException
+  - Steeltoe.Common.Retry.IRetryContext.Parent
+  - Steeltoe.Common.Retry.IRetryContext.RetryCount
+  langs:
+  - csharp
+  - vb
+  name: IRetryContext
+  nameWithType: IRetryContext
+  fullName: Steeltoe.Common.Retry.IRetryContext
+  type: Interface
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryContext.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IRetryContext
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryContext.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nLow-level access to ongoing retry operation. Normally not needed by clients, but can be\nused to alter the course of the retry, e.g.force an early termination.\n"
+  example: []
+  syntax:
+    content: 'public interface IRetryContext : IAttributeAccessor'
+    content.vb: >-
+      Public Interface IRetryContext
+
+          Inherits IAttributeAccessor
+  inheritedMembers:
+  - Steeltoe.Common.Util.IAttributeAccessor.SetAttribute(System.String,System.Object)
+  - Steeltoe.Common.Util.IAttributeAccessor.GetAttribute(System.String)
+  - Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute(System.String)
+  - Steeltoe.Common.Util.IAttributeAccessor.HasAttribute(System.String)
+  - Steeltoe.Common.Util.IAttributeAccessor.AttributeNames
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Common.Retry.IRetryContext.LastException
+  commentId: P:Steeltoe.Common.Retry.IRetryContext.LastException
+  id: LastException
+  parent: Steeltoe.Common.Retry.IRetryContext
+  langs:
+  - csharp
+  - vb
+  name: LastException
+  nameWithType: IRetryContext.LastException
+  fullName: Steeltoe.Common.Retry.IRetryContext.LastException
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryContext.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LastException
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryContext.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nGets the last exception that caused the retry\n"
+  example: []
+  syntax:
+    content: Exception LastException { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: ReadOnly Property LastException As Exception
+  overload: Steeltoe.Common.Retry.IRetryContext.LastException*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Common.Retry.IRetryContext.RetryCount
+  commentId: P:Steeltoe.Common.Retry.IRetryContext.RetryCount
+  id: RetryCount
+  parent: Steeltoe.Common.Retry.IRetryContext
+  langs:
+  - csharp
+  - vb
+  name: RetryCount
+  nameWithType: IRetryContext.RetryCount
+  fullName: Steeltoe.Common.Retry.IRetryContext.RetryCount
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryContext.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RetryCount
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryContext.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nGets the number of retry attempts\n"
+  example: []
+  syntax:
+    content: int RetryCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property RetryCount As Integer
+  overload: Steeltoe.Common.Retry.IRetryContext.RetryCount*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Common.Retry.IRetryContext.Parent
+  commentId: P:Steeltoe.Common.Retry.IRetryContext.Parent
+  id: Parent
+  parent: Steeltoe.Common.Retry.IRetryContext
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: IRetryContext.Parent
+  fullName: Steeltoe.Common.Retry.IRetryContext.Parent
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Retry/IRetryContext.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Parent
+    path: ../Steeltoe/src/Common/src/Abstractions/Retry/IRetryContext.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Retry
+  summary: "\nGets the parent context if present\n"
+  example: []
+  syntax:
+    content: IRetryContext Parent { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Common.Retry.IRetryContext
+    content.vb: ReadOnly Property Parent As IRetryContext
+  overload: Steeltoe.Common.Retry.IRetryContext.Parent*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Steeltoe.Common.Retry
+  commentId: N:Steeltoe.Common.Retry
+  name: Steeltoe.Common.Retry
+  nameWithType: Steeltoe.Common.Retry
+  fullName: Steeltoe.Common.Retry
+- uid: Steeltoe.Common.Util.IAttributeAccessor.SetAttribute(System.String,System.Object)
+  commentId: M:Steeltoe.Common.Util.IAttributeAccessor.SetAttribute(System.String,System.Object)
+  parent: Steeltoe.Common.Util.IAttributeAccessor
+  isExternal: true
+  name: SetAttribute(String, Object)
+  nameWithType: IAttributeAccessor.SetAttribute(String, Object)
+  fullName: Steeltoe.Common.Util.IAttributeAccessor.SetAttribute(System.String, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.SetAttribute(System.String,System.Object)
+    name: SetAttribute
+    nameWithType: IAttributeAccessor.SetAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.SetAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.SetAttribute(System.String,System.Object)
+    name: SetAttribute
+    nameWithType: IAttributeAccessor.SetAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.SetAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Util.IAttributeAccessor.GetAttribute(System.String)
+  commentId: M:Steeltoe.Common.Util.IAttributeAccessor.GetAttribute(System.String)
+  parent: Steeltoe.Common.Util.IAttributeAccessor
+  isExternal: true
+  name: GetAttribute(String)
+  nameWithType: IAttributeAccessor.GetAttribute(String)
+  fullName: Steeltoe.Common.Util.IAttributeAccessor.GetAttribute(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.GetAttribute(System.String)
+    name: GetAttribute
+    nameWithType: IAttributeAccessor.GetAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.GetAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.GetAttribute(System.String)
+    name: GetAttribute
+    nameWithType: IAttributeAccessor.GetAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.GetAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute(System.String)
+  commentId: M:Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute(System.String)
+  parent: Steeltoe.Common.Util.IAttributeAccessor
+  isExternal: true
+  name: RemoveAttribute(String)
+  nameWithType: IAttributeAccessor.RemoveAttribute(String)
+  fullName: Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute(System.String)
+    name: RemoveAttribute
+    nameWithType: IAttributeAccessor.RemoveAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute(System.String)
+    name: RemoveAttribute
+    nameWithType: IAttributeAccessor.RemoveAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.RemoveAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Util.IAttributeAccessor.HasAttribute(System.String)
+  commentId: M:Steeltoe.Common.Util.IAttributeAccessor.HasAttribute(System.String)
+  parent: Steeltoe.Common.Util.IAttributeAccessor
+  isExternal: true
+  name: HasAttribute(String)
+  nameWithType: IAttributeAccessor.HasAttribute(String)
+  fullName: Steeltoe.Common.Util.IAttributeAccessor.HasAttribute(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.HasAttribute(System.String)
+    name: HasAttribute
+    nameWithType: IAttributeAccessor.HasAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.HasAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Util.IAttributeAccessor.HasAttribute(System.String)
+    name: HasAttribute
+    nameWithType: IAttributeAccessor.HasAttribute
+    fullName: Steeltoe.Common.Util.IAttributeAccessor.HasAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Util.IAttributeAccessor.AttributeNames
+  commentId: P:Steeltoe.Common.Util.IAttributeAccessor.AttributeNames
+  parent: Steeltoe.Common.Util.IAttributeAccessor
+  name: AttributeNames
+  nameWithType: IAttributeAccessor.AttributeNames
+  fullName: Steeltoe.Common.Util.IAttributeAccessor.AttributeNames
+- uid: Steeltoe.Common.Util.IAttributeAccessor
+  commentId: T:Steeltoe.Common.Util.IAttributeAccessor
+  parent: Steeltoe.Common.Util
+  name: IAttributeAccessor
+  nameWithType: IAttributeAccessor
+  fullName: Steeltoe.Common.Util.IAttributeAccessor
+- uid: Steeltoe.Common.Util
+  commentId: N:Steeltoe.Common.Util
+  name: Steeltoe.Common.Util
+  nameWithType: Steeltoe.Common.Util
+  fullName: Steeltoe.Common.Util
+- uid: Steeltoe.Common.Retry.IRetryContext.LastException*
+  commentId: Overload:Steeltoe.Common.Retry.IRetryContext.LastException
+  name: LastException
+  nameWithType: IRetryContext.LastException
+  fullName: Steeltoe.Common.Retry.IRetryContext.LastException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Retry.IRetryContext.RetryCount*
+  commentId: Overload:Steeltoe.Common.Retry.IRetryContext.RetryCount
+  name: RetryCount
+  nameWithType: IRetryContext.RetryCount
+  fullName: Steeltoe.Common.Retry.IRetryContext.RetryCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Common.Retry.IRetryContext.Parent*
+  commentId: Overload:Steeltoe.Common.Retry.IRetryContext.Parent
+  name: Parent
+  nameWithType: IRetryContext.Parent
+  fullName: Steeltoe.Common.Retry.IRetryContext.Parent
+- uid: Steeltoe.Common.Retry.IRetryContext
+  commentId: T:Steeltoe.Common.Retry.IRetryContext
+  parent: Steeltoe.Common.Retry
+  name: IRetryContext
+  nameWithType: IRetryContext
+  fullName: Steeltoe.Common.Retry.IRetryContext

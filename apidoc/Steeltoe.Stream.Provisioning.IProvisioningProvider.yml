@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Provisioning.IProvisioningProvider
+  commentId: T:Steeltoe.Stream.Provisioning.IProvisioningProvider
+  id: IProvisioningProvider
+  parent: Steeltoe.Stream.Provisioning
+  children:
+  - Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination(System.String,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination(System.String,Steeltoe.Stream.Config.IProducerOptions)
+  langs:
+  - csharp
+  - vb
+  name: IProvisioningProvider
+  nameWithType: IProvisioningProvider
+  fullName: Steeltoe.Stream.Provisioning.IProvisioningProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Provisioning/IProvisioningProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IProvisioningProvider
+    path: ../Steeltoe/src/Stream/src/Abstractions/Provisioning/IProvisioningProvider.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Provisioning
+  summary: "\nProvisioning SPI that allows the users to provision destinations such as queues and\ntopics. This SPI will allow the binders to be separated from any provisioning concerns\nand only focus on setting up endpoints for sending/receiving messages.\n"
+  example: []
+  syntax:
+    content: public interface IProvisioningProvider
+    content.vb: Public Interface IProvisioningProvider
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination(System.String,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination(System.String,Steeltoe.Stream.Config.IProducerOptions)
+  id: ProvisionProducerDestination(System.String,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Provisioning.IProvisioningProvider
+  langs:
+  - csharp
+  - vb
+  name: ProvisionProducerDestination(String, IProducerOptions)
+  nameWithType: IProvisioningProvider.ProvisionProducerDestination(String, IProducerOptions)
+  fullName: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination(System.String, Steeltoe.Stream.Config.IProducerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Provisioning/IProvisioningProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ProvisionProducerDestination
+    path: ../Steeltoe/src/Stream/src/Abstractions/Provisioning/IProvisioningProvider.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Provisioning
+  summary: "\nCreates middleware destination on the physical broker for the producer to send data. The implementation is middleware-specific.\n"
+  example: []
+  syntax:
+    content: IProducerDestination ProvisionProducerDestination(string name, IProducerOptions options)
+    parameters:
+    - id: name
+      type: System.String
+      description: the name of the producer destination
+    - id: options
+      type: Steeltoe.Stream.Config.IProducerOptions
+      description: the producer options
+    return:
+      type: Steeltoe.Stream.Provisioning.IProducerDestination
+      description: the provisioned destination
+    content.vb: Function ProvisionProducerDestination(name As String, options As IProducerOptions) As IProducerDestination
+  overload: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination*
+- uid: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination(System.String,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination(System.String,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  id: ProvisionConsumerDestination(System.String,System.String,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Provisioning.IProvisioningProvider
+  langs:
+  - csharp
+  - vb
+  name: ProvisionConsumerDestination(String, String, IConsumerOptions)
+  nameWithType: IProvisioningProvider.ProvisionConsumerDestination(String, String, IConsumerOptions)
+  fullName: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination(System.String, System.String, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Provisioning/IProvisioningProvider.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ProvisionConsumerDestination
+    path: ../Steeltoe/src/Stream/src/Abstractions/Provisioning/IProvisioningProvider.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Provisioning
+  summary: "\nCreates the middleware destination on the physical broker for the consumer to consume data.The implementation is middleware-specific.\n"
+  example: []
+  syntax:
+    content: IConsumerDestination ProvisionConsumerDestination(string name, string group, IConsumerOptions properties)
+    parameters:
+    - id: name
+      type: System.String
+      description: the name of the consumer destination
+    - id: group
+      type: System.String
+      description: the consumer group
+    - id: properties
+      type: Steeltoe.Stream.Config.IConsumerOptions
+      description: the consumer options
+    return:
+      type: Steeltoe.Stream.Provisioning.IConsumerDestination
+      description: the provisioned destination
+    content.vb: Function ProvisionConsumerDestination(name As String, group As String, properties As IConsumerOptions) As IConsumerDestination
+  overload: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination*
+references:
+- uid: Steeltoe.Stream.Provisioning
+  commentId: N:Steeltoe.Stream.Provisioning
+  name: Steeltoe.Stream.Provisioning
+  nameWithType: Steeltoe.Stream.Provisioning
+  fullName: Steeltoe.Stream.Provisioning
+- uid: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination*
+  commentId: Overload:Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination
+  name: ProvisionProducerDestination
+  nameWithType: IProvisioningProvider.ProvisionProducerDestination
+  fullName: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionProducerDestination
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Stream.Config.IProducerOptions
+  commentId: T:Steeltoe.Stream.Config.IProducerOptions
+  parent: Steeltoe.Stream.Config
+  name: IProducerOptions
+  nameWithType: IProducerOptions
+  fullName: Steeltoe.Stream.Config.IProducerOptions
+- uid: Steeltoe.Stream.Provisioning.IProducerDestination
+  commentId: T:Steeltoe.Stream.Provisioning.IProducerDestination
+  parent: Steeltoe.Stream.Provisioning
+  name: IProducerDestination
+  nameWithType: IProducerDestination
+  fullName: Steeltoe.Stream.Provisioning.IProducerDestination
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Config
+  commentId: N:Steeltoe.Stream.Config
+  name: Steeltoe.Stream.Config
+  nameWithType: Steeltoe.Stream.Config
+  fullName: Steeltoe.Stream.Config
+- uid: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination*
+  commentId: Overload:Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination
+  name: ProvisionConsumerDestination
+  nameWithType: IProvisioningProvider.ProvisionConsumerDestination
+  fullName: Steeltoe.Stream.Provisioning.IProvisioningProvider.ProvisionConsumerDestination
+- uid: Steeltoe.Stream.Config.IConsumerOptions
+  commentId: T:Steeltoe.Stream.Config.IConsumerOptions
+  parent: Steeltoe.Stream.Config
+  name: IConsumerOptions
+  nameWithType: IConsumerOptions
+  fullName: Steeltoe.Stream.Config.IConsumerOptions
+- uid: Steeltoe.Stream.Provisioning.IConsumerDestination
+  commentId: T:Steeltoe.Stream.Provisioning.IConsumerDestination
+  parent: Steeltoe.Stream.Provisioning
+  name: IConsumerDestination
+  nameWithType: IConsumerDestination
+  fullName: Steeltoe.Stream.Provisioning.IConsumerDestination

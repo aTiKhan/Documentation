@@ -1,0 +1,570 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions
+  commentId: T:Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions
+  id: DiscoveryWebHostBuilderExtensions
+  parent: Steeltoe.Discovery.Client
+  children:
+  - Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  - Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryWebHostBuilderExtensions
+  nameWithType: DiscoveryWebHostBuilderExtensions
+  fullName: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Discovery/src/ClientCore/DiscoveryWebHostBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DiscoveryWebHostBuilderExtensions
+    path: ../Steeltoe/src/Discovery/src/ClientCore/DiscoveryWebHostBuilderExtensions.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Discovery.ClientCore
+  namespace: Steeltoe.Discovery.Client
+  syntax:
+    content: public static class DiscoveryWebHostBuilderExtensions
+    content.vb: Public Module DiscoveryWebHostBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  id: AddDiscoveryClient(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  isExtensionMethod: true
+  parent: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscoveryClient(IWebHostBuilder)
+  nameWithType: DiscoveryWebHostBuilderExtensions.AddDiscoveryClient(IWebHostBuilder)
+  fullName: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientCore/DiscoveryWebHostBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddDiscoveryClient
+    path: ../Steeltoe/src/Discovery/src/ClientCore/DiscoveryWebHostBuilderExtensions.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Discovery.ClientCore
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nAdds service discovery to your application. This method can be used in place of configuration via your Startup class.<p></p>\nUses reflection to find discovery client packages. If no package is found, a <xref href=\"Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient\" data-throw-if-not-resolved=\"false\"></xref> will be configured\n"
+  remarks: Also configures named HttpClients &quot;DiscoveryRandom&quot; and &quot;DiscoveryRoundRobin&quot; for automatic injection
+  example: []
+  syntax:
+    content: public static IWebHostBuilder AddDiscoveryClient(this IWebHostBuilder hostBuilder)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.AspNetCore.Hosting.IWebHostBuilder
+      description: Your HostBuilder
+    return:
+      type: Microsoft.AspNetCore.Hosting.IWebHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDiscoveryClient(hostBuilder As IWebHostBuilder) As IWebHostBuilder
+  overload: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient*
+  exceptions:
+  - type: System.Reflection.AmbiguousMatchException
+    commentId: T:System.Reflection.AmbiguousMatchException
+    description: Thrown if multiple IDiscoveryClient implementations are configured
+  - type: Steeltoe.Connector.ConnectorException
+    commentId: T:Steeltoe.Connector.ConnectorException
+    description: Thrown if no service info with expected name or type are found or when multiple service infos are found and a single was expected
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  id: AddServiceDiscovery(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  isExtensionMethod: true
+  parent: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddServiceDiscovery(IWebHostBuilder, Action<DiscoveryClientBuilder>)
+  nameWithType: DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(IWebHostBuilder, Action<DiscoveryClientBuilder>)
+  fullName: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientCore/DiscoveryWebHostBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddServiceDiscovery
+    path: ../Steeltoe/src/Discovery/src/ClientCore/DiscoveryWebHostBuilderExtensions.cs
+    startLine: 41
+  assemblies:
+  - Steeltoe.Discovery.ClientCore
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nAdds service discovery to your application. This method can be used in place of configuration via your Startup class.<p></p>\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">optionsAction</code> is not provided, a <xref href=\"Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient\" data-throw-if-not-resolved=\"false\"></xref> will be configured\n"
+  remarks: Also configures named HttpClients &quot;DiscoveryRandom&quot; and &quot;DiscoveryRoundRobin&quot; for automatic injection
+  example: []
+  syntax:
+    content: public static IWebHostBuilder AddServiceDiscovery(this IWebHostBuilder hostBuilder, Action<DiscoveryClientBuilder> optionsAction)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.AspNetCore.Hosting.IWebHostBuilder
+      description: Your HostBuilder
+    - id: optionsAction
+      type: System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder}
+      description: Select the discovery client implementation
+    return:
+      type: Microsoft.AspNetCore.Hosting.IWebHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddServiceDiscovery(hostBuilder As IWebHostBuilder, optionsAction As Action(Of DiscoveryClientBuilder)) As IWebHostBuilder
+  overload: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery*
+  exceptions:
+  - type: System.Reflection.AmbiguousMatchException
+    commentId: T:System.Reflection.AmbiguousMatchException
+    description: Thrown if multiple IDiscoveryClient implementations are configured
+  - type: Steeltoe.Connector.ConnectorException
+    commentId: T:Steeltoe.Connector.ConnectorException
+    description: Thrown if no service info with expected name or type are found or when multiple service infos are found and a single was expected
+  nameWithType.vb: DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(IWebHostBuilder, Action(Of DiscoveryClientBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.Action(Of Steeltoe.Discovery.Client.DiscoveryClientBuilder))
+  name.vb: AddServiceDiscovery(IWebHostBuilder, Action(Of DiscoveryClientBuilder))
+references:
+- uid: Steeltoe.Discovery.Client
+  commentId: N:Steeltoe.Discovery.Client
+  name: Steeltoe.Discovery.Client
+  nameWithType: Steeltoe.Discovery.Client
+  fullName: Steeltoe.Discovery.Client
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient
+  commentId: T:Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient
+  isExternal: true
+- uid: System.Reflection.AmbiguousMatchException
+  commentId: T:System.Reflection.AmbiguousMatchException
+  isExternal: true
+- uid: Steeltoe.Connector.ConnectorException
+  commentId: T:Steeltoe.Connector.ConnectorException
+  name: ConnectorException
+  nameWithType: ConnectorException
+  fullName: Steeltoe.Connector.ConnectorException
+- uid: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient*
+  commentId: Overload:Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient
+  name: AddDiscoveryClient
+  nameWithType: DiscoveryWebHostBuilderExtensions.AddDiscoveryClient
+  fullName: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddDiscoveryClient
+- uid: Microsoft.AspNetCore.Hosting.IWebHostBuilder
+  commentId: T:Microsoft.AspNetCore.Hosting.IWebHostBuilder
+  parent: Microsoft.AspNetCore.Hosting
+  isExternal: true
+  name: IWebHostBuilder
+  nameWithType: IWebHostBuilder
+  fullName: Microsoft.AspNetCore.Hosting.IWebHostBuilder
+- uid: Microsoft.AspNetCore.Hosting
+  commentId: N:Microsoft.AspNetCore.Hosting
+  isExternal: true
+  name: Microsoft.AspNetCore.Hosting
+  nameWithType: Microsoft.AspNetCore.Hosting
+  fullName: Microsoft.AspNetCore.Hosting
+- uid: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery*
+  commentId: Overload:Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery
+  name: AddServiceDiscovery
+  nameWithType: DiscoveryWebHostBuilderExtensions.AddServiceDiscovery
+  fullName: Steeltoe.Discovery.Client.DiscoveryWebHostBuilderExtensions.AddServiceDiscovery
+- uid: System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder}
+  commentId: T:System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder}
+  parent: System
+  definition: System.Action`1
+  name: Action<DiscoveryClientBuilder>
+  nameWithType: Action<DiscoveryClientBuilder>
+  fullName: System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder>
+  nameWithType.vb: Action(Of DiscoveryClientBuilder)
+  fullName.vb: System.Action(Of Steeltoe.Discovery.Client.DiscoveryClientBuilder)
+  name.vb: Action(Of DiscoveryClientBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+    name: DiscoveryClientBuilder
+    nameWithType: DiscoveryClientBuilder
+    fullName: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+    name: DiscoveryClientBuilder
+    nameWithType: DiscoveryClientBuilder
+    fullName: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

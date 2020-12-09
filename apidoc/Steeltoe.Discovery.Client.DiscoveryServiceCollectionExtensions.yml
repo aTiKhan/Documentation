@@ -1,0 +1,799 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  commentId: T:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  id: DiscoveryServiceCollectionExtensions
+  parent: Steeltoe.Discovery.Client
+  children:
+  - Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration)
+  - Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration,Steeltoe.Discovery.IDiscoveryLifecycle)
+  - Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration,System.String,Steeltoe.Discovery.IDiscoveryLifecycle)
+  - Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery(IServiceCollection,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  - Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo(IConfiguration,System.String)
+  - Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo(IConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryServiceCollectionExtensions
+  nameWithType: DiscoveryServiceCollectionExtensions
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DiscoveryServiceCollectionExtensions
+    path: ../Steeltoe/src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+    startLine: 22
+  assemblies:
+  - Steeltoe.Discovery.ClientBase
+  namespace: Steeltoe.Discovery.Client
+  syntax:
+    content: public static class DiscoveryServiceCollectionExtensions
+    content.vb: Public Module DiscoveryServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration)
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration)
+  id: AddDiscoveryClient(IServiceCollection,IConfiguration)
+  isExtensionMethod: true
+  parent: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscoveryClient(IServiceCollection, IConfiguration)
+  nameWithType: DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection, IConfiguration)
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection, IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddDiscoveryClient
+    path: ../Steeltoe/src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Discovery.ClientBase
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nAdds service discovery to your application. Uses reflection to determine which clients are available and configured.\nIf no clients are available or configured, a <xref href=\"Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient\" data-throw-if-not-resolved=\"false\"></xref> will be configured\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDiscoveryClient(this IServiceCollection services, IConfiguration config = null)
+    parameters:
+    - id: services
+      type: IServiceCollection
+      description: <see cref="!:IServiceCollection"></see> to configure
+    - id: config
+      type: IConfiguration
+      description: Application configuration
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDiscoveryClient(services As IServiceCollection, config As IConfiguration = Nothing) As IServiceCollection
+  overload: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration,Steeltoe.Discovery.IDiscoveryLifecycle)
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration,Steeltoe.Discovery.IDiscoveryLifecycle)
+  id: AddDiscoveryClient(IServiceCollection,IConfiguration,Steeltoe.Discovery.IDiscoveryLifecycle)
+  isExtensionMethod: true
+  parent: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscoveryClient(IServiceCollection, IConfiguration, IDiscoveryLifecycle)
+  nameWithType: DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection, IConfiguration, IDiscoveryLifecycle)
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection, IConfiguration, Steeltoe.Discovery.IDiscoveryLifecycle)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddDiscoveryClient
+    path: ../Steeltoe/src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Discovery.ClientBase
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nAdds service discovery to your application. Uses reflection to determine which clients are available and configured.\nIf no clients are available or configured, a <xref href=\"Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient\" data-throw-if-not-resolved=\"false\"></xref> will be configured\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDiscoveryClient(this IServiceCollection services, IConfiguration config, IDiscoveryLifecycle lifecycle = null)
+    parameters:
+    - id: services
+      type: IServiceCollection
+      description: <see cref="!:IServiceCollection"></see> to configure
+    - id: config
+      type: IConfiguration
+      description: Application configuration
+    - id: lifecycle
+      type: Steeltoe.Discovery.IDiscoveryLifecycle
+      description: Add custom code for app shutdown events
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDiscoveryClient(services As IServiceCollection, config As IConfiguration, lifecycle As IDiscoveryLifecycle = Nothing) As IServiceCollection
+  overload: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration,System.String,Steeltoe.Discovery.IDiscoveryLifecycle)
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection,IConfiguration,System.String,Steeltoe.Discovery.IDiscoveryLifecycle)
+  id: AddDiscoveryClient(IServiceCollection,IConfiguration,System.String,Steeltoe.Discovery.IDiscoveryLifecycle)
+  isExtensionMethod: true
+  parent: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDiscoveryClient(IServiceCollection, IConfiguration, String, IDiscoveryLifecycle)
+  nameWithType: DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection, IConfiguration, String, IDiscoveryLifecycle)
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient(IServiceCollection, IConfiguration, System.String, Steeltoe.Discovery.IDiscoveryLifecycle)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddDiscoveryClient
+    path: ../Steeltoe/src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+    startLine: 55
+  assemblies:
+  - Steeltoe.Discovery.ClientBase
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nAdds service discovery to your application. Uses reflection to determine which clients are available and configured.\nIf no clients are available or configured, a <xref href=\"Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient\" data-throw-if-not-resolved=\"false\"></xref> will be configured\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDiscoveryClient(this IServiceCollection services, IConfiguration config, string serviceName = null, IDiscoveryLifecycle lifecycle = null)
+    parameters:
+    - id: services
+      type: IServiceCollection
+      description: <see cref="!:IServiceCollection"></see> to configure
+    - id: config
+      type: IConfiguration
+      description: Application configuration
+    - id: serviceName
+      type: System.String
+      description: Specify the name of a service binding to use
+    - id: lifecycle
+      type: Steeltoe.Discovery.IDiscoveryLifecycle
+      description: Add custom code for app shutdown events
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDiscoveryClient(services As IServiceCollection, config As IConfiguration, serviceName As String = Nothing, lifecycle As IDiscoveryLifecycle = Nothing) As IServiceCollection
+  overload: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery(IServiceCollection,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery(IServiceCollection,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  id: AddServiceDiscovery(IServiceCollection,System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder})
+  isExtensionMethod: true
+  parent: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddServiceDiscovery(IServiceCollection, Action<DiscoveryClientBuilder>)
+  nameWithType: DiscoveryServiceCollectionExtensions.AddServiceDiscovery(IServiceCollection, Action<DiscoveryClientBuilder>)
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery(IServiceCollection, System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddServiceDiscovery
+    path: ../Steeltoe/src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+    startLine: 106
+  assemblies:
+  - Steeltoe.Discovery.ClientBase
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nAdds service discovery to your application. If <code data-dev-comment-type=\"paramref\" class=\"paramref\">builderAction</code> is not provided, a <xref href=\"Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient\" data-throw-if-not-resolved=\"false\"></xref> will be configured\n"
+  remarks: Also configures named HttpClients &quot;DiscoveryRandom&quot; and &quot;DiscoveryRoundRobin&quot; for automatic injection
+  example: []
+  syntax:
+    content: public static IServiceCollection AddServiceDiscovery(this IServiceCollection serviceCollection, Action<DiscoveryClientBuilder> builderAction = null)
+    parameters:
+    - id: serviceCollection
+      type: IServiceCollection
+      description: <see cref="!:IServiceCollection"></see> to configure
+    - id: builderAction
+      type: System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder}
+      description: Provided by the desired <xref href="Steeltoe.Discovery.IDiscoveryClient" data-throw-if-not-resolved="false"></xref> implementation
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddServiceDiscovery(serviceCollection As IServiceCollection, builderAction As Action(Of DiscoveryClientBuilder) = Nothing) As IServiceCollection
+  overload: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery*
+  exceptions:
+  - type: System.Reflection.AmbiguousMatchException
+    commentId: T:System.Reflection.AmbiguousMatchException
+    description: Thrown if multiple IDiscoveryClient implementations are configured
+  - type: Steeltoe.Connector.ConnectorException
+    commentId: T:Steeltoe.Connector.ConnectorException
+    description: Thrown if no service info with expected name or type are found or when multiple service infos are found and a single was expected
+  nameWithType.vb: DiscoveryServiceCollectionExtensions.AddServiceDiscovery(IServiceCollection, Action(Of DiscoveryClientBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery(IServiceCollection, System.Action(Of Steeltoe.Discovery.Client.DiscoveryClientBuilder))
+  name.vb: AddServiceDiscovery(IServiceCollection, Action(Of DiscoveryClientBuilder))
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo(IConfiguration,System.String)
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo(IConfiguration,System.String)
+  id: GetNamedDiscoveryServiceInfo(IConfiguration,System.String)
+  parent: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetNamedDiscoveryServiceInfo(IConfiguration, String)
+  nameWithType: DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo(IConfiguration, String)
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo(IConfiguration, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetNamedDiscoveryServiceInfo
+    path: ../Steeltoe/src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+    startLine: 134
+  assemblies:
+  - Steeltoe.Discovery.ClientBase
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nRetrieve a single, named <see cref=\"!:IServiceInfo\"></see> that is expected to work with Service Discovery\n"
+  example: []
+  syntax:
+    content: public static IServiceInfo GetNamedDiscoveryServiceInfo(IConfiguration config, string serviceName)
+    parameters:
+    - id: config
+      type: IConfiguration
+      description: The <see cref="!:IConfiguration"></see> to search
+    - id: serviceName
+      type: System.String
+      description: Name of service binding to find
+    return:
+      type: IServiceInfo
+    content.vb: Public Shared Function GetNamedDiscoveryServiceInfo(config As IConfiguration, serviceName As String) As IServiceInfo
+  overload: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo*
+  exceptions:
+  - type: Steeltoe.Connector.ConnectorException
+    commentId: T:Steeltoe.Connector.ConnectorException
+    description: Thrown if no service info with expected name or type are found
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo(IConfiguration)
+  commentId: M:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo(IConfiguration)
+  id: GetSingletonDiscoveryServiceInfo(IConfiguration)
+  parent: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSingletonDiscoveryServiceInfo(IConfiguration)
+  nameWithType: DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo(IConfiguration)
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo(IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetSingletonDiscoveryServiceInfo
+    path: ../Steeltoe/src/Discovery/src/ClientBase/DiscoveryServiceCollectionExtensions.cs
+    startLine: 155
+  assemblies:
+  - Steeltoe.Discovery.ClientBase
+  namespace: Steeltoe.Discovery.Client
+  summary: "\nRetrieve a single <see cref=\"!:IServiceInfo\"></see> that is expected to work with Service Discovery\n"
+  example: []
+  syntax:
+    content: public static IServiceInfo GetSingletonDiscoveryServiceInfo(IConfiguration config)
+    parameters:
+    - id: config
+      type: IConfiguration
+      description: The <see cref="!:IConfiguration"></see> to search
+    return:
+      type: IServiceInfo
+    content.vb: Public Shared Function GetSingletonDiscoveryServiceInfo(config As IConfiguration) As IServiceInfo
+  overload: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo*
+  exceptions:
+  - type: Steeltoe.Connector.ConnectorException
+    commentId: T:Steeltoe.Connector.ConnectorException
+    description: Thrown if multiple service infos are found
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Steeltoe.Discovery.Client
+  commentId: N:Steeltoe.Discovery.Client
+  name: Steeltoe.Discovery.Client
+  nameWithType: Steeltoe.Discovery.Client
+  fullName: Steeltoe.Discovery.Client
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient
+  commentId: T:Steeltoe.Discovery.Client.SimpleClients.NoOpDiscoveryClient
+  isExternal: true
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient*
+  commentId: Overload:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient
+  name: AddDiscoveryClient
+  nameWithType: DiscoveryServiceCollectionExtensions.AddDiscoveryClient
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddDiscoveryClient
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Steeltoe.Discovery.IDiscoveryLifecycle
+  commentId: T:Steeltoe.Discovery.IDiscoveryLifecycle
+  parent: Steeltoe.Discovery
+  name: IDiscoveryLifecycle
+  nameWithType: IDiscoveryLifecycle
+  fullName: Steeltoe.Discovery.IDiscoveryLifecycle
+- uid: Steeltoe.Discovery
+  commentId: N:Steeltoe.Discovery
+  name: Steeltoe.Discovery
+  nameWithType: Steeltoe.Discovery
+  fullName: Steeltoe.Discovery
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Discovery.IDiscoveryClient
+  commentId: T:Steeltoe.Discovery.IDiscoveryClient
+  parent: Steeltoe.Discovery
+  name: IDiscoveryClient
+  nameWithType: IDiscoveryClient
+  fullName: Steeltoe.Discovery.IDiscoveryClient
+- uid: System.Reflection.AmbiguousMatchException
+  commentId: T:System.Reflection.AmbiguousMatchException
+  isExternal: true
+- uid: Steeltoe.Connector.ConnectorException
+  commentId: T:Steeltoe.Connector.ConnectorException
+  name: ConnectorException
+  nameWithType: ConnectorException
+  fullName: Steeltoe.Connector.ConnectorException
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery*
+  commentId: Overload:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery
+  name: AddServiceDiscovery
+  nameWithType: DiscoveryServiceCollectionExtensions.AddServiceDiscovery
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.AddServiceDiscovery
+- uid: System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder}
+  commentId: T:System.Action{Steeltoe.Discovery.Client.DiscoveryClientBuilder}
+  parent: System
+  definition: System.Action`1
+  name: Action<DiscoveryClientBuilder>
+  nameWithType: Action<DiscoveryClientBuilder>
+  fullName: System.Action<Steeltoe.Discovery.Client.DiscoveryClientBuilder>
+  nameWithType.vb: Action(Of DiscoveryClientBuilder)
+  fullName.vb: System.Action(Of Steeltoe.Discovery.Client.DiscoveryClientBuilder)
+  name.vb: Action(Of DiscoveryClientBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+    name: DiscoveryClientBuilder
+    nameWithType: DiscoveryClientBuilder
+    fullName: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+    name: DiscoveryClientBuilder
+    nameWithType: DiscoveryClientBuilder
+    fullName: Steeltoe.Discovery.Client.DiscoveryClientBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo*
+  commentId: Overload:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo
+  name: GetNamedDiscoveryServiceInfo
+  nameWithType: DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetNamedDiscoveryServiceInfo
+- uid: IServiceInfo
+  isExternal: true
+  name: IServiceInfo
+  nameWithType: IServiceInfo
+  fullName: IServiceInfo
+- uid: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo*
+  commentId: Overload:Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo
+  name: GetSingletonDiscoveryServiceInfo
+  nameWithType: DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo
+  fullName: Steeltoe.Discovery.Client.DiscoveryServiceCollectionExtensions.GetSingletonDiscoveryServiceInfo

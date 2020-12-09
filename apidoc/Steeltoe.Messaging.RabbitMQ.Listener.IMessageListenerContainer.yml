@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  id: IMessageListenerContainer
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize
+  - Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad
+  - Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener(Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener)
+  langs:
+  - csharp
+  - vb
+  name: IMessageListenerContainer
+  nameWithType: IMessageListenerContainer
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IMessageListenerContainer
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: 'public interface IMessageListenerContainer : ISmartLifecycle, ILifecycle, IPhased, IDisposable, IServiceNameAware'
+    content.vb: >-
+      Public Interface IMessageListenerContainer
+
+          Inherits ISmartLifecycle, IDisposable, IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+  - Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  - Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  - Steeltoe.Common.Lifecycle.IPhased.Phase
+  - System.IDisposable.Dispose
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener(Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener(Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener)
+  id: SetupMessageListener(Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  langs:
+  - csharp
+  - vb
+  name: SetupMessageListener(IMessageListener)
+  nameWithType: IMessageListenerContainer.SetupMessageListener(IMessageListener)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener(Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetupMessageListener
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  summary: "\nSetup the message listener to use.\n"
+  example: []
+  syntax:
+    content: void SetupMessageListener(IMessageListener messageListener)
+    parameters:
+    - id: messageListener
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+      description: the message listener
+    content.vb: Sub SetupMessageListener(messageListener As IMessageListener)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad
+  id: LazyLoad
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  langs:
+  - csharp
+  - vb
+  name: LazyLoad()
+  nameWithType: IMessageListenerContainer.LazyLoad()
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: LazyLoad
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+    startLine: 24
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  summary: "\nDo not check for missing or mismatched queues during startup. Used for lazily\nloaded message listener containers to avoid a deadlock when starting such\ncontainers. Applications lazily loading containers should verify the queue\nconfiguration before loading the container bean.\n"
+  example: []
+  syntax:
+    content: void LazyLoad()
+    content.vb: Sub LazyLoad
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize
+  id: Initialize
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: IMessageListenerContainer.Initialize()
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IMessageListenerContainer.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: void Initialize()
+    content.vb: Sub Initialize
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize*
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Listener
+  name: Steeltoe.Messaging.RabbitMQ.Listener
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Listener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener
+- uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+  commentId: P:Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+  parent: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  name: IsAutoStartup
+  nameWithType: ISmartLifecycle.IsAutoStartup
+  fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+- uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  commentId: M:Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  parent: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  isExternal: true
+  name: Stop(Action)
+  nameWithType: ISmartLifecycle.Stop(Action)
+  fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+    name: Stop
+    nameWithType: ISmartLifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+    name: Stop
+    nameWithType: ISmartLifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Start
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Start()
+  nameWithType: ILifecycle.Start()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Stop()
+  nameWithType: ILifecycle.Stop()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  commentId: P:Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: IsRunning
+  nameWithType: ILifecycle.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+- uid: Steeltoe.Common.Lifecycle.IPhased.Phase
+  commentId: P:Steeltoe.Common.Lifecycle.IPhased.Phase
+  parent: Steeltoe.Common.Lifecycle.IPhased
+  name: Phase
+  nameWithType: IPhased.Phase
+  fullName: Steeltoe.Common.Lifecycle.IPhased.Phase
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ISmartLifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ISmartLifecycle
+  nameWithType: ISmartLifecycle
+  fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle
+- uid: Steeltoe.Common.Lifecycle.ILifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycle
+  nameWithType: ILifecycle
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle
+- uid: Steeltoe.Common.Lifecycle.IPhased
+  commentId: T:Steeltoe.Common.Lifecycle.IPhased
+  parent: Steeltoe.Common.Lifecycle
+  name: IPhased
+  nameWithType: IPhased
+  fullName: Steeltoe.Common.Lifecycle.IPhased
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener
+  name: SetupMessageListener
+  nameWithType: IMessageListenerContainer.SetupMessageListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.SetupMessageListener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IMessageListener
+  nameWithType: IMessageListener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListener
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad
+  name: LazyLoad
+  nameWithType: IMessageListenerContainer.LazyLoad
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.LazyLoad
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize
+  name: Initialize
+  nameWithType: IMessageListenerContainer.Initialize
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer.Initialize

@@ -1,0 +1,944 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  commentId: T:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  id: EventDrivenConsumerEndpoint
+  parent: Steeltoe.Integration.Endpoint
+  children:
+  - Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.ISubscribableChannel,Steeltoe.Messaging.IMessageHandler)
+  - Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart
+  - Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop
+  - Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler
+  - Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel
+  - Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel
+  langs:
+  - csharp
+  - vb
+  name: EventDrivenConsumerEndpoint
+  nameWithType: EventDrivenConsumerEndpoint
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  type: Class
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: EventDrivenConsumerEndpoint
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: 'public class EventDrivenConsumerEndpoint : AbstractEndpoint, ISmartLifecycle, ILifecycle, IPhased, IServiceNameAware'
+    content.vb: >-
+      Public Class EventDrivenConsumerEndpoint
+
+          Inherits AbstractEndpoint
+
+          Implements ISmartLifecycle, ILifecycle, IPhased, IServiceNameAware
+  inheritance:
+  - System.Object
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint
+  implements:
+  - Steeltoe.Common.Lifecycle.ISmartLifecycle
+  - Steeltoe.Common.Lifecycle.ILifecycle
+  - Steeltoe.Common.Lifecycle.IPhased
+  - Steeltoe.Common.Services.IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.IntegrationServices
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.ApplicationContext
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentType
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.ServiceName
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentName
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.IsAutoStartup
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.IsRunning
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.Phase
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.Start
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop(System.Action)
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+  - Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.ISubscribableChannel,Steeltoe.Messaging.IMessageHandler)
+  commentId: M:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.ISubscribableChannel,Steeltoe.Messaging.IMessageHandler)
+  id: '#ctor(Steeltoe.Common.Contexts.IApplicationContext,Steeltoe.Messaging.ISubscribableChannel,Steeltoe.Messaging.IMessageHandler)'
+  parent: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  langs:
+  - csharp
+  - vb
+  name: EventDrivenConsumerEndpoint(IApplicationContext, ISubscribableChannel, IMessageHandler)
+  nameWithType: EventDrivenConsumerEndpoint.EventDrivenConsumerEndpoint(IApplicationContext, ISubscribableChannel, IMessageHandler)
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.EventDrivenConsumerEndpoint(Steeltoe.Common.Contexts.IApplicationContext, Steeltoe.Messaging.ISubscribableChannel, Steeltoe.Messaging.IMessageHandler)
+  type: Constructor
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: public EventDrivenConsumerEndpoint(IApplicationContext context, ISubscribableChannel inputChannel, IMessageHandler handler)
+    parameters:
+    - id: context
+      type: Steeltoe.Common.Contexts.IApplicationContext
+    - id: inputChannel
+      type: Steeltoe.Messaging.ISubscribableChannel
+    - id: handler
+      type: Steeltoe.Messaging.IMessageHandler
+    content.vb: Public Sub New(context As IApplicationContext, inputChannel As ISubscribableChannel, handler As IMessageHandler)
+  overload: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel
+  commentId: P:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel
+  id: InputChannel
+  parent: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  langs:
+  - csharp
+  - vb
+  name: InputChannel
+  nameWithType: EventDrivenConsumerEndpoint.InputChannel
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: InputChannel
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: public virtual IMessageChannel InputChannel { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.IMessageChannel
+    content.vb: Public Overridable ReadOnly Property InputChannel As IMessageChannel
+  overload: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler
+  commentId: P:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler
+  id: Handler
+  parent: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Handler
+  nameWithType: EventDrivenConsumerEndpoint.Handler
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Handler
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: public virtual IMessageHandler Handler { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.IMessageHandler
+    content.vb: Public Overridable ReadOnly Property Handler As IMessageHandler
+  overload: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel
+  commentId: P:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel
+  id: OutputChannel
+  parent: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  langs:
+  - csharp
+  - vb
+  name: OutputChannel
+  nameWithType: EventDrivenConsumerEndpoint.OutputChannel
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel
+  type: Property
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: OutputChannel
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: public virtual IMessageChannel OutputChannel { get; }
+    parameters: []
+    return:
+      type: Steeltoe.Messaging.IMessageChannel
+    content.vb: Public Overridable ReadOnly Property OutputChannel As IMessageChannel
+  overload: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart
+  commentId: M:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart
+  id: DoStart
+  parent: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  langs:
+  - csharp
+  - vb
+  name: DoStart()
+  nameWithType: EventDrivenConsumerEndpoint.DoStart()
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoStart
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+    startLine: 49
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: protected override Task DoStart()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overrides Function DoStart As Task
+  overridden: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart
+  overload: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop
+  commentId: M:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop
+  id: DoStop
+  parent: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint
+  langs:
+  - csharp
+  - vb
+  name: DoStop()
+  nameWithType: EventDrivenConsumerEndpoint.DoStop()
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop()
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: DoStop
+    path: ../Steeltoe/src/Integration/src/IntegrationBase/Endpoint/EventDrivenConsumerEndpoint.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.Integration.IntegrationBase
+  namespace: Steeltoe.Integration.Endpoint
+  syntax:
+    content: protected override Task DoStop()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overrides Function DoStop As Task
+  overridden: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+  overload: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Integration.Endpoint
+  commentId: N:Steeltoe.Integration.Endpoint
+  name: Steeltoe.Integration.Endpoint
+  nameWithType: Steeltoe.Integration.Endpoint
+  fullName: Steeltoe.Integration.Endpoint
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  commentId: T:Steeltoe.Integration.Endpoint.AbstractEndpoint
+  parent: Steeltoe.Integration.Endpoint
+  name: AbstractEndpoint
+  nameWithType: AbstractEndpoint
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint
+- uid: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ISmartLifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ISmartLifecycle
+  nameWithType: ISmartLifecycle
+  fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle
+- uid: Steeltoe.Common.Lifecycle.ILifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycle
+  nameWithType: ILifecycle
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle
+- uid: Steeltoe.Common.Lifecycle.IPhased
+  commentId: T:Steeltoe.Common.Lifecycle.IPhased
+  parent: Steeltoe.Common.Lifecycle
+  name: IPhased
+  nameWithType: IPhased
+  fullName: Steeltoe.Common.Lifecycle.IPhased
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.IntegrationServices
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.IntegrationServices
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: IntegrationServices
+  nameWithType: AbstractEndpoint.IntegrationServices
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.IntegrationServices
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.ApplicationContext
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.ApplicationContext
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: ApplicationContext
+  nameWithType: AbstractEndpoint.ApplicationContext
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.ApplicationContext
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentType
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentType
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: ComponentType
+  nameWithType: AbstractEndpoint.ComponentType
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentType
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.ServiceName
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.ServiceName
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: ServiceName
+  nameWithType: AbstractEndpoint.ServiceName
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.ServiceName
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentName
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentName
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: ComponentName
+  nameWithType: AbstractEndpoint.ComponentName
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.ComponentName
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.IsAutoStartup
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.IsAutoStartup
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: IsAutoStartup
+  nameWithType: AbstractEndpoint.IsAutoStartup
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.IsAutoStartup
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.IsRunning
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.IsRunning
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: IsRunning
+  nameWithType: AbstractEndpoint.IsRunning
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.IsRunning
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Phase
+  commentId: P:Steeltoe.Integration.Endpoint.AbstractEndpoint.Phase
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: Phase
+  nameWithType: AbstractEndpoint.Phase
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Phase
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Start
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractEndpoint.Start
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: Start()
+  nameWithType: AbstractEndpoint.Start()
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Start()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Start
+    name: Start
+    nameWithType: AbstractEndpoint.Start
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Start
+    name: Start
+    nameWithType: AbstractEndpoint.Start
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop(System.Action)
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop(System.Action)
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  isExternal: true
+  name: Stop(Action)
+  nameWithType: AbstractEndpoint.Stop(Action)
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop(System.Action)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop(System.Action)
+    name: Stop
+    nameWithType: AbstractEndpoint.Stop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop(System.Action)
+    name: Stop
+    nameWithType: AbstractEndpoint.Stop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: Stop()
+  nameWithType: AbstractEndpoint.Stop()
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+    name: Stop
+    nameWithType: AbstractEndpoint.Stop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+    name: Stop
+    nameWithType: AbstractEndpoint.Stop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop(System.Action)
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop(System.Action)
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  isExternal: true
+  name: DoStop(Action)
+  nameWithType: AbstractEndpoint.DoStop(Action)
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop(System.Action)
+  spec.csharp:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop(System.Action)
+    name: DoStop
+    nameWithType: AbstractEndpoint.DoStop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop(System.Action)
+    name: DoStop
+    nameWithType: AbstractEndpoint.DoStop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.#ctor*
+  commentId: Overload:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.#ctor
+  name: EventDrivenConsumerEndpoint
+  nameWithType: EventDrivenConsumerEndpoint.EventDrivenConsumerEndpoint
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.EventDrivenConsumerEndpoint
+- uid: Steeltoe.Common.Contexts.IApplicationContext
+  commentId: T:Steeltoe.Common.Contexts.IApplicationContext
+  parent: Steeltoe.Common.Contexts
+  name: IApplicationContext
+  nameWithType: IApplicationContext
+  fullName: Steeltoe.Common.Contexts.IApplicationContext
+- uid: Steeltoe.Messaging.ISubscribableChannel
+  commentId: T:Steeltoe.Messaging.ISubscribableChannel
+  parent: Steeltoe.Messaging
+  name: ISubscribableChannel
+  nameWithType: ISubscribableChannel
+  fullName: Steeltoe.Messaging.ISubscribableChannel
+- uid: Steeltoe.Messaging.IMessageHandler
+  commentId: T:Steeltoe.Messaging.IMessageHandler
+  parent: Steeltoe.Messaging
+  name: IMessageHandler
+  nameWithType: IMessageHandler
+  fullName: Steeltoe.Messaging.IMessageHandler
+- uid: Steeltoe.Common.Contexts
+  commentId: N:Steeltoe.Common.Contexts
+  name: Steeltoe.Common.Contexts
+  nameWithType: Steeltoe.Common.Contexts
+  fullName: Steeltoe.Common.Contexts
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel*
+  commentId: Overload:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel
+  name: InputChannel
+  nameWithType: EventDrivenConsumerEndpoint.InputChannel
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.InputChannel
+- uid: Steeltoe.Messaging.IMessageChannel
+  commentId: T:Steeltoe.Messaging.IMessageChannel
+  parent: Steeltoe.Messaging
+  name: IMessageChannel
+  nameWithType: IMessageChannel
+  fullName: Steeltoe.Messaging.IMessageChannel
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler*
+  commentId: Overload:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler
+  name: Handler
+  nameWithType: EventDrivenConsumerEndpoint.Handler
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.Handler
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel*
+  commentId: Overload:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel
+  name: OutputChannel
+  nameWithType: EventDrivenConsumerEndpoint.OutputChannel
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.OutputChannel
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: DoStart()
+  nameWithType: AbstractEndpoint.DoStart()
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart
+    name: DoStart
+    nameWithType: AbstractEndpoint.DoStart
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart
+    name: DoStart
+    nameWithType: AbstractEndpoint.DoStart
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart*
+  commentId: Overload:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart
+  name: DoStart
+  nameWithType: EventDrivenConsumerEndpoint.DoStart
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStart
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+  commentId: M:Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+  parent: Steeltoe.Integration.Endpoint.AbstractEndpoint
+  name: DoStop()
+  nameWithType: AbstractEndpoint.DoStop()
+  fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop()
+  spec.csharp:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+    name: DoStop
+    nameWithType: AbstractEndpoint.DoStop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+    name: DoStop
+    nameWithType: AbstractEndpoint.DoStop
+    fullName: Steeltoe.Integration.Endpoint.AbstractEndpoint.DoStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop*
+  commentId: Overload:Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop
+  name: DoStop
+  nameWithType: EventDrivenConsumerEndpoint.DoStop
+  fullName: Steeltoe.Integration.Endpoint.EventDrivenConsumerEndpoint.DoStop

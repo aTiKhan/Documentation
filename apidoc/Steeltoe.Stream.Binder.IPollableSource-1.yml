@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.IPollableSource`1
+  commentId: T:Steeltoe.Stream.Binder.IPollableSource`1
+  id: IPollableSource`1
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+  - Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+  langs:
+  - csharp
+  - vb
+  name: IPollableSource<H>
+  nameWithType: IPollableSource<H>
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>
+  type: Interface
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IPollableSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IPollableSource
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IPollableSource.cs
+    startLine: 35
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nAn abstraction which defines a mechanism to poll a consumer\n"
+  example: []
+  syntax:
+    content: 'public interface IPollableSource<in H> : IPollableSource'
+    typeParameters:
+    - id: H
+      description: the handler type
+    content.vb: >-
+      Public Interface IPollableSource(Of In H)
+
+          Inherits IPollableSource
+  inheritedMembers:
+  - Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object)
+  - Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object,System.Type)
+  nameWithType.vb: IPollableSource(Of H)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H)
+  name.vb: IPollableSource(Of H)
+- uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0)
+  id: Poll(`0)
+  parent: Steeltoe.Stream.Binder.IPollableSource`1
+  langs:
+  - csharp
+  - vb
+  name: Poll(H)
+  nameWithType: IPollableSource<H>.Poll(H)
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>.Poll(H)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IPollableSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Poll
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IPollableSource.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nPoll the consumer\n"
+  example: []
+  syntax:
+    content: bool Poll(H handler)
+    parameters:
+    - id: handler
+      type: '{H}'
+      description: the handler to process message
+    return:
+      type: System.Boolean
+      description: true if a message was handled
+    content.vb: Function Poll(handler As H) As Boolean
+  overload: Steeltoe.Stream.Binder.IPollableSource`1.Poll*
+  nameWithType.vb: IPollableSource(Of H).Poll(H)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H).Poll(H)
+- uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource`1.Poll(`0,System.Type)
+  id: Poll(`0,System.Type)
+  parent: Steeltoe.Stream.Binder.IPollableSource`1
+  langs:
+  - csharp
+  - vb
+  name: Poll(H, Type)
+  nameWithType: IPollableSource<H>.Poll(H, Type)
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>.Poll(H, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IPollableSource.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Poll
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IPollableSource.cs
+    startLine: 52
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nPoll the consumer and convert the payload to the specified type. Throw a\nRequeueCurrentMessageException to force the current message to be requeued\nin the broker(after retries are exhausted, if configured).\n"
+  example: []
+  syntax:
+    content: bool Poll(H handler, Type type)
+    parameters:
+    - id: handler
+      type: '{H}'
+      description: the handler
+    - id: type
+      type: System.Type
+      description: the type of the payload
+    return:
+      type: System.Boolean
+      description: true if a message was handled
+    content.vb: Function Poll(handler As H, type As Type) As Boolean
+  overload: Steeltoe.Stream.Binder.IPollableSource`1.Poll*
+  nameWithType.vb: IPollableSource(Of H).Poll(H, Type)
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H).Poll(H, System.Type)
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object)
+  parent: Steeltoe.Stream.Binder.IPollableSource
+  isExternal: true
+  name: Poll(Object)
+  nameWithType: IPollableSource.Poll(Object)
+  fullName: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object)
+    name: Poll
+    nameWithType: IPollableSource.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object)
+    name: Poll
+    nameWithType: IPollableSource.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object,System.Type)
+  commentId: M:Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object,System.Type)
+  parent: Steeltoe.Stream.Binder.IPollableSource
+  isExternal: true
+  name: Poll(Object, Type)
+  nameWithType: IPollableSource.Poll(Object, Type)
+  fullName: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object,System.Type)
+    name: Poll
+    nameWithType: IPollableSource.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binder.IPollableSource.Poll(System.Object,System.Type)
+    name: Poll
+    nameWithType: IPollableSource.Poll
+    fullName: Steeltoe.Stream.Binder.IPollableSource.Poll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binder.IPollableSource
+  commentId: T:Steeltoe.Stream.Binder.IPollableSource
+  parent: Steeltoe.Stream.Binder
+  name: IPollableSource
+  nameWithType: IPollableSource
+  fullName: Steeltoe.Stream.Binder.IPollableSource
+- uid: Steeltoe.Stream.Binder.IPollableSource`1.Poll*
+  commentId: Overload:Steeltoe.Stream.Binder.IPollableSource`1.Poll
+  name: Poll
+  nameWithType: IPollableSource<H>.Poll
+  fullName: Steeltoe.Stream.Binder.IPollableSource<H>.Poll
+  nameWithType.vb: IPollableSource(Of H).Poll
+  fullName.vb: Steeltoe.Stream.Binder.IPollableSource(Of H).Poll
+- uid: '{H}'
+  commentId: '!:H'
+  definition: H
+  name: H
+  nameWithType: H
+  fullName: H
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: H
+  name: H
+  nameWithType: H
+  fullName: H
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

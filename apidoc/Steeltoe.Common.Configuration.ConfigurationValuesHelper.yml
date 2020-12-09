@@ -1,0 +1,759 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  commentId: T:Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  id: ConfigurationValuesHelper
+  parent: Steeltoe.Common.Configuration
+  children:
+  - Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean(System.String,IConfiguration,IConfiguration,System.Boolean)
+  - Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble(System.String,IConfiguration,IConfiguration,System.Double)
+  - Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt(System.String,IConfiguration,IConfiguration,System.Int32)
+  - Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting(IConfiguration,System.String,System.String[])
+  - Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String,IConfiguration,IConfiguration,IConfiguration,System.String)
+  - Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String,IConfiguration,System.String,System.String[])
+  - Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString(System.String,IConfiguration,IConfiguration,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationValuesHelper
+  nameWithType: ConfigurationValuesHelper
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConfigurationValuesHelper
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  syntax:
+    content: public static class ConfigurationValuesHelper
+    content.vb: Public Module ConfigurationValuesHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String,IConfiguration,IConfiguration,IConfiguration,System.String)
+  commentId: M:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String,IConfiguration,IConfiguration,IConfiguration,System.String)
+  id: GetSetting(System.String,IConfiguration,IConfiguration,IConfiguration,System.String)
+  parent: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSetting(String, IConfiguration, IConfiguration, IConfiguration, String)
+  nameWithType: ConfigurationValuesHelper.GetSetting(String, IConfiguration, IConfiguration, IConfiguration, String)
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String, IConfiguration, IConfiguration, IConfiguration, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetSetting
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  syntax:
+    content: public static string GetSetting(string key, IConfiguration primary, IConfiguration secondary, IConfiguration resolve, string def)
+    parameters:
+    - id: key
+      type: System.String
+    - id: primary
+      type: IConfiguration
+    - id: secondary
+      type: IConfiguration
+    - id: resolve
+      type: IConfiguration
+    - id: def
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSetting(key As String, primary As IConfiguration, secondary As IConfiguration, resolve As IConfiguration, def As String) As String
+  overload: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String,IConfiguration,System.String,System.String[])
+  commentId: M:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String,IConfiguration,System.String,System.String[])
+  id: GetSetting(System.String,IConfiguration,System.String,System.String[])
+  parent: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSetting(String, IConfiguration, String, String[])
+  nameWithType: ConfigurationValuesHelper.GetSetting(String, IConfiguration, String, String[])
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String, IConfiguration, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetSetting
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 39
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  summary: "\nGet setting from config searching the given configPrefix keys in order. Returns the first element with key.\n"
+  example: []
+  syntax:
+    content: public static string GetSetting(string key, IConfiguration config, string defaultValue, params string[] configPrefixes)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the element to return.
+    - id: config
+      type: IConfiguration
+      description: IConfiguration to search through.
+    - id: defaultValue
+      type: System.String
+      description: The default Value if no configuration is found.
+    - id: configPrefixes
+      type: System.String[]
+      description: The prefixes to search for in given order.
+    return:
+      type: System.String
+      description: Config value
+    content.vb: Public Shared Function GetSetting(key As String, config As IConfiguration, defaultValue As String, ParamArray configPrefixes As String()) As String
+  overload: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting*
+  nameWithType.vb: ConfigurationValuesHelper.GetSetting(String, IConfiguration, String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting(System.String, IConfiguration, System.String, System.String())
+  name.vb: GetSetting(String, IConfiguration, String, String())
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting(IConfiguration,System.String,System.String[])
+  commentId: M:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting(IConfiguration,System.String,System.String[])
+  id: GetPreferredSetting(IConfiguration,System.String,System.String[])
+  parent: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPreferredSetting(IConfiguration, String, String[])
+  nameWithType: ConfigurationValuesHelper.GetPreferredSetting(IConfiguration, String, String[])
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting(IConfiguration, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetPreferredSetting
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  summary: "\nGet a setting from config by searching the given keys in order. Returns the first match.\n"
+  example: []
+  syntax:
+    content: public static string GetPreferredSetting(IConfiguration config, string defaultValue, params string[] configKeys)
+    parameters:
+    - id: config
+      type: IConfiguration
+      description: IConfiguration to search through.
+    - id: defaultValue
+      type: System.String
+      description: The default Value if no configuration is found.
+    - id: configKeys
+      type: System.String[]
+      description: The fully-qualified keys to search for in given order.
+    return:
+      type: System.String
+      description: Value from config or default (if not found)
+    content.vb: Public Shared Function GetPreferredSetting(config As IConfiguration, defaultValue As String, ParamArray configKeys As String()) As String
+  overload: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting*
+  nameWithType.vb: ConfigurationValuesHelper.GetPreferredSetting(IConfiguration, String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting(IConfiguration, System.String, System.String())
+  name.vb: GetPreferredSetting(IConfiguration, String, String())
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt(System.String,IConfiguration,IConfiguration,System.Int32)
+  commentId: M:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt(System.String,IConfiguration,IConfiguration,System.Int32)
+  id: GetInt(System.String,IConfiguration,IConfiguration,System.Int32)
+  parent: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  langs:
+  - csharp
+  - vb
+  name: GetInt(String, IConfiguration, IConfiguration, Int32)
+  nameWithType: ConfigurationValuesHelper.GetInt(String, IConfiguration, IConfiguration, Int32)
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt(System.String, IConfiguration, IConfiguration, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetInt
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 75
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  syntax:
+    content: public static int GetInt(string key, IConfiguration config, IConfiguration resolve, int def)
+    parameters:
+    - id: key
+      type: System.String
+    - id: config
+      type: IConfiguration
+    - id: resolve
+      type: IConfiguration
+    - id: def
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetInt(key As String, config As IConfiguration, resolve As IConfiguration, def As Integer) As Integer
+  overload: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble(System.String,IConfiguration,IConfiguration,System.Double)
+  commentId: M:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble(System.String,IConfiguration,IConfiguration,System.Double)
+  id: GetDouble(System.String,IConfiguration,IConfiguration,System.Double)
+  parent: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  langs:
+  - csharp
+  - vb
+  name: GetDouble(String, IConfiguration, IConfiguration, Double)
+  nameWithType: ConfigurationValuesHelper.GetDouble(String, IConfiguration, IConfiguration, Double)
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble(System.String, IConfiguration, IConfiguration, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetDouble
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 86
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  syntax:
+    content: public static double GetDouble(string key, IConfiguration config, IConfiguration resolve, double def)
+    parameters:
+    - id: key
+      type: System.String
+    - id: config
+      type: IConfiguration
+    - id: resolve
+      type: IConfiguration
+    - id: def
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function GetDouble(key As String, config As IConfiguration, resolve As IConfiguration, def As Double) As Double
+  overload: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean(System.String,IConfiguration,IConfiguration,System.Boolean)
+  commentId: M:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean(System.String,IConfiguration,IConfiguration,System.Boolean)
+  id: GetBoolean(System.String,IConfiguration,IConfiguration,System.Boolean)
+  parent: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  langs:
+  - csharp
+  - vb
+  name: GetBoolean(String, IConfiguration, IConfiguration, Boolean)
+  nameWithType: ConfigurationValuesHelper.GetBoolean(String, IConfiguration, IConfiguration, Boolean)
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean(System.String, IConfiguration, IConfiguration, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetBoolean
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 97
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  syntax:
+    content: public static bool GetBoolean(string key, IConfiguration config, IConfiguration resolve, bool def)
+    parameters:
+    - id: key
+      type: System.String
+    - id: config
+      type: IConfiguration
+    - id: resolve
+      type: IConfiguration
+    - id: def
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function GetBoolean(key As String, config As IConfiguration, resolve As IConfiguration, def As Boolean) As Boolean
+  overload: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString(System.String,IConfiguration,IConfiguration,System.String)
+  commentId: M:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString(System.String,IConfiguration,IConfiguration,System.String)
+  id: GetString(System.String,IConfiguration,IConfiguration,System.String)
+  parent: Steeltoe.Common.Configuration.ConfigurationValuesHelper
+  langs:
+  - csharp
+  - vb
+  name: GetString(String, IConfiguration, IConfiguration, String)
+  nameWithType: ConfigurationValuesHelper.GetString(String, IConfiguration, IConfiguration, String)
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString(System.String, IConfiguration, IConfiguration, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetString
+    path: ../Steeltoe/src/Common/src/Common/Configuration/ConfigurationValuesHelper.cs
+    startLine: 108
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Configuration
+  syntax:
+    content: public static string GetString(string key, IConfiguration config, IConfiguration resolve, string def)
+    parameters:
+    - id: key
+      type: System.String
+    - id: config
+      type: IConfiguration
+    - id: resolve
+      type: IConfiguration
+    - id: def
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetString(key As String, config As IConfiguration, resolve As IConfiguration, def As String) As String
+  overload: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Steeltoe.Common.Configuration
+  commentId: N:Steeltoe.Common.Configuration
+  name: Steeltoe.Common.Configuration
+  nameWithType: Steeltoe.Common.Configuration
+  fullName: Steeltoe.Common.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting*
+  commentId: Overload:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting
+  name: GetSetting
+  nameWithType: ConfigurationValuesHelper.GetSetting
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetSetting
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting*
+  commentId: Overload:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting
+  name: GetPreferredSetting
+  nameWithType: ConfigurationValuesHelper.GetPreferredSetting
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetPreferredSetting
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt*
+  commentId: Overload:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt
+  name: GetInt
+  nameWithType: ConfigurationValuesHelper.GetInt
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetInt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble*
+  commentId: Overload:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble
+  name: GetDouble
+  nameWithType: ConfigurationValuesHelper.GetDouble
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean*
+  commentId: Overload:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean
+  name: GetBoolean
+  nameWithType: ConfigurationValuesHelper.GetBoolean
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetBoolean
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString*
+  commentId: Overload:Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString
+  name: GetString
+  nameWithType: ConfigurationValuesHelper.GetString
+  fullName: Steeltoe.Common.Configuration.ConfigurationValuesHelper.GetString

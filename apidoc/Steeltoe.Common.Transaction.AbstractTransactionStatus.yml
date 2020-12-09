@@ -1,0 +1,1236 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  commentId: T:Steeltoe.Common.Transaction.AbstractTransactionStatus
+  id: AbstractTransactionStatus
+  parent: Steeltoe.Common.Transaction
+  children:
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint(System.Object)
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint(System.Object)
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint
+  - Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly
+  langs:
+  - csharp
+  - vb
+  name: AbstractTransactionStatus
+  nameWithType: AbstractTransactionStatus
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractTransactionStatus
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 6
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: 'public abstract class AbstractTransactionStatus : ITransactionStatus, ITransactionExecution, ISavepointManager'
+    content.vb: >-
+      Public MustInherit Class AbstractTransactionStatus
+
+          Implements ITransactionStatus, ITransactionExecution, ISavepointManager
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Common.Transaction.DefaultTransactionStatus
+  - Steeltoe.Common.Transaction.SimpleTransactionStatus
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionStatus
+  - Steeltoe.Common.Transaction.ITransactionExecution
+  - Steeltoe.Common.Transaction.ISavepointManager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction
+  commentId: P:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction
+  id: IsNewTransaction
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: IsNewTransaction
+  nameWithType: AbstractTransactionStatus.IsNewTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsNewTransaction
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 8
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public abstract bool IsNewTransaction { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property IsNewTransaction As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionExecution.IsNewTransaction
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly
+  id: SetRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: SetRollbackOnly()
+  nameWithType: AbstractTransactionStatus.SetRollbackOnly()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetRollbackOnly
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void SetRollbackOnly()
+    content.vb: Public Overridable Sub SetRollbackOnly
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly
+  id: IsRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: IsRollbackOnly
+  nameWithType: AbstractTransactionStatus.IsRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsRollbackOnly
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool IsRollbackOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsRollbackOnly As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionExecution.IsRollbackOnly
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly
+  id: IsLocalRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: IsLocalRollbackOnly
+  nameWithType: AbstractTransactionStatus.IsLocalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsLocalRollbackOnly
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool IsLocalRollbackOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property IsLocalRollbackOnly As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly
+  id: IsGlobalRollbackOnly
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: IsGlobalRollbackOnly
+  nameWithType: AbstractTransactionStatus.IsGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsGlobalRollbackOnly
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool IsGlobalRollbackOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property IsGlobalRollbackOnly As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted
+  commentId: P:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted
+  id: IsCompleted
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: AbstractTransactionStatus.IsCompleted
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsCompleted
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 27
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool IsCompleted { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Property IsCompleted As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionExecution.IsCompleted
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint
+  commentId: P:Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint
+  id: Savepoint
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: Savepoint
+  nameWithType: AbstractTransactionStatus.Savepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Savepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual object Savepoint { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Overridable Property Savepoint As Object
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint
+  commentId: P:Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint
+  id: HasSavepoint
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: HasSavepoint
+  nameWithType: AbstractTransactionStatus.HasSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HasSavepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual bool HasSavepoint { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property HasSavepoint As Boolean
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionStatus.HasSavepoint
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint
+  id: CreateAndHoldSavepoint
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: CreateAndHoldSavepoint()
+  nameWithType: AbstractTransactionStatus.CreateAndHoldSavepoint()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateAndHoldSavepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 33
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void CreateAndHoldSavepoint()
+    content.vb: Public Overridable Sub CreateAndHoldSavepoint
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint
+  id: RollbackToHeldSavepoint
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: RollbackToHeldSavepoint()
+  nameWithType: AbstractTransactionStatus.RollbackToHeldSavepoint()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RollbackToHeldSavepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 38
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void RollbackToHeldSavepoint()
+    content.vb: Public Overridable Sub RollbackToHeldSavepoint
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint
+  id: ReleaseHeldSavepoint
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: ReleaseHeldSavepoint()
+  nameWithType: AbstractTransactionStatus.ReleaseHeldSavepoint()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReleaseHeldSavepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 51
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void ReleaseHeldSavepoint()
+    content.vb: Public Overridable Sub ReleaseHeldSavepoint
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint
+  id: CreateSavepoint
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: CreateSavepoint()
+  nameWithType: AbstractTransactionStatus.CreateSavepoint()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateSavepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 63
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual object CreateSavepoint()
+    return:
+      type: System.Object
+    content.vb: Public Overridable Function CreateSavepoint As Object
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint*
+  implements:
+  - Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint(System.Object)
+  id: RollbackToSavepoint(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: RollbackToSavepoint(Object)
+  nameWithType: AbstractTransactionStatus.RollbackToSavepoint(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RollbackToSavepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void RollbackToSavepoint(object savepoint)
+    parameters:
+    - id: savepoint
+      type: System.Object
+    content.vb: Public Overridable Sub RollbackToSavepoint(savepoint As Object)
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint*
+  implements:
+  - Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint(System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint(System.Object)
+  id: ReleaseSavepoint(System.Object)
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: ReleaseSavepoint(Object)
+  nameWithType: AbstractTransactionStatus.ReleaseSavepoint(Object)
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReleaseSavepoint
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 73
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void ReleaseSavepoint(object savepoint)
+    parameters:
+    - id: savepoint
+      type: System.Object
+    content.vb: Public Overridable Sub ReleaseSavepoint(savepoint As Object)
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint*
+  implements:
+  - Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint(System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush
+  id: Flush
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: AbstractTransactionStatus.Flush()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Flush
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 78
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: public virtual void Flush()
+    content.vb: Public Overridable Sub Flush
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush*
+  implements:
+  - Steeltoe.Common.Transaction.ITransactionStatus.Flush
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager
+  commentId: M:Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager
+  id: GetSavepointManager
+  parent: Steeltoe.Common.Transaction.AbstractTransactionStatus
+  langs:
+  - csharp
+  - vb
+  name: GetSavepointManager()
+  nameWithType: AbstractTransactionStatus.GetSavepointManager()
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetSavepointManager
+    path: ../Steeltoe/src/Common/src/Common/Transaction/AbstractTransactionStatus.cs
+    startLine: 82
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Transaction
+  syntax:
+    content: protected virtual ISavepointManager GetSavepointManager()
+    return:
+      type: Steeltoe.Common.Transaction.ISavepointManager
+    content.vb: Protected Overridable Function GetSavepointManager As ISavepointManager
+  overload: Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Steeltoe.Common.Transaction
+  commentId: N:Steeltoe.Common.Transaction
+  name: Steeltoe.Common.Transaction
+  nameWithType: Steeltoe.Common.Transaction
+  fullName: Steeltoe.Common.Transaction
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.Transaction.ITransactionStatus
+  commentId: T:Steeltoe.Common.Transaction.ITransactionStatus
+  parent: Steeltoe.Common.Transaction
+  name: ITransactionStatus
+  nameWithType: ITransactionStatus
+  fullName: Steeltoe.Common.Transaction.ITransactionStatus
+- uid: Steeltoe.Common.Transaction.ITransactionExecution
+  commentId: T:Steeltoe.Common.Transaction.ITransactionExecution
+  parent: Steeltoe.Common.Transaction
+  name: ITransactionExecution
+  nameWithType: ITransactionExecution
+  fullName: Steeltoe.Common.Transaction.ITransactionExecution
+- uid: Steeltoe.Common.Transaction.ISavepointManager
+  commentId: T:Steeltoe.Common.Transaction.ISavepointManager
+  parent: Steeltoe.Common.Transaction
+  name: ISavepointManager
+  nameWithType: ISavepointManager
+  fullName: Steeltoe.Common.Transaction.ISavepointManager
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction
+  name: IsNewTransaction
+  nameWithType: AbstractTransactionStatus.IsNewTransaction
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsNewTransaction
+- uid: Steeltoe.Common.Transaction.ITransactionExecution.IsNewTransaction
+  commentId: P:Steeltoe.Common.Transaction.ITransactionExecution.IsNewTransaction
+  parent: Steeltoe.Common.Transaction.ITransactionExecution
+  name: IsNewTransaction
+  nameWithType: ITransactionExecution.IsNewTransaction
+  fullName: Steeltoe.Common.Transaction.ITransactionExecution.IsNewTransaction
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly
+  name: SetRollbackOnly
+  nameWithType: AbstractTransactionStatus.SetRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.SetRollbackOnly
+- uid: Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly
+  commentId: M:Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly
+  parent: Steeltoe.Common.Transaction.ITransactionExecution
+  name: SetRollbackOnly()
+  nameWithType: ITransactionExecution.SetRollbackOnly()
+  fullName: Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly
+    name: SetRollbackOnly
+    nameWithType: ITransactionExecution.SetRollbackOnly
+    fullName: Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly
+    name: SetRollbackOnly
+    nameWithType: ITransactionExecution.SetRollbackOnly
+    fullName: Steeltoe.Common.Transaction.ITransactionExecution.SetRollbackOnly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly
+  name: IsRollbackOnly
+  nameWithType: AbstractTransactionStatus.IsRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsRollbackOnly
+- uid: Steeltoe.Common.Transaction.ITransactionExecution.IsRollbackOnly
+  commentId: P:Steeltoe.Common.Transaction.ITransactionExecution.IsRollbackOnly
+  parent: Steeltoe.Common.Transaction.ITransactionExecution
+  name: IsRollbackOnly
+  nameWithType: ITransactionExecution.IsRollbackOnly
+  fullName: Steeltoe.Common.Transaction.ITransactionExecution.IsRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly
+  name: IsLocalRollbackOnly
+  nameWithType: AbstractTransactionStatus.IsLocalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsLocalRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly
+  name: IsGlobalRollbackOnly
+  nameWithType: AbstractTransactionStatus.IsGlobalRollbackOnly
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsGlobalRollbackOnly
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted
+  name: IsCompleted
+  nameWithType: AbstractTransactionStatus.IsCompleted
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.IsCompleted
+- uid: Steeltoe.Common.Transaction.ITransactionExecution.IsCompleted
+  commentId: P:Steeltoe.Common.Transaction.ITransactionExecution.IsCompleted
+  parent: Steeltoe.Common.Transaction.ITransactionExecution
+  name: IsCompleted
+  nameWithType: ITransactionExecution.IsCompleted
+  fullName: Steeltoe.Common.Transaction.ITransactionExecution.IsCompleted
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint
+  name: Savepoint
+  nameWithType: AbstractTransactionStatus.Savepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.Savepoint
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint
+  name: HasSavepoint
+  nameWithType: AbstractTransactionStatus.HasSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.HasSavepoint
+- uid: Steeltoe.Common.Transaction.ITransactionStatus.HasSavepoint
+  commentId: P:Steeltoe.Common.Transaction.ITransactionStatus.HasSavepoint
+  parent: Steeltoe.Common.Transaction.ITransactionStatus
+  name: HasSavepoint
+  nameWithType: ITransactionStatus.HasSavepoint
+  fullName: Steeltoe.Common.Transaction.ITransactionStatus.HasSavepoint
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint
+  name: CreateAndHoldSavepoint
+  nameWithType: AbstractTransactionStatus.CreateAndHoldSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateAndHoldSavepoint
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint
+  name: RollbackToHeldSavepoint
+  nameWithType: AbstractTransactionStatus.RollbackToHeldSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToHeldSavepoint
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint
+  name: ReleaseHeldSavepoint
+  nameWithType: AbstractTransactionStatus.ReleaseHeldSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseHeldSavepoint
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint
+  name: CreateSavepoint
+  nameWithType: AbstractTransactionStatus.CreateSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.CreateSavepoint
+- uid: Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint
+  commentId: M:Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint
+  parent: Steeltoe.Common.Transaction.ISavepointManager
+  name: CreateSavepoint()
+  nameWithType: ISavepointManager.CreateSavepoint()
+  fullName: Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint
+    name: CreateSavepoint
+    nameWithType: ISavepointManager.CreateSavepoint
+    fullName: Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint
+    name: CreateSavepoint
+    nameWithType: ISavepointManager.CreateSavepoint
+    fullName: Steeltoe.Common.Transaction.ISavepointManager.CreateSavepoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint
+  name: RollbackToSavepoint
+  nameWithType: AbstractTransactionStatus.RollbackToSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.RollbackToSavepoint
+- uid: Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint(System.Object)
+  parent: Steeltoe.Common.Transaction.ISavepointManager
+  isExternal: true
+  name: RollbackToSavepoint(Object)
+  nameWithType: ISavepointManager.RollbackToSavepoint(Object)
+  fullName: Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint(System.Object)
+    name: RollbackToSavepoint
+    nameWithType: ISavepointManager.RollbackToSavepoint
+    fullName: Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint(System.Object)
+    name: RollbackToSavepoint
+    nameWithType: ISavepointManager.RollbackToSavepoint
+    fullName: Steeltoe.Common.Transaction.ISavepointManager.RollbackToSavepoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint
+  name: ReleaseSavepoint
+  nameWithType: AbstractTransactionStatus.ReleaseSavepoint
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.ReleaseSavepoint
+- uid: Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint(System.Object)
+  commentId: M:Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint(System.Object)
+  parent: Steeltoe.Common.Transaction.ISavepointManager
+  isExternal: true
+  name: ReleaseSavepoint(Object)
+  nameWithType: ISavepointManager.ReleaseSavepoint(Object)
+  fullName: Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint(System.Object)
+    name: ReleaseSavepoint
+    nameWithType: ISavepointManager.ReleaseSavepoint
+    fullName: Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint(System.Object)
+    name: ReleaseSavepoint
+    nameWithType: ISavepointManager.ReleaseSavepoint
+    fullName: Steeltoe.Common.Transaction.ISavepointManager.ReleaseSavepoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush
+  name: Flush
+  nameWithType: AbstractTransactionStatus.Flush
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.Flush
+- uid: Steeltoe.Common.Transaction.ITransactionStatus.Flush
+  commentId: M:Steeltoe.Common.Transaction.ITransactionStatus.Flush
+  parent: Steeltoe.Common.Transaction.ITransactionStatus
+  name: Flush()
+  nameWithType: ITransactionStatus.Flush()
+  fullName: Steeltoe.Common.Transaction.ITransactionStatus.Flush()
+  spec.csharp:
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus.Flush
+    name: Flush
+    nameWithType: ITransactionStatus.Flush
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus.Flush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Transaction.ITransactionStatus.Flush
+    name: Flush
+    nameWithType: ITransactionStatus.Flush
+    fullName: Steeltoe.Common.Transaction.ITransactionStatus.Flush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager*
+  commentId: Overload:Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager
+  name: GetSavepointManager
+  nameWithType: AbstractTransactionStatus.GetSavepointManager
+  fullName: Steeltoe.Common.Transaction.AbstractTransactionStatus.GetSavepointManager

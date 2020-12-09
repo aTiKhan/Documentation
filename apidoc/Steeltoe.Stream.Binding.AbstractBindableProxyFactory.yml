@@ -1,0 +1,1848 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  commentId: T:Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  id: AbstractBindableProxyFactory
+  parent: Steeltoe.Stream.Binding
+  children:
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.#ctor(System.Type,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binding.IBindingTargetFactory})
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindables
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindingTargetFactories
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundInputTargets
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundOutputTargets
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory(System.Type)
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget(System.String)
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget(System.String)
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget(System.String)
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  - Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  langs:
+  - csharp
+  - vb
+  name: AbstractBindableProxyFactory
+  nameWithType: AbstractBindableProxyFactory
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AbstractBindableProxyFactory
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: 'public class AbstractBindableProxyFactory : AbstractBindable, IBindable'
+    content.vb: >-
+      Public Class AbstractBindableProxyFactory
+
+          Inherits AbstractBindable
+
+          Implements IBindable
+  inheritance:
+  - System.Object
+  - Steeltoe.Stream.Binding.AbstractBindable
+  derivedClasses:
+  - Steeltoe.Stream.Binding.BindableProxyFactory
+  implements:
+  - Steeltoe.Stream.Binding.IBindable
+  inheritedMembers:
+  - Steeltoe.Stream.Binding.AbstractBindable.BindingType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindables
+  commentId: F:Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindables
+  id: _bindables
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: _bindables
+  nameWithType: AbstractBindableProxyFactory._bindables
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindables
+  type: Field
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _bindables
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected IDictionary<string, Bindable> _bindables
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,Steeltoe.Stream.Binding.Bindable}
+    content.vb: Protected _bindables As IDictionary(Of String, Bindable)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindingTargetFactories
+  commentId: F:Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindingTargetFactories
+  id: _bindingTargetFactories
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: _bindingTargetFactories
+  nameWithType: AbstractBindableProxyFactory._bindingTargetFactories
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._bindingTargetFactories
+  type: Field
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _bindingTargetFactories
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected IList<IBindingTargetFactory> _bindingTargetFactories
+    return:
+      type: System.Collections.Generic.IList{Steeltoe.Stream.Binding.IBindingTargetFactory}
+    content.vb: Protected _bindingTargetFactories As IList(Of IBindingTargetFactory)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundInputTargets
+  commentId: F:Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundInputTargets
+  id: _boundInputTargets
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: _boundInputTargets
+  nameWithType: AbstractBindableProxyFactory._boundInputTargets
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundInputTargets
+  type: Field
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _boundInputTargets
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected Dictionary<string, Lazy<object>> _boundInputTargets
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Lazy{System.Object}}
+    content.vb: Protected _boundInputTargets As Dictionary(Of String, Lazy(Of Object))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundOutputTargets
+  commentId: F:Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundOutputTargets
+  id: _boundOutputTargets
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: _boundOutputTargets
+  nameWithType: AbstractBindableProxyFactory._boundOutputTargets
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory._boundOutputTargets
+  type: Field
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: _boundOutputTargets
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected Dictionary<string, Lazy<object>> _boundOutputTargets
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Lazy{System.Object}}
+    content.vb: Protected _boundOutputTargets As Dictionary(Of String, Lazy(Of Object))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.#ctor(System.Type,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binding.IBindingTargetFactory})
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.#ctor(System.Type,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binding.IBindingTargetFactory})
+  id: '#ctor(System.Type,System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binding.IBindingTargetFactory})'
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: AbstractBindableProxyFactory(Type, IEnumerable<IBindingTargetFactory>)
+  nameWithType: AbstractBindableProxyFactory.AbstractBindableProxyFactory(Type, IEnumerable<IBindingTargetFactory>)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.AbstractBindableProxyFactory(System.Type, System.Collections.Generic.IEnumerable<Steeltoe.Stream.Binding.IBindingTargetFactory>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public AbstractBindableProxyFactory(Type bindingType, IEnumerable<IBindingTargetFactory> bindingTargetFactories)
+    parameters:
+    - id: bindingType
+      type: System.Type
+    - id: bindingTargetFactories
+      type: System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binding.IBindingTargetFactory}
+    content.vb: Public Sub New(bindingType As Type, bindingTargetFactories As IEnumerable(Of IBindingTargetFactory))
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.#ctor*
+  nameWithType.vb: AbstractBindableProxyFactory.AbstractBindableProxyFactory(Type, IEnumerable(Of IBindingTargetFactory))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.AbstractBindableProxyFactory(System.Type, System.Collections.Generic.IEnumerable(Of Steeltoe.Stream.Binding.IBindingTargetFactory))
+  name.vb: AbstractBindableProxyFactory(Type, IEnumerable(Of IBindingTargetFactory))
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs
+  commentId: P:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs
+  id: Inputs
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: Inputs
+  nameWithType: AbstractBindableProxyFactory.Inputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Inputs
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override ICollection<string> Inputs { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String}
+    content.vb: Public Overrides ReadOnly Property Inputs As ICollection(Of String)
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.Inputs
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs
+  commentId: P:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs
+  id: Outputs
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: Outputs
+  nameWithType: AbstractBindableProxyFactory.Outputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Outputs
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 28
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override ICollection<string> Outputs { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String}
+    content.vb: Public Overrides ReadOnly Property Outputs As ICollection(Of String)
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.Outputs
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  id: CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateAndBindInputs(IBindingService)
+  nameWithType: AbstractBindableProxyFactory.CreateAndBindInputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateAndBindInputs
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override ICollection<IBinding> CreateAndBindInputs(IBindingService bindingService)
+    parameters:
+    - id: bindingService
+      type: Steeltoe.Stream.Binding.IBindingService
+    return:
+      type: System.Collections.Generic.ICollection{Steeltoe.Stream.Binder.IBinding}
+    content.vb: Public Overrides Function CreateAndBindInputs(bindingService As IBindingService) As ICollection(Of IBinding)
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  id: CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateAndBindOutputs(IBindingService)
+  nameWithType: AbstractBindableProxyFactory.CreateAndBindOutputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateAndBindOutputs
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override ICollection<IBinding> CreateAndBindOutputs(IBindingService bindingService)
+    parameters:
+    - id: bindingService
+      type: Steeltoe.Stream.Binding.IBindingService
+    return:
+      type: System.Collections.Generic.ICollection{Steeltoe.Stream.Binder.IBinding}
+    content.vb: Public Overrides Function CreateAndBindOutputs(bindingService As IBindingService) As ICollection(Of IBinding)
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  id: UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: UnbindInputs(IBindingService)
+  nameWithType: AbstractBindableProxyFactory.UnbindInputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UnbindInputs
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 54
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override void UnbindInputs(IBindingService bindingService)
+    parameters:
+    - id: bindingService
+      type: Steeltoe.Stream.Binding.IBindingService
+    content.vb: Public Overrides Sub UnbindInputs(bindingService As IBindingService)
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  id: UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: UnbindOutputs(IBindingService)
+  nameWithType: AbstractBindableProxyFactory.UnbindOutputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UnbindOutputs
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 62
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override void UnbindOutputs(IBindingService bindingService)
+    parameters:
+    - id: bindingService
+      type: Steeltoe.Stream.Binding.IBindingService
+    content.vb: Public Overrides Sub UnbindOutputs(bindingService As IBindingService)
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget(System.String)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget(System.String)
+  id: GetBoundTarget(System.String)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: GetBoundTarget(String)
+  nameWithType: AbstractBindableProxyFactory.GetBoundTarget(String)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetBoundTarget
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 70
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override object GetBoundTarget(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function GetBoundTarget(name As String) As Object
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget(System.String)
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget(System.String)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget(System.String)
+  id: GetBoundInputTarget(System.String)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: GetBoundInputTarget(String)
+  nameWithType: AbstractBindableProxyFactory.GetBoundInputTarget(String)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetBoundInputTarget
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 81
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override object GetBoundInputTarget(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function GetBoundInputTarget(name As String) As Object
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget(System.String)
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget(System.String)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget(System.String)
+  id: GetBoundOutputTarget(System.String)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: GetBoundOutputTarget(String)
+  nameWithType: AbstractBindableProxyFactory.GetBoundOutputTarget(String)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetBoundOutputTarget
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 87
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: public override object GetBoundOutputTarget(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function GetBoundOutputTarget(name As String) As Object
+  overridden: Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget(System.String)
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize
+  id: Initialize
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: AbstractBindableProxyFactory.Initialize()
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Initialize
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 93
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected void Initialize()
+    content.vb: Protected Sub Initialize
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory(System.Type)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory(System.Type)
+  id: GetBindingTargetFactory(System.Type)
+  parent: Steeltoe.Stream.Binding.AbstractBindableProxyFactory
+  langs:
+  - csharp
+  - vb
+  name: GetBindingTargetFactory(Type)
+  nameWithType: AbstractBindableProxyFactory.GetBindingTargetFactory(Type)
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetBindingTargetFactory
+    path: ../Steeltoe/src/Stream/src/StreamBase/Binding/AbstractBindableProxyFactory.cs
+    startLine: 112
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Binding
+  syntax:
+    content: protected virtual IBindingTargetFactory GetBindingTargetFactory(Type bindingTargetType)
+    parameters:
+    - id: bindingTargetType
+      type: System.Type
+    return:
+      type: Steeltoe.Stream.Binding.IBindingTargetFactory
+    content.vb: Protected Overridable Function GetBindingTargetFactory(bindingTargetType As Type) As IBindingTargetFactory
+  overload: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Steeltoe.Stream.Binding
+  commentId: N:Steeltoe.Stream.Binding
+  name: Steeltoe.Stream.Binding
+  nameWithType: Steeltoe.Stream.Binding
+  fullName: Steeltoe.Stream.Binding
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Binding.AbstractBindable
+  commentId: T:Steeltoe.Stream.Binding.AbstractBindable
+  parent: Steeltoe.Stream.Binding
+  name: AbstractBindable
+  nameWithType: AbstractBindable
+  fullName: Steeltoe.Stream.Binding.AbstractBindable
+- uid: Steeltoe.Stream.Binding.IBindable
+  commentId: T:Steeltoe.Stream.Binding.IBindable
+  parent: Steeltoe.Stream.Binding
+  name: IBindable
+  nameWithType: IBindable
+  fullName: Steeltoe.Stream.Binding.IBindable
+- uid: Steeltoe.Stream.Binding.AbstractBindable.BindingType
+  commentId: P:Steeltoe.Stream.Binding.AbstractBindable.BindingType
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  name: BindingType
+  nameWithType: AbstractBindable.BindingType
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.BindingType
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary{System.String,Steeltoe.Stream.Binding.Bindable}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,Steeltoe.Stream.Binding.Bindable}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Bindable>
+  nameWithType: IDictionary<String, Bindable>
+  fullName: System.Collections.Generic.IDictionary<System.String, Steeltoe.Stream.Binding.Bindable>
+  nameWithType.vb: IDictionary(Of String, Bindable)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, Steeltoe.Stream.Binding.Bindable)
+  name.vb: IDictionary(Of String, Bindable)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binding.Bindable
+    name: Bindable
+    nameWithType: Bindable
+    fullName: Steeltoe.Stream.Binding.Bindable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Stream.Binding.Bindable
+    name: Bindable
+    nameWithType: Bindable
+    fullName: Steeltoe.Stream.Binding.Bindable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IList{Steeltoe.Stream.Binding.IBindingTargetFactory}
+  commentId: T:System.Collections.Generic.IList{Steeltoe.Stream.Binding.IBindingTargetFactory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<IBindingTargetFactory>
+  nameWithType: IList<IBindingTargetFactory>
+  fullName: System.Collections.Generic.IList<Steeltoe.Stream.Binding.IBindingTargetFactory>
+  nameWithType.vb: IList(Of IBindingTargetFactory)
+  fullName.vb: System.Collections.Generic.IList(Of Steeltoe.Stream.Binding.IBindingTargetFactory)
+  name.vb: IList(Of IBindingTargetFactory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Stream.Binding.IBindingTargetFactory
+    name: IBindingTargetFactory
+    nameWithType: IBindingTargetFactory
+    fullName: Steeltoe.Stream.Binding.IBindingTargetFactory
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Stream.Binding.IBindingTargetFactory
+    name: IBindingTargetFactory
+    nameWithType: IBindingTargetFactory
+    fullName: Steeltoe.Stream.Binding.IBindingTargetFactory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary{System.String,System.Lazy{System.Object}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Lazy{System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Lazy<Object>>
+  nameWithType: Dictionary<String, Lazy<Object>>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Lazy<System.Object>>
+  nameWithType.vb: Dictionary(Of String, Lazy(Of Object))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Lazy(Of System.Object))
+  name.vb: Dictionary(Of String, Lazy(Of Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.#ctor*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.#ctor
+  name: AbstractBindableProxyFactory
+  nameWithType: AbstractBindableProxyFactory.AbstractBindableProxyFactory
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.AbstractBindableProxyFactory
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binding.IBindingTargetFactory}
+  commentId: T:System.Collections.Generic.IEnumerable{Steeltoe.Stream.Binding.IBindingTargetFactory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IBindingTargetFactory>
+  nameWithType: IEnumerable<IBindingTargetFactory>
+  fullName: System.Collections.Generic.IEnumerable<Steeltoe.Stream.Binding.IBindingTargetFactory>
+  nameWithType.vb: IEnumerable(Of IBindingTargetFactory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Steeltoe.Stream.Binding.IBindingTargetFactory)
+  name.vb: IEnumerable(Of IBindingTargetFactory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Stream.Binding.IBindingTargetFactory
+    name: IBindingTargetFactory
+    nameWithType: IBindingTargetFactory
+    fullName: Steeltoe.Stream.Binding.IBindingTargetFactory
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Stream.Binding.IBindingTargetFactory
+    name: IBindingTargetFactory
+    nameWithType: IBindingTargetFactory
+    fullName: Steeltoe.Stream.Binding.IBindingTargetFactory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindable.Inputs
+  commentId: P:Steeltoe.Stream.Binding.AbstractBindable.Inputs
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  name: Inputs
+  nameWithType: AbstractBindable.Inputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.Inputs
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs
+  name: Inputs
+  nameWithType: AbstractBindableProxyFactory.Inputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Inputs
+- uid: System.Collections.Generic.ICollection{System.String}
+  commentId: T:System.Collections.Generic.ICollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<String>
+  nameWithType: ICollection<String>
+  fullName: System.Collections.Generic.ICollection<System.String>
+  nameWithType.vb: ICollection(Of String)
+  fullName.vb: System.Collections.Generic.ICollection(Of System.String)
+  name.vb: ICollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindable.Outputs
+  commentId: P:Steeltoe.Stream.Binding.AbstractBindable.Outputs
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  name: Outputs
+  nameWithType: AbstractBindable.Outputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.Outputs
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs
+  name: Outputs
+  nameWithType: AbstractBindableProxyFactory.Outputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Outputs
+- uid: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  name: CreateAndBindInputs(IBindingService)
+  nameWithType: AbstractBindable.CreateAndBindInputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+    name: CreateAndBindInputs
+    nameWithType: AbstractBindable.CreateAndBindInputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs(Steeltoe.Stream.Binding.IBindingService)
+    name: CreateAndBindInputs
+    nameWithType: AbstractBindable.CreateAndBindInputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindInputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs
+  name: CreateAndBindInputs
+  nameWithType: AbstractBindableProxyFactory.CreateAndBindInputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindInputs
+- uid: Steeltoe.Stream.Binding.IBindingService
+  commentId: T:Steeltoe.Stream.Binding.IBindingService
+  parent: Steeltoe.Stream.Binding
+  name: IBindingService
+  nameWithType: IBindingService
+  fullName: Steeltoe.Stream.Binding.IBindingService
+- uid: System.Collections.Generic.ICollection{Steeltoe.Stream.Binder.IBinding}
+  commentId: T:System.Collections.Generic.ICollection{Steeltoe.Stream.Binder.IBinding}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<IBinding>
+  nameWithType: ICollection<IBinding>
+  fullName: System.Collections.Generic.ICollection<Steeltoe.Stream.Binder.IBinding>
+  nameWithType.vb: ICollection(Of IBinding)
+  fullName.vb: System.Collections.Generic.ICollection(Of Steeltoe.Stream.Binder.IBinding)
+  name.vb: ICollection(Of IBinding)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Stream.Binder.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Steeltoe.Stream.Binder.IBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Stream.Binder.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Steeltoe.Stream.Binder.IBinding
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  name: CreateAndBindOutputs(IBindingService)
+  nameWithType: AbstractBindable.CreateAndBindOutputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+    name: CreateAndBindOutputs
+    nameWithType: AbstractBindable.CreateAndBindOutputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs(Steeltoe.Stream.Binding.IBindingService)
+    name: CreateAndBindOutputs
+    nameWithType: AbstractBindable.CreateAndBindOutputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.CreateAndBindOutputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs
+  name: CreateAndBindOutputs
+  nameWithType: AbstractBindableProxyFactory.CreateAndBindOutputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.CreateAndBindOutputs
+- uid: Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  name: UnbindInputs(IBindingService)
+  nameWithType: AbstractBindable.UnbindInputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+    name: UnbindInputs
+    nameWithType: AbstractBindable.UnbindInputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs(Steeltoe.Stream.Binding.IBindingService)
+    name: UnbindInputs
+    nameWithType: AbstractBindable.UnbindInputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.UnbindInputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs
+  name: UnbindInputs
+  nameWithType: AbstractBindableProxyFactory.UnbindInputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindInputs
+- uid: Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  name: UnbindOutputs(IBindingService)
+  nameWithType: AbstractBindable.UnbindOutputs(IBindingService)
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+    name: UnbindOutputs
+    nameWithType: AbstractBindable.UnbindOutputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs(Steeltoe.Stream.Binding.IBindingService)
+    name: UnbindOutputs
+    nameWithType: AbstractBindable.UnbindOutputs
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.UnbindOutputs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Stream.Binding.IBindingService
+    name: IBindingService
+    nameWithType: IBindingService
+    fullName: Steeltoe.Stream.Binding.IBindingService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs
+  name: UnbindOutputs
+  nameWithType: AbstractBindableProxyFactory.UnbindOutputs
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.UnbindOutputs
+- uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget(System.String)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget(System.String)
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  isExternal: true
+  name: GetBoundTarget(String)
+  nameWithType: AbstractBindable.GetBoundTarget(String)
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget(System.String)
+    name: GetBoundTarget
+    nameWithType: AbstractBindable.GetBoundTarget
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget(System.String)
+    name: GetBoundTarget
+    nameWithType: AbstractBindable.GetBoundTarget
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget
+  name: GetBoundTarget
+  nameWithType: AbstractBindableProxyFactory.GetBoundTarget
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundTarget
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget(System.String)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget(System.String)
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  isExternal: true
+  name: GetBoundInputTarget(String)
+  nameWithType: AbstractBindable.GetBoundInputTarget(String)
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget(System.String)
+    name: GetBoundInputTarget
+    nameWithType: AbstractBindable.GetBoundInputTarget
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget(System.String)
+    name: GetBoundInputTarget
+    nameWithType: AbstractBindable.GetBoundInputTarget
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundInputTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget
+  name: GetBoundInputTarget
+  nameWithType: AbstractBindableProxyFactory.GetBoundInputTarget
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundInputTarget
+- uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget(System.String)
+  commentId: M:Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget(System.String)
+  parent: Steeltoe.Stream.Binding.AbstractBindable
+  isExternal: true
+  name: GetBoundOutputTarget(String)
+  nameWithType: AbstractBindable.GetBoundOutputTarget(String)
+  fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget(System.String)
+  spec.csharp:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget(System.String)
+    name: GetBoundOutputTarget
+    nameWithType: AbstractBindable.GetBoundOutputTarget
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget(System.String)
+    name: GetBoundOutputTarget
+    nameWithType: AbstractBindable.GetBoundOutputTarget
+    fullName: Steeltoe.Stream.Binding.AbstractBindable.GetBoundOutputTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget
+  name: GetBoundOutputTarget
+  nameWithType: AbstractBindableProxyFactory.GetBoundOutputTarget
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBoundOutputTarget
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize
+  name: Initialize
+  nameWithType: AbstractBindableProxyFactory.Initialize
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.Initialize
+- uid: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory*
+  commentId: Overload:Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory
+  name: GetBindingTargetFactory
+  nameWithType: AbstractBindableProxyFactory.GetBindingTargetFactory
+  fullName: Steeltoe.Stream.Binding.AbstractBindableProxyFactory.GetBindingTargetFactory
+- uid: Steeltoe.Stream.Binding.IBindingTargetFactory
+  commentId: T:Steeltoe.Stream.Binding.IBindingTargetFactory
+  parent: Steeltoe.Stream.Binding
+  name: IBindingTargetFactory
+  nameWithType: IBindingTargetFactory
+  fullName: Steeltoe.Stream.Binding.IBindingTargetFactory

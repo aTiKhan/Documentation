@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  id: IRabbitListenerEndpointRegistry
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer(System.String)
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory)
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory,System.Boolean)
+  - Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRabbitListenerEndpointRegistry
+  nameWithType: IRabbitListenerEndpointRegistry
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IRabbitListenerEndpointRegistry
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: 'public interface IRabbitListenerEndpointRegistry : ISmartLifecycle, ILifecycle, IPhased, IDisposable, IServiceNameAware'
+    content.vb: >-
+      Public Interface IRabbitListenerEndpointRegistry
+
+          Inherits ISmartLifecycle, IDisposable, IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+  - Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  - Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  - Steeltoe.Common.Lifecycle.IPhased.Phase
+  - System.IDisposable.Dispose
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer(System.String)
+  id: GetListenerContainer(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetListenerContainer(String)
+  nameWithType: IRabbitListenerEndpointRegistry.GetListenerContainer(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetListenerContainer
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: IMessageListenerContainer GetListenerContainer(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+    content.vb: Function GetListenerContainer(id As String) As IMessageListenerContainer
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds
+  id: GetListenerContainerIds
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetListenerContainerIds()
+  nameWithType: IRabbitListenerEndpointRegistry.GetListenerContainerIds()
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetListenerContainerIds
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: ISet<string> GetListenerContainerIds()
+    return:
+      type: System.Collections.Generic.ISet{System.String}
+    content.vb: Function GetListenerContainerIds As ISet(Of String)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers
+  id: GetListenerContainers
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetListenerContainers()
+  nameWithType: IRabbitListenerEndpointRegistry.GetListenerContainers()
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetListenerContainers
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: ICollection<IMessageListenerContainer> GetListenerContainers()
+    return:
+      type: System.Collections.Generic.ICollection{Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer}
+    content.vb: Function GetListenerContainers As ICollection(Of IMessageListenerContainer)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory)
+  id: RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  langs:
+  - csharp
+  - vb
+  name: RegisterListenerContainer(IRabbitListenerEndpoint, IRabbitListenerContainerFactory)
+  nameWithType: IRabbitListenerEndpointRegistry.RegisterListenerContainer(IRabbitListenerEndpoint, IRabbitListenerContainerFactory)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterListenerContainer
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: void RegisterListenerContainer(IRabbitListenerEndpoint endpoint, IRabbitListenerContainerFactory factory)
+    parameters:
+    - id: endpoint
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    - id: factory
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+    content.vb: Sub RegisterListenerContainer(endpoint As IRabbitListenerEndpoint, factory As IRabbitListenerContainerFactory)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory,System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory,System.Boolean)
+  id: RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint,Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory,System.Boolean)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  langs:
+  - csharp
+  - vb
+  name: RegisterListenerContainer(IRabbitListenerEndpoint, IRabbitListenerContainerFactory, Boolean)
+  nameWithType: IRabbitListenerEndpointRegistry.RegisterListenerContainer(IRabbitListenerEndpoint, IRabbitListenerContainerFactory, Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer(Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint, Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RegisterListenerContainer
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: void RegisterListenerContainer(IRabbitListenerEndpoint endpoint, IRabbitListenerContainerFactory factory, bool startImmediately)
+    parameters:
+    - id: endpoint
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+    - id: factory
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+    - id: startImmediately
+      type: System.Boolean
+    content.vb: Sub RegisterListenerContainer(endpoint As IRabbitListenerEndpoint, factory As IRabbitListenerContainerFactory, startImmediately As Boolean)
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer*
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer(System.String)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer(System.String)
+  id: UnregisterListenerContainer(System.String)
+  parent: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry
+  langs:
+  - csharp
+  - vb
+  name: UnregisterListenerContainer(String)
+  nameWithType: IRabbitListenerEndpointRegistry.UnregisterListenerContainer(String)
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UnregisterListenerContainer
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Listener/IRabbitListenerEndpointRegistry.cs
+    startLine: 23
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Listener
+  syntax:
+    content: IMessageListenerContainer UnregisterListenerContainer(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+    content.vb: Function UnregisterListenerContainer(id As String) As IMessageListenerContainer
+  overload: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer*
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Listener
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Listener
+  name: Steeltoe.Messaging.RabbitMQ.Listener
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Listener
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener
+- uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+  commentId: P:Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+  parent: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  name: IsAutoStartup
+  nameWithType: ISmartLifecycle.IsAutoStartup
+  fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.IsAutoStartup
+- uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  commentId: M:Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  parent: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  isExternal: true
+  name: Stop(Action)
+  nameWithType: ISmartLifecycle.Stop(Action)
+  fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+    name: Stop
+    nameWithType: ISmartLifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop(System.Action)
+    name: Stop
+    nameWithType: ISmartLifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Start
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Start()
+  nameWithType: ILifecycle.Start()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Start
+    name: Start
+    nameWithType: ILifecycle.Start
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  commentId: M:Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: Stop()
+  nameWithType: ILifecycle.Stop()
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop()
+  spec.csharp:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+    name: Stop
+    nameWithType: ILifecycle.Stop
+    fullName: Steeltoe.Common.Lifecycle.ILifecycle.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  commentId: P:Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+  parent: Steeltoe.Common.Lifecycle.ILifecycle
+  name: IsRunning
+  nameWithType: ILifecycle.IsRunning
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle.IsRunning
+- uid: Steeltoe.Common.Lifecycle.IPhased.Phase
+  commentId: P:Steeltoe.Common.Lifecycle.IPhased.Phase
+  parent: Steeltoe.Common.Lifecycle.IPhased
+  name: Phase
+  nameWithType: IPhased.Phase
+  fullName: Steeltoe.Common.Lifecycle.IPhased.Phase
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Common.Lifecycle.ISmartLifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ISmartLifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ISmartLifecycle
+  nameWithType: ISmartLifecycle
+  fullName: Steeltoe.Common.Lifecycle.ISmartLifecycle
+- uid: Steeltoe.Common.Lifecycle.ILifecycle
+  commentId: T:Steeltoe.Common.Lifecycle.ILifecycle
+  parent: Steeltoe.Common.Lifecycle
+  name: ILifecycle
+  nameWithType: ILifecycle
+  fullName: Steeltoe.Common.Lifecycle.ILifecycle
+- uid: Steeltoe.Common.Lifecycle.IPhased
+  commentId: T:Steeltoe.Common.Lifecycle.IPhased
+  parent: Steeltoe.Common.Lifecycle
+  name: IPhased
+  nameWithType: IPhased
+  fullName: Steeltoe.Common.Lifecycle.IPhased
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Common.Lifecycle
+  commentId: N:Steeltoe.Common.Lifecycle
+  name: Steeltoe.Common.Lifecycle
+  nameWithType: Steeltoe.Common.Lifecycle
+  fullName: Steeltoe.Common.Lifecycle
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer
+  name: GetListenerContainer
+  nameWithType: IRabbitListenerEndpointRegistry.GetListenerContainer
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IMessageListenerContainer
+  nameWithType: IMessageListenerContainer
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds
+  name: GetListenerContainerIds
+  nameWithType: IRabbitListenerEndpointRegistry.GetListenerContainerIds
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainerIds
+- uid: System.Collections.Generic.ISet{System.String}
+  commentId: T:System.Collections.Generic.ISet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ISet`1
+  name: ISet<String>
+  nameWithType: ISet<String>
+  fullName: System.Collections.Generic.ISet<System.String>
+  nameWithType.vb: ISet(Of String)
+  fullName.vb: System.Collections.Generic.ISet(Of System.String)
+  name.vb: ISet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1
+  commentId: T:System.Collections.Generic.ISet`1
+  isExternal: true
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullName.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers
+  name: GetListenerContainers
+  nameWithType: IRabbitListenerEndpointRegistry.GetListenerContainers
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.GetListenerContainers
+- uid: System.Collections.Generic.ICollection{Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer}
+  commentId: T:System.Collections.Generic.ICollection{Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<IMessageListenerContainer>
+  nameWithType: ICollection<IMessageListenerContainer>
+  fullName: System.Collections.Generic.ICollection<Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer>
+  nameWithType.vb: ICollection(Of IMessageListenerContainer)
+  fullName.vb: System.Collections.Generic.ICollection(Of Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer)
+  name.vb: ICollection(Of IMessageListenerContainer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+    name: IMessageListenerContainer
+    nameWithType: IMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+    name: IMessageListenerContainer
+    nameWithType: IMessageListenerContainer
+    fullName: Steeltoe.Messaging.RabbitMQ.Listener.IMessageListenerContainer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer
+  name: RegisterListenerContainer
+  nameWithType: IRabbitListenerEndpointRegistry.RegisterListenerContainer
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.RegisterListenerContainer
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IRabbitListenerEndpoint
+  nameWithType: IRabbitListenerEndpoint
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpoint
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+  parent: Steeltoe.Messaging.RabbitMQ.Listener
+  name: IRabbitListenerContainerFactory
+  nameWithType: IRabbitListenerContainerFactory
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerContainerFactory
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer
+  name: UnregisterListenerContainer
+  nameWithType: IRabbitListenerEndpointRegistry.UnregisterListenerContainer
+  fullName: Steeltoe.Messaging.RabbitMQ.Listener.IRabbitListenerEndpointRegistry.UnregisterListenerContainer

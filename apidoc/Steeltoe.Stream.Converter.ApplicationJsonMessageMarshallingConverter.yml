@@ -1,0 +1,1474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter
+  commentId: T:Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter
+  id: ApplicationJsonMessageMarshallingConverter
+  parent: Steeltoe.Stream.Converter
+  children:
+  - Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  - Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ApplicationJsonMessageMarshallingConverter
+  nameWithType: ApplicationJsonMessageMarshallingConverter
+  fullName: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter
+  type: Class
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Converter/ApplicationJsonMessageMarshallingConverter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ApplicationJsonMessageMarshallingConverter
+    path: ../Steeltoe/src/Stream/src/StreamBase/Converter/ApplicationJsonMessageMarshallingConverter.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Converter
+  syntax:
+    content: 'public class ApplicationJsonMessageMarshallingConverter : NewtonJsonMessageConverter, ISmartMessageConverter, IMessageConverter, IServiceNameAware'
+    content.vb: >-
+      Public Class ApplicationJsonMessageMarshallingConverter
+
+          Inherits NewtonJsonMessageConverter
+
+          Implements ISmartMessageConverter, IMessageConverter, IServiceNameAware
+  inheritance:
+  - System.Object
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  implements:
+  - Steeltoe.Messaging.Converter.ISmartMessageConverter
+  - Steeltoe.Messaging.Converter.IMessageConverter
+  - IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.DEFAULT_SERVICE_NAME
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Settings
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ServiceName
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom(Steeltoe.Messaging.IMessage,System.Type)
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType(System.Type)
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType(System.Type)
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType(System.Type,System.Object)
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports(System.Type)
+  - Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding(Steeltoe.Common.Util.MimeType)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportedMimeTypes
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.ContentTypeResolver
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.StrictContentTypeMatch
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.SerializedPayloadClass
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType(System.Object)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType(Steeltoe.Messaging.IMessageHeaders)
+  - Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType(Steeltoe.Messaging.IMessageHeaders)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  commentId: M:Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  id: ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  parent: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertToInternal(Object, IMessageHeaders, Object)
+  nameWithType: ApplicationJsonMessageMarshallingConverter.ConvertToInternal(Object, IMessageHeaders, Object)
+  fullName: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal(System.Object, Steeltoe.Messaging.IMessageHeaders, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Converter/ApplicationJsonMessageMarshallingConverter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertToInternal
+    path: ../Steeltoe/src/Stream/src/StreamBase/Converter/ApplicationJsonMessageMarshallingConverter.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Converter
+  syntax:
+    content: protected override object ConvertToInternal(object payload, IMessageHeaders headers, object conversionHint)
+    parameters:
+    - id: payload
+      type: System.Object
+    - id: headers
+      type: Steeltoe.Messaging.IMessageHeaders
+    - id: conversionHint
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Protected Overrides Function ConvertToInternal(payload As Object, headers As IMessageHeaders, conversionHint As Object) As Object
+  overridden: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  overload: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  commentId: M:Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  id: ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  parent: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertFromInternal(IMessage, Type, Object)
+  nameWithType: ApplicationJsonMessageMarshallingConverter.ConvertFromInternal(IMessage, Type, Object)
+  fullName: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage, System.Type, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/StreamBase/Converter/ApplicationJsonMessageMarshallingConverter.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ConvertFromInternal
+    path: ../Steeltoe/src/Stream/src/StreamBase/Converter/ApplicationJsonMessageMarshallingConverter.cs
+    startLine: 34
+  assemblies:
+  - Steeltoe.Stream.StreamBase
+  namespace: Steeltoe.Stream.Converter
+  syntax:
+    content: protected override object ConvertFromInternal(IMessage message, Type targetClass, object conversionHint)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    - id: targetClass
+      type: System.Type
+    - id: conversionHint
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Protected Overrides Function ConvertFromInternal(message As IMessage, targetClass As Type, conversionHint As Object) As Object
+  overridden: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  overload: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Stream.Converter
+  commentId: N:Steeltoe.Stream.Converter
+  name: Steeltoe.Stream.Converter
+  nameWithType: Steeltoe.Stream.Converter
+  fullName: Steeltoe.Stream.Converter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.AbstractMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: AbstractMessageConverter
+  nameWithType: AbstractMessageConverter
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: NewtonJsonMessageConverter
+  nameWithType: NewtonJsonMessageConverter
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+- uid: Steeltoe.Messaging.Converter.ISmartMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.ISmartMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: ISmartMessageConverter
+  nameWithType: ISmartMessageConverter
+  fullName: Steeltoe.Messaging.Converter.ISmartMessageConverter
+- uid: Steeltoe.Messaging.Converter.IMessageConverter
+  commentId: T:Steeltoe.Messaging.Converter.IMessageConverter
+  parent: Steeltoe.Messaging.Converter
+  name: IMessageConverter
+  nameWithType: IMessageConverter
+  fullName: Steeltoe.Messaging.Converter.IMessageConverter
+- uid: IServiceNameAware
+  isExternal: true
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: IServiceNameAware
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.DEFAULT_SERVICE_NAME
+  commentId: F:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.DEFAULT_SERVICE_NAME
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  name: DEFAULT_SERVICE_NAME
+  nameWithType: NewtonJsonMessageConverter.DEFAULT_SERVICE_NAME
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.DEFAULT_SERVICE_NAME
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Settings
+  commentId: P:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Settings
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  name: Settings
+  nameWithType: NewtonJsonMessageConverter.Settings
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Settings
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ServiceName
+  commentId: P:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ServiceName
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  name: ServiceName
+  nameWithType: NewtonJsonMessageConverter.ServiceName
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ServiceName
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom(Steeltoe.Messaging.IMessage,System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom(Steeltoe.Messaging.IMessage,System.Type)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: CanConvertFrom(IMessage, Type)
+  nameWithType: NewtonJsonMessageConverter.CanConvertFrom(IMessage, Type)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom(Steeltoe.Messaging.IMessage, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom(Steeltoe.Messaging.IMessage,System.Type)
+    name: CanConvertFrom
+    nameWithType: NewtonJsonMessageConverter.CanConvertFrom
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom(Steeltoe.Messaging.IMessage,System.Type)
+    name: CanConvertFrom
+    nameWithType: NewtonJsonMessageConverter.CanConvertFrom
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertFrom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: CanConvertTo(Object, IMessageHeaders)
+  nameWithType: NewtonJsonMessageConverter.CanConvertTo(Object, IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo(System.Object, Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: CanConvertTo
+    nameWithType: NewtonJsonMessageConverter.CanConvertTo
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: CanConvertTo
+    nameWithType: NewtonJsonMessageConverter.CanConvertTo
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.CanConvertTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType(System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType(System.Type)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: IsIMessageGenericType(Type)
+  nameWithType: NewtonJsonMessageConverter.IsIMessageGenericType(Type)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType(System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType(System.Type)
+    name: IsIMessageGenericType
+    nameWithType: NewtonJsonMessageConverter.IsIMessageGenericType
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType(System.Type)
+    name: IsIMessageGenericType
+    nameWithType: NewtonJsonMessageConverter.IsIMessageGenericType
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.IsIMessageGenericType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType(System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType(System.Type)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: GetIMessageGenericType(Type)
+  nameWithType: NewtonJsonMessageConverter.GetIMessageGenericType(Type)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType(System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType(System.Type)
+    name: GetIMessageGenericType
+    nameWithType: NewtonJsonMessageConverter.GetIMessageGenericType
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType(System.Type)
+    name: GetIMessageGenericType
+    nameWithType: NewtonJsonMessageConverter.GetIMessageGenericType
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetIMessageGenericType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType(System.Type,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType(System.Type,System.Object)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: GetTargetType(Type, Object)
+  nameWithType: NewtonJsonMessageConverter.GetTargetType(Type, Object)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType(System.Type, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType(System.Type,System.Object)
+    name: GetTargetType
+    nameWithType: NewtonJsonMessageConverter.GetTargetType
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType(System.Type,System.Object)
+    name: GetTargetType
+    nameWithType: NewtonJsonMessageConverter.GetTargetType
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetTargetType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports(System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports(System.Type)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: Supports(Type)
+  nameWithType: NewtonJsonMessageConverter.Supports(Type)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports(System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports(System.Type)
+    name: Supports
+    nameWithType: NewtonJsonMessageConverter.Supports
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports(System.Type)
+    name: Supports
+    nameWithType: NewtonJsonMessageConverter.Supports
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.Supports
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding(Steeltoe.Common.Util.MimeType)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding(Steeltoe.Common.Util.MimeType)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  name: GetJsonEncoding(MimeType)
+  nameWithType: NewtonJsonMessageConverter.GetJsonEncoding(MimeType)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding(Steeltoe.Common.Util.MimeType)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding(Steeltoe.Common.Util.MimeType)
+    name: GetJsonEncoding
+    nameWithType: NewtonJsonMessageConverter.GetJsonEncoding
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Util.MimeType
+    name: MimeType
+    nameWithType: MimeType
+    fullName: Steeltoe.Common.Util.MimeType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding(Steeltoe.Common.Util.MimeType)
+    name: GetJsonEncoding
+    nameWithType: NewtonJsonMessageConverter.GetJsonEncoding
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.GetJsonEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Common.Util.MimeType
+    name: MimeType
+    nameWithType: MimeType
+    fullName: Steeltoe.Common.Util.MimeType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportedMimeTypes
+  commentId: P:Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportedMimeTypes
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  name: SupportedMimeTypes
+  nameWithType: AbstractMessageConverter.SupportedMimeTypes
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportedMimeTypes
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.ContentTypeResolver
+  commentId: P:Steeltoe.Messaging.Converter.AbstractMessageConverter.ContentTypeResolver
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  name: ContentTypeResolver
+  nameWithType: AbstractMessageConverter.ContentTypeResolver
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.ContentTypeResolver
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.StrictContentTypeMatch
+  commentId: P:Steeltoe.Messaging.Converter.AbstractMessageConverter.StrictContentTypeMatch
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  name: StrictContentTypeMatch
+  nameWithType: AbstractMessageConverter.StrictContentTypeMatch
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.StrictContentTypeMatch
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.SerializedPayloadClass
+  commentId: P:Steeltoe.Messaging.Converter.AbstractMessageConverter.SerializedPayloadClass
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  name: SerializedPayloadClass
+  nameWithType: AbstractMessageConverter.SerializedPayloadClass
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.SerializedPayloadClass
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  name: FromMessage<T>(IMessage)
+  nameWithType: AbstractMessageConverter.FromMessage<T>(IMessage)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage<T>(Steeltoe.Messaging.IMessage)
+  nameWithType.vb: AbstractMessageConverter.FromMessage(Of T)(IMessage)
+  fullName.vb: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Of T)(Steeltoe.Messaging.IMessage)
+  name.vb: FromMessage(Of T)(IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+    name: FromMessage<T>
+    nameWithType: AbstractMessageConverter.FromMessage<T>
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage)
+    name: FromMessage(Of T)
+    nameWithType: AbstractMessageConverter.FromMessage(Of T)
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  isExternal: true
+  name: FromMessage<T>(IMessage, Object)
+  nameWithType: AbstractMessageConverter.FromMessage<T>(IMessage, Object)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage<T>(Steeltoe.Messaging.IMessage, System.Object)
+  nameWithType.vb: AbstractMessageConverter.FromMessage(Of T)(IMessage, Object)
+  fullName.vb: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Of T)(Steeltoe.Messaging.IMessage, System.Object)
+  name.vb: FromMessage(Of T)(IMessage, Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+    name: FromMessage<T>
+    nameWithType: AbstractMessageConverter.FromMessage<T>
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage``1(Steeltoe.Messaging.IMessage,System.Object)
+    name: FromMessage(Of T)
+    nameWithType: AbstractMessageConverter.FromMessage(Of T)
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  isExternal: true
+  name: FromMessage(IMessage, Type)
+  nameWithType: AbstractMessageConverter.FromMessage(IMessage, Type)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage, System.Type)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+    name: FromMessage
+    nameWithType: AbstractMessageConverter.FromMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type)
+    name: FromMessage
+    nameWithType: AbstractMessageConverter.FromMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  isExternal: true
+  name: FromMessage(IMessage, Type, Object)
+  nameWithType: AbstractMessageConverter.FromMessage(IMessage, Type, Object)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage, System.Type, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+    name: FromMessage
+    nameWithType: AbstractMessageConverter.FromMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+    name: FromMessage
+    nameWithType: AbstractMessageConverter.FromMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.FromMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  isExternal: true
+  name: ToMessage(Object, IMessageHeaders)
+  nameWithType: AbstractMessageConverter.ToMessage(Object, IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object, Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: ToMessage
+    nameWithType: AbstractMessageConverter.ToMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders)
+    name: ToMessage
+    nameWithType: AbstractMessageConverter.ToMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  isExternal: true
+  name: ToMessage(Object, IMessageHeaders, Object)
+  nameWithType: AbstractMessageConverter.ToMessage(Object, IMessageHeaders, Object)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object, Steeltoe.Messaging.IMessageHeaders, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+    name: ToMessage
+    nameWithType: AbstractMessageConverter.ToMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+    name: ToMessage
+    nameWithType: AbstractMessageConverter.ToMessage
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.ToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType(System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType(System.Object)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  isExternal: true
+  name: GetDefaultContentType(Object)
+  nameWithType: AbstractMessageConverter.GetDefaultContentType(Object)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType(System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType(System.Object)
+    name: GetDefaultContentType
+    nameWithType: AbstractMessageConverter.GetDefaultContentType
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType(System.Object)
+    name: GetDefaultContentType
+    nameWithType: AbstractMessageConverter.GetDefaultContentType
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetDefaultContentType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  name: SupportsMimeType(IMessageHeaders)
+  nameWithType: AbstractMessageConverter.SupportsMimeType(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType(Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType(Steeltoe.Messaging.IMessageHeaders)
+    name: SupportsMimeType
+    nameWithType: AbstractMessageConverter.SupportsMimeType
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType(Steeltoe.Messaging.IMessageHeaders)
+    name: SupportsMimeType
+    nameWithType: AbstractMessageConverter.SupportsMimeType
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.SupportsMimeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType(Steeltoe.Messaging.IMessageHeaders)
+  commentId: M:Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType(Steeltoe.Messaging.IMessageHeaders)
+  parent: Steeltoe.Messaging.Converter.AbstractMessageConverter
+  name: GetMimeType(IMessageHeaders)
+  nameWithType: AbstractMessageConverter.GetMimeType(IMessageHeaders)
+  fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType(Steeltoe.Messaging.IMessageHeaders)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType(Steeltoe.Messaging.IMessageHeaders)
+    name: GetMimeType
+    nameWithType: AbstractMessageConverter.GetMimeType
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType(Steeltoe.Messaging.IMessageHeaders)
+    name: GetMimeType
+    nameWithType: AbstractMessageConverter.GetMimeType
+    fullName: Steeltoe.Messaging.Converter.AbstractMessageConverter.GetMimeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.Converter
+  commentId: N:Steeltoe.Messaging.Converter
+  name: Steeltoe.Messaging.Converter
+  nameWithType: Steeltoe.Messaging.Converter
+  fullName: Steeltoe.Messaging.Converter
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: ConvertToInternal(Object, IMessageHeaders, Object)
+  nameWithType: NewtonJsonMessageConverter.ConvertToInternal(Object, IMessageHeaders, Object)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal(System.Object, Steeltoe.Messaging.IMessageHeaders, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+    name: ConvertToInternal
+    nameWithType: NewtonJsonMessageConverter.ConvertToInternal
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal(System.Object,Steeltoe.Messaging.IMessageHeaders,System.Object)
+    name: ConvertToInternal
+    nameWithType: NewtonJsonMessageConverter.ConvertToInternal
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertToInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.IMessageHeaders
+    name: IMessageHeaders
+    nameWithType: IMessageHeaders
+    fullName: Steeltoe.Messaging.IMessageHeaders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal*
+  commentId: Overload:Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal
+  name: ConvertToInternal
+  nameWithType: ApplicationJsonMessageMarshallingConverter.ConvertToInternal
+  fullName: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertToInternal
+- uid: Steeltoe.Messaging.IMessageHeaders
+  commentId: T:Steeltoe.Messaging.IMessageHeaders
+  parent: Steeltoe.Messaging
+  name: IMessageHeaders
+  nameWithType: IMessageHeaders
+  fullName: Steeltoe.Messaging.IMessageHeaders
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  commentId: M:Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+  parent: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter
+  isExternal: true
+  name: ConvertFromInternal(IMessage, Type, Object)
+  nameWithType: NewtonJsonMessageConverter.ConvertFromInternal(IMessage, Type, Object)
+  fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage, System.Type, System.Object)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+    name: ConvertFromInternal
+    nameWithType: NewtonJsonMessageConverter.ConvertFromInternal
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal(Steeltoe.Messaging.IMessage,System.Type,System.Object)
+    name: ConvertFromInternal
+    nameWithType: NewtonJsonMessageConverter.ConvertFromInternal
+    fullName: Steeltoe.Messaging.Converter.NewtonJsonMessageConverter.ConvertFromInternal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal*
+  commentId: Overload:Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal
+  name: ConvertFromInternal
+  nameWithType: ApplicationJsonMessageMarshallingConverter.ConvertFromInternal
+  fullName: Steeltoe.Stream.Converter.ApplicationJsonMessageMarshallingConverter.ConvertFromInternal
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

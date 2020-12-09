@@ -1,0 +1,1366 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3
+  id: BucketedRollingCounterStream`3
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  children:
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.#ctor(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream{`0},System.Int32,System.Int32,System.Func{`1,`0,`1},System.Func{`2,`1,`2})
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.counterSubject
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Latest
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Observe
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.StartCachingStreamValuesIfUnstarted
+  langs:
+  - csharp
+  - vb
+  name: BucketedRollingCounterStream<Event, Bucket, Output>
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>
+  type: Class
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BucketedRollingCounterStream
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: 'public abstract class BucketedRollingCounterStream<Event, Bucket, Output> : BucketedCounterStream<Event, Bucket, Output> where Event : IHystrixEvent'
+    typeParameters:
+    - id: Event
+    - id: Bucket
+    - id: Output
+    content.vb: >-
+      Public MustInherit Class BucketedRollingCounterStream(Of Event As IHystrixEvent, Bucket, Output)
+
+          Inherits BucketedCounterStream(Of  Event, Bucket, Output)
+  inheritance:
+  - System.Object
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  derivedClasses:
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.HealthCountsStream
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCollapserEventCounterStream
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingCommandEventCounterStream
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.RollingThreadPoolEventCounterStream
+  inheritedMembers:
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.numBuckets
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.bucketSizeInMs
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.bucketedStream
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.subscription
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.EmptyBucketSummary
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.EmptyOutputValue
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.Observe
+  - Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.Unsubscribe
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output)
+  name.vb: BucketedRollingCounterStream(Of Event, Bucket, Output)
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.counterSubject
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.counterSubject
+  id: counterSubject
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3
+  langs:
+  - csharp
+  - vb
+  name: counterSubject
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.counterSubject
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.counterSubject
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: counterSubject
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: protected BehaviorSubject<Output> counterSubject
+    return:
+      type: BehaviorSubject{{Output}}
+    content.vb: Protected counterSubject As BehaviorSubject(Of Output)
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).counterSubject
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).counterSubject
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.#ctor(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream{`0},System.Int32,System.Int32,System.Func{`1,`0,`1},System.Func{`2,`1,`2})
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.#ctor(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream{`0},System.Int32,System.Int32,System.Func{`1,`0,`1},System.Func{`2,`1,`2})
+  id: '#ctor(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream{`0},System.Int32,System.Int32,System.Func{`1,`0,`1},System.Func{`2,`1,`2})'
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3
+  langs:
+  - csharp
+  - vb
+  name: BucketedRollingCounterStream(IHystrixEventStream<Event>, Int32, Int32, Func<Bucket, Event, Bucket>, Func<Output, Bucket, Output>)
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.BucketedRollingCounterStream(IHystrixEventStream<Event>, Int32, Int32, Func<Bucket, Event, Bucket>, Func<Output, Bucket, Output>)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.BucketedRollingCounterStream(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<Event>, System.Int32, System.Int32, System.Func<Bucket, Event, Bucket>, System.Func<Output, Bucket, Output>)
+  type: Constructor
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: protected BucketedRollingCounterStream(IHystrixEventStream<Event> stream, int numBuckets, int bucketSizeInMs, Func<Bucket, Event, Bucket> appendRawEventToBucket, Func<Output, Bucket, Output> reduceBucket)
+    parameters:
+    - id: stream
+      type: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream{{Event}}
+    - id: numBuckets
+      type: System.Int32
+    - id: bucketSizeInMs
+      type: System.Int32
+    - id: appendRawEventToBucket
+      type: System.Func{{Bucket},{Event},{Bucket}}
+    - id: reduceBucket
+      type: System.Func{{Output},{Bucket},{Output}}
+    content.vb: Protected Sub New(stream As IHystrixEventStream(Of  Event), numBuckets As Integer, bucketSizeInMs As Integer, appendRawEventToBucket As Func(Of Bucket,  Event, Bucket), reduceBucket As Func(Of Output, Bucket, Output))
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.#ctor*
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).BucketedRollingCounterStream(IHystrixEventStream(Of Event), Int32, Int32, Func(Of Bucket, Event, Bucket), Func(Of Output, Bucket, Output))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).BucketedRollingCounterStream(Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream(Of Event), System.Int32, System.Int32, System.Func(Of Bucket, Event, Bucket), System.Func(Of Output, Bucket, Output))
+  name.vb: BucketedRollingCounterStream(IHystrixEventStream(Of Event), Int32, Int32, Func(Of Bucket, Event, Bucket), Func(Of Output, Bucket, Output))
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Observe
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Observe
+  id: Observe
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3
+  langs:
+  - csharp
+  - vb
+  name: Observe()
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.Observe()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.Observe()
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Observe
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+    startLine: 48
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: public override IObservable<Output> Observe()
+    return:
+      type: System.IObservable{{Output}}
+    content.vb: Public Overrides Function Observe As IObservable(Of Output)
+  overridden: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.Observe
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Observe*
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).Observe()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).Observe()
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.StartCachingStreamValuesIfUnstarted
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.StartCachingStreamValuesIfUnstarted
+  id: StartCachingStreamValuesIfUnstarted
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3
+  langs:
+  - csharp
+  - vb
+  name: StartCachingStreamValuesIfUnstarted()
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.StartCachingStreamValuesIfUnstarted()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.StartCachingStreamValuesIfUnstarted()
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: StartCachingStreamValuesIfUnstarted
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+    startLine: 61
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: public void StartCachingStreamValuesIfUnstarted()
+    content.vb: Public Sub StartCachingStreamValuesIfUnstarted
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.StartCachingStreamValuesIfUnstarted*
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).StartCachingStreamValuesIfUnstarted()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).StartCachingStreamValuesIfUnstarted()
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Latest
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Latest
+  id: Latest
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3
+  langs:
+  - csharp
+  - vb
+  name: Latest
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.Latest
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.Latest
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Latest
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Metric/Consumer/BucketedRollingCounterStream.cs
+    startLine: 79
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  syntax:
+    content: public Output Latest { get; }
+    parameters: []
+    return:
+      type: '{Output}'
+    content.vb: Public ReadOnly Property Latest As Output
+  overload: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Latest*
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).Latest
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).Latest
+references:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  name: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3
+  name: BucketedCounterStream<Event, Bucket, Output>
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output)
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output)
+  name.vb: BucketedCounterStream(Of Event, Bucket, Output)
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3
+    name: BucketedCounterStream
+    nameWithType: BucketedCounterStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3
+    name: BucketedCounterStream
+    nameWithType: BucketedCounterStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.numBuckets
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.numBuckets
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.numBuckets
+  name: numBuckets
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.numBuckets
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.numBuckets
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).numBuckets
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).numBuckets
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.bucketSizeInMs
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.bucketSizeInMs
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.bucketSizeInMs
+  name: bucketSizeInMs
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.bucketSizeInMs
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.bucketSizeInMs
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).bucketSizeInMs
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).bucketSizeInMs
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.bucketedStream
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.bucketedStream
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.bucketedStream
+  name: bucketedStream
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.bucketedStream
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.bucketedStream
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).bucketedStream
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).bucketedStream
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.subscription
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.subscription
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.subscription
+  name: subscription
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.subscription
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.subscription
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).subscription
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).subscription
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.EmptyBucketSummary
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.EmptyBucketSummary
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.EmptyBucketSummary
+  name: EmptyBucketSummary
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.EmptyBucketSummary
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.EmptyBucketSummary
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).EmptyBucketSummary
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).EmptyBucketSummary
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.EmptyOutputValue
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.EmptyOutputValue
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.EmptyOutputValue
+  name: EmptyOutputValue
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.EmptyOutputValue
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.EmptyOutputValue
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).EmptyOutputValue
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).EmptyOutputValue
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.Observe
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.Observe
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Observe
+  name: Observe()
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.Observe()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Observe()
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).Observe()
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Observe()
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Observe
+    name: Observe
+    nameWithType: BucketedCounterStream<Event, Bucket, Output>.Observe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Observe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Observe
+    name: Observe
+    nameWithType: BucketedCounterStream(Of Event, Bucket, Output).Observe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Observe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}.Unsubscribe
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{`0,`1,`2}.Unsubscribe
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream{{Event},{Bucket},{Output}}
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Unsubscribe
+  name: Unsubscribe()
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.Unsubscribe()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Unsubscribe()
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe()
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe()
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Unsubscribe
+    name: Unsubscribe
+    nameWithType: BucketedCounterStream<Event, Bucket, Output>.Unsubscribe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Unsubscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Unsubscribe
+    name: Unsubscribe
+    nameWithType: BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3
+  name: BucketedCounterStream<Event, Bucket, Output>
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output)
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output)
+  name.vb: BucketedCounterStream(Of Event, Bucket, Output)
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3
+    name: BucketedCounterStream
+    nameWithType: BucketedCounterStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3
+    name: BucketedCounterStream
+    nameWithType: BucketedCounterStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.numBuckets
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.numBuckets
+  name: numBuckets
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.numBuckets
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.numBuckets
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).numBuckets
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).numBuckets
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.bucketSizeInMs
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.bucketSizeInMs
+  name: bucketSizeInMs
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.bucketSizeInMs
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.bucketSizeInMs
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).bucketSizeInMs
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).bucketSizeInMs
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.bucketedStream
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.bucketedStream
+  name: bucketedStream
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.bucketedStream
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.bucketedStream
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).bucketedStream
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).bucketedStream
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.subscription
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.subscription
+  name: subscription
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.subscription
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.subscription
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).subscription
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).subscription
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.EmptyBucketSummary
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.EmptyBucketSummary
+  name: EmptyBucketSummary
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.EmptyBucketSummary
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.EmptyBucketSummary
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).EmptyBucketSummary
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).EmptyBucketSummary
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.EmptyOutputValue
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.EmptyOutputValue
+  name: EmptyOutputValue
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.EmptyOutputValue
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.EmptyOutputValue
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).EmptyOutputValue
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).EmptyOutputValue
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Observe
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Observe
+  name: Observe()
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.Observe()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Observe()
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).Observe()
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Observe()
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Observe
+    name: Observe
+    nameWithType: BucketedCounterStream<Event, Bucket, Output>.Observe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Observe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Observe
+    name: Observe
+    nameWithType: BucketedCounterStream(Of Event, Bucket, Output).Observe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Observe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Unsubscribe
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Unsubscribe
+  name: Unsubscribe()
+  nameWithType: BucketedCounterStream<Event, Bucket, Output>.Unsubscribe()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Unsubscribe()
+  nameWithType.vb: BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe()
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe()
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Unsubscribe
+    name: Unsubscribe
+    nameWithType: BucketedCounterStream<Event, Bucket, Output>.Unsubscribe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream<Event, Bucket, Output>.Unsubscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream`3.Unsubscribe
+    name: Unsubscribe
+    nameWithType: BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedCounterStream(Of Event, Bucket, Output).Unsubscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BehaviorSubject{{Output}}
+  commentId: '!:BehaviorSubject{`2}'
+  definition: BehaviorSubject`1
+  name: BehaviorSubject<Output>
+  nameWithType: BehaviorSubject<Output>
+  fullName: BehaviorSubject<Output>
+  nameWithType.vb: BehaviorSubject(Of Output)
+  fullName.vb: BehaviorSubject(Of Output)
+  name.vb: BehaviorSubject(Of Output)
+  spec.csharp:
+  - uid: BehaviorSubject`1
+    name: BehaviorSubject
+    nameWithType: BehaviorSubject
+    fullName: BehaviorSubject
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BehaviorSubject`1
+    name: BehaviorSubject
+    nameWithType: BehaviorSubject
+    fullName: BehaviorSubject
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BehaviorSubject`1
+  commentId: '!:BehaviorSubject`1'
+  isExternal: true
+  name: BehaviorSubject<>
+  nameWithType: BehaviorSubject<>
+  fullName: BehaviorSubject<>
+  nameWithType.vb: BehaviorSubject(Of )
+  fullName.vb: BehaviorSubject(Of )
+  name.vb: BehaviorSubject(Of )
+  spec.csharp:
+  - uid: BehaviorSubject`1
+    name: BehaviorSubject
+    nameWithType: BehaviorSubject
+    fullName: BehaviorSubject
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BehaviorSubject`1
+    name: BehaviorSubject
+    nameWithType: BehaviorSubject
+    fullName: BehaviorSubject
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.#ctor*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.#ctor
+  name: BucketedRollingCounterStream
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.BucketedRollingCounterStream
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.BucketedRollingCounterStream
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).BucketedRollingCounterStream
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).BucketedRollingCounterStream
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream{{Event}}
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream{`0}
+  parent: Steeltoe.CircuitBreaker.Hystrix.Metric
+  definition: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream`1
+  name: IHystrixEventStream<Event>
+  nameWithType: IHystrixEventStream<Event>
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<Event>
+  nameWithType.vb: IHystrixEventStream(Of Event)
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream(Of Event)
+  name.vb: IHystrixEventStream(Of Event)
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream`1
+    name: IHystrixEventStream
+    nameWithType: IHystrixEventStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream`1
+    name: IHystrixEventStream
+    nameWithType: IHystrixEventStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Func{{Bucket},{Event},{Bucket}}
+  commentId: T:System.Func{`1,`0,`1}
+  parent: System
+  definition: System.Func`3
+  name: Func<Bucket, Event, Bucket>
+  nameWithType: Func<Bucket, Event, Bucket>
+  fullName: System.Func<Bucket, Event, Bucket>
+  nameWithType.vb: Func(Of Bucket, Event, Bucket)
+  fullName.vb: System.Func(Of Bucket, Event, Bucket)
+  name.vb: Func(Of Bucket, Event, Bucket)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Event
+    nameWithType: Event
+    fullName: Event
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{Output},{Bucket},{Output}}
+  commentId: T:System.Func{`2,`1,`2}
+  parent: System
+  definition: System.Func`3
+  name: Func<Output, Bucket, Output>
+  nameWithType: Func<Output, Bucket, Output>
+  fullName: System.Func<Output, Bucket, Output>
+  nameWithType.vb: Func(Of Output, Bucket, Output)
+  fullName.vb: System.Func(Of Output, Bucket, Output)
+  name.vb: Func(Of Output, Bucket, Output)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Bucket
+    nameWithType: Bucket
+    fullName: Bucket
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream`1
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream`1
+  name: IHystrixEventStream<E>
+  nameWithType: IHystrixEventStream<E>
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream<E>
+  nameWithType.vb: IHystrixEventStream(Of E)
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream(Of E)
+  name.vb: IHystrixEventStream(Of E)
+  spec.csharp:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream`1
+    name: IHystrixEventStream
+    nameWithType: IHystrixEventStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream`1
+    name: IHystrixEventStream
+    nameWithType: IHystrixEventStream
+    fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.IHystrixEventStream
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Metric
+  name: Steeltoe.CircuitBreaker.Hystrix.Metric
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Metric
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Observe*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Observe
+  name: Observe
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.Observe
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.Observe
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).Observe
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).Observe
+- uid: System.IObservable{{Output}}
+  commentId: T:System.IObservable{`2}
+  parent: System
+  definition: System.IObservable`1
+  name: IObservable<Output>
+  nameWithType: IObservable<Output>
+  fullName: System.IObservable<Output>
+  nameWithType.vb: IObservable(Of Output)
+  fullName.vb: System.IObservable(Of Output)
+  name.vb: IObservable(Of Output)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Output
+    nameWithType: Output
+    fullName: Output
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.StartCachingStreamValuesIfUnstarted*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.StartCachingStreamValuesIfUnstarted
+  name: StartCachingStreamValuesIfUnstarted
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.StartCachingStreamValuesIfUnstarted
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.StartCachingStreamValuesIfUnstarted
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).StartCachingStreamValuesIfUnstarted
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).StartCachingStreamValuesIfUnstarted
+- uid: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Latest*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream`3.Latest
+  name: Latest
+  nameWithType: BucketedRollingCounterStream<Event, Bucket, Output>.Latest
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream<Event, Bucket, Output>.Latest
+  nameWithType.vb: BucketedRollingCounterStream(Of Event, Bucket, Output).Latest
+  fullName.vb: Steeltoe.CircuitBreaker.Hystrix.Metric.Consumer.BucketedRollingCounterStream(Of Event, Bucket, Output).Latest
+- uid: '{Output}'
+  commentId: '!:Output'
+  definition: Output
+  name: Output
+  nameWithType: Output
+  fullName: Output
+- uid: Output
+  name: Output
+  nameWithType: Output
+  fullName: Output

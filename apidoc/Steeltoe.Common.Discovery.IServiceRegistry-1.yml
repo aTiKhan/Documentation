@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1
+  commentId: T:Steeltoe.Common.Discovery.IServiceRegistry`1
+  id: IServiceRegistry`1
+  parent: Steeltoe.Common.Discovery
+  children:
+  - Steeltoe.Common.Discovery.IServiceRegistry`1.Deregister(`0)
+  - Steeltoe.Common.Discovery.IServiceRegistry`1.GetStatus``1(`0)
+  - Steeltoe.Common.Discovery.IServiceRegistry`1.Register(`0)
+  - Steeltoe.Common.Discovery.IServiceRegistry`1.SetStatus(`0,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IServiceRegistry<T>
+  nameWithType: IServiceRegistry<T>
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IServiceRegistry
+    path: ../Steeltoe/src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Discovery
+  summary: "\nRepresents a Service registry (e.g. Consul, etc.)\n"
+  example: []
+  syntax:
+    content: 'public interface IServiceRegistry<in T> : IDisposable where T : IServiceInstance'
+    typeParameters:
+    - id: T
+      description: a type representing a service instance
+    content.vb: >-
+      Public Interface IServiceRegistry(Of In T As IServiceInstance)
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  nameWithType.vb: IServiceRegistry(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T)
+  name.vb: IServiceRegistry(Of T)
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.Register(`0)
+  commentId: M:Steeltoe.Common.Discovery.IServiceRegistry`1.Register(`0)
+  id: Register(`0)
+  parent: Steeltoe.Common.Discovery.IServiceRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: Register(T)
+  nameWithType: IServiceRegistry<T>.Register(T)
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.Register(T)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Register
+    path: ../Steeltoe/src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Discovery
+  summary: "\nRegister a service instance in the service registry\n"
+  example: []
+  syntax:
+    content: void Register(T registration)
+    parameters:
+    - id: registration
+      type: '{T}'
+      description: the service instance to register
+    content.vb: Sub Register(registration As T)
+  overload: Steeltoe.Common.Discovery.IServiceRegistry`1.Register*
+  nameWithType.vb: IServiceRegistry(Of T).Register(T)
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).Register(T)
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.Deregister(`0)
+  commentId: M:Steeltoe.Common.Discovery.IServiceRegistry`1.Deregister(`0)
+  id: Deregister(`0)
+  parent: Steeltoe.Common.Discovery.IServiceRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: Deregister(T)
+  nameWithType: IServiceRegistry<T>.Deregister(T)
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.Deregister(T)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Deregister
+    path: ../Steeltoe/src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Discovery
+  summary: "\nDeregister a service instance in the service registry\n"
+  example: []
+  syntax:
+    content: void Deregister(T registration)
+    parameters:
+    - id: registration
+      type: '{T}'
+      description: the service instance to register
+    content.vb: Sub Deregister(registration As T)
+  overload: Steeltoe.Common.Discovery.IServiceRegistry`1.Deregister*
+  nameWithType.vb: IServiceRegistry(Of T).Deregister(T)
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).Deregister(T)
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.SetStatus(`0,System.String)
+  commentId: M:Steeltoe.Common.Discovery.IServiceRegistry`1.SetStatus(`0,System.String)
+  id: SetStatus(`0,System.String)
+  parent: Steeltoe.Common.Discovery.IServiceRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: SetStatus(T, String)
+  nameWithType: IServiceRegistry<T>.SetStatus(T, String)
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.SetStatus(T, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SetStatus
+    path: ../Steeltoe/src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+    startLine: 32
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Discovery
+  summary: "\nUpdate the registration in the service registry with the provided status\n"
+  example: []
+  syntax:
+    content: void SetStatus(T registration, string status)
+    parameters:
+    - id: registration
+      type: '{T}'
+      description: the registration to update
+    - id: status
+      type: System.String
+      description: the status
+    content.vb: Sub SetStatus(registration As T, status As String)
+  overload: Steeltoe.Common.Discovery.IServiceRegistry`1.SetStatus*
+  nameWithType.vb: IServiceRegistry(Of T).SetStatus(T, String)
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).SetStatus(T, System.String)
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.GetStatus``1(`0)
+  commentId: M:Steeltoe.Common.Discovery.IServiceRegistry`1.GetStatus``1(`0)
+  id: GetStatus``1(`0)
+  parent: Steeltoe.Common.Discovery.IServiceRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: GetStatus<S>(T)
+  nameWithType: IServiceRegistry<T>.GetStatus<S>(T)
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.GetStatus<S>(T)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetStatus
+    path: ../Steeltoe/src/Common/src/Abstractions/Discovery/IServiceRegistry.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.Discovery
+  summary: "\nReturn the current status of the service registry registration\n"
+  example: []
+  syntax:
+    content: >-
+      S GetStatus<S>(T registration)
+
+          where S : class
+    parameters:
+    - id: registration
+      type: '{T}'
+      description: the service registration to obtain status for
+    typeParameters:
+    - id: S
+      description: the status
+    return:
+      type: '{S}'
+      description: the returned status
+    content.vb: Function GetStatus(Of S As Class)(registration As T) As S
+  overload: Steeltoe.Common.Discovery.IServiceRegistry`1.GetStatus*
+  nameWithType.vb: IServiceRegistry(Of T).GetStatus(Of S)(T)
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).GetStatus(Of S)(T)
+  name.vb: GetStatus(Of S)(T)
+references:
+- uid: Steeltoe.Common.Discovery
+  commentId: N:Steeltoe.Common.Discovery
+  name: Steeltoe.Common.Discovery
+  nameWithType: Steeltoe.Common.Discovery
+  fullName: Steeltoe.Common.Discovery
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.Register*
+  commentId: Overload:Steeltoe.Common.Discovery.IServiceRegistry`1.Register
+  name: Register
+  nameWithType: IServiceRegistry<T>.Register
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.Register
+  nameWithType.vb: IServiceRegistry(Of T).Register
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).Register
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.Deregister*
+  commentId: Overload:Steeltoe.Common.Discovery.IServiceRegistry`1.Deregister
+  name: Deregister
+  nameWithType: IServiceRegistry<T>.Deregister
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.Deregister
+  nameWithType.vb: IServiceRegistry(Of T).Deregister
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).Deregister
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.SetStatus*
+  commentId: Overload:Steeltoe.Common.Discovery.IServiceRegistry`1.SetStatus
+  name: SetStatus
+  nameWithType: IServiceRegistry<T>.SetStatus
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.SetStatus
+  nameWithType.vb: IServiceRegistry(Of T).SetStatus
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).SetStatus
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Common.Discovery.IServiceRegistry`1.GetStatus*
+  commentId: Overload:Steeltoe.Common.Discovery.IServiceRegistry`1.GetStatus
+  name: GetStatus
+  nameWithType: IServiceRegistry<T>.GetStatus
+  fullName: Steeltoe.Common.Discovery.IServiceRegistry<T>.GetStatus
+  nameWithType.vb: IServiceRegistry(Of T).GetStatus
+  fullName.vb: Steeltoe.Common.Discovery.IServiceRegistry(Of T).GetStatus
+- uid: '{S}'
+  commentId: '!:S'
+  definition: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: S
+  name: S
+  nameWithType: S
+  fullName: S

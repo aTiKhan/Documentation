@@ -1,0 +1,254 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.LoadBalancer.ILoadBalancer
+  commentId: T:Steeltoe.Common.LoadBalancer.ILoadBalancer
+  id: ILoadBalancer
+  parent: Steeltoe.Common.LoadBalancer
+  children:
+  - Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync(System.Uri)
+  - Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync(System.Uri,System.Uri,System.TimeSpan,System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: ILoadBalancer
+  nameWithType: ILoadBalancer
+  fullName: Steeltoe.Common.LoadBalancer.ILoadBalancer
+  type: Interface
+  source:
+    remote:
+      path: src/Common/src/Abstractions/LoadBalancer/ILoadBalancer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ILoadBalancer
+    path: ../Steeltoe/src/Common/src/Abstractions/LoadBalancer/ILoadBalancer.cs
+    startLine: 9
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.LoadBalancer
+  syntax:
+    content: public interface ILoadBalancer
+    content.vb: Public Interface ILoadBalancer
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync(System.Uri)
+  commentId: M:Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync(System.Uri)
+  id: ResolveServiceInstanceAsync(System.Uri)
+  parent: Steeltoe.Common.LoadBalancer.ILoadBalancer
+  langs:
+  - csharp
+  - vb
+  name: ResolveServiceInstanceAsync(Uri)
+  nameWithType: ILoadBalancer.ResolveServiceInstanceAsync(Uri)
+  fullName: Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/LoadBalancer/ILoadBalancer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ResolveServiceInstanceAsync
+    path: ../Steeltoe/src/Common/src/Abstractions/LoadBalancer/ILoadBalancer.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.LoadBalancer
+  summary: "\nEvaluates a URI for a host name that can be resolved into a service instance\n"
+  example: []
+  syntax:
+    content: Task<Uri> ResolveServiceInstanceAsync(Uri request)
+    parameters:
+    - id: request
+      type: System.Uri
+      description: A URI containing a service name that can be resolved into one or more service instances
+    return:
+      type: System.Threading.Tasks.Task{System.Uri}
+      description: The original URI, with serviceName replaced by the host:port of a service instance
+    content.vb: Function ResolveServiceInstanceAsync(request As Uri) As Task(Of Uri)
+  overload: Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync*
+- uid: Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync(System.Uri,System.Uri,System.TimeSpan,System.Exception)
+  commentId: M:Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync(System.Uri,System.Uri,System.TimeSpan,System.Exception)
+  id: UpdateStatsAsync(System.Uri,System.Uri,System.TimeSpan,System.Exception)
+  parent: Steeltoe.Common.LoadBalancer.ILoadBalancer
+  langs:
+  - csharp
+  - vb
+  name: UpdateStatsAsync(Uri, Uri, TimeSpan, Exception)
+  nameWithType: ILoadBalancer.UpdateStatsAsync(Uri, Uri, TimeSpan, Exception)
+  fullName: Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync(System.Uri, System.Uri, System.TimeSpan, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Abstractions/LoadBalancer/ILoadBalancer.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UpdateStatsAsync
+    path: ../Steeltoe/src/Common/src/Abstractions/LoadBalancer/ILoadBalancer.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Common.Abstractions
+  namespace: Steeltoe.Common.LoadBalancer
+  summary: "\nA mechanism for tracking statistics for service instances\n"
+  example: []
+  syntax:
+    content: Task UpdateStatsAsync(Uri originalUri, Uri resolvedUri, TimeSpan responseTime, Exception exception)
+    parameters:
+    - id: originalUri
+      type: System.Uri
+      description: The original request URI
+    - id: resolvedUri
+      type: System.Uri
+      description: The URI resolved by the load balancer
+    - id: responseTime
+      type: System.TimeSpan
+      description: The amount of time taken for a remote call to complete
+    - id: exception
+      type: System.Exception
+      description: Any exception called during calls to a resolved service instance
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task
+    content.vb: Function UpdateStatsAsync(originalUri As Uri, resolvedUri As Uri, responseTime As TimeSpan, exception As Exception) As Task
+  overload: Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync*
+references:
+- uid: Steeltoe.Common.LoadBalancer
+  commentId: N:Steeltoe.Common.LoadBalancer
+  name: Steeltoe.Common.LoadBalancer
+  nameWithType: Steeltoe.Common.LoadBalancer
+  fullName: Steeltoe.Common.LoadBalancer
+- uid: Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync*
+  commentId: Overload:Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync
+  name: ResolveServiceInstanceAsync
+  nameWithType: ILoadBalancer.ResolveServiceInstanceAsync
+  fullName: Steeltoe.Common.LoadBalancer.ILoadBalancer.ResolveServiceInstanceAsync
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.Threading.Tasks.Task{System.Uri}
+  commentId: T:System.Threading.Tasks.Task{System.Uri}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Uri>
+  nameWithType: Task<Uri>
+  fullName: System.Threading.Tasks.Task<System.Uri>
+  nameWithType.vb: Task(Of Uri)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Uri)
+  name.vb: Task(Of Uri)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync*
+  commentId: Overload:Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync
+  name: UpdateStatsAsync
+  nameWithType: ILoadBalancer.UpdateStatsAsync
+  fullName: Steeltoe.Common.LoadBalancer.ILoadBalancer.UpdateStatsAsync
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

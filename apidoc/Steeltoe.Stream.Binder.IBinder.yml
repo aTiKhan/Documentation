@@ -1,0 +1,252 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Stream.Binder.IBinder
+  commentId: T:Steeltoe.Stream.Binder.IBinder
+  id: IBinder
+  parent: Steeltoe.Stream.Binder
+  children:
+  - Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  - Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  - Steeltoe.Stream.Binder.IBinder.TargetType
+  langs:
+  - csharp
+  - vb
+  name: IBinder
+  nameWithType: IBinder
+  fullName: Steeltoe.Stream.Binder.IBinder
+  type: Interface
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IBinder
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinder.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nA strategy interface used to bind an app interface to a logical name. The name is\nintended to identify a logical consumer or producer of messages. This may be a queue, a\nchannel adapter, another message channel, etc.\n"
+  example: []
+  syntax:
+    content: 'public interface IBinder : IServiceNameAware'
+    content.vb: >-
+      Public Interface IBinder
+
+          Inherits IServiceNameAware
+  inheritedMembers:
+  - Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Stream.Binder.IBinder.TargetType
+  commentId: P:Steeltoe.Stream.Binder.IBinder.TargetType
+  id: TargetType
+  parent: Steeltoe.Stream.Binder.IBinder
+  langs:
+  - csharp
+  - vb
+  name: TargetType
+  nameWithType: IBinder.TargetType
+  fullName: Steeltoe.Stream.Binder.IBinder.TargetType
+  type: Property
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TargetType
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinder.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nGets the target type this binder can bind to\n"
+  example: []
+  syntax:
+    content: Type TargetType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property TargetType As Type
+  overload: Steeltoe.Stream.Binder.IBinder.TargetType*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  id: BindConsumer(System.String,System.String,System.Object,Steeltoe.Stream.Config.IConsumerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder
+  langs:
+  - csharp
+  - vb
+  name: BindConsumer(String, String, Object, IConsumerOptions)
+  nameWithType: IBinder.BindConsumer(String, String, Object, IConsumerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder.BindConsumer(System.String, System.String, System.Object, Steeltoe.Stream.Config.IConsumerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindConsumer
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinder.cs
+    startLine: 31
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nBind the target component as a message consumer to the logical entity identified by the name.\n"
+  example: []
+  syntax:
+    content: IBinding BindConsumer(string name, string group, object inboundTarget, IConsumerOptions consumerOptions)
+    parameters:
+    - id: name
+      type: System.String
+      description: the logical identity of the message source
+    - id: group
+      type: System.String
+      description: the consumer group to which this consumer belongs
+    - id: inboundTarget
+      type: System.Object
+      description: the application interface to be bound as a consumer
+    - id: consumerOptions
+      type: Steeltoe.Stream.Config.IConsumerOptions
+      description: the consumer options
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+      description: the setup binding
+    content.vb: Function BindConsumer(name As String, group As String, inboundTarget As Object, consumerOptions As IConsumerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.IBinder.BindConsumer*
+- uid: Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  commentId: M:Steeltoe.Stream.Binder.IBinder.BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  id: BindProducer(System.String,System.Object,Steeltoe.Stream.Config.IProducerOptions)
+  parent: Steeltoe.Stream.Binder.IBinder
+  langs:
+  - csharp
+  - vb
+  name: BindProducer(String, Object, IProducerOptions)
+  nameWithType: IBinder.BindProducer(String, Object, IProducerOptions)
+  fullName: Steeltoe.Stream.Binder.IBinder.BindProducer(System.String, System.Object, Steeltoe.Stream.Config.IProducerOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Stream/src/Abstractions/Binder/IBinder.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: BindProducer
+    path: ../Steeltoe/src/Stream/src/Abstractions/Binder/IBinder.cs
+    startLine: 40
+  assemblies:
+  - Steeltoe.Stream.Abstractions
+  namespace: Steeltoe.Stream.Binder
+  summary: "\nBind the target component as a message producer to the logical entity identified by the name.\n"
+  example: []
+  syntax:
+    content: IBinding BindProducer(string name, object outboundTarget, IProducerOptions producerOptions)
+    parameters:
+    - id: name
+      type: System.String
+      description: the logical identity of the message outbound target
+    - id: outboundTarget
+      type: System.Object
+      description: the application interface to be bound as a producer
+    - id: producerOptions
+      type: Steeltoe.Stream.Config.IProducerOptions
+      description: the producer options
+    return:
+      type: Steeltoe.Stream.Binder.IBinding
+      description: the setup binding
+    content.vb: Function BindProducer(name As String, outboundTarget As Object, producerOptions As IProducerOptions) As IBinding
+  overload: Steeltoe.Stream.Binder.IBinder.BindProducer*
+references:
+- uid: Steeltoe.Stream.Binder
+  commentId: N:Steeltoe.Stream.Binder
+  name: Steeltoe.Stream.Binder
+  nameWithType: Steeltoe.Stream.Binder
+  fullName: Steeltoe.Stream.Binder
+- uid: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  commentId: P:Steeltoe.Common.Services.IServiceNameAware.ServiceName
+  parent: Steeltoe.Common.Services.IServiceNameAware
+  name: ServiceName
+  nameWithType: IServiceNameAware.ServiceName
+  fullName: Steeltoe.Common.Services.IServiceNameAware.ServiceName
+- uid: Steeltoe.Common.Services.IServiceNameAware
+  commentId: T:Steeltoe.Common.Services.IServiceNameAware
+  parent: Steeltoe.Common.Services
+  name: IServiceNameAware
+  nameWithType: IServiceNameAware
+  fullName: Steeltoe.Common.Services.IServiceNameAware
+- uid: Steeltoe.Common.Services
+  commentId: N:Steeltoe.Common.Services
+  name: Steeltoe.Common.Services
+  nameWithType: Steeltoe.Common.Services
+  fullName: Steeltoe.Common.Services
+- uid: Steeltoe.Stream.Binder.IBinder.TargetType*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinder.TargetType
+  name: TargetType
+  nameWithType: IBinder.TargetType
+  fullName: Steeltoe.Stream.Binder.IBinder.TargetType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Stream.Binder.IBinder.BindConsumer*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinder.BindConsumer
+  name: BindConsumer
+  nameWithType: IBinder.BindConsumer
+  fullName: Steeltoe.Stream.Binder.IBinder.BindConsumer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Stream.Config.IConsumerOptions
+  commentId: T:Steeltoe.Stream.Config.IConsumerOptions
+  parent: Steeltoe.Stream.Config
+  name: IConsumerOptions
+  nameWithType: IConsumerOptions
+  fullName: Steeltoe.Stream.Config.IConsumerOptions
+- uid: Steeltoe.Stream.Binder.IBinding
+  commentId: T:Steeltoe.Stream.Binder.IBinding
+  parent: Steeltoe.Stream.Binder
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Steeltoe.Stream.Binder.IBinding
+- uid: Steeltoe.Stream.Config
+  commentId: N:Steeltoe.Stream.Config
+  name: Steeltoe.Stream.Config
+  nameWithType: Steeltoe.Stream.Config
+  fullName: Steeltoe.Stream.Config
+- uid: Steeltoe.Stream.Binder.IBinder.BindProducer*
+  commentId: Overload:Steeltoe.Stream.Binder.IBinder.BindProducer
+  name: BindProducer
+  nameWithType: IBinder.BindProducer
+  fullName: Steeltoe.Stream.Binder.IBinder.BindProducer
+- uid: Steeltoe.Stream.Config.IProducerOptions
+  commentId: T:Steeltoe.Stream.Config.IProducerOptions
+  parent: Steeltoe.Stream.Config
+  name: IProducerOptions
+  nameWithType: IProducerOptions
+  fullName: Steeltoe.Stream.Config.IProducerOptions

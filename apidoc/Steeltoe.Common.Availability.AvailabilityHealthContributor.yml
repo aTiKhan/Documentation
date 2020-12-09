@@ -1,0 +1,703 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor
+  commentId: T:Steeltoe.Common.Availability.AvailabilityHealthContributor
+  id: AvailabilityHealthContributor
+  parent: Steeltoe.Common.Availability
+  children:
+  - Steeltoe.Common.Availability.AvailabilityHealthContributor.#ctor(System.Collections.Generic.Dictionary{Steeltoe.Common.Availability.IAvailabilityState,Steeltoe.Common.HealthChecks.HealthStatus},ILogger)
+  - Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState
+  - Steeltoe.Common.Availability.AvailabilityHealthContributor.Health
+  - Steeltoe.Common.Availability.AvailabilityHealthContributor.Id
+  langs:
+  - csharp
+  - vb
+  name: AvailabilityHealthContributor
+  nameWithType: AvailabilityHealthContributor
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AvailabilityHealthContributor
+    path: ../Steeltoe/src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+    startLine: 11
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Availability
+  syntax:
+    content: 'public abstract class AvailabilityHealthContributor : IHealthContributor'
+    content.vb: >-
+      Public MustInherit Class AvailabilityHealthContributor
+
+          Implements IHealthContributor
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Steeltoe.Common.Availability.LivenessHealthContributor
+  - Steeltoe.Common.Availability.ReadinessHealthContributor
+  implements:
+  - Steeltoe.Common.HealthChecks.IHealthContributor
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.Id
+  commentId: P:Steeltoe.Common.Availability.AvailabilityHealthContributor.Id
+  id: Id
+  parent: Steeltoe.Common.Availability.AvailabilityHealthContributor
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AvailabilityHealthContributor.Id
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.Id
+  type: Property
+  source:
+    remote:
+      path: src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Id
+    path: ../Steeltoe/src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Availability
+  syntax:
+    content: public virtual string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property Id As String
+  overload: Steeltoe.Common.Availability.AvailabilityHealthContributor.Id*
+  implements:
+  - Steeltoe.Common.HealthChecks.IHealthContributor.Id
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.#ctor(System.Collections.Generic.Dictionary{Steeltoe.Common.Availability.IAvailabilityState,Steeltoe.Common.HealthChecks.HealthStatus},ILogger)
+  commentId: M:Steeltoe.Common.Availability.AvailabilityHealthContributor.#ctor(System.Collections.Generic.Dictionary{Steeltoe.Common.Availability.IAvailabilityState,Steeltoe.Common.HealthChecks.HealthStatus},ILogger)
+  id: '#ctor(System.Collections.Generic.Dictionary{Steeltoe.Common.Availability.IAvailabilityState,Steeltoe.Common.HealthChecks.HealthStatus},ILogger)'
+  parent: Steeltoe.Common.Availability.AvailabilityHealthContributor
+  langs:
+  - csharp
+  - vb
+  name: AvailabilityHealthContributor(Dictionary<IAvailabilityState, HealthStatus>, ILogger)
+  nameWithType: AvailabilityHealthContributor.AvailabilityHealthContributor(Dictionary<IAvailabilityState, HealthStatus>, ILogger)
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.AvailabilityHealthContributor(System.Collections.Generic.Dictionary<Steeltoe.Common.Availability.IAvailabilityState, Steeltoe.Common.HealthChecks.HealthStatus>, ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Availability
+  syntax:
+    content: protected AvailabilityHealthContributor(Dictionary<IAvailabilityState, HealthStatus> stateMappings, ILogger logger = null)
+    parameters:
+    - id: stateMappings
+      type: System.Collections.Generic.Dictionary{Steeltoe.Common.Availability.IAvailabilityState,Steeltoe.Common.HealthChecks.HealthStatus}
+    - id: logger
+      type: ILogger
+    content.vb: Protected Sub New(stateMappings As Dictionary(Of IAvailabilityState, HealthStatus), logger As ILogger = Nothing)
+  overload: Steeltoe.Common.Availability.AvailabilityHealthContributor.#ctor*
+  nameWithType.vb: AvailabilityHealthContributor.AvailabilityHealthContributor(Dictionary(Of IAvailabilityState, HealthStatus), ILogger)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Steeltoe.Common.Availability.AvailabilityHealthContributor.AvailabilityHealthContributor(System.Collections.Generic.Dictionary(Of Steeltoe.Common.Availability.IAvailabilityState, Steeltoe.Common.HealthChecks.HealthStatus), ILogger)
+  name.vb: AvailabilityHealthContributor(Dictionary(Of IAvailabilityState, HealthStatus), ILogger)
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.Health
+  commentId: M:Steeltoe.Common.Availability.AvailabilityHealthContributor.Health
+  id: Health
+  parent: Steeltoe.Common.Availability.AvailabilityHealthContributor
+  langs:
+  - csharp
+  - vb
+  name: Health()
+  nameWithType: AvailabilityHealthContributor.Health()
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.Health()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Health
+    path: ../Steeltoe/src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+    startLine: 29
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Availability
+  syntax:
+    content: public HealthCheckResult Health()
+    return:
+      type: Steeltoe.Common.HealthChecks.HealthCheckResult
+    content.vb: Public Function Health As HealthCheckResult
+  overload: Steeltoe.Common.Availability.AvailabilityHealthContributor.Health*
+  implements:
+  - Steeltoe.Common.HealthChecks.IHealthContributor.Health
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState
+  commentId: M:Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState
+  id: GetState
+  parent: Steeltoe.Common.Availability.AvailabilityHealthContributor
+  langs:
+  - csharp
+  - vb
+  name: GetState()
+  nameWithType: AvailabilityHealthContributor.GetState()
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetState
+    path: ../Steeltoe/src/Common/src/Common/Availability/AvailabilityHealthContributor.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Availability
+  syntax:
+    content: protected virtual IAvailabilityState GetState()
+    return:
+      type: Steeltoe.Common.Availability.IAvailabilityState
+    content.vb: Protected Overridable Function GetState As IAvailabilityState
+  overload: Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Steeltoe.Common.Availability
+  commentId: N:Steeltoe.Common.Availability
+  name: Steeltoe.Common.Availability
+  nameWithType: Steeltoe.Common.Availability
+  fullName: Steeltoe.Common.Availability
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Common.HealthChecks.IHealthContributor
+  commentId: T:Steeltoe.Common.HealthChecks.IHealthContributor
+  parent: Steeltoe.Common.HealthChecks
+  name: IHealthContributor
+  nameWithType: IHealthContributor
+  fullName: Steeltoe.Common.HealthChecks.IHealthContributor
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.HealthChecks
+  commentId: N:Steeltoe.Common.HealthChecks
+  name: Steeltoe.Common.HealthChecks
+  nameWithType: Steeltoe.Common.HealthChecks
+  fullName: Steeltoe.Common.HealthChecks
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.Id*
+  commentId: Overload:Steeltoe.Common.Availability.AvailabilityHealthContributor.Id
+  name: Id
+  nameWithType: AvailabilityHealthContributor.Id
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.Id
+- uid: Steeltoe.Common.HealthChecks.IHealthContributor.Id
+  commentId: P:Steeltoe.Common.HealthChecks.IHealthContributor.Id
+  parent: Steeltoe.Common.HealthChecks.IHealthContributor
+  name: Id
+  nameWithType: IHealthContributor.Id
+  fullName: Steeltoe.Common.HealthChecks.IHealthContributor.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.#ctor*
+  commentId: Overload:Steeltoe.Common.Availability.AvailabilityHealthContributor.#ctor
+  name: AvailabilityHealthContributor
+  nameWithType: AvailabilityHealthContributor.AvailabilityHealthContributor
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.AvailabilityHealthContributor
+- uid: System.Collections.Generic.Dictionary{Steeltoe.Common.Availability.IAvailabilityState,Steeltoe.Common.HealthChecks.HealthStatus}
+  commentId: T:System.Collections.Generic.Dictionary{Steeltoe.Common.Availability.IAvailabilityState,Steeltoe.Common.HealthChecks.HealthStatus}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<IAvailabilityState, HealthStatus>
+  nameWithType: Dictionary<IAvailabilityState, HealthStatus>
+  fullName: System.Collections.Generic.Dictionary<Steeltoe.Common.Availability.IAvailabilityState, Steeltoe.Common.HealthChecks.HealthStatus>
+  nameWithType.vb: Dictionary(Of IAvailabilityState, HealthStatus)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Steeltoe.Common.Availability.IAvailabilityState, Steeltoe.Common.HealthChecks.HealthStatus)
+  name.vb: Dictionary(Of IAvailabilityState, HealthStatus)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Common.Availability.IAvailabilityState
+    name: IAvailabilityState
+    nameWithType: IAvailabilityState
+    fullName: Steeltoe.Common.Availability.IAvailabilityState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.HealthChecks.HealthStatus
+    name: HealthStatus
+    nameWithType: HealthStatus
+    fullName: Steeltoe.Common.HealthChecks.HealthStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Common.Availability.IAvailabilityState
+    name: IAvailabilityState
+    nameWithType: IAvailabilityState
+    fullName: Steeltoe.Common.Availability.IAvailabilityState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Common.HealthChecks.HealthStatus
+    name: HealthStatus
+    nameWithType: HealthStatus
+    fullName: Steeltoe.Common.HealthChecks.HealthStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.Health*
+  commentId: Overload:Steeltoe.Common.Availability.AvailabilityHealthContributor.Health
+  name: Health
+  nameWithType: AvailabilityHealthContributor.Health
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.Health
+- uid: Steeltoe.Common.HealthChecks.IHealthContributor.Health
+  commentId: M:Steeltoe.Common.HealthChecks.IHealthContributor.Health
+  parent: Steeltoe.Common.HealthChecks.IHealthContributor
+  name: Health()
+  nameWithType: IHealthContributor.Health()
+  fullName: Steeltoe.Common.HealthChecks.IHealthContributor.Health()
+  spec.csharp:
+  - uid: Steeltoe.Common.HealthChecks.IHealthContributor.Health
+    name: Health
+    nameWithType: IHealthContributor.Health
+    fullName: Steeltoe.Common.HealthChecks.IHealthContributor.Health
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Common.HealthChecks.IHealthContributor.Health
+    name: Health
+    nameWithType: IHealthContributor.Health
+    fullName: Steeltoe.Common.HealthChecks.IHealthContributor.Health
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.HealthChecks.HealthCheckResult
+  commentId: T:Steeltoe.Common.HealthChecks.HealthCheckResult
+  parent: Steeltoe.Common.HealthChecks
+  name: HealthCheckResult
+  nameWithType: HealthCheckResult
+  fullName: Steeltoe.Common.HealthChecks.HealthCheckResult
+- uid: Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState*
+  commentId: Overload:Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState
+  name: GetState
+  nameWithType: AvailabilityHealthContributor.GetState
+  fullName: Steeltoe.Common.Availability.AvailabilityHealthContributor.GetState
+- uid: Steeltoe.Common.Availability.IAvailabilityState
+  commentId: T:Steeltoe.Common.Availability.IAvailabilityState
+  parent: Steeltoe.Common.Availability
+  name: IAvailabilityState
+  nameWithType: IAvailabilityState
+  fullName: Steeltoe.Common.Availability.IAvailabilityState

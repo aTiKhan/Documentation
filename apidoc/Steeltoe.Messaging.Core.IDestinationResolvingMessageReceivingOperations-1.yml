@@ -1,0 +1,1146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1
+  commentId: T:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1
+  id: IDestinationResolvingMessageReceivingOperations`1
+  parent: Steeltoe.Messaging.Core
+  children:
+  - Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.Receive(System.String)
+  - Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvert``1(System.String)
+  - Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.String,System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDestinationResolvingMessageReceivingOperations<D>
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>
+  type: Interface
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IDestinationResolvingMessageReceivingOperations
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nProvides operations for receiving messages from a destination specifed as a resolvable string\n"
+  example: []
+  syntax:
+    content: 'public interface IDestinationResolvingMessageReceivingOperations<D> : IMessageReceivingOperations<D>'
+    typeParameters:
+    - id: D
+      description: the destination type
+    content.vb: >-
+      Public Interface IDestinationResolvingMessageReceivingOperations(Of D)
+
+          Inherits IMessageReceivingOperations(Of D)
+  inheritedMembers:
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAsync(System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAsync({D},System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvertAsync``1({D},System.Threading.CancellationToken)
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.Receive
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.Receive({D})
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvert``1
+  - Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvert``1({D})
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D)
+  name.vb: IDestinationResolvingMessageReceivingOperations(Of D)
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAsync(System.String,System.Threading.CancellationToken)
+  id: ReceiveAsync(System.String,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ReceiveAsync(String, CancellationToken)
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.ReceiveAsync(String, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.ReceiveAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReceiveAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nResolve the given destination and receive a message from it\n"
+  example: []
+  syntax:
+    content: Task<IMessage> ReceiveAsync(string destinationName, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: destinationName
+      type: System.String
+      description: the destination name to resolve
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: a token used to cancel the operation
+    return:
+      type: System.Threading.Tasks.Task{Steeltoe.Messaging.IMessage}
+      description: a task to signal completion
+    content.vb: Function ReceiveAsync(destinationName As String, cancellationToken As CancellationToken = Nothing) As Task(Of IMessage)
+  overload: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAsync*
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAsync(String, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAsync(System.String, System.Threading.CancellationToken)
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.String,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.String,System.Threading.CancellationToken)
+  id: ReceiveAndConvertAsync``1(System.String,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ReceiveAndConvertAsync<T>(String, CancellationToken)
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(String, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReceiveAndConvertAsync
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+    startLine: 30
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nResolve the given destination, receive a message from it, convert the payload to the specified target type\n"
+  example: []
+  syntax:
+    content: Task<T> ReceiveAndConvertAsync<T>(string destinationName, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: destinationName
+      type: System.String
+      description: the destination name to resolve
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: a token used to cancel the operation
+    typeParameters:
+    - id: T
+      description: the target type
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: a task to signal completion
+    content.vb: Function ReceiveAndConvertAsync(Of T)(destinationName As String, cancellationToken As CancellationToken = Nothing) As Task(Of T)
+  overload: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvertAsync*
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(String, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(System.String, System.Threading.CancellationToken)
+  name.vb: ReceiveAndConvertAsync(Of T)(String, CancellationToken)
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.Receive(System.String)
+  commentId: M:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.Receive(System.String)
+  id: Receive(System.String)
+  parent: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: Receive(String)
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.Receive(String)
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.Receive(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Receive
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+    startLine: 37
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nResolve the given destination and receive a message from it\n"
+  example: []
+  syntax:
+    content: IMessage Receive(string destinationName)
+    parameters:
+    - id: destinationName
+      type: System.String
+      description: the destination name to resolve
+    return:
+      type: Steeltoe.Messaging.IMessage
+      description: the received message
+    content.vb: Function Receive(destinationName As String) As IMessage
+  overload: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.Receive*
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).Receive(String)
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).Receive(System.String)
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvert``1(System.String)
+  commentId: M:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvert``1(System.String)
+  id: ReceiveAndConvert``1(System.String)
+  parent: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1
+  langs:
+  - csharp
+  - vb
+  name: ReceiveAndConvert<T>(String)
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvert<T>(String)
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvert<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReceiveAndConvert
+    path: ../Steeltoe/src/Messaging/src/Abstractions/Core/IDestinationResolvingMessageReceivingOperations.cs
+    startLine: 45
+  assemblies:
+  - Steeltoe.Messaging.Abstractions
+  namespace: Steeltoe.Messaging.Core
+  summary: "\nResolve the given destination, receive a message from it, convert the payload to the specified target type\n"
+  example: []
+  syntax:
+    content: T ReceiveAndConvert<T>(string destinationName)
+    parameters:
+    - id: destinationName
+      type: System.String
+      description: the destination name to resolve
+    typeParameters:
+    - id: T
+      description: the target type
+    return:
+      type: '{T}'
+      description: the received message
+    content.vb: Function ReceiveAndConvert(Of T)(destinationName As String) As T
+  overload: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvert*
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)(String)
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)(System.String)
+  name.vb: ReceiveAndConvert(Of T)(String)
+references:
+- uid: Steeltoe.Messaging.Core
+  commentId: N:Steeltoe.Messaging.Core
+  name: Steeltoe.Messaging.Core
+  nameWithType: Steeltoe.Messaging.Core
+  fullName: Steeltoe.Messaging.Core
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAsync(System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.ReceiveAsync(System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(System.Threading.CancellationToken)
+  name: ReceiveAsync(CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAsync(CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync(System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAsync(CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAsync({D},System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.ReceiveAsync(`0,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(`0,System.Threading.CancellationToken)
+  name: ReceiveAsync(D, CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAsync(D, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync(D, System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAsync(D, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync(D, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(`0,System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(`0,System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+  name: ReceiveAndConvertAsync<T>(CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(System.Threading.CancellationToken)
+  name.vb: ReceiveAndConvertAsync(Of T)(CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvertAsync``1({D},System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+  name: ReceiveAndConvertAsync<T>(D, CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(D, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(D, System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(D, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(D, System.Threading.CancellationToken)
+  name.vb: ReceiveAndConvertAsync(Of T)(D, CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.Receive
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.Receive
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive
+  name: Receive()
+  nameWithType: IMessageReceivingOperations<D>.Receive()
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive()
+  nameWithType.vb: IMessageReceivingOperations(Of D).Receive()
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive
+    name: Receive
+    nameWithType: IMessageReceivingOperations<D>.Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive
+    name: Receive
+    nameWithType: IMessageReceivingOperations(Of D).Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.Receive({D})
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.Receive(`0)
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive(`0)
+  name: Receive(D)
+  nameWithType: IMessageReceivingOperations<D>.Receive(D)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive(D)
+  nameWithType.vb: IMessageReceivingOperations(Of D).Receive(D)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive(D)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive(`0)
+    name: Receive
+    nameWithType: IMessageReceivingOperations<D>.Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive(`0)
+    name: Receive
+    nameWithType: IMessageReceivingOperations(Of D).Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvert``1
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.ReceiveAndConvert``1
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1
+  name: ReceiveAndConvert<T>()
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>()
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>()
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)()
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)()
+  name.vb: ReceiveAndConvert(Of T)()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1
+    name: ReceiveAndConvert<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1
+    name: ReceiveAndConvert(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}.ReceiveAndConvert``1({D})
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}.ReceiveAndConvert``1(`0)
+  parent: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1(`0)
+  name: ReceiveAndConvert<T>(D)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>(D)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>(D)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)(D)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)(D)
+  name.vb: ReceiveAndConvert(Of T)(D)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1(`0)
+    name: ReceiveAndConvert<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1(`0)
+    name: ReceiveAndConvert(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(System.Threading.CancellationToken)
+  isExternal: true
+  name: ReceiveAsync(CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAsync(CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync(System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAsync(CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations{{D}}
+  commentId: T:Steeltoe.Messaging.Core.IMessageReceivingOperations{`0}
+  parent: Steeltoe.Messaging.Core
+  definition: Steeltoe.Messaging.Core.IMessageReceivingOperations`1
+  name: IMessageReceivingOperations<D>
+  nameWithType: IMessageReceivingOperations<D>
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>
+  nameWithType.vb: IMessageReceivingOperations(Of D)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D)
+  name.vb: IMessageReceivingOperations(Of D)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1
+    name: IMessageReceivingOperations
+    nameWithType: IMessageReceivingOperations
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1
+    name: IMessageReceivingOperations
+    nameWithType: IMessageReceivingOperations
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: ReceiveAsync(D, CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAsync(D, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync(D, System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAsync(D, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync(D, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(`0,System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAsync(`0,System.Threading.CancellationToken)
+    name: ReceiveAsync
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAsync
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+  isExternal: true
+  name: ReceiveAndConvertAsync<T>(CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(System.Threading.CancellationToken)
+  name.vb: ReceiveAndConvertAsync(Of T)(CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: ReceiveAndConvertAsync<T>(D, CancellationToken)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(D, CancellationToken)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>(D, System.Threading.CancellationToken)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(D, CancellationToken)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)(D, System.Threading.CancellationToken)
+  name.vb: ReceiveAndConvertAsync(Of T)(D, CancellationToken)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvertAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvertAsync``1(`0,System.Threading.CancellationToken)
+    name: ReceiveAndConvertAsync(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvertAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive
+  name: Receive()
+  nameWithType: IMessageReceivingOperations<D>.Receive()
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive()
+  nameWithType.vb: IMessageReceivingOperations(Of D).Receive()
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive
+    name: Receive
+    nameWithType: IMessageReceivingOperations<D>.Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive
+    name: Receive
+    nameWithType: IMessageReceivingOperations(Of D).Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive(`0)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive(`0)
+  name: Receive(D)
+  nameWithType: IMessageReceivingOperations<D>.Receive(D)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive(D)
+  nameWithType.vb: IMessageReceivingOperations(Of D).Receive(D)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive(D)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive(`0)
+    name: Receive
+    nameWithType: IMessageReceivingOperations<D>.Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.Receive(`0)
+    name: Receive
+    nameWithType: IMessageReceivingOperations(Of D).Receive
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).Receive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1
+  name: ReceiveAndConvert<T>()
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>()
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>()
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)()
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)()
+  name.vb: ReceiveAndConvert(Of T)()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1
+    name: ReceiveAndConvert<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1
+    name: ReceiveAndConvert(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1(`0)
+  commentId: M:Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1(`0)
+  name: ReceiveAndConvert<T>(D)
+  nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>(D)
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>(D)
+  nameWithType.vb: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)(D)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)(D)
+  name.vb: ReceiveAndConvert(Of T)(D)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1(`0)
+    name: ReceiveAndConvert<T>
+    nameWithType: IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>.ReceiveAndConvert<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1.ReceiveAndConvert``1(`0)
+    name: ReceiveAndConvert(Of T)
+    nameWithType: IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D).ReceiveAndConvert(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1
+  commentId: T:Steeltoe.Messaging.Core.IMessageReceivingOperations`1
+  name: IMessageReceivingOperations<D>
+  nameWithType: IMessageReceivingOperations<D>
+  fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations<D>
+  nameWithType.vb: IMessageReceivingOperations(Of D)
+  fullName.vb: Steeltoe.Messaging.Core.IMessageReceivingOperations(Of D)
+  name.vb: IMessageReceivingOperations(Of D)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1
+    name: IMessageReceivingOperations
+    nameWithType: IMessageReceivingOperations
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Steeltoe.Messaging.Core.IMessageReceivingOperations`1
+    name: IMessageReceivingOperations
+    nameWithType: IMessageReceivingOperations
+    fullName: Steeltoe.Messaging.Core.IMessageReceivingOperations
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: D
+    nameWithType: D
+    fullName: D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAsync*
+  commentId: Overload:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAsync
+  name: ReceiveAsync
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.ReceiveAsync
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.ReceiveAsync
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAsync
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Steeltoe.Messaging.IMessage}
+  commentId: T:System.Threading.Tasks.Task{Steeltoe.Messaging.IMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IMessage>
+  nameWithType: Task<IMessage>
+  fullName: System.Threading.Tasks.Task<Steeltoe.Messaging.IMessage>
+  nameWithType.vb: Task(Of IMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of Steeltoe.Messaging.IMessage)
+  name.vb: Task(Of IMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvertAsync*
+  commentId: Overload:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvertAsync
+  name: ReceiveAndConvertAsync
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvertAsync
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvertAsync
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvertAsync
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvertAsync
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.Receive*
+  commentId: Overload:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.Receive
+  name: Receive
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.Receive
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.Receive
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).Receive
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).Receive
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvert*
+  commentId: Overload:Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations`1.ReceiveAndConvert
+  name: ReceiveAndConvert
+  nameWithType: IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvert
+  fullName: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations<D>.ReceiveAndConvert
+  nameWithType.vb: IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvert
+  fullName.vb: Steeltoe.Messaging.Core.IDestinationResolvingMessageReceivingOperations(Of D).ReceiveAndConvert
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

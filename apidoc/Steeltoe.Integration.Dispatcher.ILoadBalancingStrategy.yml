@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+  commentId: T:Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+  id: ILoadBalancingStrategy
+  parent: Steeltoe.Integration.Dispatcher
+  children:
+  - Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage,System.Collections.Generic.List{Steeltoe.Messaging.IMessageHandler})
+  langs:
+  - csharp
+  - vb
+  name: ILoadBalancingStrategy
+  nameWithType: ILoadBalancingStrategy
+  fullName: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+  type: Interface
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/ILoadBalancingStrategy.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ILoadBalancingStrategy
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/ILoadBalancingStrategy.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nStrategy for determining the iteration order of a MessageHandler list.\n"
+  example: []
+  syntax:
+    content: public interface ILoadBalancingStrategy
+    content.vb: Public Interface ILoadBalancingStrategy
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage,System.Collections.Generic.List{Steeltoe.Messaging.IMessageHandler})
+  commentId: M:Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage,System.Collections.Generic.List{Steeltoe.Messaging.IMessageHandler})
+  id: GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage,System.Collections.Generic.List{Steeltoe.Messaging.IMessageHandler})
+  parent: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetNextHandlerStartIndex(IMessage, List<IMessageHandler>)
+  nameWithType: ILoadBalancingStrategy.GetNextHandlerStartIndex(IMessage, List<IMessageHandler>)
+  fullName: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage, System.Collections.Generic.List<Steeltoe.Messaging.IMessageHandler>)
+  type: Method
+  source:
+    remote:
+      path: src/Integration/src/Abstractions/Dispatcher/ILoadBalancingStrategy.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetNextHandlerStartIndex
+    path: ../Steeltoe/src/Integration/src/Abstractions/Dispatcher/ILoadBalancingStrategy.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Integration.Abstractions
+  namespace: Steeltoe.Integration.Dispatcher
+  summary: "\nGets the next index to be used in selecting a handler from the provided list of handlers\n"
+  example: []
+  syntax:
+    content: int GetNextHandlerStartIndex(IMessage message, List<IMessageHandler> handlers)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+      description: the message to be processed
+    - id: handlers
+      type: System.Collections.Generic.List{Steeltoe.Messaging.IMessageHandler}
+      description: the current list of handlers
+    return:
+      type: System.Int32
+      description: an index into the handler list at which to start load balancing
+    content.vb: Function GetNextHandlerStartIndex(message As IMessage, handlers As List(Of IMessageHandler)) As Integer
+  overload: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex*
+  nameWithType.vb: ILoadBalancingStrategy.GetNextHandlerStartIndex(IMessage, List(Of IMessageHandler))
+  fullName.vb: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex(Steeltoe.Messaging.IMessage, System.Collections.Generic.List(Of Steeltoe.Messaging.IMessageHandler))
+  name.vb: GetNextHandlerStartIndex(IMessage, List(Of IMessageHandler))
+references:
+- uid: Steeltoe.Integration.Dispatcher
+  commentId: N:Steeltoe.Integration.Dispatcher
+  name: Steeltoe.Integration.Dispatcher
+  nameWithType: Steeltoe.Integration.Dispatcher
+  fullName: Steeltoe.Integration.Dispatcher
+- uid: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex*
+  commentId: Overload:Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex
+  name: GetNextHandlerStartIndex
+  nameWithType: ILoadBalancingStrategy.GetNextHandlerStartIndex
+  fullName: Steeltoe.Integration.Dispatcher.ILoadBalancingStrategy.GetNextHandlerStartIndex
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: System.Collections.Generic.List{Steeltoe.Messaging.IMessageHandler}
+  commentId: T:System.Collections.Generic.List{Steeltoe.Messaging.IMessageHandler}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IMessageHandler>
+  nameWithType: List<IMessageHandler>
+  fullName: System.Collections.Generic.List<Steeltoe.Messaging.IMessageHandler>
+  nameWithType.vb: List(Of IMessageHandler)
+  fullName.vb: System.Collections.Generic.List(Of Steeltoe.Messaging.IMessageHandler)
+  name.vb: List(Of IMessageHandler)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Steeltoe.Messaging.IMessageHandler
+    name: IMessageHandler
+    nameWithType: IMessageHandler
+    fullName: Steeltoe.Messaging.IMessageHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

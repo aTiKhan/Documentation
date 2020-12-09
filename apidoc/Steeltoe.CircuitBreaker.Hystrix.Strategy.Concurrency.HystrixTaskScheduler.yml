@@ -1,0 +1,1916 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  id: HystrixTaskScheduler
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  children:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.#ctor(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.allowMaxToDivergeFromCore
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.completedTasks
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.corePoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose(System.Boolean)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.keepAliveTime
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.maximumPoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSize
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSizeRejectionThreshold
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation(System.Threading.Tasks.Task)
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningTasks
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningThreads
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.shutdown
+  langs:
+  - csharp
+  - vb
+  name: HystrixTaskScheduler
+  nameWithType: HystrixTaskScheduler
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  type: Class
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: HystrixTaskScheduler
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: 'public abstract class HystrixTaskScheduler : TaskScheduler, IHystrixTaskScheduler, IDisposable'
+    content.vb: >-
+      Public MustInherit Class HystrixTaskScheduler
+
+          Inherits TaskScheduler
+
+          Implements IHystrixTaskScheduler, IDisposable
+  inheritance:
+  - System.Object
+  - System.Threading.Tasks.TaskScheduler
+  derivedClasses:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixQueuedTaskScheduler
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixSyncTaskScheduler
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  - System.IDisposable
+  inheritedMembers:
+  - System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+  - System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+  - System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  - System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  - System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)
+  - System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  - System.Threading.Tasks.TaskScheduler.Current
+  - System.Threading.Tasks.TaskScheduler.Default
+  - System.Threading.Tasks.TaskScheduler.Id
+  - System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.corePoolSize
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.corePoolSize
+  id: corePoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: corePoolSize
+  nameWithType: HystrixTaskScheduler.corePoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.corePoolSize
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: corePoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 12
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected int corePoolSize
+    return:
+      type: System.Int32
+    content.vb: Protected corePoolSize As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.keepAliveTime
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.keepAliveTime
+  id: keepAliveTime
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: keepAliveTime
+  nameWithType: HystrixTaskScheduler.keepAliveTime
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.keepAliveTime
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: keepAliveTime
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 13
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected TimeSpan keepAliveTime
+    return:
+      type: System.TimeSpan
+    content.vb: Protected keepAliveTime As TimeSpan
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.maximumPoolSize
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.maximumPoolSize
+  id: maximumPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: maximumPoolSize
+  nameWithType: HystrixTaskScheduler.maximumPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.maximumPoolSize
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: maximumPoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected int maximumPoolSize
+    return:
+      type: System.Int32
+    content.vb: Protected maximumPoolSize As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningThreads
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningThreads
+  id: runningThreads
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: runningThreads
+  nameWithType: HystrixTaskScheduler.runningThreads
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningThreads
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: runningThreads
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected int runningThreads
+    return:
+      type: System.Int32
+    content.vb: Protected runningThreads As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSizeRejectionThreshold
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSizeRejectionThreshold
+  id: queueSizeRejectionThreshold
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: queueSizeRejectionThreshold
+  nameWithType: HystrixTaskScheduler.queueSizeRejectionThreshold
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSizeRejectionThreshold
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: queueSizeRejectionThreshold
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 16
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected int queueSizeRejectionThreshold
+    return:
+      type: System.Int32
+    content.vb: Protected queueSizeRejectionThreshold As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.shutdown
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.shutdown
+  id: shutdown
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: shutdown
+  nameWithType: HystrixTaskScheduler.shutdown
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.shutdown
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: shutdown
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected bool shutdown
+    return:
+      type: System.Boolean
+    content.vb: Protected shutdown As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSize
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSize
+  id: queueSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: queueSize
+  nameWithType: HystrixTaskScheduler.queueSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.queueSize
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: queueSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 18
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected int queueSize
+    return:
+      type: System.Int32
+    content.vb: Protected queueSize As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningTasks
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningTasks
+  id: runningTasks
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: runningTasks
+  nameWithType: HystrixTaskScheduler.runningTasks
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.runningTasks
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: runningTasks
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 19
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected int runningTasks
+    return:
+      type: System.Int32
+    content.vb: Protected runningTasks As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.completedTasks
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.completedTasks
+  id: completedTasks
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: completedTasks
+  nameWithType: HystrixTaskScheduler.completedTasks
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.completedTasks
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: completedTasks
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected int completedTasks
+    return:
+      type: System.Int32
+    content.vb: Protected completedTasks As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.allowMaxToDivergeFromCore
+  commentId: F:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.allowMaxToDivergeFromCore
+  id: allowMaxToDivergeFromCore
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: allowMaxToDivergeFromCore
+  nameWithType: HystrixTaskScheduler.allowMaxToDivergeFromCore
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.allowMaxToDivergeFromCore
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: allowMaxToDivergeFromCore
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected bool allowMaxToDivergeFromCore
+    return:
+      type: System.Boolean
+    content.vb: Protected allowMaxToDivergeFromCore As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.#ctor(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.#ctor(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions)
+  id: '#ctor(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions)'
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: HystrixTaskScheduler(IHystrixThreadPoolOptions)
+  nameWithType: HystrixTaskScheduler.HystrixTaskScheduler(IHystrixThreadPoolOptions)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.HystrixTaskScheduler(Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 25
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public HystrixTaskScheduler(IHystrixThreadPoolOptions options)
+    parameters:
+    - id: options
+      type: Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+    content.vb: Public Sub New(options As IHystrixThreadPoolOptions)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount
+  id: CurrentActiveCount
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentActiveCount
+  nameWithType: HystrixTaskScheduler.CurrentActiveCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentActiveCount
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 50
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentActiveCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentActiveCount As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentActiveCount
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount
+  id: CurrentCompletedTaskCount
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentCompletedTaskCount
+  nameWithType: HystrixTaskScheduler.CurrentCompletedTaskCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentCompletedTaskCount
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 52
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentCompletedTaskCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentCompletedTaskCount As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCompletedTaskCount
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize
+  id: CurrentCorePoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentCorePoolSize
+  nameWithType: HystrixTaskScheduler.CurrentCorePoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentCorePoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 54
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentCorePoolSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentCorePoolSize As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCorePoolSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize
+  id: CurrentLargestPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentLargestPoolSize
+  nameWithType: HystrixTaskScheduler.CurrentLargestPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentLargestPoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentLargestPoolSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentLargestPoolSize As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentLargestPoolSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize
+  id: CurrentMaximumPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentMaximumPoolSize
+  nameWithType: HystrixTaskScheduler.CurrentMaximumPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentMaximumPoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 58
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentMaximumPoolSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentMaximumPoolSize As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentMaximumPoolSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize
+  id: CurrentPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentPoolSize
+  nameWithType: HystrixTaskScheduler.CurrentPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentPoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 60
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentPoolSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentPoolSize As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentPoolSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize
+  id: CurrentQueueSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentQueueSize
+  nameWithType: HystrixTaskScheduler.CurrentQueueSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentQueueSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 62
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentQueueSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentQueueSize As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentQueueSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount
+  id: CurrentTaskCount
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CurrentTaskCount
+  nameWithType: HystrixTaskScheduler.CurrentTaskCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CurrentTaskCount
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 64
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CurrentTaskCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property CurrentTaskCount As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentTaskCount
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize
+  id: CorePoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: CorePoolSize
+  nameWithType: HystrixTaskScheduler.CorePoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CorePoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 66
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int CorePoolSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property CorePoolSize As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CorePoolSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize
+  id: MaximumPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: MaximumPoolSize
+  nameWithType: HystrixTaskScheduler.MaximumPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MaximumPoolSize
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 73
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual int MaximumPoolSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property MaximumPoolSize As Integer
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.MaximumPoolSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime
+  id: KeepAliveTime
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: KeepAliveTime
+  nameWithType: HystrixTaskScheduler.KeepAliveTime
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: KeepAliveTime
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 80
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual TimeSpan KeepAliveTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Overridable Property KeepAliveTime As TimeSpan
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.KeepAliveTime
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable
+  id: IsQueueSpaceAvailable
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: IsQueueSpaceAvailable
+  nameWithType: HystrixTaskScheduler.IsQueueSpaceAvailable
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsQueueSpaceAvailable
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 87
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public virtual bool IsQueueSpaceAvailable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsQueueSpaceAvailable As Boolean
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsQueueSpaceAvailable
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose
+  id: Dispose
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: HystrixTaskScheduler.Dispose()
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Dispose
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 89
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel
+  id: MaximumConcurrencyLevel
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: MaximumConcurrencyLevel
+  nameWithType: HystrixTaskScheduler.MaximumConcurrencyLevel
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: MaximumConcurrencyLevel
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 96
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public override int MaximumConcurrencyLevel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overrides ReadOnly Property MaximumConcurrencyLevel As Integer
+  overridden: System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown
+  id: IsShutdown
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: IsShutdown
+  nameWithType: HystrixTaskScheduler.IsShutdown
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: IsShutdown
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 98
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: public bool IsShutdown { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsShutdown As Boolean
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown*
+  implements:
+  - Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsShutdown
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose(System.Boolean)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: HystrixTaskScheduler.Dispose(Boolean)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Dispose
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 100
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation(System.Threading.Tasks.Task)
+  commentId: M:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation(System.Threading.Tasks.Task)
+  id: RunContinuation(System.Threading.Tasks.Task)
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: RunContinuation(Task)
+  nameWithType: HystrixTaskScheduler.RunContinuation(Task)
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation(System.Threading.Tasks.Task)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: RunContinuation
+    path: ../Steeltoe/src/CircuitBreaker/src/HystrixBase/Strategy/Concurrency/HystrixTaskScheduler.cs
+    startLine: 110
+  assemblies:
+  - Steeltoe.CircuitBreaker.HystrixBase
+  namespace: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  syntax:
+    content: protected void RunContinuation(Task task)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Sub RunContinuation(task As Task)
+  overload: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  name: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Threading.Tasks.TaskScheduler
+  commentId: T:System.Threading.Tasks.TaskScheduler
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: TaskScheduler
+  nameWithType: TaskScheduler
+  fullName: System.Threading.Tasks.TaskScheduler
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency
+  name: IHystrixTaskScheduler
+  nameWithType: IHystrixTaskScheduler
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+  commentId: M:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: FromCurrentSynchronizationContext()
+  nameWithType: TaskScheduler.FromCurrentSynchronizationContext()
+  fullName: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext()
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+    name: FromCurrentSynchronizationContext
+    nameWithType: TaskScheduler.FromCurrentSynchronizationContext
+    fullName: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+    name: FromCurrentSynchronizationContext
+    nameWithType: TaskScheduler.FromCurrentSynchronizationContext
+    fullName: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+  commentId: M:System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: GetScheduledTasks()
+  nameWithType: TaskScheduler.GetScheduledTasks()
+  fullName: System.Threading.Tasks.TaskScheduler.GetScheduledTasks()
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+    name: GetScheduledTasks
+    nameWithType: TaskScheduler.GetScheduledTasks
+    fullName: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+    name: GetScheduledTasks
+    nameWithType: TaskScheduler.GetScheduledTasks
+    fullName: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  commentId: M:System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: QueueTask(Task)
+  nameWithType: TaskScheduler.QueueTask(Task)
+  fullName: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+    name: QueueTask
+    nameWithType: TaskScheduler.QueueTask
+    fullName: System.Threading.Tasks.TaskScheduler.QueueTask
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+    name: QueueTask
+    nameWithType: TaskScheduler.QueueTask
+    fullName: System.Threading.Tasks.TaskScheduler.QueueTask
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  commentId: M:System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: TryDequeue(Task)
+  nameWithType: TaskScheduler.TryDequeue(Task)
+  fullName: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+    name: TryDequeue
+    nameWithType: TaskScheduler.TryDequeue
+    fullName: System.Threading.Tasks.TaskScheduler.TryDequeue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+    name: TryDequeue
+    nameWithType: TaskScheduler.TryDequeue
+    fullName: System.Threading.Tasks.TaskScheduler.TryDequeue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)
+  commentId: M:System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: TryExecuteTask(Task)
+  nameWithType: TaskScheduler.TryExecuteTask(Task)
+  fullName: System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)
+    name: TryExecuteTask
+    nameWithType: TaskScheduler.TryExecuteTask
+    fullName: System.Threading.Tasks.TaskScheduler.TryExecuteTask
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)
+    name: TryExecuteTask
+    nameWithType: TaskScheduler.TryExecuteTask
+    fullName: System.Threading.Tasks.TaskScheduler.TryExecuteTask
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  commentId: M:System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: TryExecuteTaskInline(Task, Boolean)
+  nameWithType: TaskScheduler.TryExecuteTaskInline(Task, Boolean)
+  fullName: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+    name: TryExecuteTaskInline
+    nameWithType: TaskScheduler.TryExecuteTaskInline
+    fullName: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+    name: TryExecuteTaskInline
+    nameWithType: TaskScheduler.TryExecuteTaskInline
+    fullName: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskScheduler.Current
+  commentId: P:System.Threading.Tasks.TaskScheduler.Current
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: Current
+  nameWithType: TaskScheduler.Current
+  fullName: System.Threading.Tasks.TaskScheduler.Current
+- uid: System.Threading.Tasks.TaskScheduler.Default
+  commentId: P:System.Threading.Tasks.TaskScheduler.Default
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: Default
+  nameWithType: TaskScheduler.Default
+  fullName: System.Threading.Tasks.TaskScheduler.Default
+- uid: System.Threading.Tasks.TaskScheduler.Id
+  commentId: P:System.Threading.Tasks.TaskScheduler.Id
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: Id
+  nameWithType: TaskScheduler.Id
+  fullName: System.Threading.Tasks.TaskScheduler.Id
+- uid: System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+  commentId: E:System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: UnobservedTaskException
+  nameWithType: TaskScheduler.UnobservedTaskException
+  fullName: System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.#ctor*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.#ctor
+  name: HystrixTaskScheduler
+  nameWithType: HystrixTaskScheduler.HystrixTaskScheduler
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.HystrixTaskScheduler
+- uid: Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+  commentId: T:Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+  parent: Steeltoe.CircuitBreaker.Hystrix
+  name: IHystrixThreadPoolOptions
+  nameWithType: IHystrixThreadPoolOptions
+  fullName: Steeltoe.CircuitBreaker.Hystrix.IHystrixThreadPoolOptions
+- uid: Steeltoe.CircuitBreaker.Hystrix
+  commentId: N:Steeltoe.CircuitBreaker.Hystrix
+  name: Steeltoe.CircuitBreaker.Hystrix
+  nameWithType: Steeltoe.CircuitBreaker.Hystrix
+  fullName: Steeltoe.CircuitBreaker.Hystrix
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount
+  name: CurrentActiveCount
+  nameWithType: HystrixTaskScheduler.CurrentActiveCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentActiveCount
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentActiveCount
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentActiveCount
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentActiveCount
+  nameWithType: IHystrixTaskScheduler.CurrentActiveCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentActiveCount
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount
+  name: CurrentCompletedTaskCount
+  nameWithType: HystrixTaskScheduler.CurrentCompletedTaskCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCompletedTaskCount
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCompletedTaskCount
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCompletedTaskCount
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentCompletedTaskCount
+  nameWithType: IHystrixTaskScheduler.CurrentCompletedTaskCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCompletedTaskCount
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize
+  name: CurrentCorePoolSize
+  nameWithType: HystrixTaskScheduler.CurrentCorePoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentCorePoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCorePoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCorePoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentCorePoolSize
+  nameWithType: IHystrixTaskScheduler.CurrentCorePoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentCorePoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize
+  name: CurrentLargestPoolSize
+  nameWithType: HystrixTaskScheduler.CurrentLargestPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentLargestPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentLargestPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentLargestPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentLargestPoolSize
+  nameWithType: IHystrixTaskScheduler.CurrentLargestPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentLargestPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize
+  name: CurrentMaximumPoolSize
+  nameWithType: HystrixTaskScheduler.CurrentMaximumPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentMaximumPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentMaximumPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentMaximumPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentMaximumPoolSize
+  nameWithType: IHystrixTaskScheduler.CurrentMaximumPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentMaximumPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize
+  name: CurrentPoolSize
+  nameWithType: HystrixTaskScheduler.CurrentPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentPoolSize
+  nameWithType: IHystrixTaskScheduler.CurrentPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize
+  name: CurrentQueueSize
+  nameWithType: HystrixTaskScheduler.CurrentQueueSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentQueueSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentQueueSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentQueueSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentQueueSize
+  nameWithType: IHystrixTaskScheduler.CurrentQueueSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentQueueSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount
+  name: CurrentTaskCount
+  nameWithType: HystrixTaskScheduler.CurrentTaskCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CurrentTaskCount
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentTaskCount
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentTaskCount
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CurrentTaskCount
+  nameWithType: IHystrixTaskScheduler.CurrentTaskCount
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CurrentTaskCount
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize
+  name: CorePoolSize
+  nameWithType: HystrixTaskScheduler.CorePoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.CorePoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CorePoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CorePoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: CorePoolSize
+  nameWithType: IHystrixTaskScheduler.CorePoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.CorePoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize
+  name: MaximumPoolSize
+  nameWithType: HystrixTaskScheduler.MaximumPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.MaximumPoolSize
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.MaximumPoolSize
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: MaximumPoolSize
+  nameWithType: IHystrixTaskScheduler.MaximumPoolSize
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.MaximumPoolSize
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime
+  name: KeepAliveTime
+  nameWithType: HystrixTaskScheduler.KeepAliveTime
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.KeepAliveTime
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.KeepAliveTime
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.KeepAliveTime
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: KeepAliveTime
+  nameWithType: IHystrixTaskScheduler.KeepAliveTime
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.KeepAliveTime
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable
+  name: IsQueueSpaceAvailable
+  nameWithType: HystrixTaskScheduler.IsQueueSpaceAvailable
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsQueueSpaceAvailable
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsQueueSpaceAvailable
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsQueueSpaceAvailable
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: IsQueueSpaceAvailable
+  nameWithType: IHystrixTaskScheduler.IsQueueSpaceAvailable
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsQueueSpaceAvailable
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose
+  name: Dispose
+  nameWithType: HystrixTaskScheduler.Dispose
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+  commentId: P:System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  name: MaximumConcurrencyLevel
+  nameWithType: TaskScheduler.MaximumConcurrencyLevel
+  fullName: System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel
+  name: MaximumConcurrencyLevel
+  nameWithType: HystrixTaskScheduler.MaximumConcurrencyLevel
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.MaximumConcurrencyLevel
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown
+  name: IsShutdown
+  nameWithType: HystrixTaskScheduler.IsShutdown
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.IsShutdown
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsShutdown
+  commentId: P:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsShutdown
+  parent: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler
+  name: IsShutdown
+  nameWithType: IHystrixTaskScheduler.IsShutdown
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.IHystrixTaskScheduler.IsShutdown
+- uid: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation*
+  commentId: Overload:Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation
+  name: RunContinuation
+  nameWithType: HystrixTaskScheduler.RunContinuation
+  fullName: Steeltoe.CircuitBreaker.Hystrix.Strategy.Concurrency.HystrixTaskScheduler.RunContinuation
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

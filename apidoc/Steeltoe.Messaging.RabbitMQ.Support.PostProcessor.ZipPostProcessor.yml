@@ -1,0 +1,887 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  id: ZipPostProcessor
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  children:
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor(System.Boolean)
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream(System.IO.Stream)
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  langs:
+  - csharp
+  - vb
+  name: ZipPostProcessor
+  nameWithType: ZipPostProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  type: Class
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ZipPostProcessor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+    startLine: 15
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  syntax:
+    content: 'public class ZipPostProcessor : AbstractDeflaterPostProcessor, IMessagePostProcessor, IMessagePostProcessor, IOrdered'
+    content.vb: >-
+      Public Class ZipPostProcessor
+
+          Inherits AbstractDeflaterPostProcessor
+
+          Implements IMessagePostProcessor, IMessagePostProcessor, IOrdered
+  inheritance:
+  - System.Object
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor
+  implements:
+  - Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  - Steeltoe.Messaging.Core.IMessagePostProcessor
+  - Steeltoe.Common.Order.IOrdered
+  inheritedMembers:
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor.Level
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor._logger
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.AutoDecompress
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CopyHeaders
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.Order
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData)
+  - Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage(Steeltoe.Messaging.IMessage,System.Byte[])
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor
+  id: '#ctor'
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  langs:
+  - csharp
+  - vb
+  name: ZipPostProcessor()
+  nameWithType: ZipPostProcessor.ZipPostProcessor()
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.ZipPostProcessor()
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+    startLine: 17
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  syntax:
+    content: public ZipPostProcessor()
+    content.vb: Public Sub New
+  overload: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor(System.Boolean)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  langs:
+  - csharp
+  - vb
+  name: ZipPostProcessor(Boolean)
+  nameWithType: ZipPostProcessor.ZipPostProcessor(Boolean)
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.ZipPostProcessor(System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: .ctor
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  syntax:
+    content: public ZipPostProcessor(bool autoDecompress)
+    parameters:
+    - id: autoDecompress
+      type: System.Boolean
+    content.vb: Public Sub New(autoDecompress As Boolean)
+  overload: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  id: PostProcessMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  langs:
+  - csharp
+  - vb
+  name: PostProcessMessage(IMessage)
+  nameWithType: ZipPostProcessor.PostProcessMessage(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: PostProcessMessage
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+    startLine: 26
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  syntax:
+    content: public override IMessage PostProcessMessage(IMessage message)
+    parameters:
+    - id: message
+      type: Steeltoe.Messaging.IMessage
+    return:
+      type: Steeltoe.Messaging.IMessage
+    content.vb: Public Overrides Function PostProcessMessage(message As IMessage) As IMessage
+  overridden: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  overload: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream(System.IO.Stream)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream(System.IO.Stream)
+  id: GetCompressorStream(System.IO.Stream)
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetCompressorStream(Stream)
+  nameWithType: ZipPostProcessor.GetCompressorStream(Stream)
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetCompressorStream
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+    startLine: 51
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  syntax:
+    content: protected override Stream GetCompressorStream(Stream zipped)
+    parameters:
+    - id: zipped
+      type: System.IO.Stream
+    return:
+      type: System.IO.Stream
+    content.vb: Protected Overrides Function GetCompressorStream(zipped As Stream) As Stream
+  overridden: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream(System.IO.Stream)
+  overload: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding
+  id: GetEncoding
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetEncoding()
+  nameWithType: ZipPostProcessor.GetEncoding()
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding()
+  type: Method
+  source:
+    remote:
+      path: src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: GetEncoding
+    path: ../Steeltoe/src/Messaging/src/RabbitMQ/Support/PostProcessor/ZipPostProcessor.cs
+    startLine: 56
+  assemblies:
+  - Steeltoe.Messaging.RabbitMQ
+  namespace: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  syntax:
+    content: protected override string GetEncoding()
+    return:
+      type: System.String
+    content.vb: Protected Overrides Function GetEncoding As String
+  overridden: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding
+  overload: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  name: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  name: AbstractCompressingPostProcessor
+  nameWithType: AbstractCompressingPostProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor
+  name: AbstractDeflaterPostProcessor
+  nameWithType: AbstractDeflaterPostProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor
+- uid: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  commentId: T:Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+  parent: Steeltoe.Messaging.RabbitMQ.Core
+  name: IMessagePostProcessor
+  nameWithType: IMessagePostProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Core.IMessagePostProcessor
+- uid: Steeltoe.Messaging.Core.IMessagePostProcessor
+  commentId: T:Steeltoe.Messaging.Core.IMessagePostProcessor
+  parent: Steeltoe.Messaging.Core
+  name: IMessagePostProcessor
+  nameWithType: IMessagePostProcessor
+  fullName: Steeltoe.Messaging.Core.IMessagePostProcessor
+- uid: Steeltoe.Common.Order.IOrdered
+  commentId: T:Steeltoe.Common.Order.IOrdered
+  parent: Steeltoe.Common.Order
+  name: IOrdered
+  nameWithType: IOrdered
+  fullName: Steeltoe.Common.Order.IOrdered
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor.Level
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor.Level
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor
+  name: Level
+  nameWithType: AbstractDeflaterPostProcessor.Level
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractDeflaterPostProcessor.Level
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor._logger
+  commentId: F:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor._logger
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  name: _logger
+  nameWithType: AbstractCompressingPostProcessor._logger
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor._logger
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.AutoDecompress
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.AutoDecompress
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  name: AutoDecompress
+  nameWithType: AbstractCompressingPostProcessor.AutoDecompress
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.AutoDecompress
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CopyHeaders
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CopyHeaders
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  name: CopyHeaders
+  nameWithType: AbstractCompressingPostProcessor.CopyHeaders
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CopyHeaders
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.Order
+  commentId: P:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.Order
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  name: Order
+  nameWithType: AbstractCompressingPostProcessor.Order
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.Order
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData)
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  name: PostProcessMessage(IMessage, CorrelationData)
+  nameWithType: AbstractCompressingPostProcessor.PostProcessMessage(IMessage, CorrelationData)
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage, Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData)
+    name: PostProcessMessage
+    nameWithType: AbstractCompressingPostProcessor.PostProcessMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData
+    name: CorrelationData
+    nameWithType: CorrelationData
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage,Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData)
+    name: PostProcessMessage
+    nameWithType: AbstractCompressingPostProcessor.PostProcessMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData
+    name: CorrelationData
+    nameWithType: CorrelationData
+    fullName: Steeltoe.Messaging.RabbitMQ.Connection.CorrelationData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage(Steeltoe.Messaging.IMessage,System.Byte[])
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage(Steeltoe.Messaging.IMessage,System.Byte[])
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  isExternal: true
+  name: CreateMessage(IMessage, Byte[])
+  nameWithType: AbstractCompressingPostProcessor.CreateMessage(IMessage, Byte[])
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage(Steeltoe.Messaging.IMessage, System.Byte[])
+  nameWithType.vb: AbstractCompressingPostProcessor.CreateMessage(IMessage, Byte())
+  fullName.vb: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage(Steeltoe.Messaging.IMessage, System.Byte())
+  name.vb: CreateMessage(IMessage, Byte())
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage(Steeltoe.Messaging.IMessage,System.Byte[])
+    name: CreateMessage
+    nameWithType: AbstractCompressingPostProcessor.CreateMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage(Steeltoe.Messaging.IMessage,System.Byte[])
+    name: CreateMessage
+    nameWithType: AbstractCompressingPostProcessor.CreateMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.CreateMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Messaging.RabbitMQ.Core
+  commentId: N:Steeltoe.Messaging.RabbitMQ.Core
+  name: Steeltoe.Messaging.RabbitMQ.Core
+  nameWithType: Steeltoe.Messaging.RabbitMQ.Core
+  fullName: Steeltoe.Messaging.RabbitMQ.Core
+- uid: Steeltoe.Messaging.Core
+  commentId: N:Steeltoe.Messaging.Core
+  name: Steeltoe.Messaging.Core
+  nameWithType: Steeltoe.Messaging.Core
+  fullName: Steeltoe.Messaging.Core
+- uid: Steeltoe.Common.Order
+  commentId: N:Steeltoe.Common.Order
+  name: Steeltoe.Common.Order
+  nameWithType: Steeltoe.Common.Order
+  fullName: Steeltoe.Common.Order
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.#ctor
+  name: ZipPostProcessor
+  nameWithType: ZipPostProcessor.ZipPostProcessor
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.ZipPostProcessor
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  name: PostProcessMessage(IMessage)
+  nameWithType: AbstractCompressingPostProcessor.PostProcessMessage(IMessage)
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+    name: PostProcessMessage
+    nameWithType: AbstractCompressingPostProcessor.PostProcessMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage(Steeltoe.Messaging.IMessage)
+    name: PostProcessMessage
+    nameWithType: AbstractCompressingPostProcessor.PostProcessMessage
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.PostProcessMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Steeltoe.Messaging.IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: Steeltoe.Messaging.IMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage
+  name: PostProcessMessage
+  nameWithType: ZipPostProcessor.PostProcessMessage
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.PostProcessMessage
+- uid: Steeltoe.Messaging.IMessage
+  commentId: T:Steeltoe.Messaging.IMessage
+  parent: Steeltoe.Messaging
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Steeltoe.Messaging.IMessage
+- uid: Steeltoe.Messaging
+  commentId: N:Steeltoe.Messaging
+  name: Steeltoe.Messaging
+  nameWithType: Steeltoe.Messaging
+  fullName: Steeltoe.Messaging
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream(System.IO.Stream)
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream(System.IO.Stream)
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  isExternal: true
+  name: GetCompressorStream(Stream)
+  nameWithType: AbstractCompressingPostProcessor.GetCompressorStream(Stream)
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream(System.IO.Stream)
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream(System.IO.Stream)
+    name: GetCompressorStream
+    nameWithType: AbstractCompressingPostProcessor.GetCompressorStream
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream(System.IO.Stream)
+    name: GetCompressorStream
+    nameWithType: AbstractCompressingPostProcessor.GetCompressorStream
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetCompressorStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream
+  name: GetCompressorStream
+  nameWithType: ZipPostProcessor.GetCompressorStream
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetCompressorStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding
+  commentId: M:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding
+  parent: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor
+  name: GetEncoding()
+  nameWithType: AbstractCompressingPostProcessor.GetEncoding()
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding()
+  spec.csharp:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding
+    name: GetEncoding
+    nameWithType: AbstractCompressingPostProcessor.GetEncoding
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding
+    name: GetEncoding
+    nameWithType: AbstractCompressingPostProcessor.GetEncoding
+    fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.AbstractCompressingPostProcessor.GetEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding*
+  commentId: Overload:Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding
+  name: GetEncoding
+  nameWithType: ZipPostProcessor.GetEncoding
+  fullName: Steeltoe.Messaging.RabbitMQ.Support.PostProcessor.ZipPostProcessor.GetEncoding
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

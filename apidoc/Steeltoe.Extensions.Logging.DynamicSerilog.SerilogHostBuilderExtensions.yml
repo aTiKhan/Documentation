@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions
+  commentId: T:Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions
+  id: SerilogHostBuilderExtensions
+  parent: Steeltoe.Extensions.Logging.DynamicSerilog
+  children:
+  - Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean,System.Boolean)
+  - Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: SerilogHostBuilderExtensions
+  nameWithType: SerilogHostBuilderExtensions
+  fullName: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Logging/src/DynamicSerilogBase/SerilogHostBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: SerilogHostBuilderExtensions
+    path: ../Steeltoe/src/Logging/src/DynamicSerilogBase/SerilogHostBuilderExtensions.cs
+    startLine: 10
+  assemblies:
+  - Steeltoe.Extensions.Logging.DynamicSerilogBase
+  namespace: Steeltoe.Extensions.Logging.DynamicSerilog
+  syntax:
+    content: public static class SerilogHostBuilderExtensions
+    content.vb: Public Module SerilogHostBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean,System.Boolean)
+  commentId: M:Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean,System.Boolean)
+  id: AddDynamicSerilog(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean,System.Boolean)
+  isExtensionMethod: true
+  parent: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamicSerilog(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean, Boolean)
+  nameWithType: SerilogHostBuilderExtensions.AddDynamicSerilog(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean, Boolean)
+  fullName: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog(IHostBuilder, System.Action<HostBuilderContext, LoggerConfiguration>, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Logging/src/DynamicSerilogBase/SerilogHostBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: AddDynamicSerilog
+    path: ../Steeltoe/src/Logging/src/DynamicSerilogBase/SerilogHostBuilderExtensions.cs
+    startLine: 20
+  assemblies:
+  - Steeltoe.Extensions.Logging.DynamicSerilogBase
+  namespace: Steeltoe.Extensions.Logging.DynamicSerilog
+  summary: "\nConfigure Serilog as the <xref href=\"Steeltoe.Extensions.Logging.IDynamicLoggerProvider\" data-throw-if-not-resolved=\"false\"></xref> to enable dynamically controlling log levels via management endpoints\n"
+  example: []
+  syntax:
+    content: public static IHostBuilder AddDynamicSerilog(this IHostBuilder hostBuilder, Action<HostBuilderContext, LoggerConfiguration> configureLogger = null, bool preserveStaticLogger = false, bool preserveDefaultConsole = false)
+    parameters:
+    - id: hostBuilder
+      type: IHostBuilder
+      description: The <see cref="!:IHostBuilder"></see> to configure
+    - id: configureLogger
+      type: System.Action{HostBuilderContext,LoggerConfiguration}
+      description: The delegate for configuring the <xref href="Steeltoe.Extensions.Logging.DynamicLoggerConfiguration" data-throw-if-not-resolved="false"></xref> that will be used to construct a <see cref="!:Serilog.Core.Logger"></see>
+    - id: preserveStaticLogger
+      type: System.Boolean
+      description: Indicates whether to preserve the value of <see cref="!:Log.Logger"></see>.
+    - id: preserveDefaultConsole
+      type: System.Boolean
+      description: When true, do not remove Microsoft&apos;s ConsoleLoggerProvider
+    return:
+      type: IHostBuilder
+      description: The <see cref="!:IHostBuilder"></see>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamicSerilog(hostBuilder As IHostBuilder, configureLogger As Action(Of HostBuilderContext, LoggerConfiguration) = Nothing, preserveStaticLogger As Boolean = False, preserveDefaultConsole As Boolean = False) As IHostBuilder
+  overload: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog*
+  nameWithType.vb: SerilogHostBuilderExtensions.AddDynamicSerilog(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog(IHostBuilder, System.Action(Of HostBuilderContext, LoggerConfiguration), System.Boolean, System.Boolean)
+  name.vb: AddDynamicSerilog(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean, Boolean)
+- uid: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
+  commentId: M:Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
+  id: UseSerilogDynamicConsole(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
+  isExtensionMethod: true
+  parent: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseSerilogDynamicConsole(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean)
+  nameWithType: SerilogHostBuilderExtensions.UseSerilogDynamicConsole(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean)
+  fullName: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole(IHostBuilder, System.Action<HostBuilderContext, LoggerConfiguration>, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Logging/src/DynamicSerilogBase/SerilogHostBuilderExtensions.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: UseSerilogDynamicConsole
+    path: ../Steeltoe/src/Logging/src/DynamicSerilogBase/SerilogHostBuilderExtensions.cs
+    startLine: 47
+  assemblies:
+  - Steeltoe.Extensions.Logging.DynamicSerilogBase
+  namespace: Steeltoe.Extensions.Logging.DynamicSerilog
+  summary: "\nSets Steeltoe <xref href=\"Steeltoe.Extensions.Logging.IDynamicLoggerProvider\" data-throw-if-not-resolved=\"false\"></xref> Serilog implementation as a LoggerProvider which supports\ndynamically controlling the minimum log level via management endpoints\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Please use 'AddDynamicSerilog' instead")]
+
+      public static IHostBuilder UseSerilogDynamicConsole(this IHostBuilder hostBuilder, Action<HostBuilderContext, LoggerConfiguration> configureLogger = null, bool preserveStaticLogger = false)
+    parameters:
+    - id: hostBuilder
+      type: IHostBuilder
+      description: The <see cref="!:IHostBuilder"></see> to configure
+    - id: configureLogger
+      type: System.Action{HostBuilderContext,LoggerConfiguration}
+      description: The delegate for configuring the <xref href="Steeltoe.Extensions.Logging.DynamicLoggerConfiguration" data-throw-if-not-resolved="false"></xref> that will be used to construct a <see cref="!:Serilog.Core.Logger"></see>
+    - id: preserveStaticLogger
+      type: System.Boolean
+      description: Indicates whether to preserve the value of <see cref="!:Log.Logger"></see>.
+    return:
+      type: IHostBuilder
+      description: The <see cref="!:IHostBuilder"></see>
+    content.vb: >-
+      <Obsolete("Please use 'AddDynamicSerilog' instead")>
+
+      <ExtensionAttribute>
+
+      Public Shared Function UseSerilogDynamicConsole(hostBuilder As IHostBuilder, configureLogger As Action(Of HostBuilderContext, LoggerConfiguration) = Nothing, preserveStaticLogger As Boolean = False) As IHostBuilder
+  overload: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Please use 'AddDynamicSerilog' instead
+  nameWithType.vb: SerilogHostBuilderExtensions.UseSerilogDynamicConsole(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole(IHostBuilder, System.Action(Of HostBuilderContext, LoggerConfiguration), System.Boolean)
+  name.vb: UseSerilogDynamicConsole(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean)
+references:
+- uid: Steeltoe.Extensions.Logging.DynamicSerilog
+  commentId: N:Steeltoe.Extensions.Logging.DynamicSerilog
+  name: Steeltoe.Extensions.Logging.DynamicSerilog
+  nameWithType: Steeltoe.Extensions.Logging.DynamicSerilog
+  fullName: Steeltoe.Extensions.Logging.DynamicSerilog
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Extensions.Logging.IDynamicLoggerProvider
+  commentId: T:Steeltoe.Extensions.Logging.IDynamicLoggerProvider
+  parent: Steeltoe.Extensions.Logging
+  name: IDynamicLoggerProvider
+  nameWithType: IDynamicLoggerProvider
+  fullName: Steeltoe.Extensions.Logging.IDynamicLoggerProvider
+- uid: Steeltoe.Extensions.Logging.DynamicLoggerConfiguration
+  commentId: T:Steeltoe.Extensions.Logging.DynamicLoggerConfiguration
+  name: DynamicLoggerConfiguration
+  nameWithType: DynamicLoggerConfiguration
+  fullName: Steeltoe.Extensions.Logging.DynamicLoggerConfiguration
+- uid: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog*
+  commentId: Overload:Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog
+  name: AddDynamicSerilog
+  nameWithType: SerilogHostBuilderExtensions.AddDynamicSerilog
+  fullName: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.AddDynamicSerilog
+- uid: IHostBuilder
+  isExternal: true
+  name: IHostBuilder
+  nameWithType: IHostBuilder
+  fullName: IHostBuilder
+- uid: System.Action{HostBuilderContext,LoggerConfiguration}
+  commentId: T:System.Action{HostBuilderContext,LoggerConfiguration}
+  parent: System
+  definition: System.Action`2
+  name: Action<HostBuilderContext, LoggerConfiguration>
+  nameWithType: Action<HostBuilderContext, LoggerConfiguration>
+  fullName: System.Action<HostBuilderContext, LoggerConfiguration>
+  nameWithType.vb: Action(Of HostBuilderContext, LoggerConfiguration)
+  fullName.vb: System.Action(Of HostBuilderContext, LoggerConfiguration)
+  name.vb: Action(Of HostBuilderContext, LoggerConfiguration)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HostBuilderContext
+    name: HostBuilderContext
+    nameWithType: HostBuilderContext
+    fullName: HostBuilderContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: LoggerConfiguration
+    name: LoggerConfiguration
+    nameWithType: LoggerConfiguration
+    fullName: LoggerConfiguration
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HostBuilderContext
+    name: HostBuilderContext
+    nameWithType: HostBuilderContext
+    fullName: HostBuilderContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: LoggerConfiguration
+    name: LoggerConfiguration
+    nameWithType: LoggerConfiguration
+    fullName: LoggerConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Steeltoe.Extensions.Logging
+  commentId: N:Steeltoe.Extensions.Logging
+  name: Steeltoe.Extensions.Logging
+  nameWithType: Steeltoe.Extensions.Logging
+  fullName: Steeltoe.Extensions.Logging
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole*
+  commentId: Overload:Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole
+  name: UseSerilogDynamicConsole
+  nameWithType: SerilogHostBuilderExtensions.UseSerilogDynamicConsole
+  fullName: Steeltoe.Extensions.Logging.DynamicSerilog.SerilogHostBuilderExtensions.UseSerilogDynamicConsole

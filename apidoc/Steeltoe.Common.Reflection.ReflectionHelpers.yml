@@ -1,0 +1,1569 @@
+### YamlMime:ManagedReference
+items:
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers
+  commentId: T:Steeltoe.Common.Reflection.ReflectionHelpers
+  id: ReflectionHelpers
+  parent: Steeltoe.Common.Reflection
+  children:
+  - Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance(System.Type,System.Object[])
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies(System.Func{System.Reflection.Assembly,System.Boolean})
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute``1
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly(System.String)
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute``1
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes(System.Func{System.Reflection.Assembly,System.Boolean},System.Type)
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute``1
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod(System.Type,System.String,System.Type[])
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.Reflection.Assembly,System.String)
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.String[],System.String[])
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute``1
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow(System.String[],System.String[],System.String,System.String)
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute``1(System.Reflection.Assembly)
+  - Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute``2
+  - Steeltoe.Common.Reflection.ReflectionHelpers.Invoke(System.Reflection.MethodBase,System.Object,System.Object[])
+  - Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty(System.Object,System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ReflectionHelpers
+  nameWithType: ReflectionHelpers
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers
+  type: Class
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: ReflectionHelpers
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 14
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  syntax:
+    content: public static class ReflectionHelpers
+    content.vb: Public Module ReflectionHelpers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly(System.String)
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly(System.String)
+  id: FindAssembly(System.String)
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindAssembly(String)
+  nameWithType: ReflectionHelpers.FindAssembly(String)
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindAssembly
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 21
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFind an assembly\n"
+  example: []
+  syntax:
+    content: public static Assembly FindAssembly(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the assembly to find
+    return:
+      type: System.Reflection.Assembly
+      description: A representation of the assembly
+    content.vb: Public Shared Function FindAssembly(name As String) As Assembly
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies(System.Func{System.Reflection.Assembly,System.Boolean})
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies(System.Func{System.Reflection.Assembly,System.Boolean})
+  id: FindAssemblies(System.Func{System.Reflection.Assembly,System.Boolean})
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindAssemblies(Func<Assembly, Boolean>)
+  nameWithType: ReflectionHelpers.FindAssemblies(Func<Assembly, Boolean>)
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies(System.Func<System.Reflection.Assembly, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindAssemblies
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 42
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFind assemblies matching a query\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<Assembly> FindAssemblies(Func<Assembly, bool> assemblyQuery)
+    parameters:
+    - id: assemblyQuery
+      type: System.Func{System.Reflection.Assembly,System.Boolean}
+      description: Your assembly search query
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+      description: Assemblies in <xref href="System.AppDomain.CurrentDomain" data-throw-if-not-resolved="false"></xref> matching the query
+    content.vb: Public Shared Function FindAssemblies(assemblyQuery As Func(Of Assembly, Boolean)) As IEnumerable(Of Assembly)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies*
+  nameWithType.vb: ReflectionHelpers.FindAssemblies(Func(Of Assembly, Boolean))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies(System.Func(Of System.Reflection.Assembly, System.Boolean))
+  name.vb: FindAssemblies(Func(Of Assembly, Boolean))
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes(System.Func{System.Reflection.Assembly,System.Boolean},System.Type)
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes(System.Func{System.Reflection.Assembly,System.Boolean},System.Type)
+  id: FindDescendantTypes(System.Func{System.Reflection.Assembly,System.Boolean},System.Type)
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindDescendantTypes(Func<Assembly, Boolean>, Type)
+  nameWithType: ReflectionHelpers.FindDescendantTypes(Func<Assembly, Boolean>, Type)
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes(System.Func<System.Reflection.Assembly, System.Boolean>, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindDescendantTypes
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 51
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFind types from assemblies matching the query that are based on a common type\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<Type> FindDescendantTypes(Func<Assembly, bool> assemblyQuery, Type baseType)
+    parameters:
+    - id: assemblyQuery
+      type: System.Func{System.Reflection.Assembly,System.Boolean}
+      description: Your assembly search query
+    - id: baseType
+      type: System.Type
+      description: Base type to search for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: A list of types that have the given type as a base type
+    content.vb: Public Shared Function FindDescendantTypes(assemblyQuery As Func(Of Assembly, Boolean), baseType As Type) As IEnumerable(Of Type)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes*
+  nameWithType.vb: ReflectionHelpers.FindDescendantTypes(Func(Of Assembly, Boolean), Type)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes(System.Func(Of System.Reflection.Assembly, System.Boolean), System.Type)
+  name.vb: FindDescendantTypes(Func(Of Assembly, Boolean), Type)
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute``1
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute``1
+  id: FindTypeFromAssemblyAttribute``1
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindTypeFromAssemblyAttribute<T>()
+  nameWithType: ReflectionHelpers.FindTypeFromAssemblyAttribute<T>()
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute<T>()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindTypeFromAssemblyAttribute
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 59
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFind a type specified in an assembly attribute\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<Type> FindTypeFromAssemblyAttribute<T>()
+
+          where T : AssemblyContainsTypeAttribute
+    typeParameters:
+    - id: T
+      description: The attribute that defines the type to get
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: A list of matching types. Won&apos;t return more than one type per assembly
+    content.vb: Public Shared Function FindTypeFromAssemblyAttribute(Of T As AssemblyContainsTypeAttribute) As IEnumerable(Of Type)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute*
+  nameWithType.vb: ReflectionHelpers.FindTypeFromAssemblyAttribute(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute(Of T)()
+  name.vb: FindTypeFromAssemblyAttribute(Of T)()
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute``1
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute``1
+  id: FindAssembliesWithAttribute``1
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindAssembliesWithAttribute<T>()
+  nameWithType: ReflectionHelpers.FindAssembliesWithAttribute<T>()
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute<T>()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindAssembliesWithAttribute
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 68
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFind a list of types specified in an assembly attribute\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<Assembly> FindAssembliesWithAttribute<T>()
+
+          where T : AssemblyContainsTypeAttribute
+    typeParameters:
+    - id: T
+      description: The attribute that defines the types to get
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+      description: A list of matching types
+    content.vb: Public Shared Function FindAssembliesWithAttribute(Of T As AssemblyContainsTypeAttribute) As IEnumerable(Of Assembly)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute*
+  nameWithType.vb: ReflectionHelpers.FindAssembliesWithAttribute(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute(Of T)()
+  name.vb: FindAssembliesWithAttribute(Of T)()
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute``1(System.Reflection.Assembly)
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute``1(System.Reflection.Assembly)
+  id: FindTypesWithAttribute``1(System.Reflection.Assembly)
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindTypesWithAttribute<T>(Assembly)
+  nameWithType: ReflectionHelpers.FindTypesWithAttribute<T>(Assembly)
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute<T>(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindTypesWithAttribute
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 81
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFinds a list of types with <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code>\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<Type> FindTypesWithAttribute<T>(Assembly assembly)
+
+          where T : Attribute
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to search for the type(s)
+    typeParameters:
+    - id: T
+      description: Type of <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref> to search for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: A list of types with the specified attribute
+    content.vb: Public Shared Function FindTypesWithAttribute(Of T As Attribute)(assembly As Assembly) As IEnumerable(Of Type)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute*
+  nameWithType.vb: ReflectionHelpers.FindTypesWithAttribute(Of T)(Assembly)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute(Of T)(System.Reflection.Assembly)
+  name.vb: FindTypesWithAttribute(Of T)(Assembly)
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute``2
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute``2
+  id: FindTypesWithAttributeFromAssemblyAttribute``2
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindTypesWithAttributeFromAssemblyAttribute<TTypeAttribute, TAssemblyAttribute>()
+  nameWithType: ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute<TTypeAttribute, TAssemblyAttribute>()
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute<TTypeAttribute, TAssemblyAttribute>()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindTypesWithAttributeFromAssemblyAttribute
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 91
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFinds a list of assemblies with <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">TTypeAttribute</code> contained within assemblies with <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">TAssemblyAttribute</code>\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<Type> FindTypesWithAttributeFromAssemblyAttribute<TTypeAttribute, TAssemblyAttribute>()
+
+          where TTypeAttribute : Attribute where TAssemblyAttribute : AssemblyContainsTypeAttribute
+    typeParameters:
+    - id: TTypeAttribute
+      description: The Type attribute to locate
+    - id: TAssemblyAttribute
+      description: The Assembly-level attribute to use to filter the assembly list
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: Matching types from within matching assemblies
+    content.vb: Public Shared Function FindTypesWithAttributeFromAssemblyAttribute(Of TTypeAttribute As Attribute, TAssemblyAttribute As AssemblyContainsTypeAttribute) As IEnumerable(Of Type)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute*
+  nameWithType.vb: ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute(Of TTypeAttribute, TAssemblyAttribute)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute(Of TTypeAttribute, TAssemblyAttribute)()
+  name.vb: FindTypesWithAttributeFromAssemblyAttribute(Of TTypeAttribute, TAssemblyAttribute)()
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute``1
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute``1
+  id: FindAttributedTypesFromAssemblyAttribute``1
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindAttributedTypesFromAssemblyAttribute<T>()
+  nameWithType: ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute<T>()
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute<T>()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindAttributedTypesFromAssemblyAttribute
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 102
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFinds a list of types with the attributed identified by <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code><p></p>\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<Type> FindAttributedTypesFromAssemblyAttribute<T>()
+
+          where T : AssemblyContainsTypeAttribute
+    typeParameters:
+    - id: T
+      description: The assembly attribute that defines the desired type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: Matching types from within matching assemblies
+    content.vb: Public Shared Function FindAttributedTypesFromAssemblyAttribute(Of T As AssemblyContainsTypeAttribute) As IEnumerable(Of Type)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute*
+  nameWithType.vb: ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute(Of T)()
+  name.vb: FindAttributedTypesFromAssemblyAttribute(Of T)()
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute``1
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute``1
+  id: FindInterfacedTypesFromAssemblyAttribute``1
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindInterfacedTypesFromAssemblyAttribute<TAttribute>()
+  nameWithType: ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute<TAttribute>()
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute<TAttribute>()
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindInterfacedTypesFromAssemblyAttribute
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 114
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFinds a list of types implementing the interface identified by <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">TAttribute</code><p></p>\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<Type> FindInterfacedTypesFromAssemblyAttribute<TAttribute>()
+
+          where TAttribute : AssemblyContainsTypeAttribute
+    typeParameters:
+    - id: TAttribute
+      description: The assembly attribute that defines the desired interface type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: Matching types from within matching assemblies
+    content.vb: Public Shared Function FindInterfacedTypesFromAssemblyAttribute(Of TAttribute As AssemblyContainsTypeAttribute) As IEnumerable(Of Type)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute*
+  nameWithType.vb: ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute(Of TAttribute)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute(Of TAttribute)()
+  name.vb: FindInterfacedTypesFromAssemblyAttribute(Of TAttribute)()
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.String[],System.String[])
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.String[],System.String[])
+  id: FindType(System.String[],System.String[])
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindType(String[], String[])
+  nameWithType: ReflectionHelpers.FindType(String[], String[])
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.String[], System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindType
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 128
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nSearch a list of assemblies for the first matching type\n"
+  remarks: Great for finding an implementation type that could have one or more names in one or more assemblies
+  example: []
+  syntax:
+    content: public static Type FindType(string[] assemblyNames, string[] typeNames)
+    parameters:
+    - id: assemblyNames
+      type: System.String[]
+      description: List of assembly names to search
+    - id: typeNames
+      type: System.String[]
+      description: List of suitable types
+    return:
+      type: System.Type
+      description: An appropriate type
+    content.vb: Public Shared Function FindType(assemblyNames As String(), typeNames As String()) As Type
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindType*
+  nameWithType.vb: ReflectionHelpers.FindType(String(), String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.String(), System.String())
+  name.vb: FindType(String(), String())
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.Reflection.Assembly,System.String)
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.Reflection.Assembly,System.String)
+  id: FindType(System.Reflection.Assembly,System.String)
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindType(Assembly, String)
+  nameWithType: ReflectionHelpers.FindType(Assembly, String)
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindType(System.Reflection.Assembly, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindType
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 155
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFind a type from within an assembly\n"
+  example: []
+  syntax:
+    content: public static Type FindType(Assembly assembly, string typeName)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to search
+    - id: typeName
+      type: System.String
+      description: The name of the type to retrieve
+    return:
+      type: System.Type
+      description: The type
+    content.vb: Public Shared Function FindType(assembly As Assembly, typeName As String) As Type
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow(System.String[],System.String[],System.String,System.String)
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow(System.String[],System.String[],System.String,System.String)
+  id: FindTypeOrThrow(System.String[],System.String[],System.String,System.String)
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindTypeOrThrow(String[], String[], String, String)
+  nameWithType: ReflectionHelpers.FindTypeOrThrow(String[], String[], String, String)
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow(System.String[], System.String[], System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindTypeOrThrow
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 179
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nSearch a list of assemblies for the first matching type\n"
+  remarks: Great for finding an implementation type that could have one or more names in one or more assemblies
+  example: []
+  syntax:
+    content: public static Type FindTypeOrThrow(string[] assemblyNames, string[] typeNames, string typeName, string assemblyShortDescription)
+    parameters:
+    - id: assemblyNames
+      type: System.String[]
+      description: List of assembly names to search
+    - id: typeNames
+      type: System.String[]
+      description: List of suitable types
+    - id: typeName
+      type: System.String
+      description: To use in exception
+    - id: assemblyShortDescription
+      type: System.String
+      description: Describe what might be missing
+    return:
+      type: System.Type
+      description: An appropriate type
+    content.vb: Public Shared Function FindTypeOrThrow(assemblyNames As String(), typeNames As String(), typeName As String, assemblyShortDescription As String) As Type
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: When type isn&apos;t found
+  nameWithType.vb: ReflectionHelpers.FindTypeOrThrow(String(), String(), String, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow(System.String(), System.String(), System.String, System.String)
+  name.vb: FindTypeOrThrow(String(), String(), String, String)
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod(System.Type,System.String,System.Type[])
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod(System.Type,System.String,System.Type[])
+  id: FindMethod(System.Type,System.String,System.Type[])
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: FindMethod(Type, String, Type[])
+  nameWithType: ReflectionHelpers.FindMethod(Type, String, Type[])
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod(System.Type, System.String, System.Type[])
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: FindMethod
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 197
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nFind a method within a type\n"
+  example: []
+  syntax:
+    content: public static MethodInfo FindMethod(Type type, string methodName, Type[] parameters = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to search
+    - id: methodName
+      type: System.String
+      description: The name of the method
+    - id: parameters
+      type: System.Type[]
+      description: (Optional) The parameters in the signature
+    return:
+      type: System.Reflection.MethodInfo
+      description: The method you&apos;re searching for
+    content.vb: Public Shared Function FindMethod(type As Type, methodName As String, parameters As Type() = Nothing) As MethodInfo
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod*
+  nameWithType.vb: ReflectionHelpers.FindMethod(Type, String, Type())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod(System.Type, System.String, System.Type())
+  name.vb: FindMethod(Type, String, Type())
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.Invoke(System.Reflection.MethodBase,System.Object,System.Object[])
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.Invoke(System.Reflection.MethodBase,System.Object,System.Object[])
+  id: Invoke(System.Reflection.MethodBase,System.Object,System.Object[])
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: Invoke(MethodBase, Object, Object[])
+  nameWithType: ReflectionHelpers.Invoke(MethodBase, Object, Object[])
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.Invoke(System.Reflection.MethodBase, System.Object, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: Invoke
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 223
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nInvoke a function\n"
+  example: []
+  syntax:
+    content: public static object Invoke(MethodBase member, object instance, object[] args)
+    parameters:
+    - id: member
+      type: System.Reflection.MethodBase
+      description: The method to execute
+    - id: instance
+      type: System.Object
+      description: Instance of an object, if required by the method
+    - id: args
+      type: System.Object[]
+      description: Arguments to pass to the method
+    return:
+      type: System.Object
+      description: Results of method call
+    content.vb: Public Shared Function Invoke(member As MethodBase, instance As Object, args As Object()) As Object
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.Invoke*
+  nameWithType.vb: ReflectionHelpers.Invoke(MethodBase, Object, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.Invoke(System.Reflection.MethodBase, System.Object, System.Object())
+  name.vb: Invoke(MethodBase, Object, Object())
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance(System.Type,System.Object[])
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance(System.Type,System.Object[])
+  id: CreateInstance(System.Type,System.Object[])
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance(Type, Object[])
+  nameWithType: ReflectionHelpers.CreateInstance(Type, Object[])
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance(System.Type, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: CreateInstance
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 243
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nCreate an instance of a type\n"
+  example: []
+  syntax:
+    content: public static object CreateInstance(Type t, object[] args = null)
+    parameters:
+    - id: t
+      type: System.Type
+      description: Type to instantiate
+    - id: args
+      type: System.Object[]
+      description: Constructor parameters
+    return:
+      type: System.Object
+      description: New instance of desired type
+    content.vb: Public Shared Function CreateInstance(t As Type, args As Object() = Nothing) As Object
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance*
+  nameWithType.vb: ReflectionHelpers.CreateInstance(Type, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance(System.Type, System.Object())
+  name.vb: CreateInstance(Type, Object())
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty(System.Object,System.String,System.Object)
+  commentId: M:Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty(System.Object,System.String,System.Object)
+  id: TrySetProperty(System.Object,System.String,System.Object)
+  parent: Steeltoe.Common.Reflection.ReflectionHelpers
+  langs:
+  - csharp
+  - vb
+  name: TrySetProperty(Object, String, Object)
+  nameWithType: ReflectionHelpers.TrySetProperty(Object, String, Object)
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty(System.Object, System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Common/src/Common/Reflection/ReflectionHelpers.cs
+      branch: master
+      repo: https://github.com/SteeltoeOSS/steeltoe
+    id: TrySetProperty
+    path: ../Steeltoe/src/Common/src/Common/Reflection/ReflectionHelpers.cs
+    startLine: 270
+  assemblies:
+  - Steeltoe.Common
+  namespace: Steeltoe.Common.Reflection
+  summary: "\nTry to set a property on an object\n"
+  example: []
+  syntax:
+    content: public static void TrySetProperty(object obj, string property, object value)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: Object to set a value on
+    - id: property
+      type: System.String
+      description: Property to set
+    - id: value
+      type: System.Object
+      description: Value to use
+    content.vb: Public Shared Sub TrySetProperty(obj As Object, property As String, value As Object)
+  overload: Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Steeltoe.Common.Reflection
+  commentId: N:Steeltoe.Common.Reflection
+  name: Steeltoe.Common.Reflection
+  nameWithType: Steeltoe.Common.Reflection
+  fullName: Steeltoe.Common.Reflection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly
+  name: FindAssembly
+  nameWithType: ReflectionHelpers.FindAssembly
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembly
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: System.AppDomain.CurrentDomain
+  commentId: P:System.AppDomain.CurrentDomain
+  isExternal: true
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies
+  name: FindAssemblies
+  nameWithType: ReflectionHelpers.FindAssemblies
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssemblies
+- uid: System.Func{System.Reflection.Assembly,System.Boolean}
+  commentId: T:System.Func{System.Reflection.Assembly,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<Assembly, Boolean>
+  nameWithType: Func<Assembly, Boolean>
+  fullName: System.Func<System.Reflection.Assembly, System.Boolean>
+  nameWithType.vb: Func(Of Assembly, Boolean)
+  fullName.vb: System.Func(Of System.Reflection.Assembly, System.Boolean)
+  name.vb: Func(Of Assembly, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: System.Reflection.Assembly
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: System.Reflection.Assembly
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Assembly>
+  nameWithType: IEnumerable<Assembly>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.Assembly>
+  nameWithType.vb: IEnumerable(Of Assembly)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly)
+  name.vb: IEnumerable(Of Assembly)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: System.Reflection.Assembly
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: System.Reflection.Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes
+  name: FindDescendantTypes
+  nameWithType: ReflectionHelpers.FindDescendantTypes
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindDescendantTypes
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Type>
+  nameWithType: IEnumerable<Type>
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  nameWithType.vb: IEnumerable(Of Type)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  name.vb: IEnumerable(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute
+  name: FindTypeFromAssemblyAttribute
+  nameWithType: ReflectionHelpers.FindTypeFromAssemblyAttribute
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeFromAssemblyAttribute
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute
+  name: FindAssembliesWithAttribute
+  nameWithType: ReflectionHelpers.FindAssembliesWithAttribute
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAssembliesWithAttribute
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute
+  name: FindTypesWithAttribute
+  nameWithType: ReflectionHelpers.FindTypesWithAttribute
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttribute
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute
+  name: FindTypesWithAttributeFromAssemblyAttribute
+  nameWithType: ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypesWithAttributeFromAssemblyAttribute
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute
+  name: FindAttributedTypesFromAssemblyAttribute
+  nameWithType: ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindAttributedTypesFromAssemblyAttribute
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute
+  name: FindInterfacedTypesFromAssemblyAttribute
+  nameWithType: ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindInterfacedTypesFromAssemblyAttribute
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindType*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindType
+  name: FindType
+  nameWithType: ReflectionHelpers.FindType
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindType
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow
+  name: FindTypeOrThrow
+  nameWithType: ReflectionHelpers.FindTypeOrThrow
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindTypeOrThrow
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod
+  name: FindMethod
+  nameWithType: ReflectionHelpers.FindMethod
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.FindMethod
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.Invoke*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.Invoke
+  name: Invoke
+  nameWithType: ReflectionHelpers.Invoke
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.Invoke
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance
+  name: CreateInstance
+  nameWithType: ReflectionHelpers.CreateInstance
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.CreateInstance
+- uid: Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty*
+  commentId: Overload:Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty
+  name: TrySetProperty
+  nameWithType: ReflectionHelpers.TrySetProperty
+  fullName: Steeltoe.Common.Reflection.ReflectionHelpers.TrySetProperty
